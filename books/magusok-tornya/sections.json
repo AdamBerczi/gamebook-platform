@@ -917,11 +917,17 @@
       "choices": [
         {
           "text": "Ha van nálad egy varázslótól kapott tengeri kagyló,",
-          "target": 158
+          "target": 158,
+          "requires": [
+            "Tengeri kagyló"
+          ]
         },
         {
           "text": "Ha van egy varázsszövíríid,",
-          "target": 265
+          "target": 265,
+          "requires": [
+            "Varázsgyűrű"
+          ]
         },
         {
           "text": "Ha egyik sincs nálad,",
@@ -1124,8 +1130,84 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
-      "has_luck_test": false
+      "has_combat": false,
+      "has_luck_test": false,
+      "has_shop": true,
+      "shop": {
+        "items": [
+          {
+            "item": "Kötél",
+            "note": "Sziklafal-mászáshoz",
+            "price": 1,
+            "currency": "Aranypenz",
+            "unique": true
+          },
+          {
+            "item": "Buzogány",
+            "note": "3-8 veszteséget okoz",
+            "price": 35,
+            "currency": "Aranypenz"
+          },
+          {
+            "item": "Pallos",
+            "note": "4-9 veszteséget okoz",
+            "price": 50,
+            "currency": "Aranypenz"
+          },
+          {
+            "item": "Gyógyital",
+            "effect": "6 életerőpontot gyógyít",
+            "price": 25,
+            "currency": "Aranypenz"
+          },
+          {
+            "item": "Extra Gyógyital",
+            "effect": "15 életerőpontot gyógyít",
+            "price": 60,
+            "currency": "Aranypenz"
+          },
+          {
+            "item": "Bronzmajzs",
+            "effect": "+5 a védettséghez",
+            "price": 25,
+            "currency": "Aranypenz",
+            "unique": true,
+            "stat_bonus": {
+              "vedettsegi_szint": 5
+            }
+          },
+          {
+            "item": "Acélpajzs",
+            "effect": "+10 a védettséghez",
+            "price": 40,
+            "currency": "Aranypenz",
+            "unique": true,
+            "stat_bonus": {
+              "vedettsegi_szint": 10
+            }
+          },
+          {
+            "item": "Bross",
+            "effect": "+5 az életerőhöz",
+            "price": 50,
+            "currency": "Aranypenz",
+            "unique": true,
+            "stat_bonus": {
+              "eletero": 5
+            }
+          },
+          {
+            "item": "Sárkányvér",
+            "effect": "+5 a támadáshoz",
+            "price": 50,
+            "currency": "Aranypenz",
+            "unique": true,
+            "stat_bonus": {
+              "tamadasi_kepesseg": 5
+            }
+          }
+        ]
+      }
     },
     "68": {
       "id": 68,
@@ -1212,7 +1294,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "74": {
       "id": 74,
@@ -1252,7 +1334,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "76": {
       "id": 76,
@@ -1488,7 +1570,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "91": {
       "id": 91,
@@ -1812,7 +1894,10 @@
         },
         {
           "text": "Ha van nálad \"sziromkesztyú\",",
-          "target": 142
+          "target": 142,
+          "requires": [
+            "Sziromkesztyű"
+          ]
         },
         {
           "text": "Ha az egyik lándzsalevéllel érinted meg,",
@@ -2175,7 +2260,20 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "takes_items": [
+        "Amulett"
+      ],
+      "gives_items": [
+        {
+          "item": "Tengeri kagyló",
+          "note": "Fújj bele a Kék-tenger partján – szárnyas gyíkot idéz"
+        },
+        {
+          "item": "Sziromkesztyű",
+          "note": "Csak ezzel érintsd meg az üvegkulcsot"
+        }
+      ]
     },
     "132": {
       "id": 132,
@@ -2216,7 +2314,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "134": {
       "id": 134,
@@ -3127,7 +3225,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "187": {
       "id": 187,
@@ -3145,7 +3243,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "188": {
       "id": 188,
@@ -3189,7 +3287,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "190": {
       "id": 190,
@@ -3337,11 +3435,17 @@
       "choices": [
         {
           "text": "Ha van nálad egy varázslótól kapott tengeri kagyló,",
-          "target": 158
+          "target": 158,
+          "requires": [
+            "Tengeri kagyló"
+          ]
         },
         {
           "text": "Ha van egy varázs gyűrűd,",
-          "target": 265
+          "target": 265,
+          "requires": [
+            "Varázsgyűrű"
+          ]
         },
         {
           "text": "Ha egyik sincs nálad,",
@@ -3699,7 +3803,10 @@
       "choices": [
         {
           "text": "Ha van nálad egy amulett, és használni akarod,",
-          "target": 75
+          "target": 75,
+          "requires": [
+            "Amulett"
+          ]
         },
         {
           "text": "Ha nincs,",
@@ -3946,7 +4053,10 @@
         },
         {
           "text": "Ha van nálad \"sziromkesztyű\",",
-          "target": 142
+          "target": 142,
+          "requires": [
+            "Sziromkesztyű"
+          ]
         },
         {
           "text": "Ha az egyik lándzsalevéllel érintet meg,",
@@ -4241,7 +4351,10 @@
       "choices": [
         {
           "text": "Ha hoztál magaddal kötelet a boltból,",
-          "target": 112
+          "target": 112,
+          "requires": [
+            "Kötél"
+          ]
         },
         {
           "text": "Ha nem vettél,",
@@ -4478,7 +4591,10 @@
       "choices": [
         {
           "text": "Ha van nálad gyorsító ital,",
-          "target": 14
+          "target": 14,
+          "requires": [
+            "Gyorsító ital"
+          ]
         },
         {
           "text": "Ha nincs,",
@@ -4640,7 +4756,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "275": {
       "id": 275,
@@ -5035,11 +5151,17 @@
       "choices": [
         {
           "text": "Ha van nálad egy varázslótól kapott tengeri kagyló,",
-          "target": 158
+          "target": 158,
+          "requires": [
+            "Tengeri kagyló"
+          ]
         },
         {
           "text": "Ha van egy varázsgyűrűd,",
-          "target": 265
+          "target": 265,
+          "requires": [
+            "Varázsgyűrű"
+          ]
         },
         {
           "text": "Ha egyik sincs nálad,",

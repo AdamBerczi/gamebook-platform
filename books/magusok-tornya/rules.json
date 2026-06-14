@@ -85,13 +85,14 @@
   },
 
   "starting_equipment": [
-    { "item": "Kard", "note": "1-6 veszteséget okoz" },
-    { "item": "Fáklya", "quantity": 4 },
-    { "item": "Étel és ital", "quantity": 3, "unit": "nap" },
-    { "item": "Gyógyital", "quantity": 1, "effect": "12 életerőpontot gyógyít" },
+    { "item": "Varázskard", "note": "2-7 veszteséget okoz" },
+    { "item": "Gyógyító ital", "quantity": 2, "effect": "15 életerőpontot gyógyít" },
+    { "item": "Gyorsító ital", "quantity": 1, "effect": "Körönként kétszer támadhatsz, vagy negatív bonuszok nélkül menekülhetsz el" },
+    { "item": "Varázsgyűrű" },
+    { "item": "Amulett", "effect": "Minden főértékedet 3 ponttal javítja; a tőled ért sebzésekből levonhatsz 2 pontot", "stat_bonus": {"eletero": 3, "tamadasi_kepesseg": 3, "vedettsegi_szint": 3, "szerencse": 3, "varazserő": 3} },
+    { "item": "Étel és ital", "quantity": 1, "unit": "csomag" },
     { "item": "Varázskőnyv", "note": "Nélküle nem tudsz varázsolni" },
-    { "item": "Aranypénz", "quantity": 20 },
-    { "item": "Ezüstpénz", "quantity": 5 }
+    { "item": "Aranypénz", "quantity": 200 }
   ],
 
   "combat": {

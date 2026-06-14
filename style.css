@@ -633,6 +633,118 @@ body {
   cursor: default;
 }
 
+.choice-btn.choice-locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.choice-lock-tag {
+  color: var(--text-faint);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+/* ── Shop block ─────────────────────────────────────────── */
+.shop-block {
+  margin-bottom: 1.5rem;
+}
+
+.shop-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.shop-title {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.shop-gold {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.shop-items-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shop-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.625rem 0.875rem;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.shop-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.shop-item-name {
+  font-family: var(--font-text);
+  font-size: 15px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.shop-item-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.shop-item-buy {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.shop-item-price {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.shop-buy-btn {
+  padding: 0.375rem 0.75rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: calc(var(--radius) - 2px);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+
+.shop-buy-btn:hover:not([disabled]) { opacity: 0.85; }
+
+.shop-buy-btn[disabled] {
+  background: var(--border);
+  color: var(--text-faint);
+  cursor: not-allowed;
+}
+
 .loading {
   padding: 4rem 2rem;
   text-align: center;

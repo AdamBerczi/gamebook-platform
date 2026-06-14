@@ -223,6 +223,12 @@ function startGame() {
   state.character.max     = { ...modified };
   state.character.race    = state.selectedRace;
   state.character.inventory = buildStartingInventory();
+
+  // Apply stat bonuses from starting items (Amulett, etc.)
+  for (const item of state.character.inventory) {
+    if (item.stat_bonus) applyItemStatBonus(item);
+  }
+
   state.currentSection = 1;
   state.history = [];
   state.combat  = null;
@@ -237,10 +243,11 @@ function startGame() {
 
 function buildStartingInventory() {
   return rules.starting_equipment.map(item => ({
-    name: item.item,
-    qty:  item.quantity ?? 1,
-    unit: item.unit    ?? null,
-    note: item.note    ?? item.effect ?? null,
+    name:       item.item,
+    qty:        item.quantity  ?? 1,
+    unit:       item.unit      ?? null,
+    note:       item.note      ?? item.effect ?? null,
+    stat_bonus: item.stat_bonus ?? null,
   }));
 }
 
@@ -359,6 +366,7 @@ function getItemAction(item) {
   const healMatch = note.match(/(\d+)\s*életerőpontot?\s*gyógyít/i);
   if (healMatch) return { type: 'potion', heal: parseInt(healMatch[1]), hint: 'iszik' };
   const name = item.name.toLowerCase();
+  if (name.includes('gyorsító')) return { type: 'gyorsito', hint: 'iszik' };
   if (name.includes('étel') || name.includes('élelem') || name.includes('kenyér') || name.includes('ennivaló'))
     return { type: 'food', hint: 'eszik' };
   return null;
@@ -402,6 +410,20 @@ function renderItemPanel(panel, item, action, idx) {
       state.character.current.eletero = Math.min(max, cur + action.heal);
       consumeItem(idx);
     });
+  } else if (action.type === 'gyorsito') {
+    const inCombat = !!state.combat;
+    const alreadyActive = inCombat && state.combat.speedPotion;
+    panel.innerHTML = `
+      <div class="item-panel-label">Körönként két támadás ebben a harcban</div>
+      <button class="item-panel-btn" id="item-gyorsito-${idx}" ${!inCombat || alreadyActive ? 'disabled' : ''}>
+        ${!inCombat ? 'Csak harcban használható' : alreadyActive ? 'Már aktív' : 'Beiszom'}
+      </button>
+    `;
+    document.getElementById(`item-gyorsito-${idx}`).addEventListener('click', () => {
+      state.combat.speedPotion = true;
+      consumeItem(idx);
+      addCombatLog('⚡ Gyorsító ital: mostantól körönként kétszer támadhatsz!');
+    });
   } else if (action.type === 'food') {
     const mpCur = state.character.current['varazserő'];
     const mpMax = state.character.max['varazserő'];
@@ -422,9 +444,58 @@ function renderItemPanel(panel, item, action, idx) {
 function consumeItem(idx) {
   const item = state.character.inventory[idx];
   item.qty--;
-  if (item.qty <= 0) state.character.inventory.splice(idx, 1);
+  if (item.qty <= 0) {
+    revertItemStatBonus(item);
+    state.character.inventory.splice(idx, 1);
+  }
   renderStats();
   renderInventory();
+}
+
+// ── Item stat bonus helpers ───────────────────────────────────────────────────
+
+function applyItemStatBonus(item) {
+  if (!item.stat_bonus) return;
+  for (const [stat, val] of Object.entries(item.stat_bonus)) {
+    state.character.current[stat] = (state.character.current[stat] || 0) + val;
+    state.character.max[stat]     = (state.character.max[stat]     || 0) + val;
+  }
+}
+
+function revertItemStatBonus(item) {
+  if (!item.stat_bonus) return;
+  for (const [stat, val] of Object.entries(item.stat_bonus)) {
+    state.character.current[stat] = (state.character.current[stat] || 0) - val;
+    state.character.max[stat]     = (state.character.max[stat]     || 0) - val;
+  }
+}
+
+function addItemToInventory(itemDef) {
+  const existing = state.character.inventory.find(i => i.name === itemDef.item);
+  if (existing && !itemDef.unique) {
+    existing.qty += itemDef.quantity ?? 1;
+  } else if (!existing) {
+    const newItem = {
+      name:       itemDef.item,
+      qty:        itemDef.quantity  ?? 1,
+      unit:       itemDef.unit      ?? null,
+      note:       itemDef.note      ?? itemDef.effect ?? null,
+      stat_bonus: itemDef.stat_bonus ?? null,
+    };
+    state.character.inventory.push(newItem);
+    if (newItem.stat_bonus) applyItemStatBonus(newItem);
+  }
+  renderInventory();
+  renderStats();
+}
+
+function removeItemByName(name) {
+  const idx = state.character.inventory.findIndex(i => i.name === name);
+  if (idx === -1) return;
+  revertItemStatBonus(state.character.inventory[idx]);
+  state.character.inventory.splice(idx, 1);
+  renderInventory();
+  renderStats();
 }
 
 // ── SECTION LOADING ───────────────────────────────────────────────────────────
@@ -436,6 +507,18 @@ function loadSection(id) {
   state.currentSection = id;
   state.history.push(id);
   if (data.gold_cost) deductGold(data.gold_cost);
+
+  // First-visit item exchanges (takes_items / gives_items)
+  const firstVisit = state.history.filter(x => x === id).length === 1;
+  if (firstVisit) {
+    if (data.takes_items?.length) {
+      for (const name of data.takes_items) removeItemByName(name);
+    }
+    if (data.gives_items?.length) {
+      for (const gi of data.gives_items) addItemToInventory(gi);
+    }
+  }
+
   renderSection(data);
   renderStats();
   document.getElementById('main').scrollTo({ top: 0, behavior: 'smooth' });
@@ -478,6 +561,7 @@ function renderSection(data) {
   if (data.is_ending) { renderEnding(choicesEl); wrap.classList.add('visible'); return; }
   if (data.enemies?.length > 0) { renderCombatBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_luck_test && data.choices.length >= 2) { renderLuckTestBlock(choicesEl, data); wrap.classList.add('visible'); return; }
+  if (data.has_shop) renderShopBlock(choicesEl, data);
   renderChoices(choicesEl, data.choices);
   wrap.classList.add('visible');
 }
@@ -495,12 +579,83 @@ function loadSectionIllustration(id) {
 
 function renderChoices(container, choices) {
   choices.forEach(choice => {
-    const btn = document.createElement('button');
-    btn.className = 'choice-btn';
+    const btn   = document.createElement('button');
     const label = choice.text || `Lapozz a ${choice.target}. szakaszra`;
-    btn.innerHTML = `<span>${label}</span><span class="choice-arrow">→ ${choice.target}</span>`;
-    btn.addEventListener('click', () => loadSection(choice.target));
+    const reqs  = choice.requires ?? [];
+    const missing = reqs.filter(n => !state.character.inventory.some(i => i.name === n));
+    const locked  = missing.length > 0;
+
+    btn.className = 'choice-btn' + (locked ? ' choice-locked' : '');
+    if (locked) {
+      btn.disabled = true;
+      btn.innerHTML = `<span>${label}</span><span class="choice-arrow choice-lock-tag">🔒 ${missing.join(', ')}</span>`;
+    } else {
+      btn.innerHTML = `<span>${label}</span><span class="choice-arrow">→ ${choice.target}</span>`;
+      btn.addEventListener('click', () => loadSection(choice.target));
+    }
     container.appendChild(btn);
+  });
+}
+
+// ── SHOP SYSTEM ──────────────────────────────────────────────────────────────
+
+function renderShopBlock(container, data) {
+  const block = document.createElement('div');
+  block.className = 'system-block shop-block';
+  block.id = 'shop-block';
+  container.appendChild(block);
+  refreshShopBlock(block, data.shop.items);
+}
+
+function refreshShopBlock(block, items) {
+  const gold = state.character.inventory.find(i => i.name === 'Aranypénz');
+  const goldAmt = gold?.qty ?? 0;
+  block.innerHTML = `
+    <div class="shop-header">
+      <span class="shop-title">🏪 Bolt</span>
+      <span class="shop-gold">🪙 ${goldAmt} arany</span>
+    </div>
+    <div class="shop-items-grid"></div>
+  `;
+  const grid = block.querySelector('.shop-items-grid');
+  items.forEach((shopItem, idx) => {
+    const owned    = shopItem.unique && state.character.inventory.some(i => i.name === shopItem.item);
+    const canAfford = goldAmt >= shopItem.price;
+    const desc = shopItem.note ?? shopItem.effect ?? '';
+    const row = document.createElement('div');
+    row.className = 'shop-item-row';
+    row.innerHTML = `
+      <div class="shop-item-info">
+        <span class="shop-item-name">${shopItem.item}</span>
+        ${desc ? `<span class="shop-item-desc">${desc}</span>` : ''}
+      </div>
+      <div class="shop-item-buy">
+        <span class="shop-item-price">🪙 ${shopItem.price}</span>
+        <button class="shop-buy-btn" data-idx="${idx}"
+          ${owned || !canAfford ? 'disabled' : ''}>
+          ${owned ? 'Megvan' : !canAfford ? 'Kevés arany' : 'Megvesz'}
+        </button>
+      </div>
+    `;
+    grid.appendChild(row);
+  });
+  grid.querySelectorAll('.shop-buy-btn:not([disabled])').forEach(btn => {
+    btn.addEventListener('click', () => {
+      buyShopItem(items[parseInt(btn.dataset.idx)]);
+      refreshShopBlock(block, items);
+    });
+  });
+}
+
+function buyShopItem(shopItem) {
+  deductGold(shopItem.price);
+  addItemToInventory({
+    item:       shopItem.item,
+    quantity:   shopItem.quantity ?? 1,
+    note:       shopItem.note   ?? null,
+    effect:     shopItem.effect ?? null,
+    stat_bonus: shopItem.stat_bonus ?? null,
+    unique:     shopItem.unique ?? false,
   });
 }
 
@@ -569,6 +724,7 @@ function renderCombatBlock(container, data) {
     sectionData:         data,
     playerAttackBonus:   0,   // current active bonus (Erős Karok)
     strongArmAttacksLeft: 0,  // remaining player attacks with the bonus
+    speedPotion:         false, // Gyorsító ital: two attacks per round
   };
   const block = document.createElement('div');
   block.className = 'system-block combat-block';
@@ -671,6 +827,8 @@ function showTargetButtons(mode) {
         const { spell, cost } = state.combat._pendingSpell;
         delete state.combat._pendingSpell;
         resolveSpellDamage(spell, cost, idx);
+      } else if (mode === 'sword2') {
+        resolvePlayerAttackOn(idx, true);
       } else {
         resolvePlayerAttackOn(idx);
       }
@@ -872,7 +1030,7 @@ function updateEnemyStatusBadges(idx) {
   el.innerHTML = badges.join('');
 }
 
-function resolvePlayerAttackOn(targetIdx) {
+function resolvePlayerAttackOn(targetIdx, secondAttack = false) {
   const roll   = roll2d6();
   const combat = state.combat;
   const enemy  = combat.enemies[targetIdx];
@@ -912,7 +1070,21 @@ function resolvePlayerAttackOn(targetIdx) {
   } else {
     addCombatLog(`Kihagytad ${enemy.name}-t.`);
   }
-  setTimeout(showEnemyTurn, 800);
+
+  // Gyorsító ital: second swing this round (only once per round)
+  const stillAlive = livingEnemies();
+  if (combat.speedPotion && !secondAttack && stillAlive.length > 0) {
+    addCombatLog('⚡ Gyorsító ital: második csapás!');
+    setTimeout(() => {
+      if (stillAlive.length > 1) {
+        showTargetButtons('sword2');
+      } else {
+        resolvePlayerAttackOn(stillAlive[0].idx, true);
+      }
+    }, 800);
+  } else {
+    setTimeout(showEnemyTurn, 800);
+  }
 }
 
 async function resolveAllEnemiesAttack() {
@@ -960,7 +1132,12 @@ async function resolveAllEnemiesAttack() {
     addCombatLog(`${enemy.name}: ${roll} + ${enemy.tamadasi_kepesseg} = ${power} vs ${player.vedettsegi_szint}`);
 
     if (power > player.vedettsegi_szint) {
-      const dmg = calcDamage(enemy.damage);
+      let dmg = calcDamage(enemy.damage);
+      const hasAmulett = state.character.inventory.some(i => i.name === 'Amulett');
+      if (hasAmulett && dmg > 0) {
+        dmg = Math.max(0, dmg - 2);
+        addCombatLog(`Amulett: 2 pont sebzés elnyelve.`);
+      }
       player.eletero -= dmg;
       addCombatLog(`Találat! ${dmg} életerőt veszítesz. (marad: ${Math.max(0, player.eletero)})`);
       renderStats();

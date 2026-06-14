@@ -186,24 +186,67 @@ PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
 - Items with actions show a pill label in sidebar (dob / iszik / eszik)
 - **Weapons** (damage note "X-Y veszteséget okoz"): roll damage button, result from damage table
 - **Potions** (note "N életerőpontot gyógyít"): Megiszom button heals HP, removes when qty=0, disabled if full
-- **Food/rations** ("Étel és ital"): food has no usage in any of the 300 sections, so added
-  "Rest & eat" mechanic — consumes 1 day, restores +4 Varázserő
+- **Food/rations** ("Étel és ital"): "Rest & eat" mechanic — consumes 1 day, restores +4 Varázserő
+- **Speed potion** ("Gyorsító ital"): combat-only button; sets `combat.speedPotion = true`; grants a second attack each round for that combat
+- **Stat-bonus items** (Amulett, shop armor/potions with `stat_bonus` field): bonuses applied immediately on acquisition; reverted when item is removed/traded
+
+### Shop system (platform-generic)
+- Sections with `has_shop: true` and a `shop: { items: [...] }` block render a 🏪 Bolt UI above the choices
+- Each shop item: `{ item, note, effect, price, currency, unique, stat_bonus }` 
+- Buy button deducts gold, adds item to inventory, applies any `stat_bonus` immediately
+- `unique: true` items show "Megvan" once owned and disable the buy button
+- Gold balance shown live in shop header; updates after each purchase
+
+### Quest item requirements (platform-generic)
+- Choices with `requires: ["Item name"]` are **disabled + locked** (🔒 badge) if the player lacks the item
+- Locked choices are still visible so the player knows what they're missing
+- Multiple items can be required: `requires: ["A", "B"]` — all must be present
+
+### Item exchange (platform-generic)
+- Sections with `takes_items: ["Name"]` automatically remove those items on first visit (reverts any stat bonuses)
+- Sections with `gives_items: [{item, note, effect, stat_bonus}]` automatically add those items on first visit
+- First-visit detection: `state.history.filter(x => x === id).length === 1`
+- Exchanges only fire once; revisiting the section does nothing
+
+### Stat bonus items (platform-generic)
+- Items can carry `stat_bonus: { stat_key: value }` (both in rules.json starting_equipment and shop items)
+- `applyItemStatBonus(item)` — adds values to `current` and `max` stats
+- `revertItemStatBonus(item)` — subtracts values; called when item is removed or fully consumed
+- `addItemToInventory(itemDef)` — canonical function for adding items (handles qty stacking, stat bonus, renderInventory)
+- `removeItemByName(name)` — canonical function for removing items (handles stat revert)
 
 ---
 
 ## Data: sections.json
 
 - 300/300 sections (section 267 manually added from scanned page photo)
-- Schema per section: `{id, text, choices: [{text, target}], enemies: [{name, eletero, tamadasi_kepesseg, vedettsegi_szint, damage}], is_ending, has_combat, has_luck_test}`
+- Schema per section:
+  ```
+  {
+    id, text,
+    choices: [{ text, target, requires?: ["item"] }],
+    enemies: [{ name, eletero, tamadasi_kepesseg, vedettsegi_szint, damage }],
+    is_ending, has_combat, has_luck_test,
+    has_shop?: true,
+    shop?: { items: [{ item, note?, effect?, price, currency, unique?, stat_bonus? }] },
+    takes_items?: ["Item name"],
+    gives_items?: [{ item, note?, effect?, qty?, stat_bonus? }],
+    gold_cost?: number
+  }
+  ```
 - 18 sections with extracted enemy stat blocks
 - Section 4 is the only multi-foe section (Világcsavargó + Kereskedő)
 - Section 246 has garbled OCR mid-text — needs manual PDF check
+- Section 67: shop with 9 items (Kötél, Buzogány, Pallos, Gyógyital, Extra Gyógyital, Bronzmajzs, Acélpajzs, Bross, Sárkányvér)
+- Section 131: item exchange — takes Amulett, gives Tengeri kagyló + Sziromkesztyű
+- Requires implemented on: 252 (Kötél), 220 (Amulett), 55/198/298 (Tengeri kagyló / Varázsgyűrű), 109/234 (Sziromkesztyű), 265 (Gyorsító ital)
 
 ## Data: rules.json
 
 - 5 stats with roll formulas
 - 5 races: Ember (baseline, no modifiers), Felfödi ember, Óriás, Manó, Tünder
-- Starting equipment (7 items)
+- Starting equipment (8 items): Varázskard (2-7), Gyógyító ital ×2 (15 HP), Gyorsító ital, Varázsgyűrű, Amulett (+3 all stats / −2 dmg), Étel és ital, Varázskőnyv, Aranypénz ×200
+- Amulett has `stat_bonus: {eletero:3, tamadasi_kepesseg:3, vedettsegi_szint:3, szerencse:3, varazserő:3}`
 - Combat rules, luck test rules
 - 16-entry damage table
 - 11 attack spells, 12 defense spells
