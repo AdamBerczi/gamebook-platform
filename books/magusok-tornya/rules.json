@@ -1,0 +1,299 @@
+{
+  "book_id": "magusok-tornya",
+
+  "stats": {
+    "eletero": {
+      "label": "Életerő",
+      "description": "Fizikai állapot. Ha nullára csökken, meghaltál.",
+      "roll": "4d6 + 10",
+      "min": 14,
+      "max": 34
+    },
+    "tamadasi_kepesseg": {
+      "label": "Támadási képesség",
+      "description": "Meghatározza, mennyire jól harcolsz.",
+      "roll": "2d6 + 6",
+      "min": 8,
+      "max": 18
+    },
+    "vedettsegi_szint": {
+      "label": "Védettségi szint",
+      "description": "Minél magasabb, annál nehezebb megsebesíteni.",
+      "roll": "2d6 + 6",
+      "min": 8,
+      "max": 18
+    },
+    "szerencse": {
+      "label": "Szerencse",
+      "description": "Szerencsepróbánál használt. Csökken minden használat után. Alváskor NEM áll vissza.",
+      "roll": "1d6 + 6",
+      "min": 7,
+      "max": 12
+    },
+    "varazserő": {
+      "label": "Varázserő",
+      "description": "Varázslatok használatához szükséges pontok. Alvás után visszaáll az eredeti értékre.",
+      "roll": "4d6 + 6",
+      "min": 10,
+      "max": 30
+    }
+  },
+
+  "races": {
+    "felfodi_ember": {
+      "label": "Felfödi ember",
+      "description": "Erős és szívós.",
+      "modifiers": {
+        "eletero": 6,
+        "tamadasi_kepesseg": 3,
+        "szerencse": -2
+      }
+    },
+    "orias": {
+      "label": "Óriás",
+      "description": "Hatalmas termetű lény.",
+      "modifiers": {
+        "eletero": 4,
+        "vedettsegi_szint": -1,
+        "tamadasi_kepesseg": 3
+      }
+    },
+    "mano": {
+      "label": "Manó",
+      "description": "Apróska teremtmény.",
+      "modifiers": {
+        "szerencse": 2,
+        "varazserő": -4
+      }
+    },
+    "tunder": {
+      "label": "Tünder",
+      "description": "Vékony testalkuatú humanoid.",
+      "modifiers": {
+        "szerencse": 2,
+        "eletero": -2,
+        "tamadasi_kepesseg": -3,
+        "vedettsegi_szint": 2,
+        "varazserő": 6
+      }
+    }
+  },
+
+  "starting_equipment": [
+    { "item": "Kard", "note": "1-6 veszteséget okoz" },
+    { "item": "Fáklya", "quantity": 4 },
+    { "item": "Étel és ital", "quantity": 3, "unit": "nap" },
+    { "item": "Gyógyital", "quantity": 1, "effect": "12 életerőpontot gyógyít" },
+    { "item": "Varázskőnyv", "note": "Nélküle nem tudsz varázsolni" },
+    { "item": "Aranypénz", "quantity": 20 },
+    { "item": "Ezüstpénz", "quantity": 5 }
+  ],
+
+  "combat": {
+    "initiative": "Mindkét fél dob 1d6. Aki nagyobbat dobott, az támad először. Döntetlen esetben újra kell dobni.",
+    "attack_roll": "2d6 + támadási képesség. Ha az eredmény nagyobb, mint az ellenfél védettségi szintje, a támadás sikeres.",
+    "unarmed_damage": "1 életerőpont",
+    "flee": {
+      "normal": "Az ellenfélnek jár még egy ingyenes támadás, amelyhez +10 jár a támadóerejéhez.",
+      "multiple_enemies": "Minden ellenfél, aki elérheti a karaktert, jogosult az utolsó csapásra."
+    }
+  },
+
+  "luck_test": {
+    "roll": "2d6",
+    "success": "Dobás <= aktuális szerencse érték",
+    "effect": "Minden használat után -1 szerencse, akár sikeres volt, akár nem.",
+    "recovery": "A szerencse alváskor NEM áll vissza automatikusan."
+  },
+
+  "damage_table": [
+    { "range": "1-2",  "formula": "d6/3",   "note": "kerekítés matematikai szabályok szerint" },
+    { "range": "1-3",  "formula": "d6/2" },
+    { "range": "1-6",  "formula": "d6" },
+    { "range": "2-3",  "formula": "d6/3+1" },
+    { "range": "2-4",  "formula": "d6/2+1" },
+    { "range": "2-7",  "formula": "d6+1" },
+    { "range": "3-8",  "formula": "d6+2" },
+    { "range": "4-9",  "formula": "d6+3" },
+    { "range": "2-12", "formula": "d6*2" },
+    { "range": "3-18", "formula": "d6*3" },
+    { "range": "4-24", "formula": "d6*4" },
+    { "range": "5-30", "formula": "d6*5" },
+    { "range": "6-11", "formula": "d6+5" },
+    { "range": "6-16", "formula": "2d6+2" },
+    { "range": "7-22", "formula": "3d6+4" },
+    { "range": "7-27", "formula": "4d6+3" }
+  ],
+
+  "attack_spells": [
+    {
+      "roll": 2,
+      "name": "Ködpatkány",
+      "cost": 5,
+      "damage": "speciális",
+      "description": "Egy másfél méter magas patkány alakú szörnyeteg materializálódik. Négy körön át körönként 3 életerőpont veszteséget okoz. Csak mágikus úton pusztítható el."
+    },
+    {
+      "roll": 3,
+      "name": "Energialövedék",
+      "cost": 6,
+      "damage": "8",
+      "description": "Apró energiafoltok, összesen 8 pont veszteség."
+    },
+    {
+      "roll": 4,
+      "name": "Tűzcsapás",
+      "cost": 8,
+      "damage": "6",
+      "description": "Az áldozatot lángok borítják el. A hatás rövid, a veszteség maradandó."
+    },
+    {
+      "roll": 5,
+      "name": "Vakság",
+      "cost": 12,
+      "damage": "speciális",
+      "description": "Az áldozat elveszíti látóképességét. Támadóereje 5 ponttal csökken, automatikusan elveszíti a kezdeményezést. Három támadásig tart."
+    },
+    {
+      "roll": 6,
+      "name": "Fagysugár",
+      "cost": 6,
+      "damage": "12",
+      "description": "Hirtelen jégpáncél fedi be az áldozat testét, hideg fájdalmat okozva."
+    },
+    {
+      "roll": 7,
+      "name": "Halálvarázs",
+      "cost": "mind",
+      "cost_min": 30,
+      "damage": "30",
+      "description": "Az áldozat teste rendkívüli gyorsasággal öregedni kezd. Nem hat csontváz, zombi, lidérc és más holton-túli lényekre. A varázsló az összes pontját felhasználja."
+    },
+    {
+      "roll": 8,
+      "name": "Fullasztás",
+      "cost": 8,
+      "damage": "speciális",
+      "description": "Az áldozat fuldokolni kezd, elveszíti a kezdeményezést a következő összecsapásoknál. Két támadásig tart."
+    },
+    {
+      "roll": 9,
+      "name": "Rothasztás",
+      "cost": 8,
+      "damage": "15",
+      "description": "Az áldozat teste rohadni kezd, fájdalmakat és veszteséget okozva."
+    },
+    {
+      "roll": 10,
+      "name": "Ártó Szem",
+      "cost": 10,
+      "damage": "speciális",
+      "description": "Az áldozat megremeg a varázsló pillantásától, védelme 5 ponttal csökken, automatikusan elveszíti a következő kezdeményezéseket. Két támadásig tart."
+    },
+    {
+      "roll": 11,
+      "name": "Erős Karok",
+      "cost": 6,
+      "damage": "speciális",
+      "description": "A varázsló saját támadóereje 4 ponttal nő. Öt támadáson keresztül tart."
+    },
+    {
+      "roll": 12,
+      "name": "Kettős Csapás",
+      "cost": 18,
+      "damage": "speciális",
+      "description": "Az ellenfél a következő négy körben minden rá irányuló veszteség duplájét szenvedi el. Mágikus fegyverek veszteségét nem duplázza."
+    }
+  ],
+
+  "defense_spells": [
+    {
+      "roll": 2,
+      "name": "Szélvárás",
+      "cost": 8,
+      "protects_against": "Ködpatkány",
+      "activation_roll": "1-5",
+      "description": "Szél támad fel, és szétoszlatja a Ködpatkányt."
+    },
+    {
+      "roll": 3,
+      "name": "Energiapajzs",
+      "cost": 6,
+      "protects_against": "Energialövedék",
+      "activation_roll": "1-4",
+      "description": "Vibráló erőtér, amely hárítja az Energialövedékeket."
+    },
+    {
+      "roll": 4,
+      "name": "Jégpajzs",
+      "cost": 6,
+      "protects_against": "Tűzcsapás",
+      "activation_roll": "1-4",
+      "description": "Lehűti a varázsló testét, semlegesíti a Tűzcsapást."
+    },
+    {
+      "roll": 5,
+      "name": "Ymdar Szeme",
+      "cost": 12,
+      "protects_against": "Vakság",
+      "activation_roll": "1-5",
+      "description": "Lehetővé teszi, hogy Vakság esetén is láthasson a varázsló."
+    },
+    {
+      "roll": 6,
+      "name": "Tűztükör",
+      "cost": 7,
+      "protects_against": "Fagysugár",
+      "activation_roll": "1-3",
+      "description": "Elnyeli a Fagysugarat."
+    },
+    {
+      "roll": 7,
+      "name": "Élet Vize",
+      "cost": 18,
+      "protects_against": "Halálvarázs",
+      "activation_roll": "1-3",
+      "description": "Semlegesíti a Halálvarázst és 5 pontot visszagyógyít. Ha nem védekezésként használják, 20 pontot gyógyít."
+    },
+    {
+      "roll": 8,
+      "name": "Nagy Tüdő",
+      "cost": 8,
+      "protects_against": "Fullasztás",
+      "activation_roll": "1-5",
+      "description": "Semlegesíti a Fullasztást."
+    },
+    {
+      "roll": 9,
+      "name": "Gyógyító Kéz",
+      "cost": 8,
+      "protects_against": "Rothasztás",
+      "activation_roll": "1-5",
+      "description": "A Rothasztás ellenszere. Ha nem védekezésként használják, 15 életerőpontot gyógyít."
+    },
+    {
+      "roll": 10,
+      "name": "Láthatatlanság",
+      "cost": 10,
+      "protects_against": "Ártó Szem",
+      "activation_roll": "1-4",
+      "description": "Elrejt az Ártó Szem elől négy körön át. Láthatatlanul gyógyíthat vagy menekülhet, de nem harcolhat."
+    },
+    {
+      "roll": 11,
+      "name": "Gyöngeség",
+      "cost": 8,
+      "protects_against": "Erős Karok",
+      "activation_roll": "1-4",
+      "description": "Semlegesíti az Erős Karok hatását, vagy 5 ponttal csökkenti az ellenfél támadóerejét."
+    },
+    {
+      "roll": 12,
+      "name": "Semlegesítés",
+      "cost": 15,
+      "protects_against": "Kettős Csapás",
+      "activation_roll": "1-3",
+      "description": "Bármilyen varázslat hatását képes semlegesíteni, kivéve a Halálvarázst."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Pipeline intermediates — regenerate with pipeline scripts
+books/*/pages/
+books/*/raw-text/
+books/*/cleaned-text/
+
+# Source PDFs — copyright, do not distribute
+books/*/*.pdf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS
+.DS_Store
+Thumbs.db
