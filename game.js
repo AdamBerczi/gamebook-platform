@@ -529,10 +529,53 @@ function loadSection(id) {
     }
   }
 
+  // Process on_enter events (first-visit only for item/gold/stat changes)
+  if (firstVisit) applyEvents(data, 'on_enter');
+
   renderSection(data);
   renderStats();
   document.getElementById('main').scrollTo({ top: 0, behavior: 'smooth' });
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ── EVENT SYSTEM ──────────────────────────────────────────────────────────────
+
+function applyEvents(sectionData, timing) {
+  const events = sectionData.events || [];
+  const player = state.character.current;
+
+  for (const ev of events) {
+    if (ev.kind === 'STAT_CHANGE' && (ev.timing || 'on_enter') === timing) {
+      const delta = ev.formula ? rollDamage(ev.formula.replace(/^-/, '')) * -1 : (ev.amount || 0);
+      if (delta === 0) continue;
+      player[ev.stat] = (player[ev.stat] || 0) + delta;
+      const label = delta < 0 ? `${delta}` : `+${delta}`;
+      const statNames = {
+        eletero: 'Életerő', tamadasi_kepesseg: 'Támadási képesség',
+        vedettsegi_szint: 'Védettségi szint', szerencse: 'Szerencse', varazserő: 'Varázserő',
+      };
+      showItemToast(`${statNames[ev.stat] || ev.stat} ${label}${ev.reason ? ' (' + ev.reason + ')' : ''}`, delta > 0);
+    } else if (ev.kind === 'ITEM_GAIN' && (ev.timing || 'on_enter') === timing) {
+      for (const item of (ev.items || [])) addItemToInventory(item);
+    } else if (ev.kind === 'ITEM_LOSE' && (ev.timing || 'on_enter') === timing) {
+      for (const name of (ev.items || [])) removeItemByName(name);
+    } else if (ev.kind === 'GOLD_CHANGE' && (ev.timing || 'on_enter') === timing) {
+      if (ev.amount < 0) deductGold(-ev.amount);
+      else {
+        const gold = state.character.inventory.find(i => i.name === 'Aranypénz');
+        if (gold) gold.qty += ev.amount;
+        renderInventory();
+      }
+    } else if (ev.kind === 'REST') {
+      for (const stat of (ev.restores || [])) {
+        if (state.character.base[stat] !== undefined) player[stat] = state.character.base[stat];
+      }
+    }
+  }
+}
+
+function getCombatEvents(sectionData) {
+  return (sectionData?.events || []).find(e => e.kind === 'COMBAT') || null;
 }
 
 function deductGold(amount) {
@@ -752,18 +795,52 @@ function renderLuckTestBlock(container, data) {
 // ── COMBAT SYSTEM ─────────────────────────────────────────────────────────────
 
 function renderCombatBlock(container, data) {
+  const combatEv = getCombatEvents(data);
+  const specialRules = combatEv?.special_rules || [];
+
+  // Stamp special rules onto each enemy object by name
+  const enemies = data.enemies.map(e => {
+    const obj = { ...e, currentHp: e.eletero };
+    for (const rule of specialRules) {
+      if (rule.target && rule.target !== e.name) continue;
+      if (rule.type === 'enemy_regenerate') obj._regenerate = rule.amount;
+      if (rule.type === 'multi_attack')     obj._multiAttack = rule.count;
+      if (rule.type === 'stat_drain')       obj._statDrain = { stat: rule.stat, amount: rule.amount };
+    }
+    return obj;
+  });
+
   state.combat = {
-    enemies:             data.enemies.map(e => ({ ...e, currentHp: e.eletero })),
+    enemies,
     sectionData:         data,
-    playerAttackBonus:   0,   // current active bonus (Erős Karok)
-    strongArmAttacksLeft: 0,  // remaining player attacks with the bonus
-    speedPotion:         false, // Gyorsító ital: two attacks per round
+    playerAttackBonus:   0,
+    strongArmAttacksLeft: 0,
+    speedPotion:         false,
+    noFlee: specialRules.some(r => r.type === 'no_flee'),
   };
+
+  // Apply player_pre_damage before combat starts
+  for (const rule of specialRules) {
+    if (rule.type === 'player_pre_damage') {
+      const player = state.character.current;
+      const delta = rule.formula
+        ? rollDamage(rule.formula.replace(/^-/, '')) * -1
+        : (rule.amount || 0);
+      player[rule.stat || 'eletero'] += delta;
+      const msg = `⚡ ${rule.reason || 'Előzetes sérülés'}: ${delta} életerő`;
+      // Will appear in combat log once the UI is rendered
+      state.combat._preDamageLog = (state.combat._preDamageLog || []);
+      state.combat._preDamageLog.push(msg);
+    }
+  }
   const block = document.createElement('div');
   block.className = 'system-block combat-block';
   block.id = 'combat-block';
   container.appendChild(block);
   renderCombatUI(block);
+  // Flush pre-damage messages into the combat log after UI exists
+  for (const msg of (state.combat._preDamageLog || [])) addCombatLog(msg);
+  renderStats();
 }
 
 function renderCombatUI(block) {
@@ -1136,6 +1213,11 @@ function resolvePlayerAttackOn(targetIdx, secondAttack = false) {
     }
     enemy.currentHp -= dmg;
     addCombatLog(`Találat! ${enemy.name} ${dmg} életerőt veszít. (marad: ${Math.max(0, enemy.currentHp)})`);
+    // Regeneration: enemy heals after each hit it receives
+    if ((enemy._regenerate || 0) > 0 && enemy.currentHp > 0) {
+      enemy.currentHp = Math.min(enemy.eletero, enemy.currentHp + enemy._regenerate);
+      addCombatLog(`${enemy.name} regenerálódik: +${enemy._regenerate} ÉL (marad: ${enemy.currentHp})`);
+    }
     updateEnemyHpBar(targetIdx);
     if (enemy.currentHp <= 0) {
       addCombatLog(`${enemy.name} elesett!`);
@@ -1203,33 +1285,49 @@ async function resolveAllEnemiesAttack() {
       continue;
     }
 
-    const roll  = roll2d6();
-    const power = roll + enemy.tamadasi_kepesseg;
-    addCombatLog(`${enemy.name}: ${roll} + ${enemy.tamadasi_kepesseg} = ${power} vs ${player.vedettsegi_szint}`);
+    // multi_attack: enemy attacks N times per round
+    const attackCount = enemy._multiAttack || 1;
+    if (attackCount > 1) addCombatLog(`${enemy.name} ${attackCount} csapást mér!`);
 
-    if (power > player.vedettsegi_szint) {
-      let dmg = calcDamage(enemy.damage);
-      const hasAmulett = state.character.inventory.some(i => i.name === 'Amulett');
-      if (hasAmulett && dmg > 0) {
-        dmg = Math.max(0, dmg - 2);
-        addCombatLog(`Amulett: 2 pont sebzés elnyelve.`);
+    for (let atk = 0; atk < attackCount; atk++) {
+      if (livingEnemies().length === 0 || player.eletero <= 0) break;
+      await new Promise(r => setTimeout(r, atk > 0 ? 500 : 0));
+
+      const roll  = roll2d6();
+      const power = roll + enemy.tamadasi_kepesseg;
+      addCombatLog(`${enemy.name}: ${roll} + ${enemy.tamadasi_kepesseg} = ${power} vs ${player.vedettsegi_szint}`);
+
+      if (power > player.vedettsegi_szint) {
+        let dmg = calcDamage(enemy.damage);
+        const hasAmulett = state.character.inventory.some(i => i.name === 'Amulett');
+        if (hasAmulett && dmg > 0) {
+          dmg = Math.max(0, dmg - 2);
+          addCombatLog(`Amulett: 2 pont sebzés elnyelve.`);
+        }
+        player.eletero -= dmg;
+        addCombatLog(`Találat! ${dmg} életerőt veszítesz. (marad: ${Math.max(0, player.eletero)})`);
+        // stat_drain: successful hit drains a player stat permanently
+        if (enemy._statDrain) {
+          const { stat, amount } = enemy._statDrain;
+          player[stat] = Math.max(0, (player[stat] || 0) - amount);
+          const statNames = { tamadasi_kepesseg: 'Támadási képesség', vedettsegi_szint: 'Védettségi szint', szerencse: 'Szerencse' };
+          addCombatLog(`${enemy.name}: ${statNames[stat] || stat} −${amount} (marad: ${player[stat]})`);
+        }
+        renderStats();
+        updatePlayerHpBar();
+        if (player.eletero <= 0) { combatDeath(); return; }
+        // Empátia Pajzs: reflect half damage back to attacker
+        if ((state.combat.empátiaPajzsRounds || 0) > 0) {
+          const reflect = Math.floor(dmg / 2);
+          enemy.currentHp -= reflect;
+          state.combat.empátiaPajzsRounds--;
+          addCombatLog(`🛡 Empátia Pajzs: ${reflect} pont visszaverve ${enemy.name}-re. (még ${state.combat.empátiaPajzsRounds} kör)`);
+          updateEnemyHpBar(e.idx);
+          if (enemy.currentHp <= 0) { addCombatLog(`${enemy.name} elesett!`); markEnemyDead(e.idx); }
+        }
+      } else {
+        addCombatLog(`${enemy.name} elvétette a csapást.`);
       }
-      player.eletero -= dmg;
-      addCombatLog(`Találat! ${dmg} életerőt veszítesz. (marad: ${Math.max(0, player.eletero)})`);
-      renderStats();
-      updatePlayerHpBar();
-      if (player.eletero <= 0) { combatDeath(); return; }
-      // Empátia Pajzs: reflect half damage back to attacker
-      if ((state.combat.empátiaPajzsRounds || 0) > 0) {
-        const reflect = Math.floor(dmg / 2);
-        enemy.currentHp -= reflect;
-        state.combat.empátiaPajzsRounds--;
-        addCombatLog(`🛡 Empátia Pajzs: ${reflect} pont visszaverve ${enemy.name}-re. (még ${state.combat.empátiaPajzsRounds} kör)`);
-        updateEnemyHpBar(e.idx);
-        if (enemy.currentHp <= 0) { addCombatLog(`${enemy.name} elesett!`); markEnemyDead(e.idx); }
-      }
-    } else {
-      addCombatLog(`${enemy.name} elvétette a csapást.`);
     }
 
     // ── Tick timed debuffs after each enemy attack ──
