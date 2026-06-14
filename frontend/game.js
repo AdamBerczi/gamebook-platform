@@ -522,11 +522,162 @@ function rollInitiative() {
 function showAttackButton(who) {
   const actions = document.getElementById('combat-actions');
   if (who === 'player') {
-    actions.innerHTML = `<button class="btn-roll" id="btn-attack">Támadás (2d6)</button>`;
-    document.getElementById('btn-attack').addEventListener('click', resolvePlayerAttack);
+    if (canCastSpell()) {
+      actions.innerHTML = `
+        <div class="combat-action-row">
+          <button class="btn-roll" id="btn-attack">⚔ Kard (2d6)</button>
+          <button class="btn-roll btn-magic" id="btn-spell">✦ Varázslat</button>
+        </div>`;
+      document.getElementById('btn-attack').addEventListener('click', resolvePlayerAttack);
+      document.getElementById('btn-spell').addEventListener('click', showSpellChoice);
+    } else {
+      actions.innerHTML = `<button class="btn-roll" id="btn-attack">Támadás (2d6)</button>`;
+      document.getElementById('btn-attack').addEventListener('click', resolvePlayerAttack);
+    }
   } else {
     actions.innerHTML = `<button class="btn-roll" id="btn-enemy-attack">Ellenfél támad (2d6)</button>`;
     document.getElementById('btn-enemy-attack').addEventListener('click', resolveEnemyAttack);
+  }
+}
+
+// ── MAGIC SYSTEM ──────────────────────────────────────────────────────────────
+
+function canCastSpell() {
+  const hasBook = state.character.inventory.some(i => i.name === 'Varázskőnyv');
+  return hasBook && state.character.current['varazserő'] > 0;
+}
+
+function showSpellChoice() {
+  const actions = document.getElementById('combat-actions');
+  const mp = state.character.current['varazserő'];
+  actions.innerHTML = `
+    <div class="spell-choice-wrap">
+      <div class="spell-choice-header">
+        <span class="spell-choice-label">Varázserő: <strong>${mp}</strong></span>
+        <button class="btn-secondary" id="btn-spell-cancel">Vissza</button>
+      </div>
+      <div class="system-block-desc">Dobj 2 kockával, és megtudod, melyik varázslatod aktiválódik!</div>
+      <button class="btn-roll btn-magic" id="btn-spell-roll">Varázslat dobása (2d6)</button>
+    </div>`;
+  document.getElementById('btn-spell-cancel').addEventListener('click', () => showAttackButton('player'));
+  document.getElementById('btn-spell-roll').addEventListener('click', resolveSpellRoll);
+}
+
+function resolveSpellRoll() {
+  const roll   = roll2d6();
+  const spell  = rules.attack_spells.find(s => s.roll === roll);
+  const mp     = state.character.current['varazserő'];
+  const cost   = spell.cost === 'mind' ? mp : spell.cost;
+
+  const actions = document.getElementById('combat-actions');
+
+  if (cost > mp) {
+    actions.innerHTML = `
+      <div class="spell-result no-mp">
+        <div class="spell-name">${spell.name}</div>
+        <div class="spell-meta">Dobás: ${roll} — Kell: ${cost} VE, van: ${mp} VE</div>
+        <div class="spell-desc">Nincs elég varázserőd ehhez a varázslathoz!</div>
+        <button class="btn-roll" id="btn-fallback-attack" style="margin-top:0.75rem">⚔ Kard helyett</button>
+      </div>`;
+    document.getElementById('btn-fallback-attack').addEventListener('click', resolvePlayerAttack);
+    return;
+  }
+
+  // Show the spell card and a confirm button
+  const dmgText = isNaN(parseInt(spell.damage))
+    ? `Speciális: ${spell.description}`
+    : `${spell.damage} életerőpont veszteség`;
+
+  actions.innerHTML = `
+    <div class="spell-result">
+      <div class="spell-name">${spell.name}</div>
+      <div class="spell-meta">Dobás: ${roll} &nbsp;·&nbsp; Kész: ${cost} VE &nbsp;·&nbsp; Sebzés: ${spell.damage}</div>
+      <div class="spell-desc">${spell.description}</div>
+      <button class="btn-roll btn-magic" id="btn-cast-confirm" style="margin-top:0.75rem">Elsütés!</button>
+    </div>`;
+  document.getElementById('btn-cast-confirm').addEventListener('click', () => resolveSpellDamage(spell, cost));
+}
+
+function resolveSpellDamage(spell, cost) {
+  const enemy  = state.combat.enemies[state.combat.currentEnemyIndex];
+  const player = state.character.current;
+
+  // Deduct MP
+  player['varazserő'] = Math.max(0, player['varazserő'] - cost);
+  renderStats();
+
+  // Calculate damage
+  let dmg = 0;
+  let logMsg = '';
+  const numericDmg = parseInt(spell.damage);
+
+  if (!isNaN(numericDmg)) {
+    // Fixed numeric damage
+    dmg = numericDmg;
+    logMsg = `${spell.name}: ${dmg} pont sebzés!`;
+  } else {
+    // Special spells — apply simplified damage + effect
+    dmg = applySpellEffect(spell, enemy, player);
+    logMsg = `${spell.name} (különleges): ${dmg} pont sebzés.`;
+  }
+
+  enemy.currentHp -= dmg;
+  addCombatLog(logMsg);
+  updateEnemyHpBar();
+
+  if (enemy.currentHp <= 0) {
+    state.combat.currentEnemyIndex++;
+    if (state.combat.currentEnemyIndex >= state.combat.enemies.length) {
+      combatVictory();
+    } else {
+      const next = state.combat.enemies[state.combat.currentEnemyIndex];
+      addCombatLog(`${enemy.name} elesett! Következő: ${next.name}`);
+      setTimeout(() => renderCombatUI(document.getElementById('combat-block')), 1200);
+    }
+    return;
+  }
+
+  setTimeout(() => showAttackButton('enemy'), 800);
+}
+
+// Simplified effects for "speciális" spells — returns damage dealt
+function applySpellEffect(spell, enemy, player) {
+  switch (spell.name) {
+    case 'Ködpatkány':
+      // 3 hp/round × 4 rounds = 12 total (simplified: instant)
+      return 12;
+    case 'Vakság':
+      // Enemy −5 attack for rest of combat
+      enemy.tamadasi_kepesseg = Math.max(0, enemy.tamadasi_kepesseg - 5);
+      addCombatLog(`${enemy.name} megvakult! Támadása −5 pontra csökkent.`);
+      return 0;
+    case 'Fullasztás':
+      // Enemy skips its next attack — flag it
+      state.combat.enemySkipTurns = (state.combat.enemySkipTurns || 0) + 2;
+      addCombatLog(`${enemy.name} fuldokol! Kihagyja a következő ${2} körét.`);
+      return 0;
+    case 'Ártó Szem':
+      // Enemy −5 defense
+      enemy.vedettsegi_szint = Math.max(0, enemy.vedettsegi_szint - 5);
+      addCombatLog(`${enemy.name} megremeg! Védettsége −5 pontra csökkent.`);
+      return 0;
+    case 'Erős Karok':
+      // Player +4 attack
+      player.tamadasi_kepesseg += 4;
+      state.combat.playerAttackBonus = (state.combat.playerAttackBonus || 0) + 4;
+      addCombatLog('Izmaid felpumpálódnak! +4 támadóerő.');
+      return 0;
+    case 'Kettős Csapás':
+      // Next 4 rounds of damage are doubled
+      state.combat.doubleDamageRounds = (state.combat.doubleDamageRounds || 0) + 4;
+      addCombatLog('Kettős Csapás aktív! A következő 4 körben duplán hat a sebzés.');
+      return 0;
+    case 'Halálvarázs':
+      // Instant kill (uses all MP — already spent)
+      addCombatLog(`${enemy.name} teste elöregszik és összeomlik!`);
+      return enemy.currentHp + 999;
+    default:
+      return 10;
   }
 }
 
@@ -540,7 +691,13 @@ function resolvePlayerAttack() {
   addCombatLog(`Dobás: ${roll} + ${player.tamadasi_kepesseg} = ${power} vs ${enemy.vedettsegi_szint}`);
 
   if (power > enemy.vedettsegi_szint) {
-    const dmg = calcDamage(enemy.damage);
+    let dmg = calcDamage(enemy.damage);
+    // Kettős Csapás: double damage while active
+    if (combat.doubleDamageRounds > 0) {
+      dmg *= 2;
+      combat.doubleDamageRounds--;
+      addCombatLog(`Kettős Csapás aktív! (még ${combat.doubleDamageRounds} kör)`);
+    }
     enemy.currentHp -= dmg;
     addCombatLog(`Találat! ${enemy.name} ${dmg} életerőt veszít. (marad: ${Math.max(0, enemy.currentHp)})`);
     updateEnemyHpBar();
@@ -564,8 +721,17 @@ function resolvePlayerAttack() {
 }
 
 function resolveEnemyAttack() {
-  const roll   = roll2d6();
   const combat = state.combat;
+
+  // Fullasztás / skip turns
+  if (combat.enemySkipTurns > 0) {
+    combat.enemySkipTurns--;
+    addCombatLog('Az ellenfél fuldokol — kihagyja a kört!');
+    setTimeout(() => showAttackButton('player'), 800);
+    return;
+  }
+
+  const roll   = roll2d6();
   const enemy  = combat.enemies[combat.currentEnemyIndex];
   const player = state.character.current;
   const power  = roll + enemy.tamadasi_kepesseg;
