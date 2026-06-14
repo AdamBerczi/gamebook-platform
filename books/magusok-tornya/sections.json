@@ -1112,11 +1112,11 @@
       "text": "(Ha már voltál itt, lapozz a fejezet végén megadott\nszámok valamelyikére!)\n\nEgy üzletet keresve bandukelsz az utcákon, egyszer\ncsak a szemed egy tábla szövegén akad meg: \"Útazó!\nEgy lépést se tovább! Itt mindent megtalálsz, ami kell-\nhet egy út során!\"\n\nBelépszv, s egy hatalmas épületben találod magad,\nahol azonban minden megtálálható. Fegyverek, pajz-\nsok, utazóládák, élelmiszerek, sót még gyógynovéy-\nnyeket is felfedezl az egyik pulton.\n\nPénzes erszényednek megfelelőtben vasárolsz. (Ne\nfelejtsd el feltüntetni a Kalandiapon a tárorgyakat!)\n\nKötél - 1 arany\nBuzogány (3-8 ÉP veszteségét okoz) - 35 arany\nPallos (4-9 ÉP veszteségét okoz) - 50 arany\nGyógyital (6 ÉP-t gyógyít) - 25 arany\nExtra Gyógyital (15 ÉP-t gyógyít) - 60 arany\nBronzmaizs (+5 a védetteséghez) - 25 arany\nAcélpajzs (+10 a védetteséghez) - 40 arany\nBross (+5 az életerőhöz) - 50 arany\nSárkányvér (+5 a támadáshoz) - 50 arany\n\nHa Világcsavargó emlélett egy varázslót, ám még nem\nkeredet fel, most viszont megjönn, lapozz a 36-ra!\nHa már úgy érzed, mindent szereztél, ami az utad\nsorán szükséges lehet, lapozz a 165-re!",
       "choices": [
         {
-          "text": "keredet fel, most viszont megjönn,",
+          "text": "Ha Világcsavargó említett egy varázslót, ám még nem keredet fel, most viszont megjönn,",
           "target": 36
         },
         {
-          "text": "során szükséges lehet,",
+          "text": "Ha már úgy érzed, mindent szereztél, ami az utad során szükséges lehet,",
           "target": 165
         }
       ],
@@ -2430,7 +2430,7 @@
       "text": "Mielőtt nekivágnál a sziklaszorosnak, gyorsan eszel valamennyt, és pihensz egy kicsit. (Ennek köszönhetően, ha vannak sebeid, 3 életerőpontod visszagyógyul.)\n\nLapozz a 113-ra!\n\n[ILLUSTRATION: A portrait of a woman with long hair holding a sword above her head]",
       "choices": [
         {
-          "text": ")",
+          "text": null,
           "target": 113
         }
       ],
@@ -3402,7 +3402,7 @@
       "text": "Mivel hosszú út áll mögötted, pihenni szeretnél, ezért keresel egy fogadót. A legelső útba esőbe tersz be. A berendezés alapján megállapítod, hogy a fogadó a középkategória szintjénél egy kicsit magasabb helyet foglal el. Miután bejelentkeztel, majd felszálltál a szobádba, amelyik az első emeletről van, azon nyomban lefekudtél, és hamarosan elaludtál. Utolsó gondolatod az volt, hogy miket kell beszerzned másnap. (4 életpont után gyógyulsz.)\n\nLapozz a 67-re!",
       "choices": [
         {
-          "text": ")",
+          "text": null,
           "target": 67
         }
       ],
@@ -3524,8 +3524,12 @@
       "text": "Lovad egyre nehezebben halad a sziklás talajon, így\nleszállsz, és rövid ideig kantárszáron vezetod. Am a ló\nminduntalan meg-megbotlik; kezd világosan válni\nelőtted, hogy csak hátráltat.\n\nHa magára hagyod a lovat, és nélküle folytatod az\nutad, lapozz a 257-re!\nHa visszafordulsz, hogy a város határában előbb, la-\npozz a 119-re!",
       "choices": [
         {
-          "text": "utad,",
+          "text": "Ha magára hagyod a lovat, és nélküle folytatod az utad,",
           "target": 257
+        },
+        {
+          "text": "Ha visszafordulsz, hogy a város határában előbb biztonságba helyezd a lovat,",
+          "target": 119
         }
       ],
       "enemies": [],
@@ -4302,7 +4306,7 @@
       "text": "Nem vesztegeted az idődet arra, hogy a lovat biztonságos helyre vidd, inkább elengeded a kantárszarát, és nagyot csapsz a ló hátuljára. Az ijedten ugrik egyét, és elszalad a város felé, mintha tudná, merre van biztonságban. Ezután gyalogosan folytatod az utad a Kő-szikla-hegységben.\n\n(A szerencséd 2 ponttal csökken a szívteletlensséged miatt!)\n\nLapozz a 94-re!",
       "choices": [
         {
-          "text": ")",
+          "text": null,
           "target": 94
         }
       ],
@@ -5036,6 +5040,24 @@
       "id": 300,
       "text": "A lépcső tetején egy ősz szakállú, idős férfi áll. Halvány mosoly ül a szája sarkában, s amikor megbeszélal, a szívedbe félelem költözik. Bairbas varázsló az, vagy valaki, aki rendkívül hasonlít rá!\n\n- Gratulálok! Teljesíttetted a próbát, s elnyerted a jogot, hogy tagja légy a Láthatatlan Egyetemnek.\n\nKicsit csodálkozva nézel a varázslóra.\n\n- Tudunk arról, milyen szándék vezérelt ide - magyarázodik az idős férfi -, mint ahogy arról is, hogyan szereztel tudományt a Mágusos Tornyáról. Bár tolvaj voltál, ám hamarosan varázsló lesz belőled. A tanulást persze így sem kerülheted el, bár valóban egyszerűbb lesz egy kicsit a dolgod. Ám egy dolgot ne feledj, varázslónak lenni komoly dolog, s tanulás nélkül sohasem lehetsz igazi mágus! Ám a kitartásod elismerést érdemli!\n\nGratulálunk! Talán nem egészen erre számítottál, ám hidd el, kitartással, leleményességgel és elszántsággal hamarosan igazi varázsló válik majd belőled!\nKalandlap\na játékosnak\n\nÉleterő\nKezdeti: 10\nVáltozott: 32\n\nTámadási képesség\nKezdeti: 12\nVáltozott: 17\n\nVédettségi szint\nKezdeti: 23\nVáltozott:\n\nFelszerelési\ntárgyak\n4 méz\n3 arpa kenyér\n1 szalonna\n1 parasolmoly\n1 tegid-ti\n1 vászonlepel\n1 vászonkötés\n1 hal\n1 hal\n\nSzerencse\nKezdeti: 6\nVáltozott: 5\n\nMágia:\nKezdeti: 25\nVáltozott: 9\n\nArany és egyéb pénzek:\n4 arany, 5 ezüst\n\nDrágakövek:\n\nVarázslatok:\n2 varázslat 3 varázslat\n\nEgyéb:\n\nKalandlap\naz ellenfélnek\n\nÉleterő: 25\nTámadási képesség: 14\nVédettségi szint: 28\nVarázserő:\n\n(3-2)\nJózsefváros\n\nÉleterő: 12\nTámadási képesség: 18\nVédettségi szint: 21\nVarázserő:\n\nÉleterő:\nTámadási képesség:\nVédettségi szint:\nVarázserő:\n\nÉleterő:\nTámadási képesség:\nVédettségi szint:\nVarázserő:\n\nÉleterő:\nTámadási képesség:\nVédettségi szint:\nVarázserő:\n\nÉleterő:\nTámadási képesség:\nVédettségi szint:\nVarázserő:\n\nÉleterő:\nTámadási képesség:\nVédettségi szint:\nVarázserő:\n\nÉleterő:\nTámadási képesség:\nVédettségi szint:\nVarázserő:\nFolyai lételedre mindig is izgalmas Téged a mágia titokzatossága és hatalma. Tisztában vagy azzal, hogy egy varázsló inassaként hosszú éveket kellene tanulással töltened, ám neked erre nincs időd. Létezik azonban egy egyszerűbb út is, a Mágusok Tornya, ahol szinte napok alatt sajátíthatnád el azt a tudást, ami a mana irányításához szükséges.\n\nA terveid megvalósítása érdekében elszegődsz tanoncnak egy varázslóhoz. Talán sikerül megtudnod töle, hogyan juthatsz el a Mágusok Tornyába.\n\nFANTASZTIKUS JÁTÉKKÖNYV!\n\nLégy te a főhős!\n\nJöjj, lépj be a képzeletharcosok sorába, s cselekedj belátásod szerint. Döntsd el te, harcolsz, menekülsz, varázsolsz vagy ravászkodisz, s milyen eszközökkel jutsz el a Mágusok Tornyába! Csak dobókocka, papír, ceruza és radír szükséges, s máris indulhat a játék!\n\nHa sikerrel végig akarod játszani ezt a rejtélyekkel teli, kalandos történetet, fortélyosnak kell lenned, megfontolni döntéseidet, s észben tartani, hogy bár a szerencse segíthet a kockadóbásoknál, nem biztos, hogy mindig te vagy az erősebb...\n\n598\n\nISBN 963-9110-00-0\n\n9 789639 110007",
       "choices": [],
+      "enemies": [],
+      "is_ending": false,
+      "has_combat": true,
+      "has_luck_test": false
+    },
+    "267": {
+      "id": 267,
+      "text": "Egy perce sincs, hogy behúzódtál a sziklatömb mögé, amikor ismét megmozdul a tőled körülbelül háromszáz méterre lévő szikla. Egy sziklaóriás került az utadba.",
+      "choices": [
+        {
+          "text": "Ha rátámadsz,",
+          "target": 108
+        },
+        {
+          "text": "Ha kikerülöd,",
+          "target": 60
+        }
+      ],
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
