@@ -40,6 +40,11 @@
   },
 
   "races": {
+    "ember": {
+      "label": "Ember",
+      "description": "Kiegyensúlyozott alaptulajdonságok, nincs különleges módosító.",
+      "modifiers": {}
+    },
     "felfodi_ember": {
       "label": "Felfödi ember",
       "description": "Erős és szívós.",
