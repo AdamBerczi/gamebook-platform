@@ -279,12 +279,119 @@ function renderDrawerStats() {
 function renderInventory() {
   const list = document.getElementById('inventory-list');
   if (!list) return;
-  list.innerHTML = state.character.inventory.map(item => {
+  list.innerHTML = '';
+
+  state.character.inventory.forEach((item, idx) => {
+    const action = getItemAction(item);
     const qtyStr = item.qty > 1
-      ? `<span class="inventory-qty">×${item.qty}${item.unit ? ' ' + item.unit : ''}</span>`
+      ? `<span class="inventory-qty">×${item.qty}${item.unit ? ' ' + item.unit : ''}</span>`
       : '';
-    return `<li><span>${item.name}</span>${qtyStr}</li>`;
-  }).join('');
+    const hint = action ? `<span class="item-hint">${action.hint}</span>` : '';
+
+    const li = document.createElement('li');
+    li.className = 'inventory-item' + (action ? ' has-action' : '');
+    li.innerHTML = `
+      <div class="inventory-item-row" data-idx="${idx}">
+        <span>${item.name}</span>
+        <div class="inventory-item-meta">${qtyStr}${hint}</div>
+      </div>
+      <div class="item-action-panel hidden" id="item-panel-${idx}"></div>
+    `;
+    if (action) {
+      li.querySelector('.inventory-item-row').addEventListener('click', () => toggleItemPanel(idx, item, action));
+    }
+    list.appendChild(li);
+  });
+}
+
+// ── INVENTORY ACTIONS ─────────────────────────────────────────────────────────
+
+function getItemAction(item) {
+  const note = item.note || '';
+
+  // Weapon: note contains a damage range like "1-6 veszteséget okoz"
+  const dmgMatch = note.match(/(\d+-\d+)\s*veszteség/i);
+  if (dmgMatch) return { type: 'weapon', damage: dmgMatch[1], hint: 'dob' };
+
+  // Potion: note contains heal amount
+  const healMatch = note.match(/(\d+)\s*életerőpontot?\s*gyógyít/i);
+  if (healMatch) return { type: 'potion', heal: parseInt(healMatch[1]), hint: 'iszik' };
+
+  // Food/rations
+  const name = item.name.toLowerCase();
+  if (name.includes('étel') || name.includes('élelem') || name.includes('kenyér') || name.includes('ennivaló')) {
+    return { type: 'food', hint: 'eszik' };
+  }
+
+  return null;
+}
+
+function toggleItemPanel(idx, item, action) {
+  const panel = document.getElementById(`item-panel-${idx}`);
+  const wasOpen = !panel.classList.contains('hidden');
+
+  // Close all panels first
+  document.querySelectorAll('.item-action-panel').forEach(p => p.classList.add('hidden'));
+
+  if (!wasOpen) {
+    panel.classList.remove('hidden');
+    renderItemPanel(panel, item, action, idx);
+  }
+}
+
+function renderItemPanel(panel, item, action, idx) {
+  if (action.type === 'weapon') {
+    const formula = damageFormulaForRange(action.damage);
+    panel.innerHTML = `
+      <div class="item-panel-label">Sebzés: ${action.damage}</div>
+      <button class="item-panel-btn" id="item-roll-${idx}">Sebzés dobása</button>
+      <div class="item-panel-result hidden" id="item-res-${idx}"></div>
+    `;
+    document.getElementById(`item-roll-${idx}`).addEventListener('click', () => {
+      const dmg = formula ? rollDamage(formula) : d6();
+      const el = document.getElementById(`item-res-${idx}`);
+      el.classList.remove('hidden');
+      el.textContent = `${dmg} pont sebzés`;
+    });
+
+  } else if (action.type === 'potion') {
+    const cur = state.character.current.eletero;
+    const max = state.character.max.eletero;
+    const full = cur >= max;
+    panel.innerHTML = `
+      <div class="item-panel-label">+${action.heal} Életerő (max: ${max})</div>
+      <button class="item-panel-btn" id="item-drink-${idx}" ${full ? 'disabled' : ''}>
+        ${full ? 'Életerőd már teljes' : 'Megiszom'}
+      </button>
+    `;
+    document.getElementById(`item-drink-${idx}`).addEventListener('click', () => {
+      state.character.current.eletero = Math.min(max, cur + action.heal);
+      consumeItem(idx);
+    });
+
+  } else if (action.type === 'food') {
+    const mpCur = state.character.current['varazserő'];
+    const mpMax = state.character.max['varazserő'];
+    const full  = mpCur >= mpMax;
+    panel.innerHTML = `
+      <div class="item-panel-label">Pihenés és étkezés — +4 Varázserő</div>
+      <button class="item-panel-btn" id="item-eat-${idx}" ${full ? 'disabled' : ''}>
+        ${full ? 'Varázserőd már teljes' : `Elfogyaszt (marad: ${item.qty - 1} nap)`}
+      </button>
+    `;
+    document.getElementById(`item-eat-${idx}`).addEventListener('click', () => {
+      state.character.current['varazserő'] = Math.min(mpMax, mpCur + 4);
+      consumeItem(idx);
+    });
+  }
+}
+
+function consumeItem(idx) {
+  const item = state.character.inventory[idx];
+  item.qty--;
+  if (item.qty <= 0) state.character.inventory.splice(idx, 1);
+  renderStats();
+  renderInventory();
 }
 
 // ── SECTION LOADING ───────────────────────────────────────────────────────────

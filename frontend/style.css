@@ -356,21 +356,101 @@ body {
   gap: 4px;
 }
 
-.inventory-list li {
+.inventory-item {
   font-size: 13px;
   color: var(--text-muted);
-  padding: 4px 0;
   border-bottom: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
 }
 
-.inventory-list li:last-child { border-bottom: none; }
+.inventory-item:last-child { border-bottom: none; }
+
+.inventory-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.inventory-item.has-action .inventory-item-row {
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  padding: 5px 4px;
+  margin: 0 -4px;
+  transition: background 0.12s;
+}
+
+.inventory-item.has-action .inventory-item-row:hover {
+  background: var(--accent-light);
+  color: var(--text);
+}
+
+.inventory-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
 
 .inventory-qty {
   font-size: 12px;
   color: var(--text-faint);
 }
+
+.item-hint {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-light);
+  border-radius: 99px;
+  padding: 1px 7px;
+  letter-spacing: 0.03em;
+}
+
+/* Item action panel */
+.item-action-panel {
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.item-action-panel.hidden { display: none; }
+
+.item-panel-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.item-panel-btn {
+  width: 100%;
+  padding: 6px 10px;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.12s, background 0.12s;
+  text-align: left;
+}
+
+.item-panel-btn:hover  { border-color: var(--accent); background: var(--accent-light); }
+.item-panel-btn:disabled { opacity: 0.45; cursor: default; }
+
+.item-panel-result {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-align: center;
+  padding: 2px 0;
+}
+
+.item-panel-result.hidden { display: none; }
 
 .race-badge-wrap {
   margin-top: auto;
