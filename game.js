@@ -1262,9 +1262,18 @@ async function resolveAllEnemiesAttack() {
 }
 
 function calcDamage(damageRange) {
-  if (!damageRange) return 1;
-  const formula = damageFormulaForRange(damageRange);
-  return formula ? rollDamage(formula) : 1;
+  if (!damageRange) return rollDamage('d6');
+  // OCR often produces en-dash, em-dash, or box-drawing chars instead of hyphen
+  const range = damageRange.replace(/[–—─―─-╿]/g, '-').trim();
+  const formula = damageFormulaForRange(range);
+  if (formula) return rollDamage(formula);
+  // Range not in damage table: roll uniformly within stated N-M bounds
+  const m = range.match(/^(\d+)-(\d+)$/);
+  if (m) {
+    const lo = parseInt(m[1]), hi = parseInt(m[2]);
+    return lo + Math.floor(Math.random() * (hi - lo + 1));
+  }
+  return rollDamage('d6');
 }
 
 function updateEnemyHpBar(idx) {
