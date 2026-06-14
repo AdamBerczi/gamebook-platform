@@ -103,9 +103,10 @@ async function loadBook(book) {
   bookMeta = book;
   showLoading(true);
   try {
+    const bust = `?v=${Date.now()}`;
     const [rulesResp, sectionsResp] = await Promise.all([
-      fetch(book.rules),
-      fetch(book.sections),
+      fetch(book.rules + bust),
+      fetch(book.sections + bust),
     ]);
     rules    = await rulesResp.json();
     sections = await sectionsResp.json();
@@ -178,23 +179,31 @@ function selectRace(key) {
 }
 
 function getModifiedStats() {
-  const mods = rules.races[state.selectedRace]?.modifiers || {};
+  const race = rules.races[state.selectedRace] || {};
+  const mods = race.modifiers || {};
   const out  = {};
-  for (const key of Object.keys(rolledStats))
-    out[key] = rolledStats[key] + (mods[key] || 0);
+  for (const key of Object.keys(rolledStats)) {
+    let val = rolledStats[key] + (mods[key] || 0);
+    if (race.varazserő_halve && key === 'varazserő') val = Math.floor(val / 2);
+    out[key] = val;
+  }
   return out;
 }
 
 function renderStatRolls() {
   const grid = document.getElementById('stats-roll-grid');
-  const mods = rules.races[state.selectedRace]?.modifiers || {};
+  const race = rules.races[state.selectedRace] || {};
+  const mods = race.modifiers || {};
   grid.innerHTML = '';
   for (const [key, label] of Object.entries(STAT_LABELS)) {
     const base  = rolledStats[key] || 0;
     const mod   = mods[key] || 0;
-    const final = base + mod;
+    let final   = base + mod;
     let modHtml = '';
-    if (mod !== 0) {
+    if (race.varazserő_halve && key === 'varazserő') {
+      final = Math.floor(final / 2);
+      modHtml = `<span class="stat-roll-mod neg">÷2</span>`;
+    } else if (mod !== 0) {
       const cls = mod > 0 ? 'pos' : 'neg';
       modHtml = `<span class="stat-roll-mod ${cls}">${mod > 0 ? '+' : ''}${mod}</span>`;
     }
@@ -267,7 +276,7 @@ function showPrologue() {
   const choices = document.getElementById('choices');
 
   numEl.textContent  = 'Előzmények';
-  textEl.textContent = PROLOGUE_TEXT;
+  textEl.textContent = rules.prologue || PROLOGUE_TEXT;
   choices.innerHTML  = '';
 
   const btn = document.createElement('button');
@@ -1028,6 +1037,48 @@ function applySpellEffect(spell, enemy, player, targetIdx) {
       addCombatLog(`${enemy.name} teste rendkívüli gyorsasággal elöregszik és összeomlik!`);
       return enemy.currentHp + 999;
 
+    // Savgömb: elveszíti életerőpontjai felét
+    case 'Savgömb': {
+      const savDmg = Math.floor(enemy.currentHp / 2);
+      addCombatLog(`Savgömb felrobban! ${enemy.name} elveszíti életerőpontjai felét (${savDmg} pont).`);
+      return savDmg;
+    }
+
+    // Láthatatlan Harcos: automatikusan 5 pont sebzés körönként 5 körön át → DoT
+    case 'Láthatatlan Harcos':
+      enemy.fogRatRounds = 5;
+      enemy._fogRatDmg   = 5;
+      addCombatLog(`Láthatatlan Harcos materializálódik! ${enemy.name} körönként 5 ÉL veszteséget szenved el 5 körön át.`);
+      updateEnemyStatusBadges(targetIdx);
+      return 0;
+
+    // Tűzlehelet: 2 körön át fele annyi sebzés, ahány ÉL van a varázslónak → egyszerűsítve: ÉL/4
+    case 'Tűzlehelet': {
+      const fireDmg = Math.max(1, Math.floor(player.eletero / 4));
+      addCombatLog(`Tűzlehelet! ${enemy.name} ${fireDmg} pont tűzsebzést szenved el.`);
+      return fireDmg;
+    }
+
+    // Erősítés/Gyengítés: +4 játékos támadás ÉS −4 ellenfél támadás, 5 körig
+    case 'Erősítés/Gyengítés':
+      player.tamadasi_kepesseg -= state.combat.playerAttackBonus;
+      state.combat.playerAttackBonus = 4;
+      state.combat.strongArmAttacksLeft = 5;
+      player.tamadasi_kepesseg += 4;
+      enemy._blindAttackMalus = (enemy._blindAttackMalus || 0) + 4;
+      enemy.tamadasi_kepesseg = Math.max(0, enemy.tamadasi_kepesseg - 4);
+      enemy.blindedRounds = Math.max(enemy.blindedRounds || 0, 5);
+      addCombatLog(`Erősítés: +4 támadóerőd. Gyengítés: ${enemy.name} −4 támadás 5 körig.`);
+      renderStats();
+      updateEnemyStatLine(targetIdx);
+      return 0;
+
+    // Empátia Pajzs: a következő 3 körben az ellenfél visszakap fél sebzést
+    case 'Empátia Pajzs':
+      state.combat.empátiaPajzsRounds = 3;
+      addCombatLog(`Empátia Pajzs aktív! A következő 3 körben az ellenfél sebzésének felét visszaszenvedi.`);
+      return 0;
+
     default:
       return 0;
   }
@@ -1122,12 +1173,13 @@ async function resolveAllEnemiesAttack() {
     const enemy = combat.enemies[e.idx];
     if ((enemy.fogRatRounds || 0) > 0) {
       await new Promise(r => setTimeout(r, 400));
-      const dot = 3;
+      const dot = enemy._fogRatDmg || 3;
       enemy.currentHp -= dot;
       enemy.fogRatRounds--;
       updateEnemyHpBar(e.idx);
       updateEnemyStatusBadges(e.idx);
-      addCombatLog(`🐀 Ködpatkány harap: ${enemy.name} ${dot} ÉL veszteség. (még ${enemy.fogRatRounds} kör)`);
+      const dotName = enemy._fogRatDmg === 5 ? '⚔️ Láthatatlan Harcos' : '🐀 Ködpatkány';
+      addCombatLog(`${dotName}: ${enemy.name} ${dot} ÉL veszteség. (még ${enemy.fogRatRounds} kör)`);
       if (enemy.currentHp <= 0) {
         addCombatLog(`${enemy.name} elesett!`);
         markEnemyDead(e.idx);
@@ -1167,6 +1219,15 @@ async function resolveAllEnemiesAttack() {
       renderStats();
       updatePlayerHpBar();
       if (player.eletero <= 0) { combatDeath(); return; }
+      // Empátia Pajzs: reflect half damage back to attacker
+      if ((state.combat.empátiaPajzsRounds || 0) > 0) {
+        const reflect = Math.floor(dmg / 2);
+        enemy.currentHp -= reflect;
+        state.combat.empátiaPajzsRounds--;
+        addCombatLog(`🛡 Empátia Pajzs: ${reflect} pont visszaverve ${enemy.name}-re. (még ${state.combat.empátiaPajzsRounds} kör)`);
+        updateEnemyHpBar(e.idx);
+        if (enemy.currentHp <= 0) { addCombatLog(`${enemy.name} elesett!`); markEnemyDead(e.idx); }
+      }
     } else {
       addCombatLog(`${enemy.name} elvétette a csapást.`);
     }

@@ -12,6 +12,19 @@
       "sections": "/books/magusok-tornya/sections.json",
       "rules": "/books/magusok-tornya/rules.json",
       "description": "Egy tolvaj vagy, akit elbűvöl a mágia hatalma. Célod: bejutni a Mágusok Tornyába és megszerezni annak titkait."
+    },
+    {
+      "id": "a-demon-szeme",
+      "title": "A Démon Szeme",
+      "author": "Anthony Parker",
+      "year": 1998,
+      "series": "Harcos Képzelet",
+      "volume": 23,
+      "cover": "/books/a-demon-szeme/images/cover.jpg",
+      "images": "/books/a-demon-szeme/images",
+      "sections": "/books/a-demon-szeme/sections.json",
+      "rules": "/books/a-demon-szeme/rules.json",
+      "description": "Egy hatalmas erejű ereklyét kell megszerezned: A Démon Szemét. Kalandod Salynsandar városától egy elhagyatott toronyig vezet, ahol veszélyes szörnyetek és rejtélyek várnak."
     }
   ]
 }

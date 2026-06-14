@@ -1,0 +1,366 @@
+{
+  "book_id": "a-demon-szeme",
+  "stats": {
+    "eletero": {
+      "label": "Életerő",
+      "description": "Fizikai állapot. Ha nullára csökken, meghaltál.",
+      "roll": "4d6 + 10",
+      "min": 14,
+      "max": 34
+    },
+    "tamadasi_kepesseg": {
+      "label": "Támadási képesség",
+      "description": "Meghatározza, mennyire jól harcolsz.",
+      "roll": "2d6 + 6",
+      "min": 8,
+      "max": 18
+    },
+    "vedettsegi_szint": {
+      "label": "Védettségi szint",
+      "description": "Minél magasabb, annál nehezebb megsebesíteni.",
+      "roll": "2d6 + 6",
+      "min": 8,
+      "max": 18
+    },
+    "szerencse": {
+      "label": "Szerencse",
+      "description": "Szerencsepróbánál használt. Csökken minden használat után. Alváskor NEM áll vissza.",
+      "roll": "2d6 + 5",
+      "min": 7,
+      "max": 17
+    },
+    "varazserő": {
+      "label": "Varázserő",
+      "description": "Varázslatok használatához szükséges pontok. Alvás után visszaáll az eredeti értékre.",
+      "roll": "4d6 + 6",
+      "min": 10,
+      "max": 30
+    }
+  },
+  "races": {
+    "ember": {
+      "label": "Ember",
+      "description": "Kiegyensúlyozott alaptulajdonságok, nincs különleges módosító.",
+      "modifiers": {}
+    },
+    "barbar": {
+      "label": "Barbár",
+      "description": "A vadfiak népe; erősek és szívósak.",
+      "modifiers": {
+        "tamadasi_kepesseg": 3,
+        "vedettsegi_szint": 2,
+        "eletero": -4
+      }
+    },
+    "oggun": {
+      "label": "Oggun",
+      "description": "Zöldbőrű lény, hihetetlenül ügyes és gyors.",
+      "modifiers": {
+        "tamadasi_kepesseg": 3,
+        "vedettsegi_szint": 2,
+        "eletero": -2
+      }
+    },
+    "ork": {
+      "label": "Ork",
+      "description": "Harcos humanoid, nagy erejű. Varázserőd feleződik.",
+      "modifiers": {
+        "tamadasi_kepesseg": 2,
+        "vedettsegi_szint": 2,
+        "eletero": 2
+      },
+      "varazserő_halve": true
+    },
+    "tunder": {
+      "label": "Tündér",
+      "description": "Vékony testalkuatú teremtmény, nagy mágiaerejű.",
+      "modifiers": {
+        "tamadasi_kepesseg": 3,
+        "eletero": 2,
+        "szerencse": 3,
+        "varazserő": 6
+      }
+    }
+  },
+  "starting_equipment": [
+    {
+      "item": "Fáklya",
+      "quantity": 5
+    },
+    {
+      "item": "Étel és ital",
+      "quantity": 7,
+      "unit": "napi adag"
+    },
+    {
+      "item": "Gyógyital",
+      "quantity": 1,
+      "note": "10 életerőpontot gyógyít"
+    },
+    {
+      "item": "Varázskőnyv",
+      "note": "Nélküle nem tudsz varázsolni"
+    },
+    {
+      "item": "Kard",
+      "note": "1-6 veszteséget okoz"
+    },
+    {
+      "item": "Aranypénz",
+      "quantity": 20
+    }
+  ],
+  "combat": {
+    "initiative": "Mindkét fél dob 1d6. Aki nagyobbat dobott, az támad először. Döntetlen esetben újra kell dobni.",
+    "attack_roll": "2d6 + támadási képesség. Ha az eredmény nagyobb, mint az ellenfél védettségi szintje, a támadás sikeres.",
+    "unarmed_damage": "1 életerőpont",
+    "flee": {
+      "normal": "Az ellenfélnek jár még egy ingyenes támadás, amelyhez +10 jár a támadóerejéhez.",
+      "multiple_enemies": "Minden ellenfél, aki elérheti a karaktert, jogosult az utolsó csapásra."
+    }
+  },
+  "luck_test": {
+    "roll": "2d6",
+    "success": "Dobás <= aktuális szerencse érték",
+    "effect": "Minden használat után -1 szerencse, akár sikeres volt, akár nem.",
+    "recovery": "A szerencse alváskor NEM áll vissza automatikusan."
+  },
+  "damage_table": [
+    {
+      "range": "1-2",
+      "formula": "d6/3",
+      "note": "kerekítés matematikai szabályok szerint"
+    },
+    {
+      "range": "1-3",
+      "formula": "d6/2"
+    },
+    {
+      "range": "1-6",
+      "formula": "d6"
+    },
+    {
+      "range": "2-3",
+      "formula": "d6/3+1"
+    },
+    {
+      "range": "2-4",
+      "formula": "d6/2+1"
+    },
+    {
+      "range": "2-7",
+      "formula": "d6+1"
+    },
+    {
+      "range": "3-8",
+      "formula": "d6+2"
+    },
+    {
+      "range": "4-9",
+      "formula": "d6+3"
+    },
+    {
+      "range": "2-12",
+      "formula": "d6*2"
+    },
+    {
+      "range": "3-18",
+      "formula": "d6*3"
+    },
+    {
+      "range": "4-24",
+      "formula": "d6*4"
+    },
+    {
+      "range": "5-30",
+      "formula": "d6*5"
+    },
+    {
+      "range": "6-11",
+      "formula": "d6+5"
+    },
+    {
+      "range": "6-16",
+      "formula": "2d6+2"
+    },
+    {
+      "range": "7-22",
+      "formula": "3d6+4"
+    },
+    {
+      "range": "7-27",
+      "formula": "4d6+3"
+    }
+  ],
+  "attack_spells": [
+    {
+      "roll": 2,
+      "name": "Gyilkos Rém",
+      "cost": 8,
+      "damage": "12",
+      "description": "Egy hatalmas termetű szörnyeteg jelenik meg az ellenfeled előtt, és egy iszonyú csapásával 12 életerőpont veszteséget okoz neki, majd eltűnik."
+    },
+    {
+      "roll": 3,
+      "name": "Varázsnyl",
+      "cost": 4,
+      "damage": "6",
+      "description": "Egy mágikus nyílvessző csapódik az ellenfeledbe, 6 életerőpont veszteséget okozva neki."
+    },
+    {
+      "roll": 4,
+      "name": "Savgömb",
+      "cost": 8,
+      "damage": "speciális",
+      "description": "Az áldozat feje felett egy savgömb robban fel. Dobj 1d6-tal: 4-6 esetén azonnal elveszíti életerőpontjai felét, 1-3 esetén a fegyvere innentől csak fél veszteséget okoz."
+    },
+    {
+      "roll": 5,
+      "name": "Láthatatlan Harcos",
+      "cost": 12,
+      "damage": "speciális",
+      "description": "Egy láthatatlan harcost idéz meg, aki mindig elsőként támad és automatikusan 5 sérülést okoz körönként. 5 kör múlva eltűnik."
+    },
+    {
+      "roll": 6,
+      "name": "Fagysugár",
+      "cost": 6,
+      "damage": "12",
+      "description": "Az áldozat testét hirtelen jéggé változtatja, kellemetlen, hideg fájdalmat okozva. 12 életerőpont veszteség."
+    },
+    {
+      "roll": 7,
+      "name": "Halálvarázs",
+      "cost": "mind",
+      "cost_min": 30,
+      "damage": "30",
+      "description": "Az áldozat teste rendkívüli gyorsasággal öregedni kezd, s ha az életerőpontjai mínuszba kerülnek, porr válnak. Csontváz, zombi, lidérc és más halálontúli lényekre nem hat. A varázsló az összes pontját felhasználja."
+    },
+    {
+      "roll": 8,
+      "name": "Fullasztás",
+      "cost": 7,
+      "damage": "speciális",
+      "description": "Akire rámondják, hirtelen fulladozni kezd; nem bír levegőt venni. Automatikusan elveszíti a következő összecsapásoknál a kezdeményezést. Két támadásig tart."
+    },
+    {
+      "roll": 9,
+      "name": "Tűzlehelet",
+      "cost": 9,
+      "damage": "speciális",
+      "description": "A varázsló 2 körön keresztül tüzet lehel a szájából, körönként fele annyi veszteséget okozva, ahány életerőpontja van. Minden támadóra hat egyidejűleg."
+    },
+    {
+      "roll": 10,
+      "name": "Villámcsapás",
+      "cost": 10,
+      "damage": "15",
+      "description": "A varázsló kezéből villám vágódik az ellenfelbe, 15 életerőpont veszteséget okozva."
+    },
+    {
+      "roll": 11,
+      "name": "Erősítés/Gyengítés",
+      "cost": 6,
+      "damage": "speciális",
+      "description": "Az erősítést magára, a gyengítést ellenfelére mondhatja. Erősítés: +4 támadóerő. Gyengítés: ellenfél támadóereje -4. Öt támadáson keresztül hat."
+    },
+    {
+      "roll": 12,
+      "name": "Empátia Pajzs",
+      "cost": 6,
+      "damage": "speciális",
+      "description": "A varázsló által elszenvedett veszteség felét 3 körön keresztül a támadó fogja elszenvedni."
+    }
+  ],
+  "defense_spells": [
+    {
+      "roll": 2,
+      "name": "Elzárás",
+      "cost": 3,
+      "protects_against": "Varázsnyl",
+      "activation_roll": "1-5",
+      "description": "Elzárja a varázsló előtt útját a Varázsnylnak."
+    },
+    {
+      "roll": 3,
+      "name": "Krill Pajzsa",
+      "cost": 1,
+      "protects_against": "Gyilkos Rém",
+      "activation_roll": "1-5",
+      "description": "Pajzs védelmet nyújt a Gyilkos Rém csapásától."
+    },
+    {
+      "roll": 4,
+      "name": "Brun Hordója",
+      "cost": 4,
+      "protects_against": "Savgömb",
+      "activation_roll": "1-4",
+      "description": "Hatalmas hordó jelenik meg, elnyelve a savgömböt."
+    },
+    {
+      "roll": 5,
+      "name": "Láthatatlan Pajzs",
+      "cost": 5,
+      "protects_against": "Láthatatlan Harcos",
+      "activation_roll": "1-4",
+      "description": "Semlegesíti a Láthatatlan Harcost."
+    },
+    {
+      "roll": 6,
+      "name": "Tűztükör",
+      "cost": 7,
+      "protects_against": "Fagysugár",
+      "activation_roll": "1-3",
+      "description": "Elnyeli a Fagysugarat."
+    },
+    {
+      "roll": 7,
+      "name": "Élet Vize",
+      "cost": 18,
+      "protects_against": "Halálvarázs",
+      "activation_roll": "1-3",
+      "description": "Semlegesíti a Halálvarázst és pontokat visszagyógyít. Ha nem védekezésként használják, 20 pontot gyógyít vissza (a maximumig)."
+    },
+    {
+      "roll": 8,
+      "name": "Nagy Tüdő",
+      "cost": 8,
+      "protects_against": "Fullasztás",
+      "activation_roll": "1-5",
+      "description": "Semlegesíti a Fullasztást; a varázsló több percig is el van a levegőben."
+    },
+    {
+      "roll": 9,
+      "name": "Jégfal",
+      "cost": 9,
+      "protects_against": "Tűzlehelet",
+      "activation_roll": "1-4",
+      "description": "Jégfal emelkedik, védelmet nyújt a Tűzlehelet ellen."
+    },
+    {
+      "roll": 10,
+      "name": "Sérthetetlenség",
+      "cost": 10,
+      "protects_against": "Villámcsapás",
+      "activation_roll": "1-4",
+      "description": "Védelmet nyújt a fegyveres és mágikus csapások ellen."
+    },
+    {
+      "roll": 11,
+      "name": "Erősítés",
+      "cost": 6,
+      "protects_against": "Erősítés/Gyengítés",
+      "activation_roll": "1-4",
+      "description": "Semlegesíti a Gyengítés hatását."
+    },
+    {
+      "roll": 12,
+      "name": "Semlegesítés",
+      "cost": 15,
+      "protects_against": "Empátia Pajzs",
+      "activation_roll": "1-3",
+      "description": "Bármilyen varázslat hatását képes semlegesíteni, kivéve a Halálvarázst."
+    }
+  ],
+  "prologue": "Előzmények\n\nMár pillanatnyilván királynőnek kell tartanod magad, ám amióta a Sötét Évszázadokat a félistenektől megtámadták, Cherubimot számon tartják ezen a világon, így számtalan veszélyes kihívással kell szembenézned. Évek óta járod a veszélyes vidéket, s hol sárkányokkal, hol a túlélésért küzdő katonákkal kell megvívnod a holnapok lehetőségéért. Ha úgy hozza a sors, sárkányokat fosztogatsz, vagy éppen ősi, elfeledett kincsek után kutatsz rémisztő szörnyetegekkel telezsúfolt katakombák mélyén.\n\nÉszakon, Salynsandar városában hallottál elsőként arról a nagy erejű ereklyéről, amelynek nevét még a bölcsek is mély borzadállyal ejtették ki szájukon:\n\nA Démon Szeme\n\nHatalmáról csak legendák beszélnek, ám tapasztalatból tudod, hogy egy ilyen nagy erejű varázstárgy értéke aranyhegyekben mérhető. Arról nem is beszélve, hogy olyan képességekkel ruházhatja fel a tulajdonosát, melyről nem is álmodik.\n\nSalynsandarból keletre, a Chorald-hágó felé vitt az utad, ám az álomfejtő, aki segíthetett volna neked az ereklye megszerzését hónapokkal ezelőtt meghalt egy ork rajtaütés során. Egyik rendtársa azt tanácsolta neked, hogy menj délre, s kutasd fel Yhrint, Choler Magiszter egyik renegát xinafját. Ha valaki, talán ő segíteni tud a célod elérésében.\n\nAz utad hosszú hetekig tart, ám miután sikeresen átvészeltél három éjszakai rajtaütést és egy rablótámadást, eljutsz a Szürke Torony romjához. Utolsó értesülésed szerint ez a torony szolgált éveken keresztül a xinaf lakhelyéül. Talán találsz valami nyomot ezen a helyen, mely által haladhatod."
+}

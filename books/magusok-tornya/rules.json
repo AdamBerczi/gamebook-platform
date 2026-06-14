@@ -1,6 +1,5 @@
 {
   "book_id": "magusok-tornya",
-
   "stats": {
     "eletero": {
       "label": "Életerő",
@@ -38,7 +37,6 @@
       "max": 30
     }
   },
-
   "races": {
     "ember": {
       "label": "Ember",
@@ -83,18 +81,49 @@
       }
     }
   },
-
   "starting_equipment": [
-    { "item": "Varázskard", "note": "2-7 veszteséget okoz" },
-    { "item": "Gyógyító ital", "quantity": 2, "effect": "15 életerőpontot gyógyít" },
-    { "item": "Gyorsító ital", "quantity": 1, "effect": "Körönként kétszer támadhatsz, vagy negatív bonuszok nélkül menekülhetsz el" },
-    { "item": "Varázsgyűrű" },
-    { "item": "Amulett", "effect": "Minden főértékedet 3 ponttal javítja; a tőled ért sebzésekből levonhatsz 2 pontot", "stat_bonus": {"eletero": 3, "tamadasi_kepesseg": 3, "vedettsegi_szint": 3, "szerencse": 3, "varazserő": 3} },
-    { "item": "Étel és ital", "quantity": 1, "unit": "csomag" },
-    { "item": "Varázskőnyv", "note": "Nélküle nem tudsz varázsolni" },
-    { "item": "Aranypénz", "quantity": 200 }
+    {
+      "item": "Varázskard",
+      "note": "2-7 veszteséget okoz"
+    },
+    {
+      "item": "Gyógyító ital",
+      "quantity": 2,
+      "effect": "15 életerőpontot gyógyít"
+    },
+    {
+      "item": "Gyorsító ital",
+      "quantity": 1,
+      "effect": "Körönként kétszer támadhatsz, vagy negatív bonuszok nélkül menekülhetsz el"
+    },
+    {
+      "item": "Varázsgyűrű"
+    },
+    {
+      "item": "Amulett",
+      "effect": "Minden főértékedet 3 ponttal javítja; a tőled ért sebzésekből levonhatsz 2 pontot",
+      "stat_bonus": {
+        "eletero": 3,
+        "tamadasi_kepesseg": 3,
+        "vedettsegi_szint": 3,
+        "szerencse": 3,
+        "varazserő": 3
+      }
+    },
+    {
+      "item": "Étel és ital",
+      "quantity": 1,
+      "unit": "csomag"
+    },
+    {
+      "item": "Varázskőnyv",
+      "note": "Nélküle nem tudsz varázsolni"
+    },
+    {
+      "item": "Aranypénz",
+      "quantity": 200
+    }
   ],
-
   "combat": {
     "initiative": "Mindkét fél dob 1d6. Aki nagyobbat dobott, az támad először. Döntetlen esetben újra kell dobni.",
     "attack_roll": "2d6 + támadási képesség. Ha az eredmény nagyobb, mint az ellenfél védettségi szintje, a támadás sikeres.",
@@ -104,33 +133,79 @@
       "multiple_enemies": "Minden ellenfél, aki elérheti a karaktert, jogosult az utolsó csapásra."
     }
   },
-
   "luck_test": {
     "roll": "2d6",
     "success": "Dobás <= aktuális szerencse érték",
     "effect": "Minden használat után -1 szerencse, akár sikeres volt, akár nem.",
     "recovery": "A szerencse alváskor NEM áll vissza automatikusan."
   },
-
   "damage_table": [
-    { "range": "1-2",  "formula": "d6/3",   "note": "kerekítés matematikai szabályok szerint" },
-    { "range": "1-3",  "formula": "d6/2" },
-    { "range": "1-6",  "formula": "d6" },
-    { "range": "2-3",  "formula": "d6/3+1" },
-    { "range": "2-4",  "formula": "d6/2+1" },
-    { "range": "2-7",  "formula": "d6+1" },
-    { "range": "3-8",  "formula": "d6+2" },
-    { "range": "4-9",  "formula": "d6+3" },
-    { "range": "2-12", "formula": "d6*2" },
-    { "range": "3-18", "formula": "d6*3" },
-    { "range": "4-24", "formula": "d6*4" },
-    { "range": "5-30", "formula": "d6*5" },
-    { "range": "6-11", "formula": "d6+5" },
-    { "range": "6-16", "formula": "2d6+2" },
-    { "range": "7-22", "formula": "3d6+4" },
-    { "range": "7-27", "formula": "4d6+3" }
+    {
+      "range": "1-2",
+      "formula": "d6/3",
+      "note": "kerekítés matematikai szabályok szerint"
+    },
+    {
+      "range": "1-3",
+      "formula": "d6/2"
+    },
+    {
+      "range": "1-6",
+      "formula": "d6"
+    },
+    {
+      "range": "2-3",
+      "formula": "d6/3+1"
+    },
+    {
+      "range": "2-4",
+      "formula": "d6/2+1"
+    },
+    {
+      "range": "2-7",
+      "formula": "d6+1"
+    },
+    {
+      "range": "3-8",
+      "formula": "d6+2"
+    },
+    {
+      "range": "4-9",
+      "formula": "d6+3"
+    },
+    {
+      "range": "2-12",
+      "formula": "d6*2"
+    },
+    {
+      "range": "3-18",
+      "formula": "d6*3"
+    },
+    {
+      "range": "4-24",
+      "formula": "d6*4"
+    },
+    {
+      "range": "5-30",
+      "formula": "d6*5"
+    },
+    {
+      "range": "6-11",
+      "formula": "d6+5"
+    },
+    {
+      "range": "6-16",
+      "formula": "2d6+2"
+    },
+    {
+      "range": "7-22",
+      "formula": "3d6+4"
+    },
+    {
+      "range": "7-27",
+      "formula": "4d6+3"
+    }
   ],
-
   "attack_spells": [
     {
       "roll": 2,
@@ -211,7 +286,6 @@
       "description": "Az ellenfél a következő négy körben minden rá irányuló veszteség duplájét szenvedi el. Mágikus fegyverek veszteségét nem duplázza."
     }
   ],
-
   "defense_spells": [
     {
       "roll": 2,
@@ -301,5 +375,6 @@
       "activation_roll": "1-3",
       "description": "Bármilyen varázslat hatását képes semlegesíteni, kivéve a Halálvarázst."
     }
-  ]
+  ],
+  "prologue": "Előzmények\n\nJó nevű tolvaj vagy, ám az utóbbi időben egyre jobban izgat a mágia titokzatossága és hatalma. Tisztában vagy vele, hogy egy varázsló inasának hosszú éveket kell eltöltenie tanulással. Van egy egyszerűbb út is: a Mágusok Tornya, ahol szinte napok alatt elsajátíthatnád azt a tudáshalmazt, ami a mágia irányításához szükséges.\n\nHosszas gondolkodás után úgy döntesz, hogy inasnak szegődsz el Bairbas varázslóhoz, aki állítólag már járt a Mágusok Tornyában. Talán sikerül kihúznod belőle, te miként léphetnél oda be.\n\nHónapokat töltesz a varázslónál, közben óvatos kérdéseket teszel fel mesterédnek, aki semmit sem sejt céljaidról. Megtudod, hogy a varázsló a dolgozószobájában őriz egy könyvet, ami számos kérdésre választ ad.\n\nAmikor a mestered nincs otthon, beosonsz a dolgozószobájába. A Tudások Könyvét kinyitva találod az asztalon, s amikor kimondod a kérdésed, a pergamenlapokon megjelenik a válasz: a Braildont-szigeten van egy üvegkulcs, aminek a segítségével bejuthatsz a Mágusok Tornyába.\n\nItt az alkalom, gondolod magadban."
 }

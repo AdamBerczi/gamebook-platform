@@ -86,29 +86,56 @@ def split_into_raw_sections(full_text: str, config: dict) -> dict[int, str]:
 
     A section starts when we see a line that is exactly "N." where N is
     a plausible section number (1 to total_sections).
+
+    Also tries relaxed variants to handle OCR errors:
+      "N,"  — period OCR'd as comma
+      "N"   — period dropped entirely (standalone digit line)
+
+    Any text before the first recognized header is captured as section 1
+    (many books start the first content page without repeating "1.").
     """
     total = config["total_sections"]
-    header_re = re.compile(config["parsing"]["section_header_regex"], re.MULTILINE)
+    header_re  = re.compile(config["parsing"]["section_header_regex"], re.MULTILINE)
+    # Relaxed fallback: N, or bare N on its own line
+    relaxed_re = re.compile(r"^(\d{1,3})[,]?$")
+
+    def match_header(line):
+        """Return section number if line is a section header, else None."""
+        stripped = line.strip()
+        m = header_re.match(stripped)
+        if m:
+            return int(m.group(1))
+        m = relaxed_re.match(stripped)
+        if m:
+            return int(m.group(1))
+        return None
 
     lines = full_text.splitlines()
 
     sections_raw = {}
     current_id = None
     current_lines = []
+    pre_header_lines = []   # text before the very first section header
 
     for line in lines:
-        m = header_re.match(line.strip())
-        if m:
-            candidate = int(m.group(1))
-            if 1 <= candidate <= total:
-                # Save the previous section before starting a new one
-                if current_id is not None:
-                    sections_raw[current_id] = "\n".join(current_lines).strip()
-                current_id = candidate
-                current_lines = []
-                continue  # Don't include the header line itself in the text
+        candidate = match_header(line)
+        if candidate is not None and 1 <= candidate <= total:
+            if current_id is None and not sections_raw:
+                # First header found — save anything before it as section 1
+                # (only if there's meaningful text and section 1 not yet set)
+                pre_text = "\n".join(pre_header_lines).strip()
+                if pre_text and candidate != 1:
+                    sections_raw[1] = pre_text
+            # Save the previous section
+            if current_id is not None:
+                sections_raw[current_id] = "\n".join(current_lines).strip()
+            current_id = candidate
+            current_lines = []
+            continue
 
-        if current_id is not None:
+        if current_id is None:
+            pre_header_lines.append(line)
+        else:
             current_lines.append(line)
 
     # Don't forget the last section
