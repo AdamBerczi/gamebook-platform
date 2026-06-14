@@ -1,49 +1,28 @@
-const SECTIONS_URL = '/books/magusok-tornya/sections.json';
-const RULES_URL    = '/books/magusok-tornya/rules.json';
+const BOOKS_INDEX_URL = '/books/index.json';
+const SAVES_KEY       = 'hk_saves';
 
 // ── STATE ──────────────────────────────────────────────────────────────────
 
 let rules    = null;
 let sections = null;
+let bookMeta = null;   // current book entry from index.json
 
 let state = {
   currentSection: 1,
-  selectedRace: 'felfodi_ember',
+  selectedRace:   'ember',
   character: {
     base: {}, current: {}, max: {},
     race: null,
     inventory: [],
   },
   history: [],
-  combat: null,   // active combat state, null when not in combat
+  combat: null,
 };
-
-// ── BOOT ───────────────────────────────────────────────────────────────────
-
-async function init() {
-  showLoading(true);
-  try {
-    const [rulesResp, sectionsResp] = await Promise.all([
-      fetch(RULES_URL),
-      fetch(SECTIONS_URL),
-    ]);
-    rules    = await rulesResp.json();
-    sections = await sectionsResp.json();
-  } catch (e) {
-    document.getElementById('loading').textContent =
-      'Hiba: nem sikerült betölteni az adatokat. Indítsd el a szervert: python -m http.server 8000';
-    showLoading(true);
-    return;
-  }
-  showLoading(false);
-  buildCharacterCreation();
-  showScreen('create');
-}
 
 // ── DICE ───────────────────────────────────────────────────────────────────
 
-function d6() { return Math.floor(Math.random() * 6) + 1; }
-function d6x(n) { let t = 0; for (let i = 0; i < n; i++) t += d6(); return t; }
+function d6()  { return Math.floor(Math.random() * 6) + 1; }
+function d6x(n){ let t = 0; for (let i = 0; i < n; i++) t += d6(); return t; }
 function roll2d6() { return d6() + d6(); }
 
 function rollFormula(formula) {
@@ -57,7 +36,6 @@ function rollFormula(formula) {
   return total;
 }
 
-// Evaluate a damage formula string like "d6+2", "d6/2+1", "2d6+2"
 function rollDamage(formula) {
   formula = formula.trim();
   if (formula.includes('*')) {
@@ -78,11 +56,74 @@ function rollDamage(formula) {
   return d6x(count) + bonus;
 }
 
-// Given a damage range string like "3-8", find the matching formula from rules
 function damageFormulaForRange(range) {
   if (!range || !rules) return null;
   const entry = rules.damage_table.find(r => r.range === range);
   return entry ? entry.formula : null;
+}
+
+// ── MAIN MENU ──────────────────────────────────────────────────────────────
+
+async function init() {
+  try {
+    const resp = await fetch(BOOKS_INDEX_URL);
+    const index = await resp.json();
+    buildBookMenu(index.books);
+  } catch (e) {
+    document.getElementById('book-grid').innerHTML =
+      '<p style="color:var(--text-muted);padding:1rem">Hiba: nem sikerült betölteni a könyvlistát.</p>';
+  }
+  showScreen('menu');
+}
+
+function buildBookMenu(books) {
+  const grid = document.getElementById('book-grid');
+  grid.innerHTML = '';
+  books.forEach(book => {
+    const card = document.createElement('div');
+    card.className = 'book-card';
+    card.innerHTML = `
+      <div class="book-card-cover">
+        <img src="${book.cover}" alt="${book.title}" loading="lazy">
+      </div>
+      <div class="book-card-info">
+        <div class="book-card-series">${book.series} · ${book.volume}. kötet</div>
+        <div class="book-card-title">${book.title}</div>
+        <div class="book-card-author">${book.author}, ${book.year}</div>
+        <div class="book-card-desc">${book.description}</div>
+        <button class="btn-primary book-card-btn">Kaland kezdése</button>
+      </div>
+    `;
+    card.querySelector('.book-card-btn').addEventListener('click', () => loadBook(book));
+    grid.appendChild(card);
+  });
+}
+
+async function loadBook(book) {
+  bookMeta = book;
+  showLoading(true);
+  try {
+    const [rulesResp, sectionsResp] = await Promise.all([
+      fetch(book.rules),
+      fetch(book.sections),
+    ]);
+    rules    = await rulesResp.json();
+    sections = await sectionsResp.json();
+  } catch (e) {
+    alert('Hiba: nem sikerült betölteni a könyv adatait.');
+    showLoading(false);
+    return;
+  }
+  showLoading(false);
+
+  // Update create screen labels
+  document.getElementById('create-subtitle').textContent = `${book.series} · ${book.volume}. kötet`;
+  document.getElementById('create-title').textContent    = book.title;
+  document.getElementById('create-author').textContent   = book.author;
+
+  state.selectedRace = Object.keys(rules.races)[0];
+  buildCharacterCreation();
+  showScreen('create');
 }
 
 // ── CHARACTER CREATION ──────────────────────────────────────────────────────
@@ -111,9 +152,8 @@ function buildCharacterCreation() {
 
 function buildRaceGrid() {
   const grid = document.getElementById('race-grid');
-  const races = rules.races;
   grid.innerHTML = '';
-  for (const [key, race] of Object.entries(races)) {
+  for (const [key, race] of Object.entries(rules.races)) {
     const modLines = Object.entries(race.modifiers)
       .map(([s, v]) => `${STAT_LABELS[s] || s} ${v > 0 ? '+' : ''}${v}`)
       .join(', ');
@@ -123,7 +163,7 @@ function buildRaceGrid() {
     card.innerHTML = `
       <div class="race-card-name">${race.label}</div>
       <div class="race-card-desc">${race.description}</div>
-      <div class="race-card-mods">${modLines}</div>
+      <div class="race-card-mods">${modLines || 'Nincs módosító'}</div>
     `;
     card.addEventListener('click', () => selectRace(key));
     grid.appendChild(card);
@@ -139,7 +179,7 @@ function selectRace(key) {
 
 function getModifiedStats() {
   const mods = rules.races[state.selectedRace]?.modifiers || {};
-  const out = {};
+  const out  = {};
   for (const key of Object.keys(rolledStats))
     out[key] = rolledStats[key] + (mods[key] || 0);
   return out;
@@ -167,10 +207,13 @@ function renderStatRolls() {
 }
 
 function wireCreationButtons() {
-  document.getElementById('btn-reroll').addEventListener('click', () => {
-    rollStats(); renderStatRolls();
-  });
-  document.getElementById('btn-start').addEventListener('click', startGame);
+  // Re-wire (remove old listeners by replacing elements)
+  const reroll = document.getElementById('btn-reroll');
+  const start  = document.getElementById('btn-start');
+  const back   = document.getElementById('btn-back-to-menu');
+  reroll.onclick = () => { rollStats(); renderStatRolls(); };
+  start.onclick  = startGame;
+  back.onclick   = () => showScreen('menu');
 }
 
 function startGame() {
@@ -183,6 +226,9 @@ function startGame() {
   state.currentSection = 1;
   state.history = [];
   state.combat  = null;
+
+  document.getElementById('sidebar-book-title').textContent = bookMeta?.title ?? '—';
+  document.getElementById('mobile-book-title').textContent  = bookMeta?.title ?? '—';
 
   buildGameSidebar();
   showScreen('game');
@@ -232,7 +278,7 @@ function showPrologue() {
   document.getElementById('main').scrollTo({ top: 0 });
 }
 
-// ── GAME SCREEN ───────────────────────────────────────────────────────────────
+// ── GAME SIDEBAR ──────────────────────────────────────────────────────────────
 
 function buildGameSidebar() {
   const race = rules.races[state.character.race];
@@ -247,11 +293,11 @@ function renderStats() {
 
   const setBar = (key, barId) => {
     const pct = Math.max(0, Math.min(100, (c[key] / m[key]) * 100));
-    const el = document.getElementById(barId);
+    const el  = document.getElementById(barId);
     if (el) el.style.width = pct + '%';
   };
-  setBar('eletero',  'bar-eletero');
-  setBar('varazserő','bar-varazserő');
+  setBar('eletero',   'bar-eletero');
+  setBar('varazserő', 'bar-varazserő');
 
   for (const key of Object.keys(STAT_LABELS)) {
     const el = document.getElementById(`val-${key}`);
@@ -284,7 +330,7 @@ function renderInventory() {
   state.character.inventory.forEach((item, idx) => {
     const action = getItemAction(item);
     const qtyStr = item.qty > 1
-      ? `<span class="inventory-qty">×${item.qty}${item.unit ? ' ' + item.unit : ''}</span>`
+      ? `<span class="inventory-qty">×${item.qty}${item.unit ? ' ' + item.unit : ''}</span>`
       : '';
     const hint = action ? `<span class="item-hint">${action.hint}</span>` : '';
 
@@ -308,31 +354,20 @@ function renderInventory() {
 
 function getItemAction(item) {
   const note = item.note || '';
-
-  // Weapon: note contains a damage range like "1-6 veszteséget okoz"
-  const dmgMatch = note.match(/(\d+-\d+)\s*veszteség/i);
+  const dmgMatch  = note.match(/(\d+-\d+)\s*veszteség/i);
   if (dmgMatch) return { type: 'weapon', damage: dmgMatch[1], hint: 'dob' };
-
-  // Potion: note contains heal amount
   const healMatch = note.match(/(\d+)\s*életerőpontot?\s*gyógyít/i);
   if (healMatch) return { type: 'potion', heal: parseInt(healMatch[1]), hint: 'iszik' };
-
-  // Food/rations
   const name = item.name.toLowerCase();
-  if (name.includes('étel') || name.includes('élelem') || name.includes('kenyér') || name.includes('ennivaló')) {
+  if (name.includes('étel') || name.includes('élelem') || name.includes('kenyér') || name.includes('ennivaló'))
     return { type: 'food', hint: 'eszik' };
-  }
-
   return null;
 }
 
 function toggleItemPanel(idx, item, action) {
-  const panel = document.getElementById(`item-panel-${idx}`);
+  const panel   = document.getElementById(`item-panel-${idx}`);
   const wasOpen = !panel.classList.contains('hidden');
-
-  // Close all panels first
   document.querySelectorAll('.item-action-panel').forEach(p => p.classList.add('hidden'));
-
   if (!wasOpen) {
     panel.classList.remove('hidden');
     renderItemPanel(panel, item, action, idx);
@@ -349,14 +384,13 @@ function renderItemPanel(panel, item, action, idx) {
     `;
     document.getElementById(`item-roll-${idx}`).addEventListener('click', () => {
       const dmg = formula ? rollDamage(formula) : d6();
-      const el = document.getElementById(`item-res-${idx}`);
+      const el  = document.getElementById(`item-res-${idx}`);
       el.classList.remove('hidden');
       el.textContent = `${dmg} pont sebzés`;
     });
-
   } else if (action.type === 'potion') {
-    const cur = state.character.current.eletero;
-    const max = state.character.max.eletero;
+    const cur  = state.character.current.eletero;
+    const max  = state.character.max.eletero;
     const full = cur >= max;
     panel.innerHTML = `
       <div class="item-panel-label">+${action.heal} Életerő (max: ${max})</div>
@@ -368,7 +402,6 @@ function renderItemPanel(panel, item, action, idx) {
       state.character.current.eletero = Math.min(max, cur + action.heal);
       consumeItem(idx);
     });
-
   } else if (action.type === 'food') {
     const mpCur = state.character.current['varazserő'];
     const mpMax = state.character.max['varazserő'];
@@ -399,12 +432,9 @@ function consumeItem(idx) {
 function loadSection(id) {
   const data = sections.sections[String(id)];
   state.combat = null;
-
   if (!data) { showSectionError(id); return; }
-
   state.currentSection = id;
   state.history.push(id);
-
   renderSection(data);
   renderStats();
   document.getElementById('main').scrollTo({ top: 0, behavior: 'smooth' });
@@ -417,31 +447,13 @@ function renderSection(data) {
   const textEl    = document.getElementById('section-text');
   const choicesEl = document.getElementById('choices');
 
-  numEl.textContent  = `${data.id}. szakasz`;
-  textEl.textContent = data.text;
+  numEl.textContent   = `${data.id}. szakasz`;
+  textEl.textContent  = data.text;
   choicesEl.innerHTML = '';
 
-  if (data.is_ending) {
-    renderEnding(choicesEl);
-    wrap.classList.add('visible');
-    return;
-  }
-
-  // ── Combat block ──
-  if (data.enemies && data.enemies.length > 0) {
-    renderCombatBlock(choicesEl, data);
-    wrap.classList.add('visible');
-    return;
-  }
-
-  // ── Luck test block ──
-  if (data.has_luck_test && data.choices.length >= 2) {
-    renderLuckTestBlock(choicesEl, data);
-    wrap.classList.add('visible');
-    return;
-  }
-
-  // ── Normal choices ──
+  if (data.is_ending) { renderEnding(choicesEl); wrap.classList.add('visible'); return; }
+  if (data.enemies?.length > 0) { renderCombatBlock(choicesEl, data); wrap.classList.add('visible'); return; }
+  if (data.has_luck_test && data.choices.length >= 2) { renderLuckTestBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   renderChoices(choicesEl, data.choices);
   wrap.classList.add('visible');
 }
@@ -462,55 +474,41 @@ function renderEnding(container) {
   endDiv.className = 'choice-btn dead-end';
   endDiv.textContent = 'A kaland véget ért.';
   container.appendChild(endDiv);
-
   const btn = document.createElement('button');
   btn.className = 'btn-secondary';
   btn.style.marginTop = '1rem';
   btn.textContent = 'Új kaland kezdése';
-  btn.addEventListener('click', () => showScreen('create'));
+  btn.addEventListener('click', () => showScreen('menu'));
   container.appendChild(btn);
 }
 
 function showSectionError(id) {
   const wrap = document.getElementById('section-wrap');
   document.getElementById('section-number').textContent = `${id}. szakasz`;
-  document.getElementById('section-text').textContent =
-    `Ez a szakasz (${id}) hiányzik az adatokból.`;
+  document.getElementById('section-text').textContent   = `Ez a szakasz (${id}) hiányzik az adatokból.`;
   document.getElementById('choices').innerHTML = '';
   wrap.classList.add('visible');
 }
 
-// ── LUCK TEST SYSTEM ──────────────────────────────────────────────────────────
-//
-// How it works in the book:
-//   "Tegyél Szerencsepróbát!"
-//   "Ha sikerült a dobás, lapozz a X-re!"
-//   "Ha nem, lapozz a Y-ra!"
-//
-// We show a "Roll Luck" button. Success = choices[0], Failure = choices[1].
-// Luck decreases by 1 regardless of outcome.
+// ── LUCK TEST ─────────────────────────────────────────────────────────────────
 
 function renderLuckTestBlock(container, data) {
   const block = document.createElement('div');
   block.className = 'system-block luck-block';
   block.innerHTML = `
     <div class="system-block-title">Szerencsepróba</div>
-    <div class="system-block-desc">Dobj 2 kockával! Ha az eredmény kisebb vagy egyenlő a szerencse értékeddel, sikerült a próba. Akár sikerült, akár nem — szerencséd 1 ponttal csökken.</div>
+    <div class="system-block-desc">Dobj 2 kockával! Ha az eredmény kisebb vagy egyenlő a szerencse értékeddel, sikerült a próba. Szerencséd 1 ponttal csökken.</div>
     <div class="luck-current">Jelenlegi szerencse: <strong id="luck-display">${state.character.current.szerencse}</strong></div>
     <button class="btn-roll" id="btn-luck-roll">Dobás (2d6)</button>
     <div class="roll-result hidden" id="luck-result"></div>
   `;
   container.appendChild(block);
-
   document.getElementById('btn-luck-roll').addEventListener('click', () => {
     const roll   = roll2d6();
     const luck   = state.character.current.szerencse;
     const passed = roll <= luck;
-
-    // Luck always decreases by 1
     state.character.current.szerencse = Math.max(0, luck - 1);
     renderStats();
-
     const resultEl = document.getElementById('luck-result');
     resultEl.classList.remove('hidden');
     resultEl.innerHTML = `
@@ -518,56 +516,35 @@ function renderLuckTestBlock(container, data) {
       <span class="roll-vs">vs ${luck}</span>
       <span class="roll-outcome ${passed ? 'success' : 'failure'}">${passed ? 'Sikeres!' : 'Sikertelen'}</span>
     `;
-
-    // Disable the roll button
     document.getElementById('btn-luck-roll').disabled = true;
-
-    // Show the relevant choice
     setTimeout(() => {
       block.remove();
-      const targetChoice = passed ? data.choices[0] : data.choices[1];
-      if (targetChoice) {
-        loadSection(targetChoice.target);
-      } else {
-        renderChoices(container, data.choices);
-      }
+      const target = passed ? data.choices[0] : data.choices[1];
+      if (target) loadSection(target.target);
+      else renderChoices(container, data.choices);
     }, 1800);
   });
 }
 
 // ── COMBAT SYSTEM ─────────────────────────────────────────────────────────────
-//
-// Multi-foe rules (from the book):
-//   - ALL living enemies attack the player every round
-//   - Player may only attack ONE enemy per round (their choice)
-//   - Initiative is rolled once at the start (player vs the group)
-//
-// Round flow:
-//   Player turn  → pick target → attack → check kill
-//   Enemies turn → each living enemy attacks in sequence → check death
-//   Repeat
 
 function renderCombatBlock(container, data) {
   state.combat = {
-    enemies:           data.enemies.map(e => ({ ...e, currentHp: e.eletero })),
-    sectionData:       data,
+    enemies:            data.enemies.map(e => ({ ...e, currentHp: e.eletero })),
+    sectionData:        data,
     doubleDamageRounds: 0,
     playerAttackBonus:  0,
   };
-
   const block = document.createElement('div');
   block.className = 'system-block combat-block';
   block.id = 'combat-block';
   container.appendChild(block);
-
   renderCombatUI(block);
 }
 
 function renderCombatUI(block) {
   const combat = state.combat;
   const player = state.character.current;
-
-  // Build enemy HP rows — one per enemy
   const enemyRows = combat.enemies.map((e, i) => `
     <div class="combatant enemy-side" id="combatant-enemy-${i}">
       <div class="combatant-name ${e.currentHp <= 0 ? 'dead' : ''}">${e.name}</div>
@@ -578,15 +555,12 @@ function renderCombatUI(block) {
         </div>
         <span id="enemy-hp-val-${i}">${Math.max(0, e.currentHp)} ÉL</span>
       </div>
-      <div class="combatant-stat">
-        Tám: ${e.tamadasi_kepesseg} &nbsp;|&nbsp; Véd: ${e.vedettsegi_szint}
-      </div>
+      <div class="combatant-stat">Tám: ${e.tamadasi_kepesseg} &nbsp;|&nbsp; Véd: ${e.vedettsegi_szint}</div>
     </div>
   `).join('');
 
   block.innerHTML = `
     <div class="system-block-title">Harc</div>
-
     <div class="combat-layout">
       <div class="combatant player-side">
         <div class="combatant-name">Te</div>
@@ -599,48 +573,33 @@ function renderCombatUI(block) {
         </div>
         <div class="combatant-stat">Tám: ${player.tamadasi_kepesseg} &nbsp;|&nbsp; Véd: ${player.vedettsegi_szint}</div>
       </div>
-
       <div class="combat-vs">VS</div>
-
       <div class="combat-enemies-col">${enemyRows}</div>
     </div>
-
     <div class="combat-log" id="combat-log"></div>
-
     <div class="combat-actions" id="combat-actions">
       <button class="btn-roll" id="btn-initiative">Kezdeményezés dobása</button>
     </div>
   `;
-
   document.getElementById('btn-initiative').addEventListener('click', rollInitiative);
 }
 
 function livingEnemies() {
-  return state.combat.enemies
-    .map((e, i) => ({ ...e, idx: i }))
-    .filter(e => e.currentHp > 0);
+  return state.combat.enemies.map((e, i) => ({ ...e, idx: i })).filter(e => e.currentHp > 0);
 }
 
 function rollInitiative() {
   const playerRoll = d6();
   const enemyRoll  = d6();
   const names = livingEnemies().map(e => e.name).join(' & ');
-
   addCombatLog(`Kezdeményezés: te ${playerRoll}, ${names} ${enemyRoll}`);
-
-  if (playerRoll >= enemyRoll) {
-    addCombatLog('Te támadsz először!');
-    showPlayerTurn();
-  } else {
-    addCombatLog(`${names} támad először!`);
-    showEnemyTurn();
-  }
+  if (playerRoll >= enemyRoll) { addCombatLog('Te támadsz először!'); showPlayerTurn(); }
+  else { addCombatLog(`${names} támad először!`); showEnemyTurn(); }
 }
 
-// Player's action phase — choose target (if multiple) then attack or cast
 function showPlayerTurn() {
-  const actions  = document.getElementById('combat-actions');
-  const alive    = livingEnemies();
+  const actions     = document.getElementById('combat-actions');
+  const alive       = livingEnemies();
   const multiTarget = alive.length > 1;
 
   if (canCastSpell()) {
@@ -649,15 +608,13 @@ function showPlayerTurn() {
         <button class="btn-roll" id="btn-attack">⚔ Kard</button>
         <button class="btn-roll btn-magic" id="btn-spell">✦ Varázslat</button>
       </div>`;
-    document.getElementById('btn-attack').addEventListener('click', () => {
-      multiTarget ? showTargetButtons('sword') : resolvePlayerAttackOn(alive[0].idx);
-    });
-    document.getElementById('btn-spell').addEventListener('click', () => showSpellChoice(multiTarget));
+    document.getElementById('btn-attack').addEventListener('click', () =>
+      multiTarget ? showTargetButtons('sword') : resolvePlayerAttackOn(alive[0].idx));
+    document.getElementById('btn-spell').addEventListener('click', () => showSpellPicker(multiTarget));
   } else {
     actions.innerHTML = `<button class="btn-roll" id="btn-attack">⚔ Támadás</button>`;
-    document.getElementById('btn-attack').addEventListener('click', () => {
-      multiTarget ? showTargetButtons('sword') : resolvePlayerAttackOn(alive[0].idx);
-    });
+    document.getElementById('btn-attack').addEventListener('click', () =>
+      multiTarget ? showTargetButtons('sword') : resolvePlayerAttackOn(alive[0].idx));
   }
 }
 
@@ -688,8 +645,7 @@ function showTargetButtons(mode) {
 function showEnemyTurn() {
   const actions = document.getElementById('combat-actions');
   const count   = livingEnemies().length;
-  const label   = count > 1 ? `${count} ellenfél támad` : 'Ellenfél támad';
-  actions.innerHTML = `<button class="btn-roll" id="btn-enemy-turn">${label} (2d6 × ${count})</button>`;
+  actions.innerHTML = `<button class="btn-roll" id="btn-enemy-turn">${count > 1 ? count + ' ellenfél támad' : 'Ellenfél támad'} (2d6 × ${count})</button>`;
   document.getElementById('btn-enemy-turn').addEventListener('click', resolveAllEnemiesAttack);
 }
 
@@ -700,57 +656,63 @@ function canCastSpell() {
   return hasBook && state.character.current['varazserő'] > 0;
 }
 
-function showSpellChoice(multiTarget) {
+// Player picks which spell to cast (replaces the old random 2d6 roll)
+function showSpellPicker(multiTarget) {
   const actions = document.getElementById('combat-actions');
-  const mp = state.character.current['varazserő'];
+  const mp      = state.character.current['varazserő'];
+
+  const spellRows = rules.attack_spells.map(spell => {
+    const cost      = spell.cost === 'mind' ? mp : spell.cost;
+    const canAfford = mp >= cost;
+    const dmgLabel  = isNaN(parseInt(spell.damage)) ? 'különleges' : `${spell.damage} pont`;
+    return `
+      <button class="spell-pick-row ${canAfford ? '' : 'unaffordable'}"
+              data-roll="${spell.roll}" ${canAfford ? '' : 'disabled'}>
+        <div class="spell-pick-name">${spell.name}</div>
+        <div class="spell-pick-meta">${cost} VE &nbsp;·&nbsp; ${dmgLabel}</div>
+      </button>`;
+  }).join('');
+
   actions.innerHTML = `
-    <div class="spell-choice-wrap">
-      <div class="spell-choice-header">
+    <div class="spell-picker-wrap">
+      <div class="spell-picker-header">
         <span class="spell-choice-label">Varázserő: <strong>${mp}</strong></span>
         <button class="btn-secondary" id="btn-spell-cancel">Vissza</button>
       </div>
-      <div class="system-block-desc">Dobj 2 kockával, és megtudod, melyik varázslatod aktiválódik!</div>
-      <button class="btn-roll btn-magic" id="btn-spell-roll">Varázslat dobása (2d6)</button>
+      <div class="spell-picker-list">${spellRows}</div>
     </div>`;
+
   document.getElementById('btn-spell-cancel').addEventListener('click', showPlayerTurn);
-  document.getElementById('btn-spell-roll').addEventListener('click', () => resolveSpellRoll(multiTarget));
+  actions.querySelectorAll('.spell-pick-row:not([disabled])').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const roll  = parseInt(btn.dataset.roll);
+      const spell = rules.attack_spells.find(s => s.roll === roll);
+      showSpellConfirm(spell, multiTarget);
+    });
+  });
 }
 
-function resolveSpellRoll(multiTarget) {
-  const roll  = roll2d6();
-  const spell = rules.attack_spells.find(s => s.roll === roll);
-  const mp    = state.character.current['varazserő'];
-  const cost  = spell.cost === 'mind' ? mp : spell.cost;
+function showSpellConfirm(spell, multiTarget) {
   const actions = document.getElementById('combat-actions');
-
-  if (cost > mp) {
-    const alive = livingEnemies();
-    actions.innerHTML = `
-      <div class="spell-result no-mp">
-        <div class="spell-name">${spell.name}</div>
-        <div class="spell-meta">Dobás: ${roll} — Kell: ${cost} VE, van: ${mp} VE</div>
-        <div class="spell-desc">Nincs elég varázserőd ehhez a varázslathoz!</div>
-        <button class="btn-roll" id="btn-fallback-attack" style="margin-top:0.75rem">⚔ Kard helyett</button>
-      </div>`;
-    document.getElementById('btn-fallback-attack').addEventListener('click', () => {
-      multiTarget ? showTargetButtons('sword') : resolvePlayerAttackOn(alive[0].idx);
-    });
-    return;
-  }
+  const mp      = state.character.current['varazserő'];
+  const cost    = spell.cost === 'mind' ? mp : spell.cost;
 
   actions.innerHTML = `
     <div class="spell-result">
       <div class="spell-name">${spell.name}</div>
-      <div class="spell-meta">Dobás: ${roll} &nbsp;·&nbsp; Kész: ${cost} VE &nbsp;·&nbsp; Sebzés: ${spell.damage}</div>
+      <div class="spell-meta">Kész: ${cost} VE &nbsp;·&nbsp; Sebzés: ${spell.damage}</div>
       <div class="spell-desc">${spell.description}</div>
-      <button class="btn-roll btn-magic" id="btn-cast-confirm" style="margin-top:0.75rem">Elsütés!</button>
+      <div class="spell-confirm-row">
+        <button class="btn-secondary" id="btn-spell-back">← Vissza</button>
+        <button class="btn-roll btn-magic" id="btn-cast-confirm">Elsütés!</button>
+      </div>
     </div>`;
+
+  document.getElementById('btn-spell-back').addEventListener('click', () => showSpellPicker(multiTarget));
   document.getElementById('btn-cast-confirm').addEventListener('click', () => {
     if (multiTarget) {
-      // Need to pick a target before firing
-      showTargetButtons('spell');
-      // Stash spell for after target is chosen
       state.combat._pendingSpell = { spell, cost };
+      showTargetButtons('spell');
     } else {
       resolveSpellDamage(spell, cost, livingEnemies()[0].idx);
     }
@@ -760,7 +722,6 @@ function resolveSpellRoll(multiTarget) {
 function resolveSpellDamage(spell, cost, targetIdx) {
   const enemy  = state.combat.enemies[targetIdx];
   const player = state.character.current;
-
   player['varazserő'] = Math.max(0, player['varazserő'] - cost);
   renderStats();
 
@@ -782,44 +743,34 @@ function resolveSpellDamage(spell, cost, targetIdx) {
     markEnemyDead(targetIdx);
     if (livingEnemies().length === 0) { combatVictory(); return; }
   }
-
   setTimeout(showEnemyTurn, 800);
 }
 
-// Simplified effects for "speciális" spells — returns damage dealt
 function applySpellEffect(spell, enemy, player) {
   switch (spell.name) {
     case 'Ködpatkány':
-      // 3 hp/round × 4 rounds = 12 total (simplified: instant)
       return 12;
     case 'Vakság':
-      // Enemy −5 attack for rest of combat
       enemy.tamadasi_kepesseg = Math.max(0, enemy.tamadasi_kepesseg - 5);
       addCombatLog(`${enemy.name} megvakult! Támadása −5 pontra csökkent.`);
       return 0;
     case 'Fullasztás':
-      // Enemy skips next 2 attacks — tracked per-enemy
       enemy.skipTurns = (enemy.skipTurns || 0) + 2;
       addCombatLog(`${enemy.name} fuldokol! Kihagyja a következő 2 körét.`);
       return 0;
     case 'Ártó Szem':
-      // Enemy −5 defense
       enemy.vedettsegi_szint = Math.max(0, enemy.vedettsegi_szint - 5);
       addCombatLog(`${enemy.name} megremeg! Védettsége −5 pontra csökkent.`);
       return 0;
     case 'Erős Karok':
-      // Player +4 attack
       player.tamadasi_kepesseg += 4;
-      state.combat.playerAttackBonus = (state.combat.playerAttackBonus || 0) + 4;
       addCombatLog('Izmaid felpumpálódnak! +4 támadóerő.');
       return 0;
     case 'Kettős Csapás':
-      // Next 4 rounds of damage are doubled
       state.combat.doubleDamageRounds = (state.combat.doubleDamageRounds || 0) + 4;
       addCombatLog('Kettős Csapás aktív! A következő 4 körben duplán hat a sebzés.');
       return 0;
     case 'Halálvarázs':
-      // Instant kill (uses all MP — already spent)
       addCombatLog(`${enemy.name} teste elöregszik és összeomlik!`);
       return enemy.currentHp + 999;
     default:
@@ -846,7 +797,6 @@ function resolvePlayerAttackOn(targetIdx) {
     enemy.currentHp -= dmg;
     addCombatLog(`Találat! ${enemy.name} ${dmg} életerőt veszít. (marad: ${Math.max(0, enemy.currentHp)})`);
     updateEnemyHpBar(targetIdx);
-
     if (enemy.currentHp <= 0) {
       addCombatLog(`${enemy.name} elesett!`);
       markEnemyDead(targetIdx);
@@ -855,32 +805,25 @@ function resolvePlayerAttackOn(targetIdx) {
   } else {
     addCombatLog(`Kihagytad ${enemy.name}-t.`);
   }
-
   setTimeout(showEnemyTurn, 800);
 }
 
-// All living enemies attack the player in sequence, with a short delay between each
 async function resolveAllEnemiesAttack() {
-  const combat  = state.combat;
-  const player  = state.character.current;
-  const alive   = livingEnemies();
-
+  const combat = state.combat;
+  const player = state.character.current;
+  const alive  = livingEnemies();
   document.getElementById('combat-actions').innerHTML = '';
 
   for (const e of alive) {
     await new Promise(r => setTimeout(r, 600));
-
-    // Fullasztás: this specific enemy is stunned
     if (e.skipTurns > 0) {
       state.combat.enemies[e.idx].skipTurns--;
       addCombatLog(`${e.name} fuldokol — kihagyja a kört!`);
       continue;
     }
-
     const roll  = roll2d6();
     const power = roll + e.tamadasi_kepesseg;
     addCombatLog(`${e.name}: ${roll} + ${e.tamadasi_kepesseg} = ${power} vs ${player.vedettsegi_szint}`);
-
     if (power > player.vedettsegi_szint) {
       const dmg = calcDamage(e.damage);
       player.eletero -= dmg;
@@ -892,7 +835,6 @@ async function resolveAllEnemiesAttack() {
       addCombatLog(`${e.name} elvétette a csapást.`);
     }
   }
-
   await new Promise(r => setTimeout(r, 400));
   showPlayerTurn();
 }
@@ -941,18 +883,11 @@ function combatVictory() {
   addCombatLog('Győzelem!');
   const actions = document.getElementById('combat-actions');
   actions.innerHTML = '';
-
-  // Show the "victory" choices (first choice = victory path in most sections)
   const data = state.combat.sectionData;
   const victoryChoices = data.choices.filter(c =>
     !c.text || c.text.toLowerCase().includes('győz') ||
     !c.text.toLowerCase().includes('veszít'));
-
-  if (victoryChoices.length > 0) {
-    renderChoices(actions, victoryChoices);
-  } else {
-    renderChoices(actions, data.choices);
-  }
+  renderChoices(actions, victoryChoices.length > 0 ? victoryChoices : data.choices);
 }
 
 function combatDeath() {
@@ -960,9 +895,197 @@ function combatDeath() {
   const actions = document.getElementById('combat-actions');
   actions.innerHTML = `
     <div class="choice-btn dead-end">Életerőd nullára csökkent. Kalandod véget ért.</div>
-    <button class="btn-secondary" style="margin-top:1rem">Új kaland</button>
+    <button class="btn-secondary" style="margin-top:1rem">Főmenü</button>
   `;
-  actions.querySelector('.btn-secondary').addEventListener('click', () => showScreen('create'));
+  actions.querySelector('.btn-secondary').addEventListener('click', () => showScreen('menu'));
+}
+
+// ── SPELLBOOK MODAL ───────────────────────────────────────────────────────────
+
+function showSpellbookModal() {
+  renderSpellbookTab('attack');
+  document.getElementById('spellbook-modal').classList.remove('hidden');
+}
+
+function renderSpellbookTab(tab) {
+  const body   = document.getElementById('spellbook-body');
+  const spells = tab === 'attack' ? rules.attack_spells : rules.defense_spells;
+  const mp     = state.character.current?.['varazserő'] ?? Infinity;
+
+  body.innerHTML = spells.map(spell => {
+    const cost      = spell.cost === 'mind' ? 'Összes VE' : `${spell.cost} VE`;
+    const canAfford = spell.cost === 'mind'
+      ? mp >= (spell.cost_min ?? 0)
+      : mp >= spell.cost;
+
+    if (tab === 'attack') {
+      const dmgLabel = isNaN(parseInt(spell.damage)) ? 'különleges' : `${spell.damage} pont sebzés`;
+      return `
+        <div class="spellbook-entry ${canAfford ? '' : 'unaffordable'}">
+          <div class="spellbook-entry-header">
+            <span class="spellbook-spell-name">${spell.name}</span>
+            <span class="spellbook-spell-cost">${cost}</span>
+          </div>
+          <div class="spellbook-spell-damage">${dmgLabel}</div>
+          <div class="spellbook-spell-desc">${spell.description}</div>
+        </div>`;
+    } else {
+      return `
+        <div class="spellbook-entry ${canAfford ? '' : 'unaffordable'}">
+          <div class="spellbook-entry-header">
+            <span class="spellbook-spell-name">${spell.name}</span>
+            <span class="spellbook-spell-cost">${cost}</span>
+          </div>
+          <div class="spellbook-spell-damage">Véd: ${spell.protects_against} &nbsp;·&nbsp; Dobás: 1–${spell.activation_roll.split('-')[1]}</div>
+          <div class="spellbook-spell-desc">${spell.description}</div>
+        </div>`;
+    }
+  }).join('');
+
+  // Update tab active state
+  document.querySelectorAll('.modal-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.tab === tab);
+  });
+}
+
+// ── SAVE / LOAD SYSTEM ────────────────────────────────────────────────────────
+
+function getSaves() {
+  try { return JSON.parse(localStorage.getItem(SAVES_KEY) || '[]'); }
+  catch { return []; }
+}
+
+function putSaves(saves) {
+  localStorage.setItem(SAVES_KEY, JSON.stringify(saves));
+}
+
+function saveGame(name) {
+  const saves = getSaves();
+  const slot  = {
+    name,
+    bookId:    bookMeta?.id ?? 'unknown',
+    bookTitle: bookMeta?.title ?? '—',
+    section:   state.currentSection,
+    timestamp: Date.now(),
+    character: JSON.parse(JSON.stringify(state.character)),
+    history:   [...state.history],
+  };
+  // Replace existing save with same name, otherwise prepend
+  const idx = saves.findIndex(s => s.name === name);
+  if (idx >= 0) saves[idx] = slot;
+  else saves.unshift(slot);
+  putSaves(saves.slice(0, 10)); // max 10 saves
+}
+
+function loadSave(slot) {
+  if (!rules || !sections || slot.bookId !== bookMeta?.id) {
+    alert('Ehhez a mentéshez először válaszd ki a megfelelő könyvet!');
+    return;
+  }
+  state.character     = JSON.parse(JSON.stringify(slot.character));
+  state.history       = [...slot.history];
+  state.currentSection = slot.section;
+  state.combat        = null;
+
+  buildGameSidebar();
+  closeModal('saveload-modal');
+  showScreen('game');
+  loadSection(slot.section);
+}
+
+function showSaveLoadModal() {
+  renderSaveLoadBody();
+  document.getElementById('saveload-modal').classList.remove('hidden');
+}
+
+function renderSaveLoadBody() {
+  const body  = document.getElementById('saveload-body');
+  const saves = getSaves();
+  const inGame = document.getElementById('screen-game').classList.contains('active');
+
+  let saveSection = '';
+  if (inGame) {
+    saveSection = `
+      <div class="saveload-section">
+        <div class="saveload-section-title">Játék mentése</div>
+        <div class="save-input-row">
+          <input class="save-name-input" id="save-name-input" type="text"
+            placeholder="Mentés neve..." maxlength="32"
+            value="Szakasz ${state.currentSection}">
+          <button class="btn-primary save-btn" id="btn-do-save">Mentés</button>
+        </div>
+      </div>
+      <div class="sidebar-divider" style="margin:1rem 0"></div>`;
+  }
+
+  const slotRows = saves.length === 0
+    ? '<div class="saveload-empty">Még nincsenek mentett játékok.</div>'
+    : saves.map((s, i) => {
+        const date = new Date(s.timestamp).toLocaleDateString('hu-HU', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+        return `
+          <div class="save-slot">
+            <div class="save-slot-info">
+              <div class="save-slot-name">${s.name}</div>
+              <div class="save-slot-meta">${s.bookTitle} · ${s.section}. szakasz · ${date}</div>
+            </div>
+            <div class="save-slot-actions">
+              <button class="item-panel-btn" data-load="${i}">Betöltés</button>
+              <button class="item-panel-btn danger" data-delete="${i}">Törlés</button>
+            </div>
+          </div>`;
+      }).join('');
+
+  body.innerHTML = `
+    ${saveSection}
+    <div class="saveload-section">
+      <div class="saveload-section-title">Mentett játékok</div>
+      ${slotRows}
+    </div>`;
+
+  body.querySelector('#btn-do-save')?.addEventListener('click', () => {
+    const name = document.getElementById('save-name-input').value.trim() || `Szakasz ${state.currentSection}`;
+    saveGame(name);
+    renderSaveLoadBody();
+  });
+
+  body.querySelectorAll('[data-load]').forEach(btn => {
+    btn.addEventListener('click', () => loadSave(saves[parseInt(btn.dataset.load)]));
+  });
+
+  body.querySelectorAll('[data-delete]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const updated = getSaves();
+      updated.splice(parseInt(btn.dataset.delete), 1);
+      putSaves(updated);
+      renderSaveLoadBody();
+    });
+  });
+}
+
+// ── MODALS ────────────────────────────────────────────────────────────────────
+
+function closeModal(id) {
+  document.getElementById(id).classList.add('hidden');
+}
+
+function initModals() {
+  // Spellbook
+  document.getElementById('btn-spellbook').addEventListener('click', showSpellbookModal);
+  document.getElementById('btn-close-spellbook').addEventListener('click', () => closeModal('spellbook-modal'));
+  document.querySelectorAll('.modal-tab').forEach(tab => {
+    tab.addEventListener('click', () => renderSpellbookTab(tab.dataset.tab));
+  });
+
+  // Save/Load
+  document.getElementById('btn-save-load').addEventListener('click', showSaveLoadModal);
+  document.getElementById('btn-close-saveload').addEventListener('click', () => closeModal('saveload-modal'));
+
+  // Close modals on overlay click
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', e => {
+      if (e.target === overlay) overlay.classList.add('hidden');
+    });
+  });
 }
 
 // ── MOBILE DRAWER ─────────────────────────────────────────────────────────────
@@ -971,10 +1094,8 @@ function initDrawer() {
   const toggle  = document.getElementById('btn-stats-toggle');
   const overlay = document.getElementById('drawer-overlay');
   const drawer  = document.getElementById('mobile-drawer');
-
-  const open  = () => { overlay.classList.add('visible'); drawer.classList.add('open'); };
-  const close = () => { overlay.classList.remove('visible'); drawer.classList.remove('open'); };
-
+  const open    = () => { overlay.classList.add('visible'); drawer.classList.add('open'); };
+  const close   = () => { overlay.classList.remove('visible'); drawer.classList.remove('open'); };
   toggle.addEventListener('click', open);
   overlay.addEventListener('click', close);
 }
@@ -993,11 +1114,8 @@ function showLoading(on) {
 // ── INIT ──────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('btn-new-game')?.addEventListener('click', () => {
-    rollStats();
-    renderStatRolls();
-    showScreen('create');
-  });
+  document.getElementById('btn-new-game')?.addEventListener('click', () => showScreen('menu'));
   initDrawer();
+  initModals();
   init();
 });

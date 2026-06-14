@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-  <title>Mágusok Tornya</title>
+  <title>Harcos Képzelet</title>
 
-  <!-- PWA: makes it installable on iOS home screen -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Mágusok Tornya">
+  <meta name="apple-mobile-web-app-title" content="Harcos Képzelet">
   <link rel="manifest" href="manifest.json">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,61 +19,63 @@
 </head>
 <body>
 
-  <!-- ── CHARACTER CREATION SCREEN ── -->
-  <div id="screen-create" class="screen active">
+  <!-- ── MAIN MENU ── -->
+  <div id="screen-menu" class="screen active">
+    <div class="menu-wrapper">
+      <header class="menu-header">
+        <p class="menu-series">Harcos Képzelet</p>
+        <h1 class="menu-title">Válassz kalandot</h1>
+      </header>
+      <div class="book-grid" id="book-grid">
+        <!-- injected by game.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CHARACTER CREATION ── -->
+  <div id="screen-create" class="screen">
     <div class="create-wrapper">
       <header class="create-header">
-        <p class="create-subtitle">Harcos Képzelet • 22. kötet</p>
-        <h1 class="create-title">Mágusok Tornya</h1>
-        <p class="create-author">Jonathan Graves</p>
+        <button class="btn-back" id="btn-back-to-menu">← Vissza</button>
+        <p class="create-subtitle" id="create-subtitle">Harcos Képzelet</p>
+        <h1 class="create-title" id="create-title">—</h1>
+        <p class="create-author" id="create-author">—</p>
       </header>
 
       <section class="create-section">
         <h2>Válassz fajt</h2>
-        <div class="race-grid" id="race-grid">
-          <!-- injected by game.js -->
-        </div>
+        <div class="race-grid" id="race-grid"></div>
       </section>
 
       <section class="create-section">
         <h2>Tulajdonságaid</h2>
-        <div class="stats-roll-grid" id="stats-roll-grid">
-          <!-- injected by game.js -->
-        </div>
-        <button class="btn-secondary" id="btn-reroll">
-          Újra dob
-        </button>
+        <div class="stats-roll-grid" id="stats-roll-grid"></div>
+        <button class="btn-secondary" id="btn-reroll">Újra dob</button>
       </section>
 
-      <button class="btn-primary" id="btn-start">
-        Kaland kezdése
-      </button>
+      <button class="btn-primary" id="btn-start">Kaland kezdése</button>
     </div>
   </div>
 
   <!-- ── GAME SCREEN ── -->
   <div id="screen-game" class="screen">
 
-    <!-- Sidebar (desktop) / Drawer (mobile) -->
     <aside id="sidebar" class="sidebar">
       <div class="sidebar-inner">
+
         <div class="sidebar-book">
-          <span class="sidebar-book-title">Mágusok Tornya</span>
+          <span class="sidebar-book-title" id="sidebar-book-title">—</span>
         </div>
 
         <div class="stat-block">
-          <div class="stat-row" id="stat-eletero">
+          <div class="stat-row">
             <span class="stat-label">Életerő</span>
-            <div class="stat-bar-wrap">
-              <div class="stat-bar" id="bar-eletero"></div>
-            </div>
+            <div class="stat-bar-wrap"><div class="stat-bar" id="bar-eletero"></div></div>
             <span class="stat-value" id="val-eletero">—</span>
           </div>
-          <div class="stat-row" id="stat-varazserő">
+          <div class="stat-row">
             <span class="stat-label">Varázserő</span>
-            <div class="stat-bar-wrap">
-              <div class="stat-bar magic" id="bar-varazserő"></div>
-            </div>
+            <div class="stat-bar-wrap"><div class="stat-bar magic" id="bar-varazserő"></div></div>
             <span class="stat-value" id="val-varazserő">—</span>
           </div>
           <div class="stat-row-simple">
@@ -95,58 +96,79 @@
 
         <div class="inventory-block">
           <h3 class="sidebar-section-label">Felszerelés</h3>
-          <ul id="inventory-list" class="inventory-list">
-            <!-- injected by game.js -->
-          </ul>
+          <ul id="inventory-list" class="inventory-list"></ul>
         </div>
+
+        <div class="sidebar-divider"></div>
+
+        <button class="sidebar-action-btn" id="btn-spellbook">
+          <span>✦</span> Varázskönyv
+        </button>
+        <button class="sidebar-action-btn" id="btn-save-load">
+          <span>◈</span> Mentés / Betöltés
+        </button>
 
         <div class="sidebar-divider"></div>
 
         <div class="race-badge-wrap">
           <span class="race-badge" id="race-badge">—</span>
         </div>
-
-        <button class="btn-ghost sidebar-new-game" id="btn-new-game">
-          Új kaland
-        </button>
+        <button class="btn-ghost sidebar-new-game" id="btn-new-game">Új kaland</button>
       </div>
     </aside>
 
-    <!-- Main content -->
     <main id="main" class="main">
-
-      <!-- Mobile top bar -->
       <div class="mobile-topbar">
-        <button class="btn-icon" id="btn-stats-toggle" aria-label="Tulajdonságok">
+        <button class="btn-icon" id="btn-stats-toggle">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-            <circle cx="12" cy="7" r="4"/>
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
           </svg>
         </button>
-        <span class="mobile-title">Mágusok Tornya</span>
+        <span class="mobile-title" id="mobile-book-title">—</span>
         <div class="mobile-hp" id="mobile-hp">— ÉL</div>
       </div>
 
-      <!-- Section display -->
       <div class="section-wrap" id="section-wrap">
         <div class="section-number" id="section-number"></div>
         <div class="section-text" id="section-text"></div>
         <div class="choices" id="choices"></div>
       </div>
 
-      <!-- Loading / error state -->
       <div class="loading" id="loading">Betöltés...</div>
     </main>
 
-    <!-- Mobile stats drawer -->
     <div class="mobile-drawer-overlay" id="drawer-overlay"></div>
     <div class="mobile-drawer" id="mobile-drawer">
       <div class="drawer-handle"></div>
-      <div class="drawer-stats" id="drawer-stats">
-        <!-- mirrored from sidebar, injected by game.js -->
-      </div>
+      <div class="drawer-stats" id="drawer-stats"></div>
     </div>
 
+  </div>
+
+  <!-- ── SPELLBOOK MODAL ── -->
+  <div class="modal-overlay hidden" id="spellbook-modal">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h2 class="modal-title">Varázskönyv</h2>
+        <button class="modal-close" id="btn-close-spellbook">✕</button>
+      </div>
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="attack">Támadó</button>
+        <button class="modal-tab" data-tab="defense">Védő</button>
+      </div>
+      <div class="modal-body" id="spellbook-body"></div>
+    </div>
+  </div>
+
+  <!-- ── SAVE / LOAD MODAL ── -->
+  <div class="modal-overlay hidden" id="saveload-modal">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <h2 class="modal-title">Mentés / Betöltés</h2>
+        <button class="modal-close" id="btn-close-saveload">✕</button>
+      </div>
+      <div class="modal-body" id="saveload-body"></div>
+    </div>
   </div>
 
   <script src="game.js"></script>

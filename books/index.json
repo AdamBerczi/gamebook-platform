@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "id": "magusok-tornya",
+      "title": "Mágusok Tornya",
+      "author": "Jonathan Graves",
+      "year": 1997,
+      "series": "Harcos Képzelet",
+      "volume": 22,
+      "cover": "/books/magusok-tornya/cover.png",
+      "sections": "/books/magusok-tornya/sections.json",
+      "rules": "/books/magusok-tornya/rules.json",
+      "description": "Egy tolvaj vagy, akit elbűvöl a mágia hatalma. Célod: bejutni a Mágusok Tornyába és megszerezni annak titkait."
+    }
+  ]
+}

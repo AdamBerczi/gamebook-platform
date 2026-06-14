@@ -31,8 +31,8 @@ Designed for personal use and as a learning project. Built step by step — ask 
 ```
 /gamebook-platform
   /pipeline        ← OCR, parsing, cleanup scripts (Python)
-  /frontend        ← HTML/JS/CSS web interface
   /books
+    index.json                 ← multi-book manifest (id, title, cover, sections, rules URLs)
     /magusok-tornya
       /pages/                  ← 94 PNG images (gitignored)
       /raw-text/               ← per-page OCR output (gitignored)
@@ -41,6 +41,13 @@ Designed for personal use and as a learning project. Built step by step — ask 
       parse_config.json        ← book-specific parser config
       sections.json            ← 300 parsed sections (committed)
       rules.json               ← stats, races, combat, spells (committed)
+      cover.png                ← 400×560px book cover art (Pillow-generated)
+  index.html       ← single-page app shell (all screens + modals)
+  game.js          ← all game logic
+  style.css        ← all styles
+  manifest.json    ← PWA manifest
+  icon-192.png     ← PWA icon
+  icon-512.png     ← PWA icon
   CLAUDE.md        ← this file
 ```
 
@@ -52,13 +59,15 @@ Designed for personal use and as a learning project. Built step by step — ask 
 - **Vanilla HTML/JS/CSS** — frontend (no framework)
 - **JSON** — data format between pipeline and frontend
 - **Claude Vision API** (`claude-haiku-4-5-20251001`) — OCR of scanned pages
-- **Claude Haiku text API** — Hungarian spellcheck/correction pass
+- **Claude Sonnet API** (`claude-sonnet-4-6`) — Hungarian OCR correction pass (pipeline/05)
 - **PWA** — installable on iOS home screen
+- **localStorage** — save/load game slots (key: `hk_saves`, max 10 slots)
+- **Cloudflare Pages** — hosting (repo root = site root, no build step)
 
 ### Python libraries
 - `pymupdf` (fitz) — renders PDF pages to PNG
 - `anthropic` — Claude API client
-- `Pillow` — generates PWA icons
+- `Pillow` — generates PWA icons and book cover art
 
 ### Environment
 - Windows 11, PowerShell
@@ -83,18 +92,28 @@ python -m http.server 8000
 # then open http://localhost:8000/
 ```
 
+## Hosting (Cloudflare Pages)
+
+- Repo root is the site root — `index.html` is at `/`
+- No build step: output directory = `/`
+- Two emails allowlisted in Cloudflare Access
+- After any code change: `git push` → Cloudflare auto-deploys
+
 ---
 
 ## Pipeline Scripts (run in order for a new book)
 
 ```powershell
-python pipeline\01_pdf_to_images.py [book-id]   # PDF → PNG pages
-python pipeline\02_ocr_pages.py     [book-id]   # PNG → raw text (Claude Vision)
-python pipeline\04_clean_text.py    [book-id]   # raw text → cleaned text (Claude Haiku)
-python pipeline\03_parse_sections.py [book-id]  # cleaned text → sections.json
+python pipeline\01_pdf_to_images.py [book-id]    # PDF → PNG pages
+python pipeline\02_ocr_pages.py     [book-id]    # PNG → raw text (Claude Vision)
+python pipeline\04_clean_text.py    [book-id]    # raw text → cleaned text (Claude Haiku)
+python pipeline\03_parse_sections.py [book-id]   # cleaned text → sections.json
+python pipeline\05_correct_sections.py [book-id] # sections.json → OCR-corrected (Claude Sonnet)
 ```
 
 All scripts default to `magusok-tornya` if no book ID given. All are resumable (skip already-done files).
+
+Script 05 requires `ANTHROPIC_API_KEY` set in environment and must run from a fresh terminal (not Claude Code session). Creates a `.bak` backup before modifying.
 
 ---
 
@@ -111,12 +130,33 @@ PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
 ## Features Implemented
 
 ### Frontend
-- Character creation screen: 5 races, stat rolling with re-roll, race stat modifiers shown
+- **Main menu**: book grid loaded from `books/index.json`; shows cover art, series/volume, description; click to load book
+- **Character creation**: race selection grid + stat rolling; ← Vissza returns to menu; book title/author shown dynamically
 - Prologue screen ("Előzmények") between character creation and section 1
 - Game screen: sidebar (desktop) + collapsible drawer (mobile)
 - Sidebar: HP/MP bars, all 5 stats, inventory list, race badge, new game button
 - Mobile: sticky HP in topbar, slide-up stats drawer
 - PWA manifest + tower icons (icon-192.png, icon-512.png) for iOS home screen
+
+### Spellbook viewer
+- Sidebar button opens modal with Támadó / Védő tabs
+- Each spell shows: name, VE cost (badge), damage, full description
+- Unaffordable spells are dimmed (opacity) based on current varázserő
+
+### Spell selection (combat)
+- In combat, clicking ✦ Varázslat shows a scrollable spell picker list
+- All 11 attack spells shown; unaffordable ones are grayed out and disabled
+- Click a spell → confirm screen with description → Elsütés! or ← Vissza
+- Multi-enemy: target selection step inserted after confirm
+- Replaces the old random 2d6 roll mechanic
+
+### Save / Load system
+- Sidebar button opens modal
+- Save: type a name (pre-filled with current section), click Mentés
+- Saves stored in `localStorage` key `hk_saves` (max 10 slots, newest first)
+- Each slot records: name, bookId, bookTitle, section, timestamp, full character + inventory
+- Load: click Betöltés on any slot (only works if matching book is loaded)
+- Delete: click Törlés on any slot
 
 ### Luck test system
 - Detects `has_luck_test` sections, shows 2d6 roll UI
@@ -175,8 +215,7 @@ PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
 - Section 246: text garbled mid-sentence from OCR artifact — needs manual fix from PDF
 - Some `has_combat` sections (27 total) still lack extracted enemy stats (only 18 parsed) — unusual formats
 - Magic defense spells not yet implemented (enemy mages don't appear in extracted data yet)
-- Frontend book URL is hardcoded — for a second book, change the two constants at top of `game.js`,
-  or implement `?book=` URL parameter routing
+- OCR correction pipeline (`05_correct_sections.py`) created but not yet run on magusok-tornya
 
 ---
 
@@ -184,10 +223,11 @@ PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
 
 1. Place PDF in `books/<book-id>/<book-id>.pdf`
 2. Write `books/<book-id>/parse_config.json` (copy magusok-tornya's as template)
-3. Run the 4 pipeline scripts with the new book-id
+3. Run the 5 pipeline scripts with the new book-id
 4. Write `books/<book-id>/rules.json` for that book's stat/race/spell system
-5. Change the two URL constants at the top of `frontend/game.js`
-6. Everything else (combat, magic, luck, inventory) carries over automatically
+5. Generate `books/<book-id>/cover.png` (copy and adapt the Pillow script used for magusok-tornya)
+6. Add an entry to `books/index.json` with all fields (id, title, author, year, series, volume, cover, sections, rules, description)
+7. Everything else (combat, magic, luck, inventory, save/load, menus) carries over automatically
 
 ---
 
@@ -229,3 +269,13 @@ PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
 - QA pass: fixed section 67 choice texts, added section 267 from scanned photo,
   fixed false-positive ')' choices in sections 147/204/257, fixed missing choice in 211
 - Added Ember (human) baseline race with no modifiers to rules.json
+
+### Session 8 — Main Menu, Spellbook, Spell Picker, Save/Load, Cloudflare fix
+- Fixed Cloudflare Pages hosting: moved all frontend files from `frontend/` to repo root
+- Created `books/index.json` multi-book manifest
+- Generated `books/magusok-tornya/cover.png` (400×560px, Pillow)
+- Created `pipeline/05_correct_sections.py` — Claude Sonnet OCR correction script
+- Rewrote `index.html`: added `#screen-menu`, spellbook modal, save/load modal, sidebar action buttons
+- Rewrote `game.js`: menu system, dynamic book loading, spellbook viewer, spell picker (player choice),
+  save/load with localStorage, back-to-menu navigation
+- Updated `style.css`: all new UI components (book cards, modals, spell picker, save slots)
