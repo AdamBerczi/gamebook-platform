@@ -221,13 +221,8 @@ function startGame() {
   state.character.base    = { ...modified };
   state.character.current = { ...modified };
   state.character.max     = { ...modified };
-  state.character.race    = state.selectedRace;
-  state.character.inventory = buildStartingInventory();
-
-  // Apply stat bonuses from starting items (Amulett, etc.)
-  for (const item of state.character.inventory) {
-    if (item.stat_bonus) applyItemStatBonus(item);
-  }
+  state.character.race      = state.selectedRace;
+  state.character.inventory = [];   // filled on first visit to section 1
 
   state.currentSection = 1;
   state.history = [];
@@ -329,25 +324,38 @@ function renderDrawerStats() {
   `).join('');
 }
 
+function getItemTooltip(item) {
+  const parts = [];
+  if (item.note) parts.push(item.note);
+  if (item.stat_bonus) {
+    const STAT_NAMES = { eletero: 'Életerő', tamadasi_kepesseg: 'Támadás', vedettsegi_szint: 'Védettség', szerencse: 'Szerencse', 'varazserő': 'Varázserő' };
+    parts.push(Object.entries(item.stat_bonus).map(([k, v]) => `+${v} ${STAT_NAMES[k] ?? k}`).join(', '));
+  }
+  return parts.join(' · ') || null;
+}
+
 function renderInventory() {
   const list = document.getElementById('inventory-list');
   if (!list) return;
   list.innerHTML = '';
 
   state.character.inventory.forEach((item, idx) => {
-    const action = getItemAction(item);
-    const qtyStr = item.qty > 1
+    const action  = getItemAction(item);
+    const tooltip = getItemTooltip(item);
+    const qtyStr  = item.qty > 1
       ? `<span class="inventory-qty">×${item.qty}${item.unit ? ' ' + item.unit : ''}</span>`
       : '';
     const hint = action ? `<span class="item-hint">${action.hint}</span>` : '';
 
     const li = document.createElement('li');
     li.className = 'inventory-item' + (action ? ' has-action' : '');
+    if (tooltip) li.dataset.tooltip = tooltip;
     li.innerHTML = `
       <div class="inventory-item-row" data-idx="${idx}">
         <span>${item.name}</span>
         <div class="inventory-item-meta">${qtyStr}${hint}</div>
       </div>
+      ${tooltip ? `<div class="item-tooltip-box">${tooltip}</div>` : ''}
       <div class="item-action-panel hidden" id="item-panel-${idx}"></div>
     `;
     if (action) {
@@ -361,8 +369,6 @@ function renderInventory() {
 
 function getItemAction(item) {
   const note = item.note || '';
-  const dmgMatch  = note.match(/(\d+-\d+)\s*veszteség/i);
-  if (dmgMatch) return { type: 'weapon', damage: dmgMatch[1], hint: 'dob' };
   const healMatch = note.match(/(\d+)\s*életerőpontot?\s*gyógyít/i);
   if (healMatch) return { type: 'potion', heal: parseInt(healMatch[1]), hint: 'iszik' };
   const name = item.name.toLowerCase();
@@ -383,20 +389,7 @@ function toggleItemPanel(idx, item, action) {
 }
 
 function renderItemPanel(panel, item, action, idx) {
-  if (action.type === 'weapon') {
-    const formula = damageFormulaForRange(action.damage);
-    panel.innerHTML = `
-      <div class="item-panel-label">Sebzés: ${action.damage}</div>
-      <button class="item-panel-btn" id="item-roll-${idx}">Sebzés dobása</button>
-      <div class="item-panel-result hidden" id="item-res-${idx}"></div>
-    `;
-    document.getElementById(`item-roll-${idx}`).addEventListener('click', () => {
-      const dmg = formula ? rollDamage(formula) : d6();
-      const el  = document.getElementById(`item-res-${idx}`);
-      el.classList.remove('hidden');
-      el.textContent = `${dmg} pont sebzés`;
-    });
-  } else if (action.type === 'potion') {
+  if (action.type === 'potion') {
     const cur  = state.character.current.eletero;
     const max  = state.character.max.eletero;
     const full = cur >= max;
@@ -485,6 +478,7 @@ function addItemToInventory(itemDef) {
     state.character.inventory.push(newItem);
     if (newItem.stat_bonus) applyItemStatBonus(newItem);
   }
+  showItemToast(itemDef.item, true);
   renderInventory();
   renderStats();
 }
@@ -494,6 +488,7 @@ function removeItemByName(name) {
   if (idx === -1) return;
   revertItemStatBonus(state.character.inventory[idx]);
   state.character.inventory.splice(idx, 1);
+  showItemToast(name, false);
   renderInventory();
   renderStats();
 }
@@ -511,6 +506,12 @@ function loadSection(id) {
   // First-visit item exchanges (takes_items / gives_items)
   const firstVisit = state.history.filter(x => x === id).length === 1;
   if (firstVisit) {
+    // Section 1: hand out starting equipment from rules.json
+    if (id === 1 && rules.starting_equipment?.length) {
+      for (const eq of buildStartingInventory()) {
+        addItemToInventory({ item: eq.name, quantity: eq.qty, unit: eq.unit, note: eq.note, stat_bonus: eq.stat_bonus });
+      }
+    }
     if (data.takes_items?.length) {
       for (const name of data.takes_items) removeItemByName(name);
     }
@@ -545,6 +546,29 @@ function showGoldToast(spent, remaining) {
   document.getElementById('main').appendChild(toast);
   setTimeout(() => toast.classList.add('gold-toast-show'), 10);
   setTimeout(() => { toast.classList.remove('gold-toast-show'); setTimeout(() => toast.remove(), 400); }, 3000);
+}
+
+let _itemToastQueue = [];
+function showItemToast(name, gained) {
+  _itemToastQueue.push({ name, gained });
+  if (_itemToastQueue.length > 1) return; // already draining
+  drainItemToastQueue();
+}
+function drainItemToastQueue() {
+  if (!_itemToastQueue.length) return;
+  const { name, gained } = _itemToastQueue[0];
+  const existing = document.getElementById('item-toast');
+  if (existing) existing.remove();
+  const toast = document.createElement('div');
+  toast.id = 'item-toast';
+  toast.className = 'item-toast ' + (gained ? 'item-toast-gain' : 'item-toast-loss');
+  toast.innerHTML = `${gained ? '＋' : '－'} ${name}`;
+  document.getElementById('main').appendChild(toast);
+  setTimeout(() => toast.classList.add('item-toast-show'), 10);
+  setTimeout(() => {
+    toast.classList.remove('item-toast-show');
+    setTimeout(() => { toast.remove(); _itemToastQueue.shift(); drainItemToastQueue(); }, 350);
+  }, 1800);
 }
 
 function renderSection(data) {
