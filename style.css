@@ -536,6 +536,25 @@ body {
   white-space: pre-line;
 }
 
+/* Section illustration */
+.section-illustration {
+  margin-top: 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.section-illustration.hidden { display: none; }
+
+.section-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: top;
+}
+
 /* Choices */
 .choices {
   margin-top: 2.5rem;

@@ -450,12 +450,24 @@ function renderSection(data) {
   numEl.textContent   = `${data.id}. szakasz`;
   textEl.textContent  = data.text;
   choicesEl.innerHTML = '';
+  loadSectionIllustration(data.id);
 
   if (data.is_ending) { renderEnding(choicesEl); wrap.classList.add('visible'); return; }
   if (data.enemies?.length > 0) { renderCombatBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_luck_test && data.choices.length >= 2) { renderLuckTestBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   renderChoices(choicesEl, data.choices);
   wrap.classList.add('visible');
+}
+
+function loadSectionIllustration(id) {
+  const wrap = document.getElementById('section-illustration');
+  const img  = document.getElementById('section-illustration-img');
+  if (!wrap || !img || !bookMeta?.images) return;
+  wrap.classList.add('hidden');
+  img.src = '';
+  img.onload  = () => wrap.classList.remove('hidden');
+  img.onerror = () => wrap.classList.add('hidden');
+  img.src = `${bookMeta.images}/${id}.jpg`;
 }
 
 function renderChoices(container, choices) {
