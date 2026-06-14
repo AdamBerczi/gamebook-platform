@@ -121,7 +121,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 30
     },
     "7": {
       "id": 7,
@@ -519,7 +520,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 5
     },
     "32": {
       "id": 32,
@@ -1155,7 +1157,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 20
     },
     "70": {
       "id": 70,
@@ -1404,7 +1407,22 @@
           "target": 11
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Városházi darabont",
+          "eletero": 15,
+          "tamadasi_kepesseg": 24,
+          "vedettsegi_szint": 24,
+          "damage": "3-8"
+        },
+        {
+          "name": "Városházi darabont",
+          "eletero": 15,
+          "tamadasi_kepesseg": 24,
+          "vedettsegi_szint": 24,
+          "damage": "3-8"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -2179,7 +2197,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 2
     },
     "133": {
       "id": 133,
@@ -2423,7 +2442,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 30
     },
     "147": {
       "id": 147,
@@ -2705,7 +2725,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 10
     },
     "163": {
       "id": 163,
@@ -2978,7 +2999,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 1
     },
     "179": {
       "id": 179,
@@ -3059,7 +3081,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 2
     },
     "184": {
       "id": 184,
@@ -3255,7 +3278,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 10
     },
     "195": {
       "id": 195,
@@ -3612,7 +3636,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 30
     },
     "217": {
       "id": 217,
@@ -3665,7 +3690,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 2
     },
     "220": {
       "id": 220,
@@ -4095,7 +4121,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 2
     },
     "245": {
       "id": 245,
@@ -4345,7 +4372,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 1
     },
     "260": {
       "id": 260,
@@ -4522,7 +4550,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 1
     },
     "270": {
       "id": 270,
@@ -4778,7 +4807,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 10
     },
     "285": {
       "id": 285,
@@ -4836,7 +4866,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 2
     },
     "288": {
       "id": 288,
@@ -4868,7 +4899,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 5
     },
     "290": {
       "id": 290,
@@ -4908,7 +4940,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "gold_cost": 2
     },
     "292": {
       "id": 292,

@@ -435,10 +435,33 @@ function loadSection(id) {
   if (!data) { showSectionError(id); return; }
   state.currentSection = id;
   state.history.push(id);
+  if (data.gold_cost) deductGold(data.gold_cost);
   renderSection(data);
   renderStats();
   document.getElementById('main').scrollTo({ top: 0, behavior: 'smooth' });
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function deductGold(amount) {
+  const gold = state.character.inventory.find(i => i.name === 'Aranypénz');
+  if (!gold) return;
+  const actual = Math.min(amount, gold.qty);
+  gold.qty -= actual;
+  if (gold.qty <= 0) state.character.inventory = state.character.inventory.filter(i => i.name !== 'Aranypénz');
+  showGoldToast(actual, gold.qty >= 0 ? gold.qty : 0);
+  renderInventory();
+}
+
+function showGoldToast(spent, remaining) {
+  const existing = document.getElementById('gold-toast');
+  if (existing) existing.remove();
+  const toast = document.createElement('div');
+  toast.id = 'gold-toast';
+  toast.className = 'gold-toast';
+  toast.innerHTML = `<span class="gold-toast-icon">🪙</span> −${spent} arany <span class="gold-toast-remain">(marad: ${remaining})</span>`;
+  document.getElementById('main').appendChild(toast);
+  setTimeout(() => toast.classList.add('gold-toast-show'), 10);
+  setTimeout(() => { toast.classList.remove('gold-toast-show'); setTimeout(() => toast.remove(), 400); }, 3000);
 }
 
 function renderSection(data) {
