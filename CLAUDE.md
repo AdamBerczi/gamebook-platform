@@ -80,7 +80,7 @@ Designed for personal use and as a learning project. Built step by step — ask 
 ```powershell
 cd D:\Code\gamebook-platform
 python -m http.server 8000
-# then open http://localhost:8000/frontend/
+# then open http://localhost:8000/
 ```
 
 ---
