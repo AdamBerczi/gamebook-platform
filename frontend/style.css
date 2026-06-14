@@ -766,6 +766,21 @@ body {
 .roll-outcome.failure { color: var(--hp-color); }
 
 /* Combat block */
+.combat-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.combat-enemies-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* keep old selector for any legacy references */
 .combat-entities {
   display: flex;
   align-items: center;
@@ -851,6 +866,24 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.target-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 2px;
+}
+
+.target-btn {
+  text-align: left;
+}
+
+.combatant-name.dead {
+  text-decoration: line-through;
+  opacity: 0.4;
 }
 
 /* ── MAGIC SYSTEM ── */

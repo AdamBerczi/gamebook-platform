@@ -537,22 +537,22 @@ function renderLuckTestBlock(container, data) {
 
 // ── COMBAT SYSTEM ─────────────────────────────────────────────────────────────
 //
-// Combat flow:
-//   1. Show enemy stats
-//   2. Roll initiative (player 1d6 vs enemy 1d6)
-//   3. Winner attacks: roll 2d6 + attack vs defender's defense
-//   4. If hit: roll damage, apply to defender's HP
-//   5. Loser attacks (if alive)
-//   6. Repeat until someone reaches 0 HP
-//   7. Player wins → enable victory choice; Player dies → game over
+// Multi-foe rules (from the book):
+//   - ALL living enemies attack the player every round
+//   - Player may only attack ONE enemy per round (their choice)
+//   - Initiative is rolled once at the start (player vs the group)
+//
+// Round flow:
+//   Player turn  → pick target → attack → check kill
+//   Enemies turn → each living enemy attacks in sequence → check death
+//   Repeat
 
 function renderCombatBlock(container, data) {
-  // Build combat state for all enemies
   state.combat = {
-    enemies: data.enemies.map(e => ({ ...e, currentHp: e.eletero })),
-    currentEnemyIndex: 0,
-    log: [],
-    sectionData: data,
+    enemies:           data.enemies.map(e => ({ ...e, currentHp: e.eletero })),
+    sectionData:       data,
+    doubleDamageRounds: 0,
+    playerAttackBonus:  0,
   };
 
   const block = document.createElement('div');
@@ -564,14 +564,30 @@ function renderCombatBlock(container, data) {
 }
 
 function renderCombatUI(block) {
-  const combat  = state.combat;
-  const enemy   = combat.enemies[combat.currentEnemyIndex];
-  const player  = state.character.current;
+  const combat = state.combat;
+  const player = state.character.current;
+
+  // Build enemy HP rows — one per enemy
+  const enemyRows = combat.enemies.map((e, i) => `
+    <div class="combatant enemy-side" id="combatant-enemy-${i}">
+      <div class="combatant-name ${e.currentHp <= 0 ? 'dead' : ''}">${e.name}</div>
+      <div class="combatant-hp">
+        <div class="combatant-hp-bar-wrap">
+          <div class="combatant-hp-bar enemy-bar" id="enemy-hp-bar-${i}"
+            style="width: ${e.currentHp <= 0 ? 0 : 100}%"></div>
+        </div>
+        <span id="enemy-hp-val-${i}">${Math.max(0, e.currentHp)} ÉL</span>
+      </div>
+      <div class="combatant-stat">
+        Tám: ${e.tamadasi_kepesseg} &nbsp;|&nbsp; Véd: ${e.vedettsegi_szint}
+      </div>
+    </div>
+  `).join('');
 
   block.innerHTML = `
     <div class="system-block-title">Harc</div>
 
-    <div class="combat-entities">
+    <div class="combat-layout">
       <div class="combatant player-side">
         <div class="combatant-name">Te</div>
         <div class="combatant-hp">
@@ -581,22 +597,12 @@ function renderCombatUI(block) {
           </div>
           <span id="player-hp-val">${player.eletero} ÉL</span>
         </div>
-        <div class="combatant-stat">Támadás: ${player.tamadasi_kepesseg} &nbsp;|&nbsp; Védettség: ${player.vedettsegi_szint}</div>
+        <div class="combatant-stat">Tám: ${player.tamadasi_kepesseg} &nbsp;|&nbsp; Véd: ${player.vedettsegi_szint}</div>
       </div>
 
       <div class="combat-vs">VS</div>
 
-      <div class="combatant enemy-side">
-        <div class="combatant-name">${enemy.name}</div>
-        <div class="combatant-hp">
-          <div class="combatant-hp-bar-wrap">
-            <div class="combatant-hp-bar enemy-bar" id="enemy-hp-bar"
-              style="width: 100%"></div>
-          </div>
-          <span id="enemy-hp-val">${enemy.currentHp} ÉL</span>
-        </div>
-        <div class="combatant-stat">Támadás: ${enemy.tamadasi_kepesseg} &nbsp;|&nbsp; Védettség: ${enemy.vedettsegi_szint}</div>
-      </div>
+      <div class="combat-enemies-col">${enemyRows}</div>
     </div>
 
     <div class="combat-log" id="combat-log"></div>
@@ -609,42 +615,82 @@ function renderCombatUI(block) {
   document.getElementById('btn-initiative').addEventListener('click', rollInitiative);
 }
 
+function livingEnemies() {
+  return state.combat.enemies
+    .map((e, i) => ({ ...e, idx: i }))
+    .filter(e => e.currentHp > 0);
+}
+
 function rollInitiative() {
   const playerRoll = d6();
   const enemyRoll  = d6();
-  const combat = state.combat;
-  const enemy  = combat.enemies[combat.currentEnemyIndex];
+  const names = livingEnemies().map(e => e.name).join(' & ');
 
-  addCombatLog(`Kezdeményezés: te ${playerRoll}, ${enemy.name} ${enemyRoll}`);
+  addCombatLog(`Kezdeményezés: te ${playerRoll}, ${names} ${enemyRoll}`);
 
   if (playerRoll >= enemyRoll) {
     addCombatLog('Te támadsz először!');
-    showAttackButton('player');
+    showPlayerTurn();
   } else {
-    addCombatLog(`${enemy.name} támad először!`);
-    resolveEnemyAttack();
+    addCombatLog(`${names} támad először!`);
+    showEnemyTurn();
   }
 }
 
-function showAttackButton(who) {
-  const actions = document.getElementById('combat-actions');
-  if (who === 'player') {
-    if (canCastSpell()) {
-      actions.innerHTML = `
-        <div class="combat-action-row">
-          <button class="btn-roll" id="btn-attack">⚔ Kard (2d6)</button>
-          <button class="btn-roll btn-magic" id="btn-spell">✦ Varázslat</button>
-        </div>`;
-      document.getElementById('btn-attack').addEventListener('click', resolvePlayerAttack);
-      document.getElementById('btn-spell').addEventListener('click', showSpellChoice);
-    } else {
-      actions.innerHTML = `<button class="btn-roll" id="btn-attack">Támadás (2d6)</button>`;
-      document.getElementById('btn-attack').addEventListener('click', resolvePlayerAttack);
-    }
+// Player's action phase — choose target (if multiple) then attack or cast
+function showPlayerTurn() {
+  const actions  = document.getElementById('combat-actions');
+  const alive    = livingEnemies();
+  const multiTarget = alive.length > 1;
+
+  if (canCastSpell()) {
+    actions.innerHTML = `
+      <div class="combat-action-row">
+        <button class="btn-roll" id="btn-attack">⚔ Kard</button>
+        <button class="btn-roll btn-magic" id="btn-spell">✦ Varázslat</button>
+      </div>`;
+    document.getElementById('btn-attack').addEventListener('click', () => {
+      multiTarget ? showTargetButtons('sword') : resolvePlayerAttackOn(alive[0].idx);
+    });
+    document.getElementById('btn-spell').addEventListener('click', () => showSpellChoice(multiTarget));
   } else {
-    actions.innerHTML = `<button class="btn-roll" id="btn-enemy-attack">Ellenfél támad (2d6)</button>`;
-    document.getElementById('btn-enemy-attack').addEventListener('click', resolveEnemyAttack);
+    actions.innerHTML = `<button class="btn-roll" id="btn-attack">⚔ Támadás</button>`;
+    document.getElementById('btn-attack').addEventListener('click', () => {
+      multiTarget ? showTargetButtons('sword') : resolvePlayerAttackOn(alive[0].idx);
+    });
   }
+}
+
+function showTargetButtons(mode) {
+  const actions = document.getElementById('combat-actions');
+  const alive   = livingEnemies();
+  const label   = mode === 'spell' ? 'Kire sütsz varázslatot?' : 'Kit támadsz?';
+  actions.innerHTML = `
+    <div class="target-label">${label}</div>
+    ${alive.map(e => `
+      <button class="btn-roll target-btn" data-idx="${e.idx}">${e.name} (${e.currentHp} ÉL)</button>
+    `).join('')}
+  `;
+  actions.querySelectorAll('.target-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.dataset.idx);
+      if (mode === 'spell') {
+        const { spell, cost } = state.combat._pendingSpell;
+        delete state.combat._pendingSpell;
+        resolveSpellDamage(spell, cost, idx);
+      } else {
+        resolvePlayerAttackOn(idx);
+      }
+    });
+  });
+}
+
+function showEnemyTurn() {
+  const actions = document.getElementById('combat-actions');
+  const count   = livingEnemies().length;
+  const label   = count > 1 ? `${count} ellenfél támad` : 'Ellenfél támad';
+  actions.innerHTML = `<button class="btn-roll" id="btn-enemy-turn">${label} (2d6 × ${count})</button>`;
+  document.getElementById('btn-enemy-turn').addEventListener('click', resolveAllEnemiesAttack);
 }
 
 // ── MAGIC SYSTEM ──────────────────────────────────────────────────────────────
@@ -654,7 +700,7 @@ function canCastSpell() {
   return hasBook && state.character.current['varazserő'] > 0;
 }
 
-function showSpellChoice() {
+function showSpellChoice(multiTarget) {
   const actions = document.getElementById('combat-actions');
   const mp = state.character.current['varazserő'];
   actions.innerHTML = `
@@ -666,19 +712,19 @@ function showSpellChoice() {
       <div class="system-block-desc">Dobj 2 kockával, és megtudod, melyik varázslatod aktiválódik!</div>
       <button class="btn-roll btn-magic" id="btn-spell-roll">Varázslat dobása (2d6)</button>
     </div>`;
-  document.getElementById('btn-spell-cancel').addEventListener('click', () => showAttackButton('player'));
-  document.getElementById('btn-spell-roll').addEventListener('click', resolveSpellRoll);
+  document.getElementById('btn-spell-cancel').addEventListener('click', showPlayerTurn);
+  document.getElementById('btn-spell-roll').addEventListener('click', () => resolveSpellRoll(multiTarget));
 }
 
-function resolveSpellRoll() {
-  const roll   = roll2d6();
-  const spell  = rules.attack_spells.find(s => s.roll === roll);
-  const mp     = state.character.current['varazserő'];
-  const cost   = spell.cost === 'mind' ? mp : spell.cost;
-
+function resolveSpellRoll(multiTarget) {
+  const roll  = roll2d6();
+  const spell = rules.attack_spells.find(s => s.roll === roll);
+  const mp    = state.character.current['varazserő'];
+  const cost  = spell.cost === 'mind' ? mp : spell.cost;
   const actions = document.getElementById('combat-actions');
 
   if (cost > mp) {
+    const alive = livingEnemies();
     actions.innerHTML = `
       <div class="spell-result no-mp">
         <div class="spell-name">${spell.name}</div>
@@ -686,14 +732,11 @@ function resolveSpellRoll() {
         <div class="spell-desc">Nincs elég varázserőd ehhez a varázslathoz!</div>
         <button class="btn-roll" id="btn-fallback-attack" style="margin-top:0.75rem">⚔ Kard helyett</button>
       </div>`;
-    document.getElementById('btn-fallback-attack').addEventListener('click', resolvePlayerAttack);
+    document.getElementById('btn-fallback-attack').addEventListener('click', () => {
+      multiTarget ? showTargetButtons('sword') : resolvePlayerAttackOn(alive[0].idx);
+    });
     return;
   }
-
-  // Show the spell card and a confirm button
-  const dmgText = isNaN(parseInt(spell.damage))
-    ? `Speciális: ${spell.description}`
-    : `${spell.damage} életerőpont veszteség`;
 
   actions.innerHTML = `
     <div class="spell-result">
@@ -702,49 +745,45 @@ function resolveSpellRoll() {
       <div class="spell-desc">${spell.description}</div>
       <button class="btn-roll btn-magic" id="btn-cast-confirm" style="margin-top:0.75rem">Elsütés!</button>
     </div>`;
-  document.getElementById('btn-cast-confirm').addEventListener('click', () => resolveSpellDamage(spell, cost));
+  document.getElementById('btn-cast-confirm').addEventListener('click', () => {
+    if (multiTarget) {
+      // Need to pick a target before firing
+      showTargetButtons('spell');
+      // Stash spell for after target is chosen
+      state.combat._pendingSpell = { spell, cost };
+    } else {
+      resolveSpellDamage(spell, cost, livingEnemies()[0].idx);
+    }
+  });
 }
 
-function resolveSpellDamage(spell, cost) {
-  const enemy  = state.combat.enemies[state.combat.currentEnemyIndex];
+function resolveSpellDamage(spell, cost, targetIdx) {
+  const enemy  = state.combat.enemies[targetIdx];
   const player = state.character.current;
 
-  // Deduct MP
   player['varazserő'] = Math.max(0, player['varazserő'] - cost);
   renderStats();
 
-  // Calculate damage
   let dmg = 0;
-  let logMsg = '';
   const numericDmg = parseInt(spell.damage);
-
   if (!isNaN(numericDmg)) {
-    // Fixed numeric damage
     dmg = numericDmg;
-    logMsg = `${spell.name}: ${dmg} pont sebzés!`;
+    addCombatLog(`${spell.name}: ${dmg} pont sebzés!`);
   } else {
-    // Special spells — apply simplified damage + effect
     dmg = applySpellEffect(spell, enemy, player);
-    logMsg = `${spell.name} (különleges): ${dmg} pont sebzés.`;
+    if (dmg > 0) addCombatLog(`${spell.name}: ${dmg} pont sebzés.`);
   }
 
   enemy.currentHp -= dmg;
-  addCombatLog(logMsg);
-  updateEnemyHpBar();
+  updateEnemyHpBar(targetIdx);
 
   if (enemy.currentHp <= 0) {
-    state.combat.currentEnemyIndex++;
-    if (state.combat.currentEnemyIndex >= state.combat.enemies.length) {
-      combatVictory();
-    } else {
-      const next = state.combat.enemies[state.combat.currentEnemyIndex];
-      addCombatLog(`${enemy.name} elesett! Következő: ${next.name}`);
-      setTimeout(() => renderCombatUI(document.getElementById('combat-block')), 1200);
-    }
-    return;
+    addCombatLog(`${enemy.name} elesett!`);
+    markEnemyDead(targetIdx);
+    if (livingEnemies().length === 0) { combatVictory(); return; }
   }
 
-  setTimeout(() => showAttackButton('enemy'), 800);
+  setTimeout(showEnemyTurn, 800);
 }
 
 // Simplified effects for "speciális" spells — returns damage dealt
@@ -759,9 +798,9 @@ function applySpellEffect(spell, enemy, player) {
       addCombatLog(`${enemy.name} megvakult! Támadása −5 pontra csökkent.`);
       return 0;
     case 'Fullasztás':
-      // Enemy skips its next attack — flag it
-      state.combat.enemySkipTurns = (state.combat.enemySkipTurns || 0) + 2;
-      addCombatLog(`${enemy.name} fuldokol! Kihagyja a következő ${2} körét.`);
+      // Enemy skips next 2 attacks — tracked per-enemy
+      enemy.skipTurns = (enemy.skipTurns || 0) + 2;
+      addCombatLog(`${enemy.name} fuldokol! Kihagyja a következő 2 körét.`);
       return 0;
     case 'Ártó Szem':
       // Enemy −5 defense
@@ -788,79 +827,74 @@ function applySpellEffect(spell, enemy, player) {
   }
 }
 
-function resolvePlayerAttack() {
+function resolvePlayerAttackOn(targetIdx) {
   const roll   = roll2d6();
   const combat = state.combat;
-  const enemy  = combat.enemies[combat.currentEnemyIndex];
+  const enemy  = combat.enemies[targetIdx];
   const player = state.character.current;
   const power  = roll + player.tamadasi_kepesseg;
 
-  addCombatLog(`Dobás: ${roll} + ${player.tamadasi_kepesseg} = ${power} vs ${enemy.vedettsegi_szint}`);
+  addCombatLog(`Támadás ${enemy.name} ellen: ${roll} + ${player.tamadasi_kepesseg} = ${power} vs ${enemy.vedettsegi_szint}`);
 
   if (power > enemy.vedettsegi_szint) {
     let dmg = calcDamage(enemy.damage);
-    // Kettős Csapás: double damage while active
     if (combat.doubleDamageRounds > 0) {
       dmg *= 2;
       combat.doubleDamageRounds--;
-      addCombatLog(`Kettős Csapás aktív! (még ${combat.doubleDamageRounds} kör)`);
+      addCombatLog(`Kettős Csapás! (még ${combat.doubleDamageRounds} kör)`);
     }
     enemy.currentHp -= dmg;
     addCombatLog(`Találat! ${enemy.name} ${dmg} életerőt veszít. (marad: ${Math.max(0, enemy.currentHp)})`);
-    updateEnemyHpBar();
+    updateEnemyHpBar(targetIdx);
 
     if (enemy.currentHp <= 0) {
-      combat.currentEnemyIndex++;
-      if (combat.currentEnemyIndex >= combat.enemies.length) {
-        combatVictory();
-      } else {
-        const next = combat.enemies[combat.currentEnemyIndex];
-        addCombatLog(`${enemy.name} elesett! Következő ellenfél: ${next.name}`);
-        setTimeout(() => renderCombatUI(document.getElementById('combat-block')), 1200);
-      }
-      return;
+      addCombatLog(`${enemy.name} elesett!`);
+      markEnemyDead(targetIdx);
+      if (livingEnemies().length === 0) { combatVictory(); return; }
     }
   } else {
-    addCombatLog('Kihagytad a célpontot.');
+    addCombatLog(`Kihagytad ${enemy.name}-t.`);
   }
 
-  setTimeout(() => showAttackButton('enemy'), 800);
+  setTimeout(showEnemyTurn, 800);
 }
 
-function resolveEnemyAttack() {
-  const combat = state.combat;
+// All living enemies attack the player in sequence, with a short delay between each
+async function resolveAllEnemiesAttack() {
+  const combat  = state.combat;
+  const player  = state.character.current;
+  const alive   = livingEnemies();
 
-  // Fullasztás / skip turns
-  if (combat.enemySkipTurns > 0) {
-    combat.enemySkipTurns--;
-    addCombatLog('Az ellenfél fuldokol — kihagyja a kört!');
-    setTimeout(() => showAttackButton('player'), 800);
-    return;
-  }
+  document.getElementById('combat-actions').innerHTML = '';
 
-  const roll   = roll2d6();
-  const enemy  = combat.enemies[combat.currentEnemyIndex];
-  const player = state.character.current;
-  const power  = roll + enemy.tamadasi_kepesseg;
+  for (const e of alive) {
+    await new Promise(r => setTimeout(r, 600));
 
-  addCombatLog(`${enemy.name} dobása: ${roll} + ${enemy.tamadasi_kepesseg} = ${power} vs ${player.vedettsegi_szint}`);
-
-  if (power > player.vedettsegi_szint) {
-    const dmg = calcDamage(enemy.damage);
-    player.eletero -= dmg;
-    addCombatLog(`Találat! ${dmg} életerőt veszítesz. (marad: ${Math.max(0, player.eletero)})`);
-    renderStats();
-    updatePlayerHpBar();
-
-    if (player.eletero <= 0) {
-      combatDeath();
-      return;
+    // Fullasztás: this specific enemy is stunned
+    if (e.skipTurns > 0) {
+      state.combat.enemies[e.idx].skipTurns--;
+      addCombatLog(`${e.name} fuldokol — kihagyja a kört!`);
+      continue;
     }
-  } else {
-    addCombatLog('Elkerülted az ütést.');
+
+    const roll  = roll2d6();
+    const power = roll + e.tamadasi_kepesseg;
+    addCombatLog(`${e.name}: ${roll} + ${e.tamadasi_kepesseg} = ${power} vs ${player.vedettsegi_szint}`);
+
+    if (power > player.vedettsegi_szint) {
+      const dmg = calcDamage(e.damage);
+      player.eletero -= dmg;
+      addCombatLog(`Találat! ${dmg} életerőt veszítesz. (marad: ${Math.max(0, player.eletero)})`);
+      renderStats();
+      updatePlayerHpBar();
+      if (player.eletero <= 0) { combatDeath(); return; }
+    } else {
+      addCombatLog(`${e.name} elvétette a csapást.`);
+    }
   }
 
-  setTimeout(() => showAttackButton('player'), 800);
+  await new Promise(r => setTimeout(r, 400));
+  showPlayerTurn();
 }
 
 function calcDamage(damageRange) {
@@ -869,14 +903,19 @@ function calcDamage(damageRange) {
   return formula ? rollDamage(formula) : 1;
 }
 
-function updateEnemyHpBar() {
-  const combat = state.combat;
-  const enemy  = combat.enemies[combat.currentEnemyIndex];
-  const pct    = Math.max(0, (enemy.currentHp / enemy.eletero) * 100);
-  const bar    = document.getElementById('enemy-hp-bar');
-  const val    = document.getElementById('enemy-hp-val');
+function updateEnemyHpBar(idx) {
+  const enemy = state.combat.enemies[idx];
+  const pct   = Math.max(0, (enemy.currentHp / enemy.eletero) * 100);
+  const bar   = document.getElementById(`enemy-hp-bar-${idx}`);
+  const val   = document.getElementById(`enemy-hp-val-${idx}`);
   if (bar) bar.style.width = pct + '%';
   if (val) val.textContent = `${Math.max(0, enemy.currentHp)} ÉL`;
+}
+
+function markEnemyDead(idx) {
+  const nameEl = document.querySelector(`#combatant-enemy-${idx} .combatant-name`);
+  if (nameEl) nameEl.classList.add('dead');
+  updateEnemyHpBar(idx);
 }
 
 function updatePlayerHpBar() {
