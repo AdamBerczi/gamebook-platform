@@ -542,10 +542,10 @@ function renderLuckTestBlock(container, data) {
 
 function renderCombatBlock(container, data) {
   state.combat = {
-    enemies:            data.enemies.map(e => ({ ...e, currentHp: e.eletero })),
-    sectionData:        data,
-    doubleDamageRounds: 0,
-    playerAttackBonus:  0,
+    enemies:             data.enemies.map(e => ({ ...e, currentHp: e.eletero })),
+    sectionData:         data,
+    playerAttackBonus:   0,   // current active bonus (Erős Karok)
+    strongArmAttacksLeft: 0,  // remaining player attacks with the bonus
   };
   const block = document.createElement('div');
   block.className = 'system-block combat-block';
@@ -567,7 +567,8 @@ function renderCombatUI(block) {
         </div>
         <span id="enemy-hp-val-${i}">${Math.max(0, e.currentHp)} ÉL</span>
       </div>
-      <div class="combatant-stat">Tám: ${e.tamadasi_kepesseg} &nbsp;|&nbsp; Véd: ${e.vedettsegi_szint}</div>
+      <div class="combatant-stat" id="enemy-stat-${i}">Tám: ${e.tamadasi_kepesseg} &nbsp;|&nbsp; Véd: ${e.vedettsegi_szint}</div>
+      <div class="enemy-status-badges" id="enemy-status-${i}"></div>
     </div>
   `).join('');
 
@@ -743,7 +744,7 @@ function resolveSpellDamage(spell, cost, targetIdx) {
     dmg = numericDmg;
     addCombatLog(`${spell.name}: ${dmg} pont sebzés!`);
   } else {
-    dmg = applySpellEffect(spell, enemy, player);
+    dmg = applySpellEffect(spell, enemy, player, targetIdx);
     if (dmg > 0) addCombatLog(`${spell.name}: ${dmg} pont sebzés.`);
   }
 
@@ -758,36 +759,94 @@ function resolveSpellDamage(spell, cost, targetIdx) {
   setTimeout(showEnemyTurn, 800);
 }
 
-function applySpellEffect(spell, enemy, player) {
+function applySpellEffect(spell, enemy, player, targetIdx) {
   switch (spell.name) {
+
+    // DoT: 3 dmg/round for 4 rounds — ticks at the START of each enemy phase
     case 'Ködpatkány':
-      return 12;
-    case 'Vakság':
-      enemy.tamadasi_kepesseg = Math.max(0, enemy.tamadasi_kepesseg - 5);
-      addCombatLog(`${enemy.name} megvakult! Támadása −5 pontra csökkent.`);
+      enemy.fogRatRounds = 4;
+      addCombatLog(`Ködpatkány materializálódik! ${enemy.name} körönként 3 ÉL veszteséget szenved el 4 körön át.`);
+      updateEnemyStatusBadges(targetIdx);
       return 0;
+
+    // −5 attack for 3 of the enemy's attacks, then reverts
+    case 'Vakság':
+      enemy._blindAttackMalus = 5;
+      enemy.tamadasi_kepesseg = Math.max(0, enemy.tamadasi_kepesseg - 5);
+      enemy.blindedRounds = 3;
+      addCombatLog(`${enemy.name} megvakult! Támadása −5, elveszíti a kezdeményezést. (3 körig tart)`);
+      updateEnemyStatusBadges(targetIdx);
+      updateEnemyStatLine(targetIdx);
+      return 0;
+
+    // Skip 2 turns entirely
     case 'Fullasztás':
       enemy.skipTurns = (enemy.skipTurns || 0) + 2;
       addCombatLog(`${enemy.name} fuldokol! Kihagyja a következő 2 körét.`);
+      updateEnemyStatusBadges(targetIdx);
       return 0;
+
+    // −5 defense for 2 of the enemy's attacks, then reverts
     case 'Ártó Szem':
+      enemy._artóSzemDefMalus = 5;
       enemy.vedettsegi_szint = Math.max(0, enemy.vedettsegi_szint - 5);
-      addCombatLog(`${enemy.name} megremeg! Védettsége −5 pontra csökkent.`);
+      enemy.artóSzemRounds = 2;
+      addCombatLog(`${enemy.name} megremeg! Védelme −5, elveszíti a kezdeményezést. (2 körig tart)`);
+      updateEnemyStatusBadges(targetIdx);
+      updateEnemyStatLine(targetIdx);
       return 0;
+
+    // +4 player attack for 5 of the player's sword attacks, then reverts
     case 'Erős Karok':
+      // Cancel any previous Erős Karok first
+      player.tamadasi_kepesseg -= state.combat.playerAttackBonus;
+      state.combat.playerAttackBonus = 4;
+      state.combat.strongArmAttacksLeft = 5;
       player.tamadasi_kepesseg += 4;
-      addCombatLog('Izmaid felpumpálódnak! +4 támadóerő.');
+      addCombatLog(`Izmaid felpumpálódnak! +4 támadóerő a következő 5 csapásra.`);
+      renderStats();
       return 0;
+
+    // Target takes double damage from sword for 4 rounds
     case 'Kettős Csapás':
-      state.combat.doubleDamageRounds = (state.combat.doubleDamageRounds || 0) + 4;
-      addCombatLog('Kettős Csapás aktív! A következő 4 körben duplán hat a sebzés.');
+      enemy.doubleDamageRounds = 4;
+      addCombatLog(`${enemy.name} ${enemy.doubleDamageRounds} körön át duplán veszi a sebzést!`);
+      updateEnemyStatusBadges(targetIdx);
       return 0;
+
+    // Instant kill — doesn't work on undead
     case 'Halálvarázs':
-      addCombatLog(`${enemy.name} teste elöregszik és összeomlik!`);
+      if (enemy.undead) {
+        addCombatLog(`A Halálvarázs nem hat ${enemy.name}-re (holtán-túli lény)!`);
+        return 0;
+      }
+      addCombatLog(`${enemy.name} teste rendkívüli gyorsasággal elöregszik és összeomlik!`);
       return enemy.currentHp + 999;
+
     default:
-      return 10;
+      return 0;
   }
+}
+
+// Re-render the Tám/Véd stat line under an enemy combatant
+function updateEnemyStatLine(idx) {
+  const e  = state.combat.enemies[idx];
+  const el = document.getElementById(`enemy-stat-${idx}`);
+  if (el) el.innerHTML = `Tám: ${e.tamadasi_kepesseg} &nbsp;|&nbsp; Véd: ${e.vedettsegi_szint}`;
+}
+
+// Render coloured status badges (Ködpatkány, Vakság, Ártó Szem, Kettős Csapás, Fullasztás)
+function updateEnemyStatusBadges(idx) {
+  const e   = state.combat.enemies[idx];
+  const el  = document.getElementById(`enemy-status-${idx}`);
+  if (!el) return;
+  const badges = [];
+  if (e.fogRatRounds   > 0) badges.push(`<span class="status-badge badge-dot">🐀 Ködpatkány ×${e.fogRatRounds}</span>`);
+  if (e.blindedRounds  > 0) badges.push(`<span class="status-badge badge-debuff">👁 Vak ×${e.blindedRounds}</span>`);
+  if (e.artóSzemRounds > 0) badges.push(`<span class="status-badge badge-debuff">🎯 Ártó Szem ×${e.artóSzemRounds}</span>`);
+  if (e.doubleDamageRounds > 0) badges.push(`<span class="status-badge badge-amp">⚡ 2× sebzés ×${e.doubleDamageRounds}</span>`);
+  if ((e.skipTurns     || 0) > 0) badges.push(`<span class="status-badge badge-stun">💨 Fullaszt ×${e.skipTurns}</span>`);
+  el.innerHTML = badges.join('');
 }
 
 function resolvePlayerAttackOn(targetIdx) {
@@ -799,12 +858,25 @@ function resolvePlayerAttackOn(targetIdx) {
 
   addCombatLog(`Támadás ${enemy.name} ellen: ${roll} + ${player.tamadasi_kepesseg} = ${power} vs ${enemy.vedettsegi_szint}`);
 
+  // Consume one Erős Karok charge per attack (hit or miss)
+  if (combat.strongArmAttacksLeft > 0) {
+    combat.strongArmAttacksLeft--;
+    if (combat.strongArmAttacksLeft === 0) {
+      player.tamadasi_kepesseg -= combat.playerAttackBonus;
+      combat.playerAttackBonus = 0;
+      addCombatLog(`Az Erős Karok hatása lejárt. Támadóerőd visszaállt.`);
+      renderStats();
+    }
+  }
+
   if (power > enemy.vedettsegi_szint) {
     let dmg = calcDamage(enemy.damage);
-    if (combat.doubleDamageRounds > 0) {
+    // Per-enemy Kettős Csapás: only sword damage is doubled (not spells)
+    if ((enemy.doubleDamageRounds || 0) > 0) {
       dmg *= 2;
-      combat.doubleDamageRounds--;
-      addCombatLog(`Kettős Csapás! (még ${combat.doubleDamageRounds} kör)`);
+      enemy.doubleDamageRounds--;
+      updateEnemyStatusBadges(targetIdx);
+      addCombatLog(`Kettős Csapás! ${dmg} pont (${enemy.doubleDamageRounds > 0 ? 'még ' + enemy.doubleDamageRounds + ' kör' : 'lejárt'})`);
     }
     enemy.currentHp -= dmg;
     addCombatLog(`Találat! ${enemy.name} ${dmg} életerőt veszít. (marad: ${Math.max(0, enemy.currentHp)})`);
@@ -826,27 +898,80 @@ async function resolveAllEnemiesAttack() {
   const alive  = livingEnemies();
   document.getElementById('combat-actions').innerHTML = '';
 
+  // ── Ködpatkány DoT: ticks once per round before enemies attack ──
   for (const e of alive) {
+    const enemy = combat.enemies[e.idx];
+    if ((enemy.fogRatRounds || 0) > 0) {
+      await new Promise(r => setTimeout(r, 400));
+      const dot = 3;
+      enemy.currentHp -= dot;
+      enemy.fogRatRounds--;
+      updateEnemyHpBar(e.idx);
+      updateEnemyStatusBadges(e.idx);
+      addCombatLog(`🐀 Ködpatkány harap: ${enemy.name} ${dot} ÉL veszteség. (még ${enemy.fogRatRounds} kör)`);
+      if (enemy.currentHp <= 0) {
+        addCombatLog(`${enemy.name} elesett!`);
+        markEnemyDead(e.idx);
+      }
+    }
+  }
+
+  // Check if all died from DoT
+  if (livingEnemies().length === 0) { combatVictory(); return; }
+
+  // ── Each living enemy attacks ──
+  for (const e of livingEnemies()) {
+    const enemy = combat.enemies[e.idx];
     await new Promise(r => setTimeout(r, 600));
-    if (e.skipTurns > 0) {
-      state.combat.enemies[e.idx].skipTurns--;
-      addCombatLog(`${e.name} fuldokol — kihagyja a kört!`);
+
+    // Fullasztás: skip turn
+    if ((enemy.skipTurns || 0) > 0) {
+      enemy.skipTurns--;
+      updateEnemyStatusBadges(e.idx);
+      addCombatLog(`${enemy.name} fuldokol — kihagyja a kört! (még ${enemy.skipTurns})`);
       continue;
     }
+
     const roll  = roll2d6();
-    const power = roll + e.tamadasi_kepesseg;
-    addCombatLog(`${e.name}: ${roll} + ${e.tamadasi_kepesseg} = ${power} vs ${player.vedettsegi_szint}`);
+    const power = roll + enemy.tamadasi_kepesseg;
+    addCombatLog(`${enemy.name}: ${roll} + ${enemy.tamadasi_kepesseg} = ${power} vs ${player.vedettsegi_szint}`);
+
     if (power > player.vedettsegi_szint) {
-      const dmg = calcDamage(e.damage);
+      const dmg = calcDamage(enemy.damage);
       player.eletero -= dmg;
       addCombatLog(`Találat! ${dmg} életerőt veszítesz. (marad: ${Math.max(0, player.eletero)})`);
       renderStats();
       updatePlayerHpBar();
       if (player.eletero <= 0) { combatDeath(); return; }
     } else {
-      addCombatLog(`${e.name} elvétette a csapást.`);
+      addCombatLog(`${enemy.name} elvétette a csapást.`);
+    }
+
+    // ── Tick timed debuffs after each enemy attack ──
+    // Vakság: expires after 3 of the enemy's attacks
+    if ((enemy.blindedRounds || 0) > 0) {
+      enemy.blindedRounds--;
+      if (enemy.blindedRounds === 0) {
+        enemy.tamadasi_kepesseg += (enemy._blindAttackMalus || 5);
+        enemy._blindAttackMalus = 0;
+        addCombatLog(`${enemy.name} látása visszatér. Támadóereje visszaállt.`);
+        updateEnemyStatLine(e.idx);
+      }
+      updateEnemyStatusBadges(e.idx);
+    }
+    // Ártó Szem: expires after 2 of the enemy's attacks
+    if ((enemy.artóSzemRounds || 0) > 0) {
+      enemy.artóSzemRounds--;
+      if (enemy.artóSzemRounds === 0) {
+        enemy.vedettsegi_szint += (enemy._artóSzemDefMalus || 5);
+        enemy._artóSzemDefMalus = 0;
+        addCombatLog(`${enemy.name} védelme visszaállt.`);
+        updateEnemyStatLine(e.idx);
+      }
+      updateEnemyStatusBadges(e.idx);
     }
   }
+
   await new Promise(r => setTimeout(r, 400));
   showPlayerTurn();
 }
