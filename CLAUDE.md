@@ -81,6 +81,12 @@ Designed for personal use and as a learning project. Built step by step — ask 
 - Moved PDF into `books/magusok-tornya/`
 - Wrote CLAUDE.md
 
+### Session 6 — Text Cleanup + GitHub Sync
+- Ran `04_clean_text.py` — all 94 pages cleaned with Claude Haiku Hungarian spellcheck
+- Re-ran parser — 299/300 sections, 18 enemy stat blocks extracted (up from 8)
+- Updated and pushed `sections.json` and `CLAUDE.md` to GitHub
+- Repo: https://github.com/AdamBerczi/gamebook-platform
+
 ### Session 5 — Frontend + Combat/Luck Systems
 
 - Wrote `frontend/index.html`, `frontend/style.css`, `frontend/game.js`, `frontend/manifest.json`
@@ -175,8 +181,8 @@ Build the frontend — a simple HTML page that loads `sections.json` and lets yo
 - [x] Frontend built — character creation, prologue, section display, choices
 - [x] Luck test system integrated
 - [x] Combat system integrated (initiative, attack, damage, HP bars)
-- [ ] **Run full text cleanup**: `python pipeline\04_clean_text.py` from fresh terminal (9/94 done, skips already done)
-- [ ] Re-run `python pipeline\03_parse_sections.py` after cleanup finishes
+- [x] Run full text cleanup (94/94 pages done via `pipeline\04_clean_text.py`)
+- [x] Re-run parser after cleanup — 299/300 sections, 18 enemies extracted
 - [ ] Fix sections 246 and 267 manually
 - [ ] iOS home screen icons (icon-192.png, icon-512.png)
 - [ ] Magic combat system (spell selection, defense spells, activation rolls)
