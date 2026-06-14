@@ -17,13 +17,12 @@ Designed for personal use and as a learning project. Built step by step — ask 
 ## First Book
 
 **Mágusok Tornya** (Tower of Magicians) — Jonathan Graves, 1997
-- 300 numbered sections
+- 300 numbered sections (all 300 now present)
 - Full combat system with spells, items, dice rolls
 - Stats: Életerő (HP), Támadási képesség (Attack), Védettségi szint (Defense), Szerencse (Luck), Varázserő (Magic)
-- Race system: Human, Giant, Gnome, Elf (with stat modifiers)
+- Race system: Ember (baseline), Felfödi ember, Óriás, Manó, Tünder
 - Spell tables: 11 attack spells, 12 defense spells
-- Weapon damage table
-- PDF located at: `books/magusok-tornya/magusok-tornya.pdf`
+- Weapon damage table (16 entries)
 
 ---
 
@@ -31,38 +30,40 @@ Designed for personal use and as a learning project. Built step by step — ask 
 
 ```
 /gamebook-platform
-  /engine          ← combat, dice, rules logic (Python) [NOT STARTED]
-  /pipeline        ← OCR, parsing, validation scripts (Python)
-  /frontend        ← HTML/JS/CSS web interface [NOT STARTED]
+  /pipeline        ← OCR, parsing, cleanup scripts (Python)
+  /frontend        ← HTML/JS/CSS web interface
   /books
     /magusok-tornya
-      magusok-tornya.pdf      ← source PDF (94 pages, fully scanned, no text layer)
-      /pages                  ← 94 PNG images rendered from PDF (200 DPI) — DONE
-      /raw-text               ← per-page .txt files from Claude Vision OCR — IN PROGRESS
-      book.json               ← metadata [NOT STARTED]
-      sections.json           ← all 300 parsed sections [NOT STARTED]
-      rules.json              ← combat stats, spells, weapons [NOT STARTED]
-  CLAUDE.md        ← this file — update after each session
+      /pages/                  ← 94 PNG images (gitignored)
+      /raw-text/               ← per-page OCR output (gitignored)
+      /cleaned-text/           ← spellchecked OCR output (gitignored)
+      magusok-tornya.pdf       ← source PDF (gitignored)
+      parse_config.json        ← book-specific parser config
+      sections.json            ← 300 parsed sections (committed)
+      rules.json               ← stats, races, combat, spells (committed)
+  CLAUDE.md        ← this file
 ```
 
 ---
 
 ## Tech Stack
 
-- **Python** — backend engine and OCR pipeline
-- **Vanilla HTML/JS/CSS** — frontend (no framework for MVP)
+- **Python** — OCR pipeline scripts
+- **Vanilla HTML/JS/CSS** — frontend (no framework)
 - **JSON** — data format between pipeline and frontend
-- **No database** — file-based is fine for MVP
+- **Claude Vision API** (`claude-haiku-4-5-20251001`) — OCR of scanned pages
+- **Claude Haiku text API** — Hungarian spellcheck/correction pass
+- **PWA** — installable on iOS home screen
 
-### Python libraries installed
-- `pymupdf` (fitz) — renders PDF pages to images (chosen over pdf2image: no external deps)
-- `anthropic` — Claude Vision API client
-- `pdfplumber` — installed but not used (PDF has no text layer)
+### Python libraries
+- `pymupdf` (fitz) — renders PDF pages to PNG
+- `anthropic` — Claude API client
+- `Pillow` — generates PWA icons
 
-### Key facts about the PDF
-- 94 pages total
-- Fully scanned — zero text layer on any page
-- OCR approach: Claude Vision (`claude-haiku-4-5-20251001`) — better Hungarian accuracy than Tesseract
+### Environment
+- Windows 11, PowerShell
+- `ANTHROPIC_API_KEY` set permanently in Windows User environment variables
+- Pipeline scripts must be run from a **fresh terminal** (not from Claude Code session)
 
 ---
 
@@ -70,119 +71,161 @@ Designed for personal use and as a learning project. Built step by step — ask 
 
 - Basic Python and C from years ago, learning fast
 - Wants explanations of decisions, not just generated code
-- Wants to understand what's being built
+- Step-by-step approach preferred
+
+---
+
+## How to Run Locally
+
+```powershell
+cd D:\Code\gamebook-platform
+python -m http.server 8000
+# then open http://localhost:8000/frontend/
+```
+
+---
+
+## Pipeline Scripts (run in order for a new book)
+
+```powershell
+python pipeline\01_pdf_to_images.py [book-id]   # PDF → PNG pages
+python pipeline\02_ocr_pages.py     [book-id]   # PNG → raw text (Claude Vision)
+python pipeline\04_clean_text.py    [book-id]   # raw text → cleaned text (Claude Haiku)
+python pipeline\03_parse_sections.py [book-id]  # cleaned text → sections.json
+```
+
+All scripts default to `magusok-tornya` if no book ID given. All are resumable (skip already-done files).
+
+---
+
+## GitHub
+
+Repository: https://github.com/AdamBerczi/gamebook-platform
+
+`sections.json` and `rules.json` **are** committed so anyone can clone and play without running the pipeline.
+
+PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
+
+---
+
+## Features Implemented
+
+### Frontend
+- Character creation screen: 5 races, stat rolling with re-roll, race stat modifiers shown
+- Prologue screen ("Előzmények") between character creation and section 1
+- Game screen: sidebar (desktop) + collapsible drawer (mobile)
+- Sidebar: HP/MP bars, all 5 stats, inventory list, race badge, new game button
+- Mobile: sticky HP in topbar, slide-up stats drawer
+- PWA manifest + tower icons (icon-192.png, icon-512.png) for iOS home screen
+
+### Luck test system
+- Detects `has_luck_test` sections, shows 2d6 roll UI
+- Luck −1 on use (win or lose)
+- Routes to choices[0] (success) or choices[1] (failure)
+
+### Combat system (single and multi-foe)
+- Initiative: 1d6 each, player vs the group
+- **Multi-foe rule**: ALL living enemies attack every round; player picks ONE target per round
+- Attack: 2d6 + attack skill vs enemy defense
+- Damage: looked up from `rules.damage_table` by range string
+- HP bars for player and each enemy; dead enemies get strikethrough
+- Target selection buttons when multiple enemies alive (shows current HP)
+- Victory routes to section choices; death → new game prompt
+
+### Magic combat system
+- Available when player has Varázskőnyv and varázserő > 0
+- Roll 2d6 → pick attack spell → show spell card (name, cost, damage, description) → confirm
+- Fixed damage spells: apply directly
+- Special spells: Vakság (−5 enemy attack), Fullasztás (enemy skips turns, tracked per-enemy),
+  Ártó Szem (−5 enemy defense), Erős Karok (+4 player attack), Kettős Csapás (2× damage 4 rounds),
+  Halálvarázs (instant kill), Ködpatkány (12 dmg simplified)
+- Spell target selection when multiple enemies alive
+- MP deducted on cast; "no MP" path falls back to sword
+
+### Interactive inventory
+- Items with actions show a pill label in sidebar (dob / iszik / eszik)
+- **Weapons** (damage note "X-Y veszteséget okoz"): roll damage button, result from damage table
+- **Potions** (note "N életerőpontot gyógyít"): Megiszom button heals HP, removes when qty=0, disabled if full
+- **Food/rations** ("Étel és ital"): food has no usage in any of the 300 sections, so added
+  "Rest & eat" mechanic — consumes 1 day, restores +4 Varázserő
+
+---
+
+## Data: sections.json
+
+- 300/300 sections (section 267 manually added from scanned page photo)
+- Schema per section: `{id, text, choices: [{text, target}], enemies: [{name, eletero, tamadasi_kepesseg, vedettsegi_szint, damage}], is_ending, has_combat, has_luck_test}`
+- 18 sections with extracted enemy stat blocks
+- Section 4 is the only multi-foe section (Világcsavargó + Kereskedő)
+- Section 246 has garbled OCR mid-text — needs manual PDF check
+
+## Data: rules.json
+
+- 5 stats with roll formulas
+- 5 races: Ember (baseline, no modifiers), Felfödi ember, Óriás, Manó, Tünder
+- Starting equipment (7 items)
+- Combat rules, luck test rules
+- 16-entry damage table
+- 11 attack spells, 12 defense spells
+
+---
+
+## Known Issues / Future Work
+
+- Section 246: text garbled mid-sentence from OCR artifact — needs manual fix from PDF
+- Some `has_combat` sections (27 total) still lack extracted enemy stats (only 18 parsed) — unusual formats
+- Magic defense spells not yet implemented (enemy mages don't appear in extracted data yet)
+- Frontend book URL is hardcoded — for a second book, change the two constants at top of `game.js`,
+  or implement `?book=` URL parameter routing
+
+---
+
+## Adding a Second Book (checklist)
+
+1. Place PDF in `books/<book-id>/<book-id>.pdf`
+2. Write `books/<book-id>/parse_config.json` (copy magusok-tornya's as template)
+3. Run the 4 pipeline scripts with the new book-id
+4. Write `books/<book-id>/rules.json` for that book's stat/race/spell system
+5. Change the two URL constants at the top of `frontend/game.js`
+6. Everything else (combat, magic, luck, inventory) carries over automatically
 
 ---
 
 ## Session Log
 
 ### Session 1 — Project Setup
-- Created `/gamebook-platform` folder structure
-- Moved PDF into `books/magusok-tornya/`
-- Wrote CLAUDE.md
-
-### Session 6 — Text Cleanup + GitHub Sync
-- Ran `04_clean_text.py` — all 94 pages cleaned with Claude Haiku Hungarian spellcheck
-- Re-ran parser — 299/300 sections, 18 enemy stat blocks extracted (up from 8)
-- Updated and pushed `sections.json` and `CLAUDE.md` to GitHub
-- Repo: https://github.com/AdamBerczi/gamebook-platform
-
-### Session 5 — Frontend + Combat/Luck Systems
-
-- Wrote `frontend/index.html`, `frontend/style.css`, `frontend/game.js`, `frontend/manifest.json`
-- PWA-ready (iOS home screen installable)
-- Character creation screen: race selection with stat modifiers, dice rolling
-- Prologue screen ("Előzmények") shown between character creation and section 1
-- Sidebar: HP/MP bars, all stats, inventory, race badge
-- Mobile: collapsible stats drawer, sticky HP in topbar
-- **Luck test system**: detects `has_luck_test` sections, shows roll UI, luck -1 on use, routes to success/fail choice
-- **Combat system**: parses enemy stats from section text, initiative roll, attack/defense resolution, HP bars, damage from rules.json table, victory/death outcomes
-- Wrote `pipeline/04_clean_text.py` — sends OCR pages through Claude Haiku for Hungarian spellcheck
-- Updated `03_parse_sections.py`: uses cleaned-text/ per-page where available, falls back to raw-text/; also extracts enemy stats into `enemies` field in sections.json
-- **Partial cleanup done**: 9/94 pages cleaned (API key not available in Claude Code session)
-- **To complete cleanup**: run `python pipeline\04_clean_text.py` from a fresh terminal — skips already-done pages
-
-**To run the game**: `python -m http.server 8000` from `D:\Code\gamebook-platform`, then open `http://localhost:8000/frontend/`
-
-### Session 4 — Rules Extraction
-- Read rule pages (3-12) from raw OCR text
-- Wrote `books/magusok-tornya/rules.json` with full game rules:
-  - 5 character stats with roll formulas (életerő, támadási képesség, védettségi szint, szerencse, varázserő)
-  - 4 races with stat modifiers (felfödi ember, óriás, manó, tünder)
-  - Starting equipment
-  - Combat rules (initiative, attack roll, flee rules)
-  - Luck test rules
-  - Damage table (16 entries, d6-based formulas)
-  - 11 attack spells with cost/damage/description
-  - 12 defense spells with cost/protects-against/activation roll/description
-- Updated `parse_config.json` first_content_page from 9 to 12 (rules end at page 12)
-
-### Session 3 — Section Parser
-
-- Wrote `pipeline/03_parse_sections.py` — generic parser driven by per-book config
-- Wrote `books/magusok-tornya/parse_config.json` — book-specific patterns (reusable model for future books)
-- Parsed 299/300 sections successfully into `books/magusok-tornya/sections.json`
-- Tuned OCR variant handling: `laporz`, `lapozza`, `lapozz az`, ending phrase typos
-- 2 sections need manual fixes: 246 (cut off), 267 (missing entirely)
-- **sections.json schema:** `{ book_id, title, author, year, total_sections, sections: { "N": { id, text, choices: [{text, target}], is_ending, has_combat, has_luck_test } } }`
+- Created folder structure, moved PDF, wrote CLAUDE.md
 
 ### Session 2 — OCR Pipeline
-- Confirmed PDF is fully scanned (no text layer on any of 94 pages)
-- Decided on Claude Vision over Tesseract (better Hungarian diacritics, ~$0.20 total cost)
-- Installed `pymupdf` and `anthropic` Python packages
-- Wrote `pipeline/01_pdf_to_images.py` — renders all 94 pages to PNG at 200 DPI ✅ DONE
-- Wrote `pipeline/02_ocr_pages.py` — sends each page to Claude Vision, saves .txt files
-- Ran `01_pdf_to_images.py` successfully — 94 PNGs in `books/magusok-tornya/pages/` ✅ DONE
-- Set `ANTHROPIC_API_KEY` permanently in Windows User environment variables ✅ DONE
-- `02_ocr_pages.py` is ready to run — user needs to run it from a **fresh terminal** since
-  the key was set after this Claude Code session started
+- Wrote `01_pdf_to_images.py` and `02_ocr_pages.py`
+- Chose Claude Vision over Tesseract for Hungarian diacritics
+- Set ANTHROPIC_API_KEY in Windows User environment permanently
 
----
+### Session 3 — Section Parser
+- Wrote `03_parse_sections.py` (generic, driven by parse_config.json)
+- Wrote `books/magusok-tornya/parse_config.json`
+- 299/300 sections parsed
 
-## Known Manual Fixes Needed
+### Session 4 — Rules Extraction
+- Hand-crafted `rules.json` from OCR of pages 3-12
+- Stats, races, combat, luck, damage table, 11 attack spells, 12 defense spells
 
-- **Section 267** — missing entirely from all 94 OCR pages. Likely a bad scan. Find it in the PDF manually and add to sections.json.
-- **Section 246** — text cuts off mid-sentence, no navigation link. Same cause. Check PDF page for the missing ending.
+### Session 5 — Frontend + Combat/Luck Systems
+- Built full frontend: character creation, prologue, game screen
+- Luck test system integrated
+- Combat system integrated
+- Wrote `04_clean_text.py` for Hungarian spellcheck pass
 
----
+### Session 6 — Text Cleanup + GitHub
+- Ran 04_clean_text.py on all 94 pages
+- Re-ran parser: 18 enemies extracted (up from 8)
+- Pushed to GitHub
 
-## Immediate Next Step
-
-Build the frontend — a simple HTML page that loads `sections.json` and lets you play through the book.
-
----
-
-## Decisions & Reasoning
-
-| Decision | Reason |
-|---|---|
-| JSON as data format | Simple, human-readable, no DB needed for MVP |
-| Vanilla JS frontend | No framework overhead; easier to understand for learning |
-| Python pipeline | Good library support for PDF/OCR; readable code |
-| File-based storage | Sufficient for single-user local play |
-| Separate `rules.json` | Combat rules differ per book; keeps sections.json clean |
-| pymupdf over pdf2image | Self-contained, no poppler install needed on Windows |
-| Claude Vision over Tesseract | Hungarian diacritics handled correctly; ~$0.20 for whole book |
-| 200 DPI for page images | Sweet spot: clear enough for Vision, small enough to be fast |
-| claude-haiku-4-5 for OCR | Fast and cheap; more than capable for transcription |
-
----
-
-## TODO
-
-- [x] Create project folder structure
-- [x] Render PDF pages to images (01_pdf_to_images.py)
-- [x] Write OCR script (02_ocr_pages.py)
-- [x] Run OCR — 94 pages processed
-- [x] Review OCR output quality — very good
-- [x] Write section parser (03_parse_sections.py)
-- [x] sections.json produced — 299/300 sections (enemies field added)
-- [x] rules.json produced — stats, races, combat, spells, damage table
-- [x] Frontend built — character creation, prologue, section display, choices
-- [x] Luck test system integrated
-- [x] Combat system integrated (initiative, attack, damage, HP bars)
-- [x] Run full text cleanup (94/94 pages done via `pipeline\04_clean_text.py`)
-- [x] Re-run parser after cleanup — 299/300 sections, 18 enemies extracted
-- [ ] Fix sections 246 and 267 manually
-- [ ] iOS home screen icons (icon-192.png, icon-512.png)
-- [ ] Magic combat system (spell selection, defense spells, activation rolls)
+### Session 7 — Magic, Icons, Multi-foe, Inventory, QA
+- Added magic combat system (spell rolling, target selection, special effects)
+- Created PWA icons (tower silhouette, icon-192/512.png)
+- Added interactive inventory (weapon damage roll, potion drink, food/rest mechanic)
+- Implemented multi-foe combat (all enemies attack each round, target selection)
+- QA pass: fixed section 67 choice texts, added section 267 from scanned photo,
+  fixed false-positive ')' choices in sections 147/204/257, fixed missing choice in 211
+- Added Ember (human) baseline race with no modifiers to rules.json
