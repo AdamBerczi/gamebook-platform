@@ -1,0 +1,42 @@
+{
+  "book_id": "a-demon-szeme",
+  "title": "A Démon Szeme",
+  "author": "Gábor Törő",
+  "year": 1994,
+  "total_sections": 300,
+
+  "parsing": {
+    "first_content_page": 13,
+
+    "navigation_patterns": [
+      "lapozz a {n}-re",
+      "lapozz a {n}-ra",
+      "lapozz a {n}. fejezetre",
+      "lapozz a {n}. részre"
+    ],
+
+    "ending_phrases": [
+      "Kalandod véget ért",
+      "kalandod véget ért",
+      "Kalandod végét ért",
+      "kalandod végét ért",
+      "Kaladod véget ért",
+      "kaladod véget ért",
+      "kalandod is végét ért",
+      "kalandod is véget ért"
+    ],
+
+    "combat_hint_phrases": [
+      "életerő",
+      "támadási képesség",
+      "védettségi szint"
+    ],
+
+    "luck_test_phrases": [
+      "Szerencsepróbát",
+      "Szerencse próbát"
+    ],
+
+    "section_header_regex": "^(\\d+)\\.$"
+  }
+}
