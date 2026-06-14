@@ -14,15 +14,22 @@ Designed for personal use and as a learning project. Built step by step — ask 
 
 ---
 
-## First Book
+## Books
 
-**Mágusok Tornya** (Tower of Magicians) — Jonathan Graves, 1997
-- 300 numbered sections (all 300 now present)
-- Full combat system with spells, items, dice rolls
-- Stats: Életerő (HP), Támadási képesség (Attack), Védettségi szint (Defense), Szerencse (Luck), Varázserő (Magic)
+**Mágusok Tornya** (vol. 22) — Jonathan Graves, 1997
+- 300 numbered sections (all 300 present)
+- Stats: Életerő, Támadási képesség, Védettségi szint, Szerencse, Varázserő
 - Race system: Ember (baseline), Felfödi ember, Óriás, Manó, Tünder
-- Spell tables: 11 attack spells, 12 defense spells
-- Weapon damage table (16 entries)
+- 11 attack spells, 12 defense spells; 16-entry weapon damage table
+
+**A Démon Szeme** (vol. 23) — Anthony Parker, 1998
+- 300 numbered sections (all 300 recovered — 06_recover_sections.py + manual patches)
+- Same 5 stats, different races: Ember, Barbár, Oggun, Ork, Tündér
+- No spell system; different damage table entries
+- Two-column OCR layout caused many sections to be merged/dropped — fixed with custom recovery pipeline
+- `pipeline/06_recover_sections.py` — splits merged OCR blocks using nav-choice cluster detection
+- `pipeline/patch_missing_sections.py` — manually patches 6 sections from screenshots (41, 42, 83, 89, 225, 257)
+- `pipeline/07_extract_events.py` — uses Claude Haiku to extract structured events from each section
 
 ---
 
@@ -30,24 +37,25 @@ Designed for personal use and as a learning project. Built step by step — ask 
 
 ```
 /gamebook-platform
-  /pipeline        ← OCR, parsing, cleanup scripts (Python)
+  /pipeline
+    01_pdf_to_images.py       ← PDF → PNG pages
+    02_ocr_pages.py           ← PNG → raw text (Claude Vision)
+    03_parse_sections.py      ← raw text → sections.json (generic)
+    04_clean_text.py          ← Hungarian spellcheck pass (Claude Haiku)
+    05_correct_sections.py    ← OCR correction pass (Claude Sonnet)
+    06_recover_sections.py    ← two-column OCR gap recovery (a-demon-szeme specific)
+    07_extract_events.py      ← structured events extraction (Claude Haiku)
+    patch_missing_sections.py ← manual patch of 6 OCR-absent sections
   /books
-    index.json                 ← multi-book manifest (id, title, cover, sections, rules URLs)
+    index.json                ← multi-book manifest
     /magusok-tornya
-      /pages/                  ← 94 PNG images (gitignored)
-      /raw-text/               ← per-page OCR output (gitignored)
-      /cleaned-text/           ← spellchecked OCR output (gitignored)
-      magusok-tornya.pdf       ← source PDF (gitignored)
-      parse_config.json        ← book-specific parser config
-      sections.json            ← 300 parsed sections (committed)
-      rules.json               ← stats, races, combat, spells (committed)
-      cover.png                ← 400×560px book cover art (Pillow-generated)
+      sections.json, rules.json, cover.png, parse_config.json
+    /a-demon-szeme
+      sections.json, rules.json, cover.png, parse_config.json
   index.html       ← single-page app shell (all screens + modals)
   game.js          ← all game logic
   style.css        ← all styles
-  manifest.json    ← PWA manifest
-  icon-192.png     ← PWA icon
-  icon-512.png     ← PWA icon
+  manifest.json, icon-192.png, icon-512.png  ← PWA
   CLAUDE.md        ← this file
 ```
 
@@ -109,11 +117,18 @@ python pipeline\02_ocr_pages.py     [book-id]    # PNG → raw text (Claude Visi
 python pipeline\04_clean_text.py    [book-id]    # raw text → cleaned text (Claude Haiku)
 python pipeline\03_parse_sections.py [book-id]   # cleaned text → sections.json
 python pipeline\05_correct_sections.py [book-id] # sections.json → OCR-corrected (Claude Sonnet)
+python pipeline\07_extract_events.py [book-id]   # adds events array to all sections (Claude Haiku)
 ```
 
-All scripts default to `magusok-tornya` if no book ID given. All are resumable (skip already-done files).
+All scripts default to `magusok-tornya` if no book ID given. All are resumable (skip already-done work).
 
-Script 05 requires `ANTHROPIC_API_KEY` set in environment and must run from a fresh terminal (not Claude Code session). Creates a `.bak` backup before modifying.
+Scripts 05 and 07 require `ANTHROPIC_API_KEY` and must run from a **fresh terminal** (not Claude Code session).
+
+For two-column OCR books like a-demon-szeme, also run:
+```powershell
+python pipeline\06_recover_sections.py a-demon-szeme   # recovers sections from merged OCR gaps
+python pipeline\patch_missing_sections.py               # applies hard-coded patches from screenshots
+```
 
 ---
 
@@ -215,31 +230,81 @@ PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
 - `addItemToInventory(itemDef)` — canonical function for adding items (handles qty stacking, stat bonus, renderInventory)
 - `removeItemByName(name)` — canonical function for removing items (handles stat revert)
 
+### Structured events system (platform-generic, added Session 9/10)
+Each section's `events` array holds typed event objects processed by `applyEvents(sectionData, timing)`:
+
+| Kind | When | Effect |
+|------|------|--------|
+| `STAT_CHANGE` | on_enter (first visit) | `player[stat] += amount` or rolls formula; shows toast |
+| `ITEM_GAIN` | on_enter (first visit) | adds items to inventory |
+| `ITEM_LOSE` | on_enter (first visit) | removes items from inventory |
+| `GOLD_CHANGE` | on_enter (first visit) | adds/deducts gold |
+| `REST` | on_enter (first visit) | restores listed stats to `state.character.base` values |
+| `COMBAT` | combat init | reads `special_rules` array (see below) |
+
+`COMBAT` special rules (stamped onto enemy objects at combat start by `renderCombatBlock`):
+- `enemy_regenerate` → `enemy._regenerate = N` — heals N HP after each player hit
+- `multi_attack` → `enemy._multiAttack = N` — attacks N times per round
+- `stat_drain` → `enemy._statDrain = {stat, amount}` — permanently reduces player stat on each hit
+- `player_pre_damage` → applies HP/stat loss to player before combat begins
+- `no_flee` → sets `state.combat.noFlee = true`
+
+Combat rule application:
+- `resolvePlayerAttackOn`: after dealing damage, checks `enemy._regenerate` and heals
+- `resolveAllEnemiesAttack`: wraps single attack in `for (let atk = 0; atk < (enemy._multiAttack||1); atk++)` loop; applies `_statDrain` after each successful hit
+
+`calcDamage(damageRange)` — handles all damage edge cases:
+- Normalises en-dash/em-dash/box-drawing chars to hyphen
+- Looks up formula in `rules.damage_table`; falls back to uniform N–M roll for unknown ranges
+- If damageRange is null/missing → rolls 1d6
+
+### Mobile layout fix (Session 10)
+- `#screen-menu` and `#screen-create` changed from `min-height: 100dvh` to `height: 100dvh; overflow-y: auto` — screens scroll internally as fixed-height viewports
+- `#btn-start` (character creation "Kaland kezdése") gets `position: sticky; bottom: 1rem` on mobile (≤720px) — always visible regardless of scroll position
+
 ---
 
 ## Data: sections.json
 
-- 300/300 sections (section 267 manually added from scanned page photo)
-- Schema per section:
-  ```
-  {
-    id, text,
-    choices: [{ text, target, requires?: ["item"] }],
-    enemies: [{ name, eletero, tamadasi_kepesseg, vedettsegi_szint, damage }],
-    is_ending, has_combat, has_luck_test,
-    has_shop?: true,
-    shop?: { items: [{ item, note?, effect?, price, currency, unique?, stat_bonus? }] },
-    takes_items?: ["Item name"],
-    gives_items?: [{ item, note?, effect?, qty?, stat_bonus? }],
-    gold_cost?: number
-  }
-  ```
-- 18 sections with extracted enemy stat blocks
-- Section 4 is the only multi-foe section (Világcsavargó + Kereskedő)
+Full schema per section:
+```json
+{
+  "id": 1,
+  "text": "...",
+  "choices": [{ "text": "...", "target": 42, "requires": ["Item name"] }],
+  "enemies": [{ "name": "...", "eletero": 20, "tamadasi_kepesseg": 15, "vedettsegi_szint": 14, "damage": "1-6" }],
+  "is_ending": false,
+  "has_combat": false,
+  "has_luck_test": false,
+  "events": [],
+  "has_shop": true,
+  "shop": { "items": [{ "item": "...", "note": "...", "price": 10, "currency": "arany", "unique": true, "stat_bonus": {} }] },
+  "takes_items": ["Item name"],
+  "gives_items": [{ "item": "...", "note": "...", "qty": 1, "stat_bonus": {} }],
+  "gold_cost": 5
+}
+```
+
+### magusok-tornya sections.json
+- 300/300 sections
+- 18 sections with enemy stat blocks; section 4 is the only multi-foe section
 - Section 246 has garbled OCR mid-text — needs manual PDF check
-- Section 67: shop with 9 items (Kötél, Buzogány, Pallos, Gyógyital, Extra Gyógyital, Bronzmajzs, Acélpajzs, Bross, Sárkányvér)
-- Section 131: item exchange — takes Amulett, gives Tengeri kagyló + Sziromkesztyű
-- Requires implemented on: 252 (Kötél), 220 (Amulett), 55/198/298 (Tengeri kagyló / Varázsgyűrű), 109/234 (Sziromkesztyű), 265 (Gyorsító ital)
+- Section 67: shop; Section 131: item exchange (Amulett → Tengeri kagyló + Sziromkesztyű)
+- `events: []` on all sections (not yet extracted — run `07_extract_events.py magusok-tornya` when needed)
+
+### a-demon-szeme sections.json
+- 300/300 sections (recovered via scripts + 6 manual patches from screenshots)
+- 82 of 300 sections have non-empty `events` arrays (extracted by `07_extract_events.py`)
+- Key verified events:
+  - Sec 5 & 195: Alakváltó `enemy_regenerate` +2 HP after each player hit
+  - Sec 45 & 46: Sopa lovag `multi_attack` (2×/round) + `stat_drain` (TK)
+  - Sec 83: `player_pre_damage` −7 HP (ambush knockdown before combat)
+  - Sec 104: REST + GOLD_CHANGE −1 (meal costs)
+- Known data quirks:
+  - Sec 55: large permanent stat bonuses (+5 TK, +3 HP, +4 Szerencse) from ancient writing — legitimate
+  - Sec 81: `stat_drain` target "fekete lovag" won't match actual enemy "Goreel fejvadász" — harmless
+  - Sec 36/37: uses unknown types `enemy_first_always` / `initiative_always_loses` (cursed mask) — ignored by engine
+  - Sec 284: uses unknown type `player_stat_penalty` for temporary −5 TK/VS — ignored by engine (future work)
 
 ## Data: rules.json
 
@@ -255,10 +320,23 @@ PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
 
 ## Known Issues / Future Work
 
+### magusok-tornya
 - Section 246: text garbled mid-sentence from OCR artifact — needs manual fix from PDF
-- Some `has_combat` sections (27 total) still lack extracted enemy stats (only 18 parsed) — unusual formats
-- Magic defense spells not yet implemented (enemy mages don't appear in extracted data yet)
-- OCR correction pipeline (`05_correct_sections.py`) created but not yet run on magusok-tornya
+- Some `has_combat` sections (27 total) still lack extracted enemy stats — unusual formats
+- Magic defense spells not yet implemented (enemy mages don't appear in extracted data)
+- `05_correct_sections.py` created but not yet run on this book
+- `07_extract_events.py` not yet run on this book
+
+### a-demon-szeme
+- **Flee button not blocked** when `state.combat.noFlee = true` — flag is set but UI doesn't gate the button yet
+- Unknown event types to implement:
+  - `enemy_first_always` / `initiative_always_loses` (sec 36/37) — cursed mask forces player to always lose initiative
+  - `player_stat_penalty` (sec 284) — temporary −5 TK/VS during one specific combat
+- Sec 81: `stat_drain` target "fekete lovag" should be "Goreel fejvadász" — harmless now but worth fixing
+
+### General
+- `05_correct_sections.py` (OCR Sonnet correction) not yet run on either book
+- Inventory item quantities on books other than magusok-tornya may need checking
 
 ---
 
@@ -322,3 +400,20 @@ PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
 - Rewrote `game.js`: menu system, dynamic book loading, spellbook viewer, spell picker (player choice),
   save/load with localStorage, back-to-menu navigation
 - Updated `style.css`: all new UI components (book cards, modals, spell picker, save slots)
+
+### Session 9 — Second Book: A Démon Szeme (vol. 23)
+- Added all 300 sections via custom two-column OCR recovery pipeline (`06_recover_sections.py`)
+- Manual patches for 6 OCR-absent sections from screenshots (`patch_missing_sections.py`)
+- Fixed `calcDamage()`: handles null damage, en-dash normalisation, unknown ranges (uniform roll)
+- Added structured events system: `applyEvents()`, `getCombatEvents()`, `COMBAT` special rules
+- Implemented `enemy_regenerate`, `multi_attack`, `stat_drain`, `player_pre_damage`, `no_flee` in combat engine
+- Wrote and ran `07_extract_events.py` — 82/300 sections got non-empty events
+- Key combat rules verified: Alakváltó regeneration (sec 5/195), Sopa lovag double-attack (sec 45/46)
+
+### Session 10 — Mobile button fix + events deployment
+- Deployed enriched a-demon-szeme sections.json (all 300 events) to Cloudflare Pages
+- Fixed mobile "Kaland kezdése" not reachable: character creation content (1203px) overflowed 812px viewport
+  - `#screen-create` and `#screen-menu`: changed `min-height: 100dvh` → `height: 100dvh; overflow-y: auto`
+  - `#btn-start` on mobile: `position: sticky; bottom: 1rem` so button is always visible
+- Fix confirmed in preview (button moved from viewport position 1092 → 684 at rest, sticky at bottom)
+- **NOT YET COMMITTED/PUSHED** — style.css change is local only

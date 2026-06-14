@@ -40,7 +40,8 @@ body {
 ══════════════════════════════════════ */
 
 #screen-create {
-  min-height: 100dvh;
+  height: 100dvh;
+  overflow-y: auto;
   justify-content: center;
   align-items: flex-start;
   padding: 2rem 1rem 4rem;
@@ -1185,7 +1186,8 @@ body {
 ══════════════════════════════════════ */
 
 #screen-menu {
-  min-height: 100dvh;
+  height: 100dvh;
+  overflow-y: auto;
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
@@ -1684,4 +1686,11 @@ body {
   .menu-wrapper { padding: 2rem 1.25rem 5rem; }
   .menu-title { font-size: 1.8rem; }
   .book-grid { grid-template-columns: 1fr; }
+
+  #btn-start {
+    position: sticky;
+    bottom: 1rem;
+    z-index: 5;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
+  }
 }
