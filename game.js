@@ -548,15 +548,24 @@ function applyEvents(sectionData, timing) {
 
   for (const ev of events) {
     if (ev.kind === 'STAT_CHANGE' && (ev.timing || 'on_enter') === timing) {
-      const delta = ev.formula ? rollDamage(ev.formula.replace(/^-/, '')) * -1 : (ev.amount || 0);
+      // Formula sign: no leading '-' means gain, leading '-' means loss
+      const delta = ev.formula
+        ? (ev.formula.startsWith('-') ? -rollDamage(ev.formula.slice(1)) : rollDamage(ev.formula))
+        : (ev.amount || 0);
       if (delta === 0) continue;
       player[ev.stat] = (player[ev.stat] || 0) + delta;
+      // Permanent flag: also raise base and max (e.g. ancient spell permanent HP boost)
+      if (ev.permanent) {
+        state.character.base[ev.stat] = (state.character.base[ev.stat] || 0) + delta;
+        state.character.max[ev.stat]  = (state.character.max[ev.stat]  || 0) + delta;
+      }
       const label = delta < 0 ? `${delta}` : `+${delta}`;
       const statNames = {
         eletero: 'Életerő', tamadasi_kepesseg: 'Támadási képesség',
         vedettsegi_szint: 'Védettségi szint', szerencse: 'Szerencse', varazserő: 'Varázserő',
       };
-      showItemToast(`${statNames[ev.stat] || ev.stat} ${label}${ev.reason ? ' (' + ev.reason + ')' : ''}`, delta > 0);
+      const permNote = ev.permanent ? ' – véglegesen' : '';
+      showItemToast(`${statNames[ev.stat] || ev.stat} ${label}${permNote}${ev.reason ? ' (' + ev.reason + ')' : ''}`, delta > 0);
     } else if (ev.kind === 'ITEM_GAIN' && (ev.timing || 'on_enter') === timing) {
       for (const item of (ev.items || [])) addItemToInventory(item);
     } else if (ev.kind === 'ITEM_LOSE' && (ev.timing || 'on_enter') === timing) {

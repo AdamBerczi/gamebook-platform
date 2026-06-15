@@ -5,9 +5,9 @@
     "total_sections": 300,
     "reachable": 281,
     "unreachable": 19,
-    "unexpected_dead_ends": 2,
-    "combat_missing_stats": 48,
-    "sections_with_issues": 74
+    "unexpected_dead_ends": 1,
+    "combat_missing_stats": 43,
+    "sections_with_issues": 68
   },
   "issue_index": {
     "unreachable": [
@@ -32,15 +32,12 @@
       300
     ],
     "unexpected_dead_ends": [
-      8,
       300
     ],
     "combat_missing_enemy_stats": [
       3,
-      4,
       10,
       11,
-      24,
       25,
       26,
       34,
@@ -57,8 +54,6 @@
       107,
       110,
       122,
-      125,
-      136,
       138,
       158,
       159,
@@ -74,7 +69,6 @@
       210,
       222,
       224,
-      226,
       239,
       242,
       255,
@@ -89,14 +83,8 @@
       "3": [
         "combat_missing_enemy_stats"
       ],
-      "4": [
-        "combat_missing_enemy_stats"
-      ],
       "6": [
         "duplicate_choice_targets"
-      ],
-      "8": [
-        "unexpected_dead_end"
       ],
       "9": [
         "duplicate_choice_targets"
@@ -105,9 +93,6 @@
         "combat_missing_enemy_stats"
       ],
       "11": [
-        "combat_missing_enemy_stats"
-      ],
-      "24": [
         "combat_missing_enemy_stats"
       ],
       "25": [
@@ -205,12 +190,6 @@
         "no_incoming_edges",
         "duplicate_choice_targets"
       ],
-      "125": [
-        "combat_missing_enemy_stats"
-      ],
-      "136": [
-        "combat_missing_enemy_stats"
-      ],
       "138": [
         "combat_missing_enemy_stats"
       ],
@@ -276,9 +255,6 @@
         "combat_missing_enemy_stats"
       ],
       "224": [
-        "combat_missing_enemy_stats"
-      ],
-      "226": [
         "combat_missing_enemy_stats"
       ],
       "228": [
@@ -386,7 +362,7 @@
     },
     "4": {
       "flags": [
-        "combat"
+        "shop"
       ],
       "reachable": true,
       "choices": [
@@ -398,9 +374,7 @@
         117,
         167
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "5": {
       "flags": [
@@ -468,13 +442,13 @@
         "normal"
       ],
       "reachable": true,
-      "choices": [],
+      "choices": [
+        39
+      ],
       "incoming": [
         57
       ],
-      "issues": [
-        "unexpected_dead_end"
-      ]
+      "issues": []
     },
     "9": {
       "flags": [
@@ -757,23 +731,19 @@
     },
     "24": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         288,
         238,
-        78,
-        157,
-        206
+        78
       ],
       "incoming": [
         45,
         125
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "25": {
       "flags": [
@@ -1050,6 +1020,7 @@
       ],
       "incoming": [
         6,
+        8,
         57,
         98,
         152,
@@ -2547,8 +2518,13 @@
         205,
         299
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Halálhozó",
+          "hp": 25,
+          "damage": "2-7"
+        }
       ]
     },
     "126": {
@@ -2702,7 +2678,6 @@
     },
     "136": {
       "flags": [
-        "combat",
         "puzzle",
         "ending"
       ],
@@ -2711,9 +2686,7 @@
       "incoming": [
         229
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "137": {
       "flags": [
@@ -3055,7 +3028,6 @@
         175
       ],
       "incoming": [
-        24,
         25,
         191,
         193
@@ -3388,6 +3360,11 @@
         "no_incoming_edges"
       ],
       "enemies": [
+        {
+          "name": "Goreel fejvadász",
+          "hp": 23,
+          "damage": "1-6"
+        },
         {
           "name": "Chindon",
           "hp": 18,
@@ -3842,7 +3819,6 @@
       ],
       "reachable": true,
       "choices": [
-        203,
         20,
         261,
         34,
@@ -3854,8 +3830,7 @@
         65,
         78,
         109,
-        162,
-        203
+        162
       ],
       "issues": []
     },
@@ -3901,7 +3876,6 @@
       "reachable": true,
       "choices": [],
       "incoming": [
-        24,
         25,
         191,
         193
@@ -4240,7 +4214,7 @@
     },
     "226": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -4251,9 +4225,7 @@
         3,
         4
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "227": {
       "flags": [

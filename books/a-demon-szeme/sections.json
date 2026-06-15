@@ -172,7 +172,7 @@
         {
           "kind": "STAT_CHANGE",
           "stat": "eletero",
-          "formula": "max(1d6, 1d6)",
+          "formula": "1d6",
           "timing": "on_enter",
           "reason": "magical healing from xinaf"
         }
@@ -451,19 +451,11 @@
         {
           "text": "Ha inkább nem babrálod a szobrot,",
           "target": 78
-        },
-        {
-          "text": "Ha túlélted az ugrást,",
-          "target": 157
-        },
-        {
-          "text": "Ha nem élted túl,",
-          "target": 206
         }
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false
     },
     "25": {
@@ -2451,7 +2443,15 @@
           "target": 212
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Halálhozó",
+          "eletero": 25,
+          "tamadasi_kepesseg": 18,
+          "vedettsegi_szint": 23,
+          "damage": "2-7"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false,
@@ -2997,13 +2997,6 @@
             }
           ],
           "timing": "on_enter"
-        },
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "tamadasi_kepesseg",
-          "amount": -999,
-          "timing": "on_enter",
-          "reason": "cursed mask — always loses initiative; enemies attack first"
         },
         {
           "kind": "FLAG_SET",
@@ -3564,9 +3557,16 @@
       ],
       "enemies": [
         {
+          "name": "Goreel fejvadász",
+          "eletero": 23,
+          "tamadasi_kepesseg": 19,
+          "vedettsegi_szint": 20,
+          "damage": "1-6"
+        },
+        {
           "name": "Chindon",
           "eletero": 18,
-          "tamadasi_kepesseg": 16,
+          "tamadasi_kepesseg": 18,
           "vedettsegi_szint": 14,
           "damage": "2-12"
         }
@@ -4101,10 +4101,6 @@
       "text": "Nekikészülsz, hogy belépj a jobb oldali ajtón, amikor rádöbbensz, hogy semmilyen zárszerkezetet látsz rajta. Próbaképpen megpróbálod betolni, ám az ajtó nem mozdul. Elgondolkozva nézed a bejáratot, biztos vagy benne, hogy valahogy ki lehet nyitni.\n\nHa a bal oldali ajtót választod, lapozz a 203-ra!\nHa megvizsgálod a szobrot, lapozz a 20-ra!\nHa folytatod a szint átfésülését, lapozz a 261-re!\n\nMinél közelebb érsz az épülethez, annál baljósabb érzések vesznek rajtad erőt. Pedig az épületben semmi fenyegető nincs, legalábbis ami a külsejét illeti. Hosszú kás ablakaiban már régóta nincs üveg, ajtaja helyén csupán összetört deszkákat nyikorogtat a szél.\n\nHa belépsz az épületbe, lapozz a 34-re!\nHa először körbejárod, lapozz a 135-re!\nHa inkább a szakadékot nézed meg, lapozz a 97-re!",
       "choices": [
         {
-          "text": "Ha a bal oldali ajtót választod,",
-          "target": 203
-        },
-        {
           "text": "Ha megvizsgálod a szobrot,",
           "target": 20
         },
@@ -4197,15 +4193,7 @@
       "is_ending": false,
       "has_combat": false,
       "has_luck_test": false,
-      "events": [
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "eletero",
-          "amount": -2,
-          "timing": "on_enter",
-          "reason": "entering dark, dangerous tower ruins"
-        }
-      ]
+      "events": []
     },
     "208": {
       "id": 208,
@@ -4559,7 +4547,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -4567,7 +4555,8 @@
           "stat": "eletero",
           "formula": "1d6",
           "timing": "on_enter",
-          "reason": "ancient spell increases max HP permanently"
+          "reason": "ancient spell increases max HP permanently",
+          "permanent": true
         }
       ]
     },
@@ -6147,9 +6136,32 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
-      "events": []
+      "events": [],
+      "has_shop": true,
+      "shop": {
+        "items": [
+          {
+            "item": "Sisak",
+            "price": 0,
+            "unique": true,
+            "note": "Fémsisakot találtál a padlón."
+          },
+          {
+            "item": "Kard",
+            "price": 0,
+            "unique": true,
+            "note": "Jobb karban van, mint a tiéd."
+          },
+          {
+            "item": "Ébenfekete láncing",
+            "price": 0,
+            "unique": true,
+            "note": "Sötét fémből készített könnyű páncél."
+          }
+        ]
+      }
     },
     "7": {
       "id": 7,
@@ -6173,7 +6185,11 @@
     "8": {
       "id": 8,
       "text": "Ha előbb a xinaf nevét kérdi — vagy pedig olyan benyomást kelt, mint aki gonosz lehet — a letépett levelet mutatod meg neki, és azt mondod, hogy valaki azt szeretné, ha megtennéd ezt. Inkább bemész egyedül.\n\nMivel az öreg már nem segít, a torony felé veszed az irányod.",
-      "choices": [],
+      "choices": [
+        {
+          "target": 39
+        }
+      ],
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
