@@ -31,6 +31,14 @@ Designed for personal use and as a learning project. Built step by step — ask 
 - `pipeline/patch_missing_sections.py` — manually patches 6 sections from screenshots (41, 42, 83, 89, 225, 257)
 - `pipeline/07_extract_events.py` — uses Claude Haiku to extract structured events from each section
 
+**Viharűzők** (vol. 24) — David H. Levinhood, 1999
+- 300 numbered sections; single-column OCR, clean parse
+- Same 5 stats, races: Ember, Félelf, Ork, Törpe (Ork has `varazserő_halve: true`)
+- No spell system; formula-based damage table (`rules.damage_table[].formula`)
+- **Cipher puzzle mechanic**: 13 sections have `has_puzzle: true` — player clicks letter buttons, game sums values from `rules.puzzle_key`, navigates to that section number; 3 sections use `puzzle_multiplier: 2`
+- 95/300 sections have structured events (07_extract_events.py); sec 275 has SHOP event
+- 32/49 combat sections have parsed enemy stat blocks
+
 ---
 
 ## Project Structure
@@ -54,6 +62,8 @@ Designed for personal use and as a learning project. Built step by step — ask 
       sections.json, rules.json, cover.png, parse_config.json
     /a-demon-szeme
       sections.json, rules.json, cover.png, parse_config.json
+    /viharuzok
+      sections.json, rules.json, cover.png, parse_config.json, puzzle_key.txt
   index.html       ← single-page app shell (all screens + modals)
   game.js          ← all game logic
   style.css        ← all styles
@@ -266,6 +276,7 @@ Each section's `events` array holds typed event objects processed by `applyEvent
 | `GOLD_CHANGE` | on_enter (first visit) | adds/deducts gold |
 | `REST` | on_enter (first visit) | restores listed stats to `state.character.base` values |
 | `COMBAT` | combat init | reads `special_rules` array (see below) |
+| `SHOP` | on_enter | renders shop UI (same as `has_shop`/`shop` fields but sourced from events) |
 
 `COMBAT` special rules (stamped onto enemy objects at combat start by `renderCombatBlock`):
 - `enemy_regenerate` → `enemy._regenerate = N` — heals N HP after each player hit
@@ -282,6 +293,16 @@ Combat rule application:
 - Normalises en-dash/em-dash/box-drawing chars to hyphen
 - Looks up formula in `rules.damage_table`; falls back to uniform N–M roll for unknown ranges
 - If damageRange is null/missing → rolls 1d6
+
+### Cipher puzzle mechanic (platform-generic, added Session 15)
+- Sections with `has_puzzle: true` skip normal choices and render a full-page cipher key UI
+- `rules.puzzle_key`: flat `{"A": 10, "Á": 22, ...}` dict mapping each Hungarian letter to its value
+- Player clicks letter buttons to build their answer; running sum shown in real time
+- When sum is a valid section number, a navigation button appears (→ that section)
+- `puzzle_fail_target`: shown as a permanent "Ha nem tudod a választ → N" button
+- `puzzle_multiplier`: optional integer (default 1); if 2, display shows `rawSum × 2 = target` and navigates to doubled value
+- `renderPuzzleBlock(container, data)` — renders the UI; reads `rules.puzzle_key`, `data.puzzle_fail_target`, `data.puzzle_multiplier`
+- Viharűzők has 13 puzzle sections; secs 78, 97, 195 use multiplier 2
 
 ### Mobile layout fix (Session 10)
 - `#screen-menu` and `#screen-create` changed from `min-height: 100dvh` to `height: 100dvh; overflow-y: auto` — screens scroll internally as fixed-height viewports
@@ -306,7 +327,10 @@ Full schema per section:
   "shop": { "items": [{ "item": "...", "note": "...", "price": 10, "currency": "arany", "unique": true, "stat_bonus": {} }] },
   "takes_items": ["Item name"],
   "gives_items": [{ "item": "...", "note": "...", "qty": 1, "stat_bonus": {} }],
-  "gold_cost": 5
+  "gold_cost": 5,
+  "has_puzzle": true,
+  "puzzle_fail_target": 209,
+  "puzzle_multiplier": 2
 }
 ```
 
@@ -339,6 +363,13 @@ Full schema per section:
   - Sec 36/37: uses unknown types `enemy_first_always` / `initiative_always_loses` (cursed mask) — ignored by engine
   - Sec 284: uses unknown type `player_stat_penalty` for temporary −5 TK/VS — ignored by engine (future work)
 
+### viharuzok sections.json
+- 300/300 sections, 95/300 have non-empty `events` arrays
+- 13 sections have `has_puzzle: true` + `puzzle_fail_target`; secs 78, 97, 195 also have `puzzle_multiplier: 2`
+- Sec 275 has SHOP event (5 items); rendered by game.js reading `events[].kind === 'SHOP'`
+- OCR quirks: `védetsségi/védeusegi szini` for `védettségi szint`; Greek chars in luck phrases; `sérülési képesség` for `támadási képesség`
+- `parse_config.json` has extended `luck_test_phrases` to catch OCR variants
+
 ## Data: rules.json
 
 - 5 stats with roll formulas
@@ -348,6 +379,12 @@ Full schema per section:
 - Combat rules, luck test rules
 - 16-entry damage table
 - 11 attack spells, 12 defense spells
+
+### viharuzok rules.json
+- 5 stats, 4 races: Ember, Félelf, Ork (`varazserő_halve: true`), Törpe
+- No spell system; damage table uses `formula` field (not lookup table) — `calcDamage` falls back to uniform roll
+- `puzzle_key`: flat `{"A": 10, "Á": 22, ...}` — 34 Hungarian letters with unique values
+- Starting equipment: Kard, Gyógyító ital ×2, Étel és ital, Aranypénz ×100
 
 ---
 
@@ -376,8 +413,14 @@ Full schema per section:
   - `player_stat_penalty` (sec 284) — temporary −5 TK/VS during one specific combat
 - Sec 81: `stat_drain` target "fekete lovag" should be "Goreel fejvadász" — harmless now but worth fixing
 
+### viharuzok
+- 181 sections unreachable per section_map.json — expected, since puzzle destinations are computed at runtime and not in static `choices[]`; true reachability is higher
+- 17 combat sections still lack parsed enemy stats (unusual OCR formats)
+- `07_extract_events.py` only run once; some events may be missing (secs 43, 103, 126, 152, 298 got `[]` due to greedy JSON regex on trailing prose)
+- `05_correct_sections.py` not yet run on this book
+
 ### General
-- `05_correct_sections.py` (OCR Sonnet correction) not yet run on either book
+- `05_correct_sections.py` (OCR Sonnet correction) not yet run on any book
 - Inventory item quantities on books other than magusok-tornya may need checking
 
 ---
@@ -505,6 +548,19 @@ Full schema per section:
 - Added `pipeline/generate_section_map.py` — generates `section_map.json` for any book with
   reachability, incoming/outgoing edges, flags, and issue index. Run after every data change.
   Generated initial maps for both books and committed them.
+
+### Session 15 — Third Book: Viharűzők (vol. 24) + Cipher Puzzle Mechanic
+- Added Viharűzők: OCR pipeline already run; committed sections.json, rules.json, cover.png, parse_config.json
+- Rewrote rules.json from scratch: `stats` and `races` as objects keyed by ID (game.js uses `Object.entries()`); formula-based damage table; `puzzle_key` dict
+- Fixed enemy regex in `03_parse_sections.py` to handle OCR variants (`védetsségi/védeusegi szini`, `sérülési képesség`); improved 24→32 out of 49 combat sections
+- Extended `luck_test_phrases` in parse_config.json to catch OCR-garbled luck phrases (Greek chars)
+- Extended `07_extract_events.py`: added SHOP event kind to system prompt; fixed JSON extraction (regex to strip trailing prose); added UTF-8 stdout reconfigure for Windows console
+- Extended game.js shop rendering to read SHOP events from `events[]` array (backward-compatible with `has_shop`/`shop` fields)
+- Implemented cipher puzzle mechanic (`renderPuzzleBlock`): letter grid, running sum, nav button when sum is a valid section
+- Added `puzzle_multiplier` support: secs 78, 97, 195 show `rawSum × 2 = target`
+- Marked 13 puzzle sections in sections.json (`has_puzzle`, `puzzle_fail_target`, `puzzle_multiplier`)
+- Fixed prologue: replaced wrong sec-1 text in rules.json with correct "Előzmények" from page 22
+- Added viharuzok entry to `books/index.json`
 
 ### Session 14 — A Démon Szeme bulk merge fix (batch 3, secs 36–300)
 - Added `pipeline/analyze_merges.py` — automated merge-detection script flagging ENDING_WITH_CHOICES,
