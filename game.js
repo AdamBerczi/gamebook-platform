@@ -17,6 +17,7 @@ let state = {
   },
   history: [],
   combat: null,
+  flags: {},
 };
 
 // ── DICE ───────────────────────────────────────────────────────────────────
@@ -236,6 +237,7 @@ function startGame() {
   state.currentSection = 1;
   state.history = [];
   state.combat  = null;
+  state.flags   = {};
 
   document.getElementById('sidebar-book-title').textContent = bookMeta?.title ?? '—';
   document.getElementById('mobile-book-title').textContent  = bookMeta?.title ?? '—';
@@ -570,6 +572,9 @@ function applyEvents(sectionData, timing) {
       for (const stat of (ev.restores || [])) {
         if (state.character.base[stat] !== undefined) player[stat] = state.character.base[stat];
       }
+    } else if (ev.kind === 'FLAG_SET' && (ev.timing || 'on_enter') === timing) {
+      state.flags[ev.flag] = ev.value;
+      if (ev.message) showItemToast(ev.message, false);
     }
   }
 }
@@ -637,6 +642,8 @@ function renderSection(data) {
   if (data.is_ending) { renderEnding(choicesEl); wrap.classList.add('visible'); return; }
   if (data.enemies?.length > 0) { renderCombatBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_luck_test && data.choices.length >= 2) { renderLuckTestBlock(choicesEl, data); wrap.classList.add('visible'); return; }
+  if (data.has_puzzle) { renderPuzzleBlock(choicesEl, data); wrap.classList.add('visible'); return; }
+  if (data.has_return) { renderReturnBlock(choicesEl); wrap.classList.add('visible'); return; }
   if (data.has_shop) renderShopBlock(choicesEl, data);
   renderChoices(choicesEl, data.choices);
   wrap.classList.add('visible');
@@ -671,6 +678,82 @@ function renderChoices(container, choices) {
     }
     container.appendChild(btn);
   });
+}
+
+// ── PUZZLE / CIPHER MECHANIC ─────────────────────────────────────────────────
+
+function renderPuzzleBlock(container, data) {
+  const key = rules?.puzzle_key || {};
+  const failTarget = data.puzzle_fail_target ?? null;
+
+  const block = document.createElement('div');
+  block.className = 'system-block puzzle-block';
+  container.appendChild(block);
+
+  // Letter-value grid (sorted by value)
+  const sortedEntries = Object.entries(key).sort((a, b) => a[1] - b[1]);
+  const gridCells = sortedEntries.map(([l, v]) =>
+    `<span class="puzzle-key-cell"><span class="puzzle-key-letter">${l}</span><span class="puzzle-key-value">${v}</span></span>`
+  ).join('');
+
+  block.innerHTML = `
+    <div class="system-block-title">Rejtvénykulcs</div>
+    <div class="puzzle-key-grid">${gridCells}</div>
+    <div class="puzzle-input-row">
+      <input type="text" id="puzzle-answer" class="puzzle-input"
+             placeholder="Írd be a választ..." autocomplete="off" spellcheck="false" />
+    </div>
+    <div class="puzzle-sum-row">Értéke: <span id="puzzle-sum" class="puzzle-sum-value">0</span></div>
+    <div id="puzzle-nav-btns" class="puzzle-nav-btns"></div>
+  `;
+
+  const input  = block.querySelector('#puzzle-answer');
+  const sumEl  = block.querySelector('#puzzle-sum');
+  const navDiv = block.querySelector('#puzzle-nav-btns');
+
+  function calcSum() {
+    let sum = 0;
+    for (const ch of input.value.toUpperCase()) sum += key[ch] || 0;
+    return sum;
+  }
+
+  function updateNav() {
+    const sum = calcSum();
+    sumEl.textContent = sum;
+    navDiv.innerHTML  = '';
+
+    if (sum >= 1 && sum <= 300 && sections.sections[String(sum)]) {
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.innerHTML = `<span>Lapozz a ${sum}. szakaszra!</span><span class="choice-arrow">→ ${sum}</span>`;
+      btn.addEventListener('click', () => loadSection(sum));
+      navDiv.appendChild(btn);
+    }
+
+    if (failTarget) {
+      const failBtn = document.createElement('button');
+      failBtn.className = 'choice-btn puzzle-fail-btn';
+      failBtn.innerHTML = `<span>Ha nem tudod a választ</span><span class="choice-arrow">→ ${failTarget}</span>`;
+      failBtn.addEventListener('click', () => loadSection(failTarget));
+      navDiv.appendChild(failBtn);
+    }
+  }
+
+  input.addEventListener('input', updateNav);
+  updateNav();
+}
+
+// ── RETURN-TO-ORIGIN MECHANIC ─────────────────────────────────────────────────
+
+function renderReturnBlock(container) {
+  const prevSection = state.history.length >= 2 ? state.history[state.history.length - 2] : null;
+  if (!prevSection) return;
+
+  const btn = document.createElement('button');
+  btn.className = 'choice-btn';
+  btn.innerHTML = `<span>Lapozz vissza ahonnan idelapoztál</span><span class="choice-arrow">→ ${prevSection}</span>`;
+  btn.addEventListener('click', () => loadSection(prevSection));
+  container.appendChild(btn);
 }
 
 // ── SHOP SYSTEM ──────────────────────────────────────────────────────────────
@@ -895,8 +978,14 @@ function rollInitiative() {
   const enemyRoll  = d6();
   const names = livingEnemies().map(e => e.name).join(' & ');
   addCombatLog(`Kezdeményezés: te ${playerRoll}, ${names} ${enemyRoll}`);
-  if (playerRoll >= enemyRoll) { addCombatLog('Te támadsz először!'); showPlayerTurn(); }
-  else { addCombatLog(`${names} támad először!`); showEnemyTurn(); }
+  if (state.flags?.cursedMask || playerRoll < enemyRoll) {
+    if (state.flags?.cursedMask) addCombatLog('Az átkozott maszk miatt az ellenfeled kezd!');
+    else addCombatLog(`${names} támad először!`);
+    showEnemyTurn();
+  } else {
+    addCombatLog('Te támadsz először!');
+    showPlayerTurn();
+  }
 }
 
 function showPlayerTurn() {
@@ -1498,6 +1587,7 @@ function saveGame(name) {
     timestamp: Date.now(),
     character: JSON.parse(JSON.stringify(state.character)),
     history:   [...state.history],
+    flags:     { ...state.flags },
   };
   // Replace existing save with same name, otherwise prepend
   const idx = saves.findIndex(s => s.name === name);
@@ -1515,6 +1605,7 @@ function loadSave(slot) {
   state.history       = [...slot.history];
   state.currentSection = slot.section;
   state.combat        = null;
+  state.flags         = { ...(slot.flags || {}) };
 
   buildGameSidebar();
   closeModal('saveload-modal');

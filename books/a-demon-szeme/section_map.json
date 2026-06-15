@@ -5,9 +5,9 @@
     "total_sections": 300,
     "reachable": 281,
     "unreachable": 19,
-    "unexpected_dead_ends": 8,
+    "unexpected_dead_ends": 2,
     "combat_missing_stats": 48,
-    "sections_with_issues": 80
+    "sections_with_issues": 74
   },
   "issue_index": {
     "unreachable": [
@@ -33,12 +33,6 @@
     ],
     "unexpected_dead_ends": [
       8,
-      17,
-      151,
-      215,
-      217,
-      238,
-      288,
       300
     ],
     "combat_missing_enemy_stats": [
@@ -112,9 +106,6 @@
       ],
       "11": [
         "combat_missing_enemy_stats"
-      ],
-      "17": [
-        "unexpected_dead_end"
       ],
       "24": [
         "combat_missing_enemy_stats"
@@ -230,9 +221,6 @@
         "unreachable",
         "no_incoming_edges"
       ],
-      "151": [
-        "unexpected_dead_end"
-      ],
       "155": [
         "unreachable"
       ],
@@ -281,12 +269,6 @@
       "210": [
         "combat_missing_enemy_stats"
       ],
-      "215": [
-        "unexpected_dead_end"
-      ],
-      "217": [
-        "unexpected_dead_end"
-      ],
       "218": [
         "duplicate_choice_targets"
       ],
@@ -308,9 +290,6 @@
       ],
       "236": [
         "unreachable"
-      ],
-      "238": [
-        "unexpected_dead_end"
       ],
       "239": [
         "combat_missing_enemy_stats"
@@ -345,9 +324,6 @@
       ],
       "285": [
         "combat_missing_enemy_stats"
-      ],
-      "288": [
-        "unexpected_dead_end"
       ],
       "300": [
         "unreachable",
@@ -659,16 +635,14 @@
     },
     "17": {
       "flags": [
-        "normal"
+        "ending"
       ],
       "reachable": true,
       "choices": [],
       "incoming": [
         69
       ],
-      "issues": [
-        "unexpected_dead_end"
-      ]
+      "issues": []
     },
     "18": {
       "flags": [
@@ -2729,12 +2703,11 @@
     "136": {
       "flags": [
         "combat",
+        "puzzle",
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        264
-      ],
+      "choices": [],
       "incoming": [
         229
       ],
@@ -2971,16 +2944,14 @@
     },
     "151": {
       "flags": [
-        "normal"
+        "return"
       ],
       "reachable": true,
       "choices": [],
       "incoming": [
         101
       ],
-      "issues": [
-        "unexpected_dead_end"
-      ]
+      "issues": []
     },
     "152": {
       "flags": [
@@ -4082,7 +4053,7 @@
     },
     "215": {
       "flags": [
-        "normal"
+        "ending"
       ],
       "reachable": true,
       "choices": [],
@@ -4090,9 +4061,7 @@
         34,
         35
       ],
-      "issues": [
-        "unexpected_dead_end"
-      ]
+      "issues": []
     },
     "216": {
       "flags": [
@@ -4110,7 +4079,7 @@
     },
     "217": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": true,
       "choices": [],
@@ -4122,9 +4091,7 @@
         179,
         253
       ],
-      "issues": [
-        "unexpected_dead_end"
-      ]
+      "issues": []
     },
     "218": {
       "flags": [
@@ -4455,7 +4422,7 @@
     },
     "238": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": true,
       "choices": [],
@@ -4465,9 +4432,7 @@
         205,
         299
       ],
-      "issues": [
-        "unexpected_dead_end"
-      ]
+      "issues": []
     },
     "239": {
       "flags": [
@@ -5336,7 +5301,7 @@
     },
     "288": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": true,
       "choices": [],
@@ -5346,9 +5311,7 @@
         205,
         299
       ],
-      "issues": [
-        "unexpected_dead_end"
-      ]
+      "issues": []
     },
     "289": {
       "flags": [

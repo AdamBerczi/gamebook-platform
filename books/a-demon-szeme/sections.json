@@ -309,7 +309,7 @@
       "text": "Amikor a füstöt belélegzed, nyomban fuldokolni\nkezdesz, miközben a tagjaid lebénulnak. Most sajnálod\nCsak, hogy varázserődet nem a megfelelő varázslatra\nhasználtad fel. A halál gyorsan érkezik. Kalandod véBet ért!\n\n§ A",
       "choices": [],
       "enemies": [],
-      "is_ending": false,
+      "is_ending": true,
       "has_combat": false,
       "has_luck_test": false,
       "events": [
@@ -2662,16 +2662,13 @@
     "136": {
       "id": 136,
       "text": "A koroi\nlyafénynél nekiállsz kibetűzni a ráírt szövege\nVeg első része valami mondóka, a második rész pedig\n\nösréginek tűnik, s rúnák díszítik. A fák.\nt. A szö.\n\nmagyarázó szöveg\n\nMinden útját maga Szc\n\nHa tudod a választ, lapozz előre a Rejtvények és rejt-F ] J J\njelkulcsok című részhez, és add össze a válasz betűi\n\nnek értékét. Ez a szám határozza meg, hova kell a\n\nfolytatáshoz lapoznod!\nHa nem tudod a választ, lapozz a 264-re\n\n437.\n\nHangtalanul kötelet húzol elő a hátizsákodból, majd\n\nkönnyű hurkot csinálsz belőle\n\nán nekikészülődsz\n\nhatoldalú kockáva\n\naz idegen megkötözésének. (L\nHa a dobott\n\n6, akkor sikerült megkö.\n\nHa nem sikerült, lapozz a 195-re\nA fekete lovag félelmetes ellenfél, szörnyű csapásai\nnem csupán az életerődet szívják el, hanem mintha a\nharci tudásod is folyamatosan romlana. Bár mindent\nmegteszel, ebben a harcban csak vesztes lehetsz. Kalandod véget ért!",
-      "choices": [
-        {
-          "text": "Ha nem tudod a választ,",
-          "target": 264
-        }
-      ],
+      "choices": [],
       "enemies": [],
-      "is_ending": true,
-      "has_combat": true,
-      "has_luck_test": false
+      "is_ending": false,
+      "has_combat": false,
+      "has_luck_test": false,
+      "has_puzzle": true,
+      "puzzle_fail_target": 264
     },
     "137": {
       "id": 137,
@@ -3007,8 +3004,15 @@
           "amount": -999,
           "timing": "on_enter",
           "reason": "cursed mask — always loses initiative; enemies attack first"
+        },
+        {
+          "kind": "FLAG_SET",
+          "flag": "cursedMask",
+          "value": true,
+          "message": "Az átkozott maszk az arcodba olvadt! Mostantól a harcokban mindig az ellenfeled támad először!"
         }
-      ]
+      ],
+      "has_return": true
     },
     "152": {
       "id": 152,
@@ -4364,7 +4368,7 @@
       "text": "A csontvázharcos a falhoz szorít rettenetes erejű\ncsapásaival, s már annak is örülsz, ha sikerül kitérned\na támadásai elől. Aztán váratlanul rést látsz ellenfeled\nvédelmében. Előreszökkensz, hogy végezz vele, ám\nhirtelen rádöbbensz, az egész csupán csel volt, s a le-\nzúduló csatabárd megállíthatatlanul tart a koponyád\nfelé.",
       "choices": [],
       "enemies": [],
-      "is_ending": false,
+      "is_ending": true,
       "has_combat": false,
       "has_luck_test": false,
       "events": []
@@ -4403,7 +4407,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "has_puzzle": true
     },
     "218": {
       "id": 218,
@@ -4768,7 +4773,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "has_puzzle": true
     },
     "239": {
       "id": 239,
@@ -5829,7 +5835,8 @@
       "is_ending": false,
       "has_combat": false,
       "has_luck_test": false,
-      "events": []
+      "events": [],
+      "has_puzzle": true
     },
     "289": {
       "id": 289,

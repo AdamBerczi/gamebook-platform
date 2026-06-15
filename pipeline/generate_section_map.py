@@ -37,6 +37,11 @@ for sid_str, s in secs.items():
         if isinstance(t, int):
             outgoing[sid].append(t)
             incoming[t].append(sid)
+    # puzzle_fail_target is an implicit outgoing edge (shown when player gives up)
+    pft = s.get("puzzle_fail_target")
+    if isinstance(pft, int):
+        outgoing[sid].append(pft)
+        incoming[pft].append(sid)
 
 # ── BFS reachability from section 1 ─────────────────────────────────────────
 reachable = set()
@@ -57,11 +62,15 @@ def classify(sid, s):
     text = s.get("text", "")
     targets = [c["target"] for c in s.get("choices", []) if isinstance(c.get("target"), int)]
     is_ending = s.get("is_ending", False) or any(p in text for p in DEATH_PHRASES)
+    has_puzzle = s.get("has_puzzle", False)
+    has_return = s.get("has_return", False)
 
     flags = []
     if s.get("has_combat"):   flags.append("combat")
     if s.get("has_luck_test"): flags.append("luck_test")
     if s.get("has_shop"):     flags.append("shop")
+    if has_puzzle:            flags.append("puzzle")
+    if has_return:            flags.append("return")
     if is_ending:             flags.append("ending")
     if not flags:             flags.append("normal")
 
@@ -71,7 +80,8 @@ def classify(sid, s):
         issues.append("unreachable")
     if not incoming[sid] and sid != 1:
         issues.append("no_incoming_edges")
-    if not targets and not is_ending:
+    # puzzle and return sections navigate dynamically — they're not dead ends
+    if not targets and not is_ending and not has_puzzle and not has_return:
         issues.append("unexpected_dead_end")
     if not text.strip():
         issues.append("empty_text")

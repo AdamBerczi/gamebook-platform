@@ -362,5 +362,42 @@
       "description": "Bármilyen varázslat hatását képes semlegesíteni, kivéve a Halálvarázst."
     }
   ],
-  "prologue": "Előzmények\n\nMár pillanatnyilván királynőnek kell tartanod magad, ám amióta a Sötét Évszázadokat a félistenektől megtámadták, Cherubimot számon tartják ezen a világon, így számtalan veszélyes kihívással kell szembenézned. Évek óta járod a veszélyes vidéket, s hol sárkányokkal, hol a túlélésért küzdő katonákkal kell megvívnod a holnapok lehetőségéért. Ha úgy hozza a sors, sárkányokat fosztogatsz, vagy éppen ősi, elfeledett kincsek után kutatsz rémisztő szörnyetegekkel telezsúfolt katakombák mélyén.\n\nÉszakon, Salynsandar városában hallottál elsőként arról a nagy erejű ereklyéről, amelynek nevét még a bölcsek is mély borzadállyal ejtették ki szájukon:\n\nA Démon Szeme\n\nHatalmáról csak legendák beszélnek, ám tapasztalatból tudod, hogy egy ilyen nagy erejű varázstárgy értéke aranyhegyekben mérhető. Arról nem is beszélve, hogy olyan képességekkel ruházhatja fel a tulajdonosát, melyről nem is álmodik.\n\nSalynsandarból keletre, a Chorald-hágó felé vitt az utad, ám az álomfejtő, aki segíthetett volna neked az ereklye megszerzését hónapokkal ezelőtt meghalt egy ork rajtaütés során. Egyik rendtársa azt tanácsolta neked, hogy menj délre, s kutasd fel Yhrint, Choler Magiszter egyik renegát xinafját. Ha valaki, talán ő segíteni tud a célod elérésében.\n\nAz utad hosszú hetekig tart, ám miután sikeresen átvészeltél három éjszakai rajtaütést és egy rablótámadást, eljutsz a Szürke Torony romjához. Utolsó értesülésed szerint ez a torony szolgált éveken keresztül a xinaf lakhelyéül. Talán találsz valami nyomot ezen a helyen, mely által haladhatod."
+  "prologue": "Előzmények\n\nMár pillanatnyilván királynőnek kell tartanod magad, ám amióta a Sötét Évszázadokat a félistenektől megtámadták, Cherubimot számon tartják ezen a világon, így számtalan veszélyes kihívással kell szembenézned. Évek óta járod a veszélyes vidéket, s hol sárkányokkal, hol a túlélésért küzdő katonákkal kell megvívnod a holnapok lehetőségéért. Ha úgy hozza a sors, sárkányokat fosztogatsz, vagy éppen ősi, elfeledett kincsek után kutatsz rémisztő szörnyetegekkel telezsúfolt katakombák mélyén.\n\nÉszakon, Salynsandar városában hallottál elsőként arról a nagy erejű ereklyéről, amelynek nevét még a bölcsek is mély borzadállyal ejtették ki szájukon:\n\nA Démon Szeme\n\nHatalmáról csak legendák beszélnek, ám tapasztalatból tudod, hogy egy ilyen nagy erejű varázstárgy értéke aranyhegyekben mérhető. Arról nem is beszélve, hogy olyan képességekkel ruházhatja fel a tulajdonosát, melyről nem is álmodik.\n\nSalynsandarból keletre, a Chorald-hágó felé vitt az utad, ám az álomfejtő, aki segíthetett volna neked az ereklye megszerzését hónapokkal ezelőtt meghalt egy ork rajtaütés során. Egyik rendtársa azt tanácsolta neked, hogy menj délre, s kutasd fel Yhrint, Choler Magiszter egyik renegát xinafját. Ha valaki, talán ő segíteni tud a célod elérésében.\n\nAz utad hosszú hetekig tart, ám miután sikeresen átvészeltél három éjszakai rajtaütést és egy rablótámadást, eljutsz a Szürke Torony romjához. Utolsó értesülésed szerint ez a torony szolgált éveken keresztül a xinaf lakhelyéül. Talán találsz valami nyomot ezen a helyen, mely által haladhatod.",
+  "puzzle_key": {
+    "A": 10,
+    "Á": 22,
+    "B": 3,
+    "C": 18,
+    "D": 6,
+    "E": 31,
+    "É": 35,
+    "F": 16,
+    "G": 11,
+    "H": 26,
+    "I": 30,
+    "Í": 7,
+    "J": 5,
+    "K": 12,
+    "L": 23,
+    "M": 2,
+    "N": 32,
+    "O": 17,
+    "Ó": 19,
+    "Ö": 29,
+    "Ő": 13,
+    "P": 33,
+    "Q": 1,
+    "R": 25,
+    "S": 8,
+    "T": 24,
+    "U": 20,
+    "Ú": 28,
+    "Ü": 34,
+    "Ű": 14,
+    "V": 9,
+    "W": 27,
+    "X": 4,
+    "Y": 21,
+    "Z": 15
+  }
 }
