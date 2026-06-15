@@ -122,6 +122,9 @@
       "text": "A kunyhó biztonságosnak tűnik. Amennyire me\ntudod állapítani, amolyan erdei vándorok építette\nez, melyet bárki igénybe vehet. A sarokban a taj\ntott kemence mellett rőzsét találsz felhalmozva. A!\nis járt itt utoljára, betartotta a szabályokat.\n\nAz éjszal orsan közeledik.\n\nOdakintről farkasüvöltést hoz a szél. Megb.\nzongsz. Most nem lenne jó kint lenni, a vastag ajtó és\na falak megvédenek, amíg kipihened magad.\n\nHa máris álomra hajtod a fejed, lapozz a 225-r\nHa alaposan körbenézel idebent, lapozz a 178-ra!",
       "choices": [
         {
+          "target": 178
+        },
+        {
           "target": 146
         }
       ],
@@ -560,28 +563,13 @@
       "text": "Hamarosan ismét ott állsz a bejáratot jelző sápadt\nfényfolt előtt, mely a felszínre vezető alagutat jelzi\n\nHa balra indulsz a barlangban, lapozz az 58-ra!\n\nHa jobbra, lapozz a 121-re!\n\nHa visszatérsz a felszínre, és észak felé folytatod az\nutadat, lapozz a 146-ra!\n\nAz arcodra illeszted a maszkot. Készen állsz rá\nhogy bármelyik pillanatban letéped magadról, ám\namikor a bőröd az aranyhoz ér, apró szikrák villannak\nfel a szemed előtt, és a maszk egybeolvad az arcodda\n(Egy elátkozott varázsmaszkot vettél magadhoz. lt\nnentől kezdve nem kell kezdeményező dobást tenne\nmindig, minden ellenfeled hamarabb fog támadn\nmint te. Azaz, ha ketten rontanak rád, akkor először ők\nketten jönnek — kezdeményezés nélkül —, s csupán legutoljára te.)\n\nHa folytatod a láda szétszedését, lapozz a 160-ra!\nHa a szarkofághoz mégy, lapozz a 156-ra!\nHa belelapozol a könyvbe, lapozz a 21-re!",
       "choices": [
         {
-          "text": "Ha balra indulsz a barlangban,",
           "target": 58
         },
         {
-          "text": "Ha jobbra,",
           "target": 121
         },
         {
-          "text": "utadat,",
           "target": 146
-        },
-        {
-          "text": "Ha folytatod a láda szétszedését,",
-          "target": 160
-        },
-        {
-          "text": "Ha a szarkofághoz mégy,",
-          "target": 156
-        },
-        {
-          "text": "Ha belelapozol a könyvbe,",
-          "target": 21
         }
       ],
       "enemies": [],
@@ -637,36 +625,10 @@
       "text": "Ha beszéltél egy felégetett faluban egy fehér ruhás\nidegennel Yhrin xinafról, lapozz a 116-ra!\nHa nem beszéltél, lapozz a 221-re!\n\nA rém véresen hanyatlik vissza a hullámok közé, s\nhamarosan csupán néhány vércsepp emlékeztet acsafára. Fegyveredet kézben tartva folytatod az utadat, s\nNem sokkal később szétzúzódott testet pillantasz\ne, érdekes\n\narca egyértelművé teszi: egy\nMég él, bár talán csak a varázserejének köszönhető-\n\nEn. A sebei túl súlyosak ahhoz, hogy teljesen meggyó-\n\ngyíthassa magát, ám hihetetlen szívóssággal kapaszko-\n\ndik az életbe.\n\n,. Amikor meghallja a lépteidet, feléd fordítja a fejét,\n\nÉS nyöszörögni kezd:\n\nFolytatod a szint átfésülé ám nem sokkal később — Segíts, és én minden kívánságodat teljesítem!\nráébredsz, immáron semmi használható nyom nincs.\nahol folytathatnád a kutatást. Ha segítesz neki, lapozz a 223-ra!\nI Ha Végzel vele, lapozz a 295-re!\nHa visszatérsz a szoborhoz, lapozz a 10-re! !  Haelőbb a xinaf nevét kérdezed, lapozz a 119-re!\n\nHa a lyukhoz térsz vissza, lapozz a 273-ra! Ha megpróbálod kikérdezni, lapozz a 182-re!",
       "choices": [
         {
-          "text": "idegennel Yhrin xinafról,",
           "target": 116
         },
         {
-          "text": "Ha nem beszéltél,",
           "target": 221
-        },
-        {
-          "text": "Ha segítesz neki,",
-          "target": 223
-        },
-        {
-          "text": "I Ha Végzel vele,",
-          "target": 295
-        },
-        {
-          "text": "Ha visszatérsz a szoborhoz,",
-          "target": 10
-        },
-        {
-          "text": "Haelőbb a xinaf nevét kérdezed,",
-          "target": 119
-        },
-        {
-          "text": "Ha a lyukhoz térsz vissza,",
-          "target": 273
-        },
-        {
-          "text": "Ha megpróbálod kikérdezni,",
-          "target": 182
         }
       ],
       "enemies": [],
@@ -806,29 +768,38 @@
     },
     "51": {
       "id": 51,
-      "text": "Csendben lemászol a fáról, és megpróbálsz a szörNyeteg hátába kerülni. A hatalmas termetű lény azonban az utolsó másodpercben szembe fordul veled.\n\nAlakváltó: életerő 28, támadási képesség 18, védett-\n5É8 szint 18. A szörnyeteg 3-8 életerőpont veszteséget\n\nOkoz. (Minden, az alakváltót ért sebzésből vonj le 2\nPontot, ennyit regenerálódik.)\n\nHa sikerült legyőznöd az alakváltót, lapozz az 105-re!\na veszítettél, lapozz a 276-ra!\nhárom óra múlva egy alacsony domb tetején állva a végtelen tengert pillantod meg. Csak az\nidődet fecsérelted erre a kitérőre. Itt biztosan nem\nlálod meg Yhrin xinafot, Choler Mag;\nemberét. S ha őt nem találod meg, akkor a Démor\nSzeme sem lesz egyéb múló álomképnél\n\négy, lapozz a 202-re!\nálkozol, lapozz a 104-re!\n\nHa a füst irányába m.\nHa a kősivataggal prób.",
+      "text": "Csendben lemászol a fáról, és megpróbálsz a szörNyeteg hátába kerülni. A hatalmas termetű lény azonban az utolsó másodpercben szembe fordul veled.\n\nAlakváltó: életerő 28, támadási képesség 18, védett-\n5É8 szint 18. A szörnyeteg 3-8 életerőpont veszteséget\n\nOkoz. (Minden, az alakváltót ért sebzésből vonj le 2\nPontot, ennyit regenerálódik.)\n\nHa sikerült legyőznöd az alakváltót, lapozz az 105-re!\na veszítettél, lapozz a 276-ra!",
       "choices": [
         {
-          "text": "Ha sikerült legyőznöd az alakváltót,",
           "target": 105
         },
         {
-          "text": "a veszítettél,",
           "target": 276
-        },
-        {
-          "text": "égy,",
-          "target": 202
-        },
-        {
-          "text": "álkozol,",
-          "target": 104
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Alakváltó",
+          "eletero": 28,
+          "tamadasi_kepesseg": 18,
+          "vedettsegi_szint": 18,
+          "damage": "3-8"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "enemy_regenerate",
+              "amount": 2
+            }
+          ]
+        }
+      ]
     },
     "54": {
       "id": 54,
@@ -853,24 +824,10 @@
       "text": "Nem csak a szarkofág hívja fel idelent a figyelmedet. A fal mellett hatalmas könyves szekrények állnak,\nám csupán egyetlen könyv árválkodik poros polcaikon\nIA szarkofág mögött egy félig bezúzott fedelű tölgyfa\nláda látszik\n\nHa megvizsgálod a könyvet, lapozz a 21-re!\nHa a ládát nézed meg, lapozz a 115-re!\n\nÚgy érzed, erre hiába keresnéd Yhrin xinafot, ezért\nVisszafordulsz. Átvágsz az erdőn, majd késő délután\nismét ott állsz a napkör monolitjai között. Keletről\nMintha a tenger morajlását hallanád, északon komor\nKösivatag terül el, ameddig a szem ellát. Nyugaton a\nfávolból vastag, fekete füstoszlop száll az ég felé\n\nHa a tenger felé indulsz, lapozz az 52-re!\nHa a kősivataggal próbálkozol, lapozz a 104-re!\nHa a füst irányába mégy, lapozz a 202-re!",
       "choices": [
         {
-          "text": "Ha megvizsgálod a könyvet,",
           "target": 21
         },
         {
-          "text": "Ha a ládát nézed meg,",
           "target": 115
-        },
-        {
-          "text": "Ha a tenger felé indulsz,",
-          "target": 52
-        },
-        {
-          "text": "Ha a kősivataggal próbálkozol,",
-          "target": 104
-        },
-        {
-          "text": "Ha a füst irányába mégy,",
-          "target": 202
         }
       ],
       "enemies": [],
@@ -891,13 +848,6 @@
           "amount": 3,
           "timing": "on_enter",
           "reason": "ancient writing effect"
-        },
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "varazserő",
-          "amount": 0,
-          "timing": "on_enter",
-          "reason": "reset to initial value"
         },
         {
           "kind": "STAT_CHANGE",
@@ -975,7 +925,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": true,
       "events": []
     },
@@ -994,7 +944,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -1057,46 +1007,36 @@
       "text": "Tétován megrázod a fejed. Fogalmad sincs arról, r\nlehet a helyes válasz.\n\n— Adj nekem az életerődből tízet, s segítek nekec\negy kicsit — hallod a varázstárgy felől a hangot\n\nHa körbenézel idelent, lapozz a 235-re!\na megvizsgálod az idős férfit, lapozz a 156-ra!\n\nHa elfogadod az alkut, lapozz a 11-re!\nHa nem érdekel az ajánlat, lapozz a 180.\n\nb",
       "choices": [
         {
-          "text": "Ha körbenézel idelent,",
           "target": 235
         },
         {
-          "text": "a megvizsgálod az idős férfit,",
           "target": 156
         },
         {
-          "text": "Ha elfogadod az alkut,",
           "target": 11
         },
         {
-          "text": "Ha nem érdekli az ajánlat,",
-          "target": 180
-        },
-        {
-          "text": "Ha nem érdekli az ajánlat,",
           "target": 180
         }
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false
     },
     "68": {
       "id": 68,
-      "text": "Csupán centimétereken múlt, de átjutottál. A víz sarkadat mossa, ám odaát vagy. A vízesés melletti ösvény felfelé vezet, azonban mintha látnál a közepén csillogni valamit. Hideg vízbe csobbansz, a fáklyád egy szempillantás alatt elalszik. Erős sodrás rag és visz magával lefelé, a föld gyomra felé. Kalandod véget ért!\n\nHa elindulsz felfelé, lapozz a 284-re!\nHa inkább megpróbálsz visszajutni a másik partra, lapozz a 197-re!",
+      "text": "Csupán centimétereken múlt, de átjutottál. A víz sarkadat mossa, ám odaát vagy. A vízesés melletti ösvény felfelé vezet, azonban mintha látnál a közepén csillogni valamit.",
       "choices": [
         {
-          "text": "Ha elindulsz felfelé,",
           "target": 284
         },
         {
-          "text": "Ha inkább megpróbálsz visszajutni a másik partra,",
           "target": 197
         }
       ],
       "enemies": [],
-      "is_ending": true,
+      "is_ending": false,
       "has_combat": false,
       "has_luck_test": false,
       "events": []
@@ -1200,17 +1140,8 @@
     },
     "75": {
       "id": 75,
-      "text": "A legtöbb papírból annyi sem maradt, amennyit érCemes lenne szemügyre venni. Ám két könyv vi-\n73. Szonylag jó állapotban vészelte át a tüzet, az egyik fedelén egy sárkánykarom rajzolata látszik, míg a másia kon a halál szimbóluma.\n\nA kőevő túlságosan kiéhezett ahhoz, hogy asérüléseivel foglalkozzon. Egyszerűen győzni ak:\nennek érdekében önmagát sem kíméli. Csapás csapá\nkövet, s egyszer csak a földön találod magad, s elle\nfeled fenyegetően tornyosul feléd. Nincs esélyed\nKalandod véget ért!\n\nHa először a sárkánykarmos könyvet veszed a kezed-\n, lapozz a 129-re!\na inkább azt, amelyiken a halál szimbóluma látható,\nlapozz a 210-re!",
-      "choices": [
-        {
-          "text": ",",
-          "target": 129
-        },
-        {
-          "text": "a inkább azt, amelyiken a halál szimbóluma látható,",
-          "target": 210
-        }
-      ],
+      "text": "A legtöbb papírból annyi sem maradt, amennyit érCemes lenne szemügyre venni. Ám két könyv vi-\n73. Szonylag jó állapotban vészelte át a tüzet, az egyik fedelén egy sárkánykarom rajzolata látszik, míg a másia kon a halál szimbóluma.\n\nA kőevő túlságosan kiéhezett ahhoz, hogy asérüléseivel foglalkozzon. Egyszerűen győzni ak:\nennek érdekében önmagát sem kíméli. Csapás csapá\nkövet, s egyszer csak a földön találod magad, s elle\nfeled fenyegetően tornyosul feléd. Nincs esélyed\nKalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
@@ -1262,37 +1193,18 @@
       "text": "\"Ha belépsz a bal oldali ajtón, lapozz a 109-re!\n\"Ha a jobb oldali ajtót választod, lapozz a 203-ra!\nHa folytatod a szint átfésülését, lapozz a 261-re!\n\nGyorsan elmormolsz egy Semlegesítést (ne felejtsd\nel levonni a varázslatpontot). Az idegen a varázslat\nHatására hihetetlen átalakuláson megy keresztül. A bő-TE elkékül, a haja aranyszínűvé változik. A ruhái a\nsemmiből ölelik körbe. Egy másik xinaf áll előtted!\n\n— Köszönöm! — mondja, miután befejeződik az át-alakulás. — Hogyan hálálhatnám meg?\n\nHa valami oltalmazó tárgyat kérsz, lapozz a 62-re!\n\na egy különleges fegyvert, lapozz a 150-re!\n\na tanácsot, lapozz a 282-re!\n\na az életerődet szeretnéd megnövelni, lapozz a 9-re!",
       "choices": [
         {
-          "text": "\"Ha belépsz a bal oldali ajtón,",
           "target": 109
         },
         {
-          "text": "\"Ha a jobb oldali ajtót választod,",
           "target": 203
         },
         {
-          "text": "Ha folytatod a szint átfésülését,",
           "target": 261
-        },
-        {
-          "text": "Ha valami oltalmazó tárgyat kérsz,",
-          "target": 62
-        },
-        {
-          "text": "a egy különleges fegyvert,",
-          "target": 150
-        },
-        {
-          "text": "a tanácsot,",
-          "target": 282
-        },
-        {
-          "text": "a az életerődet szeretnéd megnövelni,",
-          "target": 9
         }
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -1488,20 +1400,11 @@
     },
     "87": {
       "id": 87,
-      "text": "A könyv az összes életerődet elszívja, mielőtt sikerülne elengedned. Iszonyú hatalommal bíró, mágikus alkotás lehet, ám ez téged nem vigasztal. Holtan összehangsz a földre. Kalandod véget ért!\n\nGyengéden megrázogatod az idegen vállát. Az kinyitja a szemeit, majd csodálkozva néz rád.\n\n— Nem félsz tőlem? — kérdezi. — Pedig én mindenkit megölök, aki a közelembe jön.\n\nHa fegyvert rántasz, lapozz az 5-re!\nHa tovább hallgatod, lapozz a 254-re!",
-      "choices": [
-        {
-          "text": "Ha fegyvert rántasz,",
-          "target": 5
-        },
-        {
-          "text": "Ha tovább hallgatod,",
-          "target": 254
-        }
-      ],
+      "text": "A könyv az összes életerődet elszívja, mielőtt sikerülne elengedned. Iszonyú hatalommal bíró, mágikus alkotás lehet, ám ez téged nem vigasztal. Holtan összehangsz a földre. Kalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": []
     },
@@ -1578,20 +1481,7 @@
       "text": "Óvatosan leereszkedsz az ösvényen, majd megá\na folyó partján. A távolság nem kicsi, s most már\nnod, hogy ostoba módon átjöttél erre az oldalra. J\nlett volna odaát maradni.\n\nLapozz a 197-re!\n\nA falu átkutatása nem vezet eredményre. Ennyi !\nlottat te sem tudnál eltemetni, így jobb híján a tűzdobod a tetemeket, nekik a v\nget. Már a munka n jársz, amikor egy fehér rul\nalak biceg elő a közeli bozótból. Megáll előtted,\ngmér, majd szomorúan elmosolyodik.\n\nKár, h nem érkeztél hamarabb, ideger\nmondja csendesen. — Mégis, egyetlen kérdést, vor\nkozzon bármire, megválaszolok, mert tetteddel k\ndemelted a hálámat.\n\ny adva me\n\nHa Yhrin xinafról kérdezed, lapozz a 298-ra!\nHa a Démon Szeméről, lapozz a 220-ra!\nHa a neve után érdeklődsz, lapozz a 141-re!",
       "choices": [
         {
-          "text": null,
           "target": 197
-        },
-        {
-          "text": "Ha Yhrin xinafról kérdezed,",
-          "target": 298
-        },
-        {
-          "text": "Ha a Démon Szeméről,",
-          "target": 220
-        },
-        {
-          "text": "Ha a neve után érdeklődsz,",
-          "target": 141
         }
       ],
       "enemies": [],
@@ -1627,24 +1517,10 @@
       "text": "Azonnal rávágod a választ\n\n- Folyó! — Hát persze! Nem volt könnyű, de túlságosan nehéz sem. ik\n\n\"Amikor kimondod a megfelelő szót, a Démon Szeme elképzelhetetlen sebességgel kezd forogni, majd a\nkövetkező pillanatban iszonyú erejű mágia vesz körül,\nmely készen áll arra, hogy elemésszen\n\nHa van nálad egy fekete ékkővel díszített nyaklánc, lapozz a 234-re!\nHa nincs, lapozz a 140-re!\n\nA szakadék szélessége néhol eléri a fél mérföldet is.\nNem véletlenül kapta a nevét: a Nagy Repedés. A\nmélyben éles sziklák és egy hihetetlenül sebes sodrású\nfolyó, idefent áthatolhatatlan távolság. Amennyire tudod, ezt a helyet mindenki messzire elkerüli, mert goHosz szörnyetegek élnek erre, ráadásul semmi sincs\nami egy magadfajta kincsvadász érdeklődését felkelthetné.\n\nHa visszafordulsz, és az erdőn át visszatérsz a napköröz, lapozz a 236-ra!\nleereszkedsz a szakadékba, lapozz a 40-re!\na az épület felé indulsz, lapozz a 204-re!",
       "choices": [
         {
-          "text": "Ha van nálad egy fekete ékkővel díszített nyaklánc,",
           "target": 234
         },
         {
-          "text": "Ha nincs,",
           "target": 140
-        },
-        {
-          "text": "Ha visszafordulsz, és az erdőn át visszatérsz a napköröz,",
-          "target": 236
-        },
-        {
-          "text": "leereszkedsz a szakadékba,",
-          "target": 40
-        },
-        {
-          "text": "a az épület felé indulsz,",
-          "target": 204
         }
       ],
       "enemies": [],
@@ -1766,20 +1642,10 @@
       "text": "A kősivatag elég nagy kiterjedésű, azonban már a második óra után tudod, hogy hamarosan a járulandó út véget ér. A harmadik óra végén, egy lankás domb alatt végre egy kisebb erdőt pillantasz meg. Az erőd lassan kezd fogyatkozni, ideje lenne egy pihenőre. Hosszabb pihenőt tartanod.\n\nAz erdő szélén elhagyottnak tűnő kunyhót látsz.\n\nHa a kunyhóban pihensz meg, lapozz a 91-re!\nHa inkább az erdőben, lapozz a 132-re!\nHa visszafordulsz, lapozz a 239-re!\n\nAz alakváltó holtan hever a lábaid előtt. Ismét ember alakjában van, mezítelen, ahogyan először megpillantottad. Első pillantásra látod, hogy nincs semmi értéke, amit a későbbiekben esetleg hasznosíthatnál. Gyorsan behúzod a bokrok alá, majd egy jó tíz perces gyaloglás után ismét tábort versz.\n\nÁlmodat immáron semmi sem zavarja reggelig. A hajnal első sugaraival ébredsz, s miután ettél-ittál (vendéglátódat pedig engedélyt kérsz, hogy az ellátásodból való csökkenteni), folytatod utadat észak felé.\n\nLapozz a 146-ra!",
       "choices": [
         {
-          "text": "Ha a kunyhóban pihensz meg,",
           "target": 91
         },
         {
-          "text": "Ha inkább az erdőben,",
           "target": 132
-        },
-        {
-          "text": "Ha visszafordulsz,",
-          "target": 239
-        },
-        {
-          "text": null,
-          "target": 146
         }
       ],
       "enemies": [],
@@ -1871,7 +1737,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": []
     },
@@ -1935,7 +1801,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -2019,24 +1885,10 @@
       "text": "Amikor először rásújtasz a térdemre, fájdalom cikázik testeden (veszítesz 2 életerőpontot), miközben egy mennydörgő hangot hallasz:\n\n- Ostoba vagy, halandó, ha azt hiszed, kárt tehetsz a Démon Szemében!\n\nDöbbenve nézel a tárgyra. Ezt kereseted volna? A külseje alapján illik rá a neve, de nem gondoltad volna, hogy éppen itt fogsz rábukkanni.\n\nEbben a pillanatban a pikkelyes rém rád veti magát, hirtelen támadást indítva.\n\n(a támadási képességed ebben a harcban 5 ponttal csökken, mert a Démon Szeme olyan erős fénysugárzásokat bocsát ki magából, melyek akadályoznak a harcban).\n\nPikkelyes rém: életerő 30, támadási képesség 23, védettségi szint 26. A szörnyeteg 2-12 életerőpontot vesz el tőled csapásonként.\n\nHa legyőzöd a szörnyet, lapozz a 265-re!\n\nHa végzetes sérüléseket opsz, lapozz a 191-re!\n\nA láda bezúzott fedele arra utal, hogy valaki előtted már járt idelent. S valóban, a láda teljesen üres. Legalábbis annak tűnik, hiszen életed során már elég sok trükkel és csalafintasággal találkoztál ahhoz, hogy ne higy mindig a szemednek.\n\nHa alaposan átvizsgálod a lá, lapozz a 277-re!\n\nHa a szarkofághoz mégy, lapozz a 156-ra!\n\nHa belelapozol a könyvbe, lapozz a 21-re!",
       "choices": [
         {
-          "text": "Ha legyőzöd a szörnyet,",
           "target": 265
         },
         {
-          "text": "Ha végzetes sérüléseket opsz,",
           "target": 191
-        },
-        {
-          "text": "Ha alaposan átvizsgálod a lá,",
-          "target": 277
-        },
-        {
-          "text": "Ha a szarkofághoz mégy,",
-          "target": 156
-        },
-        {
-          "text": "Ha belelapozol a könyvbe,",
-          "target": 21
         }
       ],
       "enemies": [
@@ -2119,15 +1971,9 @@
       "text": "Semmi kedved a harchoz. Hamarosan ismét ott állsz\na napkör monolitjai között. Weletről mintha a tenger\nmorajlását hallanád, északon komor kősivatag terül el,\nameddig a szem ellát.\n\nHa a tenger felé indulsz, lapozz az 52-re!\nHa a kősivatagra fordulsz, lapozz a 104-re!\nHa a kősivatággal próbálkozol, lapozz a 104-re!",
       "choices": [
         {
-          "text": "Ha a tenger felé indulsz,",
           "target": 52
         },
         {
-          "text": "Ha a kősivatagra fordulsz,",
-          "target": 104
-        },
-        {
-          "text": "Ha a kősivatággal próbálkozol,",
           "target": 104
         }
       ],
@@ -2161,34 +2007,13 @@
     },
     "120": {
       "id": 120,
-      "text": "Hiába igyekszel, a füst gyorsabbnak bizonyul r\nA\n\nkezdesz, r\n\nnikor pedig a füstöt belélegzed, nyomban fuld\n\nközben a tagjaid lebénulnak. A füst mé\nrkezik. Kalandod véget ért\n\nző, s a hal\n\nJobbra halad\ndik. A lev\n\npadló is nedve\n\nt\nvízcsobogás har\n\nár nem annyira száraz, s hamaros:;\n\nVedves és iszamós.\n\nHa visszafordulsz, lapozz a 36-ra!\n\nHa továbbhaladsz, lapozz a 278-ra",
-      "choices": [
-        {
-          "text": "Ha visszafordulsz,",
-          "target": 36
-        },
-        {
-          "text": "Ha továbbhaladsz,",
-          "target": 278
-        },
-        {
-          "text": "Ha továbbhaladsz,",
-          "target": 278
-        }
-      ],
+      "text": "Hiába igyekszel, a füst gyorsabbnak bizonyul r\nA\n\nkezdesz, r\n\nnikor pedig a füstöt belélegzed, nyomban fuld\n\nközben a tagjaid lebénulnak. A füst mé\nrkezik. Kalandod véget ért\n\nző, s a hal\n\nJobbra halad\ndik. A lev\n\npadló is nedve\n\nt\nvízcsobogás har\n\nár nem annyira száraz, s hamaros:;\n\nVedves és iszamós.\n\nHa visszafordulsz, lapozz a 36-ra!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
       "has_luck_test": false,
-      "events": [
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "eletero",
-          "amount": 0,
-          "timing": "on_enter",
-          "reason": "poisonous gas - instant death"
-        }
-      ]
+      "events": []
     },
     "121": {
       "id": 121,
@@ -2214,25 +2039,18 @@
       "text": "Némi gondolkozás után a táborverés mellett döntesz. Talán szerencséd lesz, s némi várakozás meghozza a gyümölcsét. Elvégre sohasem tudhatjuk, mit tartogat számunkra a jövő. A pihenés során legalább egy kicsit összeszedheted a gondolataidat, hogy eldöntsd, miként tovább. Mennyit pihensz?\n\nHa csupán néhány órát, lapozz a 48-ra!\nHa legalább egy teljes napot, lapozz a 233-ra!\nHa addig, amíg nem történik valami, lapozz a 170-re!",
       "choices": [
         {
-          "text": "Ha csupán néhány órát,",
           "target": 48
         },
         {
-          "text": "Ha legalább egy teljes napot,",
           "target": 233
         },
         {
-          "text": "Ha addig, amíg nem történik valami,",
-          "target": 170
-        },
-        {
-          "text": "Ha addig, amíg nem történik valami,",
           "target": 170
         }
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -2249,28 +2067,13 @@
       "text": "Ez a helyiség egykor\nlegalább tucatnyi lény számára.\nasztal romjai árválkodnak, székeket azonban\nsehol. A szobát egykor nyilván ebédlőként szolgálta.\nKözépen ékesen merednek rád szemrehányóan az\nfalakon poros képek függenek, amelyek különféle ételi\nés fogásokat ábrázolnak.\n\nHa megvizsgálod a képeket, lapozz a 218-ra!\nHa a képeket vizsgálat alá veszed, lapozz a 190-re!\nHa kimégy az előszobába, lapozz a 169-re!\n\nHa elmondod a választ, a könyv lapozz a 190-re!\nHa elolvasod az írást, lapozz a 190-re!\nHa elteszed a könyvet, lapozz a 190-re!",
       "choices": [
         {
-          "text": "Ha megvizsgálod a képeket,",
           "target": 218
         },
         {
-          "text": "Ha a képeket vizsgálat alá veszed,",
           "target": 190
         },
         {
-          "text": "Ha kimégy az előszobába,",
           "target": 169
-        },
-        {
-          "text": "Ha elmondod a választ, a könyv",
-          "target": 190
-        },
-        {
-          "text": "Ha elolvasod az írást,",
-          "target": 190
-        },
-        {
-          "text": "Ha elteszed a könyvet,",
-          "target": 190
         }
       ],
       "enemies": [],
@@ -2550,7 +2353,7 @@
       "choices": [],
       "enemies": [],
       "is_ending": true,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -2604,34 +2407,13 @@
     },
     "140": {
       "id": 140,
-      "text": "A Démon Szemét körbeölelő mágikus erőtér túlságosan hatalmas ahhoz, hogy megpróbálkozz a semlegesítésével. Az egész világ vibrálni kezd körülötted,\nmajd hirtelen egy sötét és hideg helyen találod m:\n\nJAz ékkő belsejében vagy, a mágia egyszerűen ma\nszippantott. Kalandod véget ért!\n\n— Mi a neved? — kérdezed,\n\nAz idegen szomorkásan elmosolyodik\n\n— Rach Mindrolden vagyok, a Hősök és Bajnokok\nIstene — válaszolja, és a következő pillanatban eltűnik\na szemed elől\n\nBosszúsan meredsz magad elé. Ezt a lehetőséget jól\nElpuskáztad. Hasznosabb kérdést is feltehettél volna.\nA faluban nincs több keresnivalód, s úgy tűnik, erre\nhiába keresnéd a renegát xinafot. Kénytelen vagy viszSzatérni a napkörhöz.\n\nLapozz a 31-re!\nAmikor megérinted a karpántot, a halott harcos keze\nhirtelen felemelkedik, s a következő pillanatban m.\negy gondolatsebesen alázúduló csatabárd elől kell el-hajolnod. Tegyél szerencsepróbát!\n\nHa sikerült, lapozz a 296-ra!\nHa nem sikerült, lapozz a 35-re!\n\níz\n\ncéóló\n\nTé",
-      "choices": [
-        {
-          "text": null,
-          "target": 31
-        },
-        {
-          "text": "Ha sikerült,",
-          "target": 296
-        },
-        {
-          "text": "Ha nem sikerült,",
-          "target": 35
-        }
-      ],
+      "text": "A Démon Szemét körbeölelő mágikus erőtér túlságosan hatalmas ahhoz, hogy megpróbálkozz a semlegesítésével. Az egész világ vibrálni kezd körülötted,\nmajd hirtelen egy sötét és hideg helyen találod m:\n\nJAz ékkő belsejében vagy, a mágia egyszerűen ma\nszippantott. Kalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": true,
-      "events": [
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "eletero",
-          "amount": 0,
-          "timing": "on_enter",
-          "reason": "trapped in crystal by magical force field"
-        }
-      ]
+      "has_luck_test": false,
+      "events": []
     },
     "141": {
       "id": 141,
@@ -2711,7 +2493,7 @@
         }
       ],
       "enemies": [],
-      "is_ending": true,
+      "is_ending": false,
       "has_combat": false,
       "has_luck_test": false
     },
@@ -2739,11 +2521,6 @@
       "text": "Orákon az erdőn, Öszir nagyobbnak hitted, de utólag örül.\n\nAz erdő mélyén: mérföldnyire egy sötét szakadék húzódik — csillogó vízesés zubog alá a túlsó oldalán —, a távolban pedig romos épületet látsz totkodik az ég felett.\n\nA szakadék jobb oldalán.\n\nHa egyenesen az épület felé indulsz, lapozz a 97-re!\nHa előbb a szakadékot nézed meg, lapozz a 97-re!",
       "choices": [
         {
-          "text": "Ha egyenesen az épület felé indulsz,",
-          "target": 97
-        },
-        {
-          "text": "Ha előbb a szakadékot nézed meg,",
           "target": 97
         }
       ],
@@ -2758,20 +2535,13 @@
       "text": "A jobb oldali ajtó nyomban feltárul előtted, mihelyt kimondod a helyes megfejtést. Egy hosszúkás szobát lépsz be, ahol két oldalt mumifikálódott harcos helyeztek el, számára pontosan egy tucatnyit.\n\nA szoba túlsó falán egy hatalmas vitrint látsz, benne ősi pergamennel.\n\nHa megvizsgálod a pergament, lapozz a 255-re!\nHa a halottakat nézed meg, lapozz a 44-re!\nHa elhagyod a szobát, lapozz a 299-re!\n\nGyaloglás után sikerül átvágnod a hegycsúcs nyeregén.\n\nLapozz a 204-re!",
       "choices": [
         {
-          "text": "Ha megvizsgálod a pergament,",
           "target": 255
         },
         {
-          "text": "Ha a halottakat nézed meg,",
           "target": 44
         },
         {
-          "text": "Ha elhagyod a szobát,",
           "target": 299
-        },
-        {
-          "text": null,
-          "target": 204
         }
       ],
       "enemies": [],
@@ -2864,17 +2634,8 @@
     },
     "152": {
       "id": 152,
-      "text": "Az alakváltó szinte elpusztíthatatlan. Hiába ejtesz\nrajta újra és újra sebet, nem tudsz felülkerekedni r\nNeked ellenben gyorsan elfogy az erőd, s az utolsó\ntámadás során már nem bizonyulsz elég gyorsnak\nKalandod véget ért!\n\nNem tartod valószínűnek, hogy az öregember felelni\n\nMiudna a kérdéseidre, ezért folytatod a keresést. A tá-\n\nwolban egy magas, ösztövér alakot látsz felbukkanni,\nám hiába indulsz a nyomába, csakhamar kiderül, csupán a szemed csalt meg. Az öregemberen kívül nem\nakadsz másra a környéken.\n\nHa visszamégy az öregemberhez, lapozz a 84-re!\n\"Ha inkább a toronyhoz térsz vissza, lapozz a 39-re!",
-      "choices": [
-        {
-          "text": "Ha visszamégy az öregemberhez,",
-          "target": 84
-        },
-        {
-          "text": "\"Ha inkább a toronyhoz térsz vissza,",
-          "target": 39
-        }
-      ],
+      "text": "Az alakváltó szinte elpusztíthatatlan. Hiába ejtesz\nrajta újra és újra sebet, nem tudsz felülkerekedni r\nNeked ellenben gyorsan elfogy az erőd, s az utolsó\ntámadás során már nem bizonyulsz elég gyorsnak\nKalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
@@ -2968,25 +2729,15 @@
       "text": "Amint megpillantod a füstöt, azonnal megfordulsz.\nés rohanni kezdesz a kijárat felé, a pergamennel nem is\nfoglalkozol. Tegyél szerencsepróbát!\n\nHa sikerült, lapozz a 205-re!\nHa nem sikerült, lapozz a 120-ra!\n\nTétován megrázod a fejed. Fogalmad sincs arról, mi\nlehet a helyes válasz.\n\n— Adj nekem az életerődből tízet, s segítek neked\negy kicsit — hallod a varázstárgy felől a hangot.\n\nHa elfogadod az alkut, lapozz a 11-re!\nHa nem érdekel az ajánlat, lapozz a 180-ra!",
       "choices": [
         {
-          "text": "Ha sikerült,",
           "target": 205
         },
         {
-          "text": "Ha nem sikerült,",
           "target": 120
-        },
-        {
-          "text": "Ha elfogadod az alkut,",
-          "target": 11
-        },
-        {
-          "text": "Ha nem érdekel az ajánlat,",
-          "target": 180
         }
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": true
     },
     "159": {
@@ -3058,20 +2809,10 @@
       "text": "— Hogy hívták a xinafot, aki elvarázsolt téged? —\nkérdezed hirtelen támadt érdeklődéssel.\n\nAz idegen lehajtja a fejét.\n\n— Yhrin — válaszolja csendesen.\n\nHa segíteni akarsz az idegenen, lapozz a 251-re!\nHa nem foglalkozol az idegennel, lapozz a 56-ra!\n\nIsmét ott állsz az alsó szinten. A csigalépcső mögött\nEgy hatalmas szobor terpeszkedik, amely egy démon-Szerű lényt ábrázol. A szobor két oldalán egy-egy ajtó\nlátható.\n\nHa megvizsgálod a szobrot, lapozz a 20-ra!\n\nHa belépsz a bal oldali ajtón, lapozz a 109-re!\nHa a jobb oldali ajtót választod, lapozz a 203-ra!\nHa folytatod a szint átfésülését, lapozz a 261-re!",
       "choices": [
         {
-          "text": "Ha megvizsgálod a szobrot,",
-          "target": 20
+          "target": 251
         },
         {
-          "text": "Ha belépsz a bal oldali ajtón,",
-          "target": 109
-        },
-        {
-          "text": "Ha a jobb oldali ajtót választod,",
-          "target": 203
-        },
-        {
-          "text": "Ha folytatod a szint átfésülését,",
-          "target": 261
+          "target": 56
         }
       ],
       "enemies": [],
@@ -3085,30 +2826,16 @@
       "text": "— Kincsvadász vagyok — bököd ki végül.\nAz öregember elmosolyodik, és körbemutat.\n\nengem arkofágot nem háborgatod, nem lesz\njod! — Valamit csinál, s a következő pillanatban fe\nemelkedik a levegőbe, s belelebeg a szarkofágba.\n\nA következő pillanatban már épp olyan halottnak\nnéz ki, mint amikor először bejöttél ebbe a helyiségbe\n\nHa óvatosan átkutatod az öreget, lapozz a 281-re!\nHa a szarkofágot vizsgálod meg, lapozz a 179-re!\nHa inkább nem háborgatod az öreget, lapozz a 224-re!\n\nA folyó az egyik helyen eléggé összeszűkül ahhoz\nhogy néhány hatalmas kő belegördítése után megkísérelj átugrani a víz felett. Kiválasztasz néhány sziklá\nmajd minden erődet összeszedve begördíted azok\nvízbe. Így csupán mintegy hat métert kell átugranod\nTegyél szerencsepróbát!\n\nHa sikerült, lapozz a 68-ra!\nHa nem sikerült, lapozz a 212-re!",
       "choices": [
         {
-          "text": "Ha óvatosan átkutatod az öreget,",
           "target": 281
         },
         {
-          "text": "Ha a szarkofágot vizsgálod meg,",
           "target": 179
-        },
-        {
-          "text": "Ha inkább nem háborgatod az öreget,",
-          "target": 224
-        },
-        {
-          "text": "Ha sikerült,",
-          "target": 68
-        },
-        {
-          "text": "Ha nem sikerült,",
-          "target": 212
         }
       ],
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": false
     },
     "164": {
       "id": 164,
@@ -3299,7 +3026,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -3322,7 +3049,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -3356,7 +3083,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -3486,24 +3213,17 @@
       "text": "Gondosan ügyelsz rá, hogy ne érj hozzá a halotth.\nmiközben megvizsgálod a szarkofágot. Végignyor\n\ndod a faragott díszítéseket, de ez nem vezet eredményre. Ezután az emelvényt nézed át, s csakhamar rádöbbensz, hogy a szarkofág alatt egy apró szerkezetet he-\n\nlyeztek el\n\nHa működésbe hozod a szerkezetet, lapozz a 217-re!\nHa megvizsgálod a halottat, lapozz a 281-re!\n\nCsapdától tartasz, ezért nem fogadod el az ajánlat.\n\nA varázstárgy hirtelen elképzelhetetlen sebessége\nkezd forogni, majd a következő pillanatban iszc\nerejű mágia vesz körül, mely túlságosan hatalmas a\nhoz, hogy megpróbálkozz a semlegesítésével. Az e:\nvilág vibrálni kezd körülötted, majd hirtelen egy\nés hideg helyen találod magad. Az ékkő belsejében\n\nagy, a mágia egyszerűen magába szippantott. Kalandod véget ért!\n\nEgy villámgyors mozdulattal széttéped a pergament,\n§ átkozódva a földre hajítod darabjait. A kellemetlen\nforróság csakhamar elmúlik. Megkönnyebbülve só-hajtasz fel: ezt megúsztad!\n\n\"Ha felmégy a lépcsőn, lapozz a 219-re!\nHa idelenn nézel körül, lapozz a 65-re!",
       "choices": [
         {
-          "text": "Ha működésbe hozod a szerkezetet,",
           "target": 217
         },
         {
-          "text": "Ha megvizsgálod a halottat,",
           "target": 281
         },
         {
-          "text": "\"Ha felmégy a lépcsőn,",
           "target": 219
-        },
-        {
-          "text": "Ha idelenn nézel körül,",
-          "target": 65
         }
       ],
       "enemies": [],
-      "is_ending": true,
+      "is_ending": false,
       "has_combat": false,
       "has_luck_test": false
     },
@@ -3569,7 +3289,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -3581,13 +3301,6 @@
             }
           ],
           "timing": "on_combat_win"
-        },
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "vedettsegi_szint",
-          "amount": -6,
-          "timing": "on_enter",
-          "reason": "átkozott csuklópánt"
         }
       ]
     },
@@ -3629,7 +3342,7 @@
     },
     "187": {
       "id": 187,
-      "text": "Talán egy sebesült, fut át az agyadon, és az égődeszkákat félrerugdosva belépsz a kunyhóba. Hirtel\niszonyú fájdalom hasít az oldaladba (veszítesz 12 élet.\nerőpontot, valamint a támadási képességed maradandóan csökken 1 ponttal). Egy fekete páncélos alak lép\nelő a lángok közül, magasra emelt pallosa ismét lesúj-\n\nül. Villámgyorsan kihátrálsz a kunyhóból, s te\nis felkészülsz a harcra.\n\nFekete lovag: életerő 38, támadási képesség 22\ndettség szint 25. A lovag 2-12 életerőpont vesztes\nokoz a pallosával, és minden sikeres találata 1 ponttal\ncsökkenti maradandóan a támadási képességedet.\n\nHa sikerült legyőznöd a lovagot, lapozz az 242-re!\nHa a lovag diadalmaskodott, lapozz a 82-re!\n\nAz ayrabdir gyors fordulásai megzavarnak,\nkarmai pedig újabb és újabb sebeket szakítanak a\nteden. Mindent megteszel, ami erődből telik, ám ha-marosan nyilvánvalóvá válik, ide minden tudásod\nvés. A bestia a földre teper, s innen nem állsz fel\nbé. Kalandod véget ért!",
+      "text": "Talán egy sebesült, fut át az agyadon, és az égődeszkákat félrerugdosva belépsz a kunyhóba. Hirtel\niszonyú fájdalom hasít az oldaladba (veszítesz 12 élet.\nerőpontot, valamint a támadási képességed maradandóan csökken 1 ponttal). Egy fekete páncélos alak lép\nelő a lángok közül, magasra emelt pallosa ismét lesúj-\n\nül. Villámgyorsan kihátrálsz a kunyhóból, s te\nis felkészülsz a harcra.\n\nFekete lovag: életerő 38, támadási képesség 22\ndettség szint 25. A lovag 2-12 életerőpont vesztes\nokoz a pallosával, és minden sikeres találata 1 ponttal\ncsökkenti maradandóan a támadási képességedet.\n\nHa sikerült legyőznöd a lovagot, lapozz az 242-re!\nHa a lovag diadalmaskodott, lapozz a 82-re!",
       "choices": [
         {
           "text": "Ha sikerült legyőznöd a lovagot,",
@@ -3640,8 +3353,16 @@
           "target": 82
         }
       ],
-      "enemies": [],
-      "is_ending": true,
+      "enemies": [
+        {
+          "name": "Fekete lovag",
+          "eletero": 38,
+          "tamadasi_kepesseg": 22,
+          "vedettsegi_szint": 25,
+          "damage": "2-12"
+        }
+      ],
+      "is_ending": false,
       "has_combat": true,
       "has_luck_test": false,
       "events": [
@@ -3650,21 +3371,22 @@
           "stat": "eletero",
           "amount": -12,
           "timing": "on_enter",
-          "reason": "pain from entering the hut"
+          "reason": "pain from entering the hut",
+          "permanent": true
         },
         {
           "kind": "STAT_CHANGE",
           "stat": "tamadasi_kepesseg",
           "amount": -1,
           "timing": "on_enter",
-          "reason": "pain from entering the hut"
+          "reason": "pain from entering the hut",
+          "permanent": true
         },
         {
           "kind": "COMBAT",
           "special_rules": [
             {
               "type": "stat_drain",
-              "target": "Fekete lovag",
               "stat": "tamadasi_kepesseg",
               "amount": 1
             }
@@ -3687,55 +3409,21 @@
       "text": "Az utolsó pillanatban sikerül megőrizned az egyen.\nsúlyodat. A lábad előtt, alig néhány lépésnyire\nföld alatti folyó medre tátong, az erős sodrással ali\ntudnál megbirkózni. Erre biztosan nem jutsz továl\nKénytelen vagy visszafordulni\n\nLapozz a 36-ra!\n\nAz iszákodba csúsztatod a könyvet (ha később elakarod olvasni, jegyezd fel, hol j íppen, majd lapozz az e, s ha elolvastad a könyvet, lapozz vis.\noda, ahol előtte jártál). Sohasem tudhatod, mikor lesz\nrá szükséged.\n\nHa a szarkofághoz mégy, lapozz a 156-ra!\nHa a ládát nézed meg, lapozz a 115-re!\n\nA pikkelyes rém iszonyú csapásai feltépik a húsoit, testedet a fájdalom lüktetése hatja át. A tűhegyes\nbeléd marnak, s többé már el sem engednek.\n\nNH Némi gondolkozás után benyúlsz a lyukon, s meg-\n\nNiPróbálod a túlsó falfelületet kitapogatni. Talán szeren-\n\nilCséd lesz, s rátalálsz valami nyitószerkezetre, amiI Mmegkönnyítheti a dolgodat. Tegyél szerencsepróbát!\n\nla sikerült, lapozz a 211-re!\nla nem sikerült, lapozz a 279-re!",
       "choices": [
         {
-          "text": "Kénytelen vagy visszafordulni",
           "target": 36
-        },
-        {
-          "text": "Ha a szarkofághoz mégy,",
-          "target": 156
-        },
-        {
-          "text": "Ha a ládát nézed meg,",
-          "target": 115
-        },
-        {
-          "text": "la sikerült,",
-          "target": 211
-        },
-        {
-          "text": "la nem sikerült,",
-          "target": 279
         }
       ],
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": false
     },
     "191": {
       "id": 191,
-      "text": "A pikkelyes rém iszonyú csapásai feltépik a húso-\ndat, testedet a fájdalom lüktetése hatja át. A tűhegyes\nfogak beléd marnak, s többé már el sem engednek.\n\nKalandod véget ért!\n\nNémi gondolkozás után benyúlsz a lyukon, s meg-\npróbálod a túlsó falfelületet kitapogatni. Talán szerenc-\nséd lesz, s rátalálsz valami nyitószerkezetre, ami\nmegkönnyítheti a dolgodat. Tegyél szerencsepróbat!\n\nHa sikerült, lapozz a 211-re!\nHa nem sikerült, lapozz a 279-re!\nNémi gondolkozás után alaposan szemügyre vesz\na sziklafalat. A kiálló köveket figyelve arra a köve\nkeztetésre jutsz, hogy az első tizenöt métert tulajd\nképpen kötél nélkül is meg tudod tenni, utána pedig\nmár nem okozhat problémát a leereszkedés. A gon\ndolatot tett követi, s bár az erődet és ügyességedet eg\nyaránt próbára teszi a mutatvány, hamarosan egy\nhány tenyérnyi széles sziklateraszon egyensúlyozol.\nInnen a kötél már majdnem elegendőnek tűnik.\n\nAz utolsó három-négy méter már nem annyira ve\nszélyes. Kikötöd a köteledet, majd ereszkedni kezdesz.\nHamarosan eléred a kötél végét, s leugrasz. (Dobj\nkockával! Ennyi életerőpontot veszítettél.)\n\nHa túlélted az ugrást, lapozz a 157-re!\nHa nem élted túl, lapozz a 206-ra!",
-      "choices": [
-        {
-          "text": "Ha sikerült,",
-          "target": 211
-        },
-        {
-          "text": "Ha nem sikerült,",
-          "target": 279
-        },
-        {
-          "text": "Ha túlélted az ugrást,",
-          "target": 157
-        },
-        {
-          "text": "Ha nem élted túl,",
-          "target": 206
-        }
-      ],
+      "text": "A pikkelyes rém iszonyú csapásai feltépik a húso-\ndat, testedet a fájdalom lüktetése hatja át. A tűhegyes\nfogak beléd marnak, s többé már el sem engednek.\n\nKalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": []
     },
@@ -3771,7 +3459,15 @@
           "target": 152
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Alakváltó",
+          "eletero": 28,
+          "tamadasi_kepesseg": 18,
+          "vedettsegi_szint": 18,
+          "damage": "3-8"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false,
@@ -3781,7 +3477,6 @@
           "special_rules": [
             {
               "type": "enemy_regenerate",
-              "target": "Alakváltó",
               "amount": 2
             }
           ]
@@ -3908,21 +3603,8 @@
     },
     "201": {
       "id": 201,
-      "text": "Ilyen kiszolgáltatott helyzetben képtelen vagy tudáSod legjavát nyújtani. A pók szilárdan kapaszkodik a\nfalon, míg neked a figyelmed jelentő: zét arra kell\nkoncentrálnod, hogy ne zuhanj le. Így nem sok esélyed\nVan. Kalandod véget ért!\n\nSietős léptekkel közeledsz a füstoszlop felé. Mér-földeket kell magad mögött hagynod. Hamarosan\nMintha fegyvercsörgést is hallanál\n\nHa folytatod utadat, lapozz a 293-ra!\nHa inkább visszafordulsz, lapozz a 118-ra!\nusa megpihensz egy rövid időre, lapozz a 63-ra!",
-      "choices": [
-        {
-          "text": "Ha folytatod utadat,",
-          "target": 293
-        },
-        {
-          "text": "Ha inkább visszafordulsz,",
-          "target": 118
-        },
-        {
-          "text": "usa megpihensz egy rövid időre,",
-          "target": 63
-        }
-      ],
+      "text": "Ilyen kiszolgáltatott helyzetben képtelen vagy tudáSod legjavát nyújtani. A pók szilárdan kapaszkodik a\nfalon, míg neked a figyelmed jelentő: zét arra kell\nkoncentrálnod, hogy ne zuhanj le. Így nem sok esélyed\nVan. Kalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
@@ -4069,21 +3751,23 @@
       "text": "Amikor a varázstárgy nevét kiejted a szádon\negember tekintete elfelhősödik, és a következő r\nlanatban mágikus hatalmát használva rád támad\n\nElőhalott öregember: életerő 30, támadási képes\n17, védettség szint 22, varázserő 30. Az öregember\n\néleterőpont veszteséget okoz az ütéseivel, ám először a\n\nvarázsereje segítségével próbál meg elpusztítani.\n\nHa sikerült legyőznöd ellenfeledet, lapozz az 194-re\nHa veszítettél, lapozz a 90-re!",
       "choices": [
         {
-          "text": "Ha sikerült legyőznöd ellenfeledet,",
           "target": 194
         },
         {
-          "text": "Ha veszítettél,",
-          "target": 90
-        },
-        {
-          "text": "Ha veszítettél,",
           "target": 90
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Élőhalott öregember",
+          "eletero": 30,
+          "tamadasi_kepesseg": 17,
+          "vedettsegi_szint": 22,
+          "damage": "1-3"
+        }
+      ],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false
     },
     "210": {
@@ -4101,8 +3785,8 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
-      "has_luck_test": false,
+      "has_combat": false,
+      "has_luck_test": true,
       "events": [
         {
           "kind": "STAT_CHANGE",
@@ -4258,31 +3942,9 @@
       "text": "Az asztal meglehetősen rozoga állapotban van, abait valaki (vagy valami) kitördelte, az asztallapon pedig karomnyomok látszanak. Mintha néhány elszab\ndult fenevad tombolt volna ebben a helyiségben\n\nHa a képeket veszed vizsgálat alá, lapozz a 23.\nHa kimégy az előszobába, lapozz a 169-re!\n\na!\n\n6219.\n\nA lépcső nagyokat nyikordul a lábad alatt, ám szerencsésen sikerül felérned. A felső szint egyetlen hatalmas teremből áll, mely egyidejűleg szolgálhatott\n[dolgozószobaként,  hálóhelyként,  laboratóriumként,\nkönyvtárként és még ki tudja, miként az itt lakónak.\n\nMost azonban senki nem él itt. Mindent por fed\n\nVagyis majdnem mindent.\n\nA terem közepén egy mennyezetig nyújtózkodó\nfényoszlop látszik, melynek belsejében mintha apró\ncsillagok százai táncolnának.\n\nHa kutatni kezdesz idefenn, lapozz a 177-re!\nHa megvizsgálod a fényoszlopot, lapozz az 50-re!\nHa lemégy az alsó szintre, lapozz a 162-re!\n\n- A Démon Szeme után kutatok — mondod az idefgennek. — Merre találom meg?\n\nA fehér ruhás biccent.\n\n— A varázsszer északon található, de nem lesz könynyű megszerezned. Hatalmas erejű mágia védi, mely\nNyomban megsemmisít mindenkit, aki rápillant. Am\nValószínűleg az őrökön sem jutnál túl. Tégy le a vaTázstárgy megszerzéséről, kár lenne érted!\n\nAz idegen a következő pillanatban eltűnik a szemed\nElől. Elgondolkozva bámulod a helyét. Értékes inforMációt sikerült megtudnod. Visszatérsz a napkörhöz.\n\nLapozz a 31-re!",
       "choices": [
         {
-          "text": "Ha a képeket veszed vizsgálat alá,",
           "target": 23
         },
         {
-          "text": "Ha kutatni kezdesz idefenn,",
-          "target": 177
-        },
-        {
-          "text": "Ha megvizsgálod a fényoszlopot,",
-          "target": 50
-        },
-        {
-          "text": "Ha lemégy az alsó szintre,",
-          "target": 162
-        },
-        {
-          "text": null,
-          "target": 31
-        },
-        {
-          "text": "Ha kimégy az előszobába,",
-          "target": 169
-        },
-        {
-          "text": "Ha kimégy az előszobába,",
           "target": 169
         }
       ],
@@ -4353,37 +4015,18 @@
       "text": "A fáradozásod csakhamar meghozza eredményét. A\nközeli erdő szélén emberi nyomokra bukkansz, talán\nvalami remete élhet errefelé.\n\nHa követed a nyomokat, lapozz a 72-re!\nHa más nyomokat keresel, lapozz a 32-re!\nHa visszatérsz a toronyhoz, lapozz a 134-re!\n\nNem sajnálod a gyógyitalokat, sem a varázserődet\narra, hogy az ismeretlen xinafot talpra állítsd. Remé-\nled, hogy Yhrinnel hozott össze a sors, és a renegát\nbiztosan a segítségedre lesz cserébe, amit érte tettél.\n\nA xinaf állapota rohamosan javul. Amikor az utolsó\nseb is begyógyul a testén, feléd fordul, és gúnyosan\nelmosolyodik.\n\n— Ostoba vagy! Halj meg!\n\nKiinyított ujjaiból ezernyi apró villám vágódik a\ntestedbe, s mielőtt bármit is tehetnél, a Halál Istene,\nMaris magához szólít. Nem kellett volna hinned a\nxinaf hamis ígéretének. Kalandod véget ért!\n\nA halottakat a legjobb nem háborgatni, gondolod.\nTalán a xinaf készített valamilyen jegyzetet, aminek a\nsegítségével eljuthatsz a hőn áhított varázstárgyhoz, a\nDémon Szeméhez. A fal mellett hatalmas könyves\nszekrények állnak, ám csupán egyetlen könyv árválko-\ndik poros polcaikon. A szarkofág mögött egy félig be-\nzárt fedelű tölgyfa láda látszik.\n\nHa megvizsgálod a könyvet, lapozz a 21-re!\nHa a ládát nézed meg, lapozz a 115-re!\nRendkívül fáradt vagy, ezért az álom pillanatok\nalatt elnyom. Almod nyugodt, semmi sem zavarja, s\nismét kinyitod a szemed, már kora reggel van.\nKintről madárcsicsergés szűrődik be. Felkelsz az ágyból, megemésztesz valamit (ne feledd el módosítani az\néleterődet), majd kilépsz a kunyhóból.\n\nAz épület előtt hatalmas mancsnyomokat talál.\nValami óriási szörnyeteg éjjel itt járt, ám a kunyhó\nbelsejében biztonságban voltál tőle.\n\nHa követed a lény nyomait, lapozz a 77-re!\n\nHa tovább haladsz észak felé, lapozz a 146-ra!",
       "choices": [
         {
-          "text": "Ha követed a nyomokat,",
           "target": 72
         },
         {
-          "text": "Ha más nyomokat keresel,",
           "target": 32
         },
         {
-          "text": "Ha visszatérsz a toronyhoz,",
           "target": 134
-        },
-        {
-          "text": "Ha megvizsgálod a könyvet,",
-          "target": 21
-        },
-        {
-          "text": "Ha a ládát nézed meg,",
-          "target": 115
-        },
-        {
-          "text": "Ha követed a lény nyomait,",
-          "target": 77
-        },
-        {
-          "text": "Ha tovább haladsz észak felé,",
-          "target": 146
         }
       ],
       "enemies": [],
-      "is_ending": true,
-      "has_combat": true,
+      "is_ending": false,
+      "has_combat": false,
       "has_luck_test": false,
       "events": []
     },
@@ -4635,7 +4278,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": true
     },
     "240": {
@@ -4691,7 +4334,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": []
     },
@@ -4803,19 +4446,12 @@
       "text": "Ellenfeled holtan hever előtted. Teste hamarosan\napró kődarabokra esik szét. Folytathatod az utadat.\n\nHamarosan ismét ott állsz a napkör monolitjai köíZött. Keletről mintha a tenger morajlását hallanád,\nÉszakon komor kősivatag terül el, ameddig a szem el-lát. Nyugaton a távolból vastag, fekete füstoszlop száll\naz ég felé.\n\n: Ha a tenger felé indulsz, lapozz az 52-re.\n; a kősivataggal pró Ikozol, lapozz a 104- re!\n\" Ha a füst irányába mégy, lapozz a 202-re!",
       "choices": [
         {
-          "text": ": Ha a tenger felé indulsz,",
           "target": 52
         },
         {
-          "text": "\" Ha a füst irányába mégy,",
           "target": 202
         },
         {
-          "text": "Ha a kősivatagot próbálod,",
-          "target": 104
-        },
-        {
-          "text": "Ha a kősivatagot próbálod,",
           "target": 104
         }
       ],
@@ -4829,28 +4465,10 @@
       "text": "A második szobába belépve dögszag üti meg az orrodat, s a sarokban tornyozódó csonthalom alól egy amorf lény szökken feléd.\n\nAmorf hullazabáló: életerő 22, támadási képesség 23, védettségi szint 25. A szörnyeteg 1-6 életerőpont veszteséget okoz, s minden sikeres csapása maradandóan csökkenti az életerődet.\n\nHa sikerült legyőznöd a szörnyet, lapozz a 100-ra!\nHa veszítettél, lapozz a 49-re!\n\nAz öreg csodálkozva néz rád, miután feltetted 2 kérdésedet.\n\n— A Démon Szeme? — Megrázza a fejét. — Sohasem hallottam róla, s te is jobban teszed, ha inkább más kincsek után kutatsz. A démonokat jobb nem zavarni.\n\nHa Yhrin xinafról kérdezed, lapozz a 27-re!\n\nHa a toronyról, lapozz a 196-ra!\n\nHa az általa gyűjtött növényekről, lapozz a 283-ra!\n\nHa befejezed a kérdezést, lapozz a 98-ra!",
       "choices": [
         {
-          "text": "Ha sikerült legyőznöd a szörnyet,",
           "target": 100
         },
         {
-          "text": "Ha veszítettél,",
           "target": 49
-        },
-        {
-          "text": "Ha Yhrin xinafról kérdezed,",
-          "target": 27
-        },
-        {
-          "text": "Ha a toronyról,",
-          "target": 196
-        },
-        {
-          "text": "Ha az általa gyűjtött növényekről,",
-          "target": 283
-        },
-        {
-          "text": "Ha befejezed a kérdezést,",
-          "target": 98
         }
       ],
       "enemies": [
@@ -4887,34 +4505,13 @@
     },
     "252": {
       "id": 252,
-      "text": "A szörnyeteggel szemben tehetetlen vagy. Má\nerejével meggyengít, majd félelmetes kaszájával be-végzi, amit elkezdett. Hiába szeded össze minden erődet, egyszerűen képtelen vagy szembeszállni vele:\nKalandod véget ért!\n\n— Yhrin xinafot keresem — válaszolod\n\nAz öreg megrázza a fej\n\n- Fogalmam sincs, hol lehet jelenleg a mester — fe-\n. leli elgondolkozva, majd a szarkofág felé mutat. — Azt\n\ntésére, ha nem félsz a veszélyektől. A szarkofág alatt\nIvan egy lejárat, melyet mágikus igék védenek.\nA köv etkező pillanatban . az öregember eltűnik.\nOdalépsz a szarkofághoz, és szemügyre veszed. Vé-\n\"gignyomkodod az oldalán a faragott díszítéseket, de ez\niinem vezet eredményre, Ezután az emelvényt nézed át,\nIS csakhamar rádöbbensz, hogy a szarkofág alatt egy\njapró szerkezet található. Az öreg nem hazudott!\nMűködésbe hozod a szerkezetet.\n\n! Lapozz a217-re!\n\nő — Tudod, egy gonosz teremtmény átkát viselem —\n[Magyarázza a csupasz idegen. — Valaha Choler Ma-\n[8iszter egyik tanítványa voltam, ám összekülönböztem\négy xinaffal, s ő gondoskodott róla, hogy ne jelentsek\nMileszélyt reá nézve. Elvarázsolt, és ide börtönzött be.\nú Csak dög JAAZpA ela u DAklaNBOb bjs ösiéeeu ő in-\n\nHa segíteni akarsz az idegenen, lapozz a 184-re!\na xinaf nevéről érdeklődsz, lapozz a 19-re!\nla nem foglalkozol az idegennel, lapozz a 30-ra!",
-      "choices": [
-        {
-          "text": "Ha segíteni akarsz az idegenen,",
-          "target": 184
-        },
-        {
-          "text": "a xinaf nevéről érdeklődsz,",
-          "target": 19
-        },
-        {
-          "text": "la nem foglalkozol az idegennel,",
-          "target": 30
-        }
-      ],
+      "text": "A szörnyeteggel szemben tehetetlen vagy. Má\nerejével meggyengít, majd félelmetes kaszájával be-végzi, amit elkezdett. Hiába szeded össze minden erődet, egyszerűen képtelen vagy szembeszállni vele:\nKalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
       "has_luck_test": false,
-      "events": [
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "eletero",
-          "amount": -999,
-          "timing": "on_enter",
-          "reason": "defeated by monster with scythe"
-        }
-      ]
+      "events": []
     },
     "253": {
       "id": 253,
@@ -4948,33 +4545,18 @@
       "text": "A pergament védő vitrin üvegje elhomályosítja az\nírást, így képtelen vagy pontosan kihüvelyezni a szavak értelmét.\n\nHa leveszed a vitrin tetejét, lapozz a 69-re! (Előtte lehetőséged van egy vagy több varázslat elmondására!)\nHa a halottakat nézed meg, lapozz a 44-re!\n\nHa elhagyod a szobát, lapozz a 299-re!\n\nSikerül megragadnod a lelógó kötélvéget, s innentől\nmár nem okoz különösebb nehézséget a feljutás. Igaz.\nelfáradtál egy kicsit, de legalább idefent vagy. A romos épület felé veszed az irányt.\n\nLapozz a 204-re!\n\nAz öreg hosszan néz rád, majd hirtelen elégedetleEnül felmordul, és felemeli a kezét. A következő pillaNinatban mágikus támadás zúdul rád.\n\n\"Élőhalott öregember: életerő 30, támadási képesség\n\nMI, védettség szint 22, varázserő 30. Az öregember 1-3\n\nNéleterőpont veszteséget okoz az ütéseivel, ám először a\nWarázsereje segítségével próbál meg elpusztítani\n\n\"Ha sikerült legyőznöd ellenfeledet, lapozz az 194-re!\n(Ha veszítettél, lapozz a 90-re!\n\nI A szörnyeteg mozdulatlanul mered rád, miközben a\nlebegő tárgy felől halk, ám fenyegető hangot hallasz:\n\nNincsen pihenésem, nincsen maradásom,\nágyban fekszem, még sincs soha megnyugvásom.\nA vándornak útját állhatom kevélyen,\nde többször könnyítem s megr. övidítem.\nHideg kebelemből sok állat éltét szívja,\n\ns lettem már soknak gyászos, hideg sírja.\n\n§ Ha tudod a választ, lapozz előre a Rejtvények és rejtikulcsok című részhez, és add össze a válasz betűiNek értékét. Ez a szám határozza meg, hova kell a",
       "choices": [
         {
-          "text": "Ha leveszed a vitrin tetejét,",
           "target": 69
         },
         {
-          "text": "Ha a halottakat nézed meg,",
           "target": 44
         },
         {
-          "text": "Ha elhagyod a szobát,",
           "target": 299
-        },
-        {
-          "text": null,
-          "target": 204
-        },
-        {
-          "text": "\"Ha sikerült legyőznöd ellenfeledet,",
-          "target": 194
-        },
-        {
-          "text": "(Ha veszítettél,",
-          "target": 90
         }
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false
     },
     "258": {
@@ -5017,7 +4599,15 @@
           "target": 188
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Ayrabdir",
+          "eletero": 18,
+          "tamadasi_kepesseg": 12,
+          "vedettsegi_szint": 17,
+          "damage": "2-7"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false,
@@ -5034,7 +4624,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -5135,22 +4725,24 @@
     },
     "264": {
       "id": 264,
-      "text": "Rossz választ adtál. A korong hirtelen átalakul, s a\nhelyén egy hatalmas pók néz veled farkasszemet. Rá-gói méregtől csöpögnek, s habozás nélkül neked ront\n\nOriáspó : életerő 22, támadási képesség 16, véd\nség szint 20. A pók 1-6 életerőpont veszteséget okoz a\nrágóival, de ha egyszer megmart, a méreg miatt (mel\n\nlelassít téged egy kicsit) onnantól kezdve mindig ő támad elsőként. N\n\nHa sikerült végezned a pókkal, lapozz az 67-re!\nHa veszítettél, lapozz a 297-re!\n\nMásodjára is sikerült diadalmaskodnod a szörnyetegen, bár az a dupla erőpróba alaposan próbára tette a\nképességeidet. Még egy ilyen fordulót nem vennél szívesen, mert az könnyen a végzetedet jelenthetné.\n\nA varázstárgy felől halk, fenyegető hangot hallasz.\n\nNincsen pihenésem, nincsen maradás\nágyban fek: sincs soha megny\nA vándornak útját állhatom kevé\nde többször könnyítem s megrövidí\nHideg kebelemből sok állat éltét s\ns lettem már soknak gyászos, hideg sírja.\n\nHa tudod a választ, lapozz előre a Rejtvények és rejt-jelkulcsok című részhez, és add össze a válasz betűinek értékét. Ez a szám határozza meg, hova kell a\nfolytatáshoz lapoznod!\n\nHa nem tudod a választ, lapozz a 66-ra!",
+      "text": "Rossz választ adtál. A korong hirtelen átalakul, s a\nhelyén egy hatalmas pók néz veled farkasszemet. Rá-gói méregtől csöpögnek, s habozás nélkül neked ront\n\nOriáspó : életerő 22, támadási képesség 16, véd\nség szint 20. A pók 1-6 életerőpont veszteséget okoz a\nrágóival, de ha egyszer megmart, a méreg miatt (mel\n\nlelassít téged egy kicsit) onnantól kezdve mindig ő támad elsőként. N\n\nHa sikerült végezned a pókkal, lapozz az 67-re!\nHa veszítettél, lapozz a 297-re!",
       "choices": [
         {
-          "text": "Ha sikerült végezned a pókkal,",
           "target": 67
         },
         {
-          "text": "Ha veszítettél,",
           "target": 297
-        },
-        {
-          "text": "Ha nem tudod a választ,",
-          "target": 66
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Óriáspók",
+          "eletero": 22,
+          "tamadasi_kepesseg": 16,
+          "vedettsegi_szint": 20,
+          "damage": "1-6"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -5223,25 +4815,8 @@
     },
     "270": {
       "id": 270,
-      "text": "Amikor a füstöt belélegzed, nyomban fuldokolni\nkezdesz, miközben a tagjaid lebénulnak. A füst mérgező, s a halál gyorsan érkezik. Kalandod véget ért!\n\n]\n\nh271.\n\n(Dobj hatoldalú kockával! A kapott értéket szorozd\nmeg hárommal, ennyi életerőpontot szívott el tőled ez\n\nNa vámpírképességekkel felruházott mágikus alkotás!\nHa meghaltál, lapozz a 87-re!)\n\nAz utolsó pillanatban sikerül eldobnod a könyvet,\nmiközben magadban átkozódsz. Nem sokon múlott,\ni hogy nem maradtál ott.\n\nHa kimégy az előszobába, lapozz a 169-re!\n\n§ Ha kezedbe veszed a sárkánykarmos könyvet, lapozz a\n\nAmikor kiejted a szádon a varázstárgy nevét, az\n\nI öregember tekintete elfelhősödik, és a következő pil-\n\nő\" lanatban mágikus hatalmát használva rád támad.\n\nÉlőhalott öregember: életerő 30, támadási képesség\n17, védettség szint 22, varázserő 30. Az öregember 1-3\néleterőpont veszteséget okoz az ütéseivel, ám először a\n\nvarázsereje segítségével próbál meg elpusztítani.\n\ni ! Ha sikerült legyőznöd ellenfeledet, lapozz az 194-re!\nHa veszítettél, lapozz a 90-re!",
-      "choices": [
-        {
-          "text": "Ha meghaltál,",
-          "target": 87
-        },
-        {
-          "text": "Ha kimégy az előszobába,",
-          "target": 169
-        },
-        {
-          "text": "Ha sikerült legyőznöd ellenfeledet,",
-          "target": 194
-        },
-        {
-          "text": "Ha veszítettél,",
-          "target": 90
-        }
-      ],
+      "text": "Amikor a füstöt belélegzed, nyomban fuldokolni\nkezdesz, miközben a tagjaid lebénulnak. A füst mérgező, s a halál gyorsan érkezik. Kalandod véget ért!",
+      "choices": [],
       "enemies": [
         {
           "name": "Élőhalott öregember",
@@ -5254,36 +4829,22 @@
       "is_ending": true,
       "has_combat": true,
       "has_luck_test": false,
-      "events": [
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "eletero",
-          "amount": -999,
-          "timing": "on_enter",
-          "reason": "poisonous smoke inhalation"
-        }
-      ]
+      "events": []
     },
     "271": {
       "id": 271,
       "text": "(Dobj hatoldalú kockával! A kapott értéket szorozd meg hárommal, ennyi életerőpontot szívott el tőled ez a vámpírképességekkel felruházott mágikus alkotás! Ha meghaltál, lapozz a 87-re!)\n\nAz utolsó pillanatban sikerül eldobnod a könyvet, miközben magadban átkozódsz. Nem sokon múlott, hogy nem maradált ott.\n\nHa kimégy az előszobába, lapozz a 169-re!\nHa kezedbe veszed a sárkánykarmos könyvet, lapozz a 129-re!",
       "choices": [
         {
-          "text": "Ha meghaltál,",
           "target": 87
         },
         {
-          "text": "Ha kimégy az előszobába,",
           "target": 169
-        },
-        {
-          "text": "Ha kezedbe veszed a sárkánykarmos könyvet,",
-          "target": 129
         }
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -5300,48 +4861,10 @@
       "text": "Amikor kiejted a szádon a varázstárgy nevét, az\nöregember tekintete elfelhősödik, és a következő pil-\nlanatban mágikus hatalmát használva rád támad.\n\nÉlőhalott öregember: életerő 30, támadási képesség\n17, védettség szint 22, varázserő 30. Az öregember 1-3\néleterőpont veszteséget okoz az ütéseivel, ám először a\nvarázsereje segítségével próbál meg elpusztítani.\n\nHa sikerült legyőznöd ellenfeledet, lapozz a 194-re!\nHa veszítettél, lapozz a 90-re!\n273. 275.\n\nHamarosan ismét ott állsz a sötét lyuk előtt, melyet Az álmodat reggelig nem zavarja semmi sem. Kipi-\na rúnákkal díszített kövek mögött találtál. henten, felfrissiilve ébredsz (2 életpontot gyógyulsz).\nGyorsan megreggelizel (húzz le egy napnyi ételt\nHa benyúlsz a lyukon, lapozz a 192-re! és italt a Kalandlapodról!), majd töprengeni kezdesz,\nHa először egy fáklyát tolsz át, lapozz a 165-re! hogyan tovább.\nHa visszatérsz a szoborhoz, lapozz a 10-re!\n\nHa türelmesen várakozol tovább, lapozz a 139-re!\n\nHa inkább szétnézel a romok között, lapozz a 207-re!\nHa megpróbálsz olyasvalakit keresni, aki a környéken\nél, lapozz a 294-re!\n\nVillámgyorsan megkötözöd az idegent, aki ugyan\nfelébred közben, de már képtelen megakadályozni tet-\ntedet. Ennek ellenére nem tűnik haragosnak.\n— Ügyes! — dicséri tettedet. — Megtaláltad az egyik\nmódszert, melynek segítségével megakadályozhatod,\nhogy nyomban megöljelek... Tudod, egy gonosz te-\nremtmény átkát viselem — magyarázza ezután, — Vala-\nha Choler Magiszter egyik tanítványa voltam, ám ösz-\nszekülönböztem egy xinaffal, s ő gondoskodott róla,\nhogy ne jelentsek veszélyt reá nézve. Elvarázsolt, és\nide börtönzött be. Csak akkor hagyhatom el a barlan-\ngot, ha vadászni indulok, de a mágia minduntalan visz us-\nsza kényszerít erre a szörnyű helyre. Az alakváltó szinte elpusztíthatatlan. Hiába ejtesz\nrajta újra és újra sebet, nem tudsz felülkerekedni rajta.\nNeked ellenben gyorsan elfogy az erőd, s az utolsó\nHa segíteni akarsz az idegenen, lapozz a 251-re! támadás során már nem bizonyulsz elég gyorsnak.\nHa a xinaf nevéről érdeklődsz, lapozz a 161-re! Kalandod véget ért!\nHa nem foglalkozol az idegennel, lapozz a 56-ra!",
       "choices": [
         {
-          "text": "Ha sikerült legyőznöd ellenfeledet,",
           "target": 194
         },
         {
-          "text": "Ha veszítettél,",
           "target": 90
-        },
-        {
-          "text": "Ha benyúlsz a lyukon,",
-          "target": 192
-        },
-        {
-          "text": "Ha először egy fáklyát tolsz át,",
-          "target": 165
-        },
-        {
-          "text": "Ha visszatérsz a szoborhoz,",
-          "target": 10
-        },
-        {
-          "text": "Ha türelmesen várakozol tovább,",
-          "target": 139
-        },
-        {
-          "text": "Ha inkább szétnézel a romok között,",
-          "target": 207
-        },
-        {
-          "text": "él,",
-          "target": 294
-        },
-        {
-          "text": "Ha segíteni akarsz az idegenen,",
-          "target": 251
-        },
-        {
-          "text": "Ha a xinaf nevéről érdeklődsz,",
-          "target": 161
-        },
-        {
-          "text": "Ha nem foglalkozol az idegennel,",
-          "target": 56
         }
       ],
       "enemies": [
@@ -5353,7 +4876,7 @@
           "damage": "1-3"
         }
       ],
-      "is_ending": true,
+      "is_ending": false,
       "has_combat": true,
       "has_luck_test": false,
       "events": [
@@ -5392,30 +4915,16 @@
       "text": "Percek telnek el, mire rádöbbensz, a ládának dupla\nfeneke van. Igaz, csupán néhány centiméter vastag\nrületet rejtettek így el, ám bizonyára nem ok nélkül\nNekiállsz szétfeszíteni az egymáshoz erősített deszkákat, s csakhamar egy arany maszkot sikerül kibányásznod a rejtekhelyről.\n\nHa felveszed a maszkot, lapozz a 37-re!\nHa elteszed, lapozz a 101-re!\nHa folytatod a láda szétszedését, lapozz a 160-ra!\n\nA padló annyira csúszós, hogy minden lépésért meg\nkell küzdened. Aztán az egyik kő váratlanul megbiller\na lábad alatt, és... Tegyél szerencsepróbát!\n\nHa sikerült a dobás, lapozz a 189-re!\nHa nem sikerült, lapozz a 70-re!",
       "choices": [
         {
-          "text": "Ha felveszed a maszkot,",
           "target": 37
         },
         {
-          "text": "Ha elteszed,",
           "target": 101
-        },
-        {
-          "text": "Ha folytatod a láda szétszedését,",
-          "target": 160
-        },
-        {
-          "text": "Ha sikerült a dobás,",
-          "target": 189
-        },
-        {
-          "text": "Ha nem sikerült,",
-          "target": 70
         }
       ],
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": false
     },
     "279": {
       "id": 279,
@@ -5440,7 +4949,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -5556,30 +5065,24 @@
     },
     "285": {
       "id": 285,
-      "text": "A falhoz lapulva óvatosan el akarsz araszolni a korong mellett. Már majdnem átjutsz, amikor a korong\nhirtelen átalakul, s a helyén egy hatalmas pók néz veled farkasszemet. Rágói méregtől csöpögnek, s habozás nélkül neked ront.\n\nÓriáspók: életerő 22, támadási képesség 16, védett-\n\nzint 20. A pók 1-6 életerőpont veszteséget okoz a\nrágóival, de ha egyszer megmart, a méreg miatt (mely\nlelassít téged egy kicsit) onnantól kezdve mindig ő támad elsőként.\n\nHa sikerült végezned a pókkal, lapozz az 67-re!\nHa veszítettél, lapozz a 103-ra!\n\nAz idegen fenyegetően néz rád, majd elmosolyodik.\n\n— Úgy látom, nem félsz tőlem! — mondja csendesen.\n— A bátorság mindenképp az előnyödre válik, mint\nahogy az is, hogy nem akartál álmomban elpusztítani...\nTudod, egy gonosz teremtmény átkát viselem — magyarázza. — Valaha Choler Magiszter egyik tanítványa\nvoltam, ám összekülönböztem egy xinaffal, s ő gondoskodott róla, hogy ne jelentsek veszélyt reá nézve.\nElvarázsolt, és ide börtönzött be. Csak akkor hagyhatom el a barlangot, ha vadászni indulok, de a mágia\nminduntalan visszakényszerít erre a szörnyű helyre.\n\nHa segíteni akarsz az idegenen, lapozz a 184-re!\nHa a xinaf nevéről érdeklődsz, lapozz a 19-re!\nHa nem foglalkozol az idegennel, lapozz a 30-ra!",
+      "text": "A falhoz lapulva óvatosan el akarsz araszolni a korong mellett. Már majdnem átjutsz, amikor a korong\nhirtelen átalakul, s a helyén egy hatalmas pók néz veled farkasszemet. Rágói méregtől csöpögnek, s habozás nélkül neked ront.\n\nÓriáspók: életerő 22, támadási képesség 16, védett-\n\nzint 20. A pók 1-6 életerőpont veszteséget okoz a\nrágóival, de ha egyszer megmart, a méreg miatt (mely\nlelassít téged egy kicsit) onnantól kezdve mindig ő támad elsőként.\n\nHa sikerült végezned a pókkal, lapozz az 67-re!\nHa veszítettél, lapozz a 103-ra!",
       "choices": [
         {
-          "text": "Ha sikerült végezned a pókkal,",
           "target": 67
         },
         {
-          "text": "Ha veszítettél,",
           "target": 103
-        },
-        {
-          "text": "Ha segíteni akarsz az idegenen,",
-          "target": 184
-        },
-        {
-          "text": "Ha a xinaf nevéről érdeklődsz,",
-          "target": 19
-        },
-        {
-          "text": "Ha nem foglalkozol az idegennel,",
-          "target": 30
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Óriáspók",
+          "eletero": 22,
+          "tamadasi_kepesseg": 16,
+          "vedettsegi_szint": 20,
+          "damage": "1-6"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -5778,13 +5281,8 @@
     },
     "297": {
       "id": 297,
-      "text": "A pók beléd vágja méregtől csöpögő rágóit, s immáron el sem enged. Mozdulataid folyamatosan lassulnak, végül már annyi erőd sem marad, hogy felemeled\na fegyvered. Az óriáspók ezután kényelmesen nekilát,\nhogy körbeszőjön hálójával, s majd, ha megéhezik, el-fogyasszon vacsorára. Kalandod véget ért!\n\n— Yhrint keresem, Choler Magiszter renegát xinafját\n— ismered be. — Talán tudsz segíteni...\n\nAz idegen bólint.\n\n— A xinaf halott — válaszolja nyugodtan. — A testét\negy szakadék rejti, melyet a Nagy Repedés néven is-mernek, és innen északra, a kősivatagon túli erdő mögött található.\n\nAz idegen a következő pillanatban eltűnik a szemed\nelől Elgondolkozva bámulod a helyét. Értékes információt sikerült megtudnod, ám ha a xinaf halott, akkor\nhogyan találod meg a Démon Szemét? Talán, ha el-jutsz a testig, ott választ kapsz erre a kérdésedre is.\n\nVisszatérsz a napkörhöz.\n\nLapozz a 31-re!",
-      "choices": [
-        {
-          "text": null,
-          "target": 31
-        }
-      ],
+      "text": "A pók beléd vágja méregtől csöpögő rágóit, s immáron el sem enged. Mozdulataid folyamatosan lassulnak, végül már annyi erőd sem marad, hogy felemeled\na fegyvered. Az óriáspók ezután kényelmesen nekilát,\nhogy körbeszőjön hálójával, s majd, ha megéhezik, el-fogyasszon vacsorára. Kalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
@@ -6340,7 +5838,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -6378,7 +5876,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": []
     },
@@ -6424,7 +5922,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -6438,20 +5936,11 @@
     },
     "82": {
       "id": 82,
-      "text": "A fekete lovag félelmetes ellenfél, szörnyű csapás:\nnem csupán az életerődet szívják el, hanem mintha\n\nharci tudásod is folyamatosan romlana. Bár minden\nmegteszel, ebben a harcban csak vesztes lehetsz. Kalandod véget ért!\n\nHirtelen egy nehéz test veti rád magát, és a földönt (veszítesz 7 életerőpontot). A chindon az, gy\nbbnak bizonyult nálad. Mire talpra ugrasz, már ké\nellenféllel kell szembenézned.\n\nGoreel fejvadász: életerő 23, támadási k:\n\npesség\n\nvédettség szint 20. A fejvadász 1-6 életerőpont veszte:\n\nséget okoz a buzogányával.\n\nChindon: életerő 18, támadási képesség 16, védetts\nszint 14. A szörnyeteg 2-12 életerőpont vesztesé\nokoz a mancsaival és a harapásaival. (Ne feledd,\nlenfeleid mindketten támadhatnak rád a körben\nazonban csak egyikükre támadhatsz!)\n\nHa sikerült legyőznöd ellenfeleidet, lapozz a 43-ra!\nHa veszítettél, lapozz a 263-ra!",
-      "choices": [
-        {
-          "text": "Ha sikerült legyőznöd ellenfeleidet,",
-          "target": 43
-        },
-        {
-          "text": "Ha veszítettél,",
-          "target": 263
-        }
-      ],
+      "text": "A fekete lovag félelmetes ellenfél, szörnyű csapás:\nnem csupán az életerődet szívják el, hanem mintha\n\nharci tudásod is folyamatosan romlana. Bár minden\nmegteszel, ebben a harcban csak vesztes lehetsz. Kalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false
     },
     "88": {
@@ -6541,15 +6030,6 @@
       "text": "Ha elmondod a választ, a könyv lapozz a 190-re!\nHa elolvasod az írást, lapozz a 190-re!\nHa elteszed a könyvet, lapozz a 190-re!",
       "choices": [
         {
-          "text": "Ha elmondod a választ, a könyv",
-          "target": 190
-        },
-        {
-          "text": "Ha elolvasod az írást,",
-          "target": 190
-        },
-        {
-          "text": "Ha elteszed a könyvet,",
           "target": 190
         }
       ],
@@ -6691,7 +6171,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
@@ -6760,7 +6240,7 @@
       ],
       "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": []
     },
@@ -6789,17 +6269,8 @@
     },
     "245": {
       "id": 245,
-      "text": "Az öregember veszélyesebbnek bizonyul, mintsem\nsejtetted volna. A varázslatai elsöprő erejűek, nen\nigazán sikerül hatékonyan védekezned ellenük. Kalandod véget ért!\n\nAz ágak között alszol, mert odafent biztonságosabbnak tűnik. Elég magasra kapaszkodsz ahhoz, hog\nmég egy medvétől se kelljen tartanod. Éjfél körül halk k\ncsörtetésre ébredsz. Kinyitod a szemed, s egy hatalmas\nalakot látsz a tisztás túlsó oldalán szimatolni\n\nHa csendben meglapulsz, lapozz a 166-ra!\nHa lemászol, és megtámadod, lapozz az 51-re!",
-      "choices": [
-        {
-          "text": "Ha csendben meglapulsz,",
-          "target": 166
-        },
-        {
-          "text": "Ha lemászol, és megtámadod,",
-          "target": 51
-        }
-      ],
+      "text": "Az öregember veszélyesebbnek bizonyul, mintsem\nsejtetted volna. A varázslatai elsöprő erejűek, nen\nigazán sikerül hatékonyan védekezned ellenük. Kalandod véget ért!",
+      "choices": [],
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
@@ -7033,7 +6504,7 @@
         }
       ],
       "enemies": [],
-      "is_ending": true,
+      "is_ending": false,
       "has_combat": false,
       "has_luck_test": false,
       "events": []

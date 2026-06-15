@@ -3,78 +3,50 @@
   "generated": "2026-06-15",
   "summary": {
     "total_sections": 300,
-    "reachable": 277,
-    "unreachable": 23,
+    "reachable": 269,
+    "unreachable": 31,
     "unexpected_dead_ends": 0,
-    "combat_missing_stats": 38,
-    "sections_with_issues": 66
+    "combat_missing_stats": 2,
+    "sections_with_issues": 33
   },
   "issue_index": {
     "unreachable": [
       26,
       33,
+      43,
       47,
       55,
       64,
       81,
       83,
+      87,
       96,
       107,
       113,
       124,
+      127,
+      129,
       147,
       155,
       168,
       176,
-      178,
       198,
-      225,
+      210,
       228,
       234,
       236,
+      239,
+      248,
       252,
+      263,
+      271,
+      290,
       300
     ],
     "unexpected_dead_ends": [],
     "combat_missing_enemy_stats": [
       25,
-      51,
-      61,
-      62,
-      63,
-      66,
-      67,
-      78,
-      79,
-      82,
-      87,
-      107,
-      110,
-      122,
-      138,
-      158,
-      159,
-      171,
-      172,
-      173,
-      183,
-      187,
-      191,
-      193,
-      195,
-      209,
-      210,
-      222,
-      224,
-      239,
-      242,
-      255,
-      259,
-      260,
-      264,
-      271,
-      279,
-      285
+      159
     ],
     "all_sections_with_issues": {
       "25": [
@@ -87,94 +59,52 @@
       "33": [
         "unreachable"
       ],
+      "43": [
+        "unreachable"
+      ],
       "47": [
         "unreachable",
         "no_incoming_edges"
-      ],
-      "51": [
-        "combat_missing_enemy_stats"
       ],
       "55": [
         "unreachable",
         "no_incoming_edges"
       ],
-      "61": [
-        "combat_missing_enemy_stats"
-      ],
-      "62": [
-        "combat_missing_enemy_stats"
-      ],
-      "63": [
-        "combat_missing_enemy_stats"
-      ],
       "64": [
         "unreachable",
         "no_incoming_edges"
-      ],
-      "66": [
-        "combat_missing_enemy_stats",
-        "duplicate_choice_targets"
-      ],
-      "67": [
-        "combat_missing_enemy_stats"
-      ],
-      "78": [
-        "combat_missing_enemy_stats"
-      ],
-      "79": [
-        "combat_missing_enemy_stats"
       ],
       "81": [
         "unreachable",
         "no_incoming_edges"
       ],
-      "82": [
-        "combat_missing_enemy_stats"
-      ],
       "83": [
         "unreachable"
       ],
       "87": [
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "96": [
         "unreachable",
         "no_incoming_edges"
       ],
       "107": [
-        "unreachable",
-        "combat_missing_enemy_stats"
-      ],
-      "110": [
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "113": [
         "unreachable",
         "no_incoming_edges"
       ],
-      "118": [
-        "duplicate_choice_targets"
-      ],
-      "120": [
-        "duplicate_choice_targets"
-      ],
-      "122": [
-        "combat_missing_enemy_stats",
-        "duplicate_choice_targets"
-      ],
-      "123": [
-        "duplicate_choice_targets"
-      ],
       "124": [
         "unreachable",
-        "no_incoming_edges",
-        "duplicate_choice_targets"
+        "no_incoming_edges"
       ],
-      "138": [
-        "combat_missing_enemy_stats"
+      "127": [
+        "unreachable"
       ],
-      "146": [
-        "duplicate_choice_targets"
+      "129": [
+        "unreachable",
+        "no_incoming_edges"
       ],
       "147": [
         "unreachable",
@@ -183,67 +113,20 @@
       "155": [
         "unreachable"
       ],
-      "158": [
-        "combat_missing_enemy_stats"
-      ],
       "159": [
         "combat_missing_enemy_stats"
       ],
       "168": [
         "unreachable"
       ],
-      "171": [
-        "combat_missing_enemy_stats"
-      ],
-      "172": [
-        "combat_missing_enemy_stats"
-      ],
-      "173": [
-        "combat_missing_enemy_stats"
-      ],
       "176": [
         "unreachable"
-      ],
-      "178": [
-        "unreachable",
-        "no_incoming_edges"
-      ],
-      "183": [
-        "combat_missing_enemy_stats"
-      ],
-      "187": [
-        "combat_missing_enemy_stats"
-      ],
-      "191": [
-        "combat_missing_enemy_stats"
-      ],
-      "193": [
-        "combat_missing_enemy_stats"
-      ],
-      "195": [
-        "combat_missing_enemy_stats"
       ],
       "198": [
         "unreachable",
         "no_incoming_edges"
       ],
-      "209": [
-        "combat_missing_enemy_stats",
-        "duplicate_choice_targets"
-      ],
       "210": [
-        "combat_missing_enemy_stats"
-      ],
-      "218": [
-        "duplicate_choice_targets"
-      ],
-      "222": [
-        "combat_missing_enemy_stats"
-      ],
-      "224": [
-        "combat_missing_enemy_stats"
-      ],
-      "225": [
         "unreachable"
       ],
       "228": [
@@ -253,41 +136,28 @@
         "unreachable"
       ],
       "236": [
-        "unreachable"
+        "unreachable",
+        "no_incoming_edges"
       ],
       "239": [
-        "combat_missing_enemy_stats"
-      ],
-      "242": [
-        "combat_missing_enemy_stats"
+        "unreachable",
+        "no_incoming_edges"
       ],
       "248": [
-        "duplicate_choice_targets"
+        "unreachable"
       ],
       "252": [
         "unreachable",
         "no_incoming_edges"
       ],
-      "255": [
-        "combat_missing_enemy_stats"
-      ],
-      "259": [
-        "combat_missing_enemy_stats"
-      ],
-      "260": [
-        "combat_missing_enemy_stats"
-      ],
-      "264": [
-        "combat_missing_enemy_stats"
+      "263": [
+        "unreachable"
       ],
       "271": [
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
-      "279": [
-        "combat_missing_enemy_stats"
-      ],
-      "285": [
-        "combat_missing_enemy_stats"
+      "290": [
+        "unreachable"
       ],
       "300": [
         "unreachable"
@@ -367,7 +237,6 @@
         112
       ],
       "incoming": [
-        87,
         88,
         89,
         110,
@@ -430,10 +299,10 @@
       ],
       "reachable": true,
       "choices": [
+        178,
         146
       ],
       "incoming": [
-        78,
         79,
         171
       ],
@@ -451,11 +320,9 @@
         41
       ],
       "incoming": [
-        40,
         41,
         261,
         269,
-        272,
         279
       ],
       "issues": []
@@ -469,7 +336,6 @@
       "incoming": [
         66,
         67,
-        158,
         159
       ],
       "issues": []
@@ -603,10 +469,8 @@
         30
       ],
       "incoming": [
-        252,
         253,
         254,
-        285,
         286
       ],
       "issues": []
@@ -626,7 +490,6 @@
         10,
         65,
         109,
-        162,
         203
       ],
       "issues": []
@@ -638,14 +501,11 @@
       "reachable": true,
       "choices": [],
       "incoming": [
-        36,
         37,
         55,
         101,
-        114,
         115,
         160,
-        222,
         223,
         235
       ],
@@ -741,7 +601,6 @@
       "incoming": [
         84,
         196,
-        249,
         250
       ],
       "issues": []
@@ -790,10 +649,8 @@
       "incoming": [
         18,
         19,
-        252,
         253,
         254,
-        285,
         286
       ],
       "issues": [],
@@ -815,11 +672,8 @@
         104
       ],
       "incoming": [
-        140,
         141,
-        218,
         220,
-        297,
         298
       ],
       "issues": []
@@ -884,7 +738,6 @@
         215
       ],
       "incoming": [
-        140,
         142
       ],
       "issues": [],
@@ -904,13 +757,9 @@
       "choices": [
         58,
         121,
-        146,
-        160,
-        156,
-        21
+        146
       ],
       "incoming": [
-        120,
         121,
         189
       ],
@@ -960,7 +809,6 @@
         8,
         57,
         98,
-        152,
         153
       ],
       "issues": []
@@ -972,16 +820,9 @@
       "reachable": true,
       "choices": [
         116,
-        221,
-        223,
-        295,
-        10,
-        119,
-        273,
-        182
+        221
       ],
       "incoming": [
-        96,
         111
       ],
       "issues": []
@@ -1023,7 +864,7 @@
       "flags": [
         "normal"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         52,
         104,
@@ -1031,10 +872,11 @@
       ],
       "incoming": [
         81,
-        82,
         83
       ],
-      "issues": []
+      "issues": [
+        "unreachable"
+      ]
     },
     "44": {
       "flags": [
@@ -1150,7 +992,6 @@
       "incoming": [
         128,
         177,
-        218,
         219
       ],
       "issues": []
@@ -1162,16 +1003,18 @@
       "reachable": true,
       "choices": [
         105,
-        276,
-        202,
-        104
+        276
       ],
       "incoming": [
-        245,
         246
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Alakváltó",
+          "hp": 28,
+          "damage": "3-8"
+        }
       ]
     },
     "52": {
@@ -1186,7 +1029,6 @@
       "incoming": [
         31,
         43,
-        55,
         91,
         107,
         118,
@@ -1234,10 +1076,7 @@
       "reachable": false,
       "choices": [
         21,
-        115,
-        52,
-        104,
-        202
+        115
       ],
       "incoming": [],
       "issues": [
@@ -1255,7 +1094,7 @@
       ],
       "incoming": [
         161,
-        272,
+        162,
         274,
         276
       ],
@@ -1322,7 +1161,6 @@
     },
     "61": {
       "flags": [
-        "combat",
         "luck_test"
       ],
       "reachable": true,
@@ -1334,30 +1172,25 @@
         293,
         294
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "62": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         146
       ],
       "incoming": [
-        78,
         79,
         171
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "63": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -1365,12 +1198,9 @@
         130
       ],
       "incoming": [
-        201,
         202
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "64": {
       "flags": [
@@ -1402,7 +1232,6 @@
         93,
         117,
         167,
-        179,
         181,
         207,
         226
@@ -1411,28 +1240,23 @@
     },
     "66": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         235,
         156,
         11,
-        180,
         180
       ],
       "incoming": [
-        264,
         265
       ],
-      "issues": [
-        "combat_missing_enemy_stats",
-        "duplicate_choice_targets"
-      ]
+      "issues": []
     },
     "67": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -1445,13 +1269,11 @@
         264,
         285
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "68": {
       "flags": [
-        "ending"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -1459,7 +1281,6 @@
         197
       ],
       "incoming": [
-        163,
         164
       ],
       "issues": []
@@ -1488,7 +1309,6 @@
       "choices": [],
       "incoming": [
         111,
-        277,
         278
       ],
       "issues": []
@@ -1556,10 +1376,7 @@
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        129,
-        210
-      ],
+      "choices": [],
       "incoming": [
         185,
         186
@@ -1592,7 +1409,6 @@
       ],
       "incoming": [
         166,
-        222,
         224,
         225
       ],
@@ -1600,17 +1416,13 @@
     },
     "78": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         109,
         203,
-        261,
-        62,
-        150,
-        282,
-        9
+        261
       ],
       "incoming": [
         20,
@@ -1618,13 +1430,11 @@
         205,
         299
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "79": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -1636,9 +1446,7 @@
       "incoming": [
         251
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "80": {
       "flags": [
@@ -1686,20 +1494,14 @@
     },
     "82": {
       "flags": [
-        "combat",
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        43,
-        263
-      ],
+      "choices": [],
       "incoming": [
         187
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "83": {
       "flags": [
@@ -1743,7 +1545,6 @@
       "incoming": [
         71,
         72,
-        152,
         153,
         266
       ],
@@ -1789,21 +1590,16 @@
     },
     "87": {
       "flags": [
-        "combat",
         "ending"
       ],
-      "reachable": true,
-      "choices": [
-        5,
-        254
-      ],
+      "reachable": false,
+      "choices": [],
       "incoming": [
         210,
-        270,
         271
       ],
       "issues": [
-        "combat_missing_enemy_stats"
+        "unreachable"
       ]
     },
     "88": {
@@ -1847,10 +1643,8 @@
         12,
         111,
         209,
-        255,
         256,
         257,
-        270,
         272,
         273
       ],
@@ -1906,10 +1700,7 @@
       ],
       "reachable": true,
       "choices": [
-        197,
-        298,
-        220,
-        141
+        197
       ],
       "incoming": [
         243
@@ -1939,10 +1730,7 @@
       "reachable": false,
       "choices": [
         234,
-        140,
-        236,
-        40,
-        204
+        140
       ],
       "incoming": [],
       "issues": [
@@ -1978,7 +1766,6 @@
       "incoming": [
         27,
         196,
-        249,
         250
       ],
       "issues": []
@@ -2057,16 +1844,12 @@
       "reachable": true,
       "choices": [
         91,
-        132,
-        239,
-        146
+        132
       ],
       "incoming": [
         31,
         43,
-        51,
         52,
-        55,
         91,
         118,
         168,
@@ -2115,7 +1898,7 @@
     },
     "107": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": false,
       "choices": [
@@ -2127,8 +1910,7 @@
         176
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ]
     },
     "108": {
@@ -2165,14 +1947,13 @@
       "incoming": [
         10,
         65,
-        78,
-        162
+        78
       ],
       "issues": []
     },
     "110": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -2181,9 +1962,7 @@
       "incoming": [
         133
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "111": {
       "flags": [
@@ -2235,10 +2014,7 @@
       "reachable": true,
       "choices": [
         265,
-        191,
-        277,
-        156,
-        21
+        191
       ],
       "incoming": [
         38
@@ -2264,10 +2040,8 @@
       ],
       "incoming": [
         55,
-        189,
         190,
         214,
-        222,
         223,
         235
       ],
@@ -2309,17 +2083,13 @@
       "reachable": true,
       "choices": [
         52,
-        104,
         104
       ],
       "incoming": [
-        201,
         202,
         242
       ],
-      "issues": [
-        "duplicate_choice_targets"
-      ]
+      "issues": []
     },
     "119": {
       "flags": [
@@ -2332,7 +2102,6 @@
         182
       ],
       "incoming": [
-        40,
         42
       ],
       "issues": []
@@ -2342,17 +2111,11 @@
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        36,
-        278,
-        278
-      ],
+      "choices": [],
       "incoming": [
         158
       ],
-      "issues": [
-        "duplicate_choice_targets"
-      ]
+      "issues": []
     },
     "121": {
       "flags": [
@@ -2373,13 +2136,12 @@
     },
     "122": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         48,
         233,
-        170,
         170
       ],
       "incoming": [
@@ -2389,10 +2151,7 @@
         134,
         145
       ],
-      "issues": [
-        "combat_missing_enemy_stats",
-        "duplicate_choice_targets"
-      ]
+      "issues": []
     },
     "123": {
       "flags": [
@@ -2402,19 +2161,14 @@
       "choices": [
         218,
         190,
-        169,
-        190,
-        190,
-        190
+        169
       ],
       "incoming": [
         34,
         169,
         289
       ],
-      "issues": [
-        "duplicate_choice_targets"
-      ]
+      "issues": []
     },
     "124": {
       "flags": [
@@ -2422,15 +2176,12 @@
       ],
       "reachable": false,
       "choices": [
-        190,
-        190,
         190
       ],
       "incoming": [],
       "issues": [
         "unreachable",
-        "no_incoming_edges",
-        "duplicate_choice_targets"
+        "no_incoming_edges"
       ]
     },
     "125": {
@@ -2473,7 +2224,7 @@
       "flags": [
         "combat"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         248,
         73
@@ -2481,7 +2232,9 @@
       "incoming": [
         239
       ],
-      "issues": [],
+      "issues": [
+        "unreachable"
+      ],
       "enemies": [
         {
           "name": "Kőevő",
@@ -2511,16 +2264,16 @@
       "flags": [
         "normal"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         210,
         169
       ],
-      "incoming": [
-        75,
-        271
-      ],
-      "issues": []
+      "incoming": [],
+      "issues": [
+        "unreachable",
+        "no_incoming_edges"
+      ]
     },
     "130": {
       "flags": [
@@ -2633,7 +2386,6 @@
     },
     "138": {
       "flags": [
-        "combat",
         "ending"
       ],
       "reachable": true,
@@ -2642,9 +2394,7 @@
         45,
         46
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "139": {
       "flags": [
@@ -2656,22 +2406,16 @@
         294
       ],
       "incoming": [
-        272,
         275
       ],
       "issues": []
     },
     "140": {
       "flags": [
-        "luck_test",
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        31,
-        296,
-        35
-      ],
+      "choices": [],
       "incoming": [
         11,
         96
@@ -2687,7 +2431,6 @@
         31
       ],
       "incoming": [
-        94,
         95
       ],
       "issues": []
@@ -2755,7 +2498,6 @@
       ],
       "reachable": true,
       "choices": [
-        97,
         97
       ],
       "incoming": [
@@ -2765,13 +2507,11 @@
         62,
         76,
         77,
-        104,
         105,
         150,
         166,
         173,
         208,
-        222,
         224,
         225,
         230,
@@ -2780,9 +2520,7 @@
         281,
         282
       ],
-      "issues": [
-        "duplicate_choice_targets"
-      ]
+      "issues": []
     },
     "147": {
       "flags": [
@@ -2792,8 +2530,7 @@
       "choices": [
         255,
         44,
-        299,
-        204
+        299
       ],
       "incoming": [],
       "issues": [
@@ -2836,7 +2573,6 @@
         146
       ],
       "incoming": [
-        78,
         79,
         171
       ],
@@ -2858,10 +2594,7 @@
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        84,
-        39
-      ],
+      "choices": [],
       "incoming": [
         195
       ],
@@ -2923,16 +2656,13 @@
         175
       ],
       "incoming": [
-        36,
         37,
         64,
         66,
         67,
         101,
-        114,
         115,
         160,
-        189,
         190,
         214
       ],
@@ -2956,7 +2686,6 @@
       ],
       "incoming": [
         25,
-        191,
         193
       ],
       "issues": [],
@@ -2970,22 +2699,17 @@
     },
     "158": {
       "flags": [
-        "combat",
         "luck_test"
       ],
       "reachable": true,
       "choices": [
         205,
-        120,
-        11,
-        180
+        120
       ],
       "incoming": [
         69
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "159": {
       "flags": [
@@ -3015,10 +2739,8 @@
         21
       ],
       "incoming": [
-        36,
         37,
-        101,
-        277
+        101
       ],
       "issues": []
     },
@@ -3032,7 +2754,6 @@
         56
       ],
       "incoming": [
-        272,
         274,
         276
       ],
@@ -3044,15 +2765,12 @@
       ],
       "reachable": true,
       "choices": [
-        20,
-        109,
-        203,
-        261
+        251,
+        56
       ],
       "incoming": [
         128,
         177,
-        218,
         219,
         247
       ],
@@ -3060,15 +2778,12 @@
     },
     "163": {
       "flags": [
-        "luck_test"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         281,
-        179,
-        224,
-        68,
-        212
+        179
       ],
       "incoming": [
         22,
@@ -3102,7 +2817,6 @@
       ],
       "incoming": [
         261,
-        272,
         279
       ],
       "issues": []
@@ -3117,7 +2831,6 @@
         146
       ],
       "incoming": [
-        245,
         246
       ],
       "issues": []
@@ -3174,7 +2887,6 @@
         185,
         186,
         218,
-        270,
         271
       ],
       "issues": []
@@ -3195,7 +2907,7 @@
     },
     "171": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -3207,13 +2919,11 @@
       "incoming": [
         184
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "172": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -3224,13 +2934,11 @@
         92,
         194
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "173": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -3240,9 +2948,7 @@
       "incoming": [
         251
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "174": {
       "flags": [
@@ -3308,7 +3014,6 @@
       ],
       "incoming": [
         128,
-        218,
         219,
         247
       ],
@@ -3318,15 +3023,14 @@
       "flags": [
         "normal"
       ],
-      "reachable": false,
+      "reachable": true,
       "choices": [
         225
       ],
-      "incoming": [],
-      "issues": [
-        "unreachable",
-        "no_incoming_edges"
-      ]
+      "incoming": [
+        9
+      ],
+      "issues": []
     },
     "179": {
       "flags": [
@@ -3336,8 +3040,7 @@
       "choices": [
         217,
         281,
-        219,
-        65
+        219
       ],
       "incoming": [
         156,
@@ -3355,7 +3058,6 @@
       "incoming": [
         66,
         67,
-        158,
         159
       ],
       "issues": []
@@ -3384,7 +3086,6 @@
         7
       ],
       "incoming": [
-        40,
         42,
         119
       ],
@@ -3392,7 +3093,7 @@
     },
     "183": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -3403,9 +3104,7 @@
         35,
         296
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "184": {
       "flags": [
@@ -3419,10 +3118,8 @@
       "incoming": [
         18,
         19,
-        252,
         253,
         254,
-        285,
         286
       ],
       "issues": []
@@ -3459,8 +3156,7 @@
     },
     "187": {
       "flags": [
-        "combat",
-        "ending"
+        "combat"
       ],
       "reachable": true,
       "choices": [
@@ -3470,8 +3166,13 @@
       "incoming": [
         293
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Fekete lovag",
+          "hp": 38,
+          "damage": "2-12"
+        }
       ]
     },
     "188": {
@@ -3490,18 +3191,13 @@
     },
     "189": {
       "flags": [
-        "luck_test"
+        "normal"
       ],
       "reachable": true,
       "choices": [
-        36,
-        156,
-        115,
-        211,
-        279
+        36
       ],
       "incoming": [
-        277,
         278
       ],
       "issues": []
@@ -3523,22 +3219,14 @@
     },
     "191": {
       "flags": [
-        "combat",
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        211,
-        279,
-        157,
-        206
-      ],
+      "choices": [],
       "incoming": [
         114
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "192": {
       "flags": [
@@ -3554,14 +3242,13 @@
         86,
         88,
         165,
-        261,
-        272
+        261
       ],
       "issues": []
     },
     "193": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -3572,9 +3259,7 @@
         116,
         221
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "194": {
       "flags": [
@@ -3588,10 +3273,8 @@
       "incoming": [
         12,
         209,
-        255,
         256,
         257,
-        270,
         272,
         273
       ],
@@ -3609,8 +3292,13 @@
       "incoming": [
         137
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Alakváltó",
+          "hp": 28,
+          "damage": "3-8"
+        }
       ]
     },
     "196": {
@@ -3628,7 +3316,6 @@
         27,
         84,
         111,
-        249,
         250
       ],
       "issues": []
@@ -3699,11 +3386,7 @@
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        293,
-        118,
-        63
-      ],
+      "choices": [],
       "incoming": [
         284
       ],
@@ -3721,9 +3404,7 @@
       ],
       "incoming": [
         43,
-        51,
         52,
-        55,
         107,
         168,
         228,
@@ -3749,8 +3430,7 @@
         10,
         65,
         78,
-        109,
-        162
+        109
       ],
       "issues": []
     },
@@ -3766,9 +3446,6 @@
       ],
       "incoming": [
         81,
-        96,
-        147,
-        255,
         258
       ],
       "issues": []
@@ -3797,7 +3474,6 @@
       "choices": [],
       "incoming": [
         25,
-        191,
         193
       ],
       "issues": []
@@ -3821,7 +3497,6 @@
         134,
         139,
         145,
-        272,
         275
       ],
       "issues": []
@@ -3843,38 +3518,40 @@
     },
     "209": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         194,
-        90,
         90
       ],
       "incoming": [
         241
       ],
-      "issues": [
-        "combat_missing_enemy_stats",
-        "duplicate_choice_targets"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Élőhalott öregember",
+          "hp": 30,
+          "damage": "1-3"
+        }
       ]
     },
     "210": {
       "flags": [
-        "combat"
+        "luck_test"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         271,
         87
       ],
       "incoming": [
-        75,
         107,
         129
       ],
       "issues": [
-        "combat_missing_enemy_stats"
+        "unreachable"
       ]
     },
     "211": {
@@ -3887,8 +3564,6 @@
         131
       ],
       "incoming": [
-        189,
-        191,
         192
       ],
       "issues": [],
@@ -3909,7 +3584,6 @@
       "incoming": [
         97,
         125,
-        163,
         164
       ],
       "issues": []
@@ -3991,20 +3665,13 @@
       "reachable": true,
       "choices": [
         23,
-        177,
-        50,
-        162,
-        31,
-        169,
         169
       ],
       "incoming": [
         23,
         123
       ],
-      "issues": [
-        "duplicate_choice_targets"
-      ]
+      "issues": []
     },
     "219": {
       "flags": [
@@ -4036,7 +3703,6 @@
         31
       ],
       "incoming": [
-        94,
         95
       ],
       "issues": []
@@ -4057,26 +3723,19 @@
     },
     "222": {
       "flags": [
-        "combat",
         "ending"
       ],
       "reachable": true,
       "choices": [
         72,
         32,
-        134,
-        21,
-        115,
-        77,
-        146
+        134
       ],
       "incoming": [
         293,
         294
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "223": {
       "flags": [
@@ -4089,14 +3748,13 @@
       ],
       "incoming": [
         7,
-        40,
         42
       ],
       "issues": []
     },
     "224": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -4105,18 +3763,15 @@
       ],
       "incoming": [
         156,
-        163,
         287
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "225": {
       "flags": [
         "normal"
       ],
-      "reachable": false,
+      "reachable": true,
       "choices": [
         77,
         146
@@ -4124,9 +3779,7 @@
       "incoming": [
         178
       ],
-      "issues": [
-        "unreachable"
-      ]
+      "issues": []
     },
     "226": {
       "flags": [
@@ -4290,11 +3943,10 @@
         104,
         202
       ],
-      "incoming": [
-        96
-      ],
+      "incoming": [],
       "issues": [
-        "unreachable"
+        "unreachable",
+        "no_incoming_edges"
       ]
     },
     "237": {
@@ -4324,19 +3976,17 @@
     },
     "239": {
       "flags": [
-        "combat",
         "luck_test"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         290,
         127
       ],
-      "incoming": [
-        104
-      ],
+      "incoming": [],
       "issues": [
-        "combat_missing_enemy_stats"
+        "unreachable",
+        "no_incoming_edges"
       ]
     },
     "240": {
@@ -4368,7 +4018,7 @@
     },
     "242": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -4380,9 +4030,7 @@
         46,
         187
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "243": {
       "flags": [
@@ -4419,10 +4067,7 @@
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        166,
-        51
-      ],
+      "choices": [],
       "incoming": [
         86
       ],
@@ -4461,18 +4106,17 @@
       "flags": [
         "normal"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         52,
         202,
-        104,
         104
       ],
       "incoming": [
         127
       ],
       "issues": [
-        "duplicate_choice_targets"
+        "unreachable"
       ]
     },
     "249": {
@@ -4482,11 +4126,7 @@
       "reachable": true,
       "choices": [
         100,
-        49,
-        27,
-        196,
-        283,
-        98
+        49
       ],
       "incoming": [
         34,
@@ -4531,7 +4171,7 @@
       ],
       "incoming": [
         161,
-        272,
+        162,
         274,
         276
       ],
@@ -4542,11 +4182,7 @@
         "ending"
       ],
       "reachable": false,
-      "choices": [
-        184,
-        19,
-        30
-      ],
+      "choices": [],
       "incoming": [],
       "issues": [
         "unreachable",
@@ -4580,7 +4216,6 @@
         30
       ],
       "incoming": [
-        87,
         88,
         89
       ],
@@ -4588,25 +4223,20 @@
     },
     "255": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         69,
         44,
-        299,
-        204,
-        194,
-        90
+        299
       ],
       "incoming": [
         44,
         147,
         183
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "256": {
       "flags": [
@@ -4677,13 +4307,18 @@
       "incoming": [
         170
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Ayrabdir",
+          "hp": 18,
+          "damage": "2-7"
+        }
       ]
     },
     "260": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -4692,9 +4327,7 @@
       "incoming": [
         184
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "261": {
       "flags": [
@@ -4711,7 +4344,6 @@
         65,
         78,
         109,
-        162,
         203
       ],
       "issues": []
@@ -4734,14 +4366,15 @@
       "flags": [
         "ending"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [],
       "incoming": [
         81,
-        82,
         83
       ],
-      "issues": []
+      "issues": [
+        "unreachable"
+      ]
     },
     "264": {
       "flags": [
@@ -4750,14 +4383,18 @@
       "reachable": true,
       "choices": [
         67,
-        297,
-        66
+        297
       ],
       "incoming": [
         136
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Óriáspók",
+          "hp": 22,
+          "damage": "1-6"
+        }
       ]
     },
     "265": {
@@ -4839,12 +4476,7 @@
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        87,
-        169,
-        194,
-        90
-      ],
+      "choices": [],
       "incoming": [
         69
       ],
@@ -4859,19 +4491,18 @@
     },
     "271": {
       "flags": [
-        "combat"
+        "normal"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         87,
-        169,
-        129
+        169
       ],
       "incoming": [
         210
       ],
       "issues": [
-        "combat_missing_enemy_stats"
+        "unreachable"
       ]
     },
     "272": {
@@ -4882,16 +4513,7 @@
       "reachable": true,
       "choices": [
         194,
-        90,
-        192,
-        165,
-        10,
-        139,
-        207,
-        294,
-        251,
-        161,
-        56
+        90
       ],
       "incoming": [
         22,
@@ -4916,7 +4538,6 @@
         90
       ],
       "incoming": [
-        40,
         41
       ],
       "issues": [],
@@ -4978,18 +4599,14 @@
     },
     "277": {
       "flags": [
-        "luck_test"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         37,
-        101,
-        160,
-        189,
-        70
+        101
       ],
       "incoming": [
-        114,
         115
       ],
       "issues": []
@@ -5004,14 +4621,13 @@
         70
       ],
       "incoming": [
-        120,
         121
       ],
       "issues": []
     },
     "279": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
@@ -5021,13 +4637,9 @@
         29
       ],
       "incoming": [
-        189,
-        191,
         192
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
-      ]
+      "issues": []
     },
     "280": {
       "flags": [
@@ -5077,7 +4689,6 @@
         146
       ],
       "incoming": [
-        78,
         79,
         171
       ],
@@ -5097,7 +4708,6 @@
         27,
         84,
         196,
-        249,
         250
       ],
       "issues": []
@@ -5130,16 +4740,18 @@
       "reachable": true,
       "choices": [
         67,
-        103,
-        184,
-        19,
-        30
+        103
       ],
       "incoming": [
         229
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Óriáspók",
+          "hp": 22,
+          "damage": "1-6"
+        }
       ]
     },
     "286": {
@@ -5205,7 +4817,7 @@
       "flags": [
         "normal"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         52,
         104,
@@ -5214,7 +4826,9 @@
       "incoming": [
         239
       ],
-      "issues": []
+      "issues": [
+        "unreachable"
+      ]
     },
     "291": {
       "flags": [
@@ -5257,7 +4871,6 @@
         222
       ],
       "incoming": [
-        201,
         202
       ],
       "issues": []
@@ -5276,7 +4889,6 @@
         47,
         48,
         139,
-        272,
         275
       ],
       "issues": []
@@ -5292,7 +4904,6 @@
       ],
       "incoming": [
         7,
-        40,
         42,
         119
       ],
@@ -5308,7 +4919,6 @@
         13
       ],
       "incoming": [
-        140,
         142
       ],
       "issues": [],
@@ -5325,9 +4935,7 @@
         "ending"
       ],
       "reachable": true,
-      "choices": [
-        31
-      ],
+      "choices": [],
       "incoming": [
         264
       ],
@@ -5342,7 +4950,6 @@
         31
       ],
       "incoming": [
-        94,
         95
       ],
       "issues": []

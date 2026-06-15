@@ -338,14 +338,15 @@ Full schema per section:
 - `07_extract_events.py` not yet run on this book
 
 ### a-demon-szeme
-- **19 sections still unreachable** (down from 29 after Session 13 screenshot repairs).
-  - Current unreachable: 26, 33, 47, 55, 64, 81, 96, 107, 113, 124, 147, 155, 176, 198, 228, 234, 236, 252, 300
-  - Run `python pipeline/diagnose_choices.py a-demon-szeme` to regenerate the report.
+- **31 sections still unreachable** (Session 14 batch3 fixes corrected ~50 merge artifacts but introduced some new unreachables; net result worse than Session 13 baseline of 19, but data is more accurate).
+  - Current unreachable: 26, 33, 43, 47, 55, 64, 81, 83, 87, 96, 107, 113, 124, 127, 129, 147, 155, 168, 176, 198, 210, 228, 234, 236, 239, 248, 252, 263, 271, 290, 300
   - Run `python pipeline/generate_section_map.py a-demon-szeme` to regenerate `section_map.json`.
-  - Secs 107, 155, 176 are a linked cluster: 176 routes to 107 (win) / 155 (lose), but nothing routes to 176 yet.
-  - **Remaining merge blobs** (need clean source screenshots to reconstruct): 37, 38, 92, 108, 144, 159, 162, 175, 227, 239, and sec 136 (riddle mechanic — success target unknown, likely 195).
-  - **Unexpected dead ends** (no choices, not death endings): secs 8, 17, 151, 215, 217, 238, 288 — need screenshots to diagnose.
-  - Sec 151: "try the mask" cross-reference section (referenced from sec 101) — should route somewhere after trying the mask; currently has no choices.
+  - Secs 107, 155, 176 are a linked cluster: 176 routes to 107 (win) / 155 (lose), but nothing routes to 176.
+  - Secs 33, 43, 81, 83, 113, 168, 176, 228, 263 form a sub-cluster rooted at 113 (nothing routes to 113).
+  - Secs 127, 248 reachable only via sec 239 (luck test), which itself has no incoming edges — needs screenshot.
+  - Secs 210, 271, 87 form a chain reachable only via sec 129 or 107 (both unreachable).
+  - **Sections needing screenshots to fix**: 129 (predecessor unknown), 239 (desert luck test, predecessor unknown), 136 (riddle — success target unknown).
+  - **Combat missing enemy stats**: secs 25, 159.
 - **Flee button not blocked** when `state.combat.noFlee = true` — flag is set but UI doesn't gate the button yet
 - Unknown event types to implement:
   - `enemy_first_always` / `initiative_always_loses` (sec 36/37) — cursed mask forces player to always lose initiative
@@ -481,3 +482,24 @@ Full schema per section:
 - Added `pipeline/generate_section_map.py` — generates `section_map.json` for any book with
   reachability, incoming/outgoing edges, flags, and issue index. Run after every data change.
   Generated initial maps for both books and committed them.
+
+### Session 14 — A Démon Szeme bulk merge fix (batch 3, secs 36–300)
+- Added `pipeline/analyze_merges.py` — automated merge-detection script flagging ENDING_WITH_CHOICES,
+  COMBAT_NO_ENEMIES, MANY_CHOICES, DUPLICATE_TARGETS, DEATH_IN_TEXT, DEATH_AND_CHOICES across secs 36–300.
+- Ran analyzer: 99 sections flagged with merge artifacts.
+- Wrote and applied `pipeline/fix_sections_batch3.py` — comprehensive batch fix across ~50 sections:
+  - Group A: cleared `has_combat` on 22 sections that had no actual combat
+  - Group B: fixed 4 luck-test sections (`has_luck_test`, correct choice order)
+  - Group C: truncated 13 death sections at "Kalandod véget ért!" and cleared choices
+  - Group D: cleared `is_ending` on 5 sections wrongly marked as endings
+  - Group E: corrected choices on ~30 sections with merge-artifact extra/wrong targets
+  - Group F: added enemy stat blocks for Alakváltó (sec 51/195), Fekete lovag (sec 187),
+    Élőhalott öregember (sec 209), Ayrabdir (sec 259), Óriáspók (sec 264/285)
+- Post-fix regressions found and resolved:
+  - Sec 272 still had `is_ending=True` — cleared separately
+  - Secs 140, 163, 189, 277 had spurious `has_luck_test=True` from 07_extract_events — cleared
+  - Sec 68 was incorrectly converted to a death ending — reverted to navigation section with choices [284, 197]
+    (the death text was merged content; the crossing-success narrative is the real sec 68 text)
+  - Sec 9 missing link to sec 178 (pre-existing Session 12 omission) — added [178, 146]
+- Reachability: 269/300 reachable (up from 256 after initial batch3; net −8 vs Session 13 baseline of 281).
+  Remaining 31 unreachable sections documented above under Known Issues.
