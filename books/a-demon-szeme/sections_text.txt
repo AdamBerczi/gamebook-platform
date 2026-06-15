@@ -1,0 +1,4220 @@
+=== 000 ELŐZMÉNYEK ===
+Előzmények
+
+Már pillanatnyilván királynőnek kell tartanod magad, ám amióta a Sötét Évszázadokat a félistenektől megtámadták, Cherubimot számon tartják ezen a világon, így számtalan veszélyes kihívással kell szembenézned. Évek óta járod a veszélyes vidéket, s hol sárkányokkal, hol a túlélésért küzdő katonákkal kell megvívnod a holnapok lehetőségéért. Ha úgy hozza a sors, sárkányokat fosztogatsz, vagy éppen ősi, elfeledett kincsek után kutatsz rémisztő szörnyetegekkel telezsúfolt katakombák mélyén.
+
+Északon, Salynsandar városában hallottál elsőként arról a nagy erejű ereklyéről, amelynek nevét még a bölcsek is mély borzadállyal ejtették ki szájukon:
+
+A Démon Szeme
+
+Hatalmáról csak legendák beszélnek, ám tapasztalatból tudod, hogy egy ilyen nagy erejű varázstárgy értéke aranyhegyekben mérhető. Arról nem is beszélve, hogy olyan képességekkel ruházhatja fel a tulajdonosát, melyről nem is álmodik.
+
+Salynsandarból keletre, a Chorald-hágó felé vitt az utad, ám az álomfejtő, aki segíthetett volna neked az ereklye megszerzését hónapokkal ezelőtt meghalt egy ork rajtaütés során. Egyik rendtársa azt tanácsolta neked, hogy menj délre, s kutasd fel Yhrint, Choler Magiszter egyik renegát xinafját. Ha valaki, talán ő segíteni tud a célod elérésében.
+
+Az utad hosszú hetekig tart, ám miután sikeresen átvészeltél három éjszakai rajtaütést és egy rablótámadást, eljutsz a Szürke Torony romjához. Utolsó értesülésed szerint ez a torony szolgált éveken keresztül a xinaf lakhelyéül. Talán találsz valami nyomot ezen a helyen, mely által haladhatod.
+
+=== 001 ===
+is
+
+A romok elhagyatottnak tűnnek. A komor falak néhol még büszkén merednek az ég felé, ám életne
+semmi nyomát nem látod. A torony környezetében
+nem nőnek növények, jó tizenöt lábnyi területen csupasz föld veszi körül. A bejárat feletti jelmondatnak
+csupán az első felét sikerül kisilabizálnod, a másod
+második fele ismeretlen marad előtted: , A halál csak
+kezdet.
+
+Gúnyosan elhúzod a szádat. Eddigi ellenségeidre ez
+kétségtelenül igaz. A halál csupán kezdete számukra a
+végtelen sötétségnek
+
+Úgy tűnik, a torony jelenleg lakatlan
+
+Ha letáborozol a torony mellett, lapozz a 122-re!
+
+Ha szétnézel a torony romjai között, lapozz a 207-re!
+Ha inkább megpróbálsz olyasvalakit keresni, aki
+környéken él, lapozz a 294-re!
+
+LE
+
+=== 002 ===
+A lyuk feletti köveket a tőled telhető legnagyobb
+alapossággal vizsgálod át. Az egyik, melyet csak láb-ujjhegyre ágaskodva érsz el, elmozdíthatónak bizonyul, s amikor sikerül betolnod, éles ropogás hallat-szik, ahogy a fal egy darabja elválik az egésztől. Egy
+rejtekajtó tárul fel veled szemben. A bejutásod azonban korántsem olyan egyszerű, mint azt gondoltad
+Egy áttetsző lény áll veled szemben, s ahol a lábai a
+padlóval érintkeznek, a kövek sisteregni kezdenek. A
+lény valami savat választ ki a testéből!
+
+Savgólem: életerő 25, támadási képesség 20, védettség szint 18. A szörnyeteg 1-4 életerőpont veszteséget
+okoz a támadásával, de minden sikeres támadása 1
+ponttal maradandóan csökkenti a támadóerődet!
+
+Ha sikerült legyőznöd a savgólemet, lapozz a 269-re!
+Ha alulmaradtál, lapozz a 237-re!
+
+=== 003 ===
+A trideon csápjai a legváratlanabb irányokból csapnak le rád. Ha az egyiket sikerül hárítanod, a másik biztosan eltalál, és fájdalmas sebet ejt testeden. Már bánod, hogy engedtél a kapzsiságodnak; ha nem akartad mindenáron azt a gömböt, akkor most nem lennél ekkora bajban. Aztán, amikor a három csáp egyszerre lendül támadásba, már képtelen vagy időben hárítani. Kalandod véget ért!
+
+=== 004 ===
+Első pillantásra nem tűnik valami gazdag zsákmannynak, amit találsz. Mindössze egy sisak, egy kard, egy ébenfekete láncing és egy félig megperzselődött pergamen hever a földön. Gondosan szemügyre veszed valamennyit.
+
+Évek hosszú tapasztalata miatt hamarosan sikerül megtapítanod, melyik tárgy, mire jó. A sisak 3 ponttal növeli a védettségi szintedet, a kard viszont el van átkozva — talán tulajdonosa nem is sejtette, milyen veszedelmes fegyvert tart a kezében —, s 4 ponttal csökkenti a támadási képességet. Az ébenfekete láncing tökéletesen simul az alakodra, varázsenerőjének köszönhetően maga méretét is változtatja (s emellett 6 ponttal növeli a védettségi szintedet). A pergament lapozgatva hirtelen kellemetlen forróság kezdi elönteni a testedet.
+
+Ha gyorsan széttéped a pergament, lapozz a 181-re!
+Ha végigolvasod a szöveget, lapozz a 226-ra!
+
+=== 005 ===
+Alakváltó: életerő 28, támadási képesség 18, védettségi szint 18. A szörnyeteg 3–8 életerőpont veszteséget okoz. (Minden, az alakváltót ért sebzésből vonj le 2 pontot, ennyit regenerálódik.)
+
+Ha sikerült legyőznöd az alakváltót, lapozz a 208-ra!
+Ha veszítettél, lapozz a 112-re!
+
+=== 006 ===
+A fényoszlop folyamatosan pulzál, mintha egy lüktető szívet néznél. Az oszlop belsejében úszó csillagok lassan változtatják a helyüket; a látvány lenyűgöző.
+
+=== 007 ===
+varázseszközöket?
+Mit tudsz róluk?
+
+Hatalom elragadta tőlem, miután szöktem a Magisztertől... Utoljára, halld meg, egy vagyis törpe birtokolta.
+
+Feleltem: „Gyógyíts meg, ha van elég erőd hozzá!"
+
+Ha megteszi, lapozz a 223-ra!
+Ha végzel vele, lapozz a 295-re!
+
+=== 008 ===
+Ha előbb a xinaf nevét kérdi — vagy pedig olyan benyomást kelt, mint aki gonosz lehet — a letépett levelet mutatod meg neki, és azt mondod, hogy valaki azt szeretné, ha megtennéd ezt. Inkább bemész egyedül.
+
+Mivel az öreg már nem segít, a torony felé veszed az irányod.
+
+=== 009 ===
+A kunyhó biztonságosnak tűnik. Amennyire me
+tudod állapítani, amolyan erdei vándorok építette
+ez, melyet bárki igénybe vehet. A sarokban a taj
+tott kemence mellett rőzsét találsz felhalmozva. A!
+is járt itt utoljára, betartotta a szabályokat.
+
+Az éjszal orsan közeledik.
+
+Odakintről farkasüvöltést hoz a szél. Megb.
+zongsz. Most nem lenne jó kint lenni, a vastag ajtó és
+a falak megvédenek, amíg kipihened magad.
+
+Ha máris álomra hajtod a fejed, lapozz a 225-r
+Ha alaposan körbenézel idebent, lapozz a 178-ra!
+
+=== 010 ===
+Hamarosan ismét ott állsz a csigalépcső túloldalán, a hatalmas szobor előtt, mely egy démonszerű lényt ábrázol. A szobor két oldalán egy-egy ajtó látható.
+
+=== 011 ===
+Természetesen elfogadod az ajánlatot. Megérinted a varázstárgyat, mely azonnal nekilát az erőd elszívásának. (7 életerőpontot maradandóan elveszítettél!)
+
+— A negyedik betű az ipszilon — mondja a hang, majd ismét felhangzik a fenyegető versike:
+
+Nincsen pihenésem, nincsen maradásom,
+ágyban fekszem, még sincs soha megnyugvásom.
+
+A vándornak útját állhatom kevélyen,
+de többször könnyítem s megrövidítem.
+Hideg kebelemből sok állat éltét szívja,
+s lettem már soknak gyászos, hideg sírja.
+
+=== 012 ===
+Amikor kiejted a szádon a varázstárgy nevét, az öregember tekintete elfelhősödik, a következő pillanatban mágikus hatalmát használva rád támad.
+
+=== 013 ===
+A csontvázharcos a falhoz szorít rettenetes erejű
+csapásaival, s már annak is örülsz, ha sikerül kitérned
+a támadásai elől. Aztán váratlanul rést látsz ellenfeled
+védelmében. Előreszökkensz, hogy végezz vele, ám
+hirtelen rádöbbensz, az egész csupán csel volt, s a le-
+zúduló csatabárd megállíthatatlanul tart a koponyád
+felé. Kalandod véget ért!
+
+=== 014 ===
+Csupán tetteted az alvást, ám kezed már a fegyvered
+markolatára fonódik. Készen állsz arra, hogy az első
+gyanús jelre talpr rj. Percek telnek el, s már kez.
+ded azt hinni, feleslegesen óvatoskodtál, amikor
+egyik közeli bokor szétnyílik, és egy mezítelen f
+lép elő belőle, aki pillanatok alatt egy majd? háron
+méter magas, félelmetes szörnyet É
+
+Alakváltó: életerő 28, támadási képesség 18, védettség szint 18. A szörnyeteg 3-8 életerőpont veszte
+okoz. (Minden, az alakváltót ért sebzé:
+
+Pontot, ennyit regenerálódik.)
+
+Ha sikerült legyőznöd az alakváltót, lapozz az 105-re!
+Ha veszítettél, lapozz a 276-ra!
+
+=== 015 ===
+Az óvatosság a túlélés legfontosabb eszköze, gondolod magadban, miközben gyakorlott mozdulatokkal némi zsineget, harangvirágból készült csengettyűket és néhány facöveket veszel elő a hátizsákodból. A bokrok ágaira erősített vékony zsineg szinte észrevehetetlen, a csengőket pedig elrejtik a levelek. A csapda időben jelezni fogja, ha éjjel valaki meg akar lepni, hacsak nem repül az illető.
+
+Immáron nyugodtan hajtod álomra a fejed.
+
+Az elővigyázatosságod meghozza az eredményét. Halk csengőszóra riadsz, és a kardod után kapsz. Alig néhány lépésnyire tőled egy éjfekete vadállat, egy ayrabdir vicsorít, majd könnyű, nesztelen mozdulattal rád veti magát, ám felkészülten fogadod.
+
+=== 016 ===
+A sziklafal meredek és nagyon magas. Felkapaszkodni meglehetősen reménytelennek tűnik. A kötél vége elérhetetlen távolságban himbálózik. A túlsó parton a vízesés mellett mintha egy keskeny ösvény vezetne felfelé.
+
+Ha felkapaszkodsz a kötélig, lapozz a 28-ra!
+Ha megpróbálsz átjutni a folyón, lapozz a 164-re!
+Ha áttanulmányozod a xinaf könyvét, lapozz a 85-re!
+
+=== 017 ===
+Amikor a füstöt belélegzed, nyomban fuldokolni
+kezdesz, miközben a tagjaid lebénulnak. Most sajnálod
+Csak, hogy varázserődet nem a megfelelő varázslatra
+használtad fel. A halál gyorsan érkezik. Kalandod véBet ért!
+
+§ A
+
+=== 018 ===
+A támadók nyomait vizsgálgatva megdöbbentő fel.
+fedezést teszel. Amikor először megpillantottad a falut, azt hitted, egy kisebb sereg támadt rájuk. Nos, a
+
+fekete lovag egyedül végzett ekkora pusztítást. De va.
+jon mit keresett itt?
+
+Ha átkutatod a falut, lapozz aHa visszatérsz a napkörhöz, lapozz a 213-ra!
+
+— Hogy hívták a xinafot, aki elvarázsolt téged?
+kérdezed hirtelen támadt érdeklődéssel
+
+Az idegen lehajtja a fejét.
+
+— Yhrin — válaszolja csendesen
+
+Ha segíteni akarsz az idegenen, lapozz a 184-re!
+Ha nem foglalkozol az idegennel, lapozz a 30-ra!
+
+=== 019 ===
+Hogy hívták a xinafot, aki elvarázsolt téged? —
+kérdezed hirtelen támadt érdeklődéssel.
+Az idegen lehajtja a fejét.
+— Yhrin — válaszolja csendesen.
+
+Ha segíteni akarsz az idegenen, lapozz a 184-re!
+Ha nem foglalkozol az idegennel, lapozz a 30-ra!
+
+=== 020 ===
+A szobor túl hatalmas ahhoz, hogy elmozdítsd,
+azonban te nem hagyod magad megtéveszteni. Rend-
+kívüli óvatossággal végigtapogatod a felszínét. Pilla-
+natokon belül kiderül, hogy mindkét karját el lehet
+fordítani, valamint a bal szeme is mozgatható.
+
+Ha elfordítod a bal kezét, lapozz a 288-ra!
+Ha a jobb kézzel próbálkozol, lapozz a 238-ra!
+Ha a szemével kísérletezel, lapozz a 125-re!
+Ha inkább nem babrálod a szobrot, lapozz a 78-ra!
+
+=== 021 ===
+Kíváncsian lapozol bele a könyvbe; a vastag, Wyvernbőrből készült fedele felkelti az érdeklődésedet. Az első oldalak üresek, ám hamarosan egy apró versikére bukkansz:
+
+Ha rám nézel, visszanézek,
+ha rám nevetsz, kinevetlek.
+Tiszta, igaz és hű vagyok,
+kedvedért én nem hazudok.
+
+=== 022 ===
+Mi a neved? — kérdezed az öreget, miután bemutatkoztál.
+Elgondolkozva néz rád.
+Parázs — feleli nyugodtan.
+A szarkofág nem valami kényelmes fekhelyről jegyzed meg, miközben minden idegszáladdal figyelsz.
+Bólint, majd elmosolyodik. A vonásai ijesztőek.
+— Nem hiszem, hogy emiatt jöttél ide. Mi a célod?
+
+Ha beszélsz neki a Démon Szeméről, lapozz a 272-re!
+Ha azt mondod, Yhrin xinafot akarod felkutatni, lapozz a 99-re!
+Ha kincsvadásznak adod ki magad, lapozz a 163-ra!
+
+=== 023 ===
+Valamennyi kép finom, ínycsiklandozó ételeket ábrázol. Ismeretlen mester festette mindet, ám annyira élethűre sikerültek, hogy összefut a szádban a nyál a látványra. A középső kép kicsit ferdén függ a falon, amikor megfogod, hogy megigazítsd, egy papír hullik ki alóla, melyen csupán ennyi áll:
+
+Az a kezdete, ahogyan én álltam...
+
+Különös, de megjegyzed, ki tudja, mikor lesz szükséged erre az információra.
+
+Ha megvizsgálod az asztalt, lapozz a 218-ra!
+Ha kimégy az előszobába, lapozz a 169-re!
+
+=== 024 ===
+Nincs legyőzhetetlen ellenfél. A lábaid előtt heverő, vérbe fagyott szörnyeteg a legjobb példa erre. Miután nem kell további fenyegetéstől tartanod, figyelmed ismét a szobor felé fordul.
+
+=== 025 ===
+Kikötöd a köteledet, majd ereszkedni kezdesz. A Mélység ijesztő, ám bízol magadban. Hamarosan eléred a kötél végét, s bár esztelenségnek tűnik leugrani, te mégis megkockáztatod. (Dobj hatszor a hatoldalú kockával, s add össze az értékeket! Az eredménynek megfelelő életerőpontot veszítettél.)
+
+Ha túlélted az ugrást, lapozz a 157-re!
+Ha nem élted túl, lapozz a 206-ra!
+llangol, miközben szavak az elmédben. Egy ősi, erőteljes varázslatot rejt a pergamen: a Vérégetés. Leírása: ezt a varázslatot akkor mondhod el, ha a varázserőd értéke pontosan nulla (ha ennél akár eggyel is több, akkor nem használható). Hatása? Az életerődből pontokat áldozhatsz fel a varázserő ideiglenes növelésére. Azaz, ha az aktuális életerődből feláldozol 6 pontot (ezt le kell vonnod), akkor a varázserőd 6 ponttal növekedik. Az így nyert varázserő ugyanúgy használható fel, mint az eredeti, az életerő vesztesége pedig a szokásos módszerekkel visszagyógyítható. A változások nem maradandóak!
+
+A varázslatot így ördögi helyzetekben mindig kéznél legyen!
+
+Lapozz a 149-re!
+
+=== 026 ===
+A pergamen hirtelen fellángol, miközben egy ősi, erőteljes varázslat formálódik az elmédben: a Vérégetés. Ezt a varázslatot akkor mondhatod el, ha a varázserőd értéke pontosan nulla (ha ennél akár eggyel is több, akkor nem használható). Hatásával az életerődből pontokat áldozhatsz fel a varázserő ideiglenes növelésére. Azaz, ha az aktuális életerődből feláldozol X pontot (ezt le kell vonnod), akkor a varázserőd X ponttal növekedik. Az így nyert varázserő ugyanúgy felhasználható, mint az eredeti, az életerő pedig a szokásos módszerekkel visszagyógyítható. A változások nem maradandóak!
+
+A varázslatot írd fel a Kalandlapodra, hogy szükség esetén mindig kéznél legyen!
+
+=== 027 ===
+Mond neked az a név valamit, öreg, hogy Yhrin?
+
+Az idős ember valamit mormog az orra alatt, majd megtiltakozva megrázza a fejét.
+
+— En szinte semmit nem tudok arról a renegátról! Valamikor egy toronyban élt, aztán az egyik reggel eltűnt. Senki sem tudja, hova, de azt is regélik, hogy még mindig odabenn van. Persze ez különös lenne, mert ennie és inni neki is kell.
+
+Ha a toronyról kérdezed az öreget, lapozz a 196-ra!
+Ha a Démon Szeméről, lapozz a 250-re!
+Ha az általa gyűjtött növényekről, lapozz a 283-ra!
+Ha befejezed a kérdezést, lapozz a 98-ra!
+
+írd fel a Kalandlapodra, hogy szükséged van még egy varázslatot megtanulnod!
+
+=== 028 ===
+A sziklafal nagyon meredek, ellenben a kapaszkodást a kiálló kövek megkönnyítik. Talán sikerülni foga feljutás. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 256-ra!
+Ha nem sikerült, lapozz a 45-re!
+
+=== 029 ===
+Minden erőddel a fal kibontására koncentrálsz,
+azonban minden próbálkozásod kudarcba fullad.
+Akárki építette ezt a falat, értette a dolgát. Puszta erőVel itt aligha boldogulsz. Lemondóan sóhajtasz
+
+Ha tovább vizsgálódsz a fáklyafénynél, lapozz a 88-ra!
+Ha benyúlsz a lyukon, lapozz a 192-re!
+
+Má
+
+=== 030 ===
+— Sajnálom, de nem érdekel a történeted — mondod
+az idegennek, és lassan hátrálva a kijárat felé indulsz
+
+Az idegen szomorúan néz rád, majd... emberi formáját elveszítve másodpercek alatt egy gigantiku
+szörnyeteggé alakul át
+
+Alakváltó: életerő 28, támadási képesség 18, védettség szint 18. A szörnyeteg 3-8 életerőpont veszteség
+okoz. (Minden, az alakváltót ért sebzésből vonj le 2
+pontot, ennyit regenerálódik. )
+
+Ha sikerült legyőznöd az alakváltót, lapozz az 208-ra!
+Ha veszítettél, lapozz a 232-re!
+
+=== 031 ===
+Nekivágsz a gyaloglásnak, és hamarosan ismét ott
+állsz a napkör monolitjai között. Keletről mintha a
+tenger morajlását hallanád, északon komor kősivataag
+terül el, ameddig a szem ellát.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a kősivataggal próbálkozol, lapozz a 104-re!
+
+=== 032 ===
+Úgy gondolod, egy remete aligha tudhat túl sokat a toronyról, ezért ismét nekikezdesz a nyomkeresésnek. Elég sok időt szánsz rá, de hiába, fáradozásod ezúttal hiábavaló. Ráadásul mire visszatérsz oda, ahol az öregembert láttad, az sincs sehol. Kénytelen vagy visszatérni a romokhoz. Késő délutánra jár már az idő, amikor megérkezel a toronyhoz.
+
+=== 033 ===
+Minden erődet és ügyességedet összeszedve rohanni
+kezdesz ellenkező irányban, ahol a fejvadász és az ál-
+lata várakoznak. (Dobj tízszer a hatoldalú kockával,
+majd add össze a dobások eredményét! Ez az általad
+megtett távolság. Utána dobj tízszer a fejvadásznak
+is, s add össze az ő dobásait is! Ez az ő és az ál-
+lata által megtett távolság. Ha az ő távolsága na-
+gyobb, akkor utolért, ha az övé kisebb vagy egyenlő,
+akkor sikerült elmenekülnöd.)
+
+Ha utolért, lapozz a 83-ra!
+Ha sikerült elmenekülnöd, lapozz a 168-ra!
+
+=== 034 ===
+Az épület meglehetősen régóta elhagyatottan állhat, a nyomok erre utalnak. Ám minden idegszáladdal érzed, hogy valahonnan figyel valaki, bármerre is járj. Az épület három nagyobb helyiségre tagolódik, melyeket egy jókora folyosó köt össze.
+
+=== 035 ===
+Kétségbeesetten próbálsz elhajolni a csatabárd elől, de nem vagy elég fürge. A nehéz fegyver az oldaladba vág, súlyos sebet okozva ezáltal (veszítesz 8 életerőpontot). Minden erődet összeszedve szembefordulsz ellenfeleddel, hogy összemérd vele a tudásodat. Szerencsére a többi halott harcos nem mozdul, mert ennyivel aligha bírnál.
+
+=== 036 ===
+Hamarosan ismét ott állsz a bejáratot jelző sápadt
+fényfolt előtt, mely a felszínre vezető alagutat jelzi
+
+Ha balra indulsz a barlangban, lapozz az 58-ra!
+
+Ha jobbra, lapozz a 121-re!
+
+Ha visszatérsz a felszínre, és észak felé folytatod az
+utadat, lapozz a 146-ra!
+
+Az arcodra illeszted a maszkot. Készen állsz rá
+hogy bármelyik pillanatban letéped magadról, ám
+amikor a bőröd az aranyhoz ér, apró szikrák villannak
+fel a szemed előtt, és a maszk egybeolvad az arcodda
+(Egy elátkozott varázsmaszkot vettél magadhoz. lt
+nentől kezdve nem kell kezdeményező dobást tenne
+mindig, minden ellenfeled hamarabb fog támadn
+mint te. Azaz, ha ketten rontanak rád, akkor először ők
+ketten jönnek — kezdeményezés nélkül —, s csupán legutoljára te.)
+
+Ha folytatod a láda szétszedését, lapozz a 160-ra!
+Ha a szarkofághoz mégy, lapozz a 156-ra!
+Ha belelapozol a könyvbe, lapozz a 21-re!
+
+=== 037 ===
+Hamarosan ismét ott állsz a bejáratot jelző sápadt
+fényfolt előtt, mely a felszínre vezető alagutat jelzi
+
+Ha balra indulsz a barlangban, lapozz az 58-ra!
+
+Ha jobbra, lapozz a 121-re!
+
+Ha visszatérsz a felszínre, és észak felé folytatod az
+utadat, lapozz a 146-ra!
+
+Az arcodra illeszted a maszkot. Készen állsz rá
+hogy bármelyik pillanatban letéped magadról, ám
+amikor a bőröd az aranyhoz ér, apró szikrák villannak
+fel a szemed előtt, és a maszk egybeolvad az arcodda
+(Egy elátkozott varázsmaszkot vettél magadhoz. lt
+nentől kezdve nem kell kezdeményező dobást tenne
+mindig, minden ellenfeled hamarabb fog támadn
+mint te. Azaz, ha ketten rontanak rád, akkor először ők
+ketten jönnek — kezdeményezés nélkül —, s csupán legutoljára te.)
+
+Ha folytatod a láda szétszedését, lapozz a 160-ra!
+Ha a szarkofághoz mégy, lapozz a 156-ra!
+Ha belelapozol a könyvbe, lapozz a 21-re!
+
+=== 038 ===
+A pikkelyes rém félelmetes hangokat hallatva múlik
+ki a lábad előtt, fegyvered véres barázdákat szántott a
+testén. Miközben a szörny a haláltusáját vívja, a közeli
+szakadék aljáról halk sivítással egy érdekes formájú
+tárgy emelkedik ki egy forgószél tölcsérén lovagolva.
+A tárgy közepén egy hatalmas, véreres szem látható,
+mely gonoszul mered a világra.
+
+Ebben a pillanatban a pikkelyes rém talpra ugrik, a
+rajta ejtett sebek nyomtalanul eltűnnek. Csupán egy
+keskeny repedés és az ismeretlen tárgy választ el benneteket egymástól.
+
+Ha megrohanod a szörnyet, lapozz a 108-ra!
+Ha megvárod, mi történik, lapozz a 258-ra!
+Ha rátámadsz a tárgyra, lapozz a 114-re!
+
+. Nem látod értelmét a keresés folytatásának, ezért
+inkább visszaindulsz a toronyhoz. Késő délutánra jár
+, amikor megérkezel a romokhoz.
+
+Ha letáborozol a torony mellett, lapozz a 122
+a szétnézel a romok között, lapozz a 207-re!
+
+=== 039 ===
+Nem látod értelmét a keresés folytatásának, ezért
+inkább visszaindulsz a toronyhoz. Késő délutánra jár
+már az idő, amikor megérkezel a romokhoz.
+
+Ha letáborozol a torony mellett, lapozz a 122-re!
+Ha szétnézel a romok között, lapozz a 207-re!
+
+=== 040 ===
+Ha beszéltél egy felégetett faluban egy fehér ruhás
+idegennel Yhrin xinafról, lapozz a 116-ra!
+Ha nem beszéltél, lapozz a 221-re!
+
+A rém véresen hanyatlik vissza a hullámok közé, s
+hamarosan csupán néhány vércsepp emlékeztet acsafára. Fegyveredet kézben tartva folytatod az utadat, s
+Nem sokkal később szétzúzódott testet pillantasz
+e, érdekes
+
+arca egyértelművé teszi: egy
+Még él, bár talán csak a varázserejének köszönhető-
+
+En. A sebei túl súlyosak ahhoz, hogy teljesen meggyó-
+
+gyíthassa magát, ám hihetetlen szívóssággal kapaszko-
+
+dik az életbe.
+
+,. Amikor meghallja a lépteidet, feléd fordítja a fejét,
+
+ÉS nyöszörögni kezd:
+
+Folytatod a szint átfésülé ám nem sokkal később — Segíts, és én minden kívánságodat teljesítem!
+ráébredsz, immáron semmi használható nyom nincs.
+ahol folytathatnád a kutatást. Ha segítesz neki, lapozz a 223-ra!
+I Ha Végzel vele, lapozz a 295-re!
+Ha visszatérsz a szoborhoz, lapozz a 10-re! !  Haelőbb a xinaf nevét kérdezed, lapozz a 119-re!
+
+Ha a lyukhoz térsz vissza, lapozz a 273-ra! Ha megpróbálod kikérdezni, lapozz a 182-re!
+
+=== 041 ===
+Folytatod a szint átfésülését, ám nem sokkal később ráébredsz, immáron semmi hasznosítható nyom nincs, ahol folytathatnád a kutatást.
+
+Ha visszatérsz a szoborhoz, lapozz a 10-re!
+Ha a lyukhoz térsz vissza, lapozz a 273-ra!
+
+=== 042 ===
+A rém véresen hanyatlik vissza a hullámok közé, s hamarosan csupán néhány vércsepp emlékeztet a csatára. Fegyveredet kézben tartva folytatod az utadat, s nem sokkal később egy szétözödött testet pillantasz meg az egyik szikla tetején. Hegyesedő füle, érdekes arca egyértelművé teszi: egy xinaf hever előtted.
+
+Még él, bár talán csak a varázsererejének köszönhetően. A sebei túl súlyosak ahhoz, hogy teljesen meggyógyíthassa magát, ám hihetetlen szívóssággal kapaszkodik az életbe.
+
+Amikor meghallja a lépteidet, feléd fordítja a fejét, és nyöszörögni kezd:
+– Segíts, és én minden kívánságodat teljesítem!
+
+Ha segítesz neki, lapozz a 223-ra!
+Ha végzel vele, lapozz a 295-re!
+Ha előbb a xinaf nevét kérdezed, lapozz a 119-re!
+Ha megpróbálod kikérdezni, lapozz a 182-re!
+
+=== 043 ===
+Igazán büszke lehetsz magadra, két ellenfélle
+szemben sem vallottál kudarcot. Igaz, nem volt könny
+győzelem, de mindig csak a végeredmény a fonto:
+Gyorsan átkutatod a fejvadászt, de a buzogányán kívi
+(1-6 életerőpont veszteséget okoz) semmi érdemleges
+nem találsz (ha akarod, írd fel a Kalandlapodra)
+
+Ismeretlen vidéken jársz. Vajon merre kell a re:
+gátot keresned? Keleten mintha a tenger morajlásá
+hallanád, északon komor kősivatag terül el, ameddi
+szem ellát. Egyedül nyugaton akad számodra némi remény, a távolból ugyanis vastag, fekete füstoszlo
+száll az ég felé.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a kősivataggal próbálkozol, lapozz a 104-re!
+Ha a füst irányába mégy, lapozz a 202-re!
+
+A halott harcosok már évszázadok óta nyugodtnak ezen a helyen. Ki tudja, a torony ura miért gyű
+tötte egybe ezeket a hősöket? Mindenesetre, amik
+végigsétálsz a halottak között, egyikük karján hal
+nyan derengeni látod a csuklópántot. Minden tapas:
+talatod azt súgja, mágikus karpántról lehet szó. Er
+kes, ám mindenekfelett hasznos tárgyról.
+
+Ha elveszed a karpántot, lapozz a 142-re!
+Ha elhagyod a szobát, lapozz a 299-re!
+Ha megvizsgálod a pergament, lapozz a 2.
+
+=== 044 ===
+A halott harcosok már évszázadok óta nyugodnak ezen a helyen. Ki tudja, a torony ura miért
+szedett egybe ezeket a hősöket? Mindenesetre, amikor végigsétálsz a halottak között, egyikük karján
+homályosan derengeni látod a csuklópántot. Minden tapasztalatod azt súgja, mágikus karpántról lehet szó. Értékes, ám mindenekfelett hasznos tárgyról van szó.
+
+Ha elveszed a karpántot, lapozz a 142-re!
+Ha elhagyod a szobát, lapozz a 299-re!
+Ha megvizsgalod a pergament, lapozz a 255-re!
+
+=== 045 ===
+Már majdnem eléred a kötél lelógó végét, amikor
+megcsúszik a lábad, s alázuhansz a mélybe. (Dobj
+egy kockával, ennyi életerőpontot veszítettél!)
+
+Ha még élsz, ismét megpróbálkozhatsz a feljutással,
+lapozz a 28-ra!
+
+Eszed ágában sincs megnézni, mi vagy ki van a
+kunyhóban. Sohasem vállalsz felesleges kockázatot.
+Gondosan elkerülöd a kunyhót, s valószínűleg ennek
+köszönheted az életed, ugyanis hirtelen kirobban a
+kunyhó egyik fala, és egy fekete páncélba öltözött lovag ront elő.
+
+Sopa lovag: életerő 38, támadási képesség 22, védettségi szint 25. A lovag két támadást végez minden körben a pallosával, és minden sikeres találata 1 ponttal
+csökkenti maradandóan a támadási képességed.
+
+Ha sikerült legyőznöd a lovagot, lapozz a 24-re!
+Ha veszítettél, lapozz a 138-ra!
+
+=== 046 ===
+Eszed ágában sincs megnézni, mi vagy ki van a
+kunyhóban. Sohasem vállalsz felesleges kockázatot.
+Gondosan elkerülöd a kunyhót, s valószínűleg ennek
+köszönheted az életed, ugyanis hirtelen kirobban a
+kunyhó egyik fala, és egy fekete páncélba öltözött loVag ront elő.
+
+Fekete lovag: életerő 38, támadási képesség 22, védettség szint 25. A lovag 2-12 életerőpont veszteséget
+"Ra pallosával, és minden sikeres találata 1 ponttal
+
+€nti maradandóan a támadási képes:
+
+égedet
+
+A sikerült legyőznöd a lovagot, lapozz az 242-re!
+A Veszítettél, lapozz a 138-ra!
+
+=== 047 ===
+A bal oldali ajtó nyomban feltárul előtted, amik
+kimondod a megfejtést. Egy félhomályban úszó hely
+get látsz, melynek közepén egy fényoszlopot pillar
+tasz meg, melynek közepén mintha ezer apró csilla
+lebegne. A szoba ettől a fényoszloptól eltekintve telje-
+
+sé
+
+Ha megvizsgálod a fényoszlopot, lapozz a 200-ra!
+Ha inkább elhagyod a szobát, lapozz a 299-re!
+
+Nem akarsz túl sok időt várakozásra pazarolni, ezé
+néhány eseménytelen óra után összepakolsz, s arra a
+elhatározásra jutsz, hogy talán másként kellene hozz;
+kezdened Yhrin xinaf kereséséhez.
+
+Ha szétnézel a torony romjai között, lapozz a 207-re!
+Ha inkább megpróbálsz olyasvalakit keresni, aki
+környéken él, lapozz a 294-re!
+
+=== 048 ===
+Nem akarsz túl sok időt várakozásra pazarolni, ezért
+néhány eseménytelen óra után összepakolsz, s arra
+az elhatározásra jutsz, hogy talán másként kellene hozzákezdened Yhrin xinaf kereséséhez.
+
+Ha szétnézel a torony romjai között, lapozz a 207-re!
+Ha inkább megpróbálsz olyasvalakit keresni, aki a
+környéken él, lapozz a 294-re!
+
+=== 049 ===
+A hullazabáló iszonytató ellenfél, a támadásai ki-számíthatatlanok, s ráadásul olyan vastag a bőre, hogy
+képtelen vagy igazán komoly sebet ejteni rajta. Ami-kor már teljesen sarokba szorultál, hirtelen egy hatalmas lepellé alakul át, majd rád veti magát, s a földre
+döntve beborít. Innen nincs számodra menekülés
+Kalandod véget ért!
+
+=== 050 ===
+Ha csak jól megnézed a fényoszlopot, lapozz a 247-re!
+Ha meg is érinted, lapozz a 291-re!
+
+=== 051 ===
+Csendben lemászol a fáról, és megpróbálsz a szörNyeteg hátába kerülni. A hatalmas termetű lény azonban az utolsó másodpercben szembe fordul veled.
+
+Alakváltó: életerő 28, támadási képesség 18, védett-
+5É8 szint 18. A szörnyeteg 3-8 életerőpont veszteséget
+
+Okoz. (Minden, az alakváltót ért sebzésből vonj le 2
+Pontot, ennyit regenerálódik.)
+
+Ha sikerült legyőznöd az alakváltót, lapozz az 105-re!
+a veszítettél, lapozz a 276-ra!
+
+=== 052 ===
+Mintegy három óra múlva egy alacsony domb tetején tengert pillantod meg. Csak idődet fecsérelted erre a kitérőre. Itt biztosan nem találod meg Yhrin xinafot, Choler Magiszter renegát fiát. S ha őt nem találod meg, akkor a Démon szeme sem lesz egyéb múló álomképnél.
+
+Ha a füst irányába mégy, lapozz a 202-re!
+Ha a kősivataggal próbálkozol, lapozz a 104-re!
+
+=== 053 ===
+A szörnyeteg veszélyes ellenfél, ám annak,
+hosszú, kalandozással töltött évek tanítottak a h.
+nem okozhat különösebb problémát. Igaz, nem úszta
+meg sebesülés nélkül az összecsapást, de sokkal r
+szabb is lehetett volna. A bestia bőre rendkívül e
+nek tűnik, s a fogai, valamint a karmai díszes trófeá
+
+Ha kizsigereled a szörnyeteget, lapozz a 174-re!
+Ha ismét álomra hajtod a fejed, lapozz a 275.
+
+=== 054 ===
+Nem sajnálod a gyógyitalokat, sem a varázserődet
+arra, hogy Yhrint talpra állítsd. Hiszen a renegát a segítségedre lesz cserébe, amit érte tettél lé
+
+Yhrin xinaf állapota rohamosan javul. Amikor az
+utolsó seb is begyógyul a testén, feléd fordul, és gúnyosan elmosolyodik ű
+
+— Ostoba vagy! Halj meg!
+
+Kinyújtott ujjaiból ezernyi apró villám vágódik a
+testedbe, s mielőtt bármit is tehetnél, a Halál Istene
+máris magához szólít. Nem kellett volna hinned a
+Xxinaf hamis ígéretének. Kalandod véget ért!
+
+=== 055 ===
+Nem csak a szarkofág hívja fel idelent a figyelmedet. A fal mellett hatalmas könyves szekrények állnak,
+ám csupán egyetlen könyv árválkodik poros polcaikon
+IA szarkofág mögött egy félig bezúzott fedelű tölgyfa
+láda látszik
+
+Ha megvizsgálod a könyvet, lapozz a 21-re!
+Ha a ládát nézed meg, lapozz a 115-re!
+
+Úgy érzed, erre hiába keresnéd Yhrin xinafot, ezért
+Visszafordulsz. Átvágsz az erdőn, majd késő délután
+ismét ott állsz a napkör monolitjai között. Keletről
+Mintha a tenger morajlását hallanád, északon komor
+Kösivatag terül el, ameddig a szem ellát. Nyugaton a
+fávolból vastag, fekete füstoszlop száll az ég felé
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a kősivataggal próbálkozol, lapozz a 104-re!
+Ha a füst irányába mégy, lapozz a 202-re!
+
+=== 056 ===
+(Ha a szarkofágos teremben olvastad el ezt a sorozatot, hanem később, akkor lapozz vissza oda, ahonnan idelapoztál!)
+Nem érdekelnek az idegen problémái. A kötél elég
+ideig egy helyben tartja majd ahhoz, hogy biztonságos
+helyre távozz. Hamarosan ismét a felszínen találod
+magad, az erdő fáitól körülvéve. Észak felé folytattad
+az utadat.
+
+Lapozz a 146-ra!
+
+=== 057 ===
+Illendően elköszönsz az öregtől, majd miután annak
+figyelme ismét a növények felé fordul, te is nekilvágs
+utadnak.
+
+Ha visszatérsz a toronyhoz, lapozz a 39-re!
+Ha megpróbálkozol a növénygyűjtéssel, lapozz a 8-ra!
+
+=== 058 ===
+Balra indulsz, és hamarosan egy alvó, emberi alakot
+pillantasz meg a barlang hideg kövén kuporogni. Tel-
+jesen meztelen. Mellette egy félig széttépett és felfalt
+nyúl hever a földön.
+
+Ha felébreszted az idegent, lapozz a 89-re!
+Ha először megkötözöd, lapozz a 137-re!
+Ha csendben visszavonulsz, lapozz a 216-ra!
+
+Alaposan megvizsgálod a szarkofágot. Végignyom-
+kodod a faragott díszítéseket, de ez nem vezet ered-
+ményre. Ezután az emelvényt nézed át, s csakhamar
+rádöbbensz, hogy a szarkofág alatt egy apró szerke-
+zetet helyeztek el.
+
+Ha működésbe hozod a szerkezetet, lapozz a 217-re!
+Ha átkutatod a halottat, lapozz a 172-re!
+
+=== 059 ===
+Alaposan megvizsgálod a szarkofágot. Végignyom-
+kodod a faragott díszítéseket, de ez nem vezet ered-
+ményre. Ezután az emelvényt nézed át, s csakhamar
+rádöbbensz, hogy a szarkofág alatt egy apró szerke-
+zetet helyeztek el.
+
+Ha működésbe hozod a szerkezetet, lapozz a 217-re!
+Ha átkutatod a halottat, lapozz a 172-re!
+
+=== 060 ===
+A pikkelyes rém iszonyú csapásai feltépik a húsdat, testedet a fájdalom lüktetése hatja át. A tűhegyes fogak beléd marnak, s többé már el sem engednek.
+Kalandod véget ért!
+
+=== 061 ===
+Tegyél szerencsepróbát!
+Ha sikerült, lapozz a 266-ra!
+Ha nem sikerült, lapozz a 145-re!
+
+— Ahova készülök, minden védelemre szüksége lesz — gondolkozol hangosan. — Talán egy oltalmazó eszköznek tudnám leginkább a hasznát venni.
+
+A xinaf bólint, és ruhája alól egy homlokpántot vesz elő, melyet ékkövek díszítenek elöl.
+
+Amíg ezt a tárgyat viseled, egy láthatatlan erőt formálódik előtted, mely a rád irányuló, életerőpontot vesztést okozó varázslatok hatóerejét a felére csökkenti (azaz, ha egy Villámcsapást mondanak rád, az 8 pont helyett csak a felét — felfelé kerekítve — 4 életerőpontot fogsz elveszíteni).
+
+Megköszönöd az ajándékot, majd a kijárat felé indulsz. Hamarosan ismét a felszínen találod magad, erdő fáitól körülvéve. Észak felé folytatod az utadat.
+
+Lapozz a 146-ra!
+
+=== 062 ===
+— Ahova készülök, minden védelemre szüksége lesz — gondolkozol hangosan. — Talán egy oltalmazó eszköznek tudnám leginkább a hasznát venni.
+
+A xinaf bólint, és ruhája alól egy homlokpántot vesz elő, melyet ékkövek díszítenek elöl.
+
+Amíg ezt a tárgyat viseled, egy láthatatlan erőt formálódik előtted, mely a rád irányuló, életerőpontot vesztést okozó varázslatok hatóerejét a felére csökkenti (azaz, ha egy Villámcsapást mondanak rád, az 8 pont helyett csak a felét — felfelé kerekítve — 4 életerőpontot fogsz elveszíteni).
+
+Megköszönöd az ajándékot, majd a kijárat felé indulsz. Hamarosan ismét a felszínen találod magad, erdő fáitól körülvéve. Észak felé folytatod az utadat.
+
+Lapozz a 146-ra!
+
+=== 063 ===
+Nincs kedved csatázni, ezért inkább kivárod, míg elesülnek a harci zajok (a pihenés miatt 2 életerőpontot visszanyertél). Közel egy óra telik el, mire folytathatod az utadat.
+
+Két mérföldnyi gyaloglás után egy feldúlt falura akadsz. Mindenfelé halottak hevernek, a kunyhók lángokban állnak, a támadók szörnyű pusztítást végeztek. Az egyik égő kunyhóból mintha nyöszörgést hallanál.
+
+Ha megnézed, mi az, lapozz a 268-ra!
+Ha nem kockáztatsz, lapozz a 130-ra!
+
+=== 064 ===
+Elgondolkozva nézel magad elé, majd kimondod a helyes meséjlést. Halk csengettyűszó hallatszik, s a korong a következő másodpercben eltűnik a szemed elől. Folytathatod az utadat lefelé.
+
+Talán már ötszáznál is több lépcsőn ereszkedt alá, amikor végre egy tornácba torkollik a lejárat. A torna közepén nyitott szarkofágban egy öreg férfi fekszik. Szemei csukva vannak, arca pedig végtelenül régi és békés. Halottnak tűnik.
+
+Ha körbenézel benn, lapozz a 235-re!
+Ha megvizsgálod az idős férfit, lapozz a 156-ra!
+
+=== 065 ===
+Minden eshetőségre felkészülve elindulsz, hogy felfedezd a torony legalsó szintjét. A csigalépcső túloldalán hamarosan egy hatalmas szoborra akadsz, mely egy démonszerű lényt ábrázol. A szobor két oldalán egy-egy ajtó látható.
+
+=== 066 ===
+Tétován megrázod a fejed. Fogalmad sincs arról, r
+lehet a helyes válasz.
+
+— Adj nekem az életerődből tízet, s segítek nekec
+egy kicsit — hallod a varázstárgy felől a hangot
+
+Ha körbenézel idelent, lapozz a 235-re!
+a megvizsgálod az idős férfit, lapozz a 156-ra!
+
+Ha elfogadod az alkut, lapozz a 11-re!
+Ha nem érdekel az ajánlat, lapozz a 180.
+
+b
+
+=== 067 ===
+Tétován megrázod a fejed. Fogalmad sincs arról, r
+lehet a helyes válasz.
+
+— Adj nekem az életerődből tízet, s segítek nekec
+egy kicsit — hallod a varázstárgy felől a hangot
+
+Ha körbenézel idelent, lapozz a 235-re!
+a megvizsgálod az idős férfit, lapozz a 156-ra!
+
+Ha elfogadod az alkut, lapozz a 11-re!
+Ha nem érdekel az ajánlat, lapozz a 180.
+
+=== 068 ===
+Csupán centimétereken múlt, de átjutottál. A víz sarkadat mossa, ám odaát vagy. A vízesés melletti ösvény felfelé vezet, azonban mintha látnál a közepén csillogni valamit.
+
+=== 069 ===
+A vitrin tetejét leemelve rejtett csöveken keresztül szürke gáz áramlik feléd. Néhány pillanat múlva eléri, és bizonyára teljesen beborít majd.
+
+Ha megpróbálsz kimenekülni innen, lapozz a 158-ra!
+Ha nem foglalkozol a füsttel, lapozz a 270-re!
+Ha magadra mondtál egy Nagy Tüdő varázslatot, lapozz a 231-re!
+Ha nem Nagy Tüdő varázslatot mondtál magadra, lapozz a 17-re!
+
+=== 070 ===
+Kétségbeesetten kapsz valami támaszték vagy kaparásadó után, azonban a kezed csak az üres levegőt markolja. Hideg vízbe csobbansz, a fáklyád egy szempillantás alatt elalszik. Erős sodrás rag és visz magával lefelé, a föld gyomra felé. Kalandod véget ért!
+
+=== 071 ===
+Mindenre felkészülve indulsz a berregő hang felé. Hamarosan egy apró gömböt pillantasz meg a levegőben, ez adja ki magából a különös zajt. A gömb hét apró, csillogó drágakövek díszítik.
+
+Ha megpróbálod megtámadni a gömböt, lapozz a 280-ra!
+Ha belépsz az épületbe, lapozz a 34-re!
+A nyomokat követve nem sokkal később
+egy csony, görnyedt hátú fickót pillantasz meg, aki növé-
+nyeket gyűjt az ösvény melletti bokrok között. Lassan
+kimérten mozog, s amikor feléd fordul, egy évtized-
+del barázdált arcú férfiút látsz.
+
+Hosszan figyel téged, majd mintha semmi sem tör-
+tént volna, ismét a növények gyűjtésére koncentrál.
+Kosarában már több maroknyi levél, bogyó és gyü-
+mölcs pihen; az öreg tagadhatatlanul szorgalmas.
+
+Ha beszédbe elegyedsz vele, lapozz a 84-re!
+Ha inkább keresel valaki mást, lapozz a 153-ra!
+
+=== 072 ===
+A nyomokat követve nem sokkal később
+egy csony, görnyedt hátú fickót pillantasz meg, aki növé-
+nyeket gyűjt az ösvény melletti bokrok között. Lassan
+kimérten mozog, s amikor feléd fordul, egy évtized-
+del barázdált arcú férfiút látsz.
+
+Hosszan figyel téged, majd mintha semmi sem tör-
+tént volna, ismét a növények gyűjtésére koncentrál.
+Kosarában már több maroknyi levél, bogyó és gyü-
+mölcs pihen; az öreg tagadhatatlanul szorgalmas.
+
+Ha beszédbe elegyedsz vele, lapozz a 84-re!
+Ha inkább keresel valaki mást, lapozz a 153-ra!
+
+=== 073 ===
+A kőevő túlságosan kiéhezett ahhoz, hogy asérüléseivel foglalkozzon. Egyszerűen győzni ak:
+ennek érdekében önmagát sem kíméli. Csapás csapá
+követ, s egyszer csak a földön találod magad, s elle
+feled fenyegetően tornyosul feléd. Nincs esélyed
+Kalandod véget ért!
+
+Ha először a sárkánykarmos könyvet veszed a kezed-
+, lapozz a 129-re!
+a inkább azt, amelyiken a halál szimbóluma látható,
+lapozz a 210-re!
+
+=== 074 ===
+— Mit keresel itt? — kérdezi vé egy hosszú
+hallgatás után. Hangja kellemes, ám valahogy tartasz tőle. A törékeny külső mö-
+gött veszélyes ellenfél rejtőzhet. Nem art, ha gondosan
+megfontolod a válaszodat.
+
+Ha beszélsz neki a Démon Szeméről, lapozz a 272-re!
+Ha azt mondod, Yhrin xinafot akarod felkutatni, la-
+pozz a 99-re!
+
+Ha a neve felől érdeklődsz, lapozz a 22-re!
+
+Ha kincsvadásznak adod ki magad, lapozz a 163-ra!
+
+=== 075 ===
+A legtöbb papírból annyi sem maradt, amennyit érCemes lenne szemügyre venni. Ám két könyv vi-
+73. Szonylag jó állapotban vészelte át a tüzet, az egyik fedelén egy sárkánykarom rajzolata látszik, míg a másia kon a halál szimbóluma.
+
+A kőevő túlságosan kiéhezett ahhoz, hogy asérüléseivel foglalkozzon. Egyszerűen győzni ak:
+ennek érdekében önmagát sem kíméli. Csapás csapá
+követ, s egyszer csak a földön találod magad, s elle
+feled fenyegetően tornyosul feléd. Nincs esélyed
+Kalandod véget ért!
+
+=== 076 ===
+Hiába töröd a fejed, képtelen vagy rájönni a válasz.
+ra, ezért befejezed a pergamen vizsgálatát. Először ara gondolsz, magaddal viszed az írást, ám már az els
+óvatos érintés elárulja, hogy ha elmozdítod a helyérő
+akkor porrá omlik szét. Elhagyod a helyiséget.
+
+Lapozz a 299-re!
+
+KA
+
+A nyomok követése nem igényel különösebb ügyes-
+
+séget. Ejszakai látogatód hatalmas, karmos tapp:
+csokkal rendelkezett, s a méreteit tekintve legalább
+rom méter magas lehetett. Először medvére gyanakodsz, azonban elég medvenyomot láttál ahhoz, hc
+tudd, ezúttal más élőlénnyel hozott össze a sors
+
+Nem sokkal később egy sötét barlanglejáratra bukkansz; a nyomok egyenesen ide vezetnek.
+
+Ha bemégy a barlangba, lapozz a 230-ra!
+Ha inkább észak felé indulsz, lapozz a 146-ra!
+
+=== 077 ===
+A nyomok követése nem igényel különösebb ügyességet. Éjszakai látogatód hatalmas, karmos tappancsokkal rendelkezett, s a méreteit tekintve legalább három méter magas lehetett. Először medvére gondolsz, azonban elég medvenyomot láttál ahhoz, hogy tudd, ezúttal más élőlénnyel hozott össze a sors.
+
+Nem sokkal később egy sötét barlanglejáratra bukkansz; a nyomok egyenesen ide vezetnek.
+
+Ha bemégy a barlangba, lapozz a 230-ra!
+Ha inkább észak felé indulsz, lapozz a 146-ra!
+
+=== 078 ===
+"Ha belépsz a bal oldali ajtón, lapozz a 109-re!
+"Ha a jobb oldali ajtót választod, lapozz a 203-ra!
+Ha folytatod a szint átfésülését, lapozz a 261-re!
+
+Gyorsan elmormolsz egy Semlegesítést (ne felejtsd
+el levonni a varázslatpontot). Az idegen a varázslat
+Hatására hihetetlen átalakuláson megy keresztül. A bő-TE elkékül, a haja aranyszínűvé változik. A ruhái a
+semmiből ölelik körbe. Egy másik xinaf áll előtted!
+
+— Köszönöm! — mondja, miután befejeződik az át-alakulás. — Hogyan hálálhatnám meg?
+
+Ha valami oltalmazó tárgyat kérsz, lapozz a 62-re!
+
+a egy különleges fegyvert, lapozz a 150-re!
+
+a tanácsot, lapozz a 282-re!
+
+a az életerődet szeretnéd megnövelni, lapozz a 9-re!
+
+=== 079 ===
+Gyorsan elmormolsz egy Semlegesítést (ne felejtsd el levonni a varázserő pontot). Az idegen a varázslathatására hihetetlen átalakuláson megy keresztül. A böre elkékül, a haja aranyszínűvé változik. A ruhái a semmiből ölelik körbe. Egy másik xinaf áll előtted!
+
+> Köszönöm! — mondja, miután befejeződik az átalakulás. — Hogyan hálálhatnám meg?
+
+Ha valami oltalmazó tárgyat kérsz, lapozz a 62-re!
+Ha egy különleges fegyvert, lapozz a 150-re!
+Ha tanácsot, lapozz a 282-re!
+Ha az életerődet szeretnéd megnövelni, lapozz a 9-re!
+
+=== 080 ===
+Nyugodtan pihensz le, ám álmod nyugtalan. Fogak
+villannak fel elmédben, arasznyi hosszúságú karmok.
+melyek a húsodba tépnek, vörösen villogó szemek,
+amik nem sok jót ígérnek számodra.
+
+Kiizzadva riadsz fel. Egy pillanattal később,
+kellene. Éles fájdalmat érzel a válladban (veszíte:
+életerőpontot, és a támadási képességed 4 ponttal
+csökken, amíg meg nem gyógyítod valamiképp a sebet). Zihálva kapsz a kardod után.
+
+Alig egy lépésnyire tőled egy éjfekete vadállat, egy
+ayrabdir vicsorít, majd könnyű mozdulattal ismét rád
+veti magát, ám ezúttal felkészülten fogadod.
+
+Ayrabdir: életerő 18, támadási képesség 12, védettség szint 17. A szörnyeteg 2-7 életerőpont veszteséget
+okoz a harapásával és a karmaival.
+
+Ha sikerült legyőznöd a szörnyeteget, lapozz az 53-ra!
+Ha veszítettél, lapozz a 188-ra!
+
+=== 081 ===
+Azonnal tudod a választ; hát persze, hogy a szé-
+megfejtés. A következő pillanatban a xinaf könyve
+szertefoszlik a kezedben, miközben egy hatalmas erejű
+szélvihar felkap, és anélkül, hogy bármi kárt tenne
+benned, letesz a romos épülettől mintegy ötven lépés
+nyire. Megkönnyebbülten felsóhajtasz. Hát mégis si-
+került elérni a célodat! Elindulsz az épület felé.
+
+Lapozz a 204-re!
+A fekete lovag félelmetes ellenfél, szörnyű csapás
+nem csupán az életerődet szívják el, hanem még a
+harci tudásod is folyamatosan romlana. Bár mindent
+megteszel, ebben a harcban csak vesztes lehetsz. Az
+utolsó parancsnokodat végét ért!
+
+Hirtelen egy nehéz test veti rád magát, és a földre
+döntöl (veszítesz 7 életerőpontot). A Chindon az, hogy
+gyanúsabbnak bizonyult nálad. Mire talpra ugrasz, már
+egy új ellenféllel kell szembenézned.
+
+Goreel fejvadász: életerő 23, támadási képesség 18,
+védettség szint 20. A fejvadász 1-6 életerőpont veszte-
+séget okoz a buzogányával.
+
+Chindon: életerő 18, támadási képesség 16, védett-
+szint 14. A szörnyceteg 2-12 életerőpont veszteséget
+okoz a mancsaival és a harapásaival. (Ne feledd, az el-
+lenfeleid mindketten támadhatnak rád a körben,
+azonban csak egyikükre tamadhatsz!)
+
+Ha sikerült legyőznöd ellenfeleidet, lapozz a 43-ra!
+Ha veszítettél, lapozz a 263-ra!
+
+=== 082 ===
+A fekete lovag félelmetes ellenfél, szörnyű csapás:
+nem csupán az életerődet szívják el, hanem mintha
+
+harci tudásod is folyamatosan romlana. Bár minden
+megteszel, ebben a harcban csak vesztes lehetsz. Kalandod véget ért!
+
+=== 083 ===
+Hirtelen egy nehéz test veti rád magát, és a földre dönt (veszítesz 7 életerőpontot). A chindon az, gyorsabbnak bizonyult nálad. Mire talpra ugrasz, már két ellenféllel kell szembenézned.
+
+Goreel fejvadász: életerő 23, támadási képesség 19, védettségi szint 20. A fejvadász 1-6 életerőpont veszteséget okoz a buzogányával.
+Chindon: életerő 18, támadási képesség 16, védettségi szint 14. A szörnyeteg 2-12 életerőpont veszteséget okoz a mancsaival és a harapásaival. (Ne feledd, ellenfeleid mindketten támadhatnak rád a körben, te azonban csak egyikükre támadhattsz!)
+
+Ha sikerült legyőznöd ellenfeleidet, lapozz a 43-ra!
+Ha veszítettél, lapozz a 263-ra!
+
+=== 084 ===
+Lassan közeledsz felé, kardod a hüvelyében marnem akarod megrémíteni az öreget. Illendően köSzönsz, amikor megállsz mellette, majd kérdéssel fordulsz hozzá.
+
+Ha Yhrin xinafról kérdezed, lapozz a 27-re!
+
+Ha a toronyról, lapozz a 196-ra!
+
+1 Ha a Démon Szeméről, lapozz a 250-re!
+
+Ha az általa gyűjtött növényekről, lapozz a 283-ra!
+
+=== 085 ===
+A xinaf könyvében minden egyes lapot megvizs:
+álsz. A legtöbb számodra érthetetlen jelekkel van te-leírva, azonban a legutolsón egy versikét találsz:
+
+Finom legény vagyok,
+tű fokán átbújok,
+de ha aztán megharagszom,
+tenger vizét megszalasztom,
+fát tőből kicsavarok,
+ugyan bizony mi vagyok?
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-Jelkulcsok című részhez, és add össze a válasz betűiMek értékét. Ez a szám határozza meg, hova kell a
+Olytatáshoz lapoznod!
+
+a nem tudod a választ, lapozz a 240-re!
+
+=== 086 ===
+Nem hagysz sok időt neki a cselekvésre, habozás nélkül nekirontasz. A szarkofágokból kikelő emberek az esetek többségében csak bajt jelentenek.
+
+Előhalott öregember: életerő 30, támadási képesség 17, védettség szint 22, varázserő 30. Az öregember 1 életerőpontot veszteség okoz az ütéseivel, ám először varázsereje segítségével próbál meg elpusztítani.
+
+Ha sikerült legyőznöd ellenfeledet, lapozz a 92-re!
+Ha veszítettél, lapozz a 245-re!
+
+Nem sajnálod az időt, a fáklyafénynél igyekszel mindent szemügyre venni; a legapróbb részletekre is kiterjed a figyelmed. Már csaknem befejezed, amikor észreveszed, hogy a fáklya vetette fény valami szerkezet árnyékát rajzolja a falra. Hamarosan sikerül megállapítanod, hogy a szerkezet valahol a fejed fölötti falterületen található, érdemes tehát nyújtózkodni egy kicsit. Talán a fal kibontása nélkül is átjuthatsz.
+
+Ha megvizsgálod a lyuk feletti köveket, lapozz a 2-re!
+Ha benyúlsz a lyukon, lapozz a 192-re!
+
+=== 087 ===
+A könyv az összes életerődet elszívja, mielőtt sikerülne elengedned. Iszonyú hatalommal bíró, mágikus alkotás lehet, ám ez téged nem vigasztal. Holtan összehangsz a földre. Kalandod véget ért!
+
+=== 088 ===
+Nem sajnálod az időt, a fáklyafénynél igyekszel
+mindent szemügyre venni; a legapróbb részletekre is
+kiterjed a figyelmed. Már csaknem befejezed, amikor
+észreveszed, hogy a fáklya vetette fény valami szerkeZet árnyékát rajzolja a falra. Hamarosan sikerül meg-állapítanod, hogy a szerkezet valahol a fejed fölötti
+falterületen található, érdemes tehát nyújtózkodni egy
+kicsit. Talán a fal kibontása nélkül is átjuthatsz.
+
+Ha megvizsgálod a lyuk feletti köveket, lapozz a 2-re!
+Ha benyúlsz a lyukon, lapozz a 192-re!
+
+Gyengéden megrázogatod az idegen vállát. Az kiilyitja a szemeit, majd csodálkozva néz rád.
+
+" Nem félsz tőlem? — kérdezi. — Pedig én mindenkit
+Megölök, aki a közelembe jön.
+
+Ha fegyvert rántasz, lapozz az 5-re!
+Ha tovább hallgatod, lapozz a 254-re!
+
+=== 089 ===
+Gyengéden megrázogatod az idegen vállát. Az kinyitja a szemeit, majd csodálkozva néz rád.
+– Nem félsz tőlem? – kérdezi. – Pedig én mindenkit megölök, aki a közelembe jön.
+
+Ha fegyvert rántasz, lapozz az 5-re!
+Ha tovább hallgatsz, lapozz a 254-re!
+
+=== 090 ===
+Az öregember veszélyesebbnek bizonyul, mintsem
+sejtetted volna. A varázslatai elsöprő erejűek, nem
+igazán sikerül hatékonyan védekezned ellenük. Ka.
+landod véget ért!
+
+=== 091 ===
+Nekivágsz a gyaloglásnak, és hamarosan ismét ott
+állsz a napkör monolitjai között. Keletről mintha a
+tenger morajlását hallanád, északon komor kősivatag
+terül el, ameddig a szem ellát.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a kősivataggal próbálkozol, lapozz a 104-re!
+
+=== 092 ===
+(Az öregember holtan hever előtted. Komoly ellenfél
+Molt, azonban a szerencse ezúttal sem hagyott el. A
+kérdéseidre persze nem kaptál választ, de most csak agyőzelem számít
+
+Ha átvizsgálod a halottat, lapozz a 172.
+Ha a szarkofágot veszed szemügyre, lapozz az 59-re!
+
+A csontvázak helyén csupán világos foltok emlékeztetnek a szörnyű összecsapásra. Néhány, a halottak
+helyén heverő tárgy felkelti a figyelmedet.
+
+yakat, lapozz a 4-re!
+félmégy a lépcsőn, lapozz a 219-re!
+Ha idelenn nézel körül, lapozz a 65-re!
+
+=== 093 ===
+A csontvázak helyén csupán világos foltok emlé-
+keztetnek a szörnyű összecsapásra. Néhány, a halottak
+helyén heverő tárgy felkelti a figyelmedet.
+
+Ha megvizsgálod a tárgyakat, lapozz a 4-re!
+Ha felmégy a lépcsőn, lapozz a 219-re!
+Ha idelenn nézel körül, lapozz a 65-re!
+
+=== 094 ===
+Óvatosan leereszkedsz az ösvényen, majd megá
+a folyó partján. A távolság nem kicsi, s most már
+nod, hogy ostoba módon átjöttél erre az oldalra. J
+lett volna odaát maradni.
+
+Lapozz a 197-re!
+
+A falu átkutatása nem vezet eredményre. Ennyi !
+lottat te sem tudnál eltemetni, így jobb híján a tűzdobod a tetemeket, nekik a v
+get. Már a munka n jársz, amikor egy fehér rul
+alak biceg elő a közeli bozótból. Megáll előtted,
+gmér, majd szomorúan elmosolyodik.
+
+Kár, h nem érkeztél hamarabb, ideger
+mondja csendesen. — Mégis, egyetlen kérdést, vor
+kozzon bármire, megválaszolok, mert tetteddel k
+demelted a hálámat.
+
+y adva me
+
+Ha Yhrin xinafról kérdezed, lapozz a 298-ra!
+Ha a Démon Szeméről, lapozz a 220-ra!
+Ha a neve után érdeklődsz, lapozz a 141-re!
+
+=== 095 ===
+A falu átkutatása ne
+lottat te sem tudnál
+
+1 vezet eredményre. Ennyi
+jobb
+
+jan a t
+
+dobod a tet
+
+nekik a végtiszte
+nikor fehér 1
+
+get. Már a m 4
+Megáll előtted
+
+alak bic c
+gigmér, majd szomorúan e
+
+dik
+
+Kár, hogy nem érkeztél hamarabb, idege
+mondja csendesen M, egyetlen kérdést, v
+kozzon bármire, megválaszolok, mert tetteddel k
+
+demelted a hálámat
+
+Ha Yhrin xinafról kérdezed, lapozz a 298-ra!
+Ha a Démon Szeméről, lapozz a 220-ra!
+Ha a neve után érdeklődsz, lapozz a 141-re!
+
+=== 096 ===
+Azonnal rávágod a választ
+
+- Folyó! — Hát persze! Nem volt könnyű, de túlságosan nehéz sem. ik
+
+"Amikor kimondod a megfelelő szót, a Démon Szeme elképzelhetetlen sebességgel kezd forogni, majd a
+következő pillanatban iszonyú erejű mágia vesz körül,
+mely készen áll arra, hogy elemésszen
+
+Ha van nálad egy fekete ékkővel díszített nyaklánc, lapozz a 234-re!
+Ha nincs, lapozz a 140-re!
+
+A szakadék szélessége néhol eléri a fél mérföldet is.
+Nem véletlenül kapta a nevét: a Nagy Repedés. A
+mélyben éles sziklák és egy hihetetlenül sebes sodrású
+folyó, idefent áthatolhatatlan távolság. Amennyire tudod, ezt a helyet mindenki messzire elkerüli, mert goHosz szörnyetegek élnek erre, ráadásul semmi sincs
+ami egy magadfajta kincsvadász érdeklődését felkelthetné.
+
+Ha visszafordulsz, és az erdőn át visszatérsz a napköröz, lapozz a 236-ra!
+leereszkedsz a szakadékba, lapozz a 40-re!
+a az épület felé indulsz, lapozz a 204-re!
+
+=== 097 ===
+Ismét összeszeded minden erődet, majd rövid neki.
+futás után elrugaszkodsz egy kiálló szikláról. Tegyél
+szerencsepróbát!
+
+Ha sikerült, lapozz a 144-re!
+Ha nem sikerült, lapozz a 212-re!
+
+=== 098 ===
+Miután befejezted az öregemberrel folytatott
+szélgetést, folytatod a keresést. Ám hiába szánsz újat
+órákat rá, úgy tűnik, az öreg 1] más nem
+a környéken, Jobb híján visszatérsz a toronyhoz.
+
+Lapozz a 39-re
+
+995
+
+— Yhrin xinafot keresem — válaszolod.
+
+Az öreg meg jét.
+
+— Fogalmam sincs, hol lehet jelenleg a mester —
+leli elgondolkozva, majd a szarkofág felé mutat. —
+azonban elárulhatom, hogy lehetőséged nyílik a követésére, ha nem félsz a veszélyektől. A szarkofá;
+van egy lejárat, melyet mágikus igék védenek.
+
+A következő pillanatban az öregember eltűnik.
+
+Odalépsz a szarkofághoz, és szemügyre veszed. Végignyomkodod az oldalán a faragott díszítéseket,
+nem vezet eredményre. Ezután az emelvényt nézed
+khamar rádöbbensz, hogy a szarkofág alatt e
+apró szerkezet található. Az öreg nem hazudott!
+
+Működésbe hozod a szerkezetet.
+
+Lapozz a 217-re!
+
+=== 099 ===
+Yhrin xinafot keresem — válaszolod.
+Az Öreg megrázza a fejét.
+Fogalmam sincs, hol lehet jelenleg a mester. Hosszú ideig gondolkozva, majd a szarkofág felé mutat. Azonban elárulhatom, hogy lehetőséged nyílik a kincsek megszerzésére, ha nem tartasz a veszélyektől. A szarkofág alatt található egy lejárat, melyet mágikus igék védenek. A következő pillanatban az öregember eltűnik.
+Odalépsz a szarkofághoz, és szemügyre veszed azt. Végignyomkodod az oldalán a faragott díszítéseket, de az nem vezet eredményre. Ezután az emelvényt nézed meg, és csakhamar rádöbbensz, hogy a szarkofág alatt egy apró szerkezet található. Az öreg nem hazudott!
+Működésbe hozod a szerkezetet.
+
+Lapozz a 217-re!
+
+=== 100 ===
+Az amorf lény darabokra szabdalva hever a földön,
+többé senkire nem jelent fenyegetést. Egy gyors pillantással felméred a szobát, azonban semmit nem látsz,
+ami közelebb vihetne a kérdéseid megválaszolásához.
+(Csupán egy halomnyi csontot a sarokban. Visszamégy
+az előszobába.
+
+Lapozz a 169-re!
+
+=== 101 ===
+Úgy érzed, most nincs itt az ideje a próbálgatásnak
+A maszk talán hasznos, ám az sincs kizárva, csak ártaHál magadnak, ha az arcodra illesztenéd. Egyelőre be-Csúsztatod az iszákodba, később talán mé: jól jöhet.
+(Ha a kaland folyamán bármikor fel akarod próbálni a
+iMaszkot, jegyezd meg, hol jársz éppen, majd lapozz a
+151-re))
+
+Ha folytatod a láda szétszedését, lapozz a 160-ra!
+
+a szarkofághoz mégy, lapozz a 156-ra!
+belelapozol a könyvbe, lapozz a 21-re!
+
+=== 102 ===
+Amikor a trideon holtan végigzuhan a földön, magadban nagy ódium követeIten felsohajtasz. Nem kellett volna engedned az iszonyat hóságodnak, s akkor megtakarithattal volna egy csapást. Veszélyes helyen jársz, ahol minden erőd szükséges lesz, nem fecsérelheted feleslegesen. Minthogy idekin semmi érdekesre nem találsz, sietősen, határozott léptekkel az épület bejárata felé indulsz.
+
+Lapozz a 34-re!
+
+=== 103 ===
+A pók beléd támad. Hosszú, nyálló rágói ugyanakkor el sem érnek, megóvnak téged e fertőzéstől csöpögő rágóit, s így összességében szerencsés a helyzetedből való menekülés. Mozdulataid folyamatosan lassan kezdenek válni, s agyad végül már annyi erőd sem marad, hogy felemelj a fegyvered. Az óriási pók ezután kényelmesen nekilát arra, hogy körbeszőjön hálójával, s majd, ha megéhezik, evéül fogyasszon vacsorára. Kalandod véget ért!
+
+=== 104 ===
+A kősivatag elég nagy kiterjedésű, azonban már a második óra után tudod, hogy hamarosan a járulandó út véget ér. A harmadik óra végén, egy lankás domb alatt végre egy kisebb erdőt pillantasz meg. Az erőd lassan kezd fogyatkozni, ideje lenne egy pihenőre. Hosszabb pihenőt tartanod.
+
+Az erdő szélén elhagyottnak tűnő kunyhót látsz.
+
+Ha a kunyhóban pihensz meg, lapozz a 91-re!
+Ha inkább az erdőben, lapozz a 132-re!
+Ha visszafordulsz, lapozz a 239-re!
+
+Az alakváltó holtan hever a lábaid előtt. Ismét ember alakjában van, mezítelen, ahogyan először megpillantottad. Első pillantásra látod, hogy nincs semmi értéke, amit a későbbiekben esetleg hasznosíthatnál. Gyorsan behúzod a bokrok alá, majd egy jó tíz perces gyaloglás után ismét tábort versz.
+
+Álmodat immáron semmi sem zavarja reggelig. A hajnal első sugaraival ébredsz, s miután ettél-ittál (vendéglátódat pedig engedélyt kérsz, hogy az ellátásodból való csökkenteni), folytatod utadat észak felé.
+
+Lapozz a 146-ra!
+
+=== 105 ===
+Az alakváltó holtan hever a lábaid előtt. Ismét ember alakjában van, mezítelen, ahogyan először megpillantottad. Első pillantásra látod, hogy nincs semmi értéke, amit a későbbiekben esetleg hasznosíthatnál. Gyorsan behúzod a bokrok alá, majd egy jó tíz perces gyaloglás után ismét tábort versz.
+
+Álmodat immáron semmi sem zavarja reggelig. A hajnal első sugaraival ébredsz, s miután ettél-ittál (vendéglátódat pedig engedélyt kérsz, hogy az ellátásodból való csökkenteni), folytatod utadat észak felé.
+
+Lapozz a 146-ra!
+
+=== 106 ===
+Nyugodtan álomra hajtod a fejed, ezúttal nem tart fontosnak egy esetleges védelem megszervezését módot. Nyugtalan, az évek során kialakult hatodik érzéked nem hagy pihenni. Fogak villannak fel elmédben, arasznyi hosszúságú karmok, melyek a húsodba térnek, vörösen villogó szemek, melyek nem sok jót ígérnek egy magányos vándor számára.
+
+Kiizzadva riadsz fel. Egy pillanattal később, már kellene. Éles fájdalmat érzel a válladban (vesztesz 1 életerőpontot, és a támadási képességed 4 ponttal csökken, amíg meg nem gyógyítod valahogyan a sebet). Zihálva kapsz a kardod után.
+
+Alig egy lépésnyire tőled egy szörny vicsorit, majd könnyű mozdulattal ismét rád veti magát, ám ezúttal felkészülten fogadod.
+
+Ayrabdir: életerő 18, támadási képesség 12, védettségi szint 17. A szörnyeteg 2-7 életerőpont veszteséget okoz a harapásával és a karmaival.
+
+Ha sikerült legyőznöd a szörnyetegeket, lapozz az 53-ra!
+Ha veszítettél, lapozz a 188-ra!
+
+=== 107 ===
+Igazán büszke lehetsz magadra, két ille féllel szemben sem vallottál kudarc. Nem volt könnyű, de mindig csak a végeredmény számít. Gyorsan átkutatod a fejvadászt, de az ismeretlen harcos (1-6 életerőpont veszteséget okoz) semmi érdemlegeset nem találsz (ha akarod, írd fel a Kegyetlen Tárgyak lapodra).
+
+Ismeretlen vidéken jársz. Vajon merre kell menned? Keleten mintha a tenger moraját hallanad, északon komor késivataggal terül el, ameddig a szem ellát. Egyedül nyugaton akad számodra némi reménység, a távolból ugyanis vastag, fekete füstoszlop száll az ég felé.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a késivattaggal próbálkozol, lapozz a 210-re!
+Ha a füst irányába mégy, lapozz a 202-re!
+
+=== 108 ===
+veti magát, ám ezúttal fel!
+
+Ayrabdir: életerő 18, támadási képesség 12, véd. Pikkelyes rém: életer
+
+ség szír A szörnyeteg 2-7 életerőpont veszteséc dettség szint A Szi
+
+okoz a harapásával és ak ival séget okoz
+
+Ha sikerült legyőznöd a szörnyete Ha sikerült legyé
+
+lapozz a 188-ra! Ha veszítettél, la
+
+Ha veszített
+rádöbbensz, I
+rajta. Pt próbál
+
+nem mozdul. Elgondolkozva
+
+semmilyen zárszerkezetet nem
+
+ppen
+
+Ha a jobb oldali ajtót válas
+Ha n
+Ha folytatod a
+
+ztod, lapozz a 203-ra!
+A 20-ra!
+
+nt átfésülését, lapozz a 261-re
+
+izsgálod a szobrot, lapoz;
+
+és minden erődet
+
+zedve rohar
+
+kijárat felé. Nem jutsz messzire, a hatalmas szörnyeteg néhány lépéssel utolér, é
+
+a következő
+
+anatban éles fájdalom hasít a hátadt
+
+pontot), majd nekicsa
+
+sz a falna
+
+regsz, a szörnyeteg már ott áll előtted
+
+Lapozz az 5-re!
+
+ú11.
+
+Ha Yhrin xinafról kérdezed az örege
+[Ha a toronyr lapozz a 196.
+
+Ha a Démon Szem Aapoz
+(Ha az általa gyűjtött növények
+
+=== 109 ===
+Nekikészülsz, hogy belépj a bal oldali ajtón, rádöbbensz, hogy semmilyen zárszerkezet nincs rajta. Próbaképpen megpróbálod betolni, ám az nem mozdul. Elgondolkozva nézed a bejáratot, vagy benne, hogy valahogy ki lehet nyitni.
+
+Ha a jobb oldali ajtót választod, lapozz a 203-ra!
+Ha megvizsgálod a szobrot, lapozz a 20-ra!
+Ha folytatod a szint átfésülését, lapozz a 261-re!
+
+=== 110 ===
+Megfordulsz, kezdesz a túlélést jelentő kijelölt felé sietni, a hatalmas szörnyet pedig a következő pillanatban éles fájdalom hasít a hátadon, majd nekicsapódsz a falnak (1 életerő veszítesz). Mire talpon állsz, a szörnyteg már ott áll előtted.
+
+Lapozz az 5-re!
+
+=== 111 ===
+Ha Yhrin Xanafról kérdezed a hobolit, lapozz a 40-re!
+Ha a toronyról, lapozz a 196-ra!
+Ha a Démon Szeméről, lapozz a 90-re!
+Ha az általa gyűjtött nővérekről, lapozz a 70-re!
+
+=== 112 ===
+Az
+rajta újra és újra
+Neked ellenber
+támadás n már nem b
+Kalandod véget ért!
+
+=== 113 ===
+A kérdés helytelen:
+Hát persze, milyen kézenfekvő! A szobor egy pillanatra szót fog, majd sötét ragyogásban kezd világítani, s egy pillanat múlva magad előtt találod szemben: egy furcsa, lidércfényes, sem perzselő tárnője, mivel száz piros lángok fonják testedt, s összezavarodva máshol találod magad.
+
+Egy félrehelyezkedő monolit bámul rád komoran. Amit szemügyre veszzel, már egészen hozzászokott szörnyek között kell majd mozogni. Még ennél is veszélyesebb külsejű alakok között: egy golyófejet fejvadászt és egy sólyomemberi kardjával.
+
+Ha támadsz, lapozz a 35-re!
+Ha nem mozdulsz, lapozz az 51-re!
+
+=== 114 ===
+Amikor először rásújtasz a térdemre, fájdalom cikázik testeden (veszítesz 2 életerőpontot), miközben egy mennydörgő hangot hallasz:
+
+- Ostoba vagy, halandó, ha azt hiszed, kárt tehetsz a Démon Szemében!
+
+Döbbenve nézel a tárgyra. Ezt kereseted volna? A külseje alapján illik rá a neve, de nem gondoltad volna, hogy éppen itt fogsz rábukkanni.
+
+Ebben a pillanatban a pikkelyes rém rád veti magát, hirtelen támadást indítva.
+
+(a támadási képességed ebben a harcban 5 ponttal csökken, mert a Démon Szeme olyan erős fénysugárzásokat bocsát ki magából, melyek akadályoznak a harcban).
+
+Pikkelyes rém: életerő 30, támadási képesség 23, védettségi szint 26. A szörnyeteg 2-12 életerőpontot vesz el tőled csapásonként.
+
+Ha legyőzöd a szörnyet, lapozz a 265-re!
+
+Ha végzetes sérüléseket opsz, lapozz a 191-re!
+
+A láda bezúzott fedele arra utal, hogy valaki előtted már járt idelent. S valóban, a láda teljesen üres. Legalábbis annak tűnik, hiszen életed során már elég sok trükkel és csalafintasággal találkoztál ahhoz, hogy ne higy mindig a szemednek.
+
+Ha alaposan átvizsgálod a lá, lapozz a 277-re!
+
+Ha a szarkofághoz mégy, lapozz a 156-ra!
+
+Ha belelapozol a könyvbe, lapozz a 21-re!
+
+=== 115 ===
+A láda bezúzott fedele arra utal, hogy valaki előtted már járt idelent. S valóban, a láda teljesen üres. Legalábbis annak tűnik, hiszen életed során már elég sok trükkel és csalafintasággal találkoztál ahhoz, hogy ne higy mindig a szemednek.
+
+Ha alaposan átvizsgálod a lá, lapozz a 277-re!
+
+Ha a szarkofághoz mégy, lapozz a 156-ra!
+
+Ha belelapozol a könyvbe, lapozz a 21-re!
+
+=== 116 ===
+Nekikészülődsz az aláereszkedésnek. Nem
+könnyű dolgod, hiszen a szakadék mélysége a le
+csonyabb mél él is eléri az ötven métert
+
+pedig csak huszonöt méter köteled van. Ám a
+
+teste valah lalent var ked
+
+szükséged van rá
+
+Ha kikötöd idefent a köteledet, s addig ereszk
+ameddig tudsz, majd megkockáztatsz eg
+pozz a 25-re!
+
+ugrást
+
+Ha először megpróbálsz valami tervet kiagyalni a
+jutásra, lapozz a 193-ra!
+
+=== 117 ===
+A csontvázakról könnyedén megállapítod, hogy ke-
+mény összecsapásban estek el. Olyán tűnik, mintha
+valamennyien ellenségüknek tekintették volna a töb-
+bieket, fajtól függetlenül. Különös! Talán valamennyi
+egyszerre háborodtak meg? Vagy kincsek miatt este-
+volna egymásnak? Semmi sem lehetetlen.
+
+A csontvázak között néhány tárgy marad.
+
+Ha eltemeted a csontvázakat, lapozz a 244-re!
+Ha átvizsgálod a tárgyakat, lapozz a 4-re!
+Ha felmégy a lépcsőn, lapozz a 219-re!
+
+Ha idelenn nézel körül, lapozz a 65-re!
+
+=== 118 ===
+Semmi kedved a harchoz. Hamarosan ismét ott állsz
+a napkör monolitjai között. Weletről mintha a tenger
+morajlását hallanád, északon komor kősivatag terül el,
+ameddig a szem ellát.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a kősivatagra fordulsz, lapozz a 104-re!
+Ha a kősivatággal próbálkozol, lapozz a 104-re!
+
+=== 119 ===
+Mi a neved? — kérdezed
+A xinaf nehezen tud válaszolni
+
+Yhrin — nyögi végül, majd megismétli iménti kijelentését. — Segíts rajtam, és én minden kívánságodat
+teljesítem!
+Ha segítesz neki, lapozz az 54-re!
+Ha végzel vele, lapozz a 295-re!
+Ha megpróbálod kikérdezni, lapozz a 182-re!
+
+=== 120 ===
+Hiába igyekszel, a füst gyorsabbnak bizonyul r
+A
+
+kezdesz, r
+
+nikor pedig a füstöt belélegzed, nyomban fuld
+
+közben a tagjaid lebénulnak. A füst mé
+rkezik. Kalandod véget ért
+
+ző, s a hal
+
+Jobbra halad
+dik. A lev
+
+padló is nedve
+
+t
+vízcsobogás har
+
+ár nem annyira száraz, s hamaros:;
+
+Vedves és iszamós.
+
+Ha visszafordulsz, lapozz a 36-ra!
+
+=== 121 ===
+Jobbra haladva a vízcsobogás hangja egyre erősödik.
+A levegő már nem annyira száraz, s hamarosan a
+padló is nedves lesz. Nedves és iszapos.
+
+Ha visszafordulsz, lapozz a 36-ra!
+Ha továbbhaladsz, lapozz a 278-ra!
+
+=== 122 ===
+Némi gondolkozás után a táborverés mellett döntesz. Talán szerencséd lesz, s némi várakozás meghozza a gyümölcsét. Elvégre sohasem tudhatjuk, mit tartogat számunkra a jövő. A pihenés során legalább egy kicsit összeszedheted a gondolataidat, hogy eldöntsd, miként tovább. Mennyit pihensz?
+
+Ha csupán néhány órát, lapozz a 48-ra!
+Ha legalább egy teljes napot, lapozz a 233-ra!
+Ha addig, amíg nem történik valami, lapozz a 170-re!
+
+=== 123 ===
+Ez a helyiség egykor
+legalább tucatnyi lény számára.
+asztal romjai árválkodnak, székeket azonban
+sehol. A szobát egykor nyilván ebédlőként szolgálta.
+Középen ékesen merednek rád szemrehányóan az
+falakon poros képek függenek, amelyek különféle ételi
+és fogásokat ábrázolnak.
+
+Ha megvizsgálod a képeket, lapozz a 218-ra!
+Ha a képeket vizsgálat alá veszed, lapozz a 190-re!
+Ha kimégy az előszobába, lapozz a 169-re!
+
+Ha elmondod a választ, a könyv lapozz a 190-re!
+Ha elolvasod az írást, lapozz a 190-re!
+Ha elteszed a könyvet, lapozz a 190-re!
+
+=== 124 ===
+Ha elmondod a választ, a könyv lapozz a 190-re!
+Ha elolvasod az írást, lapozz a 190-re!
+Ha elteszed a könyvet, lapozz a 190-re!
+
+=== 125 ===
+Amikor megérinted a szobor szemét, a falban egy rejtekaj nyílik egy jókora kaszával fegyverkezett, parázsló szemű, csuklyás alak lép elő. Egy halálhozó!
+
+Halálhozó: életerő 25; támadási képesség 19; erő 20. A lény sérülést okoz a kaszájával (elérési képesség 18, 1-5 életerőt).
+
+Valami nem feled először: a támadások során, s csak akkor harc végezésit, ha nem képes többet varázsolni; akkor harcol a kaszájával.
+
+Ha sikerült legyőznöd a halálhozót, lapozz a 24-re! Ha veszítettél, lapozz a 212-re!
+
+=== 126 ===
+Arra riadsz, hogy hatalmas karmok mélyednek a testodba. A fegyvered után nyúlnál, viszont már nincs rá idő. Puszta erővel próbálsz ellenállni ellenfeled félelmetesen erős szorításának, azonban a megfelelt ellene nincs hatása. Hirtelen hangos reccsenés hallatszik, s a következő pillanatban már földön halott vagy. Aztán sötétség.
+
+Ha veszítettél, lapozz a 73-ra!
+
+=== 127 ===
+Már látod a napkéltet, amikor az egyik szikla mögül egy kiéhezett, rendkívül vad kőevő csapódik eléd.
+
+Kőevő: életerő 21, támadási képesség 15, védettségi szint 16. A kőevő 2-7 életerőpont veszteséget okoz a csapásával.
+
+Ha sikerült legyőznöd a kőevőt, lapozz a 248-ra!
+
+Ha veszítettél, lapozz a 73-ra!
+
+=== 128 ===
+Hirtelen fény ölel körül és egy rejtett erő magához ránt. Amikor ismét körbenézel, egészen máshol találod magad. Egy hatalmas teremben állsz, amely egyidejűleg szolgálhatott dolgozószoba­ként, halo­helyként, laboratóriumként, könyvtárként és még ki tudja, miként az itt lakónak.
+
+Most azonban senki nem él itt. A hátad mögött lévő, mennyezetig nyúlózkodó fényoszlopon nem fogott az idő; a belsejében mintha apró csillagok százai táncol­nának. Egy teleportáló kaput találtál.
+
+Ha kutatni kezdesz idefenn, lapozz a 177-re!
+
+Ha megvizsgálod a fényoszlopot, lapozz az 50-re!
+
+Ha lemégy az alsó szintre, lapozz a 162-re!
+
+=== 129 ===
+A sárkánykarmos
+hasznos alkotás; a Cherubic
+kányokról adna átfogó
+képet. Sok pénzt megadnár
+érte a tudósok, ha ép
+használható formálod, a második
+ben fennmaradt volna. Mikor
+egy apró papír fecni hullik ki belőle,
+melyen szavak olvasható
+
+Amikor
+- ki tudja, mik
+1 erre az információra.
+
+Különös szöveg
+lesz rá szük
+
+jegyzet
+
+Ha kézbe veszed a halál szimbólumával ékesített
+könyvet, lapozz a 210-re!
+Ha kimégy az előszobá
+, lapozz a 169-re!
+
+=== 130 ===
+Nem szeretsz kockáztatni. A kunyhóban akár az e
+llenség is lehetne közeledő alakodat.
+
+elcsitul
+
+A nyöszörgés nem sokkal később
+s egy sebesült volt, de immár
+sincs iv
+
+ozz a 95-re!
+nyomait vizsgálod meg, lapozz a 18-ra!
+Ha visszatérsz a napkérhéz, lapozz a 213-ra!
+
+talán a távolból megpillantották
+
+=== 131 ===
+A sav felmarja a bőrödet, a húsodat és a csontjaidat.
+A fájdalom miatt nem tudsz kellőképp koncentrálni,
+így a savgólem egyre nagyobb fölénybe kerül. Hamar-
+osan már csak védekezni tudsz, ám a te erőd is elfogy
+vorsan jön. Kalandod véget ért!
+
+egyszer A sötétség
+
+=== 132 ===
+Jobb szeretsz a szabad ég alatt éjszakázni, mint
+bármiféle épületben. Ennek megfelelően inkább gya-
+logolsz még egy kicsit, és egy alkalmas tisztáson meg-
+állva nézel hálóhely után.
+
+Ha az ágak között alszol, lapozz a 246-ra!
+Ha a földön, lapozz a 199-re!
+
+=== 133 ===
+Csupán néhány lépést tehetsz meg, amikor kavics csikordul a talpad alatt. Az alvó idegen abban a pillanatban talpon terem, és emberi formáját elveszítve másodpercek alatt egy gigantikus szörnyeteggé alakul át.
+
+Ha megtámadod, lapozz az 5-re!
+Ha megpróbálsz elmenekülni, lapozz a 110-re!
+Ha vársz, mit cselekszik, lapozz a 286-ra!
+
+=== 134 ===
+egy remete aligha tudhat túl sokat a toronyról, ezért inkább befejezed a keresést, és visszadulsz a toronyhoz. Késő délutánra jár már az idő, amikor megérkezel a romokhoz.
+
+Ha letöltöd a torony mellett, lapozz a 122-re!
+Ha szétnézel a romok között, lapozz a 207-re!
+
+=== 135 ===
+Biztonságos távolságból körbejárod az épületet, már amennyire lehet. Egyik oldala határos a szakadék peremével. Azokon az ablakokon kimászni kész öngyilkosság lenne. Valahonnan mintha berregő hangot hallanál.
+
+Ha megvizsgálod a hang eredetét, lapozz a 71-re!
+Ha bemégy az épületbe, lapozz a 34-re!
+
+Ugyanis hamarosan kiderül, hogy az
+
+=== 136 ===
+A koroi
+lyafénynél nekiállsz kibetűzni a ráírt szövege
+Veg első része valami mondóka, a második rész pedig
+
+ösréginek tűnik, s rúnák díszítik. A fák.
+t. A szö.
+
+magyarázó szöveg
+
+Minden útját maga Szc
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-F ] J J
+jelkulcsok című részhez, és add össze a válasz betűi
+
+nek értékét. Ez a szám határozza meg, hova kell a
+
+folytatáshoz lapoznod!
+Ha nem tudod a választ, lapozz a 264-re
+
+437.
+
+Hangtalanul kötelet húzol elő a hátizsákodból, majd
+
+könnyű hurkot csinálsz belőle
+
+án nekikészülődsz
+
+hatoldalú kockáva
+
+az idegen megkötözésének. (L
+Ha a dobott
+
+6, akkor sikerült megkö.
+
+Ha nem sikerült, lapozz a 195-re
+A fekete lovag félelmetes ellenfél, szörnyű csapásai
+nem csupán az életerődet szívják el, hanem mintha a
+harci tudásod is folyamatosan romlana. Bár mindent
+megteszel, ebben a harcban csak vesztes lehetsz. Kalandod véget ért!
+
+=== 137 ===
+Hangtalanul kötelet húzol elő a hátizsákodból, majd könnyű hurkot csinálsz belőle. Ezután nekikészülődsz az idegen megkötözésének. (Dob hatoldalú kockával! Ha a dobott érték 4, 5 vagy 6, akkor sikerült megkötöznöd, mielőtt magához tért volna. Ellenkező esetben kudarcot vallottál.)
+
+Ha sikerült megkötöznöd az idegent, lapozz a 274-re!
+Ha nem sikerült, lapozz a 195-re!
+
+=== 138 ===
+A fekete lovag félelmetes ellenfél, szörnyű csapás.
+Nem csupán az életerődet szívják el, hanem mint a
+harci tudásod is folyamatosan romlana. Bár mindent
+megteszel, ebben a harcban csak vesztes lehetsz. Kalandod véget ért!
+
+=== 139 ===
+Már harmadnapja várakozol türelmesen a torony
+mellett, amikor rádöbbensz, akár ítéletnapig is gubbaszthatnál ezen a helyen, akkor sem járna erre senk
+Úgy tűnik, a várakozás nem a legjobb választás.
+
+Ha szétnézel a romok között, lapozz a 207-re!
+Ha megpróbálsz olyasvalakit keresni, aki a környéken
+él, lapozz a 294-re!
+
+=== 140 ===
+A Démon Szemét körbeölelő mágikus erőtér túlságosan hatalmas ahhoz, hogy megpróbálkozz a semlegesítésével. Az egész világ vibrálni kezd körülötted,
+majd hirtelen egy sötét és hideg helyen találod m:
+
+JAz ékkő belsejében vagy, a mágia egyszerűen ma
+szippantott. Kalandod véget ért!
+
+=== 141 ===
+— Mi a neved? — kérdezed.
+
+Az idegen szomorúan elmosolyodik.
+
+— Rach Mindrolden vagyok, a Hősök és Bajnokok
+Istene — válaszolja, és a következő pillanatban eltűnik
+a szemed elől.
+
+Bosszúsan meredsz magad elé. Ezt a lehetőséget jól
+elpuskáztad. Hasznosabb kérdést is feltehettél volna.
+A faluban nincs több keresnivalód, s úgy tűnik, erre
+hiába keresnéd a renegát xinafot. Kénytelen vagy visszatérni a napkörhöz.
+
+Lapozz a 31-re!
+
+=== 142 ===
+Amikor megérinted a karpántot, a halott harcos keze
+hirtelen felemelkedik, s a következő pillanatban már
+egy gondolatsebesen alázúduló csatabárd elől kell el-
+hajolnod. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 296-ra!
+Ha nem sikerült, lapozz a 35-re!
+
+=== 143 ===
+— Mi a neved? — kérdezed az öreget, miután bemutatkoztál
+
+Elgondolkozva néz rád.
+
+— Parázs — feleli nyugodtan
+
+-— A szarkofág nem valami kényelmes fekhely
+jegyzed meg, miközben minden idegszáladdal figyelsz
+
+Bólint, majd elmosolyodik. A vonásai ijesztőel
+
+— Nem hiszem, hogy emiatt jöttél ide. Mi a célod?
+
+Ha beszélsz neki a Démon Szeméről, lapozz a 12-re!
+Ha azt mondod, Yhrin xinafot akarod felkutatni, lapozz a 253-ra!
+
+Ha kincsvadásznak adod ki magad, lapozz a 287-re!
+
+=== 144 ===
+Ismét azon a parton vagy, ahol leereszkedtél a sziklafalon. Most azonban felfelé kellene menned, s csupán egyetlen mód van erre: felkapaszkodni a kiálló
+Sziklákon a kötél végéig. V talán a xinafnál talált
+könyv segíthetne ebben?
+
+Ha megpróbálsz felkapaszkodni, lapozz a 28-ra!
+"Ha áttanulmányozod a xinaf könyvét, lapozz a 85-re!
+
+Hiába szánod rá az egész napodat a keresésre,
+Egyetlen élő lélekkel sem hoz össze a sors. Mintha
+Mem csupán a torony, de az egész vidék kihalt lenne.
+Késő délutánra jár már az idő, amikor visszatérsz a toTonyhoz.
+
+Ha letáborozol a torony mellett, lapozz a 122-re!
+la szétnézel a torony romjai között, lapozz a 207-re!
+146. 148.
+
+Órákon át tartó gyaloglás után sikerül átvá
+erdőn. Öszintén bevallva nagyobbnak hitted, de
+utólag örülsz, hogy átjutottál rajta
+
+Az erdő mögött, alig fél mérföldnyire egy sötét
+pedés húzódik — csillogó vízesés zubog alá a túlsó
+dalán —, a távolban pedig e; csúcs ny
+tózkodik az ég felé. A szakadék innenső oldalán e
+pületet látsz.
+
+A pikkelyes rém iszonyú csapásai feltépik a húsodat, testedet a fájdalom lüktetése hatja át. A tűhegyes
+fogak beléd marnak, s többé már el sem engednek.
+Kalandod véget ért!
+
+romos
+
+Ha egyenesen az épület felé indulsz, lapozz a 204-re
+Ha előbb a szakadékot nézed meg, lapozz a 97-re!
+
+=== 145 ===
+Hiába szánod rá az egész napodat a keresésre,
+egyetlen élő lélekkel sem hoz össze a sors. Mintha
+nem csupán a torony, de az egész vidék kihalt lenne.
+Késő délutánra jár már az idő, amikor visszatérsz a to-
+ronyhoz.
+
+Ha letaborozol a torony mellett, lapozz a 122-re!
+Ha szétnézel a torony romjai között, lapozz a 207-re!
+
+=== 146 ===
+Orákon az erdőn, Öszir nagyobbnak hitted, de utólag örül.
+
+Az erdő mélyén: mérföldnyire egy sötét szakadék húzódik — csillogó vízesés zubog alá a túlsó oldalán —, a távolban pedig romos épületet látsz totkodik az ég felett.
+
+A szakadék jobb oldalán.
+
+Ha egyenesen az épület felé indulsz, lapozz a 97-re!
+Ha előbb a szakadékot nézed meg, lapozz a 97-re!
+
+=== 147 ===
+A jobb oldali ajtó nyomban feltárul előtted, mihelyt kimondod a helyes megfejtést. Egy hosszúkás szobát lépsz be, ahol két oldalt mumifikálódott harcos helyeztek el, számára pontosan egy tucatnyit.
+
+A szoba túlsó falán egy hatalmas vitrint látsz, benne ősi pergamennel.
+
+Ha megvizsgálod a pergament, lapozz a 255-re!
+Ha a halottakat nézed meg, lapozz a 44-re!
+Ha elhagyod a szobát, lapozz a 299-re!
+
+Gyaloglás után sikerül átvágnod a hegycsúcs nyeregén.
+
+Lapozz a 204-re!
+
+=== 148 ===
+A pikkelyes rém iszonyú csapásai feltépik a húsodat, testedet a fájdalom lüktetése hatja át. A tűhegyes fogak beléd marnak, s többé már el sem engednek.
+
+Kalandod véget ért!
+
+Amikor a varázslat az elmédbe ivódott (s egyben a Varázskönyvedben is megjelent), ismét kitisztul előtted a világ. Ott állsz a vitrin előtt, ám a pergamen már nincs sehol.
+
+=== 149 ===
+Amikor a varázslat az elmédbe ivódott (s egyben a
+Varázskönyvedben is megjelent), ismét kitisztul előtted
+a világ. Ott állsz a vitrin előtt, ám a pergamen már
+nincs sehol.
+
+Ha megnézed a halottakat, lapozz a 44-re!
+Ha elhagyod a szobát, lapozz a 299-re!
+
+=== 150 ===
+— Egy különleges fegyvert szeretnék — mondod.
+
+A xinaf bólint, néhány bonyolult mozdulatot tesz az
+ujjaival, és a semmiből egy kard terem a kezében.
+
+— A Bajnokok Szablyája — adja át neked. — Megnöeli a támadási képességedet (6 ponttal), valamint 4-9
+Életerőpont veszteséget okoz.
+
+Megköszönöd az ajándékot, majd a kijárat felé indulsz. Hamarosan ismét a felszínen találod magad, az
+Erdő fáitól körülvéve. Észak felé folytatod az utadat.
+
+A jobb oldali ajtó nyomban feltárul előtted, mihely
+kimondod a helyes megfejtést. Egy hosszúkás szobát
+lépsz be, ahol két oldalt mumifikálódott harcosol
+helyeztek el, szám szerint pontosan egy tucatnyit
+szoba túlsó falán egy hatalmas vitrint lá
+ősi pergamennel
+
+, benne e
+
+Ha megvizsgálod a pergament, lapozz a 255.
+Ha a halottakat nézed meg, lapozz a 44-re!
+Ha elhagyod a szobát, lapozz a 299-re!
+
+Lapozz a 146-ra!
+
+=== 151 ===
+Az arcodra illeszted a maszkot. Készen állsz rá,
+hogy bármelyik pillanatban letéped magadról, ám
+amikor a bőröd az aranyhoz ér, apró szikrák villannak
+fel a szemed előtt, és a maszk egybeolvad az arcoddai
+(Egy elátkozott varázsmaszkot vettél magadhoz. 1nnentől kezdve nem kell kezdeményező dobást tenned,
+mindig, minden ellenfeled hamarabb fog támadn
+mint te. Azaz, ha ketten rontanak rád, akkor először ők
+ketten jönnek — kezdeményezés nélkül —, s csupán legutoljára te.)
+
+Lapozz vissza oda, ahonnan idelapoztál!
+
+=== 152 ===
+Az alakváltó szinte elpusztíthatatlan. Hiába ejtesz
+rajta újra és újra sebet, nem tudsz felülkerekedni r
+Neked ellenben gyorsan elfogy az erőd, s az utolsó
+támadás során már nem bizonyulsz elég gyorsnak
+Kalandod véget ért!
+
+=== 153 ===
+Nem tartod valószínűnek, hogy az öregember felelni
+tudna a kérdéseidre, ezért folytatod a keresést. A távolban egy magas, ösztövér alakot látsz felbukkanni,
+ám hiába indulsz a nyomába, csakhamar kiderül, csupán a szemed csalt meg. Az öregemberen kívül nem
+akadsz másra a környéken.
+
+Ha visszamégy az öregemberhez, lapozz a 84-re!
+Ha inkább a toronyhoz térsz vissza, lapozz a 39-re!
+
+=== 154 ===
+Meglehetősen nagy területet átfésülsz, ám semmi
+érdekeset nem találsz idelent. Csupán a folyóban látsz
+néhány igazán nagy és veszélyesnek látszó szörnyet-
+get, melyek hosszan bámulnak rád a hullámok közül.
+Talán mégis jobb lenne, ha a felfelé vezető úton törnéd
+a fejed.
+
+Lapozz a 16-ra!
+
+=== 155 ===
+A fejvadász és a szörnyet ege túlságosan sok neked
+egyszerre. Miközben az egyikkel csatázol, a másik támadása érzékeny veszteséget okoz. Egyszerűen képtelen vagy tartósan két ellenfélre összpontosítani. A
+végzetes csapás a földre sújt. Kalandod véget ért!
+
+=== 156 ===
+Elég halálontúlival — Choler Magiszter teremtményeivel — találkoztál már kalandos életed során, hone hagyd magad esetleg megtéveszteni. Kivont karddal lépsz oda a szarkofághoz, s készen állsz arra, hogy ha az idős férfi akár egyet is rezzen, azonnal elválaszd a fejét a törzsétől.
+
+Ő lenne Yhrin xinaf? A renegát cholerita?
+
+Csak úgy tudhatnád meg, ha valamiképp szóra bírnád. Azonban ahhoz először életre kellene keltened.
+
+Ha átkutatod a halottat, lapozz a 281-re!
+Ha a szarkofágot vizsgálod meg, lapozz a 179-re!
+Ha inkább nem háborgatod a halottat, lapozz a 224-re!
+
+Idelent vagy, s most csak ez számít. Nekilátsz felderíteni a környéket. A folyó és a sziklafal között elég hely van mindenhol, hogy elférj, így nem kell belégyalogolnod a sebes hullámokba.
+
+Váratlanul egy ezüstös testű, iszalagokतól és nyálkás növényektől mocskos teremtmény gázol ki előtted a partra. Egy végtelenül hosszú pillanatig mozdulatlan mered rád, majd neked ront.
+
+Vízi rém: életerő 19, támadási képesség 13, védettségi szint 16. A rém 1-6 életerőpont veszteséget okoz.
+
+Ha sikerült legyőznöd a rémet, lapozz a 42-re!
+Ha veszítettél, lapozz a 175-re!
+
+=== 157 ===
+Idelent vagy, s most csak ez számít. Nekilátsz felderíteni a környéket. A folyó és a sziklafal között elég hely van mindenhol, hogy elférj, így nem kell belégyalogolnod a sebes hullámokba.
+
+Váratlanul egy ezüstös testű, iszalagokतól és nyálkás növényektől mocskos teremtmény gázol ki előtted a partra. Egy végtelenül hosszú pillanatig mozdulatlan mered rád, majd neked ront.
+
+Vízi rém: életerő 19, támadási képesség 13, védettségi szint 16. A rém 1-6 életerőpont veszteséget okoz.
+
+Ha sikerült legyőznöd a rémet, lapozz a 42-re!
+Ha veszítettél, lapozz a 175-re!
+
+=== 158 ===
+Amint megpillantod a füstöt, azonnal megfordulsz.
+és rohanni kezdesz a kijárat felé, a pergamennel nem is
+foglalkozol. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 205-re!
+Ha nem sikerült, lapozz a 120-ra!
+
+Tétován megrázod a fejed. Fogalmad sincs arról, mi
+lehet a helyes válasz.
+
+— Adj nekem az életerődből tízet, s segítek neked
+egy kicsit — hallod a varázstárgy felől a hangot.
+
+Ha elfogadod az alkut, lapozz a 11-re!
+Ha nem érdekel az ajánlat, lapozz a 180-ra!
+
+=== 159 ===
+Amint megpillantod a füstöt, azonnal megfordulsz.
+és rohanni kezdesz a kijárat felé, a pergamennel nem is
+foglalkozol. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 205-re!
+Ha nem sikerült, lapozz a 120-ra!
+
+Tétován megrázod a fejed. Fogalmad sincs arról, mi
+lehet a helyes válasz.
+
+— Adj nekem az életerődből tízet, s segítek neked
+egy kicsit — hallod a varázstárgy felől a hangot.
+
+Ha elfogadod az alkut, lapozz a 11-re!
+Ha nem érdekel az ajánlat, lapozz a 180-ra!
+
+=== 160 ===
+Amikor teljesen szétszedted a ládát, e:
+pírdarab esik a földre. Rajta csupán rövid szöveg
+a maszk átkozott, ne kísértsd a szerencsédet!
+
+Ha ennek ellenére felveszed a maszkot, lapozz a 37-re!
+Ha inkább elteszed az iszákodba, lapozz a 101-re!
+
+Ha a szarkofághoz mégy, lapozz a 156-ra!
+
+Ha belelapozol a könyvbe, lapozz a 21-re!
+
+=== 161 ===
+— Hogy hívták a xinafot, aki elvarázsolt téged?
+kérdezed hirtelen támadt érdeklődéssel.
+
+Az idegen lehajtja a fejét.
+
+— Yhrin — válaszolja csendesen.
+
+Ha segíteni akarsz az idegenen, lapozz a 251-re!
+Ha nem foglalkozol az idegennel, lapozz a 56-ra!
+
+=== 162 ===
+— Hogy hívták a xinafot, aki elvarázsolt téged? —
+kérdezed hirtelen támadt érdeklődéssel.
+
+Az idegen lehajtja a fejét.
+
+— Yhrin — válaszolja csendesen.
+
+Ha segíteni akarsz az idegenen, lapozz a 251-re!
+Ha nem foglalkozol az idegennel, lapozz a 56-ra!
+
+Ismét ott állsz az alsó szinten. A csigalépcső mögött
+Egy hatalmas szobor terpeszkedik, amely egy démon-Szerű lényt ábrázol. A szobor két oldalán egy-egy ajtó
+látható.
+
+Ha megvizsgálod a szobrot, lapozz a 20-ra!
+
+Ha belépsz a bal oldali ajtón, lapozz a 109-re!
+Ha a jobb oldali ajtót választod, lapozz a 203-ra!
+Ha folytatod a szint átfésülését, lapozz a 261-re!
+
+=== 163 ===
+— Kincsvadász vagyok — bököd ki végül.
+Az öregember elmosolyodik, és körbemutat.
+
+engem arkofágot nem háborgatod, nem lesz
+jod! — Valamit csinál, s a következő pillanatban fe
+emelkedik a levegőbe, s belelebeg a szarkofágba.
+
+A következő pillanatban már épp olyan halottnak
+néz ki, mint amikor először bejöttél ebbe a helyiségbe
+
+Ha óvatosan átkutatod az öreget, lapozz a 281-re!
+Ha a szarkofágot vizsgálod meg, lapozz a 179-re!
+Ha inkább nem háborgatod az öreget, lapozz a 224-re!
+
+A folyó az egyik helyen eléggé összeszűkül ahhoz
+hogy néhány hatalmas kő belegördítése után megkísérelj átugrani a víz felett. Kiválasztasz néhány sziklá
+majd minden erődet összeszedve begördíted azok
+vízbe. Így csupán mintegy hat métert kell átugranod
+Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 68-ra!
+Ha nem sikerült, lapozz a 212-re!
+
+=== 164 ===
+A folyó az egyik helyen eléggé összeszűkül ahhoz, hogy néhány hatalmas kő belegördítése után megkísérelj átugrani a víz felett. Kiválasztasz néhány sziklát, majd minden erődet összeszedve begördíted azokat a vízbe. Így csupán mintegy hat métert kell átugranod.
+Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 68-ra!
+Ha nem sikerült, lapozz a 212-re!
+
+=== 165 ===
+iyukon, hogy először megpróbálj képet kapni, mi várfád odaát. A fáklya csupán egy apró területet világít
+meg, azonban az mári
+Jefelé vezető lépcső rejtőzködik.
+
+- Tessék, minden, amit idelent találsz, a tiéd! Ha
+
+Ha nekiállsz kibontani a falat, lapozz a 29-re!
+Ha tovább vizsgálódsz a fáklyafénynél, lapozz a 88-ra!
+Ha benyúlsz a lyukon, lapozz a 192-re!
+
+Némi gondolkozás után egy égő fáklyát tolsz át a
+
+látható, hogy a fal mögött egy
+
+=== 166 ===
+Lélegzet-visszafojtva lapulsz az ágak között. A hafalmas szörnyeteg hamarosan befejezi a szimatolást,
+eltűnik a sűrűben. Hallod távolodó lépteit, de hosszú
+Percekbe telik, mire teljesen megnyugodsz.
+
+Reggelig már semmi nem zavarja a pihenésedet.
+Amikor megreggelizel (me felejisd el a készleteidet
+Csökkenteni), elmégy oda, ahol a szörnyeteget láttad.
+Hatalmas mancsnyomokat találsz.
+
+Ha követed a szörnyeteg nyomait, lapozz a 77-re!
+Ha tovább haladsz észak felé, lapozz a 146-ra!
+
+=== 167 ===
+Túlságosan elfáradtál ebben a nagy munkában, ezért
+egy nyugodt helyet keresel, s kényelmesen elvackolod
+magad. Bízol benne, a csontvázak nem kelnek ki a
+sírjukból, hiszen végtére neked köszönhetik, hogy lel-
+kük hosszú várakozás után végre nyugalomra talált.
+
+Reggel üdén, kipihenten ébredsz, s miután megebédeltél (húzz le egy adag ételt és italt a Kalandlap-
+ról), folytatod a torony átvizsgálását. A csontvázak
+helyén csupán világos foltok emlékeztetnek a szörnyű
+összecsapásra. Néhány, a halottak helyén heverő tárgy
+felkelti a figyelmedet.
+
+Ha megvizsgálod a tárgyakat, lapozz a 4-re!
+Ha felmégy a lépcsőn, lapozz a 219-re!
+Ha idelenn nézel körül, lapozz a 65-re!
+
+=== 168 ===
+Egyszer sem nézel hátra, csak amikor már bizt-
+ságban tudod magad. Szerencséd volt, gyorsabbnak bi-
+zonyultál a fejvadásznál. Nem kis teljesítmény, annyi szent! (A szerencséd visszatért a kezdeti értékére!)
+
+Ismeretlen vidéken jársz. Vajon merre kell a rene-
+gátot keresned? Keleten mintha a tenger morajlását
+hallnád, északon komor kősivatag terül el, ameddig a
+szem ellát. Egyedül nyugaton akad számodra némi re-
+mény, a távolból ugyanis vastag, fekete füstoszlop
+száll az ég felé.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a kősivataggal próbálkozol, lapozz a 104-re!
+Ha a füst irányába mégy, lapozz a 202-re!
+
+=== 169 ===
+Az előszobába kilépve egy gyorsan eltűnő árnyékot
+látsz, mely mintha kifelé igyekezne az épületből.
+Az árnyék meglehetősen nagy, talán csak a fényre
+vonatkozó viszonyok tették ekkorává, bár persze ezt sohasem lehet tudni.
+
+Mindenesetre nem árt, ha óvatos leszel.
+
+Ha követed az árnyékot, lapozz a 227-re!
+Ha belépsz az első szobába, lapozz a 123-ra!
+Ha a másodikba mégy, lapozz a 249-re!
+Ha inkább a harmadikba, lapozz a 186-ra!
+
+=== 170 ===
+Hosszú barangolásaid során megtanultál már türel-
+mesnek lenni. Előrelátóan úgy alakítod ki a szálláshe-
+lyed, hogy egy esetleges látogató csak akkor pillant-
+hassa meg, ha kifejezetten keresi. Ezután eltünteted a
+ruhaidat, s bekuporodsz a bokrok közé, ahol egy ve-
+kony, ám minden időjárási viszontagságnak ellenálló
+anyagból készült sátor vár. Mire elkészült, az első éj-
+szaka már szétteríti sötét leplét, s feketeségbe borítja a
+világot. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 259-re!
+Ha nem sikerült, lapozz a 80-ra!
+
+=== 171 ===
+Gyorsan elmormolsz egy Semlegesítést (ne felejtsd
+el levonni a varázslatpontot). Az idegen a varázs
+hatására hihetetlen átalakuláson megy keresztül. A bőre elkékül, a haja aranyszínűvé változik. A ruháját semmiből ölelik körbe. Egy másik xinaf áll előtted.
+
+— Köszönöm! — mondja, miután befejeződik az
+alakulás. — Hogyan hálálhatnám meg?
+
+Ha valami oltalmazó tárgyat kérsz, lapozz a 62-re!
+Ha egy különleges fegyvert, lapozz a 150-re!
+Ha tanácsot, lapozz a 282-re!
+Ha az életerődet szeretnéd megnövelni, lapozz a 9-re!
+
+=== 172 ===
+Szakszerű mozdulatokkal átkutatod a halott ö
+embert, s magadhoz veszel mindent, amit haszno:
+vagy értékesnek ítélsz. Hullarabló, mondanák sokan
+ám biztos vagy benne, fordított esetben ellenfeled e
+pillanatig sem habozna ugyanezt megcselekedni,
+ezért nincs lelkiismeret-furdalásod,
+
+Az öregembernél találsz egy oltalmazó gyűrűt
+ponttal növeli a védettségi szintedet) és egy mágiku
+talizmánt (amely 5 ponttal növeli a varázserődet).
+
+Itt az ideje, hogy megvizsgáld a szarkofágot.
+
+Lapozz az 59-re!
+
+=== 173 ===
+Már éppen nekikezdenél a varázslásnak, amikor ráidöbbensz, hogy nincs elég varázslatpontod hozzá.
+
+— Pihennem kell, mert most gyenge vagyok! — maigyarázod az idegennek.
+
+Az szomorúan megrázza a fejét.
+
+— Sajnálom. Te mindent megtettél, de én nem vár-fiatok... Az átok miatt — magyarázza. — Ha valaki egy
+fapnál tovább maradna velem, hozzám hasonlóvá v
+Ha. Az átok rá is átterjedne... De értékelem a segítőkkészségedet. Szabadon elmehetsz, és még egy gyógyitallal is megajándékozlak (10 életerőpontot gyógyít).
+Most pedig menj!
+
+Átadja az üvegcsét, majd int a kijárat felé.
+
+Hamarosan ismét a felszínen találod magad, az erdő
+fáitól körülvéve. Észak felé folytatod az utadat.
+
+Lapozz a 146-ra!
+
+Arrébb húzod a dögöt a táborhelyedtől, majd ügyes,
+Szakavatott mozdulatokkal kizsigereled. Lenyúzod a
+bőrét, majd lemetszed a fejét és a lábait; később vala-Mennyiből díszes trófeát készíthetsz vagy ha eladod,
+
+izonyára jó árat kapsz majd érte. Itt az ideje, hogy
+folytasd megszakított pihenésedet, gondolod, és ismét
+álomra hajtod a fejed
+
+Lapozz a 275-re!
+
+=== 174 ===
+Arrébb húzod a döggöt a táborhelyedtől, majd ügyes,
+szakavatott mozdulatokkal kizsigereled. Lenyúzod a
+bőrét, majd lemetszed a fejét és a lábait; később vala-
+honnét díszes trófeát készíthetsz vagy ha eladod,
+bizonyára jó árat kapsz majd érte. Itt az ideje, hogy
+folytasd megszakított pihenésedet, gondolod, és ismét
+álomra hajtod a fejed.
+
+Lapozz a 275-re!
+
+=== 175 ===
+A vízi rém testéről lecsúszik a fegyvered, vagy talán
+csak ügyetlen vagy, s ezt akarod bemagyarázni magadnak. Mindenesetre te már több sebből végzel, míg
+rajta csupán karcolások vannak. Egészen visszaszorulsz a sziklafalig, de hamarosan nyilvánvalóvá válik,
+ez nem a te napod. Kalandod véget ért!
+
+Goreel fej
+
+védettség szint 20. A fejvadász 1-6 életerőpont ves
+séget okoz a buzogányával.
+
+Chindon: életerő 18, támadási képesség 16, véd
+szint 14. A szörnyeteg 2-12 életerőpont veszteség
+okoz a mancsaival és a harapásaival. (Ne feledd,
+lenfeleid mindketten támadhatnak rád a körber
+azonban csak egyikükre támadhatsz!)
+
+Ha sikerült legyőznöd ellenfeleidet, lapozz az 107-re
+Ha veszítettél, lapozz a 15.
+
+H77.
+
+A kutatás értékes óráidat rabolja el, s nyakig poros
+leszel, mire mindent átnézel. Ennek ellenére kénytelen
+Wagy megállapítani, feleslegesen pazaroltad az erődet,
+nincs semmi, amit hasznosnak ítélnél
+
+Ha megvizsgálod a fényoszlopot, lapozz az 50-r
+Ha lemégy az alsó szintre, lapozz a 162-re!
+
+Mielőtt lefeküdnél aludni, jó szokás szerint átkutafód a kunyhót. A kandallóban egy félig elszenesedett
+Papírdarabra bukkansz, melyről csupán az aláírást sikerül kibetűznöd: Yhrin.
+
+Szóval a renegát erre járt!
+
+A papír meglehetősen régi, ám amennyire sikerül
+megállapítanod, egy-két hónapnál nem lehet idősebb.
+
+2 azt jelenti viszont, hogy jó nyomon jársz!
+
+Holnap, kipihenve folytathatod majd utadat
+
+! Lapozz a 225-re!
+
+=== 176 ===
+Goreel fejvadász: életerő 23, támadási képesség 20. A fejvadász 1-6 életerőpont sérülést okoz a buzogányával.
+
+Chindon: életerő 18, támadási képesség 16, védettségi szint 14. A szörnyeteg 2-12 életerőpont vesztességet okoz a mancsaival és a harapásaival. (Ne feledd, ellenfeleid mindketten támadhatnak rád a körben; azonban csak egyikükre támadhatsz!)
+
+Ha sikerült legyőznöd ellenfeleidet, lapozz a 107-re!
+Ha veszítettél, lapozz a 155-re!
+
+=== 177 ===
+A kutatás értékes óráidat rabolja el, s nyakig poros
+leszel, mire mindent átnézel. Ennek ellenére kénytelen
+vagy megállapítani, feleslegesen pazaroltad az erődet,
+nincs semmi, amit hasznosnak ítélnél.
+
+Ha megvizsgálod a fényoszlopot, lapozz az 50-re!
+Ha lemégy az alsó szintre, lapozz a 162-re!
+
+=== 178 ===
+Mielőtt lefeküdnél aludni, jó szokás szerint átkuta-
+tod a kunyhót. A kandallóban egy félig elszenesedett
+papírdarabra bukkansz, melyről csupán az aláírást si-
+kerül kibetűznöd: Yhrin.
+
+Szóval a renegát erre járt!
+
+A papír meglehetősen régi, ám amennyire sikerül
+megállapítanod, egy-két hónapnál nem lehet idősebb.
+
+Ez azt jelenti viszont, hogy jó nyomon jársz!
+
+Holnap, kipihenve folytathatod majd utadat.
+
+Lapozz a 225-re!
+
+=== 179 ===
+Gondosan ügyelsz rá, hogy ne érj hozzá a halotth.
+miközben megvizsgálod a szarkofágot. Végignyor
+
+dod a faragott díszítéseket, de ez nem vezet eredményre. Ezután az emelvényt nézed át, s csakhamar rádöbbensz, hogy a szarkofág alatt egy apró szerkezetet he-
+
+lyeztek el
+
+Ha működésbe hozod a szerkezetet, lapozz a 217-re!
+Ha megvizsgálod a halottat, lapozz a 281-re!
+
+Csapdától tartasz, ezért nem fogadod el az ajánlat.
+
+A varázstárgy hirtelen elképzelhetetlen sebessége
+kezd forogni, majd a következő pillanatban iszc
+erejű mágia vesz körül, mely túlságosan hatalmas a
+hoz, hogy megpróbálkozz a semlegesítésével. Az e:
+világ vibrálni kezd körülötted, majd hirtelen egy
+és hideg helyen találod magad. Az ékkő belsejében
+
+agy, a mágia egyszerűen magába szippantott. Kalandod véget ért!
+
+Egy villámgyors mozdulattal széttéped a pergament,
+§ átkozódva a földre hajítod darabjait. A kellemetlen
+forróság csakhamar elmúlik. Megkönnyebbülve só-hajtasz fel: ezt megúsztad!
+
+"Ha felmégy a lépcsőn, lapozz a 219-re!
+Ha idelenn nézel körül, lapozz a 65-re!
+
+=== 180 ===
+Csapdától tartasz, ezért nem fogadod el az ajánlatot.
+A varázstárgy hirtelen elképzelhetetlen sebességgel
+kezd forogni, majd a következő pillanatban iszonytató
+erejű mágia vesz körül, mely túlságosan hatalmas ahhoz, hogy megpróbálkozz a semlegesítésével. Az ég
+vibrálni kezd körülötted, majd hirtelen egy sötét
+és hideg helyen találod magad. Az ékkő belsejébe
+vagy, a mágia egyszerűen magába szippantott. Kalandod véget ért!
+
+=== 181 ===
+Egy villámgyors mozdulattal széttéped a pergament,
+s átkozódva a földre hajítod darabjait. A kellemetlen
+forróság csakhamar elmúlik. Megkönnyebbülve sóhajtasz fel: ezt megúsztad!
+
+Ha felmégy a lépcsőn, lapozz a 219-re!
+Ha idelenn nézel körül, lapozz a 65-re!
+
+=== 182 ===
+Ha van igazmondó varázsitalod, lapozz a 262-re!
+"Ha nincs, lapozz a 7-re!
+
+=== 183 ===
+A csontvázharcos összeszabdalva hever a lábaidnál.
+Kemény ellenfél volt, ám a szerencse ezúttal a te párftodra állt. Inmáron semmi akadálya, hogy magadhoz
+Vedd a mágikus csuklópántját. Elégedett vagy önmafgaddal, miközben felcsatolod a becses tárgyat. BizoNyára jó szolgálatot tesz majd a xinaf és a Démon
+Szeme felkutatása során.
+
+A mágikus csuklópánt halványan világítani kezd,
+Miközben elmédet egy gonosz kacaj tölti be.
+
+— Ostoba halandó! Légy átkozott örökre!
+
+Rádöbbensz, a mohóságod ezúttal hátrányodra vált.
+A csuklópánt átkozott (önerőből képtelen vagy meg-Szabadulni tőle, s amíg viseled, a védettségi szinted 6
+"Donttal csökken)
+
+Dühösen nézel magad elé. Micsoda balszerencse!
+
+Ha elhagyod a szobát, lapozz a 299-re!
+a megvizsgálod a pergament, lapozz a 255-re!
+
+=== 184 ===
+— Segítek rajtad — mondod, miután az idegen elhallgatott. — Az átkot fel tudom oldani mágikus hatalmamnál fogva.
+
+— Ha ezt megteszed, bármit kérhetsz tőlem! — válaszolja az idegen izgatottan. Látszik rajta, komolyan
+gondolja, amit mond.
+
+Ha van elég varázspontod egy Semlegesítés varázslatra, lapozz a 171-re!
+Ha nincs, lapozz a 260-ra!
+
+=== 185 ===
+A növényekben rejlő lehetőségek lenyűgöznek. Egy
+altató sohasem árt, vagy éppen a sebgyógyító leelek. Miután közlöd a szándékodat az öregemberrel,
+némi gondolkozás után hajlandó átengedni neked a
+inövényeket, mondván, ő majd gyűjt magának újabb
+idagokat.
+
+Fi — Az álmot hozó fű ára 15 arany (mindenből 1 adag
+Wan az öregnél) — mondja az idős férfi. — A sebgyóítóé 20 arany, míg a mérgezést semlegesítőé 30
+arany. (Ha valamelyik gyógyfüvet megvetted, írd fel a
+alandlapodra, de ne felejts el annyi aranyat levonni
+magadtól, amennyibe kerültek!)
+
+A harmadik szoba padlóján égett foltok díszelegnek,
+b néhány félig perzselődött könyv mutatja, mi történt
+— itt. Talán dolgozószobaként szolgált ez a helyiség, de
+[Valami okból kifolyólag minden itt lévő pergament,
+könyvet és papírt meggyújtottak. Talán valaminek a
+jomait akarták eltüntetni? Meglehet.
+
+Ji
+ú
+
+182 megvizsgálod a maradványokat, lapozz a 75-re!
+la kimégy az előszobába, lapozz a 169-re!
+
+=== 186 ===
+— Az álmot hozó fű ára 15 arany (mindenből 1 adag
+van az öregnél) — mondja az idős férfi. — A sebgyó-
+gyítóé 20 arany, míg a mérgezést semlegesítőé 30
+arany. (Ha valamelyik gyógyfüvet megvetted, írd fel a
+Kalandlapodra, de ne felejts el annyi aranyat levonni
+magadtól, amennyibe kerültek!)
+
+A harmadik szoba padlóján égett foltok díszelegnek,
+és néhány félig perzselődött könyv mutatja, mi történt
+itt. Talán dolgozószobaként szolgált ez a helyiség, de
+valamioki okból kifolyólag minden itt lévő pergament,
+könyvet és papírt meggyújtottak. Talán valaminek a
+nyomait akarták eltüntetni? Meglehet.
+
+Ha megvizsgálod a maradványokat, lapozz a 75-re!
+Ha kimégy az előszobába, lapozz a 169-re!
+
+=== 187 ===
+Talán egy sebesült, fut át az agyadon, és az égődeszkákat félrerugdosva belépsz a kunyhóba. Hirtel
+iszonyú fájdalom hasít az oldaladba (veszítesz 12 élet.
+erőpontot, valamint a támadási képességed maradandóan csökken 1 ponttal). Egy fekete páncélos alak lép
+elő a lángok közül, magasra emelt pallosa ismét lesúj-
+
+ül. Villámgyorsan kihátrálsz a kunyhóból, s te
+is felkészülsz a harcra.
+
+Fekete lovag: életerő 38, támadási képesség 22
+dettség szint 25. A lovag 2-12 életerőpont vesztes
+okoz a pallosával, és minden sikeres találata 1 ponttal
+csökkenti maradandóan a támadási képességedet.
+
+Ha sikerült legyőznöd a lovagot, lapozz az 242-re!
+Ha a lovag diadalmaskodott, lapozz a 82-re!
+
+=== 188 ===
+Az ayrabdir gyors fordulatai megzavarnak, éles
+karmai pedig újabb és újabb sebeket szakítanak a tes-
+teden. Mindent megteszel, ami erődből telik, ám
+marosan nyilvánvalóvá válik, ide minden tudásod ke-
+vés. A bestia a földre teper, s innen nem állsz fel töb-
+bé. Kalandod véget ért!
+
+=== 189 ===
+Az utolsó pillanatban sikerül megőrizned az egyen.
+súlyodat. A lábad előtt, alig néhány lépésnyire
+föld alatti folyó medre tátong, az erős sodrással ali
+tudnál megbirkózni. Erre biztosan nem jutsz továl
+Kénytelen vagy visszafordulni
+
+Lapozz a 36-ra!
+
+Az iszákodba csúsztatod a könyvet (ha később elakarod olvasni, jegyezd fel, hol j íppen, majd lapozz az e, s ha elolvastad a könyvet, lapozz vis.
+oda, ahol előtte jártál). Sohasem tudhatod, mikor lesz
+rá szükséged.
+
+Ha a szarkofághoz mégy, lapozz a 156-ra!
+Ha a ládát nézed meg, lapozz a 115-re!
+
+A pikkelyes rém iszonyú csapásai feltépik a húsoit, testedet a fájdalom lüktetése hatja át. A tűhegyes
+beléd marnak, s többé már el sem engednek.
+
+NH Némi gondolkozás után benyúlsz a lyukon, s meg-
+
+NiPróbálod a túlsó falfelületet kitapogatni. Talán szeren-
+
+ilCséd lesz, s rátalálsz valami nyitószerkezetre, amiI Mmegkönnyítheti a dolgodat. Tegyél szerencsepróbát!
+
+la sikerült, lapozz a 211-re!
+la nem sikerült, lapozz a 279-re!
+
+=== 190 ===
+Az iszkodba csúsztatod a könyvet (ha később
+akarod olvasni, jegyezd fel, hol jársz éppen, majd la-
+pozz az 55-re, s ha elolvastad a könyvet, lapozz vissza
+oda, ahol előtte jártál). Sohasem tudhatod, mikor les
+rá szükséged.
+
+Ha a szarkofághoz mégy, lapozz a 156-ra!
+Ha a ládát nézed meg, lapozz a 115-re!
+
+=== 191 ===
+A pikkelyes rém iszonyú csapásai feltépik a húso-
+dat, testedet a fájdalom lüktetése hatja át. A tűhegyes
+fogak beléd marnak, s többé már el sem engednek.
+
+Kalandod véget ért!
+
+=== 192 ===
+Némi gondolkozás után benyúlsz a lyukon, s meg-
+próbálod a túlsó falfelületet kitapogatni. Talán szerenc-
+séd lesz, s rátalálsz valami nyitószerkezetre, ami
+megkönnyítheti a dolgodat. Tegyél szerencsepróbat!
+
+Ha sikerült, lapozz a 211-re!
+Ha nem sikerült, lapozz a 279-re!
+
+=== 193 ===
+Némi gondolkozás után alaposan szemügyreve:
+a sziklafalat. A kiálló köveket figyelve arra a köv
+keztetésre jutsz, hogy az első tizenöt métert tulajdc
+képpen kötél nélkül is meg tudod tenni, utána pedig
+már nem okozhat problémát a leereszkedés. A gondolatot tett követi, s bár az erődet és ügyességedet egyaránt próbára teszi a mutatvány, hamarosan egy né-hány tenyérnyi széles sziklateraszon egyensúlyozol
+Ám innen a kötél már majdnem elegendőnek tűnik.
+
+Az utolsó három-négy méter már nem annyira veszélyes. Kikötöd a köteledet, majd ereszkedni kezdesz
+Hamarosan eléred a kötél végét, s leugrasz. (Dobj egy
+kockával! Ennyi életerőpontot veszítettél.)
+
+Ha túlélted az ugrást, lapozz a 157-re!
+Ha nem élted túl, lapozz a 206-ra!
+
+=== 194 ===
+Az öregember holtan hever előtted. Komoly ellenfél
+volt, azonban a szerencse ezúttal sem hagyott el.
+Kérdéseidre persze nem kaptál választ, de most csak
+a győzelem számít.
+
+Ha átvizsgálod a halottat, lapozz a 172-re!
+Ha a szarkofágot veszed szemügyre, lapozz az 59-re!
+
+=== 195 ===
+Még a lábára sem sikerül hurkot vetned, amikor az
+idegen felébred. Csupán egy szemvillanásra van szük-
+sége, s a következő pillanatban már talpon is van. Ezután
+emberi formáját másodpercek alatt elveszítve egy
+gigantikus szörnyeteggé alakul át.
+
+Alakvált: életerő 28, támadási képesség 18, védett-
+ségi szint 18. A szörnyeteg 3–8 életerőpont veszteséget
+okoz. (Minden, az alakváltót ért sebzésből vonj le 2 pon-
+tot, ennyit regenerálódik.)
+
+Ha sikerült legyőznöd az alakváltót, lapozz a 208-ra!
+Ha veszítettél, lapozz a 152-re!
+
+=== 196 ===
+— Mit tudsz, öregapó, a toronyról?
+
+Az öreg megcsóválja a fejét, majd hosszasan hüm-
+mög, mielőtt belekezdene.
+
+— Elátkozott hely az — bizonygatja. — Sokan próbál-
+tak már ott kincseket keresni, de soha, senki nem jött
+ki, ha egyszer belépett oda. Azt tanácsolom, kerüld
+el olyan messzire, amennyire csak lehet!
+
+Ha Yhrin xinatról kérdezed, lapozz a 27-re!
+Ha a Démon Szeméről, lapozz a 250-re!
+Ha az általa gyűjtött növényekről, lapozz a 283-ra!
+Ha befejezed a kérdezést, lapozz a 98-ra!
+
+=== 197 ===
+Némán meredsz ellenfeledre, akinek az arcáról
+semmilyen érzelmet nem lehet leolvasni. Vajon mit
+fog tenni? Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 74-re!
+Ha nem sikerült, lapozz a 257-re!
+
+=== 198 ===
+Némán meredsz ellenfeledre, akinek az arcáról
+semmilyen érzelmet nem lehet leolvasni. Vajon mit
+fog tenni? Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 74-re!
+Ha nem sikerült, lapozz a 257-re!
+
+=== 199 ===
+Szinte alig nyúlsz el a földön, máris elnyom
+álom. Nagyon sokat gyalogoltál ma, így ezen n
+miért csodálkozni. Álmod nyugodt, ám nem sokkal é
+fél előtt felriadsz. A csillagok fénye mellett körben
+zel, de semmi fenyegetőt nem látsz.
+
+Ha visszaalszol, lapozz a 126-ra!
+Ha csak tetteted az alvást, lapozz a 14-re!
+
+(Ha csak jól megnézed a fényoszlopot, lapozz a 6-ra!
+Ha meg is érinted, lapozz a 128-ra!
+
+=== 200 ===
+Ha csak jól megnézed a fényoszlopot, lapozz a 6-ra!
+Ha meg is érinted, lapozz a 128-ra!
+
+=== 201 ===
+Ilyen kiszolgáltatott helyzetben képtelen vagy tudáSod legjavát nyújtani. A pók szilárdan kapaszkodik a
+falon, míg neked a figyelmed jelentő: zét arra kell
+koncentrálnod, hogy ne zuhanj le. Így nem sok esélyed
+Van. Kalandod véget ért!
+
+=== 202 ===
+Sietős léptekkel közeledsz a füstoszlop felé. Mérföldeket kell magad mögött hagynod. Hamarosan észreveszed, hogy a szél megváltozott. Mintha fegyvercsörgést is hallanál!
+
+Ha folytatod utadat, lapozz a 293-ra!
+Ha inkább visszafordulsz, lapozz a 118-ra!
+Ha megpihensz egy rövid időre, lapozz a 63-ra!
+
+=== 203 ===
+Nekikészülsz, hogy belépj a jobb oldali ajtón, amikor rádöbbensz, hogy semmilyen zárszerkezetet látsz rajta. Próbaképpen megpróbálod betolni, ám az ajtó nem mozdul. Elgondolkozva nézed a bejáratot, biztos vagy benne, hogy valahogy ki lehet nyitni.
+
+Ha a bal oldali ajtót választod, lapozz a 203-ra!
+Ha megvizsgálod a szobrot, lapozz a 20-ra!
+Ha folytatod a szint átfésülését, lapozz a 261-re!
+
+Minél közelebb érsz az épülethez, annál baljósabb érzések vesznek rajtad erőt. Pedig az épületben semmi fenyegető nincs, legalábbis ami a külsejét illeti. Hosszú kás ablakaiban már régóta nincs üveg, ajtaja helyén csupán összetört deszkákat nyikorogtat a szél.
+
+Ha belépsz az épületbe, lapozz a 34-re!
+Ha először körbejárod, lapozz a 135-re!
+Ha inkább a szakadékot nézed meg, lapozz a 97-re!
+
+=== 204 ===
+Minél közelebb érsz az épülethez, annál baljósabb érzések vesznek rajtad erőt. Pedig az épületben semmi fenyegető nincs, legalábbis ami a külsejét illeti. Hosszú kás ablakaiban már régóta nincs üveg, ajtaja helyén csupán összetört deszkákat nyikorogtat a szél.
+
+Ha belépsz az épületbe, lapozz a 34-re!
+Ha először körbejárod, lapozz a 135-re!
+Ha inkább a szakadékot nézed meg, lapozz a 97-re!
+
+=== 205 ===
+Az utolsó pillanatban vetődsz ki az ajtón, mely szerencsére nyomban bezárul mögötted. Úgy döntesz, ezúttal ennyi vizsgálódás is éppen elég volt. Hamarosan ismét ott állsz a szobor előtt, és elgondolkozva pillantasz rá.
+
+Ha elfordítod a bal kezét, lapozz a 288-ra!
+Ha a jobb kézzel próbálkozol, lapozz a 238-ra!
+Ha a szemével kísérletezel, lapozz a 125-re!
+
+Ha inkább nem babrálod a szobrot, lapozz a 78-ra!
+
+=== 206 ===
+A magasság túl nagynak bizonyul. Amikor a tested a szikláknak csapódik, már tudod, hogy ostobaságot cselekedtél. A fájdalom görcsbe rántja a testedet, ám nem szenvedsz sokáig. A sötétség hamarosan magával ragad. Kalandod véget ért!
+
+=== 207 ===
+Fáklyát húzol elő az iszákodból, majd a tűzszerszá.
+modat is előkészíted. Odabenn sötétség honol, s ki
+tudja, milyen teremtmények lesnek rád az ódon falak
+között megbújva. Karddal a kezedben lépsz be a ka.
+pun, melynek mára csak roncsai maradtak. A rozsdás
+sarokvasak nyikorgása kísérteties. A fáklyád csupán
+néhány lábnyi területet világít meg, ám a szívedben
+mégsem honol félelem, az elmúlt évek során jó néhány
+hasonló helyre hatoltál már be legendás kincsek után
+kutatva.
+
+A torony belső teréből düledező csigalépcső vezet
+felfelé, a keresztgerendákat pókhálók szövik át. A fa-lak mentén kaotikus összevisszaságban csontvázak hevernek egymás mellett: emberek, törpék, s talán tündérek múló emlékei. Vajon hogyan kerültek ide?
+
+Ha felmégy a lépcsőn, lapozz a 219-re!
+Ha körülnézel idelenn, lapozz a 65-re!
+Ha megvizsgálod a csontvázakat, lapozz a 117-re!
+
+=== 208 ===
+Az alakváltó holtan hever a lábaid előtt. Ismét emberi alakjában van, mezítelen, ahogyan először mi
+pillantottad. Első pillantásra látod, hogy nincs sen
+nála, amit a későbbiekben esetleg hasznosíthatnál
+
+A kijárat felé indulsz. Hamarosan ismét a felszínen
+találod magad, az erdő fáitól körülvéve. Észak felé
+folytatod az utadat.
+
+Lapozz a 146-ra!
+
+=== 209 ===
+Amikor a varázstárgy nevét kiejted a szádon
+egember tekintete elfelhősödik, és a következő r
+lanatban mágikus hatalmát használva rád támad
+
+Előhalott öregember: életerő 30, támadási képes
+17, védettség szint 22, varázserő 30. Az öregember
+
+életerőpont veszteséget okoz az ütéseivel, ám először a
+
+varázsereje segítségével próbál meg elpusztítani.
+
+Ha sikerült legyőznöd ellenfeledet, lapozz az 194-re
+Ha veszítettél, lapozz a 90-re!
+
+=== 210 ===
+Amikor megérinted a halál szimbólumával díszített
+
+könyvet, hirtelen gyengeség fog el, s miközber
+
+könyv lapjai apránként kezdenek sértetlenné válni, ac
+
+dig neked rohamosan fogy az életerőd. Tegyél szere
+csepróbát!
+
+Ha sikerült a dobás, lapozz a 271-re!
+Ha nem sikerült, lapozz a 87-re!
+
+=== 211 ===
+Óvatosan tapogatsz minden irányban, s pillanatokon
+belül szerencse kíséri a próbálkozásodat. Eles ropog
+hallatszik, ahogy a fal egy darabja elválik az egésztől,
+majd egy rejtekajtó tárul fel veled szemben. A bejutásod azonban korántsem olyan egyszerű, mint azt gondoltad. Egy áttetsző lény áll veled szemben, s ahol a
+lábai a padlóval érintkeznek, a kövek sisteregni kezdenek. A lény valami savat választ ki a testéb
+
+Savgólem: életerő 25, támadási képesség 20, védettSég szint 18. A szörnyeteg 1-4 életerőpont veszteséget
+Okoz a támadásával, de minden sikeres támadása 1
+ponttal maradandóan csökkenti a támadóerődet!
+
+Ha sikerült legyőznöd a savgólemet, lapozz a 269-re!
+Ha alulmaradtál, lapozz a 131-re!
+
+Az ugrás íve rövidre sikerül, és te egyenesen a folyó
+közepébe csobbansz. A hideg víz sodra azonnal magáVal ragad, s ami még ennél is rosszabb, egy nyálkás
+Csáp a lábadra fonódik. Megpróbálsz a felszínen maTadni, azonban az erőd ehhez kevés. Hamarosan át-Csapnak a fejed felett a hullámok. Kalandod véget
+ért!
+
+=== 212 ===
+Az ugrás íve rövidre sikerül, és te egyenesen a folyó
+közepébe csobbansz. A hideg víz sodra azonnal magával ragad, s ami még ennél is rosszabb, egy nyálkás
+csáp a lábadra fonódik. Megpróbálsz a felszínen maradni, azonban az erőd ehhez kevés. Hamarosan átcsap a fejed felett a hullámok. Kalandod véget ért!
+
+=== 213 ===
+Érzed, valami titok lappang a falu körül, de neked
+
+van elég bajod, hogysem ezekkel foglalkozz. Neki-vágsz a gyaloglásnak, és hamarosan ismét ott állsz a
+napkör monolitjai között. Keletről mintha a tenger mo-
+
+rajlását hallanád, északon komor kősivatag terül el.
+ameddig a szem ellát.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a kősivataggal próbálkozol, lapozz a 104-re!
+
+=== 214 ===
+Sajnos nem tudod a választ, így a könyv titka örökre
+rejtve marad előtted. Lemondó sóhajjal teszed vissza a
+könyvet a polcra, hiszen nincs értelme miért magaddal
+vinned, ha úgysem tudod használni semmire.
+
+Ha a szarkofághoz mégy, lapozz a 156-ra!
+Ha a ládát nézed meg, lapozz a 115-re!
+
+A csontvázharcos a falhoz szorít rettenetes erejű
+"[csapásaival, s már annak is örülsz, ha sikerül kitérned
+la támadásai elől. Aztán váratlanul rést látsz ellenfeled
+"wédelmében. Előreszökkensz, hogy végezz vele, ám
+Ihirtelen rádöbbensz, az egész csupán csel volt, s a le-Zúduló csatabárd megállíthatatlanul tart a koponyád
+felé. Kalandod véget ért!
+
+=== 215 ===
+A csontvázharcos a falhoz szorít rettenetes erejű
+csapásaival, s már annak is örülsz, ha sikerül kitérned
+a támadásai elől. Aztán váratlanul rést látsz ellenfeled
+védelmében. Előreszökkensz, hogy végezz vele, ám
+hirtelen rádöbbensz, az egész csupán csel volt, s a le-
+zúduló csatabárd megállíthatatlanul tart a koponyád
+felé.
+
+=== 216 ===
+Az idegen veszélyesnek tűnik. A mezítelensége nem
+féveszt meg: talán egy alakváltóval vagy egy vérfar-kassal hozott össze a sors. Márpedig azokat szinte leNetetlen elpusztítani. Óvatosan hátrálni kezdesz. Tegyél szerencsepróbát!
+
+"a sikerült a dobás, lapozz a 267-re!
+Ha nem sikerült, lapozz a 133-ra!
+
+=== 217 ===
+A szerkezet csikorogva fordulni kezd, majd az
+alkotmány oldalra fordul. A szarkofágot tartó emel
+vény alatt eg tét lyuk tárul fel, melynek mélyér
+mintha elképesztően távoli fény látszana.
+
+Hirtelen egy baljóslatú hang tör elő a mélyből:
+
+Aranysárkány erdőt eszik,
+lángokat fúj, fényesedik —
+holtában megfeketedik.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-jelkulcsok című részhez, és add össze a válasz betűnek értékét. Ez a szám határozza meg, hova kell
+folytatáshoz lapoznod!
+
+=== 218 ===
+Az asztal meglehetősen rozoga állapotban van, abait valaki (vagy valami) kitördelte, az asztallapon pedig karomnyomok látszanak. Mintha néhány elszab
+dult fenevad tombolt volna ebben a helyiségben
+
+Ha a képeket veszed vizsgálat alá, lapozz a 23.
+Ha kimégy az előszobába, lapozz a 169-re!
+
+a!
+
+6219.
+
+A lépcső nagyokat nyikordul a lábad alatt, ám szerencsésen sikerül felérned. A felső szint egyetlen hatalmas teremből áll, mely egyidejűleg szolgálhatott
+[dolgozószobaként,  hálóhelyként,  laboratóriumként,
+könyvtárként és még ki tudja, miként az itt lakónak.
+
+Most azonban senki nem él itt. Mindent por fed
+
+Vagyis majdnem mindent.
+
+A terem közepén egy mennyezetig nyújtózkodó
+fényoszlop látszik, melynek belsejében mintha apró
+csillagok százai táncolnának.
+
+Ha kutatni kezdesz idefenn, lapozz a 177-re!
+Ha megvizsgálod a fényoszlopot, lapozz az 50-re!
+Ha lemégy az alsó szintre, lapozz a 162-re!
+
+- A Démon Szeme után kutatok — mondod az idefgennek. — Merre találom meg?
+
+A fehér ruhás biccent.
+
+— A varázsszer északon található, de nem lesz könynyű megszerezned. Hatalmas erejű mágia védi, mely
+Nyomban megsemmisít mindenkit, aki rápillant. Am
+Valószínűleg az őrökön sem jutnál túl. Tégy le a vaTázstárgy megszerzéséről, kár lenne érted!
+
+Az idegen a következő pillanatban eltűnik a szemed
+Elől. Elgondolkozva bámulod a helyét. Értékes inforMációt sikerült megtudnod. Visszatérsz a napkörhöz.
+
+Lapozz a 31-re!
+
+=== 219 ===
+A lépcső nagyokat nyikordul a lábad alatt, ám szerencsésen sikerül felérned. A felső szint egyetlen hatalmas teremből áll, mely egyidejűleg szolgálhatott dolgozószobául, halotthelyként, laboratoriumként, könyvtárként és még ki tudja, miként az itt lakónak.
+
+Most azonban senki nem él itt. Mindent por fed.
+
+Vagyis majdnem mindent.
+
+A terem közepén egy mennyezetig nyújtózkodó fényoszlop látszik, melynek belsejében mintha apró csillagok százai táncolnának.
+
+Ha kutatni kezdesz idefenn, lapozz a 177-re!
+Ha megvizsgálod a fényoszlopot, lapozz az 50-re!
+Ha lemégy az alsó szintre, lapozz a 162-re!
+
+=== 220 ===
+— A Démon Szeme után kutatok — mondod az idegennek. — Merre találom meg?
+
+A fehér arc megmozdul.
+
+— A varázszer északon található, de nem lesz könnyű megszerezned. Hatalmas erejű mágia védi, mely nyomban megsemmisít mindenkit, aki rápillant. Ám valószínűleg az őrökön sem jutnál túl. Tégy le a varázstárgy megszerzéséről, kár lenne érted!
+
+Az idegen a következő pillanatban eltűnik a szemed elől. Elgondolkozva bámulod a helyét. Értékes információt sikerült megtudnod. Visszatérsz a napkörhöz, ahol Uhas biccentve vár.
+
+Lapozz a 31-re!
+
+=== 221 ===
+Nekikészülsz az aláereszkedésnek. Nem lesz
+könnyű dolgod, hiszen a szakadék mélysége a legala-
+csonyabb mélységnél is eléri az ötven métert, neked
+pedig csak huszonöt méter köteled van.
+
+Ha kikötöd fent a köteledet, s addig ereszkedsz,
+ameddig tudsz, majd megkockáztatsz egy ugrást,
+lapozz a 25-re!
+
+Ha először megpróbálsz valami tervet kiagyalni a le-
+jutásra, lapozz a 193-ra!
+
+=== 222 ===
+A fáradozásod csakhamar meghozza eredményét. A
+közeli erdő szélén emberi nyomokra bukkansz, talán
+valami remete élhet errefelé.
+
+Ha követed a nyomokat, lapozz a 72-re!
+Ha más nyomokat keresel, lapozz a 32-re!
+Ha visszatérsz a toronyhoz, lapozz a 134-re!
+
+Nem sajnálod a gyógyitalokat, sem a varázserődet
+arra, hogy az ismeretlen xinafot talpra állítsd. Remé-
+led, hogy Yhrinnel hozott össze a sors, és a renegát
+biztosan a segítségedre lesz cserébe, amit érte tettél.
+
+A xinaf állapota rohamosan javul. Amikor az utolsó
+seb is begyógyul a testén, feléd fordul, és gúnyosan
+elmosolyodik.
+
+— Ostoba vagy! Halj meg!
+
+Kiinyított ujjaiból ezernyi apró villám vágódik a
+testedbe, s mielőtt bármit is tehetnél, a Halál Istene,
+Maris magához szólít. Nem kellett volna hinned a
+xinaf hamis ígéretének. Kalandod véget ért!
+
+A halottakat a legjobb nem háborgatni, gondolod.
+Talán a xinaf készített valamilyen jegyzetet, aminek a
+segítségével eljuthatsz a hőn áhított varázstárgyhoz, a
+Démon Szeméhez. A fal mellett hatalmas könyves
+szekrények állnak, ám csupán egyetlen könyv árválko-
+dik poros polcaikon. A szarkofág mögött egy félig be-
+zárt fedelű tölgyfa láda látszik.
+
+Ha megvizsgálod a könyvet, lapozz a 21-re!
+Ha a ládát nézed meg, lapozz a 115-re!
+Rendkívül fáradt vagy, ezért az álom pillanatok
+alatt elnyom. Almod nyugodt, semmi sem zavarja, s
+ismét kinyitod a szemed, már kora reggel van.
+Kintről madárcsicsergés szűrődik be. Felkelsz az ágyból, megemésztesz valamit (ne feledd el módosítani az
+életerődet), majd kilépsz a kunyhóból.
+
+Az épület előtt hatalmas mancsnyomokat talál.
+Valami óriási szörnyeteg éjjel itt járt, ám a kunyhó
+belsejében biztonságban voltál tőle.
+
+Ha követed a lény nyomait, lapozz a 77-re!
+
+Ha tovább haladsz észak felé, lapozz a 146-ra!
+
+=== 223 ===
+A halottakat a legjobb nem háborgatni, gondolod.
+Talán a xinaf készített valamilyen jegyzetet, aminek a
+segítségével eljuthatsz a hőn áhított varázstárgyhoz, a
+Démon Szeméhez. A fal mellett hatalmas könyves
+szekrények állnak, ám csupán egyetlen könyv árválko-
+dik poros polcaikon. A szarkofág mögött egy félig be-
+zárt fedelű tölgyfa láda látszik.
+
+Ha megvizsgálod a könyvet, lapozz a 21-re!
+Ha a ládát nézed meg, lapozz a 115-re!
+
+=== 224 ===
+Rendkívül fáradt vagy, ezért az álom pillanatok
+elnyom. Álmod nyugodt, semmi sem zavarja, s am
+ismét kinyitod a szemed, már kora reggel van. (
+kintről madárcsicsergés szűrődik be. Felkelsz az
+ból, megreggelizel (ne feledd el módosítani a k
+teidet), majd kilépsz a kunyhóból.
+
+Az épület előtt hatalmas mancsnyomokat találsz
+Valami óriási szörnyeteg éjjel itt járt, ám a kuny
+belsejében biztonságban voltál tőle
+
+Ha követed a lény nyomait, lapozz a 77-re!
+Ha tovább haladsz észak felé, lapozz a 146-ra!
+
+=== 225 ===
+Rendkívül fáradt vagy, ezért az álom pillanatok
+elnyom. Álmod nyugodt, semmi sem zavarja, s am
+ismét kinyitod a szemed, már kora reggel van. (
+kintről madárcsicsergés szűrődik be. Felkelsz az
+ból, megreggelizel (ne feledd el módosítani a k
+teidet), majd kilépsz a kunyhóból.
+
+Az épület előtt hatalmas mancsnyomokat találsz
+Valami óriási szörnyeteg éjjel itt járt, ám a kuny
+belsejében biztonságban voltál tőle
+
+Ha követed a lény nyomait, lapozz a 77-re!
+Ha tovább haladsz észak felé, lapozz a 146-ra!
+
+=== 226 ===
+Minden akaraterődet összeszedve folytatod az olva
+st, a kíváncsiságod felülkerekedik a lelked mély
+félelmeden. Apránként sikerül kibetűzr
+írást: egy ősi, erőteljes varázslatra bukkantál,
+maradandóan képes megnövelni az életerődet. S
+közben felolvastad a szöveget, akaratodon kívül máris
+megidézted a hatalmas erejű mágiát. (Dobj egy h.
+dalú kockával; ennyi ponttal növekedett maradai
+az életerőd!)
+
+Ha felmégy a lépcsőn, lapozz a 219-re!
+Ha idelenn nézel körül, lapozz a 65-re!
+
+=== 227 ===
+Az épületből kilépve egy hatalmas szörnyeteget
+pillantasz meg, melynek testét pikkelyek védik, és a
+fején hosszú, szürkés sörény látható. Szemei egészen
+elöl, csaknem a szájánál helyezkednek el. Hosszú
+nyelvéről habos nyál csorog, miközben félelmetesen
+
+h ve neked ug
+
+23, vé-
+
+leterő 30, támadási képesség
+2-12 életerőpont veszte-
+
+Pikkelyes rém:
+idettség szint 26. A szörnye
+séget okoz.
+
+Ha sikerült legyőznöd a szörnyet, lapozz az 38-ra!
+Ha veszítettél, lapozz a 148-ra!
+
+Mozdulatlanul meredsz a fejvadászra és állatára.
+Percek telnek el, ám sem ők, sem te nem mozdultok. A
+Map egyre magasabbra hág az égbolton, s amikor a
+Mmonolitok árnyéka ponitnyivá zsugorodik ÖSS: a
+goreel és a chindon megfordul, majd sietős léptekkel
+Elhagyja a környéket. Ezt megúsztad!
+
+Vajon merre kell a renegátot keresned?
+
+Ismeretlen vidéken jársz. Keleten mintha a teng
+Morajlását hallanád, északon komor kősivatag terül el
+ámeddig a szem ellát. Egyedül nyugaton akad számodta némi remény, a távolból ugyanis vastag, fekete
+füstoszlop száll az ég felé
+
+Ha a tenger felé indul
+Ha a kösivataggal próbálkozol, lapozz a 104-re
+
+Ha a füst irányába mégy, lapozz a 202-re!
+
+lapozz az 52-re!
+
+=== 228 ===
+Mozdulatlanul meredsz a fejvadászra és állatára.
+Percek telnek el, ám sem ők, sem te nem mozdultok. A
+Nap egyre lejjebb süllyed, s amikor a Monolitok árnyéka pontnyivá zsugorodik össze, a Boreel és a chin ácii fordul, majd sietős léptekkel elhagyja a környéket. Ezt megúsztad!
+
+Vajon merre kell a renegátot keresned?
+
+Ismeretlen vidéken jársz. Keleten mintha a tenger morajlását hallanád, északon komor kősivatag terül el ameddig a szem ellát. Egyedül nyugaton akad szarazföldi némi remény, a távolból ugyanis vastag, fekete füstoszlop száll az ég felé.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+
+Ha a kősivatag gal próbálkozol, lapozz a 104-re!
+
+Ha a füst irányába mégy, lapozz a 202-re!
+
+=== 229 ===
+A levegő dohos, és a fáklyád fénye imbolygó árnyékokat vet a falra. A lépcső meglehetősen merede
+ezért nem árt, ha odafigyelsz a lépteidre. Már perce
+óta gyalogolsz lefelé — óvatosságod miatt sokkal las.
+sabban haladsz, mint szoktá
+egy fémkorongról verődik vissza.
+
+A korong a mennyezetről lóg alá, erős láncok ta
+ják, melyeket az idő vasfoga sem tudott kikezdeni.
+
+Ha megvizsgálod a korongot, lapozz a 136-ra!
+Ha óvatosan kikerülöd a korongot, és folytatod az u
+dat, lapozz a 285-re!
+
+=== 230 ===
+A barlang száraz, ám meglehetősen hűvös a levegője. A padló meredeken ereszkedik, s nem sokkal kébb egy belső terembe torkollik, melynek túlsó vé
+sötétbe vesz. Fáklyád, melyet nem sokkal a belép
+után gyújtottál meg, csupán alig negyedrészét világít
+meg a helyiségnek
+
+A szörnyetegnek nyoma sincs.
+
+Ha balra indulsz a barlangban, lapozz az 58-ra!
+
+Ha jobbra, lapozz a 121-re!
+
+Ha a füledre hagyatkozol, lapozz a 292-re!
+
+Ha visszatérsz a felszínre, és észak felé folytatod a
+utadat, lapozz a 146-ra!
+
+előrelátásodért. A Nagy Tüdő v a
+tésapdák ellen fejlesztették ki hajdanán. A füst csak-hamar eloszlik, s így semmi akadálya a per:
+-, amikor a fáklya fénye
+
+=== 231 ===
+dban hálát adsz az
+arázslatot épp az ilyen
+
+Miközben a füst elborít, m
+
+amen ta-
+
+nulmányozásának. Egy rövid versike van ráírva:
+
+Tavasszal kap levelet,
+s ősszel küld csak választ,
+de nem egyet, nem is kettőt,
+hanem sok-sok százat.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-jelkulcsok című részhez, és add össze a válasz betűinek értékét. Ez a szám határozza meg, hova kell a
+folytatáshoz lapoznod!
+
+Ha nem tudod a választ, lapozz a 76-ra!
+
+et
+
+=== 232 ===
+Az alakváltó szinte elpusztíthatatlan. Hiába ejtesz
+
+fajta újra és újra sebet, nem tudsz felülkerekedni rajta.
+Neked ellenben gyorsan elfogy az erőd, s az utolsó
+fámadás során már nem bizonyulsz elég gyorsnak
+Kalandod véget ért!
+
+=== 233 ===
+A várakozásnak csak akkor van értelme, ha elég
+szán rá az ember, gondolod bölcselkedve, ezért ai
+az alkony sötét leplét szétteríti a vidéken, nyugod
+készülsz az éjszakára.
+
+Ha megpróbálsz valami csapdát összeeszkábálni eg
+
+esetleges éjszakai látogatóra készülve, lapozz a 15-re
+Ha úgy gondolod, egy ilyen elhagyatott helyen ni
+mitől tartanod, lapozz a 106-ra!
+
+=== 234 ===
+A Démon Szeme körül örvénylő mágikus eri
+
+hirtelen gyengülni kezd, miközben a nálad lévő, fekete
+
+ékköves nyaklánc egyre forróbbá válik. Iszonyú er
+feszülnek egymásnak, s biztos vagy benne, ha m
+nem lett volna nálad ez a fekete k.
+szeté lennél
+
+Aztán hirtelen minden véget ér. A Démon Sze!
+immáron ártalmatlanul lebeg a levegőben, a tárg:
+
+, már rég az eny
+
+védelmező erőtér a múlté. Amikor megérinted, mé
+
+langyos a felszíne, ám a benne rejtőzködő hatalc
+
+Lapozz a 300-ra!
+
+=== 235 ===
+Nem csak a szarkofág hívja fel idegelentet a figyelmdet. A fal mellett hatalmas könyves szekrények állnak,
+ám csupán egyetlen könyv árválkodik poros polcain.
+A szarkofág mögött egy félig bezúzott fedelű tárolóláda látszik.
+
+Ha megvizsgálod a könyvet, lapozz a 21-re!
+Ha a ládát nézed meg, lapozz a 115-re!
+
+=== 236 ===
+Úgy érzed, erre hiába keresnéd Yhrin xinafot, ezért
+visszafordulsz. Átvágsz az erdőn, majd késő délután
+ismét ott állsz a napkör monolitjai között. Keletről
+mintha a tenger morajlását hallanád, északon komor
+kősivatag terül el, ameddig a szem ellát. Nyugaton a
+távolból vastag, fekete füstoszlop száll az ég felé.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a kősivatággal próbálkozol, lapozz a 104-re!
+Ha a füst irányába mégy, lapozz a 202-re!
+
+=== 237 ===
+A sav felmarja a bőrödet, a húsodat és a csont
+A fájdalom miatt nem tudsz kellőképp koncentr
+így a savgólem egyre nagyobb fölénybe kerül. Hai
+rosan már csak védekezni tudsz, ám a te erőd is elf
+egyszer. A sötétség gyorsan jön. Kalandod véget ért!
+
+=== 238 ===
+Minden idegszáladdal figyelve rendkívül óvatos;
+elfordítod a szobor jobb kezét. Halk kattanás ha
+szik, majd a szobor feléd fordítja a fejét, és beszékezd
+
+irke szárnyú nagy madár,
+
+ke lesz a nagy határ
+ha ősszel a földre száll.
+
+Ha tudod a választ, lapozz előre a Rejtvények és r
+jelkulcsok című részhez, és add össze a válasz
+nek értékét. Ez a szám határozza meg, hova ke
+folytatáshoz lapoznod!
+
+=== 239 ===
+Valahogy nem tetszik neked ez a hely. L véled,
+mégsem a kősivatagnak kellett volna nekivágnod
+jjabb kimerítő gyaloglás következik, elindulsz Vissza-felé, ahonnan érkeztél. A napkör egy biztos tájékozódási pont. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 290-re!
+Ha nem sikerült, lapozz a 1
+
+Hiába töröd a fejed, képtelen vagy kiókumlálni a
+Nálaszt. Csalódottan zárod vissza a xinaf könyvét. Lelet, hogy a legértékesebb varázskönyv, amivel eddigi
+Életed során találkoztál, ám neked nem sokat ér, mert
+képtelen vagy használni
+
+Más módszert kell találnod a feljutásra (átjutásra).
+A felkapaszkodás az egyedüli reményed
+
+Uapozz a 28-ra!
+Ha ő nem támad, akkor én sem, döntö
+köszöntöd, majd gyorsan a lényegre térsz.
+
+— Yhrin xinafhoz van szerencsém?
+
+Az öregember megrázza a fejét.
+
+Ha a Démon Szeméről kérdezel, lapozz a 209-re!
+Ha a neve felől érdeklődsz, lapozz a 143-ra!
+
+Talán még sohasem vívtál ilyen pokoli küzde
+ám a végén mégis a lovag ített. Most holtar
+szik a lábaid előtt, s bár számos sebtől vérzel, d
+
+j masan mosolyogsz. (Ha akarod, magadhoz vehet.
+
+lovag pallosát — 2.
+minden sikeres támadásnál maradandóan csök
+! ellenfél támadási képessége 1 ponttal.)
+
+sleterőpont veszteséget
+
+Ha folytatod a falu átvizsgálását, lapozz a 95-re!
+Ha a támadók nyomait vizsgálod meg, lapozz a 18
+Ha visszatérsz a napkörhöz, lapozz a 118-ra!
+
+. Illend
+
+=== 240 ===
+Hiába töröd a fejed, képtelen vagy kiokoskodni a
+választ. Csalódottan zárod vissza a xinaf könyvét. Lege-
+rét, hogy a legértékesebb varázskönyv, amivel eddigi
+életed során találkoztál, ám neked nem sokat ér, mert
+képtelen vagy használni.
+
+Más módszert kell találnod a feljutásra (átjutásra).
+A felkapaszkodás az egyedüli reményed.
+
+Lapozz a 28-ra!
+
+=== 241 ===
+Ha ő nem támad, akkor én sem, döntöd el. Illen
+köszöntöd, majd gyorsan a lényegre térsz.
+Yhrin xinafhoz van szerencsém?
+Az öregember megrázza a fejét.
+
+Ha a Démon Szeméről kérdezel, lapozz a 209-re!
+Ha a neve felől érdeklődsz, lapozz a 143-ra!
+
+=== 242 ===
+Talán még sohasem vívtál ilyen pokoli küzdelmet,
+ám a végén mégis a lovag veszített. Most holtan
+fekszik a lábaid előtt, s bár számos sebtől vérzel, még
+is mosolyogsz. (Ha akarod, magadhoz vehetsz — 2–12 életerőpont veszteséget szenvedsz
+minden sikeres támadásnál maradandóan csök-
+kentett.)
+
+Ha folytatod a falu átvizsgálását, lapozz a 95-re!
+Ha a támadók nyomait vizsgálod meg, lapozz a 18-ra!
+Ha visszatérsz a napkörhöz, lapozz a 118-ra!
+
+=== 243 ===
+Nem volt könnyű végezned a pókkal, de sikerült
+Undorodva eltaszítod az áttetsző testet az utadból,
+majd folytatod a kapaszkodást. A vízesés robajában
+Szinte semmit sem hallasz. Közel egy órába telik, mire
+Sikerül elérned a meredély tetejét, ám hosszú percekig
+Csak fekszel némán a hátadra fordulva. Időre van szükSéged, amíg összeszeded magad
+
+Amennyire meg tudod állapítani, ezen a parton nem
+Sok keresnivalód van. A másik parton a romos épület
+Csábítónak tűnik. Valahogy vissza kellene jutnod.
+
+Ha leereszkedsz a meredélyen, és a folyón átugorva át-mégy a másik partra, lapozz a 94-re!
+Ha áttanulmányozod a xinaf könyvét, lapozz a 85-re!
+
+VBEZZÁKO Si
+
+A tucatnyi csontváz eltemetése nem kis feladatnak
+ígérkezik, ám te úgy gondolod, ennyit igazán megér.
+demelnek a halottak. A fáklyádat az egyik rozsdás
+fáklyatartóba szúrod, majd nekilátsz, hogy kicipeld a
+ÉSontokat a torony melletti kis erdő e. Mé
+iS odafigyelsz, hogy a csontok ne keveredjenek össze.
+
+A munka több órát vesz igénybe; a hantok katonás
+tendben sorakoznak egymás mellett. Mire feleszmélsz,
+Már a sötét éjszaka borul rád. Odabenn a toronyban az
+itolsókat pislogja a fáklya csonkja.
+
+5 Ha folytatod a torony átvizsgálását, lapozz a 93-ra!
+
+Ia megpihensz, lapozz a 167-re!
+
+=== 244 ===
+A tucatnyi csontváz eltemetése nem kis feladatnak
+igérkezik, ám te úgy gondolod, ennyit igazán megér-
+demelnek a halottak. A fáklyádat az öreg rozsdás
+fáklyatartóba szúrod, majd nekilátsz, hogy kicipeld a
+csontokat a torony melletti kis erdő szélére. Még arra
+is odafigyelesz, hogy a csontok ne keveredjenek össze.
+
+A munka több órát vesz igénybe; a hantok katonás
+rendben sorakoznak egymás mellett. Mire feleszmélsz,
+már a sötét éjszaka borul rád. Odabenn a toronyban az
+utolsókat pislogja a fáklya csonkja.
+
+Ha folytatod a torony átvizsgálását, lapozz a 93-ra!
+Ha megpihensz, lapozz a 167-re!
+Az öregember veszélyesebbnek bizonyul, mint sejtetted volna. A varázslatai elsöprő erejűek, és nem igazán sikerül hatékonyan védekezned ellenük. Kalandod véget ért!
+
+=== 245 ===
+Az öregember veszélyesebbnek bizonyul, mintsem
+sejtetted volna. A varázslatai elsöprő erejűek, nen
+igazán sikerül hatékonyan védekezned ellenük. Kalandod véget ért!
+
+=== 246 ===
+Az ágak között alszol, mert odafent biztonságabbnak tűnik. Elég magasra kapaszkodsz ahhoz, hogy még egy medvétől se kelljen tartanod. Éjfél körül halkan csörretésre ébredsz. Kinyitod a szemed, és egy hatalmas alakot látsz a tisztás túlsó oldalán szimatolni.
+
+Ha csendben meglapulsz, lapozz a 166-ra!
+Ha lemászol, és megtámadod, lapozz az 51-re!
+
+=== 247 ===
+A fényoszlop folyamatosan pulzál, mintha egy lükető szívet néznél. Az oszlop belsejében úszó csillagok
+lássan változtatják a helyüket; a látvány lenyűgöző
+
+Ha megérinted a fényoszlopot, lapozz a 291-re!
+IHa kutatni kezdesz idefenn, lapozz a 177-re!
+IHa lemégy az alsó szintre, lapozz a 162-re!
+
+OT oz TEL
+
+=== 248 ===
+Ellenfeled holtan hever előtted. Teste hamarosan
+apró kődarabokra esik szét. Folytathatod az utadat.
+
+Hamarosan ismét ott állsz a napkör monolitjai köíZött. Keletről mintha a tenger morajlását hallanád,
+Északon komor kősivatag terül el, ameddig a szem el-lát. Nyugaton a távolból vastag, fekete füstoszlop száll
+az ég felé.
+
+: Ha a tenger felé indulsz, lapozz az 52-re.
+; a kősivataggal pró Ikozol, lapozz a 104- re!
+" Ha a füst irányába mégy, lapozz a 202-re!
+
+=== 249 ===
+A második szobába belépve dögszag üti meg az orrodat, s a sarokban tornyozódó csonthalom alól egy amorf lény szökken feléd.
+
+Amorf hullazabáló: életerő 22, támadási képesség 23, védettségi szint 25. A szörnyeteg 1-6 életerőpont veszteséget okoz, s minden sikeres csapása maradandóan csökkenti az életerődet.
+
+Ha sikerült legyőznöd a szörnyet, lapozz a 100-ra!
+Ha veszítettél, lapozz a 49-re!
+
+Az öreg csodálkozva néz rád, miután feltetted 2 kérdésedet.
+
+— A Démon Szeme? — Megrázza a fejét. — Sohasem hallottam róla, s te is jobban teszed, ha inkább más kincsek után kutatsz. A démonokat jobb nem zavarni.
+
+Ha Yhrin xinafról kérdezed, lapozz a 27-re!
+
+Ha a toronyról, lapozz a 196-ra!
+
+Ha az általa gyűjtött növényekről, lapozz a 283-ra!
+
+Ha befejezed a kérdezést, lapozz a 98-ra!
+
+=== 250 ===
+Az öreg csodálkozva néz rád, miután feltetted a
+kérdésedet.
+
+— A Démon Szeme? — Megrázza a fejét. — Sohasem
+hallottam róla, s te is jobban teszed, ha inkább más
+kincsek után kutatsz. A démonokat jobb nem zavarni
+
+Ha Yhrin xinafról kérdezed, lapozz a 27-re!
+
+Ha a toronyról, lapozz a 196-ra!
+
+Ha az általa gyűjtött növényekről, lapozz a 283-ra!
+Ha befejezed a kérdezést, lapozz a 98-ra!
+
+=== 251 ===
+— Segítek rajtad — mondod, miután az idegen elhal.
+gatott. — Az átkot fel tudom oldani mágikus hatalmamnál fogva.
+
+— Ha ezt megteszed, bármit kérhetsz tőlem! — válaszolja az idegen izgatottan. Látszik rajta, komolyan
+gondolja, amit mond. ú
+
+Kioldod rajta a köteleket.
+
+Ha van elég varázspontod egy Semlegesítés varázslatra, lapozz a 79-re!
+Ha nincs, lapozz a 173-ra!
+
+=== 252 ===
+A szörnyeteggel szemben tehetetlen vagy. Má
+erejével meggyengít, majd félelmetes kaszájával be-végzi, amit elkezdett. Hiába szeded össze minden erődet, egyszerűen képtelen vagy szembeszállni vele:
+Kalandod véget ért!
+
+=== 253 ===
+— Yhrin xinafot keresem — válaszolod.
+
+Az öreg megrázza a fejét.
+
+— Fogalmam sincs, hol lehet jelenleg a mester — fe-
+jeli elgondolkozva, majd a szarkofág felé mutat. — Azt
+azonban elárulhatom, hogy lehetőséged nyílik a köve-
+tkezésre, ha nem félsz a veszélyektől. A szarkofág alatt
+van egy lejárat, melyet mágikus igék védenek.
+
+A következő pillanatban az öregember eltűnik.
+
+Odalépsz a szarkofághoz, és szemügyre veszed. Végig
+omkodod az oldalán a faragott díszítéseket, de ez
+nem vezet eredményre. Ezután az emelvényt nézed át,
+és csakhamar rádöbbensz, hogy a szarkofág alatt egy
+apró szerkezet található. Az öreg nem hazudott!
+
+Működésbe hozod a szerkezetet.
+
+Lapozz a 217-re!
+
+— Tudod, egy gonosz teremtmény átkát viselem —
+magyarázza a csupasz idegen. — Valaha Choler Ma-
+giszter egyik tanítványa voltam, ám összekülönböztem
+egy xinaffal, és ő gondoskodott róla, hogy ne jelentsek
+veszélyt reá nézve. Elvarázsolt, és ide börtönzött be.
+Csak akkor hagyhatom el a barlangot, ha vadászni in-
+dulok, de a mágia minduntalan visszakényszerít erre a
+szörnyű helyre.
+
+Ha segíteni akarsz az idegenen, lapozz a 184-re!
+
+Ha a xinaf nevéről érdeklődsz, lapozz a 19-re!
+
+Ha nem foglalkozol az idegennel, lapozz a 30-ra!
+
+=== 254 ===
+— Tudod, egy gonosz teremtmény átkát viselem —
+magyarázza a csupasz idegen. — Valaha Choler Ma-
+giszter egyik tanítványa voltam, ám összekülönböztem
+egy xinaffal, és ő gondoskodott róla, hogy ne jelentsek
+veszélyt reá nézve. Elvarázsolt, és ide börtönzött be.
+Csak akkor hagyhatom el a barlangot, ha vadászni in-
+dulok, de a mágia minduntalan visszakényszerít erre a
+szörnyű helyre.
+
+Ha segíteni akarsz az idegenen, lapozz a 184-re!
+
+Ha a xinaf nevéről érdeklődsz, lapozz a 19-re!
+
+Ha nem foglalkozol az idegennel, lapozz a 30-ra!
+
+=== 255 ===
+A pergament védő vitrin üvegje elhomályosítja az
+írást, így képtelen vagy pontosan kihüvelyezni a szavak értelmét.
+
+Ha leveszed a vitrin tetejét, lapozz a 69-re! (Előtte lehetőséged van egy vagy több varázslat elmondására!)
+Ha a halottakat nézed meg, lapozz a 44-re!
+
+Ha elhagyod a szobát, lapozz a 299-re!
+
+Sikerül megragadnod a lelógó kötélvéget, s innentől
+már nem okoz különösebb nehézséget a feljutás. Igaz.
+elfáradtál egy kicsit, de legalább idefent vagy. A romos épület felé veszed az irányt.
+
+Lapozz a 204-re!
+
+Az öreg hosszan néz rád, majd hirtelen elégedetleEnül felmordul, és felemeli a kezét. A következő pillaNinatban mágikus támadás zúdul rád.
+
+"Élőhalott öregember: életerő 30, támadási képesség
+
+MI, védettség szint 22, varázserő 30. Az öregember 1-3
+
+Néleterőpont veszteséget okoz az ütéseivel, ám először a
+Warázsereje segítségével próbál meg elpusztítani
+
+"Ha sikerült legyőznöd ellenfeledet, lapozz az 194-re!
+(Ha veszítettél, lapozz a 90-re!
+
+I A szörnyeteg mozdulatlanul mered rád, miközben a
+lebegő tárgy felől halk, ám fenyegető hangot hallasz:
+
+Nincsen pihenésem, nincsen maradásom,
+ágyban fekszem, még sincs soha megnyugvásom.
+A vándornak útját állhatom kevélyen,
+de többször könnyítem s megr. övidítem.
+Hideg kebelemből sok állat éltét szívja,
+
+s lettem már soknak gyászos, hideg sírja.
+
+§ Ha tudod a választ, lapozz előre a Rejtvények és rejtikulcsok című részhez, és add össze a válasz betűiNek értékét. Ez a szám határozza meg, hova kell a
+
+=== 256 ===
+Élőhalott öregember: életerő 30, támadási képesség
+17, védettség szint 22, varázserő 30. Az öregember 1-3
+életpont veszteséget okoz az ütéseivel, ám először a
+varázsereje segítségével próbál meg elpusztítani.
+
+Ha sikerült legyőznöd ellenfeledet, lapozz az 194-re!
+Ha veszítettél, lapozz a 90-re!
+
+=== 257 ===
+Az öreg hosszan néz rád, majd hirtelen elégedetlenül felmordul, és felemeli a kezét. A következő pillanatban mágikus támadás zúdul rád.
+
+Élőhalott öregember: életerő 30, támadási képesség 17, védettségi szint 22, varázserő 30. Az öregember 1-3 életerőpont veszteséget okoz az üteseivel, ám először a varázsereje segítségével próbál meg elpusztítani.
+
+Ha sikerült legyőznöd ellenfeledet, lapozz a 194-re!
+Ha veszítettél, lapozz a 90-re!
+
+=== 258 ===
+A szörnyeteg mozdulatlanul mered rád, miközben a
+lebegő tárgy felől halk, ám fenyegető hangot hallasz:
+
+Nincsen pihenésem, nincsen maradásom,
+ágyban fekszem, még sincs soha megnyugvásom.
+A vándornak útját állhatom kevélyen,
+de többször könnyítem és megrövidítem.
+Hideg kebelemből sok állat éltét szívja,
+s lettem már soknak gyászos, hideg sírja.
+
+Sikerül megragadnod a lelógó kötélvéget, s innentől
+már nem okoz különösebb nehézséget a feljutás.
+Elfáradtál egy kicsit, de legalább idefent vagy.
+
+A mos épület felé veszed az irányt.
+
+Lapozz a 204-re!
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-
+kulcsok című részhez, és add össze a válasz betűi-
+nek értékét. Ez a szám határozza meg, hova kell a
+végzéshez lapoznod!
+Ha nem tudod a választ, lapozz a 159-re!
+
+=== 259 ===
+Magad sem tudod, mire riadsz fel, ám ösztönösen a
+kardod után nyúlsz, miközben harcra készen körbepi-
+lantasz. Alig néhány lépésnyire tőled egy éjfekete vad
+állat, egy Ayrabdir vicsorit, majd könnyű mozdulattal
+rád veti magát, ám felkészülten fogadod (kezdemén-
+zés nélkül tiéd az első támadás).
+
+Ayrabdir: életerő 18, támadási képesség 12, védet-
+tségi szint 17. A szörnyeteg 2-7 életerőpont vesztesé-
+get okoz a harapásával és a karmaival.
+
+Ha sikerült legyőznöd a szörnyeteget, lapozz az 53-ra!
+Ha veszítettél, lapozz a 188-ra!
+
+=== 260 ===
+Már éppen nekikezdenél a varázslásnak, amikor rá-
+döbbensz, hogy nincs elég varázslatpontod hozzá.
+
+— Pihennem kell, mert most gyenge vagyok! —
+magyarázod az idegennek.
+
+Az szomorúan megrázza a fejét.
+
+— Sajnálom. Te mindent megtettél, de én nem v
+hatok... Az átok miatt — magyarázza. — Ha valaki e
+napnál tovább maradna velem, hozzám hasonlóvá v
+na. Az átok rá is atterjedne... De értékelem a segít-
+ségességedet. Szabadon elmehetsz, és még egy g
+itallal is megajándékozlak (10 életerőpontot gyógy
+Most pedig menj!
+
+Atadja az üvegcsét, majd int a kijárat felé.
+
+Hamarosan ismét a felszínen találod magad, az e-
+mítfáitól körülvéve. Észak felé folytatod az utadat.
+
+Lapozz a 146-ra!
+
+=== 261 ===
+Folytatod a szint átvizsgálását. Megpróbálsz hasz-
+nálható nyomokra bukkanni, melyek segítségével
+megválaszolhatnád az elmédet gyötrő kérdéseket. Ko-
+módon végigsétalász a falak mentén, türelmesen ko-
+pogtatod a felületüket, hátha melléd szegődik a szerencse,
+és rátalálsz valami titkos ajtóra.
+
+Már majdnem a végére jutsz a szint átfésülésének,
+amikor az egyik falon rúnákat fedezel fel. Némi vizs-
+gálódás után sikerül betolnod azt a kőkockát, amelyen
+a rúnák vannak. Az így támadt sötét résből dohos levegő
+csapja meg az orrodat.
+
+Ha benyúlsz a lyukon, lapozz a 192-re!
+Ha először egy fáklyát tolsz át, lapozz a 165-re!
+Ha folytatod a szint átfésülését, lapozz a 41-re!
+Ha visszamégy a szoborhoz, lapozz a 10-re!
+
+=== 262 ===
+Előveszed az igazmondó varázsitalt, s minthogy a
+xinafnak nincs elég ereje, hogy megakadályozz.
+szándékodban, az egészet beöntöd a szájába, majd
+kényszeríted a lenyelésére.
+
+- A Démon Szeme néven ismert varázseszközt keresem -— térsz rá azonnal a lényegre. — Mit tudsz róla?
+
+A xinaf azonnal beszélni kezd.
+
+— Odafenn, a szakadék peremén van egy romos
+épület... Abban rejtettem el, de csak akkor juthatsz
+hozzá, ha megölöd az őrzőjét, és feloldod a varázs
+közre bocsátott mágikus védelmet.
+
+A xinaf hirtelen elhallgat. Egyetlen pillantás elég
+ahhoz, hogy megállapítsd, halott. Fogalmad sincs róla,
+mi végzett vele, de így legalább nem kell azon törnöd
+az agyad, mi legyen vele.
+
+Miután átkutattad a ruházatát, a holttestet begördí-
+
+ted a folyóba. Ezután szemügyre veszed a zsákmányt:
+egy üres erszény, egy gyűrű (3 ponttal növeli a védettségedet), valamint egy könyv, számodra érthetetlen
+jelekkel teleírva.
+
+Ha folytatod idelent a kutatást, lapozz a 154-re!
+Ha megpróbálsz feljutni, lapozz a 16-ra!
+
+=== 263 ===
+A fejvadász és a szörnyetege túlságosan sok nel
+egyszerre. Miközben az egyikkel csatázol, a másik
+
+telen vagy tartósan két ellenfélre összpontosítani. A
+végzetes csapás a földre sújt. Kalandod véget ért!
+
+=== 264 ===
+Rossz választ adtál. A korong hirtelen átalakul, s a
+helyén egy hatalmas pók néz veled farkasszemet. Rá-gói méregtől csöpögnek, s habozás nélkül neked ront
+
+Oriáspó : életerő 22, támadási képesség 16, véd
+ség szint 20. A pók 1-6 életerőpont veszteséget okoz a
+rágóival, de ha egyszer megmart, a méreg miatt (mel
+
+lelassít téged egy kicsit) onnantól kezdve mindig ő támad elsőként. N
+
+Ha sikerült végezned a pókkal, lapozz az 67-re!
+Ha veszítettél, lapozz a 297-re!
+
+=== 265 ===
+Másodjára is sikerült diadalmaskodnod a szörnyetegen, bár az a dupla erőpróba alaposan próbára tette a
+képességeidet. Még egy ilyen fordulót nem vennél szívesen, mert az könnyen a végzetedet jelenthetné.
+
+A varázstárgy felől halk, fenyegető hangot hallasz.
+
+Nincsen pihenésem, nincsen maradásom,
+ágyban fekszem, még sincs soha megnyugvásom.
+A vándornak útját állhatom kevélyen,
+de többször könnyítem s megrövidítem.
+Hideg kebelemből sok állat éltét szívja,
+s lettem már soknak gyászos, hideg sírja.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejtelkulcsok című részhez, és add össze a válasz betűinek értékét. Ez a szám határozza meg, hova kell a
+folytatáshoz lapoznod!
+
+Ha nem tudod a választ, lapozz a 66-ra!
+
+=== 266 ===
+A szerencséd ezúttal sem hagy cserben. Találomra
+vágsz neki a keresésnek, s már az első óra végén meg.
+pillantasz egy alacsony, görnyedt hátú fickót, aki nö.
+vényeket gyűjt az út menti bokrok tövében. Lassan
+kimérten mozog, s amikor feléd fordul, egy évtizedektől barázdált arcú férfiút látsz.
+
+] Hosszan figyel téged, majd mi semmi sem történt volna, ismét a növények gyűjtésére koncentrál
+Kosarában már több maroknyi levél, bogyó és gyümölcs pihen, az öreg tagadhatatlanul szorgalmas. 18
+
+Ha beszédbe elegyedsz vele, lapozz a 84-re!
+Ha inkább keresel valaki mást, lapozz a 153-ra!
+
+, Hamarosan ismét ott állsz a bejáratot jelző sápadt
+fényfolt előtt, mely a felszínre vezető alagutat jelzi.
+
+Ha balra indulsz a barlangban, lapozz-az 58-ra!
+
+Ha jobbra, lapozz a 121-re!
+
+Ha visszatérsz a felszínre, és észak felé folytatod az
+utadat, lapozz a 146-ra!
+
+Ha visszatérsz a napkörhöz, lapozz a 213-ra!
+
+=== 267 ===
+Hamarosan ismét ott állsz a bejáratot jelző sápadt
+fényfolt előtt, mely a felszínre vezető alagutat jelzi.
+
+Ha balra indulsz a barlangban, lapozz a 58-ra!
+
+Ha jobbra, lapozz a 121-re!
+
+Ha visszatérsz a felszínre, és észak felé folytatod az
+utadat, lapozz a 146-ra!
+
+Ha visszatérsz a napkörhöz, lapozz a 213-ra!
+
+=== 268 ===
+A kunyhóba belépve egy furcsa ruhába öltözött aszszonyt látsz a földön heverni. Még él, ám az oldalán
+
+tátongó seb miatt már nem sokáig. Szakértő szemmel
+
+felméred, itt még egy gyógyital ereje is kevésnek biIzonyulna. A legtöbb, amit megtehetsz, hogy kicipeled
+a haldoklót a lángoló kunyhóból, hogy legalább békében távozzon erről a világról a lelke.
+
+I" — A fekete... kő... hatalmat... ad... — nyöszörgi a se-
+"besült, és egy nehéz nyakláncot húz elő a ruhája alól,
+
+I melynek közepén egy fekete ékkő díszeleg. — Bármi-
+
+lyen varázslatot képes... semlegesíteni... csupán egy-Szer használható...
+Aztán hirtelen csend lesz. Az asszony halott.
+Elteszed az ékkövet (bármilyen rád irányuló va-
+
+INrázslatot képes semlegesíteni, s ilyenkor nem kell va-
+
+I rázslatpontot használnod).
+
+Ha átkutatod a falut, lapozz a 95-re!
+Ha a támadók nyomait vizsgálod meg, lapozz a 18-ra!
+
+=== 269 ===
+Amikor végzel a lénnyel, végigvágódik a földön, s
+hamarosan csak a megolvadt kövek emlékeztetnek a
+jelenlétére. A fal mögött egy lefelé vezető lépcsőre
+bukkansz. A lépcsőfokokon sötét foltok jelzik, hogy
+valaha régen kemény küzdelem folyhatott idelent. s
+
+Ha elindulsz lefelé, lapozz a 229-re!
+Ha visszatérsz a szoborhoz, lapozz a 10-re!
+
+=== 270 ===
+Amikor a füstöt belélegzed, nyomban fuldokolni
+kezdesz, miközben a tagjaid lebénulnak. A füst mérgező, s a halál gyorsan érkezik. Kalandod véget ért!
+
+=== 271 ===
+(Dobj hatoldalú kockával! A kapott értéket szorozd meg hárommal, ennyi életerőpontot szívott el tőled ez a vámpírképességekkel felruházott mágikus alkotás! Ha meghaltál, lapozz a 87-re!)
+
+Az utolsó pillanatban sikerül eldobnod a könyvet, miközben magadban átkozódsz. Nem sokon múlott, hogy nem maradált ott.
+
+Ha kimégy az előszobába, lapozz a 169-re!
+Ha kezedbe veszed a sárkánykarmos könyvet, lapozz a 129-re!
+
+=== 272 ===
+Amikor kiejted a szádon a varázstárgy nevét, az
+öregember tekintete elfelhősödik, és a következő pil-
+lanatban mágikus hatalmát használva rád támad.
+
+Élőhalott öregember: életerő 30, támadási képesség
+17, védettség szint 22, varázserő 30. Az öregember 1-3
+életerőpont veszteséget okoz az ütéseivel, ám először a
+varázsereje segítségével próbál meg elpusztítani.
+
+Ha sikerült legyőznöd ellenfeledet, lapozz a 194-re!
+Ha veszítettél, lapozz a 90-re!
+273. 275.
+
+Hamarosan ismét ott állsz a sötét lyuk előtt, melyet Az álmodat reggelig nem zavarja semmi sem. Kipi-
+a rúnákkal díszített kövek mögött találtál. henten, felfrissiilve ébredsz (2 életpontot gyógyulsz).
+Gyorsan megreggelizel (húzz le egy napnyi ételt
+Ha benyúlsz a lyukon, lapozz a 192-re! és italt a Kalandlapodról!), majd töprengeni kezdesz,
+Ha először egy fáklyát tolsz át, lapozz a 165-re! hogyan tovább.
+Ha visszatérsz a szoborhoz, lapozz a 10-re!
+
+Ha türelmesen várakozol tovább, lapozz a 139-re!
+
+Ha inkább szétnézel a romok között, lapozz a 207-re!
+Ha megpróbálsz olyasvalakit keresni, aki a környéken
+él, lapozz a 294-re!
+
+Villámgyorsan megkötözöd az idegent, aki ugyan
+felébred közben, de már képtelen megakadályozni tet-
+tedet. Ennek ellenére nem tűnik haragosnak.
+— Ügyes! — dicséri tettedet. — Megtaláltad az egyik
+módszert, melynek segítségével megakadályozhatod,
+hogy nyomban megöljelek... Tudod, egy gonosz te-
+remtmény átkát viselem — magyarázza ezután, — Vala-
+ha Choler Magiszter egyik tanítványa voltam, ám ösz-
+szekülönböztem egy xinaffal, s ő gondoskodott róla,
+hogy ne jelentsek veszélyt reá nézve. Elvarázsolt, és
+ide börtönzött be. Csak akkor hagyhatom el a barlan-
+got, ha vadászni indulok, de a mágia minduntalan visz us-
+sza kényszerít erre a szörnyű helyre. Az alakváltó szinte elpusztíthatatlan. Hiába ejtesz
+rajta újra és újra sebet, nem tudsz felülkerekedni rajta.
+Neked ellenben gyorsan elfogy az erőd, s az utolsó
+Ha segíteni akarsz az idegenen, lapozz a 251-re! támadás során már nem bizonyulsz elég gyorsnak.
+Ha a xinaf nevéről érdeklődsz, lapozz a 161-re! Kalandod véget ért!
+Ha nem foglalkozol az idegennel, lapozz a 56-ra!
+
+=== 273 ===
+Élőhalott öregember: életerő 30, támadási képesség
+17, védettség szint 22, varázserő 30. Az öregember 1-3
+életerőpont veszteséget okoz az ütéseivel, ám először a
+varázsereje segítségével próbál meg elpusztítani.
+
+Ha sikerült legyőznöd ellenfeledet, lapozz a 194-re!
+Ha veszítettél, lapozz a 90-re!
+
+=== 274 ===
+Villámgyorsan megkötözöd az idegent, aki ugyan felébred közben, de már képtelen megakadályozni tettedet. Ennek ellenére nem tűnik haragosnak.
+– Ügyes! – dicséri tettedet. – Megtaláltad az egyik módszert, melynek segítségével megakadályozhatod, hogy nyomban megöljenek... Tudod, egy gonosz teremtmény átkát viselem – magyarázza ezután. – Valamaha Choler Magiszter egyik tanítványa voltam, am összekülönböztüm egy xinaffal, s ő gondoskodott róla, hogy ne jelentsenek veszélyt réa nézve. Elvárázsolt, és ide börtönzött be. Csak akkor hagyhatom el a barlangot, ha vadászni indulok, de a mágia minduntalan visszakényszeríti erre a szörnyű helyre.
+
+=== 275 ===
+Az álmodat reggelig nem zavarja semmi sem. Kipihenten, felfrissülve ébredsz (2 életerőpontot gyógyultál). Gyorsan megreggelizel (húzz le egy napnyi ételt és italt a Kalandlapodról!), majd töprengeni kezdesz, hogyan tovább.
+
+=== 276 ===
+Villámgyorsan megkötözöd az idegent, aki ugyan
+felébred közben, de már képtelen megakadályozni tet-
+tedet. Ennek ellenére nem tűnik haragosnak.
+— Ügyes! — dicséri tettedet. — Megtaláltad az egyik
+módszert, melynek segítségével megakadályozhatod,
+hogy nyomban megöljelek... Tudod, egy gonosz te-
+remtmény átkát viselem — magyarázza ezután, — Vala-
+ha Choler Magiszter egyik tanítványa voltam, ám ösz-
+szekülönböztem egy xinaffal, s ő gondoskodott róla,
+hogy ne jelentsek veszélyt reá nézve. Elvarázsolt, és
+ide börtönzött be. Csak akkor hagyhatom el a barlan-
+got, ha vadászni indulok, de a mágia minduntalan visz us-
+sza kényszerít erre a szörnyű helyre. Az alakváltó szinte elpusztíthatatlan. Hiába ejtesz
+rajta újra és újra sebet, nem tudsz felülkerekedni rajta.
+Neked ellenben gyorsan elfogy az erőd, s az utolsó
+Ha segíteni akarsz az idegenen, lapozz a 251-re! támadás során már nem bizonyulsz elég gyorsnak.
+Ha a xinaf nevéről érdeklődsz, lapozz a 161-re! Kalandod véget ért!
+Ha nem foglalkozol az idegennel, lapozz a 56-ra!
+
+=== 277 ===
+Percek telnek el, mire rádöbbensz, a ládának dupla
+feneke van. Igaz, csupán néhány centiméter vastag
+rületet rejtettek így el, ám bizonyára nem ok nélkül
+Nekiállsz szétfeszíteni az egymáshoz erősített deszkákat, s csakhamar egy arany maszkot sikerül kibányásznod a rejtekhelyről.
+
+Ha felveszed a maszkot, lapozz a 37-re!
+Ha elteszed, lapozz a 101-re!
+Ha folytatod a láda szétszedését, lapozz a 160-ra!
+
+A padló annyira csúszós, hogy minden lépésért meg
+kell küzdened. Aztán az egyik kő váratlanul megbiller
+a lábad alatt, és... Tegyél szerencsepróbát!
+
+Ha sikerült a dobás, lapozz a 189-re!
+Ha nem sikerült, lapozz a 70-re!
+
+=== 278 ===
+A padló annyira csúszós, hogy minden lépésért meg
+kell küzdened. Aztán az egyik kő váratlanul megbille
+a lábad alatt, és... Tegyél szerencsepróbát!
+
+Ha sikerült a dobás, lapozz a 189-re!
+Ha nem sikerült, lapozz a 70-re!
+
+=== 279 ===
+Ahogy a köveket tapogatod, hirtelen izzó fájdalom
+hasít az ujjaidba, mintha sav marta volna meg. Amikor
+kirántod a kezed, ujjaid vörösek és duzzadtak
+(veszítesz 2 életerőpontot, de a támadási képességed maradandóan csökken 1 ponttal). Átkozódva meredsz a lyukra.
+Valami van odaát!
+
+Ha egy fáklyát tolsz át a lyukon, lapozz a 165-re!
+Ha inkább folytatod a szint átfésülését, lapozz a 41-re!
+Ha visszatérsz a szoborhoz, lapozz a 10-re!
+
+Ha nekiállsz kibontani a falat, lapozz a 29-re!
+
+=== 280 ===
+A berregő gömb értékes zsákmánynak tűnik. Ha le
+szeded róla a drágaköveket, hónapokig élhetsz az értük
+kapott pénzből. Csupán egy lépésnyire vagy a hőn
+áhított zsákmánytól, amikor megremeg a levegő és a
+gömb helyén egy trideont látsz, egy sok csápú szörnyet-
+eget, ami illúzióval csalogatott közel magához.
+
+Trideon: életerő 19, támadási képesség 17, védettségi
+szint 20. A szörnyeteg háromszor támad körönként, és
+1-6 életerőpont veszteséget okoz a csápjaival.
+
+Ha sikerült végezned a szörnnyel, lapozz a 102-re!
+Ha veszítettél, lapozz a 3-ra!
+
+=== 281 ===
+Alig érinted meg a halott öreg ruháját, amikor az
+váratlan fürgeséggel felül a szarkofágban, majd egy
+
+ő erőteljes lökést érzel a mellkasodon, és hátrarepülsz.
+ő Mire ismét talpra kecmeregsz, a halott — ha ugyan az
+
+volt valójában — már kiszállt a szarkofágból, ám egy-előre nem mutatja jelét támadó szándéknak.
+
+Ha megtámadod, lapozz a 86-ra!
+Ha beszédbe elegyedsz vele, lapozz a 241-re!
+ra!
+
+— Fegyverem, páncélom már van — mondod. — Tanácsra van szükségem. Yhrin tud valamit, amire szükségem van. Hogyan szedhetném ki belőle?
+
+A xinaf egy apró üvegcsét húz elő.
+
+— Ebben a fiolában igazmondó varázsital van — magyarázza. — Tedd ártalmatlanná az ellenfeledet, majd
+Öntsd a torkába a varázsitalt. Amikor magához tér,
+mindent el fog mondani, amire szükséged van. Utána
+azonban, azt tanácsolom, pusztítsd el, különben addig
+lesz a nyomodban, amíg ő nem végez veled!
+
+Megköszönöd az ajándékot és a jó tanácsokat, majd
+a kijárat felé indulsz. Hamarosan ismét a felszínen találod magad, az erdő fáitól körülvéve. Észak felé
+folytatod az utadat.
+
+Lapozz a 146-ra!
+
+=== 282 ===
+— Fegyverem, páncélom már van — mondod. — Tanácsra van szükségem. Yhrin tud valamit, amire szükségem van. Hogyan szedhetném ki belőle?
+
+A xinaf egy apró üvegcsét húz elő.
+
+— Ebben a fiolában igazmondó varázsital van — magyarázza. — Tedd ártalmatlanná az ellenfeledet, majd öntsd a torkába a varázsitalt. Amikor magához tér, mindent el fog mondani, amire szükséged van. Utána azonban, azt tanácsolom, pusztítsd el, különben addig lesz a nyomodban, amíg ő nem végez veled!
+
+Megköszönöd az ajándékot és a jó tanácsokat, majd
+a kijárat felé indulsz. Hamarosan ismét a felszínen talá-
+lod magad, az erdő fáitól körülvéve. Észak felé
+folytatod az utadat.
+
+Lapozz a 146-ra!
+
+=== 283 ===
+Erdeklődve nézed az összegyűjtött növényeket
+
+— Milyen célra szedted ezeket? — kérdezed. i
+ú Az öreg elmosolyodik, majd látva rajtad, hogy
+őszintén érdeklődsz, komótosan kipakolja valamennyit
+a földre, és magyarázni kezd: a
+
+358 Ez könnyű álmot hoz — mutatja a legszélsőt —, ez
+pedig meggyorsítja a gyógyulást. Amaz mindenféle
+mérgezést semlegesít...
+; Hosszú perceken keresztül beszél, s mire a végére
+Mk egy egészen járatosnak érzed magad a növényeket
+illetően. [7
+
+Ha vásárolni akarsz a növényeiből, lapozz a 185-re!
+Ha újabb kérdéseket akarsz feltenni, lapozz a 111-re!
+Ha elköszönsz az öregtől, lapozz az 57-re!
+
+Már az út felét megtetted, amikor egy áttetsző csáp
+csap az arcodba (4 életerőpontot ve: ítes ), mely anynyira meglepetésszerűen ér, hogy kis híján lezuhansz.
+Amikor jobban odafigyelsz, észreveszed, hogy egy át-tetsző pókkal van dolgod. (A kiszolgáltatott helyzet
+miatt a támadási képességedből és a védettségi szintedből a harc idejére vonj le 5-5 pontot!) ; 8
+
+egpók: életerő 18, támadási képesség 18, védettség
+szint 18. Az üvegpók 2-7 életerőpont veszteséget okoz
+a rágóival. 1 ú
+
+Ha sikerült végezned a szörnnyel, lapozz az 243-ra!
+Ha veszítettél, lapozz a 201-re!
+
+=== 284 ===
+Már az út felét megtetted, amikor egy áttetsző csáp
+csap az arcodba (4 életerőpontot veszítesz), mely any-
+nyira meglepetésszerűen ér, hogy kis híján lezuhansz.
+Amikor jobban odafigyelsz, észreveszed, hogy egy át-
+tetsző pókkal van dolgod. (A kiszolgáltatott helyzet
+miatt a támadási képességedből és a védettségi szin-
+tedből a harc idejére vonj le 5-5 pontot!)
+
+Üvegpók: életerő 18, támadási képesség 18, védettség
+szint 18. Az üvegpók 2-7 életerőpont veszteséget okoz
+a rágóival.
+
+Ha sikerült végezned a szörnnyel, lapozz a 243-ra!
+Ha veszítettél, lapozz a 201-re!
+
+=== 285 ===
+A falhoz lapulva óvatosan el akarsz araszolni a korong mellett. Már majdnem átjutsz, amikor a korong
+hirtelen átalakul, s a helyén egy hatalmas pók néz veled farkasszemet. Rágói méregtől csöpögnek, s habozás nélkül neked ront.
+
+Óriáspók: életerő 22, támadási képesség 16, védett-
+
+zint 20. A pók 1-6 életerőpont veszteséget okoz a
+rágóival, de ha egyszer megmart, a méreg miatt (mely
+lelassít téged egy kicsit) onnantól kezdve mindig ő támad elsőként.
+
+Ha sikerült végezned a pókkal, lapozz az 67-re!
+Ha veszítettél, lapozz a 103-ra!
+
+=== 286 ===
+Az idegen fenyegetően néz rád, majd elmosolyodik.
+— Úgy látom, nem félsz tőlem! — mondja csendesen.
+— A bátorság mindenképp az előnyödre válik, mint
+ahogy az is, hogy nem akartál álmomban elpusztítani...
+Tudod, egy gonosz teremtmény átkát viselem — ma-
+gyarázza. — Valaha Choler Magiszter egyik tanítványa
+voltam, ám összekülönböztem egy xinaffal, gon-
+doskodott róla, hogy ne jelentsek veszélyt rá nézve.
+Elvarázsolt, és ide börtönzött be. Csak akkor hagyha-
+tom el a barlangot, ha vadászni indulok, de a mágia
+minduntalan visszakényszerít erre a szörnyű helyre.
+
+Ha segíteni akarsz az idegenen, lapozz a 184-re!
+Ha a xinaf nevéről érdeklődsz, lapozz a 19-re!
+Ha nem foglalkozol az idegennel, lapozz a 30-ra!
+
+=== 287 ===
+— Kincsvadász vagyok — bököd ki végül.
+
+Az öregember elmosolyodik, és körbemutat.
+
+— Tessék, minden, amit idelent találsz, a tiéd! Ha
+engem és a szarkofágot nem háborgatod, nem lesz bajod! — Valamit csinál, s a következő pillanatban fel-emelkedik a levegőbe, s belelebeg a szarkofágba.
+
+A következő pillanatban már épp olyan halottnak
+néz ki, mint amikor először bejöttél ebbe a helyiségbe
+
+Ha óvatosan átkutatod az öreget, lapozz a 281-re!
+Ha a szarkofágot vizsgálod meg, lapozz a 179-re!
+Ha inkább nem háborgatod az öreget, lapozz a 224-re!
+
+Minden idegszáladdal figyelve, rendkívül óvatosan
+elfordítod a szobor bal kezét. Halk kattanás hallatszik,
+majd a szobor feléd fordítja a fejét, és beszélni kezd:
+
+Míg fönn a Nap, s fény vesz körül,
+nem távozik tested mögül.
+Majd röviden, majd meg hosszan,
+állva, ülve csak veled van,
+
+De ha a fényt búra váltja,
+testednek e hű barátja,
+észrevétlen odahagy,
+
+s a sötétben magad vagy.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-jelkulcsok című részhez, és add össze a válasz betűinek értékét. Ez a szám határozza meg, hova kell a
+folytatáshoz lapoznod!
+
+=== 288 ===
+Minden idegszáladdal figyelve, rendkívül óvatosan
+elfordítod a szobor bal kezét. Halk kattanás hallatszik,
+majd a szobor feléd fordítja a fejét, és beszélni kezd:
+
+Míg fönn a Nap, s fény vesz körül,
+nem távozik tested mögül.
+Majd röviden, majd meg hosszan,
+állva, ülve csak veled van.
+
+De ha a fényt búra váltja,
+testednek e hű barátja,
+észrevétlen odahagy,
+
+s a sötétben magad vagy.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-
+jelkulcsok című részhez, és add össze a válasz betűi-
+nek értékét. Ez a szám határozza meg, hova kell a
+folytatáshoz lapoznod!
+
+=== 289 ===
+Úgy teszel, mint aki mélyen elgondolkozna, miköz-
+ben a szemed jobbra-balra cikázik; igyekszel kiszúrni,
+vajon ki és honnan figyel. Az épületben viszonylagos
+csend van, azonban az elkorhadt deszkák reccsenése,
+az ablaknyílásokon befújó szél süvítése és még ezernyi
+
+apró zaj gondoskodik arról, hogy ne lehess biztos ben-
+ne, valóban hallottál valamit. 42)
+
+Hosszú percekig vársz, de nem történik semmi.
+
+Ha belépsz az első szobába, lapozz a 123-ra!
+Ha a másodikba mégy, lapozz a 249-re!
+Ha inkább a harmadikba, lapozz a 186-ra!
+
+=== 290 ===
+Hamarosan ismét ott állsz a napkör monolitjai kö-
+zött. Keletről mintha a tenger morajlását hallanád,
+északon komor kösivatagg terül el, ameddig a szem el-
+lát. Nyugaton a távolból vastag, fekete füstoszlop száll
+az ég felé.
+
+Ha a tenger felé indulsz, lapozz az 52-re!
+Ha a kösivataggal próbálkozol, lapozz a 104-re!
+Ha a füst irányába mégy, lapozz a 202-re!
+
+=== 291 ===
+Hirtelen fény ölel körül, és valami ellenállhatatlan
+erő magához ránt. Amikor ismét körbenézel, egészen
+máshol találod magad. Egy félhomályban úszó helyiséget látsz, melynek közepén egy fényoszlopot pillantasz meg, melynek közepén mintha ezer apró csillag
+lebegne. A szoba ettől a fényoszloptól eltekintve teljesen üres.
+
+Ha megvizsgálod a fényoszlopot, lapozz a 200-ra!
+Ha inkább elhagyod a szobát, lapozz a 299-re!
+
+Néma csendben fülelsz, talán sikerül meghallanod a
+szörnyeteg neszezését. Egyelőre te vagy hátrányban,
+hiszen a lény láthatja a fáklyád fényét és jómagadat is,
+ellenben neked a sötétséggel kell farkasszemet nézned,
+azt a néhány négyzetméternyi helyet nem számítva,
+amit a fáklyafény megvilágít.
+
+Csend van. Örjítő csend.
+
+Aztán, mintha jobbra víz csobogását hallanád. Balról pedig halk, jóízű hortyogást hallasz.
+
+Ha balra indulsz, lapozz az 58-ra!
+Ha jobbra, lapozz a 121-re!
+
+=== 292 ===
+Néma csendben fülelsz, talán sikerül meghallanod a
+szörnyeteg neszezését. Egyelőre te vagy hátrányban,
+hiszen a lény láthatja a fáklyád fényét és jómagadat is,
+ellenben neked a sötétséggel kell farkasszemet nézned,
+azt a néhány négyzetméternyi helyet nem számítva
+amit a fáklyafény megvilágít.
+
+Csend van.
+
+Aztán, mintha jobbra víz csobogását hallanád. Balról pedig halk, jóízű hortyogást hallasz.
+
+Ha balra indulsz, lapozz az 58-ra!
+Ha jobbra, lapozz a 121-re!
+
+=== 293 ===
+Két mérföldnyi gyaloglás után egy feldúlt falura
+akadsz. Mindenfelé halottak hevernek, kunyhók lángokban állnak, a támadók szörnyű pusztítást végeztek.
+Az egyik égő kunyhóból mintha kiabálást hallanál
+
+Ha megnézed, mi az, lapozz a 187-re!
+Ha nem kockáztatsz feleslegesen, lapozz a 46-ra!
+
+Némi gondolkozás után nekiindulsz, hogy keress
+valakit, aki a környéken él. Talán ő tud majd valami-féle felvilágosítással szolgálni Yhrin xinaf hollétét illetően. Hiszen egy élőt mindig könnyebb megszólaltatni, mint a köveket! Sajnos, nem ismered a környéket, így nem lesz könnyű a keresés.
+
+Ha a szerencsédre hallgatsz, lapozz a 61-re!
+Ha nyomokat próbálsz keresni, lapozz a 222-re!
+
+=== 294 ===
+Némi gondolkozás után nekiindulsz, hogy keress
+valakit, aki a környéken él. Talán ő tud majd valamiféle felvilágosítással szolgálni Yhrin xinaf hollétét illetően. Hiszen egy élőt mindig könnyebb megszólaltatni, mint a köveket! Sajnos, nem ismered a környéket, így nem lesz könnyű a keresés.
+
+Ha a szerencsédre hallgatsz, lapozz a 61-re!
+Ha nyomokat próbálsz keresni, lapozz a 222-re!
+
+=== 295 ===
+Nem kockáztatsz. Bár talán hidegvérű gyilkossá
+nak tűnik, amikor végzel vele, ez számodra nem több
+puszta előrelátásnál. A xinafoknak veszett híre van
+kevés akad közöttük, amelyik valóban ismeri a hála
+fogalmát. Ennek a szerencsétlennek meg csak a kínjait
+övidítetted meg.
+
+Miután végeztél vele, villám;
+házatát, majd a holttestet begördíted a folyóba. Ezután
+szemügyre veszed a zsákmányt: egy üres erszény, egy
+yűrű (3 ponttal növeli a védettségedet), valamint egy
+könyv, számodra érthetetlen jelekkel teleírva.
+
+Ha folytatod idelent a kutatást, lapozz a 154-re!
+Ha megpróbálsz feljutni, lapozz a 16-ra!
+
+Az utolsó pillanatban lebuksz a félelmetes csatabárd
+elől, s a következő másodpercben már fegyverrel a kezedben nézel farkasszemet ellenfeleddel. Szerencsére a
+többi halott harcos nem mozdul, mert ennyivel aligha
+bírnál.
+
+Csontvázharcos: életerő 28, támadási képesség 20,
+védettség szint 22. A csontvázharcos 3-8 életerőpont
+veszteséget okoz a csatabárdjával.
+
+Ha sikerült legyőznöd a harcost, lapozz az 183-ra!
+Ha veszítettél,
+
+=== 296 ===
+Az utolsó pillanatban lebuksz a félelmetes csatabárd
+elől, s a következő másodpercben már fegyverrel a ke-
+zedben nézel farkasszemet ellenfeleddel. Szerencsére a
+többi halott harcos nem mozdul, mert ennyivel csak
+bírnál.
+
+Csontvázharcos: életerő 28, támadási képesség 20,
+védettségi szint 22. A csontvázharcos 3-8 életerőpont
+veszteséget okoz a csatabárdjával.
+
+Ha sikerült legyőznöd a harcost, lapozz a 183-ra!
+Ha veszítettél, lapozz a 13-ra!
+
+=== 297 ===
+A pók beléd vágja méregtől csöpögő rágóit, s immáron el sem enged. Mozdulataid folyamatosan lassulnak, végül már annyi erőd sem marad, hogy felemeled
+a fegyvered. Az óriáspók ezután kényelmesen nekilát,
+hogy körbeszőjön hálójával, s majd, ha megéhezik, el-fogyasszon vacsorára. Kalandod véget ért!
+
+=== 298 ===
+— Yhrint keresem, Choler Magiszter renegát xinafját
+— ismered be. — Talán tudsz segíteni...
+
+Az idegen bólint.
+
+— A xinaf halott — válaszolja nyugodtan. — A testét
+egy szakadék rejti, melyet a Nagy Repedés néven is-
+mernek, és innen északra, a kősivatagon túli erdő mö-
+gött található.
+
+Az idegen a következő pillanatban eltűnik a szemed
+elől. Elgondolkozva bámulod a helyét. Értékes infor-
+mációt sikerült megtudnod, ám ha a xinaf halott, akkor
+hogyan találod meg a Démon Szemét? Talán, ha el-
+jutsz a testig, ott választ kapsz erre a kérdésedre is.
+
+Visszatérsz a napkörhöz.
+
+Lapozz a 31-re!
+
+=== 299 ===
+gy döntesz, ezúttal ennyi vi izsgálódás i is éppen elég ű la nd la
+hai jyatisss az alsó szintre, és nem sokkal később §
+
+a játékosnak
+
+ismét ott állsz egy szobor előtt.
+
+Ha elfordítod a bal kezét, lapozz a 288-ra!
+Ha a jobb kézzel próbálkozol, lapozz a 238-ra!
+Ha a szemével kísérletezel, lapozz a 125-re!
+
+Ha inkább nem babrálod a szobrot, lapozz a 78-ra! 1 Éuérő Hi jgeamaezeei tői J J védettség
+Kezdeti: ] Kezdeti: ! Kezdeti:
+! Változott 1 (Változott Változott:
+
+[yes
+Felszerelés Szerencse ] Mágia:
+tárgyak Kezdeti: 1.) Kezdeti
+Változott; Változott:
+ÜJÁGKÁSLA ZAB ELS KALANL KAT AALSZART
+
+Arany és egyéb pénzek:
+
+[IDrágakövek:
+
+WVarázsitalok:
+
+=== 300 ===
+Gratulálunk! Tettedről énekmondók és bárdok
+fognak regélni hosszú évszázadokon át. A Démon
+Szeme olyan hatalommal bír, mely lehetővé teszi
+neked, hogy felhagyj a kalandor életmóddal, s békében, gazdagságban élve letelepedj le végre
+Cherubion egy békésebb szegletében.
+Évek óta járod Cherubion Sötét Évszázadoktól
+sújtotta vidékeit kóbor lidércekkel va;
+
+nákkal harcolva. Néha sírokat fosztogatsz,
+
+leg ősi, elfeledett kincsek után kutatsz szörnyetegekkel teli katakombák mélyén.
+
+Északon hallottál elsőként arról az ereklyéri
+amelynek nevét még a bölcsek is mély borzadállyal ejtették ki szájukon. A Démon Szeme.
+Hatalmáról csak legendák beszélnek, ám tapa:
+talatból tudod, hogy egy ilyen nagy erejű vará:
+tárgy olyan képességekkel ruházhatja fel a birtokosát, melyről nem is álmodnál.

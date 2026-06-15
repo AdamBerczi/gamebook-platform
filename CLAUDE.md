@@ -132,13 +132,36 @@ python pipeline\06_recover_sections.py a-demon-szeme   # recovers sections from 
 python pipeline\patch_missing_sections.py               # applies hard-coded patches from screenshots
 ```
 
+## Text quality editing workflow
+
+Each book has a `books/<book-id>/sections_text.txt` file — a single editable file containing the prologue and all 300 section texts, separated by `=== NNN ===` headers. Use this to review and fix OCR quality without touching the JSON directly.
+
+```powershell
+# Export current texts from sections.json → sections_text.txt
+python pipeline\export_texts.py [book-id]
+
+# Edit books/<book-id>/sections_text.txt in any text editor
+# (Ctrl+F for a section number, fix OCR artifacts, save)
+
+# Import changes back into sections.json (text field only; choices/events untouched)
+python pipeline\import_texts.py [book-id]
+
+# Regenerate section_map.json to verify reachability
+python pipeline\generate_section_map.py [book-id]
+```
+
+- `000_ELŐZMÉNYEK` block → updates `prologue` field in `rules.json`
+- All other blocks → update `text` field in `sections.json`
+- `sections_text.txt` is committed to git so text quality improvements are tracked
+- `books/*/texts/` (old per-file approach) is gitignored
+
 ---
 
 ## GitHub
 
 Repository: https://github.com/AdamBerczi/gamebook-platform
 
-`sections.json` and `rules.json` **are** committed so anyone can clone and play without running the pipeline.
+`sections.json`, `rules.json`, and `sections_text.txt` **are** committed so anyone can clone and play without running the pipeline.
 
 PDF, raw pages, OCR text are **gitignored** (copyright + regeneratable).
 

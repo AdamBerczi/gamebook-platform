@@ -1,26 +1,32 @@
 """
-Import edited .txt files back into sections.json (text field only) and rules.json (prologue).
-Only sections whose text changed are updated; all other fields (choices, events, etc.) are untouched.
+Import edited sections_text.txt back into sections.json (text only) and rules.json (prologue).
+Only fields that actually changed are updated; choices, events, enemies etc. are untouched.
 Usage: python pipeline/import_texts.py [book-id]
 """
-import json, os, sys
+import json, re, sys
 
 book_id = sys.argv[1] if len(sys.argv) > 1 else "a-demon-szeme"
-texts_dir = f"books/{book_id}/texts"
+src_path = f"books/{book_id}/sections_text.txt"
 
-if not os.path.isdir(texts_dir):
-    print(f"No texts directory found at {texts_dir}")
-    print(f"Run: python pipeline/export_texts.py {book_id}")
-    sys.exit(1)
+with open(src_path, encoding="utf-8") as f:
+    content = f.read()
 
-# Import prologue into rules.json
-prologue_path = f"{texts_dir}/000_elozmenyek.txt"
-if os.path.exists(prologue_path):
+# Parse blocks: find each === NNN === header and extract text until the next header
+header_re = re.compile(r'^=== (\d+).*?===$', re.MULTILINE)
+matches = list(header_re.finditer(content))
+blocks = {}
+for i, m in enumerate(matches):
+    sid_str = m.group(1)
+    text_start = m.end()
+    text_end   = matches[i + 1].start() if i + 1 < len(matches) else len(content)
+    blocks[sid_str] = content[text_start:text_end].strip()
+
+# Update rules.json prologue (block "000")
+if "000" in blocks:
     rules_path = f"books/{book_id}/rules.json"
     with open(rules_path, encoding="utf-8") as f:
         rules = json.load(f)
-    with open(prologue_path, encoding="utf-8") as f:
-        new_prologue = f.read()
+    new_prologue = blocks.pop("000")
     if new_prologue != rules.get("prologue", ""):
         rules["prologue"] = new_prologue
         with open(rules_path, "w", encoding="utf-8") as f:
@@ -29,7 +35,7 @@ if os.path.exists(prologue_path):
     else:
         print("  Unchanged: prologue")
 
-# Import section texts into sections.json
+# Update sections.json text fields
 sections_path = f"books/{book_id}/sections.json"
 with open(sections_path, encoding="utf-8") as f:
     data = json.load(f)
@@ -37,16 +43,13 @@ raw = data.get("sections", data)
 secs = {str(s["id"]): s for s in raw} if isinstance(raw, list) else raw
 
 changed = 0
-missing = []
-for fname in sorted(f for f in os.listdir(texts_dir) if f.endswith(".txt") and f != "000_elozmenyek.txt"):
-    sid_str = str(int(fname.replace(".txt", "")))  # "007" → "7"
-    if sid_str not in secs:
-        missing.append(fname)
+for sid_str, new_text in blocks.items():
+    canonical = str(int(sid_str))  # strip leading zeros: "007" → "7"
+    if canonical not in secs:
+        print(f"  Warning: section {canonical} not found in sections.json")
         continue
-    with open(f"{texts_dir}/{fname}", encoding="utf-8") as f:
-        new_text = f.read()
-    if new_text != secs[sid_str].get("text", ""):
-        secs[sid_str]["text"] = new_text
+    if new_text != secs[canonical].get("text", ""):
+        secs[canonical]["text"] = new_text
         changed += 1
 
 if changed:
@@ -55,6 +58,3 @@ if changed:
     print(f"  Updated: {changed} section texts in sections.json")
 else:
     print("  Unchanged: all section texts")
-
-if missing:
-    print(f"  Warning: {len(missing)} .txt files had no matching section: {missing}")
