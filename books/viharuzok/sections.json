@@ -3320,16 +3320,8 @@
           "kind": "COMBAT",
           "special_rules": [
             {
-              "type": "stat_drain",
-              "target": "Lillieth",
-              "stat": "eletero",
-              "amount": 1,
-              "note": "damage is permanent and cannot be healed"
-            },
-            {
-              "type": "enemy_defense_only",
-              "target": "Lillieth",
-              "note": "uses varázserő only for defense"
+              "type": "permanent_damage",
+              "target": "Lillieth"
             }
           ]
         }
@@ -4491,7 +4483,36 @@
           "target": 296
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Kisebb Démon",
+          "eletero": 28,
+          "tamadasi_kepesseg": 22,
+          "vedettsegi_szint": 25,
+          "damage": "2-12"
+        },
+        {
+          "name": "Kisebb Démon",
+          "eletero": 26,
+          "tamadasi_kepesseg": 22,
+          "vedettsegi_szint": 25,
+          "damage": "2-12"
+        },
+        {
+          "name": "Kisebb Démon",
+          "eletero": 31,
+          "tamadasi_kepesseg": 22,
+          "vedettsegi_szint": 25,
+          "damage": "2-12"
+        },
+        {
+          "name": "Kisebb Démon",
+          "eletero": 29,
+          "tamadasi_kepesseg": 22,
+          "vedettsegi_szint": 25,
+          "damage": "2-12"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false,
@@ -4506,11 +4527,6 @@
         {
           "kind": "COMBAT",
           "special_rules": [
-            {
-              "type": "multi_attack",
-              "target": "Kisebb Démonok",
-              "count": 4
-            },
             {
               "type": "no_flee"
             }
@@ -5117,8 +5133,29 @@
       ],
       "enemies": [
         {
-          "name": "Kisebb Démonok",
+          "name": "Kisebb Démon",
           "eletero": 28,
+          "tamadasi_kepesseg": 22,
+          "vedettsegi_szint": 25,
+          "damage": "2-12"
+        },
+        {
+          "name": "Kisebb Démon",
+          "eletero": 26,
+          "tamadasi_kepesseg": 22,
+          "vedettsegi_szint": 25,
+          "damage": "2-12"
+        },
+        {
+          "name": "Kisebb Démon",
+          "eletero": 31,
+          "tamadasi_kepesseg": 22,
+          "vedettsegi_szint": 25,
+          "damage": "2-12"
+        },
+        {
+          "name": "Kisebb Démon",
+          "eletero": 29,
           "tamadasi_kepesseg": 22,
           "vedettsegi_szint": 25,
           "damage": "2-12"
@@ -5137,17 +5174,7 @@
         },
         {
           "kind": "COMBAT",
-          "special_rules": [
-            {
-              "type": "multi_attack",
-              "target": "Kisebb Démonok",
-              "count": 4
-            },
-            {
-              "type": "player_limited_action",
-              "description": "player can only attack one demon per round while all four can attack"
-            }
-          ]
+          "special_rules": []
         }
       ]
     },

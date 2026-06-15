@@ -1087,9 +1087,10 @@ function renderCombatBlock(container, data) {
     const obj = { ...e, currentHp: e.eletero };
     for (const rule of specialRules) {
       if (rule.target && rule.target !== e.name) continue;
-      if (rule.type === 'enemy_regenerate') obj._regenerate = rule.amount;
-      if (rule.type === 'multi_attack')     obj._multiAttack = rule.count;
-      if (rule.type === 'stat_drain')       obj._statDrain = { stat: rule.stat, amount: rule.amount };
+      if (rule.type === 'enemy_regenerate')  obj._regenerate = rule.amount;
+      if (rule.type === 'multi_attack')      obj._multiAttack = rule.count;
+      if (rule.type === 'stat_drain')        obj._statDrain = { stat: rule.stat, amount: rule.amount };
+      if (rule.type === 'permanent_damage')  obj._permanentDamage = true;
     }
     return obj;
   });
@@ -1595,7 +1596,12 @@ async function resolveAllEnemiesAttack() {
           addCombatLog(`Amulett: 2 pont sebzés elnyelve.`);
         }
         player.eletero -= dmg;
-        addCombatLog(`Találat! ${dmg} életerőt veszítesz. (marad: ${Math.max(0, player.eletero)})`);
+        if (enemy._permanentDamage) {
+          state.character.max.eletero = Math.max(0, (state.character.max.eletero || 0) - dmg);
+          addCombatLog(`Találat! ${dmg} életerőt veszítesz — MARADANDÓAN! (max: ${state.character.max.eletero})`);
+        } else {
+          addCombatLog(`Találat! ${dmg} életerőt veszítesz. (marad: ${Math.max(0, player.eletero)})`);
+        }
         // stat_drain: successful hit drains a player stat permanently
         if (enemy._statDrain) {
           const { stat, amount } = enemy._statDrain;
