@@ -1,0 +1,5615 @@
+{
+  "book_id": "viharuzok",
+  "generated": "2026-06-15",
+  "summary": {
+    "total_sections": 300,
+    "reachable": 119,
+    "unreachable": 181,
+    "unexpected_dead_ends": 3,
+    "combat_missing_stats": 42,
+    "sections_with_issues": 198
+  },
+  "issue_index": {
+    "unreachable": [
+      2,
+      4,
+      5,
+      8,
+      9,
+      11,
+      12,
+      14,
+      15,
+      17,
+      18,
+      20,
+      21,
+      23,
+      24,
+      26,
+      27,
+      28,
+      30,
+      31,
+      33,
+      35,
+      37,
+      38,
+      40,
+      41,
+      43,
+      44,
+      47,
+      48,
+      49,
+      51,
+      52,
+      53,
+      55,
+      57,
+      60,
+      61,
+      63,
+      65,
+      66,
+      68,
+      71,
+      72,
+      74,
+      76,
+      77,
+      79,
+      82,
+      84,
+      85,
+      87,
+      89,
+      91,
+      93,
+      94,
+      96,
+      98,
+      99,
+      101,
+      102,
+      104,
+      106,
+      107,
+      109,
+      110,
+      111,
+      113,
+      115,
+      117,
+      119,
+      120,
+      121,
+      122,
+      124,
+      126,
+      127,
+      129,
+      131,
+      133,
+      134,
+      136,
+      138,
+      139,
+      140,
+      142,
+      144,
+      146,
+      148,
+      149,
+      152,
+      153,
+      155,
+      156,
+      158,
+      160,
+      162,
+      163,
+      165,
+      166,
+      168,
+      169,
+      171,
+      172,
+      174,
+      176,
+      177,
+      180,
+      182,
+      183,
+      185,
+      187,
+      188,
+      191,
+      193,
+      194,
+      196,
+      197,
+      199,
+      200,
+      201,
+      202,
+      204,
+      205,
+      207,
+      208,
+      210,
+      211,
+      213,
+      215,
+      216,
+      218,
+      220,
+      221,
+      223,
+      225,
+      227,
+      228,
+      230,
+      232,
+      234,
+      236,
+      237,
+      239,
+      241,
+      243,
+      244,
+      246,
+      247,
+      249,
+      250,
+      252,
+      253,
+      255,
+      257,
+      259,
+      261,
+      263,
+      264,
+      266,
+      267,
+      269,
+      270,
+      271,
+      273,
+      274,
+      276,
+      277,
+      279,
+      281,
+      283,
+      284,
+      287,
+      288,
+      290,
+      292,
+      293,
+      295,
+      297,
+      298,
+      300
+    ],
+    "unexpected_dead_ends": [
+      207,
+      290,
+      300
+    ],
+    "combat_missing_enemy_stats": [
+      11,
+      12,
+      22,
+      33,
+      41,
+      50,
+      56,
+      57,
+      61,
+      63,
+      65,
+      70,
+      84,
+      85,
+      87,
+      93,
+      98,
+      107,
+      112,
+      120,
+      147,
+      160,
+      177,
+      196,
+      202,
+      203,
+      211,
+      217,
+      219,
+      228,
+      229,
+      234,
+      240,
+      242,
+      250,
+      251,
+      255,
+      256,
+      263,
+      275,
+      278,
+      299
+    ],
+    "all_sections_with_issues": {
+      "2": [
+        "unreachable"
+      ],
+      "4": [
+        "unreachable"
+      ],
+      "5": [
+        "unreachable"
+      ],
+      "8": [
+        "unreachable"
+      ],
+      "9": [
+        "unreachable"
+      ],
+      "11": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "12": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "14": [
+        "unreachable"
+      ],
+      "15": [
+        "unreachable"
+      ],
+      "17": [
+        "unreachable"
+      ],
+      "18": [
+        "unreachable"
+      ],
+      "20": [
+        "unreachable"
+      ],
+      "21": [
+        "unreachable"
+      ],
+      "22": [
+        "combat_missing_enemy_stats"
+      ],
+      "23": [
+        "unreachable"
+      ],
+      "24": [
+        "unreachable"
+      ],
+      "26": [
+        "unreachable",
+        "no_incoming_edges"
+      ],
+      "27": [
+        "unreachable"
+      ],
+      "28": [
+        "unreachable"
+      ],
+      "30": [
+        "unreachable"
+      ],
+      "31": [
+        "unreachable"
+      ],
+      "33": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "35": [
+        "unreachable"
+      ],
+      "37": [
+        "unreachable"
+      ],
+      "38": [
+        "unreachable"
+      ],
+      "40": [
+        "unreachable"
+      ],
+      "41": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "43": [
+        "unreachable"
+      ],
+      "44": [
+        "unreachable"
+      ],
+      "47": [
+        "unreachable"
+      ],
+      "48": [
+        "unreachable"
+      ],
+      "49": [
+        "unreachable"
+      ],
+      "50": [
+        "combat_missing_enemy_stats"
+      ],
+      "51": [
+        "unreachable"
+      ],
+      "52": [
+        "unreachable",
+        "no_incoming_edges"
+      ],
+      "53": [
+        "unreachable"
+      ],
+      "55": [
+        "unreachable"
+      ],
+      "56": [
+        "combat_missing_enemy_stats"
+      ],
+      "57": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "60": [
+        "unreachable"
+      ],
+      "61": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "63": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "65": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "66": [
+        "unreachable"
+      ],
+      "68": [
+        "unreachable"
+      ],
+      "70": [
+        "combat_missing_enemy_stats"
+      ],
+      "71": [
+        "unreachable"
+      ],
+      "72": [
+        "unreachable",
+        "no_incoming_edges"
+      ],
+      "74": [
+        "unreachable"
+      ],
+      "76": [
+        "unreachable"
+      ],
+      "77": [
+        "unreachable"
+      ],
+      "79": [
+        "unreachable"
+      ],
+      "82": [
+        "unreachable"
+      ],
+      "84": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "85": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "87": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "89": [
+        "unreachable"
+      ],
+      "91": [
+        "unreachable"
+      ],
+      "93": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "94": [
+        "unreachable"
+      ],
+      "96": [
+        "unreachable"
+      ],
+      "98": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "99": [
+        "unreachable"
+      ],
+      "101": [
+        "unreachable"
+      ],
+      "102": [
+        "unreachable"
+      ],
+      "104": [
+        "unreachable"
+      ],
+      "106": [
+        "unreachable"
+      ],
+      "107": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "109": [
+        "unreachable",
+        "no_incoming_edges"
+      ],
+      "110": [
+        "unreachable"
+      ],
+      "111": [
+        "unreachable"
+      ],
+      "112": [
+        "combat_missing_enemy_stats"
+      ],
+      "113": [
+        "unreachable"
+      ],
+      "115": [
+        "unreachable"
+      ],
+      "117": [
+        "unreachable"
+      ],
+      "119": [
+        "unreachable"
+      ],
+      "120": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "121": [
+        "unreachable"
+      ],
+      "122": [
+        "unreachable"
+      ],
+      "124": [
+        "unreachable"
+      ],
+      "126": [
+        "unreachable"
+      ],
+      "127": [
+        "unreachable"
+      ],
+      "129": [
+        "unreachable"
+      ],
+      "131": [
+        "unreachable"
+      ],
+      "133": [
+        "unreachable"
+      ],
+      "134": [
+        "unreachable"
+      ],
+      "136": [
+        "unreachable"
+      ],
+      "138": [
+        "unreachable"
+      ],
+      "139": [
+        "unreachable"
+      ],
+      "140": [
+        "unreachable"
+      ],
+      "142": [
+        "unreachable"
+      ],
+      "144": [
+        "unreachable"
+      ],
+      "146": [
+        "unreachable"
+      ],
+      "147": [
+        "combat_missing_enemy_stats"
+      ],
+      "148": [
+        "unreachable"
+      ],
+      "149": [
+        "unreachable"
+      ],
+      "152": [
+        "unreachable"
+      ],
+      "153": [
+        "unreachable"
+      ],
+      "155": [
+        "unreachable"
+      ],
+      "156": [
+        "unreachable"
+      ],
+      "158": [
+        "unreachable"
+      ],
+      "160": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "162": [
+        "unreachable"
+      ],
+      "163": [
+        "unreachable"
+      ],
+      "165": [
+        "unreachable"
+      ],
+      "166": [
+        "unreachable"
+      ],
+      "168": [
+        "unreachable"
+      ],
+      "169": [
+        "unreachable"
+      ],
+      "171": [
+        "unreachable"
+      ],
+      "172": [
+        "unreachable"
+      ],
+      "174": [
+        "unreachable"
+      ],
+      "176": [
+        "unreachable"
+      ],
+      "177": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "180": [
+        "unreachable"
+      ],
+      "182": [
+        "unreachable"
+      ],
+      "183": [
+        "unreachable"
+      ],
+      "185": [
+        "unreachable"
+      ],
+      "187": [
+        "unreachable"
+      ],
+      "188": [
+        "unreachable"
+      ],
+      "191": [
+        "unreachable"
+      ],
+      "193": [
+        "unreachable"
+      ],
+      "194": [
+        "unreachable"
+      ],
+      "196": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "197": [
+        "unreachable"
+      ],
+      "199": [
+        "unreachable"
+      ],
+      "200": [
+        "unreachable",
+        "no_incoming_edges"
+      ],
+      "201": [
+        "unreachable"
+      ],
+      "202": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "203": [
+        "combat_missing_enemy_stats"
+      ],
+      "204": [
+        "unreachable"
+      ],
+      "205": [
+        "unreachable"
+      ],
+      "207": [
+        "unreachable",
+        "unexpected_dead_end"
+      ],
+      "208": [
+        "unreachable"
+      ],
+      "210": [
+        "unreachable"
+      ],
+      "211": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "213": [
+        "unreachable"
+      ],
+      "215": [
+        "unreachable"
+      ],
+      "216": [
+        "unreachable"
+      ],
+      "217": [
+        "combat_missing_enemy_stats"
+      ],
+      "218": [
+        "unreachable"
+      ],
+      "219": [
+        "combat_missing_enemy_stats"
+      ],
+      "220": [
+        "unreachable"
+      ],
+      "221": [
+        "unreachable"
+      ],
+      "223": [
+        "unreachable"
+      ],
+      "225": [
+        "unreachable"
+      ],
+      "227": [
+        "unreachable"
+      ],
+      "228": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "229": [
+        "combat_missing_enemy_stats"
+      ],
+      "230": [
+        "unreachable"
+      ],
+      "232": [
+        "unreachable"
+      ],
+      "234": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "236": [
+        "unreachable",
+        "no_incoming_edges"
+      ],
+      "237": [
+        "unreachable"
+      ],
+      "239": [
+        "unreachable"
+      ],
+      "240": [
+        "combat_missing_enemy_stats"
+      ],
+      "241": [
+        "unreachable"
+      ],
+      "242": [
+        "combat_missing_enemy_stats"
+      ],
+      "243": [
+        "unreachable"
+      ],
+      "244": [
+        "unreachable"
+      ],
+      "246": [
+        "unreachable"
+      ],
+      "247": [
+        "unreachable"
+      ],
+      "249": [
+        "unreachable"
+      ],
+      "250": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "251": [
+        "combat_missing_enemy_stats"
+      ],
+      "252": [
+        "unreachable"
+      ],
+      "253": [
+        "unreachable"
+      ],
+      "255": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "256": [
+        "combat_missing_enemy_stats"
+      ],
+      "257": [
+        "unreachable"
+      ],
+      "259": [
+        "unreachable"
+      ],
+      "261": [
+        "unreachable"
+      ],
+      "263": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ],
+      "264": [
+        "unreachable"
+      ],
+      "266": [
+        "unreachable"
+      ],
+      "267": [
+        "unreachable"
+      ],
+      "269": [
+        "unreachable"
+      ],
+      "270": [
+        "unreachable"
+      ],
+      "271": [
+        "unreachable"
+      ],
+      "273": [
+        "unreachable"
+      ],
+      "274": [
+        "unreachable"
+      ],
+      "275": [
+        "combat_missing_enemy_stats"
+      ],
+      "276": [
+        "unreachable"
+      ],
+      "277": [
+        "unreachable"
+      ],
+      "278": [
+        "combat_missing_enemy_stats"
+      ],
+      "279": [
+        "unreachable"
+      ],
+      "281": [
+        "unreachable"
+      ],
+      "283": [
+        "unreachable"
+      ],
+      "284": [
+        "unreachable"
+      ],
+      "287": [
+        "unreachable"
+      ],
+      "288": [
+        "unreachable"
+      ],
+      "290": [
+        "unreachable",
+        "unexpected_dead_end"
+      ],
+      "292": [
+        "unreachable"
+      ],
+      "293": [
+        "unreachable"
+      ],
+      "295": [
+        "unreachable"
+      ],
+      "297": [
+        "unreachable"
+      ],
+      "298": [
+        "unreachable"
+      ],
+      "299": [
+        "combat_missing_enemy_stats"
+      ],
+      "300": [
+        "unreachable",
+        "unexpected_dead_end"
+      ]
+    }
+  },
+  "sections": {
+    "1": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        141,
+        222
+      ],
+      "incoming": [],
+      "issues": []
+    },
+    "2": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        228
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "3": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        226
+      ],
+      "incoming": [
+        235
+      ],
+      "issues": []
+    },
+    "4": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        250,
+        180
+      ],
+      "incoming": [
+        237
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "5": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        61,
+        107,
+        187,
+        283
+      ],
+      "incoming": [
+        98,
+        197
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "6": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        260,
+        80,
+        10
+      ],
+      "incoming": [
+        245
+      ],
+      "issues": []
+    },
+    "7": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        64
+      ],
+      "issues": []
+    },
+    "8": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        274,
+        205
+      ],
+      "incoming": [
+        28,
+        102,
+        110,
+        134,
+        139,
+        156,
+        177,
+        249,
+        287
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "9": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        292
+      ],
+      "incoming": [
+        202
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "10": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        29,
+        235,
+        175
+      ],
+      "incoming": [
+        6,
+        80,
+        92,
+        238,
+        260,
+        286,
+        291
+      ],
+      "issues": []
+    },
+    "11": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        51,
+        126
+      ],
+      "incoming": [
+        113
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "12": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        144,
+        267
+      ],
+      "incoming": [
+        205
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "13": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        178
+      ],
+      "incoming": [
+        262
+      ],
+      "issues": []
+    },
+    "14": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        47,
+        188,
+        288
+      ],
+      "incoming": [
+        117,
+        129
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "15": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        28,
+        177
+      ],
+      "incoming": [
+        85
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "16": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        62,
+        240
+      ],
+      "incoming": [
+        130
+      ],
+      "issues": []
+    },
+    "17": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        172
+      ],
+      "incoming": [
+        57
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "18": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        234
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "19": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        251,
+        222
+      ],
+      "incoming": [
+        167
+      ],
+      "issues": []
+    },
+    "20": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        79,
+        113
+      ],
+      "incoming": [
+        43
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "21": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        115,
+        252
+      ],
+      "incoming": [
+        140,
+        252
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "22": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        195,
+        103
+      ],
+      "incoming": [
+        181
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "23": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        91,
+        199
+      ],
+      "incoming": [
+        60,
+        168
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "24": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        232,
+        140
+      ],
+      "incoming": [
+        89,
+        115,
+        158,
+        213,
+        244
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "25": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        178,
+        262
+      ],
+      "incoming": [
+        95
+      ],
+      "issues": []
+    },
+    "26": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        238
+      ],
+      "incoming": [],
+      "issues": [
+        "unreachable",
+        "no_incoming_edges"
+      ]
+    },
+    "27": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        281,
+        208
+      ],
+      "incoming": [
+        40,
+        96,
+        133,
+        180,
+        191
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "28": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        8,
+        287
+      ],
+      "incoming": [
+        15,
+        76
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "29": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        235,
+        175
+      ],
+      "incoming": [
+        10,
+        175
+      ],
+      "issues": []
+    },
+    "30": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        241,
+        84
+      ],
+      "incoming": [
+        142,
+        292
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "31": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        106,
+        60
+      ],
+      "incoming": [
+        37,
+        298
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "32": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        123,
+        248
+      ],
+      "incoming": [
+        75,
+        83,
+        212,
+        268
+      ],
+      "issues": []
+    },
+    "33": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        104,
+        47,
+        288
+      ],
+      "incoming": [
+        104,
+        188
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "34": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        240
+      ],
+      "issues": []
+    },
+    "35": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        68,
+        124,
+        239
+      ],
+      "incoming": [
+        257
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "36": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        150,
+        282
+      ],
+      "incoming": [
+        128
+      ],
+      "issues": []
+    },
+    "37": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        31,
+        168
+      ],
+      "incoming": [
+        126,
+        261
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "38": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        93
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "39": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        86,
+        164,
+        254
+      ],
+      "incoming": [
+        190,
+        214
+      ],
+      "issues": []
+    },
+    "40": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        27,
+        281,
+        208
+      ],
+      "incoming": [
+        111
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "41": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        121,
+        277
+      ],
+      "incoming": [
+        274
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "42": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        222
+      ],
+      "incoming": [
+        299
+      ],
+      "issues": []
+    },
+    "43": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        101,
+        20
+      ],
+      "incoming": [
+        66,
+        279
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "44": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": false,
+      "choices": [
+        160,
+        234
+      ],
+      "incoming": [
+        142
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "45": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        184,
+        58
+      ],
+      "incoming": [
+        203
+      ],
+      "issues": []
+    },
+    "46": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        147
+      ],
+      "issues": []
+    },
+    "47": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        273,
+        204,
+        87,
+        146
+      ],
+      "incoming": [
+        14,
+        33,
+        104
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "48": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": false,
+      "choices": [
+        110,
+        247
+      ],
+      "incoming": [
+        236
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "49": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        211
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "50": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        231,
+        299
+      ],
+      "incoming": [
+        189
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "51": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        298,
+        126
+      ],
+      "incoming": [
+        11,
+        225
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "52": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        295,
+        138
+      ],
+      "incoming": [],
+      "issues": [
+        "unreachable",
+        "no_incoming_edges"
+      ]
+    },
+    "53": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        120
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "54": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        64,
+        285
+      ],
+      "incoming": [
+        209
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Idegen harcos",
+          "hp": 30,
+          "damage": null
+        }
+      ]
+    },
+    "55": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        182,
+        288
+      ],
+      "incoming": [
+        87
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "56": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        159,
+        90
+      ],
+      "incoming": [
+        224
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "57": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        17,
+        243
+      ],
+      "incoming": [
+        144
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "58": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        45,
+        151
+      ],
+      "issues": []
+    },
+    "59": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        209
+      ],
+      "incoming": [
+        100,
+        150
+      ],
+      "issues": []
+    },
+    "60": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        23,
+        136
+      ],
+      "incoming": [
+        31
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "61": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        107,
+        187,
+        283
+      ],
+      "incoming": [
+        5,
+        107,
+        171,
+        218,
+        283,
+        293
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "62": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        280,
+        97,
+        224
+      ],
+      "incoming": [
+        16
+      ],
+      "issues": []
+    },
+    "63": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        288
+      ],
+      "incoming": [
+        284
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "64": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        289,
+        7
+      ],
+      "incoming": [
+        54,
+        242
+      ],
+      "issues": []
+    },
+    "65": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        163,
+        201
+      ],
+      "incoming": [
+        205
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "66": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        79,
+        43
+      ],
+      "incoming": [
+        106,
+        109,
+        185,
+        199,
+        230,
+        261,
+        276
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "67": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        265
+      ],
+      "issues": []
+    },
+    "68": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        131,
+        213
+      ],
+      "incoming": [
+        35
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "69": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        186,
+        154
+      ],
+      "incoming": [
+        226
+      ],
+      "issues": []
+    },
+    "70": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        189,
+        258
+      ],
+      "incoming": [
+        141
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "71": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        269
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "72": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        149,
+        279
+      ],
+      "incoming": [],
+      "issues": [
+        "unreachable",
+        "no_incoming_edges"
+      ]
+    },
+    "73": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        217,
+        125
+      ],
+      "incoming": [
+        181
+      ],
+      "issues": []
+    },
+    "74": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        79,
+        113
+      ],
+      "incoming": [
+        202
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "75": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        32,
+        145,
+        212
+      ],
+      "incoming": [
+        112,
+        123,
+        145,
+        184
+      ],
+      "issues": []
+    },
+    "76": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        28,
+        177
+      ],
+      "incoming": [
+        148
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "77": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        259
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "78": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        233
+      ],
+      "incoming": [
+        217
+      ],
+      "issues": []
+    },
+    "79": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        113
+      ],
+      "incoming": [
+        20,
+        66,
+        74
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "80": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        190,
+        10
+      ],
+      "incoming": [
+        6,
+        92,
+        238,
+        260,
+        286,
+        291
+      ],
+      "issues": []
+    },
+    "81": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        278
+      ],
+      "issues": []
+    },
+    "82": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        131,
+        213
+      ],
+      "incoming": [
+        131,
+        232
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "83": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        32,
+        145,
+        212
+      ],
+      "incoming": [
+        178
+      ],
+      "issues": []
+    },
+    "84": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        129,
+        264
+      ],
+      "incoming": [
+        30
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "85": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        15,
+        253
+      ],
+      "incoming": [
+        297
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "86": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        235
+      ],
+      "incoming": [
+        39,
+        164,
+        254
+      ],
+      "issues": []
+    },
+    "87": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        288,
+        55
+      ],
+      "incoming": [
+        47
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "88": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        178
+      ],
+      "incoming": [
+        282
+      ],
+      "issues": []
+    },
+    "89": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        24,
+        257
+      ],
+      "incoming": [
+        210,
+        271
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "90": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        56,
+        256
+      ],
+      "issues": []
+    },
+    "91": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        246,
+        185
+      ],
+      "incoming": [
+        23
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "92": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        245,
+        260,
+        80,
+        10
+      ],
+      "incoming": [
+        137
+      ],
+      "issues": []
+    },
+    "93": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        158,
+        38
+      ],
+      "incoming": [
+        187
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "94": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        218
+      ],
+      "incoming": [
+        257
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "95": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        25,
+        262
+      ],
+      "incoming": [
+        222
+      ],
+      "issues": []
+    },
+    "96": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        27,
+        281,
+        208
+      ],
+      "incoming": [
+        237
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "97": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        179
+      ],
+      "incoming": [
+        62,
+        114,
+        154,
+        159,
+        280
+      ],
+      "issues": []
+    },
+    "98": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        5,
+        293
+      ],
+      "incoming": [
+        152,
+        172
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "99": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        220,
+        142
+      ],
+      "incoming": [
+        292
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "100": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        59,
+        242
+      ],
+      "incoming": [
+        150
+      ],
+      "issues": []
+    },
+    "101": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        155,
+        202
+      ],
+      "incoming": [
+        43
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "102": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        8,
+        193,
+        287
+      ],
+      "incoming": [
+        247
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "103": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        22
+      ],
+      "issues": []
+    },
+    "104": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        33,
+        47,
+        288
+      ],
+      "incoming": [
+        33,
+        188
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "105": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        222
+      ],
+      "incoming": [
+        189
+      ],
+      "issues": []
+    },
+    "106": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        66,
+        230
+      ],
+      "incoming": [
+        31
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "107": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        61,
+        187,
+        283
+      ],
+      "incoming": [
+        5,
+        61,
+        171,
+        218,
+        283,
+        293
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "108": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        282
+      ],
+      "incoming": [
+        209
+      ],
+      "issues": []
+    },
+    "109": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        66,
+        230
+      ],
+      "incoming": [],
+      "issues": [
+        "unreachable",
+        "no_incoming_edges"
+      ]
+    },
+    "110": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        8,
+        193,
+        287
+      ],
+      "incoming": [
+        48
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "111": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        227,
+        40
+      ],
+      "incoming": [
+        269
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "112": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        75
+      ],
+      "incoming": [
+        272
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "113": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        225,
+        11
+      ],
+      "incoming": [
+        20,
+        74,
+        79,
+        279
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "114": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        97
+      ],
+      "incoming": [
+        240
+      ],
+      "issues": []
+    },
+    "115": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        24,
+        257
+      ],
+      "incoming": [
+        21,
+        124
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "116": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        203,
+        272
+      ],
+      "incoming": [
+        294
+      ],
+      "issues": []
+    },
+    "117": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        14,
+        288
+      ],
+      "incoming": [
+        220
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "118": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        251
+      ],
+      "issues": []
+    },
+    "119": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        122,
+        196
+      ],
+      "incoming": [
+        273,
+        288
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "120": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        249,
+        53
+      ],
+      "incoming": [
+        236
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "121": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        172
+      ],
+      "incoming": [
+        41
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "122": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        255
+      ],
+      "incoming": [
+        119
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "123": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        75
+      ],
+      "incoming": [
+        32
+      ],
+      "issues": []
+    },
+    "124": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        115,
+        252
+      ],
+      "incoming": [
+        35
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "125": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        226
+      ],
+      "incoming": [
+        73
+      ],
+      "issues": []
+    },
+    "126": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        211,
+        37
+      ],
+      "incoming": [
+        11,
+        51,
+        225
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "127": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        247
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "128": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        36,
+        219
+      ],
+      "incoming": [
+        262
+      ],
+      "issues": []
+    },
+    "129": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        14,
+        288
+      ],
+      "incoming": [
+        84,
+        160,
+        234,
+        241
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "130": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        16,
+        256
+      ],
+      "incoming": [
+        224
+      ],
+      "issues": []
+    },
+    "131": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        194,
+        271,
+        82
+      ],
+      "incoming": [
+        68,
+        82
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "132": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        238
+      ],
+      "incoming": [
+        212
+      ],
+      "issues": []
+    },
+    "133": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        27,
+        208
+      ],
+      "incoming": [
+        281
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "134": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        8,
+        287
+      ],
+      "incoming": [
+        193
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "135": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        278
+      ],
+      "issues": []
+    },
+    "136": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        171
+      ],
+      "incoming": [
+        60,
+        168
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "137": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        245,
+        286,
+        92
+      ],
+      "incoming": [
+        190,
+        214
+      ],
+      "issues": []
+    },
+    "138": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        52
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "139": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        8,
+        193,
+        287
+      ],
+      "incoming": [
+        270
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "140": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        21,
+        169,
+        210
+      ],
+      "incoming": [
+        24
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "141": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        278,
+        70,
+        167
+      ],
+      "incoming": [
+        1
+      ],
+      "issues": []
+    },
+    "142": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        44,
+        30
+      ],
+      "incoming": [
+        99
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "143": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        217
+      ],
+      "issues": []
+    },
+    "144": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        290,
+        57
+      ],
+      "incoming": [
+        12
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "145": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        294,
+        75
+      ],
+      "incoming": [
+        75,
+        83,
+        212,
+        268
+      ],
+      "issues": []
+    },
+    "146": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        288,
+        284
+      ],
+      "incoming": [
+        47
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "147": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        291,
+        46
+      ],
+      "incoming": [
+        245
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "148": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        76,
+        216
+      ],
+      "incoming": [
+        266
+      ],
+      "issues": [
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Lillieth",
+          "hp": 12,
+          "damage": "1-3"
+        }
+      ]
+    },
+    "149": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        72
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "150": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        59,
+        242,
+        100
+      ],
+      "incoming": [
+        36
+      ],
+      "issues": []
+    },
+    "151": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        184,
+        58
+      ],
+      "incoming": [
+        229
+      ],
+      "issues": []
+    },
+    "152": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        98
+      ],
+      "incoming": [
+        221
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "153": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        255
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "154": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        280,
+        97,
+        224
+      ],
+      "incoming": [
+        69,
+        186,
+        226
+      ],
+      "issues": []
+    },
+    "155": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        292
+      ],
+      "incoming": [
+        101
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "156": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        8,
+        287
+      ],
+      "incoming": [
+        297
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "157": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        299
+      ],
+      "issues": []
+    },
+    "158": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        24,
+        257
+      ],
+      "incoming": [
+        93
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "159": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        97
+      ],
+      "incoming": [
+        56,
+        256
+      ],
+      "issues": []
+    },
+    "160": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        129,
+        264
+      ],
+      "incoming": [
+        44
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "161": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        178
+      ],
+      "incoming": [
+        282
+      ],
+      "issues": []
+    },
+    "162": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        208,
+        250
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "163": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        172
+      ],
+      "incoming": [
+        65
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "164": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        86,
+        254
+      ],
+      "incoming": [
+        39,
+        254
+      ],
+      "issues": []
+    },
+    "165": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        263
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "166": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": false,
+      "choices": [
+        237,
+        269
+      ],
+      "incoming": [
+        295
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "167": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        222,
+        19
+      ],
+      "incoming": [
+        141
+      ],
+      "issues": []
+    },
+    "168": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        23,
+        136
+      ],
+      "incoming": [
+        37,
+        298
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "169": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        218
+      ],
+      "incoming": [
+        140,
+        252
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "170": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        268
+      ],
+      "incoming": [
+        265
+      ],
+      "issues": []
+    },
+    "171": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        61,
+        107,
+        187,
+        283
+      ],
+      "incoming": [
+        136,
+        246
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "172": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        98,
+        221
+      ],
+      "incoming": [
+        17,
+        121,
+        163
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "173": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        229
+      ],
+      "issues": []
+    },
+    "174": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        218
+      ],
+      "incoming": [
+        210,
+        271
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "175": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        29,
+        235
+      ],
+      "incoming": [
+        10,
+        29
+      ],
+      "issues": []
+    },
+    "176": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        220
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "177": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        8,
+        287
+      ],
+      "incoming": [
+        15,
+        76
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "178": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        83,
+        265
+      ],
+      "incoming": [
+        13,
+        25,
+        88,
+        161,
+        219,
+        222
+      ],
+      "issues": []
+    },
+    "179": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        97
+      ],
+      "issues": []
+    },
+    "180": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        27,
+        281,
+        208
+      ],
+      "incoming": [
+        4,
+        227
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "181": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        22,
+        73
+      ],
+      "incoming": [
+        235
+      ],
+      "issues": []
+    },
+    "182": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        288
+      ],
+      "incoming": [
+        55
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "183": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        274
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "184": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        75
+      ],
+      "incoming": [
+        45,
+        151
+      ],
+      "issues": []
+    },
+    "185": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        66,
+        230,
+        276
+      ],
+      "incoming": [
+        91
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "186": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        154
+      ],
+      "incoming": [
+        69
+      ],
+      "issues": []
+    },
+    "187": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        93,
+        228
+      ],
+      "incoming": [
+        5,
+        61,
+        107,
+        171,
+        218,
+        283,
+        293
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "188": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        33,
+        104
+      ],
+      "incoming": [
+        14,
+        204
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "189": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        50,
+        105
+      ],
+      "incoming": [
+        70
+      ],
+      "issues": []
+    },
+    "190": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        39,
+        275,
+        137
+      ],
+      "incoming": [
+        80,
+        238
+      ],
+      "issues": []
+    },
+    "191": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        27,
+        208
+      ],
+      "incoming": [
+        281
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "192": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        242
+      ],
+      "issues": []
+    },
+    "193": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        266,
+        134
+      ],
+      "incoming": [
+        102,
+        110,
+        139,
+        249
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "194": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        218
+      ],
+      "incoming": [
+        131,
+        232
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "195": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        233
+      ],
+      "incoming": [
+        22
+      ],
+      "issues": []
+    },
+    "196": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        255
+      ],
+      "incoming": [
+        119
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "197": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        5,
+        293
+      ],
+      "incoming": [
+        263
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "198": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        222
+      ],
+      "incoming": [
+        251
+      ],
+      "issues": []
+    },
+    "199": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        66,
+        230
+      ],
+      "incoming": [
+        23
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "200": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        226
+      ],
+      "incoming": [],
+      "issues": [
+        "unreachable",
+        "no_incoming_edges"
+      ]
+    },
+    "201": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        65
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "202": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        9,
+        74
+      ],
+      "incoming": [
+        101
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "203": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        45,
+        296
+      ],
+      "incoming": [
+        116
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "204": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        188,
+        288
+      ],
+      "incoming": [
+        47
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "205": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        12,
+        65
+      ],
+      "incoming": [
+        8
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "206": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        272
+      ],
+      "issues": []
+    },
+    "207": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        270
+      ],
+      "issues": [
+        "unreachable",
+        "unexpected_dead_end"
+      ]
+    },
+    "208": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        259,
+        162
+      ],
+      "incoming": [
+        27,
+        40,
+        96,
+        133,
+        180,
+        191
+      ],
+      "issues": [
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Maszkos férfi",
+          "hp": 32,
+          "damage": "2-7"
+        }
+      ]
+    },
+    "209": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        108,
+        54
+      ],
+      "incoming": [
+        59
+      ],
+      "issues": []
+    },
+    "210": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        174,
+        89
+      ],
+      "incoming": [
+        140,
+        252
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "211": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        261,
+        49
+      ],
+      "incoming": [
+        126,
+        230,
+        276
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "212": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        132,
+        32,
+        145
+      ],
+      "incoming": [
+        75,
+        83,
+        268
+      ],
+      "issues": []
+    },
+    "213": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        24,
+        257
+      ],
+      "incoming": [
+        68,
+        82
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "214": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        39,
+        137
+      ],
+      "incoming": [
+        275
+      ],
+      "issues": []
+    },
+    "215": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        295,
+        215
+      ],
+      "incoming": [
+        215,
+        255
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "216": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        148
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "217": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        78,
+        143
+      ],
+      "incoming": [
+        73
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "218": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        61,
+        107,
+        187,
+        283
+      ],
+      "incoming": [
+        94,
+        169,
+        174,
+        194,
+        239
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "219": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        178
+      ],
+      "incoming": [
+        128
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "220": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        117,
+        176
+      ],
+      "incoming": [
+        99
+      ],
+      "issues": [
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Békafejű rém",
+          "hp": 22,
+          "damage": "2-7"
+        }
+      ]
+    },
+    "221": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        263,
+        152
+      ],
+      "incoming": [
+        172
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "222": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        178,
+        95
+      ],
+      "incoming": [
+        1,
+        19,
+        42,
+        105,
+        167,
+        198,
+        231
+      ],
+      "issues": []
+    },
+    "223": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        295
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "224": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        56,
+        130
+      ],
+      "incoming": [
+        62,
+        154,
+        280
+      ],
+      "issues": []
+    },
+    "225": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        51,
+        126
+      ],
+      "incoming": [
+        113
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "226": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        69,
+        154
+      ],
+      "incoming": [
+        3,
+        125,
+        200
+      ],
+      "issues": []
+    },
+    "227": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        250,
+        180
+      ],
+      "incoming": [
+        111
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "228": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        244,
+        2
+      ],
+      "incoming": [
+        187
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "229": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        151,
+        173
+      ],
+      "incoming": [
+        294
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "230": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        211,
+        66
+      ],
+      "incoming": [
+        106,
+        109,
+        185,
+        199
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "231": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        222
+      ],
+      "incoming": [
+        50
+      ],
+      "issues": []
+    },
+    "232": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        194,
+        271,
+        82
+      ],
+      "incoming": [
+        24
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "233": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        78,
+        195
+      ],
+      "issues": []
+    },
+    "234": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        129,
+        18
+      ],
+      "incoming": [
+        44
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "235": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        181,
+        3
+      ],
+      "incoming": [
+        10,
+        29,
+        86,
+        175
+      ],
+      "issues": []
+    },
+    "236": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        48,
+        120,
+        270
+      ],
+      "incoming": [],
+      "issues": [
+        "unreachable",
+        "no_incoming_edges"
+      ]
+    },
+    "237": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        4,
+        96
+      ],
+      "incoming": [
+        166
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "238": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        190,
+        80,
+        10
+      ],
+      "incoming": [
+        26,
+        132
+      ],
+      "issues": []
+    },
+    "239": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        218
+      ],
+      "incoming": [
+        35
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "240": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        114,
+        34
+      ],
+      "incoming": [
+        16
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "241": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        129,
+        264
+      ],
+      "incoming": [
+        30
+      ],
+      "issues": [
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Békafejű rém",
+          "hp": 22,
+          "damage": "2-7"
+        }
+      ]
+    },
+    "242": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        64,
+        192
+      ],
+      "incoming": [
+        100,
+        150
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "243": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        57
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "244": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        24,
+        257
+      ],
+      "incoming": [
+        228
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "245": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        147,
+        6
+      ],
+      "incoming": [
+        92,
+        137
+      ],
+      "issues": []
+    },
+    "246": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        171
+      ],
+      "incoming": [
+        91
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "247": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        102,
+        127
+      ],
+      "incoming": [
+        48
+      ],
+      "issues": [
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Yhotl",
+          "hp": 26,
+          "damage": "1-6"
+        }
+      ]
+    },
+    "248": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        32
+      ],
+      "issues": []
+    },
+    "249": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        8,
+        193,
+        287
+      ],
+      "incoming": [
+        120
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "250": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        259,
+        162
+      ],
+      "incoming": [
+        4,
+        227
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "251": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        198,
+        118
+      ],
+      "incoming": [
+        19
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "252": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        21,
+        169,
+        210
+      ],
+      "incoming": [
+        21,
+        124
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "253": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        85
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "254": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        86,
+        164
+      ],
+      "incoming": [
+        39,
+        164
+      ],
+      "issues": []
+    },
+    "255": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        215,
+        153
+      ],
+      "incoming": [
+        122,
+        196
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "256": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        159,
+        90
+      ],
+      "incoming": [
+        130
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "257": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        94,
+        35
+      ],
+      "incoming": [
+        89,
+        115,
+        158,
+        213,
+        244
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "258": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        70
+      ],
+      "issues": []
+    },
+    "259": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        77,
+        300
+      ],
+      "incoming": [
+        208,
+        250
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "260": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        275,
+        80,
+        10
+      ],
+      "incoming": [
+        6,
+        92,
+        286,
+        291
+      ],
+      "issues": []
+    },
+    "261": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        37,
+        66
+      ],
+      "incoming": [
+        211
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "262": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        128,
+        13
+      ],
+      "incoming": [
+        25,
+        95
+      ],
+      "issues": []
+    },
+    "263": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": false,
+      "choices": [
+        197,
+        165
+      ],
+      "incoming": [
+        221
+      ],
+      "issues": [
+        "unreachable",
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "264": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        84,
+        160,
+        241
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "265": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        170,
+        67
+      ],
+      "incoming": [
+        178
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Wyvern",
+          "hp": 40,
+          "damage": "4-24"
+        }
+      ]
+    },
+    "266": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        297,
+        148
+      ],
+      "incoming": [
+        193
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "267": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        12
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "268": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        32,
+        145,
+        212
+      ],
+      "incoming": [
+        170
+      ],
+      "issues": []
+    },
+    "269": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": false,
+      "choices": [
+        111,
+        71
+      ],
+      "incoming": [
+        166
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "270": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        139,
+        207
+      ],
+      "incoming": [
+        236
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "271": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        174,
+        89
+      ],
+      "incoming": [
+        131,
+        232
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "272": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        112,
+        206
+      ],
+      "incoming": [
+        116
+      ],
+      "issues": []
+    },
+    "273": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        119
+      ],
+      "incoming": [
+        47
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "274": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        183,
+        41
+      ],
+      "incoming": [
+        8
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "275": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        214
+      ],
+      "incoming": [
+        190,
+        260
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "276": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        211,
+        66
+      ],
+      "incoming": [
+        185
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "277": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        41
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "278": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        81,
+        135
+      ],
+      "incoming": [
+        141
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "279": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        43,
+        113
+      ],
+      "incoming": [
+        72
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "280": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        97,
+        224
+      ],
+      "incoming": [
+        62,
+        154
+      ],
+      "issues": []
+    },
+    "281": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        133,
+        191
+      ],
+      "incoming": [
+        27,
+        40,
+        96,
+        180
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "282": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        161,
+        88
+      ],
+      "incoming": [
+        36,
+        108,
+        289
+      ],
+      "issues": []
+    },
+    "283": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        61,
+        107,
+        187
+      ],
+      "incoming": [
+        5,
+        61,
+        107,
+        171,
+        218,
+        293
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "284": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        63,
+        288
+      ],
+      "incoming": [
+        146
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "285": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        54
+      ],
+      "issues": []
+    },
+    "286": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        260,
+        80,
+        10
+      ],
+      "incoming": [
+        137
+      ],
+      "issues": []
+    },
+    "287": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        8
+      ],
+      "incoming": [
+        28,
+        102,
+        110,
+        134,
+        139,
+        156,
+        177,
+        249
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "288": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        119
+      ],
+      "incoming": [
+        14,
+        33,
+        55,
+        63,
+        87,
+        104,
+        117,
+        129,
+        146,
+        182,
+        204,
+        284
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "289": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        282
+      ],
+      "incoming": [
+        64
+      ],
+      "issues": []
+    },
+    "290": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        144
+      ],
+      "issues": [
+        "unreachable",
+        "unexpected_dead_end"
+      ]
+    },
+    "291": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        260,
+        80,
+        10
+      ],
+      "incoming": [
+        147
+      ],
+      "issues": []
+    },
+    "292": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        30,
+        99
+      ],
+      "incoming": [
+        9,
+        155
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "293": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        61,
+        107,
+        187,
+        283
+      ],
+      "incoming": [
+        98,
+        197
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "294": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        229,
+        116
+      ],
+      "incoming": [
+        145
+      ],
+      "issues": []
+    },
+    "295": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        166,
+        223
+      ],
+      "incoming": [
+        52,
+        215
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "296": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        203
+      ],
+      "issues": []
+    },
+    "297": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": false,
+      "choices": [
+        156,
+        85
+      ],
+      "incoming": [
+        266
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "298": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [
+        31,
+        168
+      ],
+      "incoming": [
+        51
+      ],
+      "issues": [
+        "unreachable"
+      ]
+    },
+    "299": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        42,
+        157
+      ],
+      "incoming": [
+        50
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "300": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": false,
+      "choices": [],
+      "incoming": [
+        259
+      ],
+      "issues": [
+        "unreachable",
+        "unexpected_dead_end"
+      ]
+    }
+  }
+}

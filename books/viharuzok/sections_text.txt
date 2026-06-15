@@ -1,0 +1,2286 @@
+=== 000 ELŐZMÉNYEK ===
+Viharűzők
+
+Agrannisba több alkalommal is kénytelen vagy megpihenni, mert az utat egyvágtában lehetetlen megtenni. Nem csupán a hátasod nem bírná, te magad is alighanem ott pusztulnál. Lehetőség szerint kerülöd a fogadókat, mert drágák és a tulajdonosok az esetek többségében kapcsolatban állnak a helyi rablóbandával; értékes információkat adnak az átutazókról, majd részesednek a zsákmányból.
+
+A szabad ég alatt amúgy is jobban érzed magad. A vadon számodra egyet jelent az otthonnal.
+
+=== 001 ===
+Agrannisig több alkalommal is kénytelen vagy megpihenni, mert az utat egyvágtában lehetetlen megetenni. Nem csupán a hátasod nem bírná, te magad is alighanem ott pusztulnál. Lehetőség szerint kerülöd a fogadókat, mert drágák és a tulajdonosok az esetek többségében kapcsolatban állnak a helyi rablóbandával; értékes információkat adnak az átutazókról, majd részesednek a zsákmányból.
+
+A szabad ég alatt amúgy is jobban érzed magad. A vadon számodra egyet jelent az otthonnal. Itt legfeljebb a vadállatoktól kell tartanod, ám azokat távol tartja a tábortűz fénye.
+
+Már csupán féf napnyi lovaglás választ el a kereskedővárostól, amikor egy mezőn áthaladva érdekes jelenetre figyelsz fel. A tisztás közepén egy csuklyás kigyóágaskodik egy lassan hátráló unikornis előtt.
+
+Ha megszakítod az Agrannisba vezetõ utadat, s közelebб mész, lapozz a 141-re!
+Ha nem foglalkozol az állatokkal, lapozz a 222-re!
+
+=== 002 ===
+Ügycsen harcolsz, s már kis hiján sikerül felül kerekedned, amikor a testedbe került méreg úrrá lesz rajtad. Hamarosan elvesztad az eszméletét. Jobb így nekeď. Kalandod véget ért.
+I can see this is a page from what appears to be a gamebook or illustrated story, showing a pencil sketch of a unicorn in a forest or wooded setting with some vegetation in the foreground. However, I cannot clearly make out any legible text on this page to transcribe accurately. The image quality and contrast make any text that may be present too faint or unclear for me to read with confidence.
+
+If you could provide a clearer image or confirm there is text on this page, I'd be happy to help transcribe it according to your specifications.
+
+=== 003 ===
+A türelmed nemsokára meghozza a gyümölcsét. A fickó kotorászni kezd a zsebében, s valami fényes hullik a földre. Villámgyorsan utána kap – iszonyú gyors ám közben láthatóvá válik a tenyerére tetovált márfigura is.
+
+Nem habozol tovább. Felálsz, és áttilsz az asztalához. Közömbösen néz rád, ám amikor szóra nyitod a szádat, feddőn rád pillant, s inkább csendben maradsz. Gyorsan kiSSza az italát, majd felál, és a szeméyel int, hogy kövesd. Odakint már sötét van, mégis behúzódtok egy árnyékos fal mellé, és ott beszélni kezd:
+
+– Te vagy a negyedik, aki rám találtál... – kezdi lassan. – Add el a lovadat, s reggel indulj észak felé. Ott keresd meg Varont, a halászt, akitól kapsz egy rejtvényt. Ha megválaszolod, akkor ő mondja majd meg, merre menj tovább!
+
+Nem teszi hozzá, mi van akkor laszt. A negyedik vagy, csak ez vibrál a neyedben, illetve a következő feladat. Lennének még kérdéseid, ám a Karvaly egyik pillanatban még ott állt melletted, a következőben azonban nincs sehol.
+
+Lapozz a 226-ra!
+
+=== 004 ===
+Hatalmas titést mérsz az ajtóra. (Dobj harci dobást, mintha egy ellenféllet harcolnál! Ha a támadóerőd nagyobb, mint 30, akkor sikerült betörnöd az ajtót.)
+
+Ha sikerült betörni, lapozz a 250-re!
+Ha nem sikerült, lapozz a 180-ra!
+
+=== 005 ===
+Sohasem szeretted, ha valakinek éheznie kell. Gyorsan benyúlsz az iszkodba, s kiválasztod a legfinomabb falatokat a vénembernek. Amikor elé teszed, hálásán rád pillant, s azt mondja:
+
+Felül lakozik a villám, középen a fagy.
+Az alsó szabad utat ad.
+
+Először azt hiszed, ez is valamiféle rejtvény, része a próbának, azonban a fickó újyet sem vet rád, inkább az étellel foglaja el magát.
+Megjegyzed a mondókat, majd nekiindulsz a hosszú kapaszkodónak, ahol csupán egyszer kell elvétened a lépést ahhoz, hogy alázuhanj a mélybe, s össszezúzd magad a sziklákon.
+Meglepően gyorsan és könnyen jutsz fel a meredek úton, s nem sokára ott állsz az építlet előtt. Hatalmas kőajtaján három kulcslyuk látható, melyek egymás alatt helyezkednek el. Méretre és külsőre valamennyi megegyezik. Melyikbe teszed a csontkulcsot?
+
+Ha a felsőbe, lapozz a 61-re!
+Ha a középsőbe, lapozz a 107-re!
+Ha az alsóba, lapozz a 187-re!
+Ha dörömbölésél próbálkozol, lapozz a 283-ra!
+
+=== 006 ===
+Hiába mereszted a szemed, képtelen vagy felfedezni a fickót. Ráadásul néhány másodperccel ezelőtt egy közeli templombó kiözönlöttek a hívók, végképp lehetetlenné téve bárkinek is a követését. Lemondóan felsohajtasz. Megtaláltad, s rögtön el is veszitetted. Most mindenesetre visszamész a lovadért.
+
+Ha visszatérsz a piacra, lapozz a 260-ra!
+Ha találomra sétálsz az utcákon, lapozz a 80-ra!
+Ha valamelyi fogadóban próbálkozol Karvaly megtalálásával, lapozz a 10-re!
+
+=== 007 ===
+Eszed ágában sincs visszafordulni. Így gondolod, a halott fickó valamelyi tárgyán volt valami trükkös varázslat, amelyik még halála után is visszafordíthatja a betolakodókat erről a helyről. Megsarkantyúzod a lovad, de alig távolodisz el néhány lépésnyire a barlang bejáratától, amikor egy hatalmas villám csak le az égből, s a következő pillanatban szénné égye, holtan zuhansz a földre. Kalandod véget ért.
+
+=== 008 ===
+Északkelet felé haladva egyre vadabbá válik a kör-
+nyék. A növények megritkulnak, mindenfelé csak ko-
+pár sziklákát látsz. Sokáig gyalogolsz, miközben a ha-
+lász szavain töröd a fejed: „túl az erő és a hatalom
+próbáján, megmérettetsz". Vajon mire gondolt?
+
+Az egyik szikla mögtül acsarkodó morgást hallasz,
+melybe néha dühhös bömbölés, s valami más, megma-
+gyarázhatatlan zaj – talán sziszegés – keveredik. Vajon
+miféle szörnyü lény képes ilyen hangok kiadására?
+
+Óvatosan felkapaszkodasz a sziklára, és kilesel fe-
+lette. Egy oroszlán és egy sárkányt látsz összekapasz-
+kodva harcolni; tépik-marják egymást, ahol csak érik.
+
+Ha végignézed a küzdelmet, de nem avatkozol közbe,
+lapozz a 274-re!
+Ha beavatkozol, lapozz a 205-re!
+
+=== 009 ===
+Bosszúsan teszed el a vaskulcsot – talán még jó lesz
+valamire –, majd előhúzod az aranykulcsot, s azzal
+próbálkozol. A kulcs könnyedén elfordul a zárban, s
+előtted kitárul az ajtó. Egy csodálatos termet látsz,
+ahol már egy magas, szőke hajú asszony tartózkodik.
+Nem fordul felé, mintha tudomást sem venne arról,
+hogy bejutottál.
+
+Lapozz a 292-re!
+
+=== 010 ===
+Néhány percen belül több fogadóra is találsz. Kiváló lasztod azokat közülük, melyekről el tudod képzelni, hogy a Karvaly betérjen oda – a többség túlzsúfolt, drága, a koszról és a búzról nem is beszélve.
+
+Ha a Véres Kardba térsz be, lapozz a 29-re!
+Ha a Sárkányölőbe, lapozz a 235-re!
+Ha a Hősök Csarnokába, lapozz a 175-re!
+
+=== 011 ===
+Egy szentvillanással később ugrasz fel, mint kelle ne. Kellemetlen, csípős fájdalmat érzel a lábszáradban (veszítesz 3 életerőpontot). Csapádba futottál. Innentől kezdve még óvatosabb vagy, ám nem vár több megle petés. A csigalécsön egy katakombába iutottál - folyosó egyenes, a falak mellett hordók állnak. Valaki honnan a közölből tompa hortyogás hallatsik.
+
+Ha megkeresed, ki hortyog, lapozz az 51-re!
+Ha felfedezed a katakombát, lapozz a 126-ra!
+
+=== 012 ===
+Az oroszlán ugyan pillanatyilag mintha fölénybe került volna, azonban a sárkány túlságosan erősnek tűnik. "Túl az erő és a hatalom próbáján." Vajon helyesen döntöttél, gondolod, miközben fegyvert támadnak a sárkányra rontasz.
+
+Sárkány: életerő 22 (az eredeti 50), sérülési képesség 23, védeusegi szini 22. A sárkány 2-7 életerőpont veszteségét okoz tüzes leheletével és a karmaival.
+
+Ha sikerült megölnöd a sárkányt, lapozz a 144-re!
+Ha veszítettél az összecsapásban, lapozz a 267-re!
+
+=== 013 ===
+Sajnálod a kitérőre elfecserelt időt, ám csak így győződhettél meg arról, hogy az egyetlen átjutási lehetőség számodra a sziklaszoros, hát visszatérsz oda hogy azon keresztül folytatsd az utadat.
+
+Lapozz a 178-ra!
+
+=== 014 ===
+Nem féltél a ruhádat, amikor nekilátsz átkutatni a szobát. Még a szeméthalmokat is arrebb löldösöd a lábaddal; a patkányok visítva menekülnek. Az egyiki szeméthalom alatt egy repedt csontfurulyt találsz.
+
+Ha használod a furulyát, lapozz a 47-re!
+Ha tovább kutatsz, lapozz a 188-ra!
+Ha a kijáratot keresed, lapozz a 288-ra!
+
+=== 015 ===
+Nem volt könnyű végezni a bestiával, ám a szerencse ezúttal mellét szegódött. A járat falairól vér csöpög, valóságos mészáros munkára kényszerültél a győzelem érdekében. Most már tudod, a sikoltások csak arra kellettek, hogy lecsaljon a mélybe, s megpróbáljon végezni veled.
+
+Ha visszamész a felszínre, lapozz a 28-ra!
+Ha szétnézel idelent, lapozz a 177-re!
+
+=== 016 ===
+Ennek fele sem tréfa, gondolod, és követed a kentaurok példáját, akik a szörny felbukkanását követően máris tovaporzanak. Nyakad közé veszed a lábad, s rohanni kezdesz. Ám a szörnyeteg sem tűnik lassúnak. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 62-re!
+Ha nem sikerült, lapozz a 240-re!
+
+=== 017 ===
+Magad sem hitted volna, hogy egy ilyen neves harcost sikerült legyőznöd, ám amikor a lábaid előtt hever, megkönnyebbülés tölt el. Melletted vibrálni kezd a levegő, és egy sárkánypikkelyekkel borított köpenyt viselő asszonyit látsz.
+
+– Dicsőséges küzdelem volt – mondja csendesen. –
+
+„Túl az erő és a hatalom próbáján, megmérettetsz, hogy méltó vagy-e." Emlékszél? Nos, elnyerted a fegyet, s belésphetsz a Csarnokba... Fogd ezt a kulcsot, és haladj tovább északkelét felé. Tudni fogod, hol keresd a Csarnokot!
+
+Aztán lassan elhalványul az alakja, te pedig tovább folytatod az utadat északkelét felé, miközben szived boldog, amiért ezen a próbán is sikerült túljutnod. Az apró csontkulcs a mellkasodban lóg egy darab madzagra felkötve.
+
+Lapozz a 172-re!
+
+=== 018 ===
+A szörny kihasználja a meglepodessedet, s mindjárt az elején súlyos sebet ejt rajtad. Ráadásul tapasztalat harcos, s most, hogy varázsserod egy részét az illúziója semlegesitésére pazaroltad, kiszolgáltatottá válsz. Teljesen a falhoz szorit, aztán lecsap, s nincs menekvés. Kalandod véget ért.
+
+=== 019 ===
+Leszállsz a nyeregből – nem akarod megkockáztat-
+ni, hogy a lovad megriad a kígyó közelében –, majd
+óvatosan a csuklyás kígyó felé indulsz. Az állat, mint-
+ha csak megerézné a közeledésedét, ismét felfújja a
+csuklyáját, s szembefordul veled. Mögötte mintha fé-
+nyesen csillogna valami a földön, ami egy kisebb ga-
+lambtojás méretével vetekedit.
+
+Ha megpróbálod megölni a kígyót, lapozz a 251-re!
+Ha hagyod a kígyót és a kincsét, s inkább folytatod az
+utadat, lapozz a 222-re!
+
+=== 020 ===
+Kulcs nélkül nem boldogulsz, ébredsz rá. De vajon
+hol leled meg? Lefelé indulsz, majd megálsz azon a
+szinten, ahol a kincseskamrát találtad.
+
+Ha visszamész a kincseskamrába, lapozz a 79-re!
+Ha lefelé indulsz a csigalépcsön, lapozz a 113-ra!
+
+=== 021 ===
+Sokáig egyenesen haladsz, majd a folyosó elkanya-
+rodik balra. Aztán megint egy egyenes szakasz követ-
+kezik, majd ismét balra. Aztán egy darabig megint
+egyenesen haladhastz, ekkor egy oldaljárat csatlako-
+zik a folyosóba. Innen jobbra és egyenesen mehetsz
+tovább.
+
+Ha jobbra mégy, lapozz a 115-re!
+Ha egyenesen, lapozz a 252-re!
+
+=== 022 ===
+Nem fogsz meghátrálni a kihívás elöl. Tudod, hogy jobb vagy ellenfeleednél, s be is akarod bizonyítani.
+— Csak odakint! — mondja gyorsan a kocsmáros, amikor bölintasz a kihívásra. A vendégek máris elindulnak az utcára, hogy végignézhessék az összecsapást. Ellenfeled magas, ruhája alatt tekintélyt parancsoló izmok rejtőznek. Meghátrálni mégsem lehet. Körülöttetek jókora üres tér tátong, amikor összecsaptok.
+
+Kötekedő fickó: életerő 27, támadási képesség 18, védettsegi szint 14. A fickó 2-7 életerőpont veszteségét okoz a kardjával.
+
+Ha sikerült megölnöd a fickót, lapozz a 195-re!
+Ha veszítettél az összecsapásban, lapozz a 103-ra!
+
+=== 023 ===
+— Aranynyal fizetek — vágod rá azonnal.
+A félszerzet elmosolyodik.
+— Rendben. A kulcs ára kereken száz arany.
+
+Ha ki tudsz fizetni ennyi aranyat, lapozz a 91-re!
+Ha nincs ennyi pénzed, lapozz a 199-re!
+
+=== 024 ===
+Egyenesen haladisz egy darabig, majd a folyosó jobbra kanyarodík, s kisvártatva egy elágazásba torkollik, ahol ismét balra és jobbra haladhastz tovább.
+
+Ha balra megy, lapozz a 232-re!
+Ha jobbra, lapozz a 140-re!
+
+=== 025 ===
+Jó másfél órát szánasz a kutatásra, azonban valahányszor úgy érzed, találtál valamit, hamarosan kiderül, hogy tévedtél. A sziklafal nyomaszlóan magasodik felед, úgy túnik, ebben az irányban hiába is próbálkoznál továb. Visszatérsz a sziklaszoros­hoz.
+
+Ha nekivágysz a sziklaszorosnak, lapozz a 178-ra!
+Ha jobb kéz irányába indulsz, lapozz a 262-re!
+
+=== 026 ===
+A megoldás azonnal beugrik: a sas. Hiszen csak ö lehet a madarak királya. Amikor kimondod a választ, a fickó bólint, majd a hegyek irányába mutat.
+
+- A Sasok Népe mindvégig örizni fogja utadat, or­szágán bántatlanul haladhastz át. A szerencse kisérjen utadon, vándor!
+
+Folytatod utadat. A vidék békés, s bár néha olyan érzésed támad, figyelnek, egyetlen lélek sem mutatkozik meg előtted. Háborítalan jutsz el a hegyekig — mintha a mérföldek is gyorsabban fogynának —, ahol egy csodálatos völgy közepén Agrannis található. Ebből az irányból még sohasem közeledetted meg a kereskedővárost, s csupán akkor jössz rá, miért nem, amikor még egy utolsó pillantást akarsz vetni a vidékre, azonban érkeztél.
+
+A hátad mögött hegyek vannak. Nyoma sincs annak a síkságnak, melyen néhány perccel ezelőtt lovagoltál. Varázslat, döbbensz rá. Ám hamarosan ott leszel Agrannis kapuinál, közel egy teljes nappnyi utazást megtakaritottál magadnak. Erdemes volt a barlangon keresztülmenni.
+
+Lapozz a 238-ra!
+
+=== 027 ===
+A csontkulcsról pillanatok alatt kiderül, hogy nem illik a zárba, így csalódottan elteszed. Kész szerencse, hogy akad még nálad kulcs.
+
+Ha egy aranykulccsal próbálkozol, lapozz a 281-re!
+Ha egy vaskulccsal, lapozz a 208-ra!
+
+=== 028 ===
+Idelenn már semmi dolgod. A szörny halott, s pillanatnyilag semmire se vágysz jobban, mint egy mély lélégzetnyi, tiszta levegőre. Felkapaszkodasz a felszínre, és némi töprengés után visszatérasz az elágazáshoz.
+
+Ha egyenesen (északkelet) még tovább, lapozz a 8-ra!
+Ha jobhra, lapozz a 287-re!
+
+=== 029 ===
+A Véres Kardra esik a választásod. Egész este ott ülsz, figyeled a betérő vendégeket, ám egyetlen alakot sem látsz, akinek a tenyerében tetoválas lenne. Igaz, akadnak néhányan, akiknél ezt lehetetlen megállapítani, ám az ösztönöd azt súgja, ők nem lehetnek azonosak azzal a személlyel, akit te keresel.
+Eppem ezért másnap este inkább egy másik fogadóban teszel próbát.
+
+Ha a Sárkányölőbe térsz be, lapozz a 235-re!
+Ha a Hősök Csarnokába, lapozz a 175-re!
+
+=== 030 ===
+Minthogy az asszony aligha fog megmozdulni, a berendezésekre fordítod figyelmед. Hamarosan egy érdekes ládikára figyelсz fel, melynek tetején egy ágasodó sárkány látszik.
+
+Ha kinyitod a ládikát, lapozz a 241-re!
+Ha tovább nézelődsz, lapozz a 84-re!
+
+=== 031 ===
+Minden ügyességedet összeszedve megkísérled leakasztani a félszerzet överől a kulcsot. Dobj hatoldalu kockával! Ha a dobás nem egyеs, akkor sikerrel jártál, ha kеttes, hármas vagy négyes, akkor nem sikerült, de újra próbálkozhatsz (azaz dobj ismét). Ha a dobás öt vagy hat, a félszerzet felébреdt.
+
+Ha megszerezted a kulcsot, lapozz a 106-ra!
+Ha felébresztettеd a félszerzetet, lapozz a 60-ra!
+
+=== 032 ===
+A sötétség annyira sűrű, hogy az orrodig sem látsz. Mintha egy ablaktalan, bezárt szobában lennél, ahol ráadásul teljes csend vesz körül. Ilyen sötétet csak mágiával lehet létrеhozni, gondolod, amikor... Tegyél szerencséprόbát!
+
+Ha sikerült, lapozz a 123-ra!
+Ha nem sikerült, lapozz a 248-ra!
+
+=== 033 ===
+Az ital íze gyömbérre emlékerztet, és azonnal tudod, nem tévedtél a hatásást illetően. A sebeid elkészesztő sebességgel kezdenek begyógyulni (20 életerőpontot gyógyulsz, de nem lépheted át a maximumot). Kipi-henttė és ismét erősse válsz.
+
+Ha megkóstolod a másik italt, lapozz a 104-re!
+Ha használod a furulyát, lapozz a 47-re!
+Ha a kijáratot keresed, lapozz a 288-ra!
+
+=== 034 ===
+A szörnyeteg neked ront, és a következő másod-percben azt sem tudod, merre csapj. Hájas testén nem tudsz komolyabb sebet ejteni, miközben az ő csapásai lassan vissznek közelebb a végzetedhez. Kalandod véget ért.
+
+=== 035 ===
+A folyosó egyenesen halad egy darabig, majd egy elágazásba torkollik. Balra, egyenesen és jobbra haladhastz innen tovább.
+
+Ha balra megy, lapozz a 68-ra!
+Ha egyenesen, lapozz a 124-re!
+Ha jobbra, lapozz a 239-re!
+
+=== 036 ===
+Bár nem volt könnyű, s minden ügyességedet próbára tette a kapaszkodó, hamarosan ott állsz a barlang előtt. Odabentről könnyű légáramlat simogatja az arcodat; ez viszont azt is jelentheti, van egy másik kijárat valahol a barlangon keresztül!
+
+Ha belépsz a barlangba, lapozz a 150-re!
+Ha visszamész a sziklaszoroshöz, lapozz a 282-re!
+
+=== 037 ===
+Nesztelen léptekkel osonsz egyre beljebb. A hortyogás erősödik, ahogy a hordók felé közeletsz. Amikor a füled hozzátapasztod a legnagyobb hordó falához, elégedetten elvigyorodsz. Biztos, hogy odabent alszik valaki. Ám hogyan jutott be. Hamarosan rá-jössz, hogy egy ügyes szerkezet segítségével a félbevágott hordó felső része felemelthető. Megerinted a kart, s a szerzet alig hallható nyikorgással felnyitja a hordót, te pedig egy pocakos félszerzetét pillantasz meg, aki jóízűen alszik. Az övén egyetlen acélkulcs fityeg. Nyilván költolgatta egy kicsit az idei termést mintha országot éreznél a leheletén.
+
+Ha megpróbálod ellopni a kulcsot, lapozz a 31-re!
+Ha felebészted a félszerzetét, s elkéred töle a kulcsot, lapozz a 168-ra!
+
+=== 038 ===
+A hálóba ragadva nem sok esélyed van, ám becsületből mégis harcosz. A pók azonban nem sok esélyt hagy neked, a rágóiról csöpögő méreg lelassít teljesen, s hamarosan elveszted az eszméleteted. Jobb így neked. Kalandod véget ért.
+
+=== 039 ===
+Úgy gondolod, az lesz a legjobb, ha kérdezösködni kezdesz. Valaki csak ismer olyan személyt, akinek egy madár van a tenyerébe tetováva. A kérdés csupán az, kit szólíts meg?
+
+Ha egy koldust, lapozz a 86-ra!
+Ha egy kereskedőt, lapozz a 164-re!
+Ha egy vásárlót, lapozz a 254-re!
+
+=== 040 ===
+Ha a csontkulccsal próbálkozol, lapozz a 27-re!
+Ha egy aranykulccsal, lapozz a 281-re!
+Ha egy vaskulccsal, lapozz a 208-ra!
+
+=== 041 ===
+Dacosan megrázod a fejed. Eszed ágában sincs beállni egy olyan szervezetbe, melynak nevét még sohasem hallottad. Nem, téged csupán egyetien út érdekel: hogyan kerülhetsz a Viharúzök soraiba.
+A fickó elkomorodik, és fegyvert ránt.
+- Az ostobák halált érdemelnek – mondja, s bár testét sebek borítják, még félelmetes ellenfélnek túnik a számodra.
+
+Brúdah: életerő 27 (50 volt eredetű), támadási képesség 23, védelmi szint 18. A férfi 4-9 életerőpont vesztességét okoz a kardjával.
+
+Ha sikerült megölnöd a férfit, lapozz a 121-re!
+Ha vesztettél, lapozz a 277-re!
+
+=== 042 ===
+Az egyszarvú döglötten hever a lábaidnál. Nem volt könnyü küzdelem, ám amikor felemeled a kristályt, akkor azonban látod, megérte. Ezért a kincsért a kereszt kedővárösban bizonyára tekinélyes kis summát kapsz, majd bamiból fedezheted a további költségeidet. Irány Agrannis!
+
+Lapozz a 222-re!
+I can see this is a historical illustration/drawing of a figure in ornate clothing with decorative elements, but I don't see any text to transcribe on this page. The image shows a sketch or engraving of a person in period costume with jewelry and accessories, along with what appears to be a small publisher's mark or seal in the lower left corner, but no readable text content is visible.
+
+If there is text on this page that should be transcribed, it may be too faint or unclear in the image provided for me to read accurately. Could you please verify if there is text present, or provide a clearer image?
+
+=== 043 ===
+Felfelé indulsz, ahol a kijáratod sejted. Megérzésed nem csak meg, ám a felső ajtó zárva van. Megpróbálod kifeszíteni, de nem boldogulsz vele, a csontkulcs pedig túlságosan kicsi a zárba.
+
+Ha van nálad egy másik kulcs, lapozz a 101-re!
+Ha nincs, lapozz a 20-ra!
+
+=== 044 ===
+Fáradtan lekuporodsz a szoba egyik sarkában, majd lehunyod a szemed. Az álom pillanatok alatt elnyom. Magad sem tudod, miért nyitod ki néhány perccel ké-
+söbb a szemed, de.... Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 160-ra!
+Ha nem sikerült, lapozz a 234-re!
+
+=== 045 ===
+Magad sem tudod, hogyan, de sikerül legyőznöd a démonokat. Talán valamelyik isten konyörült meg rajtad, s tartotta feletted a harcban áldó kezet. A szörnyüséges teremtmények holtan hevernek körülöötted, búzös testük lártán alig bírod elfojtani öklendezéssedet. Gyorsan körbepillantasz. Egy állandó szürkületbe burkolózó fennsíkon állsz, melyeket sziklák borítanak. A távolból szörnyü üvöltéseket hallasz, melyek gyorsan közelednek. Hátad mögött a Kapu egyre gyengülő fénnyel pislog.
+
+Ha gyorsan visszalépesz a Kapun, lapozz a 184-re!
+Ha szétnézel ezen a helyen, lapozz az 58-ra!
+
+=== 046 ===
+Az orgyilkos ügyesen kihasználja apró hibáidat, s szúrásaival kellemetlen sebeket okoz. A vérveszteség megzavar, s egy rossz lépés után az orgyilkos előrelendül, te pedig csak a hideg pengét érzed, ahogy a mellkasodba hatol. Kalandod véget ért.
+
+=== 047 ===
+Amikor megfújod a furulyát, egy éjfekete, szokatlannul nagy patkány búvik elő a legtávolabbi szobából alól. Félelem nélkül közeledsik hozzád, majd megül a lábaid előtt, és rád néz. Tekintetében értelem honol.
+— Miben lehetek a szolgálatodra? — kérdezi vékony hangon. — Figyelmeztetlek, csupán egyét kérhetsz!
+
+Ha azt kéred, mutassa meg a kiját­ratot, lapozz a 273-ra!
+Ha a helyiségben található legértékesebb tárgyat, lapozz a 204-re!
+Ha valami erős gyógyitalt, lapozz a 87-re!
+Ha olyasvalamit, ami visszaadná mágikus erödet, lapozz a 146-ra!
+
+=== 048 ===
+A pallő keskeny, és elég instabil. Óvatosan haladsz, ám amikor az út felénél jársz, hangos recsenés hallat­szik, s a pallő megbillen alattad. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 110-re!
+Ha nem sikerült, lapozz a 247-re!
+
+=== 049 ===
+Amilyen kicsi az ördémon, annyira veszélyes. Följethetetlen sebességgel cikázik körülötted, hogy aztán a legváratlanabb helyekről támadjon rád. Ráadásul kicsiny kardjai áthatolnak a börödön, s véredet fakaszszják. Mágiája pedig további növeli veszélyességét. Magad sem tudod, hogyan történhetett, de egyszer csak azon veszed észre magad, hogy feleszel a földön, és ketségbecsetten próbálsz eszméletednél maradni. Nem sok sikerrel. Kalandod véget ért.
+
+=== 050 ===
+Mihez kezdene egy unikornis egy ilyen értékes kristállyal, gondolod magadban, s előrelepsz, hogy magadhoz vedd a zsákmányt. A következő pillanatban éles fájdalmat érzel a karodban (veszitesz 4 életerőpontot); az egyszarvú nem adja a kristályt.
+
+Ha lemondasz rólá, lapozz a 231-re!
+Ha harcolsz érte, lapozz a 299-re!
+
+=== 051 ===
+Nesztelen léptekkel osonsz egyre beljebb. A hortyogás erősödik, ahogy a hordók felé közeledsz. Amikor a füled hozzátapasztod a legnagyobb hordó falához, elégedetten elvigyorodsz. Biztos, hogy odabent alszik valaki. Am hogyan jutott be. Hamarosan rájössz, hogy egy ügyes szerkezet segítségével a félbevágott hordó felső része felemelthető.
+
+Ha megnézed, ki alszik a hordóban, lapozz a 298-ra!
+Ha feltérképezed a katakombád, lapozz a 126-ra!
+
+=== 052 ===
+Kakas, mondod hangosan. A következő pillanatban mintha lezuhanórácsok hangjái hallanád, majd egy dühhös roc visítását. A szörny csőre az acélon különös hangot vet, ám csakhamar rájössz, hogy nem kell töle tartanod. Valószínűleg azért záródtak le arácsok, mert megtettett a rejtvényt.
+
+Tudod, hogy valahol a kastélyban vagy, de fogalmad sincs, pontosan hol. Remeléd, hogy ez a Kívá-lasztottak próbájának utolsó szakasza, mert lassan belefáradni a folytonos harcokba, az állandó életveszélybe. Megis, bizol benne, hogy elnyered a jutalmad, s bekerülsz a Viharúzók közé.
+
+Valahonnan a közelből mintha könnyü szellő legyezgetné az arcodat, miközben a hátad mögül mintha egyere növekvő forrósságot éreznél.
+
+Ha a szellő felé indulsz, lapozz a 295-re!
+Ha a forróság felé, lapozz a 138-ra!
+
+=== 053 ===
+A vízben nem tudsz olyan jól harcolni, mint a szárazföldön, ez hamarosan nyilvánvalóvá válik. A szörnyeteg fölénybe kerül, s már az is hatalmas erőfeszítésedbe kerül, hogy ne fullladj meg. Ám erőd elhagy, s aztán elborít a sötétség. Kalandod véget ért.
+
+=== 054 ===
+Idegen harcos: életerő 30, támadási képesség 25, védettségi szint 22, varázserő 18. Az ellenfél 3-8 életpontot veszteséget okoz a lándzsájával, de minden második körben a varázserejét fogja használni ellened (amíg van rá pontja).
+
+Ha sikerült megölnöd az idegent, lapozz a 64-re!
+Ha veszítettél az összecsapásban, lapozz a 285-re!
+
+=== 055 ===
+Folytatod a kutatást, s szakhamar egy másik útveget találsz. Mintha forró lába lenne.
+
+Ha felhajtod, lapozz a 182-re!
+Ha a kijáratot keresed, lapozz a 288-ra!
+
+=== 056 ===
+Nem érdekelnek a kentaurok. Hagyod, hadd rohanjanak, te pedig folytatod az utadat. Azaz csak folytatnád. A következő domb mögül egy hatalmas monstrum üget elő, tömszí testén remeg a háj. Sohasem láttál még ilyen szörnyeteget — bár hallottál róla —; száját helyett csupán egy fogakkal teletűzdelt lyuk látszik, s a torkából kígyók kacskaringóznak. Egy broydron.
+S már nincs idő a meneküléésre.
+
+Broydron: életerő 50, támadási képesség 15, védelmi szent 12. A szörnyeteg 2-12 életerőpont veszteségét okoz.
+
+Ha sikerült megölnöd a szörnyet, lapozz a 159-re!
+Ha veszítettél az összccsapásban, lapozz a 90-re!
+
+=== 057 ===
+Dacosan megrázod a fejed. Eszed ágában sincs beállni egy olyan szervezetbe, melynem nevét még sohasem hallottad. Nem, téged csupán egyetlen út érdekel: hogyan kerülhetsz a Viharúzók soraiba.
+
+A fickó elkomorodik, és fegyvert ránt.
+
+– Az ostobák halálát érdemelnek – mondja, s bár testét sebek borítják, még félelmetes ellenfélnek tűnik a számodra.
+
+Brúdah: életerő 27 (50 volt eredetileg), támadási képesség 23, védettsége szint 18. A férti 4-9 életerőpont vesztését okoz a kardjával.
+
+Ha sikerült megölnöd a férfit, lapozz a 17-re!
+Ha veszítettél, lapozz a 243-ra!
+
+=== 058 ===
+Készen állsz az újabb összccsapásra. A lábaid előtt heverő démonok pedig további növelik az önbizalmadat. Arra azonban te sem számítasz, ami történik. A sziklák mögül ugyanis egy egész sereg démon bukkan elő, lehetnek vagy ötvenen. Ennyi ellenféllel szemben még neked sincs esélyeď. Meghordulsz, hogy menekulj, ám a Kapu már bezárult, s a következő pillanatban a démonok már ott vannak. Karmok és agyarak tépnek a testedbe, és... Kalandod véget ért.
+
+=== 059 ===
+Udvariasan köszönsz neki, immaáron te is a lovad
+hátán ülve. Bár nem mutat támadó szándékot, nem árt
+az óvatosság. Nyeregben egyenrangú ellenfele lennél.
+A csuklyás alak hosszasan méreget, bár nem látod
+az arevonásait, s a személét sem, mégis magadon érzed a
+tekintetét. Aztán megszólalt: hangja, akár a fagyos
+északi szél.
+
+Sziklaszirten tanádzik,
+levegőben vadászik.
+Csőre horgas, karma nagy,
+magas égből le-lecsap.
+Szeme éles, nincs hibája, ő a madarak királya.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejtjelkulcsok című részhez, és add össze a választ betűjének értékét. Ez a szám határozza meg, hova kell a folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 209-re!
+
+[THIS IS FIGURE: A black and white sketch/illustration of two unicorns walking or trotting together]
+
+=== 060 ===
+Túl ügyetlen vagy, nem kenyered a tolvajlás. A fickó összerezzen, majd olyan hirtelen til fel, hogy kis híján összekooccan a fejetek. Beletelik néhány másodpercbe, amíg rájon, ki ő és hol van, majd téged is felfedez. Tekintetébe rémület költözik, ám ekkor a töre után nyúl.
+
+- Nem akarlak bántani - mondod gyorsan, majd hozzáteszed: - Mindössze a kulcsodat akarom elkérni.
+
+A félszerzet hamiskásán elmosolyodik.
+
+- Nos, rendben - feleli. - Rád bízom, mivel fizetsz érte. Arannyal, vagy inkább megválaszolsz egy találós kérdést?
+
+Ha arannyal akarsz fizetni, lapozz a 23-ra!
+Ha város a kérdést, lapozz a 136-ra!
+
+=== 061 ===
+Német töprengés után a felsőbe dugod be a kulcsot. A következő pillanatban vakító villám csap ki a kulcslyukból, komoly fájdalmat okozva neked (veszítesz 12 életerőpontot). Ha még élsz, újra próbálkozhastz.
+
+Ha a középső kulcslyukba helyezed a csontkulcsot, lapozz a 107-re!
+Ha az alsóba, lapozz a 187-re!
+Ha dörömböléseel próbálkozol, lapozz a 283-ra!
+
+=== 062 ===
+Csak egy jó mérföldddel arrébb mersz hátra nézni. A szörnyet nem látod, nyilván lemaradt, így végre kifújhatod magad. Még szerencse, hogy jöttек a kentaurok, különben egyenesen a bestia százába sétáltam volna gondolod magadban. Pihensz egy keveset, aztán megint elindulsz, s család hamar ott találod magad a kerésznál.
+
+Ha keletre haladsz tovább, lapozz a 280-ra!
+Ha nyugatra, lapozz a 97-re!
+Ha északra, lapozz a 224-re!
+
+=== 063 ===
+Az ital íze gyömbérre emlékezetet, és azonnal tudod, nem tévedtél a hatásánt illetően. A sebeid elképesztő sebességgel kezdenek begyógyulni (20 életerőpontot gyógyulsz, de nem léphetеd át a maximumot). Kipihentéd és ismét erőssé válsz.
+
+Lapozz a 288-ra!
+
+=== 064 ===
+Ellenfeled holtan hever a lábaid előtt, lova megbokrosodva elvágtat. A lándsája használhatónak túnik, ám néhány pillanattal később elenyészik, mint ahogy te is. Aztán hirtelen egy mennydörgő hang harsán:
+– Te, aki megöltél a Kapu Őrét, fordulj vissza, vagy szörnyű halállal lakolsz!
+
+Ha engedelmeskedsz, lapozz a 289-re!
+Ha nem foglalkozol a figyelmeztetéssel, lapozz a 7-re!
+
+[ILLUSTRATION: A sketch of what appears to be an ornate coffin or chest with decorative details]
+
+=== 065 ===
+Egy pillanatig sem gondolkodsz: a sárkány közelebb áll lényedhez, mint az országlán. S bár most vesztésre állsz, nem akarod, hogy ez a csodálatos teremtmény alul maradjon bármiféle küzdelemben. Amikor az oroszlán meglát, harciasan felmordul. (Minden második körben vonj le 4 pontot az oroszlán életerējéből – ennyit sebez rajta a sárkány!)
+
+Oroszlán: életerő 40 (50 volt eredetileg), támadási képesség 23, védelmi szint 18. A vadállat 6-16 életerőpont vesztéséget okoz éles karmaival és félelmes harapásával.
+
+Ha sikerült megölnöd az oroszlántot, lapozz a 163-ra!
+Ha vesztettél az összecsapásban, lapozz a 201-re!
+
+=== 066 ===
+A csigalépcson felfelé haladva csákhamar megtalálod azt a helyet, ahonnan a kincseskamrába juthatsz vissza. Ugyanakkor felfelé is vezet a lépcső.
+
+Ha visszamész a kincseskamrába, lapozz a 79-re!
+Ha felfelé indulsz a csigalépcson, lapozz a 43-ra!
+
+=== 067 ===
+A wyvern felragad a levegőbe, miközben az egyik mancsa felhásítja a lovad hátát. Szerencsétlen pára szörnyű kinok között pusztul el. Megpróbálsz harcolni, miközben a wyvern egyre magasabbra emelkedik veled, azonban nehezen boldogulsz a vastag pikkelyekkel: csupán kisebb sebeket ejtsz a szörnyeteg testén. Aztán a wyvern egyszerűen elenged, majd kényelmes vitorlázik lefelé, hogy elfogyssza, ami pépé zúzódott testedbõl marad. Kalandod véget ért.
+
+=== 068 ===
+A folyosó egyenesen fut, majd jobbra elkanyarodik. Aztán ismét egyenesen haladhastz egy darabig, amikor egy oldalág csatlakozik a járatba. Így innen egyenesen folytathatod az utadat, vagy balra.
+
+Ha egyenesen megy tovább, lapozz a 131-re!
+Ha balra, lapozz a 213-ra!
+
+=== 069 ===
+A fák között csillogó víztükörről hamarosan kiderül, hogy csupán egy víztározó. Egyetlen élőlény sincs a környéken, leszámítva a rovarokat, melyek beférköznek a ruhád alá, és csípésükkel vakarózásra kényszerítnek. Miközben itt nézelődsz, egy sötét szinű, ronggyokkal betekert tárgyat veszel észre, amely az egyik bokor alól kandikál ki.
+
+Ha megnézed, mi az, lapozz a 186-ra!
+Ha visszamész az útra, lapozz a 154-re!
+
+=== 070 ===
+Pillanatnyi kétséged sincs, kinek az oldalán kell harcba szállnod. Az unikornis rémültnek tűnik, ráadásul amúgy is undorodsz a kigyóktól. Fegyvert rantasz, s leugrasz a nyeregből. Két gyors lépéssel ott teremesz az állatok mellett.
+
+Csuklyás kigyó: életerő 12, támadási képesség 19, védelmi szint 11. A kigyó 1-3 életerőpont veszteséget okoz minden marásával (ekkor dobj két hatoldalu kockával, s ha a dobás eredménye összesen 2, tehát két egyest dobtál, akkor azonnal meghalsz).
+
+Ha sikerült megölnöd a kigyót, lapozz a 189-re!
+Ha veszítettél az összecsapásban, lapozz a 258-ra!
+
+=== 071 ===
+A zuhanás csupán egy másodpercig tart. A fájdalom pillanatnyi. Aztán minden elsötétül előtted, tested az acéltüskékre nyársalódva lóg. Kalandod véget ért.
+
+=== 072 ===
+Könnyű derengés csillan a falon, s egy ajtót rajzol ki előtted, mely magától kitárul. Óvatosan átlépsz a szomszédos helyiségbe, melyről hamarosan kiderül, hogy egy kincseskamra. A fal mellett embermagasságú hegyekben aranyat halmoztak fel, a terem közepén pedig öt, különlegesen kialakított asztalon különféle tárgyak pompáznak. A helyiségben nem égnek fáklyák, mégis világosság van: fáklyád fénye sokszorosára erősödve verődik vissza.
+
+Ha veszel magadhoz a kincsekből, lapozz a 149-re!
+Ha keresel egy másik kijáratot, lapozz a 279-re!
+
+=== 073 ===
+– Bocsánat! – mondod hangosan. – Nem áll szándékomban olyat mondani, amivel egy olyan hatalmas harcos haragját magára vonhatom, mint amilyen te vagy! – Kihasználva, hogy a fickó néhány másodpercig önnön dicsfényében sütkérezik, az ajtó felé hátrálsz, és villámgyorsan kimenekülsz a sötét éjszakába.
+
+A hátad mögött hangos, günyös nevet csattan.
+
+Ha még visszamész, hogy elégtételt vegyél a téged érté sérelmért, lapozz a 217-re!
+Ha nem foglalkozol a neveletséssel, lapozz a 125-re!
+
+=== 074 ===
+A megfelelő kulcs nélkül nem boldogulsz. De vajon hol leled meg? A vaskulcsot odalent találtad, talán elkérülte a figyelmedet egy másik? Lefelé indulsz, majd megállsz azon a szinten, ahol a kincseskamrát találtad.
+
+Ha visszamész a kincseskamrába, lapozz a 79-re!
+Ha lefelé indulsz a csigalépcsön, lapozz a 113-ra!
+
+=== 075 ===
+A lábaid előtt egy szakadék tátong, mélyét elképzelni sem tudod – ráadásul mintha sötét, indaszerii kinövések emelkednének lassan felfelé irányodban. Töled jobbra egy lankásabb emelkedő tetején egy ösi kaput látsz, melynek belsejében mintha csillogó pókhálófeszülne. Bal kéz felöl teljes sötétség vár, ahonnan még neszek sem érkeznek felléd, melyek segítségedre lehetnenék, hogy kitaláld: mi van arra.
+
+Ha belépszá sotétségbe, lapozz a 32-re!
+Ha az ösi kapu felé indulsz, lapozz a 145-re!
+Ha a szakadék szélénél keresel valami továbbjtási lehetöséget, lapozz a 212-re!
+
+=== 076 ===
+Nem volt könnyű végezni a bestiával, ám a szerencse ezúttal mellél szegödött. A járat falairól vér csöpög, valóságos mészáros munkára kényszerültél a győzelem érdekében. Most már tudod, a sikoltások csak arra kellettek, hogy lecsaljon a mélyhe, s megfróbáljon végezni veled.
+
+Ha visszamész a felszinre, lapozz a 28-ra!
+Ha szétnezel idelent, lapozz a 177-re!
+
+=== 077 ===
+Csak egyikünk léphet a Viharuzók közé, gondolod, és lesújtasz. Halk mormogás fut végig a tömegen. Aztán egy idős asszony lép elő, hangjából szomorúság csendül:
+
+— Eljutottál idáig, ám az utolsó próbán elbuktál. A könyörületről sohasem feledkezhet meg, aki közénk akar tartozni.
+
+Kalandod véget ért.
+
+=== 078 ===
+Amikor befejezödik a küzdelem, lihegve a falhoz támaszkodasz. Ellenfeled soha többé nem fog kötekedhni a fogadóba betérőkkel. Ez alkalommal alulmaradt a küzdelemben. Néhány legény megragadja a halottat, és a fal mellé húzza – majd jön a sirásó, és gondjaiba veszi –, miközben a tömeg szétozszlik. Egyedül maradsz az utcán. Azaz majdnem egyedül. Egy sötét ruhás fickó lép mellél, és a tenyerét fordítja felél.
+
+A tetoválás! A fáradságod azonnal elmúlik.
+
+– Nem kellett volna elfogadnod a kihívást! – mondja a Karvaly. – Ennek ellenére szépen küzdöttél, ezért kapsz még egy lehetöséget. Ha választolni tudsz a kérdésemre, tovabb engedlek, ha nem... nos, akkor ne is álmodj arról, hogy bekerülsz a Vihartűzök közé! Halld hát a rejtvényt!
+
+Mihelyt megvan, megmar,
+Mikor megmart, meghal.
+
+Ha tudod a választ, lapozz elöre a Rejtvények és rejt-jelkulcsok című részhez, és add össze a választ betűjinek értékét. Ezt a számot sorozd meg kettövel, s akkor megtudod, hova kell a folytatáshoz lapoztnod. Ha nem tudod a választ, lapozz a 233-ra!
+
+[THIS IS FIGURE: A black and white sketch/illustration of a bear standing on ground with some small objects around it]
+I can see this is a black and white illustration from what appears to be a gamebook or fantasy novel, showing a muscular warrior or barbarian character standing in front of an ornate tower or structure with decorative panels. However, I don't see any readable text on this page to transcribe. The image quality and angle make any text that might be present illegible in this scan.
+
+If there is text on this page that you'd like transcribed, could you provide a clearer or higher-resolution image, or let me know if the text appears on a different part of the page?
+
+=== 079 ===
+A kincseskamrát átvizsgálod, ám semmit nem veszel el a helyéről. Jó félórai kutatás után izzadtan megtörlöd a homlokodat: itt semmilyen kulcsot nem fogsz találni. Visszamész a csigalépcsőhöz, és lefelé indulsz. Talán majd odalent...
+
+Lapozz a 113-ra!
+
+=== 080 ===
+A lovadat vezetva elindulsz a törmegben. Tekinteted nem az arcokat kutatja, hanem a szembejövők tenyerét. Nem figyelszarra, milyen idős az illetô, férfi vagy nő, s mely faj képviselője: egy jellegzetes tetovalást keresel, mely egy Karvalyt ábrázol. A szerencse azonban ezúttal elkerült, egy teljes órát sétálsz a városban, ám nem találkozol olyannal, akinek a tenyerébe egy Karvaly lenne tetovalva.
+
+Ha a piacra indulsz, lapozz a 190-re!
+Ha valamelyek fogadóban próbálkozol, lapozz a 10-re!
+
+=== 081 ===
+Az unikornis talán azt várta, hogy neki fogsz segíteni, mert az első támadásod teljesem megledte, így komoly sebet ejtettél höfehér testén. Annál vadabbul támad azután, ám neki a kigyóra is figyelnie kell. Ennek köszönhetően sikerül legyőznöd. A kigyó azonban nem a szövetségést látja benned, hanem egy másik ellenfelet, aki a kincsét akarja. Miközben te végzel az egyszarvúval, a csuklyás kigyó alattomosan a lábadhoz siklik, és belèd mar. A méreg gyorsan felszívódik ereidben, s halálod semmi nem akadályozhatja meg. Kalandod véget ért.
+
+=== 082 ===
+A folyosó egyenesen fut, majd jobbra elkanyarodik. Aztán ismét egyenesen haladhastz egy darabig, amikor egy oldalág csatlakozik a járatba. Így innen egyenesen folytathatod az utadat, vagy balra.
+
+Ha egyenesen még tovább, lapozz a 131-re!
+Ha balra, lapozz a 213-ra!
+
+=== 083 ===
+Némi töprengés után balra indulsz. A sziklák nyomasztóan magasodnak felénk, csupán néha pillantod meg a tiszta égboltot. Aztán egyik pillanatról a másikra a világ megváltozik körülötted. A sziklafal forogni kezd körülötted – vagy te magad forogsz? –, s amikor ismét megállapodsz, egészen máshol találód magad. Mögötted a lovad szintén elég zaklatott, percekbe telik, amíg sikerül megnyugtatnod.
+
+A lábaid előtt egy századék tátong, mélyét elképzelni sem tudod – rádásul mintha söétét, indaszerű növések emelkednének lassan felfelé irányodban. Töled jobbra egy lankásabb emelkedő tetején egy ősi kaput látsz, melynek belsejében mintha csillogó pókhálő feszülne. Bal kéz felöl teljes sötétség vár, ahonnan még neszek sem éreznek felénk, melyek segítségedre lehetnének, hogy kitaláld: mi van arra.
+
+Ha belépssz a sötétségbe, lapozz a 32-re!
+Ha az ősi kapu felé indulsz, lapozz a 145-re!
+Ha a századék szélénél keresel valami továbbjutási lehetőséget, lapozz a 212-re!
+
+=== 084 ===
+Nem foglalkozol a ládikával. Nem a tiéd, s mások titkai sem tartoznak rád. Oldalra lépssz, s ez megment egy csunya sérüléstiil. Egy lecsapó bárdot látssz, miközben körültötted fodrozódni kezd a levegő, s hirtelen rádobbensz: a valóság egészen más, mint amit eddig hittél. A szoba körvonalai elmosódnak, majd megváltoznak, s hamarosan egy mocskos teremben találod magad, s az asszony helyett egy békafejű rém áll veled szemben, s egy bárdot emelve a feje fölé ismét támadásba lendül.
+
+Békafejű rém: életerő 22, támadási képesség 15, védeüsegi szint 17. A szörnyeteg 2-7 életérépont veszteséget okoz.
+
+Ha sikertilt megölnöd a rémet, lapozz a 129-re!
+Ha veszitettel az összecsapásban, lapozz a 264-re!
+
+=== 085 ===
+Minden eródet összeszeded, ám a nyomodban osonó rettenet gyorsabbnak bizonyul nálad. Izzó fájdalom hasít a hátadba (maradandóan veszítesz 3 életerópont). Ha élni akarsz, harcolnod kell. Szembefördulsz ellenfeleddel.
+
+Lillieth: életerő 12, támadási képesség 20, védelyszei szint 12, varázserő 22. A szörnveteg 1-3 életerőpont vesztességet okoz, ám a vesztesség maradandóan levonódik az életerődből, s semmilyen módon nem gyógyitható vissza. A szörny kizárólag védekezésre használja varázszerejét!
+
+Ha sikerült megölnöd a szörnyet, lapozz a 15-re!
+Ha veszítettél az összecsapásban, lapozz a 253-ra!
+
+=== 086 ===
+– Egy olyan személyt keresek, akinek a tenyerében egy madarat ábrázoló tetováláis látható – mondod az egyik koldusnak, aki a piac szélén álló házak között kuporog. Szavaid nyomatékosításául egy aranyat vetsz a szerencséitlennek.
+
+A koldus felemeli a fejét.
+
+– Aki utána érdeklődik, ritkán él sokáig – mondja, majd megvonia a vállat. – Ám ez nem az én dolgom...
+
+A Karvály minden este betér kedvenc fogadójába, a Sárkányölébe. Ott megtalálod. Mindig fekete ruhát visel. Tudni fogod, kit keress!
+
+Megköszönöd a felvilágosítást, s elindulsz megkeresni az említett fogadót.
+
+Lapozz a 235-re!
+
+=== 087 ===
+A patkány bemászik a szeméthalmok alá, és egy kicsivel később egy üvegcsével tér vissza, melynek oldalán stilizált sziv látszik. Leteszi a lábad elé, majd visszamegy a szemét alá, a csontfurulya pedig eltörik. Amikor felhajtod az italt, a sebeid elképesztő sebességgel kezdenek begyógyulni (20 életerőpontot gyógyulsz, de nem léphetéd át a maximumot). Kipihentté és ismét erőssé válsz.
+
+Ha a kijáratot keresed, lapozz a 288-ra!
+Ha továb kutatsz, lapozz az 55-re!
+
+=== 088 ===
+Minden egyes lépést megfontolsz, ám egy alattomos
+szikldarabon elcsúszik a lábad (veszitesz 6 életető-
+pontot), a lovad pedig majdnem rád zuhan. Mire leér-
+tetek mindketten idegesen és kimerülttek vagytok, s már
+átkozod magad az ostobasságodért. Hiszen csak egy
+felesleges kitérőt tettél. Visszatérsz a sziklaszoroshoz,
+hogy azon keresztül folytasd az utadat.
+
+Lapozz a 178-ra!
+
+=== 089 ===
+Hosszan gyalogolsz egyenesen, majd a folyosó
+jobbra kanyarodik, és kisvártatva egy mellékághoz
+érsz, melynek túlsó végén egy pókhálót pillantasz meg.
+Valószínűleg azt, ahonnan elindultál. Dühösen meg-
+fordulsz, és újra nekivágysz. Nem foghat ki rajtad egy
+nyavalyás labirintus.
+
+Ha balra indulsz, lapozz a 24-re!
+Ha jobbra, lapozz a 257-re!
+
+=== 090 ===
+A szörnyeteg neked ront, és a következő második-
+percben azt sem tudod, merre csapj. Hájas testén nem
+tudsz komolyabb sebet ejteni, miközben az ő csapásai
+lassan, de biztosan visznek közelebb a végzetedhez.
+Kalandod véget ért.
+
+=== 091 ===
+Már nyúlsz is a pénzes zacskód után, hogy leszámold a félszerzet kezébe az összeget, amikor rádöbbensz, hogy mekkora összegről is van szó. Ennyi pénzed sohasem volt még egyben.
+– Nincs ennyi pénzem ismered be.
+A félszerzet széttárja a kezét.
+– Akkor marad a találós kérdés?
+
+Ha elfogadod, lapozz a 246-ra!
+Ha megtámadod a félszerzetet, lapozz a 185-re!
+
+=== 092 ===
+Látod, hogy a fickó elmegy, mielőtt utolérnéd, ezért hangosan felkiáltasz. A nevét nem akarod mondani, ezért csupán egy hangos köszönést mondasz. A férfi egy pillanatra megállt, rád néz, majd megfordul, és elsiet. Mintha tartana töled.
+
+Ha követed, lapozz a 245-re!
+Ha visszamész a piacra, lapozz a 260-ra!
+Ha találomra sétálsz az utcákon, lapozz a 80-ra!
+Ha valamelyik fogadóban próbálkozol Karvaly megtalálásával, lapozz a 10-re!
+
+=== 093 ===
+Minden erődet és ügyességedet összeszeded, ám csak annyit érsz el, hogy mind jobban beleragadsz a hálóba. S ami még ennél is rosszabb, egy hatalmas pók ereszkedik alá a mennyezetről a rágót csatogatva. (A pókháló miatt a védeltsegi szinted 3, a támadási képességed 5 ponttal rosszabb a szokásosnál!)
+
+Óriáspók: életerő 16, támadási képesség 15, védeltsegi szent 10. Az óriáspók 1-6 életerőpont veszteségét okoz (valahányszor hatost dob sebzésnek, akkor a támadási képességed 1 ponttal romlik).
+
+Ha sikerült megölnöd az óriáspókot, lapozz a 158-ra!
+Ha veszítettél az összeccsapásban, lapozz a 38-ra!
+
+=== 094 ===
+A folyosó egy egyenes szakasz után batra fordul. Már csak továbbmész, amikor a falon ősi rúnákat pillantasz meg. Óvatosan lesöprőd róluk a port, s családmar egy versike válik láthatóvá, alatta egy utasítás: mond ki a szót, s a fal megnyilik!
+
+Mikor fekvél, ő akkor kél.
+Egyszer egész, máskor csak féel.
+Nincsen füze, mégis lámpás,
+a vándornak szinte áldás.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-jelkulcsok című részhez, és add össze a válasz betűinek értékét. Ez a szám határozza meg, hova kell a folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 218-ra!
+
+=== 095 ===
+A sziklaszoros nem túnik valami bizalomgerjesztőnek, hiszen ha itt rád támadnak még védekezni sem tudsz rendesen. Inkább megpróbálsz egy másik átjáót találni, esetleg megkerülni a sziklafalat. Kell lennie egy másik útnak, gondolod. Merre indulsz?
+
+Ha bal kéz felé, lapozz a 25-re!
+Ha jobb kéz irányába, lapozz a 262-re!
+
+=== 096 ===
+Ha a csontkulccsal próbálkozol, lapozz a 27-re!
+Ha egy aranykulccsal, lapozz a 281-re!
+Ha egy vaskulccsal, lapozz a 208-ra!
+
+=== 097 ===
+A nyugati úton haladva hamarosan zöldebb válik a vidék. A fák és a bokrok egyre sűrűsödnek, a közélből madárcsicsergést hoz a szél. A környék békésnek tűnik. Bal kéz felöl mintha vízcscsosógást hallanál. Lettersz az útról, s begyalogolsz a fák közé.
+
+Nem sokkal később egy félmeztelen férfit pillantasz meg, akik derékig a vízben állva egy szigonyt tart a feje fölé, és mozdulatlanul lesi az alant cikázó halakat. Aztán lecsap, és a szigonyon máris egy méretes ponty fickándozik. A halász ügyes mozdulattal a partra repíti a halat, ahol már kisebb halomni van belölük.
+
+Aztán felléd fordul.
+- Varon vagyok. Miben állhatod a szolgálatodra?
+- A Karvaly küldött - feleled.
+
+A férfi szeme felcsillan, s már mondja is:
+
+Veheted a boltban,
+veheted az utcán,
+veheted vásárban,
+veheted pusztán,
+veheted napközben,
+veheted este,
+de nem fizetsz érte
+soha egy fillért se.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt jelkulcsok című részhez, és add össze a választ betűjinek értékét. Ezt a számot szorrozd meg kettővel, s akkor megtudod, hova kell a folytatáshoz lapoznod. Ha nem tudod a választ, lapozz a 179-re!
+
+[Small illustration of a rat or mouse with some objects]
+I can see this is a page from what appears to be a gamebook or illustrated text, but the image shows primarily a black and white illustration of a figure wading through water between trees, with reeds in the foreground. There is no visible text on this page to transcribe - it appears to be purely illustrative content.
+
+If there is text on this page that I'm unable to read clearly due to image quality or resolution, please let me know and I can attempt to provide a transcription with that caveat noted.
+
+=== 098 ===
+Keresel magadnak egy magasabb sziklát, hogy legalább a hátad védve legyen, ha esetleg éjjel rád törne valaki. Raksz egy kis tüzet, elfogy­asztod szerény vacsorádat, majd álomba szenderülsz. Senki nem háborg­at, reggelre törkéletesen kipihened magad (4 életerőpontod visszatért, ha volt sebed).
+
+Másnap reggel étkezés után folytatod utadat. Csak­nem egész délután gyalogolsz megállás nélkül, amikor egy különös építményt pillantasz meg. Tulajdonképpen egy kastélyt látsz, melyhez egy semmiben lebegő út visz. Az út innenső végében egy vén fickó kuporog, látszik rajta, hogy napok óta nem evett egy falatot sem.
+
+Ha vetsz neki valami ételt, lapozz az 5-re!
+Ha elindulsz a kastély felé, lapozz a 293-ra!
+
+=== 099 ===
+Nekikészülsz a varázstatnak. Szembeállsz az asz­szonnyal, majd felídézed magadban a Semlegesítés mágikus igéit, aztán...
+
+Ha van elég varázsereőd a Semlegesítés elmondására, lapozz a 220-ra!
+Ha nincs, lapozz a 142-re!
+
+=== 100 ===
+Ha város egy kicsit, talán a csuklyás alak elárulja a szándékát. A gyaloglás úgyis kifárasztott egy kicsit, legalább pihensz. Letölsz egy köre, lovad elé pedig maréknyi zabot vetsz. Közben egyík szemedet folyamatosan az idegenen tartod, aki mozdulatlan költöborként ül lova nyergében, s lándzsáját békében keresztbe veti maga előtt. Hamarosan rájössz, hogy akár órákon keresztül is várakozhatsz, a fickó akkor sem fog semmit csinálni. Talán nem is téged várt...
+
+Ha üdvözlöd, lapozz az 59-re!
+Ha megtámadod, lapozz a 242-re!
+
+=== 101 ===
+Ha egy aranykulcsot veszel elő, lapozz a 155-re!
+Ha egy vaskulcsot, lapozz a 202-re!
+
+=== 102 ===
+Valahogy síkerült olyan sebet ejtened a szörnyön, hogy az vagy elmenekült vagy megdöglött. Minden-esetre a teste a víz alá merült, és most látod, ahogy a víz magával sodorja. Lihegve kapaszkodsz ki a partra, és hosszú ideig mozdulni sincs erőd. Mire megszárad a ruhát, te is összeszedted magad annyira, hogy folytathasd az utadat.
+
+A hegyvidéken futó ösvény hamarosan egy máskat keresztez. Egyenesen (északkeleterre), jobbra és balra folytathatod az utadat. Bal kéz felöl azonban mintha halk, női sikoltózást hallanál.
+
+Ha egyenesen még tovább, lapozz a 8-ra!
+Ha balra indulsz, lapozz a 193-ra!
+Ha jobbra, lapozz a 287-re!
+
+=== 103 ===
+A fickó nem csupán a kötékédéshez, a fegyverforgatáshoz is ért. Gyors, akár egy kobra, és olyan alattomosan harcol, amennyire csak lehet. Az apró cselek köszönhetően hamarosan alig bírod tartani a fegyverredet, a karod gyenge, s a sebeid lüktetnek a fájdalomtól. Hátrálni próbálsz, amikor rád ront, ám elvéted a lépést, s a következő pillanatban egy hideg pengét érzel a bordáid közé fúródni. Kalandod végét ért.
+
+=== 104 ===
+Mintha valóban lávát innál, az ital végigperzseli a torkodat. Ám a hatás elképesztő. Varázseród egy szempillantás alatt a maximumra ugrik vissza.
+
+Ha megköstolod a másik italt, lapozz a 33-ra!
+Ha használod a furulyát, lapozz a 47-re!
+Ha a kijáratot keresed, lapozz a 288-ra!
+
+=== 105 ===
+Nem akarsz harcolni. Az unikornis nem ok nélkül örzi ennyire a kristályt, így inkább lemondasz róla. Van elég pénzed, hogy utad első szakaszán elboldogulj, utána meg majdcsak megleszel valahogy.
+
+Már éppen indulsz vissza a lovadhoz, amikor az egyszerű halk, ám érthető hangon megszólal:
+
+- A kristály halált hozott volna rád... Ám lemondásodtal kiérdemelted, hogy a segítségedre legyeк. Hamarosan egy furcsa helyhez érsz. Lépj bele bátran, majd utána az elágazásnál választd a bal oldali utat, s ha a világ forogni kezd veled s megváltozik, utána egyenesen haladj előre!
+
+Megköszönöd az értékes tanácsot, majd felpattansz lovadra, hogy folytasd utadat Agrannis felé.
+
+Lapozz a 222-re!
+
+=== 106 ===
+Ha visszamész a csigalépcsohöz, lapozz a 66-ra!
+Ha szétnézel idelent, lapozz a 230-ra!
+
+=== 107 ===
+Német töprengés után a középső kulcslyukba dugod be a kulcsot. A következő pillanatban egy fagysugár robban ki a kulcslyukból, komoly fájdalmat okozva neked (veszítesz 12 életerőpontot). Ha még élsz, újra próbálkozhatsz.
+
+Ha a felső kulcslyukba helyezed a csontkulcsot, lapozz a 61-re!
+Ha az alsóba, lapozz a 187-re!
+Ha dörömböléssei próbálkozol, lapozz a 283-ra!
+
+=== 108 ===
+Bár valószínűleg egyenrangú partnerként küzdenél az idegennel, megis jobbnak látod, ha visszatérsz a barlangon keresztül a sziklafal túloldafára. Talán a sziklaszoroson keresztül nagyobb szerencsed lesz, s nem áll senki az utadba. Visszafelé az út eléggé fárasztó, s csak hamar ott állsz a meredély tetején.
+
+Lapozz a 282-re!
+
+=== 109 ===
+– A válasz helyes – bólint a félszerzet, s átnyújtja a vaskulcsot. – Valóban a felhöre gondoltam. Most pedig visszafekszem aludni – mondja nagyot ásítva a félszerzet, és befekszik a hordóba. A szerkezet már vissza is zárja rá a fedelet.
+
+Ha visszamész a csigalépcsőhöz, lapozz a 66-ra!
+Ha szétnézel idelent, lapozz a 230-ra!
+
+=== 110 ===
+Széttárod a kezed, és az egyik lábadat oldalra kinyújtva sikerül megőrizned az egyensúlyodat. A palló egyik deszkája szétrpedt ugyan, ám egy kis szerencsével sikerül átjutnod a túlsó partra.
+
+Folytatod utadat. A hegyvidéken futó ösvény hamarosan egy másíkat keresztez. Egyenesen (északkeletre), jobbra és balra folytathatod az utadat. Bal kéz felöl azonban mintha halk, női sükoltózást hallanál.
+
+Ha egyenesen még tovább, lapozz a 8-ra!
+Ha balra indulsz, lapozz a 193-ra!
+Ha jobbra, lapozz a 287-re!
+
+=== 111 ===
+Másodjára már nincs semmi gond, baj nélkül átérsz. Amikor végre szilárd talapzt érzel a lábad alatt, megkönynyebbülve felsőhajtasz. Pihensz néhány másodpercet, majd az ajtóhoz sétálsz. Lenyomod a kilincsét, de az zárva van.
+
+Ha megpróbálod betörni, lapozz a 227-re!
+Ha van nálad valamilyen kulcs, lapozz a 40-re!
+
+[ILLUSTRATION: A detailed drawing of a dagger or knife]
+
+=== 112 ===
+Némi erőlködés árán rájössz, hogy a karmos ujjak elfordíthatók, mégpedig lefelé. Nem habozol ezt megcselekedn. Olyan hang hallatszik, mint amikor apró kavicsok ropognak, aztán csend lesz. Amikor felnézel, a Kapuban már nem látod azt az ezüstös pókhálót, a szervezet hideg és élettelen. Sikerült! Elégedetten fellélsz, és már indulnál a továbbvezető út keresésére, amikor halk csilingelés hallatszik, és egy áttetsző női alak jelenik meg mellettted a levegőben lebegve – Nem fogom elfelejteni, mit tettél, bajnok! – sutogja, és egy könnyed mozdullattal egy műves kidolgozott börszijat hajít a lábadhoz. – Fogadd ezt az apróságot hálám leléül!
+
+Miközben magadra öltöd az övet, a női alak elenyészik a levegőben. Érzed, ahogy erőd megnövekedik (támadási képesség 6 ponttal nő és minden, fegyverrel okozott vesztességhez keltőt adhatsz).
+
+Visszatérsz oda, ahonnan idejöttél.
+
+Lapozz a 75-re!
+
+=== 113 ===
+A csigalépcsõ meglehetõsen meredek, s ahogy haladsz lefelé, egyre hidegebb van. Mintha egy jégverembe szállnál alá. Már látod az utolsó lépcsõfokot, amikor halk kattanást hallasz. Tegyél szerencseprõbát!
+
+Ha sikerült, lapozz a 225-re!
+Ha nem sikerült, lapozz a 11-re!
+
+=== 114 ===
+A szõrnyetegnek félelmetes a külseje, ám nem okoz problémát a legyõzése. Igaz, elég sokáig kell harcol-nod, mire megnyuvad, azonban nem kerülheti el a sorsát. Fáradtan engeded le fegyveredi, amikor végre nem mozdul többet.
+
+Mikõzben a hatalmas monstrumot nézed, a kentaurok is felbukkannak az egyik domb mögül. Kíváncsi népség, gondolod magadban, bizonyára végignézték az összecsapást.
+
+- Igazi hõs vagy! - lelkendezik az egyik.
+- A Bajnokok Bajnoka! - tödit a másik.
+- Varont, a halászt keresem - jut eszedbe. - Nem tudjátok veletlenül, merre találom?
+- A keresztútnál indul nyugatra, s akkor megtalálod - mondják a kentaurok, majd günyös dalt énekelvé körbetáncolják a szörnveteget.
+
+Visszatérsz a keresztúthoz, és nyugatra indulsz.
+
+Lapozz a 97-re!
+
+=== 115 ===
+Az út egyenesen fut, majd balra kanyarodik, és csakhamar egy oldalághoz jutsz, melynek túlsó végén egy pókhálót pillantasz meg. Valószínűleg azt, ahonnan elindultál. Dühösen megfordulsz, és újra neki­vagsz. Nem foghat ki rajtad egy nyavalyás labirintus.
+
+Ha balra indulsz, lapozz a 24-re!
+Ha jobbra, lapozz a 257-re!
+
+=== 116 ===
+Mielőtt átlépnél rajta, megvizsgálod az ősi szerzezetet. Az oldalát faragott rúnák és szimbólumok borítják, melyeknek alig együtizedét ismered fel, annyira régiek. Még, sikerül néhány szót kibetűznöd, ami talán a segítségedre lehet annak megtejésében, milyen célokat szolgált ezt a Kapu: az alkony sikja... démonok... Grikhart öspátriárka által... bezárni... halál.
+
+A szerkezeten két elfordítható követ találsz, mindkettő egy karmos ujjat formáz, melyek most szembenéznek egymással.
+
+Ha átlépsz a Kapun, lapozz a 203-ra!
+Ha megpróbálod működésképtelenne tenni a szerzezetet, lapozz a 272-re!
+
+=== 117 ===
+Néhány gyors, váratlan ellentámadással sikerül meglepned a rémet, s halálos sebet ejteni rajta. Miután végét ér a csata, leengeded a fegyvered, s körbenézél. Most, hogy az illúzió szertefoszlott, a valóság kiábrándító. A falak melletti szeméthalomban patkányok matatnak, s úgy tűnik, csupán visszafelé, a csigalépcsõ irányába juthatsz ki innen.
+
+Ha átkutatod a helyiséget, lapozz a 14-re!
+Ha kijáratot keresel, lapozz a 288-ra!
+
+=== 118 ===
+Túlságosan is biztál önmagadban, s ez a vesztedet okozta. Ha egy kicsit jobban odafigyelsz, s függébnek bizonyulsz, akkor most nem fekvödnél holtan a tisztáson. A csuklyás kígyó mérge pillanatokon belül végez veled. Kalandod véget ért.
+
+=== 119 ===
+Minden erődre szükséged van, hogy felnyisd a csapóajtót, mert valószínűleg évek óta nem használták, s teljesen beragadt. A sötét nyílásban egy korhadt falét rát pillantasz meg. Óvatosan ereszkedsz lefelé, amikor érzed, hogy a lábad alatt eltörik az egyik fok. Tegvél szerencseprábát!
+
+Ha sikerült, lapozz a 122-re!
+Ha nem sikerült, lapozz a 196-ra!
+
+=== 120 ===
+Nem bízol a pallóban, s a vízi rémektől sem tartasz. Belcereszkedsz a vízbe, s nyugodt tempóban úszni kezdesz a túlsó part felé. Hamarosan egy hatalmas test úszik el melletted, majd egy iszonyú pofa emelkedik ki a vízfelszín alól, és felед csap. Egy yhotl.
+
+Yhotl: életerő 26, támadási képesség 18, védettsegi szint 11. A yhotl 1-6 életérőpont veszteségét okoz a harapásával. (Amíg vizben vagy, a támadási képesség és a védettsegi szinted egyaránt 5-5 ponttal csökken, és az általad okozott veszteségből le kell vonnod 2 pontot!)
+
+Ha sikerült megölnöd a szörnyet, lapozz a 249-re!
+Ha veszítettél az összecapásban, lapozz az 53-ra!
+
+=== 121 ===
+Magad sem hitted volna, hogy egy ilyen neves harcost sikerül legyőznöd, ám amikor a lábaid előtt hever, megkönnyebbülés tölt el.Melletted vibrálni kezd a levegő, és egy sárkánypikkelyekkel borított köpenyt viselő asszonyt látsz.
+
+– Dicsőséges küzdelem volt – mondja csendesen. –
+
+„Túl az erő és a hatalom próbáján, megmérettetsz, hogy mélltó vagy-e." Emlékszél? Nos, elnyerted a győzet, s beléphetsz a Csarnokba... Fogd ezt a kulcsot, és haladi további északkelet felé. Tudni fogod, holереsd a Csarnokot!
+
+Aztán lassan elhalványul az alakja, te pedig tovább folytatod az utadat északkelet felé, miközben szived boldog, amiért ezen a próbán is sikerült túljutnod. Az apró csontkulcs a mellkasodban lóg egy darab madzagra felköttve.
+
+Lapozz a 172-re!
+
+=== 122 ===
+Az utolsó pillanatban sikerült megkapaszkodnod, hogy elkertülöd a zuhanást. Óvatosan kitapogatod az alatta következő létrafokot, s folytatod az ereszkedést. Nem kell már sokáig másznod, hamarosan odalent vagy. A létra mellett egy feliratot látsz a falon, ezüstlemezbe vésték, s szegekkel erősítették fel.
+
+Nincsen veres sipka nélkül,
+hamar küzd, nehezen békül.
+Vagyon neki sarkantyúja,
+az első riadót ő húzja.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt­jelkulcsok című részhez, és add össze a választ betűi­nek értékét. Ez a szám határozza meg, hova kell a folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 255-re!
+
+[THIS IS FIGURE: A black and white illustration of a winged dragon-like creature standing upright, with horns, wings, and a tail]
+
+=== 123 ===
+...az utolsó pillanatban észreveszed, hogy a lábad már az üres levegőt tapossa. Sikerül megőrizned az egyensúlyodat, s szinte moccanni is alig mersz. Aztán óvatosan kitapogatod a lábaddal az előtted lévő terület, s rádöbbensz, hogy azonbanbelegyalogoltál valami szakadékba, melyet a sötétséggel lepleztek. Visszaszáhátrálsz arra a pontra, ahonnan elindultál.
+
+Lapozz a 75-re!
+
+=== 124 ===
+Sokáig egyenesen haladsz, majd a folyosó elkanyarodík balra. Aztán megint egy egyenes szakasz következik, majd ismét balra. Aztán egy darabig megint egyenesen haladhastz, akkor egy oldaljárat csatlakozik a folyosóba. Innen jobbra és egyenesen mehetsz tovább.
+
+Ha jobbra megy, lapozz a 115-re!
+Ha egyenesen, lapozz a 252-re!
+
+=== 125 ===
+Nem fogsz ostoba fickókkal párbajozni, csak mert az többet ivott egy kicsit a kelleténél. Elindulsz, hogy keress magadnak egy nyugodt helyet, ahonnan szemmel tarthatod az ajtót, ha Karvaly kijönne. Hirtelen lépéseket hallasz a hátad mögül, s amikor megfordulsz, azt a fekete ruhás fickót látod közeledni, akit már odabent is figyeltél.
+
+– Bölcsen tetted, hogy nem fogadtad el a kihívást – mondja csendesen, miközben a tenyerét fordítja felé, melyben ott diszeleg a tetoválás. – Újabb próbán estél át, a hideg fejt próbáján.
+
+Int, hogy húzódíatok be az árnyékba.
+
+– Te vagy a negyedik, aki rám találtál... – kezdi azután. – Add el a lovadat, s reggel indulj észak felé. Ott keresd meg Varont, a halászt, akitől kapsz egy rejtvényt. Ha megválaszolod, akkor ő mondja majd meg, merre menj tovább!
+
+Nem teszi hozzá, mi van akkor, ha nem tudod a választ. A negyedik vagy, csak ez vibrál a neyedben, illetve a következő feladat. Lennének még kérdéseid, ám a Karvaly egyik pillanatban még ott állott melleted, a következőben azonban nincs sehol.
+
+Lapozz a 226-ra!
+
+=== 126 ===
+A katakombaról hamarosan kiderül, hogy csupán egy hosszú folyosóból áll, melyből borospincék nyílnak jobbra és balra. Mindent végignézél, ám csupán az utolsó elágazásban találsz emlitésre méltót: a fal mellett egy jókora lédika pihen.
+
+Ha megnézed, mi van benne, lapozz a 211-re!
+Ha visszamész megnézni, ki hortyog, lapozz a 37-re!
+
+=== 127 ===
+A vízben nem tudsz olyan jól harcolni, mint a szárazföldön, ez hamarosan nyilvánvalóvá válik. A szörnyeteg fölénybe kerül, s már az is hatalmas erőfeszítésedbe kerül, hogy ne fulladj meg. Ám eröd elhagy, s aztán elborít a sötétség. Kalandod véget ért.
+
+=== 128 ===
+A kapaszkodó rendkívül meredek, ezért leszállsz a lovad nyergéből, s kantársazon vezetove próbálsz fel-jutni a barlangig. Tegyél szerencsepróbát (külön dobi magadnak, azián külön a lovadnak is – mindkettszer a Te szerencsed csökken)!
+
+Ha sikerült, lapozz a 36-ra!
+Ha nem sikerült, lapozz 219-re!
+
+=== 129 ===
+Néhány gyors, váratlan ellentámadással sikerült meglepned a rémet, s halálos sebet ejteni rajta. Miután véget ér a csata, leengeded a fegyvered, s körbenézel. Most, hogy az illúzió szertefoszlott, a valóság kiábrándító. A falak melletti szeméthalomban patkányok matatnak, s így tűnik, csupán visszafelé, a csigalépcsõ irányába juthatsz ki innen.
+
+Ha átkutatod a helyiséget, lapozz a 14-re!
+Ha kijáratot keresél, lapozz a 288-ra!
+
+=== 130 ===
+Úgy helyezkedsz, hogy kénytelenek legyenek lassi-tani, netalán megállni. Számítással beválik, ahogy hirtelen felbukkansz előttük, a kentaurok megtorpannak, és riad szemekkel néznek rád.
+
+- Menekülj! - zihája az egyik. - Rögtön itt lesz! Nem tudja tovább mondani. Az egyik domb mögül egy jókora monstrum üget elő, tömzsi testén remeg a háj. Sohasem láttál még ilyen szörnyeteget - bár hallottál róla -, szája helyett csupán egy fogakkal teletüzdelt lyuk látszik, s a torkából kigyók kacskaringóznak.
+
+Egy broydron.
+
+Ha te is menekülsz, lapozz a 16-ra!
+Ha megküzdesz a szörnnyel, lapozz a 256-ra!
+
+=== 131 ===
+Egyenesen még tovább. A folyosó kicsivel később jobbra kanyarodik, majd egy egyenes szakasz után ismét jobbra. Ezután sokáig egyenesen gyalogsz, s egy kereszteződéshez jutsz. Az út innen egyenesen, balra és jobbra folytatódik.
+
+Ha balra még, lapozz a 194-re!
+Ha egyenesen, lapozz a 271-re!
+Ha jobbra, lapozz a 82-re!
+
+=== 132 ===
+Nehéz lekúzdeni a mélységtől való természetes viszolygásodat. Minden bátorságodra szükséged van, amikor megteszed az első lépést. Ha tévedtél, egy pillanat múlva már zuhansz is felelé, a szakadék alja felé. A mélység képe az első lépés megtétele után frodrozódni kezd, akárha egy vízfükör lenne, s a következő pillanatban rádöbhensz, csupán illúzió rejette el előléd a továbbvezető utat. Megnyílt előtted az út Agrannis felé. Úgy becsülöd, estére eléred a kereszteződvárost, ha nem pihensz út közben.
+
+Lapozz a 238-ra!
+
+=== 133 ===
+Minden erődet összeszedve elfordította a kulcsot. Hangos recesenés hallatszik, ahogy a kulcs eltörik. Majd egy teljes órádba telik, amikor ezután a zárban maradt darabot végre sikerül kipiszkálnod. Nem is tudod, mi lett volna, ha nem sikerül.
+
+Ha a csontkulccsal próbálkozol, lapozz a 27-re!
+Ha egy vaskulccsal, lapozz a 208-ra!
+
+=== 134 ===
+A kiáltozás teljesen elhalkul. Némi gondolkozás után úgy döntesz, nem kockáztatsz, s inkább folytatod az utadat. A saját utadat kell járnod. Nem sokkal később ismét ott állsz az elágazásnál.
+
+Ha egyenesen (északkeleti) még tovább, lapozz a 8-ra!
+Ha jobbra, lapozz a 287-re!
+
+=== 135 ===
+Nem hitted volna, hogy egy unikornis ennyire veszélyes ellenfél. Gyors, rádásul a szarva hegyes a leghegyesebb lándzsánál. Szinte minden támadás után újabb és újabb vérző sebek fakadnak a testeden, s kicsorduló véreddel együtt erőd is elfogy. Aztán az utolsó támadásnál már nincs erőd félrelépni, s az unikornis a szarvára túz. Kalandod véget ért.
+
+=== 136 ===
+A félszerzet elgondolkozik, majd belekezdz:
+
+Hol vizet önt,
+hol havat hint,
+hol jeget szól fejendre,
+s elszáll – pedig szárnya sincsen –
+nyugatra, keletre.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-jelkulcsok című részhez, és add össze a válasz betűinek értékét. Ez a szám határozza meg, hova kell a folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 171-re!
+
+=== 137 ===
+Találomra indulsz el a tömegben. Nézed az árut, a vásárlókat és a kereskedőket, s persze mindenkinek igyjekszel a kezére pillantani. Persze tisztában vagy vele, milyen kiesi így az esélye annak, hogy rákadj arra a személyre, aki által eljuthatsz a Viharűzőkhöz, ám még reménykédsz. S lass csodát! Már éppen indulsz vissza a lovadért, amikor egy feketéne öltözött férfit látsz, akinek a tenyerében mintha egy madarat szimbolizáló rajz lenne tetovalva.
+
+Sajnos a fickó a másik sorban van, így mire te meg-kerülöd az asztalokat, a feketéne öltözött férfi kiér a piac szélére, majd határozott lépnékkel a legközelebbi mellékutca felé indul.
+
+Ha követed, lapozz a 245-re!
+Ha előbb elmész a lovadért, lapozz a 286-ra!
+Ha megpróbálod megszólítani, lapozz a 92-re!
+
+=== 138 ===
+A forróság felkelti a figyelmedet, s óvatosan arrafélé indulsz. Nem sokkal később megállsz egy fal előtt, mely szinte süt a túloldalt tomboló hőségtől. A falon hirtelen repedések futnak szét, ám hiába próbálsz menek­külni, egyszerűen nincs idöd. Izzó fém folyik át a réseken, aztán hirtelen megindul az áradat, s elborit.
+
+Kalandod véget ért.
+
+=== 139 ===
+Felfelé indulsz a folyó mellett, s alig fél mérföldnyi gyaloglás után egy kisebb liget mellett fábol ácsolt hídat pillantasz meg. Elég stabilnak és erősnek tűnik. Néhány perccel később a túlsó parton találod magad, ahol visszagyalogolsz a pallóhoz, hogy folytatni tudd az utad. Némi idővestéség árán biztonságosan átjutottál.
+
+A hegyvidéken futó ösvény hamarosan egy másikát keresztez. Egyenesen (északkeleterre), jobbra és balra folytathatod az utadat. Bal kéz felöl azonban mintha halk, női siklottzást hallnál.
+
+Ha egyenesen megy tovább, lapozz a 8-ra!
+Ha balra indulsz, lapozz a 193-ra!
+Ha jobbra, lapozz a 287-re!
+
+=== 140 ===
+A folyosó egyenesen fut egy darabig, majd balra kanyarodik, s kisvártatva egy elágazásba torkollik. Innen egyenesen, balra és jobbra haladhastz tovább.
+
+Ha balra megy, lapozz a 21-re!
+Ha egyenesen, lapozz a 169-re!
+Ha jobbra, lapozz a 210-re!
+
+=== 141 ===
+A jelenet teljesen megbabonáz. Visszafogod a lova-
+dat, s a csuklyás kigyó és az unikornis felé indulsz.
+Néhány lépés választia el csupán őket. Nem érted, mi-
+ért nem fordul meg az egyszarvú, s vágtat el, hiszen a
+kigyó a nyomába sem érhetne. Vagy éppen a kigyót
+kellene sajnálnod?
+
+Ha segítesz a kigyónak, lapozz a 278-ra!
+Ha az unikornis pártját fogod, lapozz a 70-re!
+Ha végignézed a küzdelmet, lapozz a 167-re!
+
+=== 142 ===
+A varázslat nem jön létre, mivel a varázseród az el-
+múlt órák során alaposan megcsappant. Pihenned kell,
+holnapra visszakkapod az erődet, s akkor ismét próbát
+tehetsz. Amúgy is elég fáradt vagy.
+
+Ha megpihensz a szobában, lapozz a 44-re!
+Ha szétnézei idebent, lapozz a 30-ra!
+
+=== 143 ===
+A fickó nem csupán a kötekédéshez, a fegyverforgatáshoz is ért. Gyors, akár egy kobra, és olyan alattomosan harcol, amennyire csak lehet. Az apró cseleknek köszönhetően hamarosan alig bíród tartani a fegyveredet, a karod gyenge, s a sebeid lüktetnek a fájdalomtól. Hátrálni próbálsz, amikor rád ront, ám elvéted a lépést, s a következő pillanatban egy hideg pengét érzel a bordáid közé furódni. Kalandod végét ért.
+
+=== 144 ===
+A sárkány holtan hever a földön, vére vörörsre festi a sziklákát. Az oroszlán diadalmasan felbömböl, majd hirtelen átbucskazik a fején, s a következő pillanatban egy óriás termetű férfi áll előttöd, haját lófarokba viseli, egyébként csáknem teljesen kopasz.
+
+– Ezzel a tetteddel kivívtad a jogot rá, költyök, hogy belépj Brúdah Országlánjai közé! – mondja elismeréssel. – Miért keresnéd a Viharúzók kegyeit, hiszen azok csupán nevetséges köklerek, akik látványos hókuszpókuszok mögé menekülnek. Jöjj, csatakozz hozzám és híveimhez, s légy te is egyike Brúdah Országlánajainak!
+
+Ha elfogadod a felhívást, lapozz a 290-re!
+Ha nemet mondasz, lapozz a 57-re!
+
+=== 145 ===
+Az ősi kapuhoz közeledve baljós érzések kezdenek gyötörni. A kaput betöltő vékony hártya felszínén időről időre vérvorös villámok cikáznak át, mintha csak arra figyelmeztetném: ne továb!
+
+Ha még is továbbmész, lapozz a 294-re!
+Ha visszafordulsz, lapozz a 75-re!
+
+=== 146 ===
+A patkány bemászik a szeméthalmok alá, s egy kicsivel később egy tüvecsével tér vissza, melyben mintha láva fortyogna. Leteszi a lábad elé, majd visszzamegy a szemét alá, a csontfurulya pedig eltörik. Amikor felhajtod az italt, a varázsseród a maximumra áll vissza.
+
+Ha a kijáratot keresed, lapozz a 288-ra!
+Ha továb kutatsz, lapozz az 284-re!
+
+=== 147 ===
+Az egyik oszlop mögött látod egy pillanatra felvillanni a sötét ruhát, de neked ennyi is elég. Sebes léptekkel a nyomába ereszd, s hamarosan ismét megpillantod. A fickó gyorsan halad, egyszer sem néz hátra. Egyre kevesebb járókelővel találkoztok. Éppen egy átjáróházaon haladtok keresztül, oszlopok szegélyezik utatokat, amikor elveszted a szemed elől. Felgyorsítod lépteid, ám az egyik oszlop mögül egy sötét burruszú viselő alak lép elé, kezében görbe tört tart, s rosszindulatúan méregel. Nem térhetsz ki.
+
+Orgyilkos: életerő 24, támadási képesség 19, védeltsegi szint 15. Az orgyilkos 2-4 életerőpont vesztességet okoz a törével.
+
+Ha sikerült megölnöd az orgyilkost, lapozz a 291-re! Ha veszítettél az összecsapásban, lapozz a 46-ra!
+I can see this is a black and white illustration from what appears to be a gamebook or adventure book, showing a figure in traditional Middle Eastern or fantasy clothing holding a dagger, standing between two wooden pillars or posts. However, I cannot clearly make out any readable text on this page to transcribe. The image quality and resolution make it difficult to distinguish any text that may be present on the page. If there is text present, it's not legible enough in this image for me to transcribe accurately according to your specifications.
+
+If you could provide a higher resolution image or clarify where specific text appears on the page, I would be happy to transcribe it following your rules.
+
+=== 148 ===
+Még erősebben markolod a fegyverededet, miközben folytatod az utad. A fáklyafénybe hamarosan egy asszonyarcú féreg siklik be, diadalmas mosolya félelmét csepegtet a szívedbe. Egy lillieth.
+
+Lillieth: életerő 12, támadási képesség 20, védettségi szint 12, varázserő 22. A szörnyet 1-3 életerőpont veszteségét okoz, ám a veszteség maradandóan levonódik az életerődbõl, s semmilyen módon nem gyógyítható vissza. A szörny kizárólag védekezésre használja varázserejét!
+
+Ha sikerült megölnöd a szörnyet, lapozz a 76-ra!
+Ha veszítettél az összecsapásban, lapozz a 216-ra!
+
+=== 149 ===
+Meghasonáznak a kincsek. Némi aranyat tömsz az iszákodva, gondolva a szükösebb napokra, majd az osztalokon szikrázó tárgyakhoz lépsz. Am megerinteni már nem marad idöd. Az aranyhegyek alól éjfekete csápok vágódnak elő, és kiméletlenül a testedre fonódnak, majd magukkal vonszolnak az aranyak közé. Csüfos vég vár rád: egy aranyhegy alatt fulladsz meg Kalandod véget ért.
+
+=== 150 ===
+A barlang kellemesen húvös levegője felüdit. Kicsit fázol ugyan idebenn, ám hamarosán hozzászokszz a belső klímához. Meggyújtod az egyik fáklyádat, majd a lovadat kantárszáron vezetvé elindulsz felelé. Az okos állat – bár látsszik rajta, hogy reszket idebenn – követ téged, tökéletesen van idomitva.
+
+A barlang belső falánál egy meglehetősen magas, ám keskeny járatot találsz, ahol a lovad éppen, hogy átfér. Abban azonban biztos vagy, odabenn nem tudsz majd megfodulni, ha zsákutcába futszz. Mégis nekivágszz, ha már idáig felküszködted magad, nem fogsz meghátálni.
+
+Az első méterek alaposan megizzasztanak, aztán a járat kiszélesedik, és egy bordázott falú oldalbarlangba kerülsz, mely egyenesen fut. A távolban mintha fényt látnál csilllogni. Hosszú az út, már legalább féll órája gyalogolsz a lovadat vezetvé, mire a fény végre növekedni kezd, s szakhamar megpillantod a kijáratot. A távolban hegyek látszanak, egy fenyőerdő, s egy csuklyás alak, aki lova hátán ülve egy hosszú lándzát tart a kezében. Mintha rád várna...
+
+Ha tűdvözlöd, lapozz az 59-re!
+Ha megtámadod, lapozz a 242-re!
+Ha a barlangban maradsz, és megvárod, mit csinál, lapozz a 100-ra!
+
+=== 151 ===
+Magad sem tudod, hogyan, de sikerül legyőznöd a démonokat. Talán valamelyik isten könyörült meg rajtad, s tartotta feletted a harcban áldó kezét. A szörnyűséges teremtmények holtan hevernek körülöötted, búzós testük lágyan alig bírod elfojtani öklendezsesdet. Gyorsan körbepillantasz. Egy állandó szürkületbe burkolózó fennsíkon állsz, melyeket sziklák borítanak. A távolból szörnyű tüvöltéseket hallasz, melyek gyorsan közelednek. Hátad mögött a Kapu egyre gyengülő fénnyel pislog.
+
+Ha gyorsan visszalépszk a Kapun, lapozz a 184-re!
+Ha szétnézel ezen a helyen, lapozz az 58-ra!
+
+=== 152 ===
+Hiába szansz közel fél órát a keresésre, ezúttal nem találsz alkalmas barlangot. Ugyan látsz egy üreget a meredek sziklafajon, ám eszed ágában sincs azért kockáztatni az életedet, hogy odáig felkapaszkodva esetleg kiderüljön, már van lakója. Nem, ma éjjel a szabad ég alatt fogsz éjszaközni.
+
+Lapozz a 98-ra!
+
+=== 153 ===
+A roc csőre hegyes, minden támadásakor nagy darab húsokat csippent ki a testedből. A fájdalom elveszi az eszedet, s már nem is koncentrálsz a védekezésre, el akarod pusztítani a szörnyet. Ez azonban nem a te napod. Kalandod véget ért.
+
+=== 154 ===
+Délben megállsz egy röivid pihenőre, és megtöltöd a gyomrodat (vonj le egy adagot az élelembből). Utad eddig jobbára eseménytelen telt, ám sehol nem találtál olyan helyet, ahol megtalálhatnad Varont, a halászt.
+
+Nem sokkal később egy keresztútzhoz érsz.
+
+Ha keletre haladsz tovább, lapozz a 280-ra!
+Ha nyugatra, lapozz a 97-re!
+Ha északra, lapozz a 224-re!
+
+=== 155 ===
+Előhúzod az aranykulcsot, s a zárba illeszted. A kulcs könnyen elfordul, s előtted kitárul az ajtó. Egy csodálatos termet látsz, ahol már egy magas, szőke hajú asszony tartózkodik. Nem fordul felét, mintha tudomást sem venne arról, hogy bejutottál.
+
+Lapozz a 292-re!
+
+=== 156 ===
+Az utolsó pillanatban kapaszkodsz ki a barlangból, s rohanni kezdesz, hogy minél távolabb kerülj a csapdának tünő helyről. A hátad mogül dühös füjtatást hallasz. Jobbnak látod visszatérni az előgazásához.
+
+Ha egyenesen (északkelet) megy tovább, lapozz a 8-ra!
+Ha jobbra, lapozz a 287-re!
+
+=== 157 ===
+Nem hitted volna, hogy egy unikornis ennyire veszélyes ellenfél. Gyors, rádásul a szarva hegyes a leghegyesebb lándzsánál. Szinte minden támadás után újabb és újabb vérző sebek fakadnak a testeden, s kicsorduló véreddel együtt erőd is elfogy. Aztán az utolsó támadásnál már nincs erőd félrelépni, s az unikornis a szarvára tűz. Kalandod végét ért.
+
+=== 158 ===
+Nehéz küzdelem volt, annyi szent. Teljesen leizzadsz, mire sikerül megölnöd a póköt, s utána a háló­ból való szabadulás is nem kevés fáradságot igényel. Amikor végre kimásznod, gyorsan körbenézel. A falakon fáklyák világítanak, a háló mellett elosonya pedig egy elágzó folyosóra lesz.
+
+Ha balra indulsz, lapozz a 24-re!
+Ha jobbra, lapozz a 257-re!
+
+=== 159 ===
+A szörnyetegnek félelmetes a külseje, ám nem okoz problémát a legyőzése. Igaz, elég sokaig kell harcol-nod, mire megnyuvad, azonban nem kerülheti el a sorsát. Fáradtan engeded le fegyvered, amikor végre nem mozdul többet.
+
+Miközben a hatalmas monstrumot nézed, a kentau-rok is felbukkannak az egyik domb mögül. Kíváncsi népség, gondolod magadban, bizonyára végignézték az összecsapást.
+
+– Igazi hős vagy! – lelkendezik az egyik.
+– A Bajnokok Bajnoka! – tódít a másik.
+– Varont, a halászt keresem – jút eszedbe. – Nem tudjátok véletlenül, merre találom?
+
+– A keresztútnál indulj nyugatra, s akkor megtalálod – mondják a kentaurok, majd günyös dalt énekelve körbetáncoljak a szörnyeteget.
+
+Visszatérsz a keresztúthoz, és nyugatra indulsz.
+
+Lapozz a 97-re!
+
+=== 160 ===
+Egy lecsapó bárdot látsz, miközben körülötted fodrozódni kezd a levegő, s hirtelen rádöbensz: a valóság egészen más, mint amit eddig hittél. Az utolsó pillanatban gördülsz félre.
+
+A szoba körvonalai elmosódnak, majd megváltoznak, s hamarosan egy mocskos teremben találod magad, s az asszony helyett egy békafejű rém áll veled szemben, s egy bárdot emelve a feje fölé ismét támadása lendül.
+
+Békafejű rém: életerő 22, támadási képesség 15, védetsegi szint 17. A szörnyeteg 2-7 életéropont veszteséget okoz.
+
+Ha sikerült megölnöd a rémet, lapozz a 129-re!
+Ha veszitettél az összecapásban, lapozz a 264-re!
+
+=== 161 ===
+Minden egycs lépést megfontolsz, így sikerül épségben leérned, s a lovadnak sem esik baja. Sajnálod a kitérőre elfecsérelc időt, ám végül mégis csak visszatérsz a sziklaszoroshoz, hogy azon keresztül folyatasd az utadat.
+
+Lapozz a 178-ra!
+
+=== 162 ===
+Ellenfeled gyorsabb, és talán egy kicsit jobb is nápad. Vagy egyszerűen csak mellette áll a szerencse. Mégis, amikor oldalra lépssz, hogy kitérj egy támadása elől, könnyed csuklómozdulatot tesz, s a következő pillanatban tompa fájdalom hasít a fejedbe, s mindent elborít a sötétség. Kalandod véget ért.
+
+=== 163 ===
+Két ellenféllel szemben az oroszlán képtelen tartani magát. Testét egyre sokasodó sebek borítják, ám nem hátrál meg. Amikor végeztek vele, szinte el sem akarod hinni, hogy végét ért a küzdelem. Fáradtan leengeded a fegyvered.
+
+Melletted vibrálni kezd a levegő, és egy sárkánypikkelyekkel borított köpenyt vielő asszonyt látsz.
+
+— Dicsöséges küzdelem volt — mondja csendesen. —
+
+„Túl az erő és a hatalom próbáján, megmérettetsz, hogy méltó vagy-e." Emlékszél? Nos, elyerted a kegyet, s beléphetsz a Csarnokba... Fogd ezt a kulcsot, és haladj további ézsakkelet felé. Tudni fogod, hol keresd a Csarnokot!
+
+Aztán lassan elhalványul az alakja, te pedig továb folytatod az utadat ézsakkelet felé, miközben szíved boldog, amiért ezen a próbán is sikerült túljutmod. Az apró csontkulcs a mellkasodban lóg egy darab madzagra felkötve.
+
+Lapozz a 172-re!
+
+=== 164 ===
+– Egy olyan személyt keresek, akinek a tenyerében egy madarat ábrázoló tetováláš látható – mondod az egyik kereskedőnek, aki elég megbízhatónak tűnik. Szavaid nyomatékosításául három aranyat vetsz neki.
+A fickó felemeli a fejét.
+– Ha a városban információkra van szükséged, fordulj a koldusokhoz – feleli mosolyogva, de az aranyakat nem adja vissza.
+
+Ha egy koldusnál próbálsz érdeklődni, lapozz a 86-ra!
+Ha egy vásárlónál, lapozz a 254-re!
+
+=== 165 ===
+A troll lerohan, s magához szorit. Ölelése szétroppantja a bordáidat. Küzdesz, ám képtelen vagy szabadulni halálos szorításából. Kalandod véget ért.
+
+=== 166 ===
+Megkapaszkodsx a kötélben, és lassan másszni kezdesz. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 237-re!
+Ha nem sikerült, lapozz a 269-re!
+
+=== 167 ===
+Nem áll szándékodban egyik állatnak sem segíteni. Sokkal fontosabb feladatok állnak előtted, miért pazarolnád hát az erődet feleségesen. Türelmesen üldözélsz a nyeregben, s város a fejleményeket.
+
+Az unikornis lassan hátrál, néha egyet-egyet előre is lép, mintha nem tudná eldönteni, hogy meneküljon vagy támadjon. A kigyó egy centiméterre sem mozdul el a helyéről, mintha őrizne valamit.
+
+Végül az egyszarvú türelme fogy el hamarabb. Vadul felnyihog, és szarvát a kigyó felé irányítva rohamozni kezd, azonban a csuklyás kigyó gyorsabban bizonyul nála. Csupán egyszer látod megvillanni jellegzetes csuklyáját, aztán a szerencsétlen unikornis a földre rogy. Hihetetlenül erős mérge lehet a kigyónak.
+
+Ha folytatod az utadat, lapozz a 222-re!
+Ha megnézed, mit őrzött a kigyó, lapozz a 19-re!
+
+=== 168 ===
+Gyengéden megharzod a félszerzet vállát. A fickó összerezzen, majd olyan hirtelen úl fel, hogy kis híján összekooccan a fejetek. Beletelik néhány másodpercbe, amíg rájön, ki ő és hol van, majd téged is felfedez. Tekintetébe rémület költözik, ám keze a töre után nyúl.
+
+– Nem akarlak bánt­ani – mondod, majd hozzáteszed: – Mindössze a kulcsodat akarom elkérni.
+
+A félszerzet hamiskásan elmosolyodik.
+
+– Nos, rendben – feleli. – Rád bizom, mivel fizetsz érte. Arannyai, vagy inkább megválaszolsz egy találós kérdést?
+
+Ha arannyai akarsz fizetni, lapozz a 23-ra!
+Ha város a kérdést, lapozz a 136-ra!
+
+=== 169 ===
+A folyosó egy egyenes szakasz után jobbra kanyarodik, majd egy újabb egyenes rész után ismét jobbra. Már azonban továbbmész, amikor a falon ősi rúnákat pillantasz meg. Ovatosan lesöpöd róluk a port, s családhamar egy versike válik láthatóvá, alatta egy utasítás: mond ki a szót, s a fal megnyílik!
+
+Mikor fekszel, ő akkor kél.
+Egyszer egész, máskor csak fél.
+Nincsen tüze, mégis lámpás,
+a vándornak szinie áldás.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejtjelkulcsok című részhez, és add össze a választ betűinek értékét. Ez a szám határozza meg, hova kell a folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 218-ra!
+
+=== 170 ===
+Magad sem tudod, hogyan sikerült végezned a hatalmas szörnyeteggel, ám arra eszmélsz, hogy a wyvern vérbe fagyva hever előtted, testét rettenetes sebek szabdalják. Minden izmod remeg, alig birsz talpon maradni. A lovadrót még a küzdelem első perceiben leugrottál, hogy az állat idegességében ne kezdjen menekülni, hiszen az a halálodat okozhatta volna. Tudod, hogy a közelben meg fogod találni.
+
+A lovadat hamarosan megtalálod, s folytathatod az utadat. Mintegy fertályóra múlva azonban kellemetlen meglepetés ér: zsákutcába kerültél. Egy sziklaomlás miatt erre nem juthatsz tovább. Kénytelen vagy visszafordulni.
+
+Lapozz a 268-ra!
+
+=== 171 ===
+– Nem tudom a választ – ismered be.
+A félszerzet sajnálkozva megvonja a vállát.
+– Nos, akkor én nem segíthetek. Vagy tudod, mit, mégis... – Egy maréknyi csillogó port vesz elő a zsebéből, s rád szórja, mielőtt tilhakozhatnál. Kavarogni kezd veled a világ, s a következő pillanatban ismét ott találód magad a kastély előtt, kezdedben a csontkulcscsai, ám a kapu zárva. Idekint már éjszaka van, az égboltot egy hatalmas felhő rejti el. Melyik kulcsyukba teszed a csontkulcsot?
+
+Ha a felső be, lapozz a 61-re!
+Ha a középső be, lapozz a 107-re!
+Ha az alsóba, lapozz a 187-re!
+Ha dörömböléssei próbálkozol, lapozz a 283-ra!
+
+=== 172 ===
+A Csarnok járt állandóan az eszedbe, minden domb mögött azt remélted felbukanni. Már egy teljes nap telt el azóta, hogy megkaptad a kulcsot, ám egyedlöre nyomát sem látod a Csarnoknak. Mégsem csüggedsz. Elöbb vagy utóbb, de oda fogsz érni.
+
+Az éjszaka ezúttal is a hegyek között ér. Előző éjjel egy elhagyott barlangba húzódtál be, ám most nem látsz a közélben alkalmasnak túnö üreget.
+
+Ha a szabad ég alatt éjszakázol, lapozz a 98-ra!
+Ha keresel egy barlangot, lapozz a 221-re!
+
+=== 173 ===
+Ilyen erös ellenfelekkel eddig ritkán harcoltok, s sohasem voltak túlérőben. Talán személöl-szembe esélylvel vennéd fel a küzdelmet valamellyik démonnal, így négyes azonban túlságosan nagy falatnak bizonyulnak a számódra. Kalandod véget ért.
+
+=== 174 ===
+A folyosó egy egyenes szakasz után balra fordul. Már csáknem továbbmész, amikor a falon ősi rúnákat pillantasz meg. Óvatosan lesöpröd róluk a port, s csakhamar egy versike válik láthatóvá, alatta egy utasítás: mond ki a szót, s a fal megnyilik!
+
+Mikor fekszel, ő akkor kél.
+Egyszer egész, máskor csak fél.
+Nincsen tüze, mégis lámpás,
+a vándornak szinte áldás.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt­jelkulcsok című részhez, és add össze a válasz betűinek értékét. Ez a számhatározza meg, hova kell a folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 218-ra!
+
+=== 175 ===
+A Hősök Csarnokáról pillantatok alatt kiderül, hogy aligha ez lesz a megfelelő. Egyrészt, csupa törpe járide, másrészt pedig odabenn éppen újrabútorozzák a fogadót. A tulajdonos sajnálkozva közli veled, hogy leghamarabb holnapután tudnak kinyitni, mert előző este volt egy kis affér...
+
+Ha a Veres Kardba térsz be, lapozz a 29-re!
+Ha a Sárkányölőbe, lapozz a 235-re!
+
+=== 176 ===
+A szörny kihaszn­álja a meglepödésed­et, s mindiárt az elején súlyos sebet ejt rajtad. Rádásul tapasztalt harcos, s most, hogy varázsseród egy részét az illúziója semlegesítésére pazaroltad, kiszolgáltatotta vál­sz. Teljesen a falhoz szorit, aztán lecsap, s nincs mene­kvés. Kalandod végét ért.
+
+=== 177 ===
+Félrerugdosod a szörnyeteg maradványait, és folytatod a járat felfedezéseit. Nem sokkal később egy odúra bukkansz, melyben a csontok között néhány féme­sen csillogó tárgyat is észrevesztel. A fáklyát egy falrepedésbe erősited, majd nekilátsz összegyűjteni, amit használhatónak találsz. A következő tárgyakat szeded össze: egy sisak (védettségi szint +3), egy pallos (2-12 életerópont veszteségét okoz az ellenfélnek), egy általmazó gyűrű (+4 a védettsegi szinthéz) és egy erönövelö csüklöpánt (+5 a támadási képességhez).
+
+Ha valamelyik tárgyra szükségéd van, írd fel a Kalandlapodra, és módosítsd a föértékeidet a leírtaknak megfelelöen.
+
+Miután végeztél a kutatással felkapaszkodz a szinre, és visszatérsz az elágazáshoz.
+
+Ha egyenesen (északelét) mégy továb, lapozz a 8-ra!
+Ha jobbra, lapozz a 287-re!
+
+=== 178 ===
+A sziklaszoros meglehetősen kanyargósnak bizonyul, s bizony néha le kell szállnod a nyeregből a továbbjtás érdekében. Mintegy fél mérföldnyi út megtétele után a szoros kiöblösödik, s egy vibráló légoszlopot látsz a közepén. A légoszlop olyan széles, hogy esélyed sincs a mellette történő elhaladásra. Még a visszafordulás gondolata is felötlik benned, amikor hátulról legördülő sziklák robajai hallatsszik, s látod, innen csak előre vezetez immaáron az út.
+
+Minden bátorságodat összeszedve belépszz a légoszlopba. Egy pillanatra hihetetlen sebességet érzel, majd amikor kilépszz a légoszlop túloldalán, rádobbensz, egy szemvillanás alatt mérföldeket haladtál.
+
+Egy elágazás előtt állsz. Merre tovább?
+
+Ha balra indulsz, lapozz a 83-ra!
+Ha jobbra, lapozz a 265-re!
+
+=== 179 ===
+Képtelen vagy kitalálni a helyes választ. Csak állsz némán, miközben töröd a fejed. A halász néz egy darabig, majd megvonja a vállát, és fegyelmét ismét a halakra összpontosítja. Kalandod véget ért.
+
+=== 180 ===
+Az ajtó remekül birja az ütésedet, még csak meg sem reped. Úgy véled, napokig is itt állhatnál, mire sikerülne valahogy szétverned. Itt csupán egy kulccsal juthatsz be.
+
+Ha egy csontkulccsal próbálkozol, lapozz a 27-re!
+Ha egy aranykulccsal, lapozz a 281-re!
+Ha egy vaskulccsal, lapozz a 208-ra!
+
+=== 181 ===
+Gyorsan felálsz, hogy közelebb merészkjedj, amikor egy nagy darab, haragos tekintetű fickó lép elé. Teljesen kopasz, és a tekintete nem sok jót ígér.
+
+— Ismételd meg, amit mondtál! — förmed rád.
+
+Nem érted mit akar, ám ellépni sem akarsz mellette, mert a keze túl közel van a kardjához.
+
+— Megsértettél, kutya! — kiáltja a fickó. — Elégtételt követeltek becsületes párbajban!
+
+A fogadóban mindenki elhallgat.
+
+Ha elfogadod a kihívást, lapozz a 22-re!
+Ha meghátrálsz, lapozz a 73-ra!
+
+=== 182 ===
+Mintha valóban lávát innál, az ital végigpereszeti a torkodat. Ám a hatás elkéepsztő. Varázserőd egy szempillantás alatt a maximumra ugrik vissza.
+
+Nekiállsz a kijáratot keresni.
+
+Lapozz a 288-ra!
+
+=== 183 ===
+Az országlán végül is győzedelmeskedett, gondolod magadban. S meglehet, a fickó nem mond ostobasá-got... Végül is mindegy, melyik szervezethez tartozol, csak az a fontos, tartozz valahova! Elmosolyodsz, és lelkesen bölögatva indulsz a férfi felé. A következő pillanatban dühos bömbölés hallatszik, s a levegőből lecsap rád a sebesült sárkány. Karmok tépnek testedbe, s a halál gyorsan érkezik. Kalandod véget ért.
+
+=== 184 ===
+Az utolsó pillanatban sikertil átlépned a Kapun. Még látod, ahogy ötvennél is több hasonszörű démon bukkan fel a sziklák mögül, aztán a hártya megfakul, s a Kapu bezárul. Ki tudia, mikor és miként nyithatod ki még egyszer? Visszatérész oda, ahonnan idejöttél.
+
+Lapozz a 75-re!
+
+=== 185 ===
+Fegyvert rantasz, és a félszerzetre rontasz, ám az egy riadt kiáltás kísérletében elrohan előled. Csupán néhány méternyi előnye lehet, ám amikor kiffordulsz utána a folyosóra, sehol sem látod. Nyilván elrejtőzött valahol, vagy egy rejtekajton keresztül elmenekült.
+
+A vaskulcsot azonban magával vitte.
+
+Ha visszamész a csigalépcsőhöz, lapozz a 66-ra!
+Ha szétnézel ideient, lapozz a 230-ra!
+Ha megpróbálod megtálálni ideient a félszerzetet, lapozz a 276-ra!
+
+=== 186 ===
+A beburkolt valamit kihúzva és kibontva csakhаmar kiderül, hogy egy csodálatosan megmunkált pajzs található benne, melyet az alkarodra erősíthetsz. Nyilván tolvajok rejitették el ide. A domborműves címer sem mit nem mond a számódra. (A pajzs 5 ponttal növeli a védeltsségi szintedet, amíg viseled.)
+
+Visszamész az útra.
+
+Lapozz a 154-re!
+
+=== 187 ===
+Az alsó kulcslyukba helyezed a csontkulcsot, mely magától elfordul, s a következő pillanatban a hatalmas kapu kitárul előtted. Halk énekszó csendül fel, mely pillanatokon belül elhal. Sehol senki.
+
+Belépszz a kastélyba. Egy hatalmas Csarnokba jutottál, melyet két oldalt oszlopok szegélyeznek, a túlsó falon pedig sohásem látott tróféák pompáznak. A falakon rengeteg sárkány-ábrázolásr látsz, így tűnik, a hely gazdájának ez a csodálatos lény a kedvence. Vagy talán több is annál.
+
+Álmélkodva haladszik egyre beljebb.
+
+Aztán a lábad alatt hirtelen megnyílik a föld, te pedig egy csúszdaszerű alkalmatossságon találod magad, s megállíthatatlanul százuldasz lefelé. Percekig tart az őrült száguldás, majd hirtelen a levegőben találod magad, s a következő másodpercben egy hatalmas, vastag szálakból szőtt pókhálóban landolsz, mely lefékezi a lendületet. Ami azonban kellemetlen: hozzáragadsz.
+
+Ha megpróbálsz kievickelni a hálóból, lapozz a 93-ra!
+
+Ha töröddel szabadítod ki magad, lapozz a 228-ra!
+
+=== 188 ===
+Folytatod a kutatást, s családhamar két üvegcsét találsz. Az egyiken egy stilizált szív látható (tapasztalatból tudod, hogy győgyital lehet), míg a másikban mintha forró magma lenne.
+
+Ha felhajtod a szives üveg tartalmát, lapozz a 33-ra!
+Ha a másik alatt költolod meg, lapozz a 104-re!
+
+=== 189 ===
+Egy kígyó nem jelent számadra akadályt, hiszen nem véletlen került a Kíválasztottak közé. Ha már utad legalején elbuknál, alighanem günyverssel emlékkezménék még róla a bárdok. Egy gyors támadás, s a következő másodpercben már nem kell a kígyótól tartanod. A dög mellett egy galambíójás nagyságú kristály hever a földön.
+
+Mielőtt azonban felkaphatnád, az egyszerű ott terem, és szétvetett lábakkal megállt mellette, mintha csak azt mondaná: ez az enyém.
+
+Ha megpróbálod elvenni a kristályt, lapozz az 50-re!
+Ha nagylelkűen lemondasz róla, lapozz a 105-re!
+
+=== 190 ===
+A piacon nyüzsgő a tömeg, ide hiába is próbálnál bejutni a lovaddal. Eppen ezért néhány érme ellenében rábízod egy meghízhatónak tűnő kereskedőre az állat­ — sokat mondóan megmutatva a fegyvereredet is, ha esetleg ostobaságokon törnė a fejét —, majd beleveted magad a tömeqbe.
+
+Ha kérdezősköd­ni kezdesz Karvalyról, lapozz a 39-re!
+Ha vásárolni akarsz, lapozz a 275-re!
+Ha csak úgy sétálgatsz, lapozz a 137-re!
+
+=== 191 ===
+Jobbnak látod, ha nem erőlteted. Az aranykulcs könnyen eltörhet, s akkor ki tudja, sikerül-e a darabjáat kípiszkálni a zárból. Akkor pedig hiába van nálad a jó kulcs, ha a zárba nem tudod beledugni.
+
+Ha a csontkulccsal próbálkozol, lapozz a 27-re!
+Ha egy vaskulcscsal, lapozz a 208-ra!
+
+=== 192 ===
+Az idegen nem csupán a fegyverhez, hanem a mágiához is remekül ért. Ugyanesen váltogatva a két támadási formát, sikerül téged komolyan megsebezni­e, majd egy mindent eldöntö roham után holtan zuhansz a földre. Kalandod végét ért.
+
+=== 193 ===
+A sikaltozás mintha erősödne. A sziklás terepen elég lassan haladszé előre, mert minduntalan kerülőre kényszerülsz, hacsak nem akarod a bokádat törni. Két hatalmas kiemelkedés között egy sötét lyukat pillan-tasz meg a földön, s amennyire meg tudod állapítani, innen jön a sikaltzs.
+
+Ha aláereszkedsz a lyukba, lapozz a 266-ra!
+Ha visszamész az elágazáshoz, lapozz a 134-re!
+
+=== 194 ===
+A folyosó egy egyenes szakasz után jobbra kanya-rodík, majd egy újabb egyenes rész után isrét jobbra. Már csáknem továbbmész, amikor a falon ötsi rúnákat pillantasz meg. Óvatosan lesopród róluk a port, s szakhamar egy versike válik láthatóvá, alatta egy uta-sítás: mond ki a szót, s a fal megnyílik!
+
+Mikor fekszel, ö akkor kél.
+Egyszer egész, máskor csak fél.
+Nincsen tüze, mégis lámzás,
+a vándornak szinte áldás.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-jelkulesok című részhez, és add össze a választ betűi-nek értékét. Ez a szám határozza meg, hova kell a folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 218-ra!
+
+=== 195 ===
+Amikor befejezödik a küzdelem, lihegve a falhoz támaszkodsz. Ellenfeled soha többé nem fog kötékedni a fogadóba betörökkel. Ez alkalomal alulmaradt a küzdelemben. Néhány legény megragadia a halottat, és a fal mellé húzza – majd jön a sírásó, és gondjaiba veszi –, miközben a tömeg szétozszik. Egyedül maradsx az utcán. Azaz majdnem egyedül. Egy sötét ruhás fick6 lép mellé<d>, és a tenyerét fordítja felé<d>.
+
+A tetovalás! A fáradságod azonnal elmúlik.
+– Nem kellett volna elfogadnod a kihívást! – mondia a Karvaly. – Ennek ellenére szépen kiuzdöttél, ezért kapsz még egy lehetöséget. Ha választolni tudsz a kérdésemre, további engedlek, ha nem... nos, akkor ne is álmodj arról, hogy bekerülsz a Viharúzök közé! Halld hát a rejtvényt!
+
+Mihelyt megvan, megmar,
+Mikor megmart, meghal.
+
+Ha tudod a választ, lapozz elöre a Rejtvények és rejtjelkulesok c<ímú> részhez, és add össze a válasz betűinek értékét. Ezt a számot szorzd meg kettövel, s akkor megtudod, hova kell a folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 233-ra!
+
+=== 196 ===
+Métereket zuhansz lefelé, s komoly fájdalmaid támadnak, ahogy tested a földbe csapódik (veszítesz 8 életerőpontot). Nagy nehezen összeszeded magad, s talpra állsz. A létra mellett egy feliratot látsz a falon, ezüstlemezbe vésték, s szegekkel erősítették fel.
+
+Nincsen veres sipka nélkül,
+hamar külzd, nehezen békül.
+Vagyon neki sarkantyúja,
+az első riadót ő fújja.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-jelkulcsok című részhez, és add össze a választ betűi-nek értékét. Ez a szám határozza meg, hova kell a folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 255-re!
+
+=== 197 ===
+Miután végesztél a trollal, nincs akadálya, hogy birtok­odba vedd a barlangot. Szerencségre éppen eleget hallottál már a trollok hihetetlen regenerálódó képes­ségéről, ezért biztos, ami biztos alapon feltrancsírozod, és elegeted a darabjait.
+
+Az éjszaka viszonylag kellermesen telik, bár a búz miatt nem tudod igazán kipihenni magad. Másnap reggel étkezés után folytatod utadat. Csak­nem egész délelőtt gyalogolsz megállás nélkül, amikor egy különös építményt pillantasz meg. Tulajdonképpen egy kastélyt látsz, melyhez egy semmiiben lebegő út visz. Az út innen­sö végében egy vén fickó kuporog, látsz­ik rajta, hogy napok óta nem evett egy falatot sem.
+
+Ha vetsz neki valami ételt, lapozz az 5-re!
+Ha elindulsz a kastély felé, lapozz a 293-ra!
+
+=== 198 ===
+Egy kigyó nem jelent számodra akadályt, hiszen nem véletlenül került a Kiválasztottak közé. Ha már utad legelején elbuknál, alighanem günyverssel emlékezznek meg rólad a bárdok. Egy gyors támadás, s a következő másodpercben már nem kell a kigyótól tartanod. A két állat holtan hever a lábaidnál. Egyikük irányú sem érzel szánal­mat. Gyors léptekkel megerülöd a kigyót, hogy megnézd, mit őrzött ennyire.
+
+Egy galambtojás nagyságú kristályt látsz a földön heverni. Felszínéről ezernyi irányba csapódik szét a napfény, sziporközóvá téve a kristályt. Miután magad­hoz vetted az értékesnek tűnő kincset, tovább indulsz Agrannis irányába.
+
+Lapozz a 222-re!
+
+=== 199 ===
+– Nincs ennyi pénzem – ismered be.
+A félszerzet megvonja a vállát.
+– Akkor add ide minden aranyadat!
+Boldogan engedelmeskedsz a felszólításnak, s nem sokkal később egy vaskucs elégedett tulajdonosa vagy. Igaz, a pénzes zacskód üres, de idebent aligha lesz pénzre szükséged.
+– Most pedig visszafekszem aludni – mondja nagyot ásítva a félszerzet, és befekszik a hordóba. A szerzezet már vissza is zárja rá a fedelet.
+
+Ha visszamész a csigalépcsőhöz, lapozz a 66-ra!
+Ha szétnézel idelenl, lapozz a 230-ra!
+
+=== 200 ===
+A szikra, ugrik be nyomban a válasz. Amikor kimondod, a Karvaly elgondolkozva bólint.
+— Rendben van, megkapod a lehetőséget... Tudnod kell, hogy te vagy a negyedik, aki rám találtál... — kezdi lassan. — Add el a lovadat, s reggel indulj észak felé. Ott keresd meg Varont, a halászt, akitől kapsz egy rejtvényt. Ha megválaszolod, akkor ő mondja majd meg, merre menj tovább!
+Nem teszi hozzá, mi van akkor, ha nem tudod a választ. A negyedik vagy, csak ez vibrál a neyedben, illetve a következő feladat. Lennének még kérdéseid, ám a Karvaly egyik pillanatban még ott állt melletted, a következőben azonban nincs sehol.
+
+Lapozz a 226-ra!
+
+=== 201 ===
+Hiába küzdötök ketten az oroszlánnal, a vadállat hihetetlenül gyors és vad. Néhány gyors csapássai hátrakényszerítik a sárkányt, majd rád veti magát, s súlyos sebeket oszt után megint a sárkány, s megint te. S ez így megy egészen addig, amikor egy különösen erős csapás után földre nem rogyasz. Akkor diadalmasan felbömböl, s nem töródve a sárkány támadásával, rád veti magát, és átharapja a gerincedet.
+Kalandod véget ért.
+I can see this is a page from what appears to be a gamebook or illustrated story, showing a black and white sketch of what looks like fantasy creatures or monsters in an interaction scene. However, I cannot make out any clearly legible text on this page to transcribe accurately. The image quality and contrast make it difficult to read any printed text that may be present.
+
+If there is text on this page, could you provide a higher resolution or clearer version of the image? That would allow me to provide an accurate transcription following your specified rules.
+
+=== 202 ===
+Egy vaskulcsot veszel a kezdbe, s a zárba illesztved. Hirtelen elektromos csapás éri a testedet (veszítesz 10 életerőpontot), minden porcikád beleremeg. Úgy tűnik, nem ez a kulcs való ide
+
+Ha van nálad még kulcs, lapozz a 9-re!
+Ha nincs, lapozz a 74-re!
+
+=== 203 ===
+Átlépsz a Kapun, a lovadat kötőféken vezetva. A következő pillanatban elsza­hadul körülötted a pokol: négy szörnyűséges teremtmény csap le rád. Első döbbenedben védekeznl is képtelen vagy (veszítesz 14 életerőpontot), még szerencse, hogy a lények nem elég hatékonyak.
+
+Kisebb Démonok: életerő 28 (26, 31, 29 a másik három életereje), támadási képessége 22, védettségi szint 25. A démonok külön-külön 2-12 életerőpontot veszteséget okoznak. Ne feledd, ők valamenyien támadhatnak rád egy körben, te azonban csupán egyikükre támadhaszt vissza!
+
+Ha sikerült megölnöd a démonokat, lapozz a 45-re!
+Ha veszítettél az összcsapásban, lapozz a 296-ra!
+
+=== 204 ===
+- A legértékesebb tárgyat akarom - mondod, s a patkány elrohan, hogy teljesítse a parancsot. Ám nem egészen azzal tér vissza, amire gondolsz. Drágaköves és varázstárgyak helyett egy darabka száraz kenyeret tart a mancsaiban. Nos igen, a nézétbeli különbség.
+
+A patkány leteszi a lábad elé a száraz kenyeret, majd eltűnik ismét a szeméthalom alatt. A furulya össz-
+vezetöt, nem használhatod többet.
+
+Ha tovább kutatsz, lapozz a 188-ra!
+Ha a kijáratot keresed, lapozz a 288-ra!
+
+=== 205 ===
+Ha az országlán mellett harcölsz, lapozz a 12-re!
+Ha a sárkányt segíted, lapozz a 65-re!
+
+=== 206 ===
+Minden erödet és ügyességedet összeszedve felra-
+gadsz egy nagy követ, és azzal kezded püföelni az ösi
+szerkezetét. A Kapu tartóoszlopain nem sokkal később hatalmas repedések jelennek meg, mikozben a kaput
+kitöltö härtya színe mélybiborba váit. Aztán egy ha-
+talmas robbanás könnyú tollpiheként felkapja a tested,
+és a sziklafálhoz csak. Mikozben haldokolsz, még lá-
+tod, hogy a Kapu helyén támadt dimenziörésén át dé-
+monok seregei özönlik el a környékét. Ostobasagod-
+ban az Alsobb Síkok minden lakójét a világra szaba-
+dítottad. Kalandod véget ért.
+
+=== 207 ===
+Lefelé indulsz a folyó mellett, követed a víz sodrását. Sokáig gyalogolsz, ám minden egyes perc közelebbi visz ahhoz a véleményhez, miszereint erre hiába is keresnél hidat vagy gázlót. Kénytelen vagy visszatérni a pallóhoz.
+
+Lapozz vissza a 270-re!
+
+=== 208 ===
+A vaskulcs pontosan illik a zárba, s kinyitja az ajtót. Az ajtó mögött egy díszés termet látsz. Emberek sorakoznak a fal mellett, ám közepén tüzes a tér. Pontosabban majdnem türes. Egy maszkos férfi áll veled szemben, izmos karjaiban egy csatacsillagot pihentet. Ugyanakkor az alakját alig látható, mágikus aura veszi körül. Bizonyára a mágiához is ért.
+
+Amikor közelebb lépSz, meghajol, majd felkészül a harcra. Megérted, ez az utolsó próba, a végső összecsapás. Kettőtök között egyikőtök kerülhet be csupán a Viharűzők közé.
+
+Maszkos férfi: életerő 32, támadási képesség 20, védettségi szent 18, varázserő 22. Az ellenfeled 2-7 életerőpont vesztességét okoz a csatacsillagával (bár kezdetben a varázserején használva akar felülkerekedni).
+
+Ha győzelemre állsz, lapozz a 259-re!
+Ha veszítettél az összecsapásban, lapozz a 162-re!
+
+=== 209 ===
+A fickó megrázza a fejét.
+- A válasz rossz! Fordulj vissza! Erre nem folytathatod az utadat. - Nyomatékul a lándzsáját is készenlétbe helyezi.
+
+Ha engedelmedskedz a felszólításnak, lapozz a 108-ra!
+Ha megtámadod a fickót, lapozz az 54-re!
+
+=== 210 ===
+Egy rövid egyenes szakasz után ismét elágazáshoz érsz. Innen balra és jobbra folytathatod az utadat.
+
+Ha balra megy, lapozz a 174-re!
+Ha jobbra, lapozz a 89-re!
+
+=== 211 ===
+A ládika nincs zárva, ám amikor felhajtod a tetejét, egy apró, sötét lény – egy kicsiny ördémon – ugrik az arcod felé, kezében apró kardok villognak. Csupán az utolsó pillanatban tudod félrekapni a fejed, s bár nem áll szándékodban harcolni, az apró teremtmény kétséget kizárón a véredet akarja.
+
+Ördémon: életerő 10, támadási képesség 25, védelmi szint 30, varázsszerő 25. Az ördémon nagyon gyors és 1-3 életerőpont vesztességet okoz a kardjaival.
+
+Ha sikerült megölnöd az ördémot, lapozz a 261-re!
+Ha veszítettél az összecspásában, lapozz a 49-re!
+
+=== 212 ===
+Egészen közel merészkedsz a századékhoz, ám hiába vizsgálatod, nem låtsz semmilyen módot az átjutásra. Raadásul a mélyből felfelé tekergőzó csápok (vagy indák?) egyére magasabbra jutnak. Mégis, ösztöneid azt súgják, erre vezeté tovább az út.
+
+Ha az osztöneidre hallgatva elindulsz, lapozz a 132-re!
+Ha a sötétséget választod, lapozz a 32-re!
+Ha az ősi kapu felé indulsz, lapozz a 145-re!
+
+=== 213 ===
+Az út egyenesen fut, majd balra kanyarodik, és csakhamar egy oldalághoz jutsz, melynek túlsó végén egy pókhálót pillantasz meg. Valószínűleg azt, ahonnan elindultál. Dühösen megfordulsz, és újra nekivágysz. Nem foghat ki rajtad egy nyavalyás labirintus.
+
+Ha balra indulsz, lapozz a 24-re!
+Ha jobbra, lapozz a 257-re!
+
+=== 214 ===
+Miután végéztél a bevásárlással, figyelmed ismét Karvaly felkutatására összpontosul. Nélküle hiába is próbálkoznál, fogalmad sincs, mi a következő lépés, mely végigvisz azonban az úton, melynek végén elnyerheted felvételedet a Viharűzök Titkos Szervezetébe.
+
+Ha kérdezősködni kezdesz Karvalyról, lapozz a 39-re!
+Ha csak úgy sétálgatsz, lapozz a 137-re!
+
+=== 215 ===
+A hatalmas szörny holtan fekvszik előtted. Kicsit hasonlít a kakasra, s eltöprengsz azon, hogy vajon a felirat erre akart-e figyelmeztetni. Vagy épp ellenkező-leg: a figyelmedet akarta elterelni? Talán sohasem fogod megtudni.
+
+Annyit tudsz csupán, hogy valahol a kastélyban vagy, de fogalmad sincs, hol. Reméled, hogy ez a Kiválasztottak próbájának utolsó szakasza, mert lassan kezdesz belefáradni a folytonos harcokba, az állandó életteszélybe. Mégis, bizol benne, hogy elnyered a jutalmad, s bekerülsz a Viharűzök közé.
+
+Valahonnan a közelbõl mintha könnyü szellõ legyezgetné az arcodat, miközben a hátad mögül mintha egyre növekvõ forrósságot éreznél.
+
+Ha a szellõ felé indulsz, lapozz a 295-re!
+Ha a forróság felé, lapozz a 215-re!
+
+=== 216 ===
+A szörnýeteg a föld alatt legyõzhetetlen ellenfél. Mágikus támadásaidat sorra háritja, testét pedig képtelen vagy komolýabban megsebezni. Lassan hátrálni kénýszerülsz, miközben a bestia folyamatosan támad. Aztán hirtelen előrelendül, s a következõ pillanatban a földön fekszél, s mindent elborit a sötétség. Kalandod véget ért.
+
+=== 217 ===
+Elönt a düh. Megfordulsz, és szinte kitéped az ajtót a helyéről, ahogy berontasz a fogadóba. A kötekedő fickó bizonyára számított rá, mert vigvorog.
+
+— Csak odakint! — mondja a kocsmáros, és a vendégek máris elindulnak az utcára, hogy végignézhessék az összecsapást. Ellenfeled magas, ruhája alatt tekintélyt parancsoló izmok rejtznek. Meghátrálni megsem lehet. Kétszer semmiképp. Körülöttetek jókora üres tér tátong, amikor összecsaptok.
+
+Kötekedő fickó: életerő 27, támadási képesség 18, védettsegi szint 14. A fickó 2-7 életerőpont veszteségét okoz a kardjával.
+
+Ha sikerült megölnöd a fickót, lapozz a 78-ra!
+Ha veszítettél az összecsapásban, lapozz a 143-ra!
+
+=== 218 ===
+Fogalmad sincs a választól. Dühödben a falra csapsz, s lass csodát, egy eddig láthatatlan ajtó rajzolódik ki előtted. Az ősi szervezet nyilván már nem úgy működik, mint annakidején, gondolod, és átlépszl az ajtón. Hirtelen ismét ott találod magad a kastély előtt, kezedben a csontkulccsal, árn a kapu zárva. Idekint már éjszaka van, az égbolton fényesen világít a Hold. Melyik kulcslyukba teszed a csontkulcsot?
+
+Ha a felső'be, lapozz a 61-re!
+Ha a középsőbe, lapozz a 107-re!
+Ha az alsóba, lapozz a 187-re!
+Ha dörömbölssel próbálkozol, lapozz a 283-ra!
+
+=== 219 ===
+Már csakhnem sikerült feljutnod, amikor egyikötök lába megbicsaklik, s a következő pillanatban visszacsúsztok. Az éles sziklasarabok felsebzik a lábadatzat (veszitesz 6 életerőpontot), a lovad pedig kis híján a lábát töri. Kénytelenek vagytok egy kis pihenőt tartani, bár az maris nyilványvaló a számodra, hogy az okos állat nem fog még egyszer nekivágni a kapaszkodónak. Kénytelenek vagytok visszamenni a sziklaszoros hoz.
+
+Lapozz a 178-ra!
+
+=== 220 ===
+A varázslat szinte szétfesziti az agyadat, s amikor végre kiszabadul belőle, a mágikus igék nyomban nekikezdének kifejteni a hatásukat. Ám nem egészen az történik, amit vártál. A szoba körvonalai elmosódnak, majd megváltoznak, s hamarosan egy mockos teremben találód magad, s az asszony helyett egy békaújú rém áll veled szemben, s egy bárdot emel a feje fölé. Ekkor rajön, hogy leleplezted, nyomban támadásba lendül.
+
+Békafejű rém: életerő 22, támadási képesség 15, védettségi szint 17. A szörnyeteg 2-7 életerőpont veszteséget okoz.
+
+Ha sikerült megölnöd a rémet, lapozz a 117-re!
+Ha veszítettél az összecsapásban, lapozz a 176-ra!
+
+=== 221 ===
+Tegnap függ tucatnyi barlang közül is választhattál, most azonban egyik sem kelleti magát. A megérzéseidre és a jó szerencséedre hagyatkozva mégis elindulsz keresni egyetel. Tegyél szerencseprébát!
+
+Ha sikerült, lapozz a 263-ra!
+Ha nem sikerült, lapozz a 152-re!
+
+=== 222 ===
+Már jó másfél órája magad mögött hagytad a tisztást, a kígyót és az egyszarvút, amikor a füves részzt sziklákkal borított terület váltja fel. Utadat hamarosan egy égbenyúló sziklafal álllja el, melyen csupán egy keskeny sziklaszoros vezet át.
+
+Ha elindulsz rajta, lapozz a 178-ra!
+Ha megpróbálsz más átjárót keresni, lapozz a 95-re!
+
+=== 223 ===
+A forróság felkelti a figyelmedet, s óvatosan arrafelé indulsz. Nem sokkal később megállsz egy fal előtt, mely szinte süt a túloldalt tomboló hőségtől. A falon hirtelen repedések futnak széet, ám hiába próbálsz menekülni, egyszerűen nincs időd. Izzó fém folyik át a réseken, aztán hirtelen megindul az áradat, s elborit.
+Kalandod véget ért.
+
+=== 224 ===
+Az északi utat választod. Dombok közé visz, s bízol benne, hogy onnan körbenézve megpillantasz egy alkalmas helyet, ahol a halászt meglelheted. Alig érsz be azonban a dombok közé, amikor két fiatal kentaur rohan veled szemben, szemmel láthatólag nagyon megremliltek valamitől.
+Kentaurok nem nagyon élnek a birodalomban, ezért a felbukkanásuk megdöbbent.
+
+Ha nem foglalkozol velük, lapozz az 56-ra!
+Ha előbük állsz, lapozz a 130-ra!
+The image appears to be a page from a gamebook or illustrated text, but the text at the top of the page is too faint and blurry to transcribe accurately. The page primarily features a detailed black and white sketch or engraving of two horses - one rearing up on its hind legs and another standing, appearing to be in an interaction or dance-like pose. The illustration is rendered in a classical style with careful attention to the anatomical details of the horses.
+
+Unfortunately, I cannot reliably transcribe the text portions as they are not legible enough in this image quality.
+
+=== 225 ===
+Felugrasz, éppen csak elkerülve egy, a falból kiröppenő tüskét. Csapádba futottál, de szerencsésen elkerülted. Innen­től kezdve még óvatosabb vagy, ám szerencsére nem vár több meglepetés. A csigalépcsőn egy katakombába jutottál. A folyosó egyenes, a falak mellett hordók állnak. Valahonnan a közelből tompa hortyogás hallatszik.
+
+Ha megkeresed, ki hortyog, lapozz az 51-re!
+Ha feltérképezed a katakombát, lapozz a 126-ra!
+
+=== 226 ===
+A hajnal már az utakon talál. Bár nem értéd, miért kellett a lovadtól megszabadulni, hiszen segítségével gyorsabban haladhatnál, hajnalban még is az első kereskedőnél megszabadultál tőle (15 aranyat kaptál érte), majd kapunyitáskor elhagytad a várost.
+
+Sietsz, hiszen ha feljön a nap, akkor jóval lassabban haladszmaiad a nagy melegben. Igyekszel hát kihaszná lni minden percet. Nem ismered túlságosan a vidéket, ezért nem túnik könnyű feladatnak a halász megtalálása. Még is, biztos vagy benne, hogy nem fogsz kudarcot vallani. Nem engedheted meg magadnak.
+
+A távolban, túl a szántófölde­ken mintha a fák között víztükör csillogna. Jó nyolc mérföldre lehet már Agranmistól.
+
+Ha letérsz az útról, s a víz felé indulsz, lapozz a 69-re!
+Ha továbbhasadz, lapozz a 154-re!
+
+=== 227 ===
+Hatalmas ütést mérsz az ajtóra. (Dobj harci dobást, mintha egy ellenféllel harcolnál! Ha a támadóeröd nagyobb, mint 30, akkor sikerült betörnöd az ajtót.)
+
+Ha sikerült betörni, lapozz a 250-re!
+Ha nem sikerült, lapozz a 180-ra!
+
+=== 228 ===
+Előhúzod a törödet, s néhány gyors mozdulattal kiszabadítod magad. Éppen idejében. A mennyzetről egy hatalmas pók ereszkedik alá a rágoit csatogtatva.
+
+Oriáspók: életerö 16, támadási képesség 15, védelti-ségi szint 10. Az oriáspók 1-6 életeröpont veszteségét okoz (valahányszor hatosi dob sebzésnek, akkor a támadási képességed 1 ponttal romlik).
+
+Ha sikerült megölnöd az oriáspókot, lapozz a 244-re!
+Ha veszítettél az összecsapásban, lapozz a 2-re!
+
+=== 229 ===
+Nem gondolkozol sokáig, egyszerűen átlépssz a Kapun, lovadat kötőfáken vezetye. A következő pillanatban elszabadul körülötted a pokol: négy szörnységes teremtmény csap le rád. Első döbbenetedben védekozni is képtelen vagy (veszítesz 14 életerőpontot), még szerencse, hogy a lények nem elég hatékonyak.
+
+Kisebb Démonok: életerő 28 (26, 31, 29 a másik három életereie), támadási képesség 22, védetsegi szent 25. A démonok különkülön 2-12 életerőpont veszteségét okoznak. Ne feledd, ők valamennyien támadhatnak rád egy körben, te azonban csupán egyikükre támadhastz vissza!
+
+Ha sikerült megölnöd a démonokat, lapozz a 151-re!
+Ha veszitettél az összecsapásban, lapozz a 173-ra!
+
+=== 230 ===
+A katakombáról hamarosan kidertül, hogy csupán egy hosszú folyosóból áll, melyből borospincék nyílnak jobbra és balra. Mindent végignézél, ám csupán az utolsó elágazásban találsz emlitésre méltót: a fal mellett egy jókora lądika pihen.
+
+Ha megnézed, mi van benne, lapozz a 211-re!
+Ha visszamész a csigalépcsőhöz, lapozz a 66-ra!
+
+=== 231 ===
+Nem akarsz harcölni. Az unikornis nem ok nélkül őrzi ennyire a kristályt, így inkább lemondasz róla. Van elég pénzed, hogy utad első szakaszán elboldogulj, utána meg majdcsak megleszel valahogy.
+
+Már éppen indulsz vissza a lovadhoz, amikor az egyszarvú halk, ám érthető hangon megszólal:
+
+– A kristály halált hozott volna rád... Ám lemondásoddal kiérdemelted, hogy a segítségedre legyek. Hamarosan egy furcsa helyhez érsz. Lépj bele bátran, majd után az előgazásnál válaszd a bal oldali utat, s ha a világ forogni kezd veled és megváltozik, utána egyenesen haladj előre!
+
+Megköszönöd az értékes tanácsot, majd felpattansz lovadra, hogy folytasd utadat Agrannis felé.
+
+Lapozz a 222-re!
+
+=== 232 ===
+A folyosó kicsivel később jobra kanyarodik, majd egy egyenes szakasz után ismét jobbra. Ezután sokáig egyenesen haladogolsz, s egy kereszteződéshez jutsz. Az út innen egyenesen, balra és jobbra egyaránt folytatódik.
+
+Ha balra még, lapozz a 194-re!
+Ha egyenesen, lapozz a 271-re!
+Ha jobbra, lapozz a 82-re!
+
+=== 233 ===
+Nem tudod a választ. Tanácstalanul nézel Karvaly-ra, reménykedve benne, hogy talán ad egy másik rejtvényt. A férfi megrázza a fejét, és sajnálkozva széttárja a karjait.
+
+– A Vihartizók közé csak a legkiválóbbak kerülhetnek – magyarázza. – Elbuktál. Talán majd egy másik alkalommal...
+
+Te persze tudod, hogy az sohasem fog eljönni.
+
+Kalandod véget ért.
+
+=== 234 ===
+Egy lecsapó bárdot látsz, miközben körülötted fodrózódni kezd a levegő, s hirtelen rádobbensz: a valóság egészen más, mint amit eddig hittél. Megpróbálsz felregyordülni, de a bárd így is súlyos sebet ejt rajtad (7 életerőpontot veszítesz).
+
+A szoba körvonalai elmosódnak, majd megváltoznak, s hamarosan egy mocskos teremben találod magad, és az asszony helyett egy békafejtű rém áll veled szemben, s egy bárdot emelve a feje fölé ismét támadásba lendül.
+
+Békafejtű rém: életerő 22, támadási képesség 15, védettsegi szint 17. A szörnyeteg 2-7 életerőpontot veszteséget okoz.
+
+Ha sikerült megölnöd a rémet, lapozz a 129-re!
+Ha veszítettél az összecsapásban, lapozz a 18-ra!
+
+=== 235 ===
+A Sárkányölő nevű fogadóban alig néhányan lézengének. Igaz, meglehetősen korán van még. Behúzódsz egy sarokba, ételt és italt rendelsz magadnak (1 arannyat vonj le magadtól), majd csendesen eszegetni kezdesz. Ahogy telik az idő, úgy lesznek egyre többen a fogadóban, s mire odakint besötétedik, szinte férni is alig lehet idebent.
+
+Türelmesen varsz, s nem sokkal éjfél előtt nyilik az ajtó, és egy feketelbe öltözött fickó lép be rajta. Senki nem foglalkozik vele különösebben, bár a fogadós udvariasan odaint neki – bizonyára törzsvéndég –, s mire a fickó az asztalához ér, már ott gözölög előtte valami forrő ittal. Ez aztán a gyors kiszolgálás!
+
+Kimeredt szemekkel figyeled, ám innen képtelen vagy megállapitani, van-e valami a tenyerébe tetováltva. Talán ha közelebb húzódnál hozzá.
+
+Ha közelebb megy, lapozz a 181-re!
+Ha türelmesen varsz a lehetőséget várva, lapozz a 3-ra!
+
+=== 236 ===
+Amikor kimondod a választ – levegő –, a halász elgedettenén bölint. Aztán a tekintete elmélyjltve válik, s hirtelen rádobbensz, hogy sokkalta öregebb lehet annál, mint amennyinek látszik.
+
+– Indulj eszakkeletre! – mondja mély, természetenesnek tűnő hangon. – Túl az erő és a hatalom próbáján, megmérettetsz, hogy mélte vagy-e. Ha igen, előnyered a kegyed, hogy belépj a Csarnokba, ahonnan csupán egyetlen Kiválasztott kerül be a Viharitzók Szövetsegébe.
+
+Megköszönöd a felvilágosítást, s a kapott utasitásoknak engedelmeskedve eszakkletet felé indulsz. Már egy óra is eltelt a halásszal való találkozásóod óta, amikor egy folyó felelt átvezető keskeny pallóhoz érsz. A folyó vize gyors és'haragos, ráadásul néha mintha hatalmas test kórvonalait látnád a felszín alatt elsuhanni.
+
+Ha átkelsz a pallón, lapozz a 48-ra!
+Ha átúszol a folyón, lapozz a 120-ra!
+Ha keresel egy másik hidat, lapozz a 270-re!
+
+=== 237 ===
+Amikor végre szilárd talajt érzel a lábad alatt, megkönnyebbülve felsohajtasz. Pihensz néhány másodpercet, majd az ajtóhoz setálsz. Lenyomod a kilincset, de az zárva van.
+
+Ha megpróbálod betörni, lapozz a 4-re!
+Ha van nálad valamilyen kulcs, lapozz a 96-ra!
+
+=== 238 ===
+Agrannis igazi nagyvåros. Hatalmas piacai fontos kereskedelmi központtá tették az elmúlt században alatt. A környezö vidékröl földművesek hordják ide áruját, hogy a kereskedelmi útvonalakon keresztül akár a birodalom túlsó részébe is eljussanak. A város persze vonzza a szerencsevadászokat is, még mindenféle más népséget. Ennek köszönhetöen az utcákon hömpölyög a tömeg, s a fogadók szinte mindig telt házzal üzemelnek. Persze a kereskedöknek sincs oka panaszra.
+
+Amikor belépszk a városba, az elsö gondolatod az: ekkora tömegben hogyan fogom megtalálni Karvalyt? Hiába kerültél a Királasztottak közé, ha már az elején kudarcot vallasz. Hiszen Karvalytól kell megtudnod a következö próba helyszínét.
+
+Ha a piacra indulsz, lapozz a 190-re!
+Ha találomra sétálsz a tömegben, lapozz a 80-ra!
+Ha valamelyik fogadóban próbálkozol, lapozz a 10-re!
+
+=== 239 ===
+A folyosó egy egyenes szakasz után jobbra kanyarodik, majd egy újabb egyenes rész után ismét jobbra fordul. Már csakhnem továbbmész, amikor a falon ősi rúnák pillantasz meg. Óvatosan lesöpröd róluk a port, és szakhamar egy versike válik láthatóvá, alatta egy újabb sitás: mond ki a szót, s a fal megnyílik!
+
+Mikor fekszel, ó akkor kél.
+Egyszer egész, máskor csak fél.
+Nincsen tüze, mégis lámás,
+a vándornak szinte áldás.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejtélyes jelkulcsok című részhez, és add össze a választ betűnek értékét. Ez a szám határozza meg, hova kell folytatásához lapoznod.
+Ha nem tudod a választ, lapozz a 218-ra!
+
+=== 240 ===
+Hamarosan rádöbbensz, hogy nem tudsz elmenekedni a szörnyeteg elől. Akkor inkább szembefordulsz vele, mintsem háturól letertisen, hiszen így esélyed sincs a túlélésre.
+
+Broydron: életerő 50, támadási képesség 15, védekezés szint 12. A szörnyeteg 2-12 életerőpont vesztésével kezd.
+
+Ha sikerült megölnöd a szörnyet, lapozz a 114-re!
+Ha veszítettél az összeccapásban, lapozz a 34-re!
+
+=== 241 ===
+A ládikaért nyúlsz, ám az hirtelen átváltozik, s egy karpántú alakul, mely levehetetlenül a kezedre bilincselődik (Támadőöröd maradandóan csökken 5 ponttal, a fegyvereid által okozott sebzés pedig 2 ponttal lesz kevesebb, mint eddig.)
+
+S ami még ennél is rosszabb: körülötted fodrozódni kezd a levegő, s hirtelen rádobbensz: a valóság egészen más, mint amit eddig hittél. A szoba körvonajai elmosódnak, majd megváltoznak, s hamarosan egy mocskos teremben találod magad, s az asszony helyett egy békafejtí rém áll veled szemben, s egy bárdot emelve a feje fölé ismét támadásba lendül.
+
+Békafejű rém: életerő 22, támadási képesség 15, védettségi szint 17. A szörnyeteg 2-7 életerőpontot veszteségét okoz.
+
+Ha sikerült megjölnöd a rémet, lapozz a 129-re!
+Ha veszítettél az összecsapásban, lapozz a 264-re!
+
+=== 242 ===
+Nem gondolkozol sokáig. A fickó nyilván nem ok nélkül vár. Szavak helyett a lerohanást választod. Fegyvert rantya rontasz rá.
+
+Idegen harcos: életerő 30, támadási képesség 25, védettsegi szint 22, varázserő 18. Az ellenfél 3-8 életérőpont vesztesget okoz a lándzsájával, de minden második körben a varázserőjét fogja használni ellened (amíg van rá pontja).
+
+Ha sikerült megölnöd az idegent, lapozz a 64-re!
+Ha vesztettél az összecspásban, lapozz a 192-re!
+
+=== 243 ===
+Brúdah gyors vágásokkal támad, s olyan cselekkel kápráztat el, melyekkel még sohasem találkoztál. Néha teret enged neked, s szinte kiszolgáltatja testét fegyveered számára. Àm amikor egy ilyen lehetőséggel meg próbálsz élni, elegánsan ellép előled, majd lecsap. Gyorsan és kíméletlen!. Kalandod véget ért.
+I can see this is a black and white illustration showing a figure on horseback viewed through what appears to be a cave or tunnel opening, with a snowy landscape and evergreen trees visible in the distance. However, I don't see any visible text to transcribe on this page. The image appears to be primarily an illustration or artwork without accompanying text content that would require transcription.
+
+If there is text present that I'm unable to read clearly due to image quality, please let me know and I can make another attempt.
+
+=== 244 ===
+Nehéz küzdelem volt, annyi szent, ám sikerült meg-
+növd a pókot. Gyorsan körbenézel. A falakon fáklyák
+világítanak, a háló mellett elosonva pedig egy előgazó
+folyosóra lelsz.
+
+Ha balra indulsz, lapozz a 24-re!
+Ha jobbra, lapozz a 257-re!
+
+=== 245 ===
+Mire odaérsz az uteába, nem látod a fickót sehol.
+Tegyél szerencseprábát!
+
+Ha sikerült, lapozz a 147-re!
+Ha nem sikerült, lapozz a 6-ra!
+
+=== 246 ===
+A félszerzet elgondolkozik, majd belekczd:
+
+Hol vizet önt,
+hol havat hint,
+hol jeget szól fejedre,
+s elszáll – pedig szármya sincsen –
+nyugatra, keletre.
+
+Ha tudod a választ, lapozz előre a Rejtvények és rejt-
+jelkulcsok című részhez, és add össze a válasz betűi-
+nek értékét. Ez a szám határozza meg, hova kell a
+folytatáshoz lapoznod.
+Ha nem tudod a választ, lapozz a 171-re!
+
+=== 247 ===
+Kétségbeesetten próbálod megőrizni az egyensúlyodat, azonban hiába. A következő pillanatban belecsúszansz a vízbe. Melletted egy hatalmas, barna hátu test úszik el, majd egy iszonyú pofa emelkedik ki a vízfelszín alól, és felád csap. Egy yhotl.
+
+Yhotl: életerő 26, támadási képesség 18, védettsgi szint 11. A yhotl 1-6 életerőpont veszteségét okoz a harapásával. (Amíg vízben vagy, a támadási képesség és a védettsegi szinted egyaránt 5-5 ponttal csökken, és az általad okozott veszteségből le kell vonnod 2 pontot!)
+
+Ha sikerült megölnöd a szörnyet, lapozz a 102-re!
+Ha veszítettél az összecsapásban, lapozz a 127-re!
+
+=== 248 ===
+...a lábad alól hirtelen elfogy a talaj. Ösztönösen megpróbálsz megkapaszkodni valamiben, ám újjaid már csak a levegőt markolják. Hosszú másodpercig tartó zuhanásod alatt van időd eltöprengeni azon, hogy talán mégsem ezt az utat kellett volna választanod.
+
+Kalandod véget ért.
+
+=== 249 ===
+Valahogy sikerül olyan sebet ejtened a szörnyön,
+hogy az vagy elmenekült vagy megdöglött. Minden-
+víz magával sodorja. Lihegve kapaszkodsz ki a partra,
+és hosszú ideig mozdul sincs erőd. Mire megszárad a
+ruhát, te is összeszeded magad annyira, hogy folytat-
+hasd az utadat.
+
+A hegyvidéken futó ösvény hamarosan egy máskat
+keresztez. Egyenesen (északkeletre), jobbra és balra
+folytathatod az utadat. Bal kéz felöl azonban mintha
+halk, női sikloltozást hallanál.
+
+Ha egyenesen még tovább, lapozz a 8-ra!
+Ha balra indulsz, lapozz a 193-ra!
+Ha jobbra, lapozz a 287-re!
+
+=== 250 ===
+Az ajtó mögött egy diszes termet látsz. Emberek sorakoznak a fal mellett, ám középen üres a tér. Pontosabban majdnem üres. Egy maszkos férfi áll veled szemben, ízmos karjaiban egy csatacssillagot pihentet. Ugyanakkor az alakját alig látható, mágikus aura veszi körül. Bizonyára a mágiahoz is ért.
+
+Amikor közelebb lepsz, meghajol, majd felkészül a harcra. Megérted, ez az utolsó próba, a végső összecsapás. Kettőtök között egyikőtök kerülhet be csupán a Viharűzök közé.
+
+Maszkos férfi: életerő 32, támadási képesség 20, védetsségi szint 18, varázserő 22. Az ellenfeled 2-7 életerőpont veszteséget okoz a csatacssillagával (bár kezdetben a varázserejét használva akar felülkerekedni).
+
+Ha győzelemre állsz, lapozz a 259-re!
+Ha veszítettél az összecsapásban, lapozz a 162-re!
+
+=== 251 ===
+Csuklyás kigyó: életerő 12, támadási képesség 19, védetsségi szint 11. A kigyó 1-3 életerőpont veszteséget okoz minden marásával (akkor dobj két hatoldalu kockával, s ha a dobás eredménye összesen 2, tehát két egyet dobtál, akkor azonnal meghalsz).
+
+Ha sikerült megölnöd a kigyót, lapozz a 198-ra!
+Ha veszítettél az összecsapásban, lapozz a 118-ra!
+
+=== 252 ===
+Egyenesen haladsz egy darabig, majd a folyosó bal­ra kanyarodik, és kisvártatva egy elágazásba futsz. In­nen balra, egyenesen és jobbra folytathatod az utadat.
+
+Ha balra megy, lapozz a 21-re!
+Ha egyenesen, lapozz a 169-re!
+Ha jobbra, lapozz a 210-re!
+
+=== 253 ===
+A szörnyeteg a föld alatt legyözhetetien ellenfél. Mágikus támadásaidat sorra háritja, testét pedig képtelen vagy komolyabban megsebezni. Lassan hátrálni kényszerülsz, miközben a bestia folyamatosan támad. Aztán hirtelen előrelendül, s a következő pillanatban a földön fekszel, s mindent elborit a sötétség. Kalandod véget ért.
+
+=== 254 ===
+- Egy olyan személyt keresek, akinek a tenyerében egy madarat ábrázóló tetováiás látható – mondod az első vásárlónak, akivel összéhoz a sors.
+
+A fickó rád néz, majd megvonja a vállát, s ott hagy. Ez nem jött be.
+
+Ha egy koldusnál próbálsz érdeklódni, lapozz a 86-ra!
+Ha egy kereskedönél, lapozz a 164-re!
+
+=== 255 ===
+Bár senki nem kérdezi töled a választ, úgy érzed, mégis jobb lenne, ha az eszedbe jutna. Am hiába töröd a fejed, nem jössz rá. Egy kicsivel később azonban be-ugrik, mivel hangos kukorékolás hallatszik. Hát persze, hogy a kakás a megjefjtés.
+
+Kimondani azonban nincs idöd. Valahonnan a sötétből egy hatalmas lény ront neked. Egy roc, döbbensz rá a pislákolo fáklyafényben.
+
+Roc: életerő 40, támadási képesség 19, védeltsségi szent 13. A roc 3-18 életerőpont veszteséget okoz.
+
+Ha sikerült megölnöd a szörnyet, lapozz a 215-re!
+Ha veszítettél az összecsapásban, lapozz a 153-ra!
+
+=== 256 ===
+Broydron: életerő 50, támadási képesség 15, védeltsségi szent 12. A szörnyeteg 2-12 életerőpont veszteséget okoz.
+
+Ha sikerült megölnöd a szörnyet, lapozz a 159-re!
+Ha veszítettél az összecsapásban, lapozz a 90-re!
+
+=== 257 ===
+A folyosó egy darabig egyenesen halad, majd balra kanyarodik. Hosszan gyalogolsz egyenesen, amikor egy oldaljárat csatlakozik be. Így innen egyenesen és balra folytathatod az utadat.
+
+Ha egyenesen még y tovább, lapozz a 94-re!
+Ha balra, lapozz a 35-re!
+
+=== 258 ===
+Túlságosan is bíztál önmagadban, s ez a vesztedet okozta. Ha egy kicsit jobban odafigyelszl, s fürgébnek bizonyulsz, akkor most nem fekidnél holtan a tisztá-son. A csuklyás kigyó mérge pillanatokon belül végez veled. Kalandod végét ért.
+
+=== 259 ===
+A maszkos fickó előtted térdepe1, tekintetében lemondás látszik. Ő már tudja, hogy veszített, s az életérő1 is lemondott.
+
+Ha megölöd, lapozz a 77-re!
+Ha megkegyelmeze1 neki, lapozz a 300-ra!
+
+=== 260 ===
+Visszatérsz a piacra. Körbejárod még egyszer az asztalokat, hátha tévedtél, és Karvaly nem ment el, csak észrevett, s le akart rázni. Ám minden hiába, elveszittetted a nyomait.
+
+Ha vásárolni akarsz, lapozz a 275-re!
+Ha találomra sétálsz az utcákon, lapozz a 80-ra!
+Ha valamelyik fogadóban próbálkozol Karvaly megtalálásával, lapozz a 10-re!
+
+=== 261 ===
+Egy ilyen apró teremtmény nem okozhat problémát. Bár kicsit megizzadsz, mire végzel vele, utána már senki sincs, aki megakadályozhatna abban, hogy átkutasd a ládát. Néhány terebélyes ruhadarabon kívül nem sok mindent találsz a ládában. Csupán egy aranykulcsot, ami az egyik ruha zsebéből pottyan ki. Minden esetre gyorsan magadhoz veszed.
+
+Ha visszamész a hőmérséhez, ki hortyog, lapozz a 37-re!
+(Amennyiben már találkoztál a hőmérséklettel, válaszd a másik lehetőséget!)
+Ha visszamész a csigalépcsohoz, lapozz a 66-ra!
+
+=== 262 ===
+A sziklafal ebből az irányból is mekerülhetetlennek tűnik, s hamarosan égbenyúló hegyek záriák el előtted a továbbjtást. Valahonnan a közelbőlvízesés hangjai hozza a szélt, mely annyira erős, hogy csak nehezen belesukkétülsz. Már azonban visszafordulsz, amikor egy rendkívül meredek hágó tetején sötét barlangnyílást pillantasz meg. A távolságot figyelembe véve a barlang bejáratán akár a lovad hátán is bejuthatnál.
+
+Ha megpróbálsz a barlangig feljutni, lapozz a 128-ra!
+Ha visszamész a sziklaszoroshozl lapozz a 13-ra!
+
+=== 263 ===
+Némi keresztélés után találsz egy alkalmasnak tűnő barlangot. Elég nagy, s odabentrôl búz szivárog kifelé. Fintorgya léposz be., s már éppen nekilátnál a lepakolásnak, amikor egy oldaljáratból egy jókora troll bukkan fel. Egy pillanatra döbbenten mered rád, majd a kezében tartott nyerş medvecombot elhajítva ordítva rád veti magát.
+
+Troll: életerô 30, támadási képesség 19, védettségi szint 13. A troll 4-9 életerôpont veszteségét okoz.
+
+Ha sikerült megölnöd a trollt, lapozz a 197-re!
+Ha veszítettél az összecsapásban, lapozz a 165-re!
+
+=== 264 ===
+A szörny kihasználja a meglepôdésedet, s mindjárt az elején súlyos sebet ejt rajtad. Rádásul tapasztalt harcos, s most, hogy varázseród egy részét az illúziója semlegesítésére pazaroltad, kiszolgáltatottá válsz. Teljesen a falhoz szorít, aztán lecsap, s nincs menekvés. Kalandod véget ért.
+
+=== 265 ===
+Az út könnyen járhatónak tűnik, ám meglehetősen kanyargós. Szerencsére elég széles ahhoz, hogy ne kelljen kantárszáron vezetned a lovadat, így gyors tempóval tudsz haladni. Hátasod hirtelen felveti a fejét, és idegesen felnyerit. Az állat ösztönei olyan veszélyre figyelmeztetnek, amely a te figyelmemedet elkerülte. A magasból egy wyvern csap le rád.
+
+Wyvern: életerő 40, támadási képesség 27, védettségi szint 30. A szörnyeteg összesen 4-24 életerőpont vesztését okoz szörnyű mancsaival és a harapásával.
+
+Ha sikerült megölnöd a wyvernt, lapozz a 170-re!
+Ha veszítettél az összecsapásban, lapozz a 67-re!
+
+=== 266 ===
+A sötétség nem rémiszt el. Meghyújtasz egy fáklyát, és a fegyveredet kézben tartva, minden eshetőségre felkészülve aláereszkedsz a lyukba. Szerencsére elég széles ahhoz, hogy ne okozzon problémát a lejutás. A sziklás talajban hamarosan egy féregjárat-szerű vágatra akadsz. A távolban mintha valami vörös fény csillógna, és ismét meglátod a fürledet az elhaló női síkoly. Óvatosan indulsz előre, majd mintegy huszönöt lépés után úgy veszed észre, a távoli fény mintha közeledn kezdett volna felé.
+
+Ha visszafordulsz, lapozz a 297-re!
+Ha továbbmész, lapozz a 148-ra!
+I can see this appears to be a page from a gamebook or illustrated text, but the image shows primarily a black and white illustration/engraving of what appears to be a dramatic sculptural or artistic face/head in profile. There is no visible text content on this page that I can reliably transcribe.
+
+If there is text present on this page, it may be too small, too blurry, or obscured by the halftone printing pattern to read accurately. Could you provide a higher resolution or clearer image if text transcription is needed?
+
+=== 267 ===
+A sárkány még sebestilten is túl veszélyes ellenfél. Igaz, az oroszlán csapásai és harapásai nyomán egész teste vérben úszik, ám arra még marad ereje, hogy el­borítson lángokkal, s miközben te a tűzzel küszködsz, egy karmos mancs fellépi a gyomrodat. Kalandod véget ért.
+
+=== 268 ===
+Hamarosan ismét ott állsz az elágazás előtt, ám ezúttal bal kéz felé folytatod az utadat. A sziklák nyomán magasodnak felad, csupán néha pillantod meg a tiszta égboltot. Aztán egyik pillanatról a másikra a világ megváltozik körülötted. A sziklafal forogni kezdd körülötted — vagy te magad forogsz? —, s amikor ismét megállapodsx, egészen máshol találod magad.
+
+A lábaid előtt egy családék tátong, mélyét el­kép­zelni sem tudod — ráadásul mintha sötét, indaszerű kinövések emelkednének lassan felfelé irányodban. Töléd jobbra egy lankásabb emelkedő tetején egy ősi kaput látsz, melynek belsejében mintha csillogó pókhálós feszülne. Bal kéz felöl teljes sötétség vár, ahonnan még neszek sem ékeznek felléd, melyek segítségédre lehetne­nek, hogy kitaláld: mi van arra.
+
+Ha belépsx a sötétségbe, lapozz a 32-re!
+Ha az ősi kapu felé indulsz, lapozz a 145-re!
+Ha a családék szélénél keresel valami továb­bjutási le­hetőséget, lapozz a 212-re!
+
+=== 269 ===
+Már a közepén jársz a szakadéknak, amikor elvéted a fogást, s a kezed lecsúszik a kötélről. Egy másodperre fejjel lefelé logsz – a dárdák ijesztően közelinek tűnnek –, ám a lábaddal tartod magad, s sikerül visszakapaszkodnod. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 111-re!
+Ha nem sikerült, lapozz a 71-re!
+
+=== 270 ===
+A palló nem tűnik túl bizalomgerjesztőnek, ezért inkább elindulsz, hogy keress egy hidat, vagy egy olyan gázlót, ahol nem túl magas a víz.
+
+Ha felfelé indulsz a folyó mellett, lapozz a 139-re!
+Ha lefelé, lapozz a 207-re!
+
+=== 271 ===
+Egy rövidegyenes szakasz után ismét elágazáshoz érsz. Innen balra és jobbra folytathatod az utadat.
+
+Ha balra megy, lapozz a 174-re!
+Ha jobbra, lapozz a 89-re!
+
+=== 272 ===
+Valahogy nem túnik túlságosan bizalomgerjesztőnek ez a szervezet. Ha sikerülne működésképtelenné tenned, akkor mások nem eshetnének kísértésbe erre az útra tevédnek.
+
+Ha elfordítod a karmos ujjakat, lapozz a 112-re!
+Ha megpróbálod szétverni a Kaput, lapozz a 206-ra!
+
+=== 273 ===
+– A kijáratot mutasd meg! – parancsold.
+A patkány tétován körbenéz, majd határozottan az egyik szemetdomb felé indul, s kaparni kezd a lábaiával. Segítesz neki; felretolod a nagyobb darabokat, s csakhamar egy csapóajtót pillantasz meg a földön.
+A patkány feladata végeztvél elmegy, a csontfurulya pedig használhatatlan, mert teljesem kettő van reépedve. Ám legalább megtaláltad a kijáratot.
+
+Lapozz a 119-re!
+
+=== 274 ===
+A küzdelem az országlán győzelmével végződik, igaz, a sárkány nem pusztul bele az összecsapásba, mert az utolsó pillanatban felemelkedik a levegőbe, és fájdalmas rikoltozásokat hallatva egy közeli hegy felé indul. Az országlán diadalmasan felbömböl, majd hirtelen átbucskázik a fején, s a következő pillanatban egy óriás termetű férfi áll előtted, hajat lófarokba viseli, egyébként azonban teljesen kopasz. Egyenesen felé néz, mintha tudná, hogy ott vagy, miközben gyúnyosan kiköp a földre.
+
+A sértés neked szól, nyomban tisztában vagy vele. Felemelkedsz hát, s megmutatod magad, erre kötelez a becsület.
+
+– Ne légy ostoba, kölykök! – kiáltja amaz. – Miért keresnéd a Viharúzók kegyeit, hiszen azok csupán nevet ségetességes kóklerek, akik látványos hókuszpókuszok mögé menekülnek. Jöjj, csatlakozz hozzám s hiveihez, s légy te is egyike Brúdah Országlajainak!
+
+Ha elfogadod a felhívást, lapozz a 183-ra!
+Ha nemet mondasz, lapozz a 41-re!
+
+[Below this is an illustration showing a figure leaning against a tree on the left side, with two other figures visible in the distance on the right]
+
+=== 275 ===
+A piacon az alábbi tárgyakat tudod megvenni (a
+mellettük feltüntetett áréit):
+
+Gyógyfű (4 életerőpontot gyógyít)                    6 arany
+Fegyverkenőcs (+1 ÉP sebzés)                         5 arany
+Hosszúkard (1-8 ÉP sebzés)                          15 arany
+Csatabárd (2-7 ÉP sebzés)                           12 arany
+Gyógyital (10 életerőpontot gyógyít)                15 arany
+
+Ha vásárolsz, akkor az összezget vond le a rendelkezésre álló aranyakból, a megvásárolt tárgyat pedig írd fel a Kalandlapodia!
+
+Lapozz a 214-re!
+
+=== 276 ===
+Mindent átnézel a félszerzet után kutatva. A katakombáról hamarosan kiderül, hogy csupán egy hosszú folyosóból áll, melyből borospincék nyílnak jobbra és balra. Az utolsó elágazásban a fal mellett egy jókora lá­dika pihen.
+
+Ha megnézed, mi van benne, lapozz a 211-re!
+Ha befejezed a félszerzet utáni kutatást, és visszamész
+a csigalépcsőhöz, lapozz a 66-ra!
+
+=== 277 ===
+Brúdah gyors vágásokkal támad, s olyan cselekkel kápráztat el, melyekkel még sohasem találkozott. Néha teret enged neked, s szinte kiszolgáltatja testét fegyvereid számára. Ám amikor megpróbálsz élni a lehetőséggel, ellép előled, majd lecsap. Kalandod véget ért.
+
+=== 278 ===
+Úgy túnik számodra, az egyszarvú a kígyó kincsét akarja elvenni, ezért az unikornist támadod.
+
+Unikornis: életerő 20, támadási képesség 17, védeltsségi szent 16. Az egyszarvú 3-8 életerőpont veszteségét okoz a szarvával.
+
+Ha sikerült megölnöd az egyszarvút, lapozz a 81-re!
+Ha veszítettél az összecsapásban, lapozz a 135-re!
+
+=== 279 ===
+Eszed ágában sincs bármit is elvenni az itt felhalmozott kincseknél, hiszen azokat nyilván a Viharúzőké. Te Kiválasztott vagy, aki szeretne a szervezetbe kerülni. Elhalaász a drágaságok mellett, s módszeresen megvizsgálod a falakat. Hamarosan felfedezel egy rejtett ajtót, mely szinte teljesen beleolvad a falba. Német ügyeskedés árán sikerül kinyitnod. A túloldalról hideg levegő csapja meg arcodat. A kincsekamaráról egy folyosóra jutsz, melynek végéből csigalépcsö vezet felfelé és lefelé.
+
+Ha felfelé indulsz, lapozz a 43-ra!
+Ha lefelé, lapozz a 113-ra!
+
+=== 280 ===
+A keleti utat választod, ám mintegy három órás gyaloglás után rádbbenszz, erre hiába is keresnéd a halászt. A sikföldön nagyon messzire látsz. Annyira kopár a vidék, hogy még szántóföldi sem jó, nincs sehol vízforrázó, vagy olyan helt, ami alkalmas lenne rá. Tavat vagy folyót is hiába keres tekinteted. Kénytelen vagy visszafordulni a keresztúthoz.
+Megszaporázod lépiedét, s hamarosan ott állsz ismét az elágázásnál.
+
+Ha nyugatra haladsz továb, lapozz a 97-re!
+Ha északra, lapozz a 224-re!
+
+=== 281 ===
+Az aranykulcs illik ugyan a zárba, ám képtelen vagy
+elfordítani. Mintha sorulna egy kicsit...
+
+Ha erőlteted, lapozz a 133-ra!
+Ha nem erőlteted, lapozz a 191-re!
+
+=== 282 ===
+Az ereszkedés legalább annyira igénybe veszi az ügyességedet és a szerencsédet, mint a kapaszkodó.
+Tegyél szerencseprábát (külön dobj magadnak, aztán
+külön a lovadnak is - mindkétszer a Te szerencsed
+csökken)!
+
+Ha sikerült, lapozz a 161-re!
+Ha nem sikerült, lapozz 88-ra!
+
+=== 283 ===
+Az udvariasság azt diktálja, hogy tudasd a kastély urával érkezésed. Jó erősen megvered a kaput, ám hiába varsz azután hosszú percekig, senki nem figyel fel rád. Még egyszer próbálkozol, ám most sincs eredmény. Kénytelen vagy más módszert találni a bejutásra. Melyikbe teszed a csontkulcsot?
+
+Ha a felsőbe, lapozz a 61-re!
+Ha a közepsoben, lapozz a 107-re!
+Ha az alsóba, lapozz a 187-re!
+
+=== 284 ===
+Folytatod a kutatást, s család hamar egy másik üvegcsét találsz, melynek az oldalán egy stilizált szívet látsz. Talán gyógyital, reménnykedsz.
+
+Ha felhajtod, lapozz a 63-ra!
+Ha a kijáratot keresed, lapozz a 288-ra!
+
+=== 285 ===
+Az idegen nem csupán a fegyverhez, hanem a mágiahoz is remérkül ért. Egyesen váltogatva a két támadási formát, sikerül téged komolyan megsebezni, majd egy mindent eldöntő roham után holtan zuhaszt a földre. Kalandod véget ért.
+I can see this is a page from what appears to be a gamebook with a sketch/illustration of a snow-covered tower or structure with birds flying in the sky above it. However, I'm unable to clearly read any text on this page due to the image quality and contrast. The text appears to be very faint or washed out in this reproduction.
+
+If you could provide a higher contrast or clearer version of this page, I would be happy to transcribe all the text exactly as it appears according to your rules.
+
+=== 286 ===
+Villámgyorsan elrohansz a lovadért, ám a tömeg nagy, ezért értékes perceket vesztítesz. Mire visszaérsz, a fickó sehol. Hiába próbálod felfedezni abban a mellékutcában, ahova befordult, sehol sem látod. Megtálaltad, s rögtön el is vesztíttetted. Most mit tegyél?
+
+Ha visszamész a piacra, lapozz a 260-ra!
+Ha találomra sétálsz az utcákon, lapozz a 80-ra!
+Ha valamelyik fogadóban próbálkozol Karvaly megtalálásával, lapozz a 10-re!
+
+=== 287 ===
+Jobb kéz felé indulsz. Az ösvény magasra nőtt gyomnövények között visz, ám annyit sikerül megállapítanod, hogy lassan elkanyarodik északkeletre felé. Nem sokkak később az ösvény belecsatlakozik abba, amelyiken északkeletre vezetett.
+
+Lapozz a 8-ra!
+
+=== 288 ===
+Mindent átnézél s nem feledkezel meg a padló átvizsgálásáról sem. Fáradozásodat siker koronázza, az egyik szemétdomb alatt egy csapóajtóra találsz.
+
+Lapozz a 119-re!
+
+=== 289 ===
+A hang meglehetősen baljósnak tűnik, így inkább visszafordulsz. A visszavonulás nem gyávaság, csupán bölcs megfontolás. Visszatérsz a barlangon keresztül a sziklafal túloldalára. Talán a sziklaszoros keresztül nagyobb szerencséd lesz, s nem áll senki az utadba. Visszafelé az út elég fárasztó, s szakhamar ott állsz a meredély tetején.
+
+Lapozz a 282-re!
+
+=== 290 ===
+Az oroszlán végül is győzedelmeskedett, gondolod magadban. S meglehet, a fickó nem mond ostobasá-got... Végül is mindegy, melyik szervezethez tartozol, csak az a fontos, tartozz valahova! Elmosolyodsz, és lelkesen bölintasz. Kalandjaid talán folytatódnak majd Brúdah Oroszlánjai között, de itt és most vé-get értek.
+
+=== 291 ===
+Ugyan végeztél az orgyilkossal, ám a Karvalyt elveszitetted a szemed előöl. Vagy talán ez is része volt a próbának? Szándékosan csalt volna erre a helyre, hogy megbizonyosodjon az alkalmassagodról? Ezt csupán ő tudná megmondani. Előbb vagy később, úgyis megtálálod. Most mindenesetre visszamész a lovadért.
+
+Ha visszatérsz a piacra, lapozz a 260-ra!
+Ha találomra sétálsz az utcákon, lapozz a 80-ra!
+Ha valamelyik fogadóban próbálkozol Karvaly megtálálásával, lapozz a 10-re!
+
+=== 292 ===
+Lassan bezárod magad mögött az ajtót, majd az aszszonyra emeled a tekinteted. Csak most döbbensz rá, hogy már milyen régóta nem mozdul. Oldalra lépszalra lépszálra lépszedz, hogy az arcába nézhess. Ekkor sem mozdul. S bár vonásai fiatalosar vonásai fiatalosak, mégis mozdulatlak. Varázslat!
+
+Ha szétnézel idebent, lapozz a 30-ra!
+Ha megpróbálod valamiképp semlegesíteni az aszszonyí körbevevő varázstatot, lapozz a 99-re!
+
+=== 293 ===
+Nem foglalkozol a fickóval, hanem nyomban neki-vágysz a hosszú kapaszkodónak, ahol csupán egyszer kell elvétened a lépést ahhoz, hogy alázuhanj a mélybe, s össezüzd magad a sziklákon.
+
+Meglepően gyorsan és könnyen jutsz fel a meredek úton, s nem sokára ott állsz az épület előtt. Hatalmas kőajtaján három kulcslyuk látható, melyek egymás alatt helyezkednek el. Méretre és külsőre valamennyi megegyezik. Melyikbe teszed a csontkulcsot?
+
+Ha a felőle, lapozz a 61-re!
+Ha a középsőbe, lapozz a 107-re!
+Ha az alsóba, lapozz a 187-re!
+Ha dörömbölésselprpróbálkozol, lapozz a 283-ra!
+
+=== 294 ===
+Nem rettensz meg a figyelmeztetõ jelek láttán. A villámok talán csupán azt jelzik, hogy a Kapu mûködõképes, Játadban-keltedben már hallottál olyan mágikus szerkezetekrõl, melyek képesek a vándort egyetlen szempillantás alatt eljuttatni egyik helyról a másikra. Ha szerencsed van, ez is a kapu is erre szolgál. Ha pedig tévedtél... nos, mindig kedvelted a kihívásokat.
+
+Ha átlépsz a Kapun, lapozz a 229-re!
+Ha megvizsgálod, lapozz a 116-ra!
+
+=== 295 ===
+Követed a kellemes légáramlatot, és nem sokkal késõbb egy mestersèges szakádékhoz érsz, melyen csupán egy vékony kötél vezetat. A szakádék aljában acéldárdák meredznek. A túloldalon egy ajtót látsz.
+
+Ha megpróbálsz átkelni a szakádékon, lapozz a 166-ra!
+Ha visszamész, megnézni, mi okozza a forrósàgot, lapozz a 223-ra!
+
+=== 296 ===
+Ilyen erõs ellenfelekkel eddig ritkán harcołtak, s sohsem voltak túlerõben. Talán szemtõl-szembe esélylyed vennéd fel a küzdelmet valamelyik démonnal, így négyes azonban túlságosan nagy falatnak bizonyulnak a számodra. Kalandod véget ért.
+
+=== 297 ===
+Balsajtelem vesz erőt rajtad, jobbnak látod, ha visszafordulsz. Sietős léptekkel kikapaszkodsz a járatból, miközben a hátad mögött egyre gyorsuló surrogást hallasz. Tegyél szerencsepróbát!
+
+Ha sikerült, lapozz a 156-ra!
+Ha nem sikerült, lapozz a 85-re!
+
+=== 298 ===
+A szerkezet alig hallható nyikorgással felnyitja a hordót, te pedig egy pocakos félszerzetét pillantasz meg, aki jótzüen alszik. Az övén egyetlen acélkulcs fütyeg. Nyilván költolgatta egy kicsit az idei termézt, mert mintha borságot éreznél a leheletén.
+
+Ha megpróbálod ellopni a kulcsot, lapozz a 31-re!
+Ha felébresztéd a félszerzetét, s elkéréd tőle a kulcsot, lapozz a 168-ra!
+
+=== 299 ===
+Unikornis: életerő 20, támadási képesség 17, védelmi szent 16. Az egyszarvú 3-8 életerőpont veszteségét okoz a szarvával.
+
+Ha sikerült megölnöd az egyszarvút, lapozz a 42-re!
+Ha veszitettél az összecsapásban, lapozz a 157-re!
+
+=== 300 ===
+Nem akarod megölni, hiszen nem soken múlt, hogy nem ő lett a győztes. Leengeded a fegyvered, és a jelenlévőkre pillantasz. Öromet látsz az arcókon kivirul-ni, majd egy idős asszony lép elő soraikból.
+
+– Kiválasztott! Az utolsó próbán, a Könyöruletesség Próbáján is megfeleleltél. Lépi ház közénk, s foglald el helyed a Viharúzók soraibanl
+
+Gratulálunk! Sikerrel teljesitettéd a próbákat, s immáron te is egyike vagy azon Kiválasztottaknak, akik a Viharúzók Rendjében a világ érdekében küzdesz a gonosz ellen.
+Létezik valahol a luz szervezet, melyet még növen emleget. Harcolnak vele magusok alkotják, s olyan guk közé új tagot, hogy az élők sorából.
+
+Már Kiválasztottnak hogy a Viharűzők közül pán lehetőséget kapni bát kevesen élik túl, s választott kerülethet be.
+
+A lehetőség ezütt...
+A kérdés csupán az: ki elbuksz, mint oly sok zadok során.
+
+FANTÁ JÁTÉK
+
+Légy...
+
+Ha sikerrel végig rejtélyekkel teli, kala nak kell lenned, me észben tartani, hogy koeckadobásoknál, ne vagy az erősebb...
+
+Ára:
+
+BARCOS
+KÉPZELET
+egendás Délvidéken egy
+indenki csak Viharúzók
+osok, legendás erővel bíró
+csak akkor fogadnak ma
+a valamelyikük eltávozik
+
+ak lenni is dicsőség, nem
+zé tartozni; pedig ők csu-
+ak a bizonyitásra. A pró-
+s mindössze egyetien Ki-
+a szervezetbe.
+
+al neked is megadatott.
+képes vagy elni vele, vagy
+kan már az elmúlt évszá-
+
+ASZTIKUS
+KKÖNYV!
+
+te a főhős!
+
+g akarod játszani ezt a
+ndos történetet, fortélyos
+egfontolni döntéseidet, s
+bár a szerencse segíthet a
+m biztos, hogy mindig te
+
+598,– Ft
+
+ISBN 963-9110-11-6
+9 789639 110113
