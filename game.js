@@ -712,46 +712,56 @@ function renderChoices(container, choices) {
 
 // ── PUZZLE / CIPHER MECHANIC ─────────────────────────────────────────────────
 
+// Hungarian alphabet order for the clickable grid
+const HU_ALPHA_ORDER = ['A','Á','B','C','D','E','É','F','G','H','I','Í','J','K','L','M','N','O','Ó','Ö','Ő','P','Q','R','S','T','U','Ú','Ü','Ű','V','W','X','Y','Z'];
+
 function renderPuzzleBlock(container, data) {
-  const key = rules?.puzzle_key || {};
+  const key        = rules?.puzzle_key || {};
   const failTarget = data.puzzle_fail_target ?? null;
+  const prevSection = state.history.length >= 2 ? state.history[state.history.length - 2] : null;
 
   const block = document.createElement('div');
   block.className = 'system-block puzzle-block';
   container.appendChild(block);
 
-  // Letter-value grid (sorted by value)
-  const sortedEntries = Object.entries(key).sort((a, b) => a[1] - b[1]);
-  const gridCells = sortedEntries.map(([l, v]) =>
-    `<span class="puzzle-key-cell"><span class="puzzle-key-letter">${l}</span><span class="puzzle-key-value">${v}</span></span>`
+  // Letter buttons sorted by Hungarian alphabet
+  const sortedLetters = HU_ALPHA_ORDER.filter(l => key[l] !== undefined);
+  const gridBtns = sortedLetters.map(l =>
+    `<button class="puzzle-key-btn" data-letter="${l}" data-value="${key[l]}">
+       <span class="puzzle-key-letter">${l}</span>
+       <span class="puzzle-key-value">${key[l]}</span>
+     </button>`
   ).join('');
 
   block.innerHTML = `
-    <div class="system-block-title">Rejtvénykulcs</div>
-    <div class="puzzle-key-grid">${gridCells}</div>
-    <div class="puzzle-input-row">
-      <input type="text" id="puzzle-answer" class="puzzle-input"
-             placeholder="Írd be a választ..." autocomplete="off" spellcheck="false" />
+    <div class="system-block-title">Rejtvénykulcs — kattints a betűkre</div>
+    <div class="puzzle-key-grid">${gridBtns}</div>
+    <div class="puzzle-entered-row">
+      <span class="puzzle-entered-label">Beírt betűk:</span>
+      <span id="puzzle-letters" class="puzzle-letters"></span>
+      <button id="puzzle-backspace" class="puzzle-backspace-btn" title="Törlés">⌫</button>
     </div>
-    <div class="puzzle-sum-row">Értéke: <span id="puzzle-sum" class="puzzle-sum-value">0</span></div>
+    <div class="puzzle-sum-row">Összeg: <span id="puzzle-sum" class="puzzle-sum-value">0</span></div>
     <div id="puzzle-nav-btns" class="puzzle-nav-btns"></div>
   `;
 
-  const input  = block.querySelector('#puzzle-answer');
-  const sumEl  = block.querySelector('#puzzle-sum');
-  const navDiv = block.querySelector('#puzzle-nav-btns');
+  const lettersEl = block.querySelector('#puzzle-letters');
+  const sumEl     = block.querySelector('#puzzle-sum');
+  const navDiv    = block.querySelector('#puzzle-nav-btns');
+  let entered = []; // [{letter, value}, ...]
 
-  function calcSum() {
-    let sum = 0;
-    for (const ch of input.value.toUpperCase()) sum += key[ch] || 0;
-    return sum;
-  }
+  function refresh() {
+    const sum = entered.reduce((s, e) => s + e.value, 0);
 
-  function updateNav() {
-    const sum = calcSum();
+    // Show entered letters with their values
+    lettersEl.innerHTML = entered.map(e =>
+      `<span class="puzzle-entered-chip">${e.letter}<sub>${e.value}</sub></span>`
+    ).join('');
+
     sumEl.textContent = sum;
     navDiv.innerHTML  = '';
 
+    // Navigate button — only when sum is a valid in-book section
     if (sum >= 1 && sum <= 300 && sections.sections[String(sum)]) {
       const btn = document.createElement('button');
       btn.className = 'choice-btn';
@@ -760,6 +770,7 @@ function renderPuzzleBlock(container, data) {
       navDiv.appendChild(btn);
     }
 
+    // Specific fail target if the section defines one
     if (failTarget) {
       const failBtn = document.createElement('button');
       failBtn.className = 'choice-btn puzzle-fail-btn';
@@ -767,10 +778,32 @@ function renderPuzzleBlock(container, data) {
       failBtn.addEventListener('click', () => loadSection(failTarget));
       navDiv.appendChild(failBtn);
     }
+
+    // Always-visible fallback: go back to previous section
+    if (prevSection) {
+      const backBtn = document.createElement('button');
+      backBtn.className = 'choice-btn puzzle-back-btn';
+      backBtn.innerHTML = `<span>Vissza az előző szakaszra</span><span class="choice-arrow">→ ${prevSection}</span>`;
+      backBtn.addEventListener('click', () => loadSection(prevSection));
+      navDiv.appendChild(backBtn);
+    }
   }
 
-  input.addEventListener('input', updateNav);
-  updateNav();
+  // Letter button clicks
+  block.querySelectorAll('.puzzle-key-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      entered.push({ letter: btn.dataset.letter, value: parseInt(btn.dataset.value) });
+      refresh();
+    });
+  });
+
+  // Backspace
+  block.querySelector('#puzzle-backspace').addEventListener('click', () => {
+    entered.pop();
+    refresh();
+  });
+
+  refresh();
 }
 
 // ── RETURN-TO-ORIGIN MECHANIC ─────────────────────────────────────────────────

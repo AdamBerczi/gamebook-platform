@@ -1167,7 +1167,7 @@
     },
     "65": {
       "id": 65,
-      "text": "Minden eshetőségre felkészülve elindulsz, hogy felfedezd a torony legalsó szintjét. A csigalépcső túlo\ndalán hamarosan egy hatalmas szoborra akadsz, me\negy démonszerű lényt ábrázol. A szobor két oldalár\negy-egy ajtó látható.\n\nHa megvizsgálod a szobrot, lapozz a 20-ra!\n\nHa belépsz a bal oldali ajtón, lapozz a 109-re! i\nHa a jobb oldali ajtót választod, lapozz a 203-ra! i\nHa folytatod a szint átfésülését, lapozz a 261-re!\n\nHalk csengettyűszó hallatszik, s a korong a következő másodpercben eltűnik a szemed elől. Folytathatod az utadat lefelé.\n\nTalán már ötszáznál is több lépcsőn ereszkedtél le,\namikor végre egy terembe torkollik a lejárat. A terem\nközepén nyitott végtelenül öreg férfi\nEkszik. Szemei csukva, arca békés. Halottnak tűnik.",
+      "text": "Minden eshetőségre felkészülve elindulsz, hogy felfedezd a torony legalsó szintjét. A csigalépcső túloldalán hamarosan egy hatalmas szoborra akadsz, mely egy démonszerű lényt ábrázol. A szobor két oldalán egy-egy ajtó látható.",
       "choices": [
         {
           "text": "Ha megvizsgálod a szobrot,",
