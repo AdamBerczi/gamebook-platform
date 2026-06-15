@@ -2,6 +2,7 @@
 books/*/pages/
 books/*/raw-text/
 books/*/cleaned-text/
+books/*/texts/
 
 # Source PDFs — copyright, do not distribute
 books/*/*.pdf
