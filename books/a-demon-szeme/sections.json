@@ -7161,20 +7161,31 @@
     },
     "274": {
       "id": 274,
-      "text": "273. 275.\n\nHamarosan ismét ott állsz a sötét lyuk előtt, melyet Az álmodat reggelig nem zavarja semmi sem. Kipi-\na rúnákkal díszített kövek mögött találtál. henten, felfrissiilve ébredsz (2 életpontot gyógyulsz).\nGyorsan megreggelizel (húzz le egy napnyi ételt\nHa benyúlsz a lyukon, lapozz a 192-re! és italt a Kalandlapodról!), majd töprengeni kezdesz,\nHa először egy fáklyát tolsz át, lapozz a 165-re! hogyan tovább.\nHa visszatérsz a szoborhoz, lapozz a 10-re!\n\nHa türelmesen várakozol tovább, lapozz a 139-re!\n\nHa inkább szétnézel a romok között, lapozz a 207-re!",
+      "text": "Villámgyorsan megkötözöd az idegent, aki ugyan felébred közben, de már képtelen megakadályozni tettedet. Ennek ellenére nem tűnik haragosnak.\n– Ügyes! – dicséri tettedet. – Megtaláltad az egyik módszert, melynek segítségével megakadályozhatod, hogy nyomban megöljenek... Tudod, egy gonosz teremtmény átkát viselem – magyarázza ezután. – Valamaha Choler Magiszter egyik tanítványa voltam, am összekülönböztüm egy xinaffal, s ő gondoskodott róla, hogy ne jelentsenek veszélyt réa nézve. Elvárázsolt, és ide börtönzött be. Csak akkor hagyhatom el a barlangot, ha vadászni indulok, de a mágia minduntalan visszakényszeríti erre a szörnyű helyre.",
       "choices": [
         {
-          "text": "Ha benyúlsz a lyukon,",
-          "target": 192
+          "text": "Ha szólni akarsz az idegennel,",
+          "target": 251
         },
         {
-          "text": "Ha először egy fáklyát tolsz át,",
-          "target": 165
+          "text": "Ha a xinaf nevéről érdeklődsz,",
+          "target": 161
         },
         {
-          "text": "Ha visszatérsz a szoborhoz,",
-          "target": 10
-        },
+          "text": "Ha nem foglalkozol az idegennel,",
+          "target": 56
+        }
+      ],
+      "enemies": [],
+      "is_ending": false,
+      "has_combat": false,
+      "has_luck_test": false,
+      "events": []
+    },
+    "275": {
+      "id": 275,
+      "text": "Az álmodat reggelig nem zavarja semmi sem. Kipihenten, felfrissülve ébredsz (2 életerőpontot gyógyultál). Gyorsan megreggelizel (húzz le egy napnyi ételt és italt a Kalandlapodról!), majd töprengeni kezdesz, hogyan tovább.",
+      "choices": [
         {
           "text": "Ha türelmesen várakozol tovább,",
           "target": 139
@@ -7182,6 +7193,10 @@
         {
           "text": "Ha inkább szétnézel a romok között,",
           "target": 207
+        },
+        {
+          "text": "Ha megpróbálsz olyasvalakit keresni, aki a környéken él,",
+          "target": 294
         }
       ],
       "enemies": [],
@@ -7190,38 +7205,24 @@
       "has_luck_test": false,
       "events": [
         {
-          "kind": "REST",
-          "restores": [
-            "eletero"
-          ],
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
           "amount": 2,
           "timing": "on_enter",
-          "reason": "sleep until morning"
+          "reason": "jól aludtál – 2 HP gyógyult"
         },
         {
           "kind": "ITEM_LOSE",
           "items": [
-            "étel és ital"
+            {
+              "name": "Étel és ital",
+              "quantity": 1
+            }
           ],
           "timing": "on_enter",
-          "reason": "breakfast consumption"
+          "reason": "reggeli fogyasztása"
         }
       ]
-    },
-    "275": {
-      "id": 275,
-      "text": "Ha megpróbálsz olyasvalakit keresni, aki a környéken\nél, lapozz a 294-re!",
-      "choices": [
-        {
-          "text": "él,",
-          "target": 294
-        }
-      ],
-      "enemies": [],
-      "is_ending": false,
-      "has_combat": false,
-      "has_luck_test": false,
-      "events": []
     },
     "276": {
       "id": 276,

@@ -508,6 +508,19 @@ function removeItemByName(name) {
   renderStats();
 }
 
+function consumeItemQuantity(name, qty) {
+  const item = state.character.inventory.find(i => i.name === name);
+  if (!item) return;
+  item.qty = Math.max(0, item.qty - qty);
+  showItemToast(`${name} −${qty}`, false);
+  if (item.qty <= 0) {
+    revertItemStatBonus(item);
+    state.character.inventory = state.character.inventory.filter(i => i.name !== name);
+  }
+  renderInventory();
+  renderStats();
+}
+
 // ── SECTION LOADING ───────────────────────────────────────────────────────────
 
 function loadSection(id) {
@@ -573,7 +586,10 @@ function applyEvents(sectionData, timing) {
     } else if (ev.kind === 'ITEM_GAIN' && (ev.timing || 'on_enter') === timing) {
       for (const item of (ev.items || [])) addItemToInventory(item);
     } else if (ev.kind === 'ITEM_LOSE' && (ev.timing || 'on_enter') === timing) {
-      for (const name of (ev.items || [])) removeItemByName(name);
+      for (const entry of (ev.items || [])) {
+        if (typeof entry === 'string') removeItemByName(entry);
+        else consumeItemQuantity(entry.name, entry.quantity ?? 1);
+      }
     } else if (ev.kind === 'GOLD_CHANGE' && (ev.timing || 'on_enter') === timing) {
       if (ev.amount < 0) deductGold(-ev.amount);
       else {
