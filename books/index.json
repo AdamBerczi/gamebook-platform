@@ -25,6 +25,19 @@
       "sections": "/books/a-demon-szeme/sections.json",
       "rules": "/books/a-demon-szeme/rules.json",
       "description": "Egy hatalmas erejű ereklyét kell megszerezned: A Démon Szemét. Kalandod Salynsandar városától egy elhagyatott toronyig vezet, ahol veszélyes szörnyetek és rejtélyek várnak."
+    },
+    {
+      "id": "viharuzok",
+      "title": "Viharűzők",
+      "author": "David H. Levinhood",
+      "year": 1999,
+      "series": "Harcos Képzelet",
+      "volume": 24,
+      "cover": "/books/viharuzok/images/cover.png",
+      "images": "/books/viharuzok/images",
+      "sections": "/books/viharuzok/sections.json",
+      "rules": "/books/viharuzok/rules.json",
+      "description": "A viharok nyomában járva egy ősrégi titok nyomára bukkanasz. Kalandod során rejtélyes rejtvényeket kell megoldanod, amelyek megfejtése új utakat nyit meg előtted."
     }
   ]
 }
