@@ -6,8 +6,8 @@
     "reachable": 119,
     "unreachable": 181,
     "unexpected_dead_ends": 3,
-    "combat_missing_stats": 42,
-    "sections_with_issues": 198
+    "combat_missing_stats": 17,
+    "sections_with_issues": 186
   },
   "issue_index": {
     "unreachable": [
@@ -200,47 +200,22 @@
     ],
     "combat_missing_enemy_stats": [
       11,
-      12,
-      22,
       33,
-      41,
       50,
-      56,
-      57,
       61,
       63,
-      65,
-      70,
-      84,
-      85,
       87,
-      93,
       98,
       107,
       112,
-      120,
-      147,
-      160,
       177,
       196,
       202,
       203,
-      211,
-      217,
       219,
       228,
-      229,
-      234,
-      240,
-      242,
-      250,
-      251,
-      255,
-      256,
       263,
-      275,
-      278,
-      299
+      275
     ],
     "all_sections_with_issues": {
       "2": [
@@ -263,8 +238,7 @@
         "combat_missing_enemy_stats"
       ],
       "12": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "14": [
         "unreachable"
@@ -283,9 +257,6 @@
       ],
       "21": [
         "unreachable"
-      ],
-      "22": [
-        "combat_missing_enemy_stats"
       ],
       "23": [
         "unreachable"
@@ -326,8 +297,7 @@
         "unreachable"
       ],
       "41": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "43": [
         "unreachable"
@@ -360,12 +330,8 @@
       "55": [
         "unreachable"
       ],
-      "56": [
-        "combat_missing_enemy_stats"
-      ],
       "57": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "60": [
         "unreachable"
@@ -379,17 +345,13 @@
         "combat_missing_enemy_stats"
       ],
       "65": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "66": [
         "unreachable"
       ],
       "68": [
         "unreachable"
-      ],
-      "70": [
-        "combat_missing_enemy_stats"
       ],
       "71": [
         "unreachable"
@@ -414,12 +376,10 @@
         "unreachable"
       ],
       "84": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "85": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "87": [
         "unreachable",
@@ -432,8 +392,7 @@
         "unreachable"
       ],
       "93": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "94": [
         "unreachable"
@@ -490,8 +449,7 @@
         "unreachable"
       ],
       "120": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "121": [
         "unreachable"
@@ -541,9 +499,6 @@
       "146": [
         "unreachable"
       ],
-      "147": [
-        "combat_missing_enemy_stats"
-      ],
       "148": [
         "unreachable"
       ],
@@ -566,8 +521,7 @@
         "unreachable"
       ],
       "160": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "162": [
         "unreachable"
@@ -671,8 +625,7 @@
         "unreachable"
       ],
       "211": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "213": [
         "unreachable"
@@ -682,9 +635,6 @@
       ],
       "216": [
         "unreachable"
-      ],
-      "217": [
-        "combat_missing_enemy_stats"
       ],
       "218": [
         "unreachable"
@@ -711,9 +661,6 @@
         "unreachable",
         "combat_missing_enemy_stats"
       ],
-      "229": [
-        "combat_missing_enemy_stats"
-      ],
       "230": [
         "unreachable"
       ],
@@ -721,8 +668,7 @@
         "unreachable"
       ],
       "234": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "236": [
         "unreachable",
@@ -734,14 +680,8 @@
       "239": [
         "unreachable"
       ],
-      "240": [
-        "combat_missing_enemy_stats"
-      ],
       "241": [
         "unreachable"
-      ],
-      "242": [
-        "combat_missing_enemy_stats"
       ],
       "243": [
         "unreachable"
@@ -759,11 +699,7 @@
         "unreachable"
       ],
       "250": [
-        "unreachable",
-        "combat_missing_enemy_stats"
-      ],
-      "251": [
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "252": [
         "unreachable"
@@ -772,11 +708,7 @@
         "unreachable"
       ],
       "255": [
-        "unreachable",
-        "combat_missing_enemy_stats"
-      ],
-      "256": [
-        "combat_missing_enemy_stats"
+        "unreachable"
       ],
       "257": [
         "unreachable"
@@ -824,9 +756,6 @@
       "277": [
         "unreachable"
       ],
-      "278": [
-        "combat_missing_enemy_stats"
-      ],
       "279": [
         "unreachable"
       ],
@@ -863,9 +792,6 @@
       ],
       "298": [
         "unreachable"
-      ],
-      "299": [
-        "combat_missing_enemy_stats"
       ],
       "300": [
         "unreachable",
@@ -1063,8 +989,14 @@
         205
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Sárkány",
+          "hp": 22,
+          "damage": "2-7"
+        }
       ]
     },
     "13": {
@@ -1215,8 +1147,13 @@
       "incoming": [
         181
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Kötekedő fickó",
+          "hp": 27,
+          "damage": "2-7"
+        }
       ]
     },
     "23": {
@@ -1372,7 +1309,7 @@
     },
     "32": {
       "flags": [
-        "normal"
+        "luck_test"
       ],
       "reachable": true,
       "choices": [
@@ -1524,8 +1461,14 @@
         274
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Brúdah",
+          "hp": 27,
+          "damage": "4-9"
+        }
       ]
     },
     "42": {
@@ -1758,8 +1701,13 @@
       "incoming": [
         224
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Broydron",
+          "hp": 50,
+          "damage": "2-12"
+        }
       ]
     },
     "57": {
@@ -1775,8 +1723,14 @@
         144
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Brúdah",
+          "hp": 27,
+          "damage": "4-9"
+        }
       ]
     },
     "58": {
@@ -1903,8 +1857,14 @@
         205
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Oroszlán",
+          "hp": 40,
+          "damage": "6-16"
+        }
       ]
     },
     "66": {
@@ -1982,8 +1942,13 @@
       "incoming": [
         141
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Csuklyás kigyó",
+          "hp": 12,
+          "damage": "1-3"
+        }
       ]
     },
     "71": {
@@ -2196,8 +2161,14 @@
         30
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Békafejű rém",
+          "hp": 22,
+          "damage": null
+        }
       ]
     },
     "85": {
@@ -2213,8 +2184,14 @@
         297
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Lillieth",
+          "hp": 12,
+          "damage": "1-3"
+        }
       ]
     },
     "86": {
@@ -2336,8 +2313,14 @@
         187
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Óriáspók",
+          "hp": 16,
+          "damage": "1-6"
+        }
       ]
     },
     "94": {
@@ -2643,7 +2626,7 @@
     },
     "113": {
       "flags": [
-        "normal"
+        "luck_test"
       ],
       "reachable": false,
       "choices": [
@@ -2733,7 +2716,7 @@
     },
     "119": {
       "flags": [
-        "normal"
+        "luck_test"
       ],
       "reachable": false,
       "choices": [
@@ -2761,8 +2744,14 @@
         236
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Yhotl",
+          "hp": 26,
+          "damage": null
+        }
       ]
     },
     "121": {
@@ -3171,8 +3160,13 @@
       "incoming": [
         245
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Orgyilkos",
+          "hp": 24,
+          "damage": "2-4"
+        }
       ]
     },
     "148": {
@@ -3370,8 +3364,14 @@
         44
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Békafejű rém",
+          "hp": 22,
+          "damage": null
+        }
       ]
     },
     "161": {
@@ -4160,8 +4160,14 @@
         276
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Ördémon",
+          "hp": 10,
+          "damage": "1-3"
+        }
       ]
     },
     "212": {
@@ -4254,8 +4260,13 @@
       "incoming": [
         73
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Kötekedő fickó",
+          "hp": 27,
+          "damage": "2-7"
+        }
       ]
     },
     "218": {
@@ -4320,7 +4331,7 @@
     },
     "221": {
       "flags": [
-        "normal"
+        "luck_test"
       ],
       "reachable": false,
       "choices": [
@@ -4460,8 +4471,13 @@
       "incoming": [
         294
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Kisebb Démonok",
+          "hp": 28,
+          "damage": "2-12"
+        }
       ]
     },
     "230": {
@@ -4538,8 +4554,14 @@
         44
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Békafejtű rém",
+          "hp": 22,
+          "damage": "2-7"
+        }
       ]
     },
     "235": {
@@ -4634,8 +4656,13 @@
       "incoming": [
         16
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Broydron",
+          "hp": 50,
+          "damage": "2-12"
+        }
       ]
     },
     "241": {
@@ -4674,8 +4701,13 @@
         100,
         150
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Idegen harcos",
+          "hp": 30,
+          "damage": null
+        }
       ]
     },
     "243": {
@@ -4709,7 +4741,7 @@
     },
     "245": {
       "flags": [
-        "normal"
+        "luck_test"
       ],
       "reachable": true,
       "choices": [
@@ -4802,8 +4834,14 @@
         227
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Maszkos férfi",
+          "hp": 32,
+          "damage": "2-7"
+        }
       ]
     },
     "251": {
@@ -4818,8 +4856,13 @@
       "incoming": [
         19
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Csuklyás kigyó",
+          "hp": 12,
+          "damage": "1-3"
+        }
       ]
     },
     "252": {
@@ -4882,8 +4925,14 @@
         196
       ],
       "issues": [
-        "unreachable",
-        "combat_missing_enemy_stats"
+        "unreachable"
+      ],
+      "enemies": [
+        {
+          "name": "Roc",
+          "hp": 40,
+          "damage": "3-18"
+        }
       ]
     },
     "256": {
@@ -4898,8 +4947,13 @@
       "incoming": [
         130
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Broydron",
+          "hp": 50,
+          "damage": "2-12"
+        }
       ]
     },
     "257": {
@@ -5247,8 +5301,13 @@
       "incoming": [
         141
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Unikornis",
+          "hp": 20,
+          "damage": "3-8"
+        }
       ]
     },
     "279": {
@@ -5303,7 +5362,7 @@
     },
     "282": {
       "flags": [
-        "normal"
+        "luck_test"
       ],
       "reachable": true,
       "choices": [
@@ -5593,8 +5652,13 @@
       "incoming": [
         50
       ],
-      "issues": [
-        "combat_missing_enemy_stats"
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Unikornis",
+          "hp": 20,
+          "damage": "3-8"
+        }
       ]
     },
     "300": {

@@ -206,7 +206,15 @@
           "target": 267
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Sárkány",
+          "eletero": 22,
+          "tamadasi_kepesseg": 23,
+          "vedettsegi_szint": 22,
+          "damage": "2-7"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -373,7 +381,15 @@
           "target": 103
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Kötekedő fickó",
+          "eletero": 27,
+          "tamadasi_kepesseg": 18,
+          "vedettsegi_szint": 14,
+          "damage": "2-7"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -552,7 +568,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "33": {
       "id": 33,
@@ -709,7 +725,15 @@
           "target": 277
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Brúdah",
+          "eletero": 27,
+          "tamadasi_kepesseg": 23,
+          "vedettsegi_szint": 18,
+          "damage": "4-9"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -964,7 +988,15 @@
           "target": 90
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Broydron",
+          "eletero": 50,
+          "tamadasi_kepesseg": 15,
+          "vedettsegi_szint": 12,
+          "damage": "2-12"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -982,7 +1014,15 @@
           "target": 243
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Brúdah",
+          "eletero": 27,
+          "tamadasi_kepesseg": 23,
+          "vedettsegi_szint": 18,
+          "damage": "4-9"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -1117,7 +1157,15 @@
           "target": 201
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Oroszlán",
+          "eletero": 40,
+          "tamadasi_kepesseg": 23,
+          "vedettsegi_szint": 18,
+          "damage": "6-16"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -1198,7 +1246,15 @@
           "target": 258
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Csuklyás kigyó",
+          "eletero": 12,
+          "tamadasi_kepesseg": 19,
+          "vedettsegi_szint": 11,
+          "damage": "1-3"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -1423,7 +1479,15 @@
           "target": 264
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Békafejű rém",
+          "eletero": 22,
+          "tamadasi_kepesseg": 15,
+          "vedettsegi_szint": 17,
+          "damage": null
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -1441,7 +1505,15 @@
           "target": 253
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Lillieth",
+          "eletero": 12,
+          "tamadasi_kepesseg": 20,
+          "vedettsegi_szint": 12,
+          "damage": "1-3"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -1576,7 +1648,15 @@
           "target": 38
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Óriáspók",
+          "eletero": 16,
+          "tamadasi_kepesseg": 15,
+          "vedettsegi_szint": 10,
+          "damage": "1-6"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -1930,7 +2010,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "114": {
       "id": 114,
@@ -2025,7 +2105,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "120": {
       "id": 120,
@@ -2040,7 +2120,15 @@
           "target": 53
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Yhotl",
+          "eletero": 26,
+          "tamadasi_kepesseg": 18,
+          "vedettsegi_szint": 11,
+          "damage": null
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -2486,7 +2574,15 @@
           "target": 46
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Orgyilkos",
+          "eletero": 24,
+          "tamadasi_kepesseg": 19,
+          "vedettsegi_szint": 15,
+          "damage": "2-4"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -2697,7 +2793,15 @@
           "target": 264
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Békafejű rém",
+          "eletero": 22,
+          "tamadasi_kepesseg": 15,
+          "vedettsegi_szint": 17,
+          "damage": null
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -3501,7 +3605,15 @@
           "target": 49
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Ördémon",
+          "eletero": 10,
+          "tamadasi_kepesseg": 25,
+          "vedettsegi_szint": 30,
+          "damage": "1-3"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -3604,7 +3716,15 @@
           "target": 143
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Kötekedő fickó",
+          "eletero": 27,
+          "tamadasi_kepesseg": 18,
+          "vedettsegi_szint": 14,
+          "damage": "2-7"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -3691,7 +3811,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "222": {
       "id": 222,
@@ -3823,7 +3943,15 @@
           "target": 173
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Kisebb Démonok",
+          "eletero": 28,
+          "tamadasi_kepesseg": 22,
+          "vedettsegi_szint": 25,
+          "damage": "2-12"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -3904,7 +4032,15 @@
           "target": 18
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Békafejtű rém",
+          "eletero": 22,
+          "tamadasi_kepesseg": 15,
+          "vedettsegi_szint": 17,
+          "damage": "2-7"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -4016,7 +4152,15 @@
           "target": 34
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Broydron",
+          "eletero": 50,
+          "tamadasi_kepesseg": 15,
+          "vedettsegi_szint": 12,
+          "damage": "2-12"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -4060,7 +4204,15 @@
           "target": 192
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Idegen harcos",
+          "eletero": 30,
+          "tamadasi_kepesseg": 25,
+          "vedettsegi_szint": 22,
+          "damage": null
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -4108,7 +4260,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "246": {
       "id": 246,
@@ -4194,7 +4346,15 @@
           "target": 162
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Maszkos férfi",
+          "eletero": 32,
+          "tamadasi_kepesseg": 20,
+          "vedettsegi_szint": 18,
+          "damage": "2-7"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -4212,7 +4372,15 @@
           "target": 118
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Csuklyás kigyó",
+          "eletero": 12,
+          "tamadasi_kepesseg": 19,
+          "vedettsegi_szint": 11,
+          "damage": "1-3"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -4279,7 +4447,15 @@
           "target": 153
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Roc",
+          "eletero": 40,
+          "tamadasi_kepesseg": 19,
+          "vedettsegi_szint": 13,
+          "damage": "3-18"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -4297,7 +4473,15 @@
           "target": 90
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Broydron",
+          "eletero": 50,
+          "tamadasi_kepesseg": 15,
+          "vedettsegi_szint": 12,
+          "damage": "2-12"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -4665,7 +4849,15 @@
           "target": 135
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Unikornis",
+          "eletero": 20,
+          "tamadasi_kepesseg": 17,
+          "vedettsegi_szint": 16,
+          "damage": "3-8"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false
@@ -4740,7 +4932,7 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": true
     },
     "283": {
       "id": 283,
@@ -5024,7 +5216,15 @@
           "target": 157
         }
       ],
-      "enemies": [],
+      "enemies": [
+        {
+          "name": "Unikornis",
+          "eletero": 20,
+          "tamadasi_kepesseg": 17,
+          "vedettsegi_szint": 16,
+          "damage": "3-8"
+        }
+      ],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": false

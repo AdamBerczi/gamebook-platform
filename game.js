@@ -733,7 +733,11 @@ function renderSection(data) {
   if (data.has_luck_test && data.choices.length >= 2) { renderLuckTestBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_puzzle) { renderPuzzleBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_return) { renderReturnBlock(choicesEl); wrap.classList.add('visible'); return; }
-  if (data.has_shop) renderShopBlock(choicesEl, data);
+  const shopEvent = (data.events || []).find(e => e.kind === 'SHOP');
+  if (data.has_shop || shopEvent) {
+    const shopData = shopEvent ? { items: shopEvent.items } : data.shop;
+    renderShopBlock(choicesEl, { ...data, shop: shopData, has_shop: true });
+  }
   renderChoices(choicesEl, data.choices);
   wrap.classList.add('visible');
 }

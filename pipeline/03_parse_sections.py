@@ -194,20 +194,21 @@ def extract_enemies(text: str) -> list[dict]:
     enemies = []
 
     # Flexible pattern: name (anything ending in colon) + three stats
+    # Handles OCR variants: "védetsségi/védeusegi szini", "sérülési képesség", etc.
     stat_pattern = re.compile(
-        r"([^\n:]{3,40}):\s*"           # Name (anything up to colon, 3–40 chars)
-        r"él[e]?ter[oő]\s+(\d+)\s*,\s*" # életerő N
-        r"tám[aá]d[aá]si\s+képesség\s+(\d+)\s*,\s*"  # támadási képesség N
-        r"véd[e]?ttsé?g[ie]?\s+\w+\s+(\d+)",          # védettségi szint N (flexible)
+        r"([^\n:]{3,40}):\s*"
+        r"él[e]?ter[oő]\s+(\d+)\s*(?:\([^)]+\))?\s*,\s*"  # életerő N (optional parenthetical)
+        r"(?:tám[aá]d[aá]si|s[eé]r[uü]l[eé]si|csata)\s+k[eé]pess[eé]g\s+(\d+)\s*,\s*"
+        r"véd\w{0,10}\s+\w{2,6}\s+(\d+)",
         re.IGNORECASE
     )
 
     # Also match the "tulajdonságokkal: életerő..." pattern
     alt_pattern = re.compile(
         r"([^\n,]{3,40}),\s*az\s+al[aá]bbi\s+tulajdons[aá]gokkal:\s*"
-        r"él[e]?ter[oő]\s+(\d+)\s*,\s*"
-        r"tám[aá]d[aá]si\s+képesség\s+(\d+)\s*,\s*"
-        r"véd[e]?ttsé?g[ie]?\s+\w+\s+(\d+)",
+        r"él[e]?ter[oő]\s+(\d+)\s*(?:\([^)]+\))?\s*,\s*"
+        r"(?:tám[aá]d[aá]si|s[eé]r[uü]l[eé]si|csata)\s+k[eé]pess[eé]g\s+(\d+)\s*,\s*"
+        r"véd\w{0,10}\s+\w{2,6}\s+(\d+)",
         re.IGNORECASE
     )
 

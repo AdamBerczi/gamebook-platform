@@ -67,6 +67,15 @@ GOLD_CHANGE — automatic gold gain or loss:
 REST — sleeping or resting that restores stats:
 {"kind":"REST","restores":["varazserő","szerencse"]}
 
+SHOP — a market or merchant where the player can buy items:
+{"kind":"SHOP","items":[{"item":"Gyógyfű","price":6,"note":"4 életerőpontot gyógyít"},{"item":"Kard","price":15}]}
+- item: exact item name as it appears in the text
+- price: cost in arany (gold coins)
+- note: optional description or effect text
+- quantity: optional (default 1)
+- unique: true if each item can only be purchased once (default false)
+- Only include items explicitly listed with a price in the text.
+
 ─── RULES ──────────────────────────────────────────────────────────────────────
 
 1. ONLY include AUTOMATIC effects, not choice-dependent ones.

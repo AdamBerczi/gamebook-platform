@@ -35,7 +35,11 @@
 
     "luck_test_phrases": [
       "Szerencsepróbát",
-      "Szerencse próbát"
+      "Szerencse próbát",
+      "szerencsepróbát",
+      "szerencse próbát",
+      "szerencsepr",
+      "tegyél szerencs"
     ],
 
     "section_header_regex": "^(\\d+)\\.$"
