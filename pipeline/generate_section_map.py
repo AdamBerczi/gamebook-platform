@@ -64,6 +64,7 @@ def classify(sid, s):
     is_ending = s.get("is_ending", False) or any(p in text for p in DEATH_PHRASES)
     has_puzzle = s.get("has_puzzle", False)
     has_return = s.get("has_return", False)
+    has_chase  = s.get("has_chase",  False)
 
     flags = []
     if s.get("has_combat"):   flags.append("combat")
@@ -71,6 +72,7 @@ def classify(sid, s):
     if s.get("has_shop"):     flags.append("shop")
     if has_puzzle:            flags.append("puzzle")
     if has_return:            flags.append("return")
+    if has_chase:             flags.append("chase")
     if is_ending:             flags.append("ending")
     if not flags:             flags.append("normal")
 
@@ -80,8 +82,8 @@ def classify(sid, s):
         issues.append("unreachable")
     if not incoming[sid] and sid != 1:
         issues.append("no_incoming_edges")
-    # puzzle and return sections navigate dynamically — they're not dead ends
-    if not targets and not is_ending and not has_puzzle and not has_return:
+    # puzzle, return, and chase sections navigate dynamically — they're not dead ends
+    if not targets and not is_ending and not has_puzzle and not has_return and not has_chase:
         issues.append("unexpected_dead_end")
     if not text.strip():
         issues.append("empty_text")

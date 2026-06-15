@@ -729,6 +729,7 @@ function renderSection(data) {
   if (data.is_ending) { renderEnding(choicesEl); wrap.classList.add('visible'); return; }
   if (data.enemies?.length > 0) { renderCombatBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_dice_check && data.choices.length >= 2) { renderDiceCheckBlock(choicesEl, data); wrap.classList.add('visible'); return; }
+  if (data.has_chase    && data.choices.length >= 2) { renderChaseBlock(choicesEl, data);    wrap.classList.add('visible'); return; }
   if (data.has_luck_test && data.choices.length >= 2) { renderLuckTestBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_puzzle) { renderPuzzleBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_return) { renderReturnBlock(choicesEl); wrap.classList.add('visible'); return; }
@@ -992,6 +993,47 @@ function renderLuckTestBlock(container, data) {
       const target = passed ? data.choices[0] : data.choices[1];
       if (target) loadSection(target.target);
       else renderChoices(container, data.choices);
+    }, 1800);
+  });
+}
+
+// ── CHASE / ESCAPE MECHANIC ───────────────────────────────────────────────────
+
+function renderChaseBlock(container, data) {
+  const chase      = data.chase || {};
+  const pRolls     = chase.player_rolls || 10;
+  const eRolls     = chase.enemy_rolls  || 10;
+  const sides      = chase.dice_sides   || 6;
+  const enemyLabel = chase.enemy_label  || 'ellenfél';
+
+  const block = document.createElement('div');
+  block.className = 'system-block luck-block';
+  block.innerHTML = `
+    <div class="system-block-title">Menekülési próba</div>
+    ${chase.description ? `<div class="system-block-desc">${chase.description}</div>` : ''}
+    <button class="btn-roll" id="btn-chase-roll">Dobás (${pRolls}d${sides})</button>
+    <div class="roll-result hidden" id="chase-result"></div>
+  `;
+  container.appendChild(block);
+
+  block.querySelector('#btn-chase-roll').addEventListener('click', () => {
+    let playerTotal = 0, enemyTotal = 0;
+    for (let i = 0; i < pRolls; i++) playerTotal += Math.floor(Math.random() * sides) + 1;
+    for (let i = 0; i < eRolls; i++) enemyTotal  += Math.floor(Math.random() * sides) + 1;
+    const escaped = enemyTotal <= playerTotal;
+
+    const resultEl = block.querySelector('#chase-result');
+    resultEl.classList.remove('hidden');
+    resultEl.innerHTML = `
+      <span class="roll-dice">${playerTotal}</span>
+      <span class="roll-vs">vs ${enemyTotal} (${enemyLabel})</span>
+      <span class="roll-outcome ${escaped ? 'success' : 'failure'}">${escaped ? 'Sikerült elmenekülnöd!' : 'Utolért!'}</span>
+    `;
+    block.querySelector('#btn-chase-roll').disabled = true;
+    setTimeout(() => {
+      // choices[0] = caught, choices[1] = escaped
+      const target = escaped ? data.choices[1] : data.choices[0];
+      if (target) loadSection(target.target);
     }, 1800);
   });
 }
