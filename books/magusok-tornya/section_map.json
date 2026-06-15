@@ -1,0 +1,4449 @@
+{
+  "book_id": "magusok-tornya",
+  "generated": "2026-06-15",
+  "summary": {
+    "total_sections": 300,
+    "reachable": 300,
+    "unreachable": 0,
+    "unexpected_dead_ends": 2,
+    "combat_missing_stats": 8,
+    "sections_with_issues": 9
+  },
+  "issue_index": {
+    "unreachable": [],
+    "unexpected_dead_ends": [
+      246,
+      300
+    ],
+    "combat_missing_enemy_stats": [
+      1,
+      63,
+      103,
+      114,
+      147,
+      267,
+      281,
+      300
+    ],
+    "all_sections_with_issues": {
+      "1": [
+        "combat_missing_enemy_stats"
+      ],
+      "63": [
+        "combat_missing_enemy_stats"
+      ],
+      "103": [
+        "combat_missing_enemy_stats"
+      ],
+      "114": [
+        "combat_missing_enemy_stats"
+      ],
+      "147": [
+        "combat_missing_enemy_stats"
+      ],
+      "246": [
+        "unexpected_dead_end"
+      ],
+      "267": [
+        "combat_missing_enemy_stats"
+      ],
+      "281": [
+        "combat_missing_enemy_stats"
+      ],
+      "300": [
+        "unexpected_dead_end",
+        "combat_missing_enemy_stats"
+      ]
+    }
+  },
+  "sections": {
+    "1": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        121,
+        45
+      ],
+      "incoming": [],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "2": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        174,
+        102
+      ],
+      "incoming": [
+        31
+      ],
+      "issues": []
+    },
+    "3": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        268
+      ],
+      "issues": []
+    },
+    "4": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        233,
+        181
+      ],
+      "incoming": [
+        39
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Világcsavargó",
+          "hp": 26,
+          "damage": "2-7"
+        },
+        {
+          "name": "Kereskedő",
+          "hp": 22,
+          "damage": "2-4"
+        }
+      ]
+    },
+    "5": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        236,
+        51,
+        47
+      ],
+      "incoming": [
+        138
+      ],
+      "issues": []
+    },
+    "6": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        35
+      ],
+      "incoming": [
+        148
+      ],
+      "issues": []
+    },
+    "7": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        274,
+        145
+      ],
+      "incoming": [
+        89
+      ],
+      "issues": []
+    },
+    "8": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        39,
+        261
+      ],
+      "incoming": [
+        64,
+        77,
+        157,
+        209,
+        225
+      ],
+      "issues": []
+    },
+    "9": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        293,
+        198
+      ],
+      "incoming": [
+        38,
+        108,
+        254
+      ],
+      "issues": []
+    },
+    "10": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        113
+      ],
+      "incoming": [
+        128,
+        168,
+        224,
+        240,
+        249,
+        277
+      ],
+      "issues": []
+    },
+    "11": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        86
+      ],
+      "issues": []
+    },
+    "12": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        235,
+        132
+      ],
+      "incoming": [
+        99
+      ],
+      "issues": []
+    },
+    "13": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        213,
+        98
+      ],
+      "incoming": [
+        188
+      ],
+      "issues": []
+    },
+    "14": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        91
+      ],
+      "incoming": [
+        265
+      ],
+      "issues": []
+    },
+    "15": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        258
+      ],
+      "issues": []
+    },
+    "16": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        294,
+        228
+      ],
+      "incoming": [
+        235
+      ],
+      "issues": []
+    },
+    "17": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        279,
+        215
+      ],
+      "incoming": [
+        145
+      ],
+      "issues": []
+    },
+    "18": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        221,
+        107
+      ],
+      "incoming": [
+        121
+      ],
+      "issues": []
+    },
+    "19": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        68,
+        103,
+        133,
+        189,
+        201,
+        251
+      ],
+      "issues": []
+    },
+    "20": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        269,
+        31
+      ],
+      "incoming": [
+        194
+      ],
+      "issues": []
+    },
+    "21": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        135
+      ],
+      "incoming": [
+        173
+      ],
+      "issues": []
+    },
+    "22": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        124,
+        199
+      ],
+      "incoming": [
+        281
+      ],
+      "issues": []
+    },
+    "23": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        239
+      ],
+      "incoming": [
+        197
+      ],
+      "issues": []
+    },
+    "24": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        66
+      ],
+      "issues": []
+    },
+    "25": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        185,
+        109
+      ],
+      "incoming": [
+        57,
+        210,
+        295
+      ],
+      "issues": []
+    },
+    "26": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        246,
+        33
+      ],
+      "incoming": [
+        127
+      ],
+      "issues": []
+    },
+    "27": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        141,
+        86
+      ],
+      "incoming": [
+        218
+      ],
+      "issues": []
+    },
+    "28": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        156,
+        32
+      ],
+      "incoming": [
+        79,
+        215
+      ],
+      "issues": []
+    },
+    "29": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        212
+      ],
+      "incoming": [
+        115
+      ],
+      "issues": []
+    },
+    "30": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        159,
+        243
+      ],
+      "incoming": [
+        109,
+        234
+      ],
+      "issues": []
+    },
+    "31": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        2,
+        259,
+        80
+      ],
+      "incoming": [
+        20,
+        118,
+        169,
+        192,
+        269
+      ],
+      "issues": []
+    },
+    "32": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        123,
+        101
+      ],
+      "incoming": [
+        28,
+        279
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Kordangyik",
+          "hp": 18,
+          "damage": null
+        }
+      ]
+    },
+    "33": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        246,
+        42,
+        143
+      ],
+      "incoming": [
+        26,
+        155
+      ],
+      "issues": []
+    },
+    "34": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        40
+      ],
+      "issues": []
+    },
+    "35": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        183
+      ],
+      "incoming": [
+        6,
+        69,
+        162
+      ],
+      "issues": []
+    },
+    "36": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        127,
+        271
+      ],
+      "incoming": [
+        67
+      ],
+      "issues": []
+    },
+    "37": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        152,
+        268
+      ],
+      "incoming": [
+        120
+      ],
+      "issues": []
+    },
+    "38": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        9,
+        65
+      ],
+      "incoming": [
+        187
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Sziklaóriás",
+          "hp": 45,
+          "damage": "2-12"
+        }
+      ]
+    },
+    "39": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        88,
+        216,
+        247,
+        4
+      ],
+      "incoming": [
+        8,
+        186
+      ],
+      "issues": []
+    },
+    "40": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        205,
+        34
+      ],
+      "incoming": [
+        62,
+        230,
+        232
+      ],
+      "issues": []
+    },
+    "41": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        193,
+        262
+      ],
+      "issues": []
+    },
+    "42": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67,
+        238
+      ],
+      "incoming": [
+        33,
+        97
+      ],
+      "issues": []
+    },
+    "43": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        202,
+        95
+      ],
+      "incoming": [
+        132,
+        228,
+        291
+      ],
+      "issues": []
+    },
+    "44": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        117,
+        260,
+        70
+      ],
+      "incoming": [
+        156
+      ],
+      "issues": []
+    },
+    "45": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        278
+      ],
+      "incoming": [
+        1
+      ],
+      "issues": []
+    },
+    "46": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        152
+      ],
+      "issues": []
+    },
+    "47": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        161
+      ],
+      "incoming": [
+        5,
+        154,
+        285
+      ],
+      "issues": []
+    },
+    "48": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        137
+      ],
+      "issues": []
+    },
+    "49": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        277,
+        249,
+        128
+      ],
+      "incoming": [
+        182
+      ],
+      "issues": []
+    },
+    "50": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        256,
+        111
+      ],
+      "incoming": [
+        273
+      ],
+      "issues": []
+    },
+    "51": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        149,
+        282,
+        196
+      ],
+      "incoming": [
+        5,
+        154
+      ],
+      "issues": []
+    },
+    "52": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        276
+      ],
+      "issues": []
+    },
+    "53": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        273,
+        160
+      ],
+      "incoming": [
+        221
+      ],
+      "issues": []
+    },
+    "54": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        179
+      ],
+      "issues": []
+    },
+    "55": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        158,
+        265,
+        220
+      ],
+      "incoming": [
+        113,
+        229,
+        242
+      ],
+      "issues": []
+    },
+    "56": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        174,
+        288
+      ],
+      "incoming": [
+        80,
+        259
+      ],
+      "issues": []
+    },
+    "57": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        25
+      ],
+      "incoming": [
+        138
+      ],
+      "issues": []
+    },
+    "58": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        115,
+        190
+      ],
+      "incoming": [
+        206
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Farkas",
+          "hp": 17,
+          "damage": "1-6"
+        }
+      ]
+    },
+    "59": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        182,
+        224
+      ],
+      "incoming": [
+        165
+      ],
+      "issues": []
+    },
+    "60": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        242
+      ],
+      "incoming": [
+        267
+      ],
+      "issues": []
+    },
+    "61": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        231
+      ],
+      "incoming": [
+        73
+      ],
+      "issues": []
+    },
+    "62": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        175,
+        40
+      ],
+      "incoming": [
+        210
+      ],
+      "issues": []
+    },
+    "63": {
+      "flags": [
+        "combat",
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        159
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "64": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        157,
+        8
+      ],
+      "incoming": [
+        225
+      ],
+      "issues": []
+    },
+    "65": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        38,
+        254
+      ],
+      "issues": []
+    },
+    "66": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        229,
+        24
+      ],
+      "incoming": [
+        151,
+        172
+      ],
+      "issues": []
+    },
+    "67": {
+      "flags": [
+        "shop"
+      ],
+      "reachable": true,
+      "choices": [
+        36,
+        165
+      ],
+      "incoming": [
+        42,
+        98,
+        124,
+        131,
+        146,
+        204,
+        213,
+        216,
+        233,
+        238,
+        247,
+        284,
+        289
+      ],
+      "issues": []
+    },
+    "68": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        210,
+        19
+      ],
+      "incoming": [
+        149
+      ],
+      "issues": []
+    },
+    "69": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        35
+      ],
+      "incoming": [
+        278
+      ],
+      "issues": []
+    },
+    "70": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        44,
+        117,
+        286
+      ],
+      "issues": []
+    },
+    "71": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        143
+      ],
+      "issues": []
+    },
+    "72": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        274,
+        145
+      ],
+      "incoming": [
+        274
+      ],
+      "issues": []
+    },
+    "73": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        61,
+        139
+      ],
+      "incoming": [
+        148
+      ],
+      "issues": []
+    },
+    "74": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        169,
+        114,
+        222
+      ],
+      "incoming": [
+        150
+      ],
+      "issues": []
+    },
+    "75": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        297,
+        193
+      ],
+      "incoming": [
+        220
+      ],
+      "issues": []
+    },
+    "76": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        285,
+        161
+      ],
+      "incoming": [
+        203
+      ],
+      "issues": []
+    },
+    "77": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        225,
+        8
+      ],
+      "incoming": [
+        256
+      ],
+      "issues": []
+    },
+    "78": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        237
+      ],
+      "issues": []
+    },
+    "79": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        200,
+        28
+      ],
+      "incoming": [
+        89
+      ],
+      "issues": []
+    },
+    "80": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        164,
+        56
+      ],
+      "incoming": [
+        31
+      ],
+      "issues": []
+    },
+    "81": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        179
+      ],
+      "issues": []
+    },
+    "82": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        161
+      ],
+      "issues": []
+    },
+    "83": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        188,
+        134
+      ],
+      "incoming": [
+        164
+      ],
+      "issues": []
+    },
+    "84": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        153
+      ],
+      "incoming": [
+        266
+      ],
+      "issues": []
+    },
+    "85": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        207
+      ],
+      "issues": []
+    },
+    "86": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        275,
+        11
+      ],
+      "incoming": [
+        27
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Városházi darabont",
+          "hp": 15,
+          "damage": "3-8"
+        },
+        {
+          "name": "Városházi darabont",
+          "hp": 15,
+          "damage": "3-8"
+        }
+      ]
+    },
+    "87": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        175
+      ],
+      "issues": []
+    },
+    "88": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        213,
+        247
+      ],
+      "incoming": [
+        39
+      ],
+      "issues": []
+    },
+    "89": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        7,
+        79
+      ],
+      "incoming": [
+        142
+      ],
+      "issues": []
+    },
+    "90": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        188,
+        134
+      ],
+      "incoming": [
+        174,
+        263,
+        288
+      ],
+      "issues": []
+    },
+    "91": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        285,
+        161
+      ],
+      "incoming": [
+        14
+      ],
+      "issues": []
+    },
+    "92": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        296,
+        174,
+        102
+      ],
+      "incoming": [
+        2,
+        104,
+        110,
+        125,
+        132,
+        134,
+        141,
+        174,
+        194,
+        219,
+        228,
+        244,
+        253,
+        261,
+        263,
+        291,
+        294,
+        299
+      ],
+      "issues": []
+    },
+    "93": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        161
+      ],
+      "incoming": [
+        205
+      ],
+      "issues": []
+    },
+    "94": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        252,
+        184,
+        136
+      ],
+      "incoming": [
+        119,
+        176,
+        257
+      ],
+      "issues": []
+    },
+    "95": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        299,
+        171
+      ],
+      "incoming": [
+        43
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Fekete leples támadó",
+          "hp": 16,
+          "damage": "1-3"
+        }
+      ]
+    },
+    "96": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        158
+      ],
+      "issues": []
+    },
+    "97": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        131,
+        42,
+        143
+      ],
+      "incoming": [
+        177,
+        208
+      ],
+      "issues": []
+    },
+    "98": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        271,
+        67
+      ],
+      "incoming": [
+        13,
+        188
+      ],
+      "issues": []
+    },
+    "99": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        12,
+        197
+      ],
+      "incoming": [
+        250
+      ],
+      "issues": []
+    },
+    "100": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        281
+      ],
+      "issues": []
+    },
+    "101": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        32
+      ],
+      "issues": []
+    },
+    "102": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        218,
+        150
+      ],
+      "incoming": [
+        2,
+        92,
+        104,
+        134,
+        174,
+        194,
+        219,
+        244,
+        253,
+        261,
+        263
+      ],
+      "issues": []
+    },
+    "103": {
+      "flags": [
+        "combat",
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        210,
+        19
+      ],
+      "incoming": [
+        196
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "104": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        174,
+        102
+      ],
+      "incoming": [
+        178
+      ],
+      "issues": []
+    },
+    "105": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        243
+      ],
+      "issues": []
+    },
+    "106": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        284,
+        146
+      ],
+      "incoming": [
+        188
+      ],
+      "issues": []
+    },
+    "107": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        287
+      ],
+      "incoming": [
+        18
+      ],
+      "issues": []
+    },
+    "108": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        9,
+        130
+      ],
+      "incoming": [
+        267
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Sziklaóriás",
+          "hp": 45,
+          "damage": "2-12"
+        }
+      ]
+    },
+    "109": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        264,
+        142,
+        30
+      ],
+      "incoming": [
+        25
+      ],
+      "issues": []
+    },
+    "110": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        296,
+        174
+      ],
+      "incoming": [
+        275
+      ],
+      "issues": []
+    },
+    "111": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        219
+      ],
+      "incoming": [
+        50
+      ],
+      "issues": []
+    },
+    "112": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        214
+      ],
+      "incoming": [
+        252
+      ],
+      "issues": []
+    },
+    "113": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        55,
+        298
+      ],
+      "incoming": [
+        10,
+        147
+      ],
+      "issues": []
+    },
+    "114": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        218
+      ],
+      "incoming": [
+        74,
+        150,
+        222
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "115": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        29,
+        266
+      ],
+      "incoming": [
+        58
+      ],
+      "issues": []
+    },
+    "116": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        195
+      ],
+      "issues": []
+    },
+    "117": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        260,
+        70,
+        270,
+        191
+      ],
+      "incoming": [
+        44
+      ],
+      "issues": []
+    },
+    "118": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        269,
+        31,
+        194
+      ],
+      "incoming": [
+        253
+      ],
+      "issues": []
+    },
+    "119": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        94
+      ],
+      "incoming": [
+        211
+      ],
+      "issues": []
+    },
+    "120": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        37,
+        195
+      ],
+      "incoming": [
+        265
+      ],
+      "issues": []
+    },
+    "121": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        18,
+        250
+      ],
+      "incoming": [
+        1
+      ],
+      "issues": []
+    },
+    "122": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        143
+      ],
+      "issues": []
+    },
+    "123": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        156
+      ],
+      "incoming": [
+        32
+      ],
+      "issues": []
+    },
+    "124": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67
+      ],
+      "incoming": [
+        22
+      ],
+      "issues": []
+    },
+    "125": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92
+      ],
+      "incoming": [
+        294
+      ],
+      "issues": []
+    },
+    "126": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        232,
+        154
+      ],
+      "incoming": [
+        285
+      ],
+      "issues": []
+    },
+    "127": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        155,
+        26
+      ],
+      "incoming": [
+        36,
+        247
+      ],
+      "issues": []
+    },
+    "128": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        10,
+        147
+      ],
+      "incoming": [
+        49
+      ],
+      "issues": []
+    },
+    "129": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        283
+      ],
+      "incoming": [
+        231
+      ],
+      "issues": []
+    },
+    "130": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        108
+      ],
+      "issues": []
+    },
+    "131": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67,
+        238
+      ],
+      "incoming": [
+        97,
+        177,
+        208
+      ],
+      "issues": []
+    },
+    "132": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        296,
+        43
+      ],
+      "incoming": [
+        12
+      ],
+      "issues": []
+    },
+    "133": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        210,
+        19
+      ],
+      "incoming": [
+        282
+      ],
+      "issues": []
+    },
+    "134": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        174,
+        102
+      ],
+      "incoming": [
+        83,
+        90
+      ],
+      "issues": []
+    },
+    "135": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        21
+      ],
+      "issues": []
+    },
+    "136": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        254,
+        187
+      ],
+      "incoming": [
+        94,
+        184
+      ],
+      "issues": []
+    },
+    "137": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        253,
+        48
+      ],
+      "incoming": [
+        296
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Kötekedő fickó",
+          "hp": 18,
+          "damage": "2-4"
+        }
+      ]
+    },
+    "138": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        57,
+        5
+      ],
+      "incoming": [
+        230
+      ],
+      "issues": []
+    },
+    "139": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        73
+      ],
+      "issues": []
+    },
+    "140": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        207
+      ],
+      "issues": []
+    },
+    "141": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        296,
+        174
+      ],
+      "incoming": [
+        27
+      ],
+      "issues": []
+    },
+    "142": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        89
+      ],
+      "incoming": [
+        109,
+        234
+      ],
+      "issues": []
+    },
+    "143": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        122,
+        71
+      ],
+      "incoming": [
+        33,
+        97
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Öreg varázsló",
+          "hp": 21,
+          "damage": null
+        }
+      ]
+    },
+    "144": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        273
+      ],
+      "issues": []
+    },
+    "145": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        17,
+        245
+      ],
+      "incoming": [
+        7,
+        72,
+        200
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Sötét vhárdaur",
+          "hp": 23,
+          "damage": "2-7"
+        }
+      ]
+    },
+    "146": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67,
+        238
+      ],
+      "incoming": [
+        106
+      ],
+      "issues": []
+    },
+    "147": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        113
+      ],
+      "incoming": [
+        128,
+        168,
+        224,
+        240,
+        249,
+        277
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "148": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        6,
+        280,
+        73
+      ],
+      "incoming": [
+        278
+      ],
+      "issues": []
+    },
+    "149": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        68,
+        201
+      ],
+      "incoming": [
+        51
+      ],
+      "issues": []
+    },
+    "150": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        114,
+        169,
+        74
+      ],
+      "incoming": [
+        102
+      ],
+      "issues": []
+    },
+    "151": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        66
+      ],
+      "incoming": [
+        237
+      ],
+      "issues": []
+    },
+    "152": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        46,
+        227
+      ],
+      "incoming": [
+        37,
+        170
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Tarajos aggeron",
+          "hp": 21,
+          "damage": "1-6"
+        }
+      ]
+    },
+    "153": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        84
+      ],
+      "issues": []
+    },
+    "154": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        236,
+        51,
+        47
+      ],
+      "incoming": [
+        126
+      ],
+      "issues": []
+    },
+    "155": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        246,
+        33
+      ],
+      "incoming": [
+        127
+      ],
+      "issues": []
+    },
+    "156": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        44,
+        270,
+        191
+      ],
+      "incoming": [
+        28,
+        123,
+        279
+      ],
+      "issues": []
+    },
+    "157": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        209,
+        8
+      ],
+      "incoming": [
+        64
+      ],
+      "issues": []
+    },
+    "158": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        203,
+        96
+      ],
+      "incoming": [
+        55,
+        198,
+        298
+      ],
+      "issues": []
+    },
+    "159": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        272,
+        63
+      ],
+      "incoming": [
+        30
+      ],
+      "issues": []
+    },
+    "160": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        53,
+        221
+      ],
+      "issues": []
+    },
+    "161": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        82,
+        234
+      ],
+      "incoming": [
+        47,
+        76,
+        91,
+        93
+      ],
+      "issues": []
+    },
+    "162": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        35
+      ],
+      "incoming": [
+        280
+      ],
+      "issues": []
+    },
+    "163": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        274
+      ],
+      "issues": []
+    },
+    "164": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        83
+      ],
+      "incoming": [
+        80,
+        259
+      ],
+      "issues": []
+    },
+    "165": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        292,
+        59
+      ],
+      "incoming": [
+        67
+      ],
+      "issues": []
+    },
+    "166": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        217,
+        258
+      ],
+      "incoming": [
+        243
+      ],
+      "issues": []
+    },
+    "167": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        250
+      ],
+      "issues": []
+    },
+    "168": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        10,
+        147
+      ],
+      "incoming": [
+        290
+      ],
+      "issues": []
+    },
+    "169": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        269,
+        31,
+        194
+      ],
+      "incoming": [
+        74,
+        150,
+        222
+      ],
+      "issues": []
+    },
+    "170": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        152,
+        268
+      ],
+      "incoming": [
+        195
+      ],
+      "issues": []
+    },
+    "171": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        95
+      ],
+      "issues": []
+    },
+    "172": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        66
+      ],
+      "incoming": [
+        214,
+        223
+      ],
+      "issues": []
+    },
+    "173": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        21,
+        255
+      ],
+      "incoming": [
+        193,
+        262
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Tengeri getnor",
+          "hp": 33,
+          "damage": null
+        }
+      ]
+    },
+    "174": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        296,
+        92,
+        102,
+        263,
+        90
+      ],
+      "incoming": [
+        2,
+        56,
+        92,
+        104,
+        110,
+        134,
+        141,
+        194,
+        219,
+        244,
+        253,
+        261
+      ],
+      "issues": []
+    },
+    "175": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        230,
+        87
+      ],
+      "incoming": [
+        62,
+        232
+      ],
+      "issues": []
+    },
+    "176": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        211,
+        94
+      ],
+      "incoming": [
+        292
+      ],
+      "issues": []
+    },
+    "177": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        131,
+        97
+      ],
+      "incoming": [
+        271
+      ],
+      "issues": []
+    },
+    "178": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        104
+      ],
+      "incoming": [
+        269
+      ],
+      "issues": []
+    },
+    "179": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        81,
+        54
+      ],
+      "incoming": [
+        270
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Démon",
+          "hp": 27,
+          "damage": "3-8"
+        }
+      ]
+    },
+    "180": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        223
+      ],
+      "incoming": [
+        276
+      ],
+      "issues": []
+    },
+    "181": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        4
+      ],
+      "issues": []
+    },
+    "182": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        290,
+        49
+      ],
+      "incoming": [
+        59
+      ],
+      "issues": []
+    },
+    "183": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        244
+      ],
+      "incoming": [
+        35
+      ],
+      "issues": []
+    },
+    "184": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        252,
+        136
+      ],
+      "incoming": [
+        94
+      ],
+      "issues": []
+    },
+    "185": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        25
+      ],
+      "issues": []
+    },
+    "186": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        39,
+        261
+      ],
+      "incoming": [
+        287
+      ],
+      "issues": []
+    },
+    "187": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        267,
+        38
+      ],
+      "incoming": [
+        136
+      ],
+      "issues": []
+    },
+    "188": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        13,
+        106,
+        98,
+        281
+      ],
+      "incoming": [
+        83,
+        90
+      ],
+      "issues": []
+    },
+    "189": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        210,
+        19
+      ],
+      "incoming": [
+        282
+      ],
+      "issues": []
+    },
+    "190": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        58
+      ],
+      "issues": []
+    },
+    "191": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        300
+      ],
+      "incoming": [
+        117,
+        156,
+        226,
+        286
+      ],
+      "issues": []
+    },
+    "192": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        269,
+        31,
+        194
+      ],
+      "incoming": [
+        296
+      ],
+      "issues": []
+    },
+    "193": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        173,
+        41
+      ],
+      "incoming": [
+        75
+      ],
+      "issues": []
+    },
+    "194": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        20,
+        92,
+        174,
+        102
+      ],
+      "incoming": [
+        118,
+        169,
+        192,
+        269
+      ],
+      "issues": []
+    },
+    "195": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        116,
+        170
+      ],
+      "incoming": [
+        120
+      ],
+      "issues": []
+    },
+    "196": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        251,
+        103
+      ],
+      "incoming": [
+        51
+      ],
+      "issues": []
+    },
+    "197": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        23
+      ],
+      "incoming": [
+        99
+      ],
+      "issues": []
+    },
+    "198": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        158,
+        265,
+        220
+      ],
+      "incoming": [
+        9
+      ],
+      "issues": []
+    },
+    "199": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        22
+      ],
+      "issues": []
+    },
+    "200": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        274,
+        145
+      ],
+      "incoming": [
+        79
+      ],
+      "issues": []
+    },
+    "201": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        210,
+        19
+      ],
+      "incoming": [
+        149
+      ],
+      "issues": []
+    },
+    "202": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        43
+      ],
+      "issues": []
+    },
+    "203": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        76
+      ],
+      "incoming": [
+        158
+      ],
+      "issues": []
+    },
+    "204": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67
+      ],
+      "incoming": [
+        289
+      ],
+      "issues": []
+    },
+    "205": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        93,
+        295
+      ],
+      "incoming": [
+        40
+      ],
+      "issues": []
+    },
+    "206": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        58
+      ],
+      "incoming": [
+        231
+      ],
+      "issues": []
+    },
+    "207": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        85,
+        140
+      ],
+      "incoming": [
+        270
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "papok (mindkettőnek azonosak az értékei)",
+          "hp": 21,
+          "damage": "1-6"
+        }
+      ]
+    },
+    "208": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        131,
+        97
+      ],
+      "incoming": [
+        271
+      ],
+      "issues": []
+    },
+    "209": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        8
+      ],
+      "incoming": [
+        157
+      ],
+      "issues": []
+    },
+    "210": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        62,
+        25
+      ],
+      "incoming": [
+        68,
+        103,
+        133,
+        189,
+        201,
+        251
+      ],
+      "issues": []
+    },
+    "211": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        257,
+        119
+      ],
+      "incoming": [
+        176
+      ],
+      "issues": []
+    },
+    "212": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        29
+      ],
+      "issues": []
+    },
+    "213": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67,
+        238
+      ],
+      "incoming": [
+        13,
+        88
+      ],
+      "issues": []
+    },
+    "214": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        172,
+        237
+      ],
+      "incoming": [
+        112
+      ],
+      "issues": []
+    },
+    "215": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        28
+      ],
+      "incoming": [
+        17
+      ],
+      "issues": []
+    },
+    "216": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67,
+        238
+      ],
+      "incoming": [
+        39
+      ],
+      "issues": []
+    },
+    "217": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        166
+      ],
+      "issues": []
+    },
+    "218": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        27,
+        289
+      ],
+      "incoming": [
+        102,
+        114
+      ],
+      "issues": []
+    },
+    "219": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        296,
+        174,
+        102
+      ],
+      "incoming": [
+        111
+      ],
+      "issues": []
+    },
+    "220": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        75,
+        262
+      ],
+      "incoming": [
+        55,
+        198,
+        298
+      ],
+      "issues": []
+    },
+    "221": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        53,
+        160,
+        273
+      ],
+      "incoming": [
+        18
+      ],
+      "issues": []
+    },
+    "222": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        169,
+        114
+      ],
+      "incoming": [
+        74
+      ],
+      "issues": []
+    },
+    "223": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        172,
+        237
+      ],
+      "incoming": [
+        180
+      ],
+      "issues": []
+    },
+    "224": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        10,
+        147
+      ],
+      "incoming": [
+        59
+      ],
+      "issues": []
+    },
+    "225": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        64,
+        8
+      ],
+      "incoming": [
+        77,
+        287
+      ],
+      "issues": []
+    },
+    "226": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        191
+      ],
+      "incoming": [
+        260
+      ],
+      "issues": []
+    },
+    "227": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        152,
+        268
+      ],
+      "issues": []
+    },
+    "228": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        296,
+        43
+      ],
+      "incoming": [
+        16
+      ],
+      "issues": []
+    },
+    "229": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        55,
+        298
+      ],
+      "incoming": [
+        66
+      ],
+      "issues": []
+    },
+    "230": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        40,
+        138
+      ],
+      "incoming": [
+        175
+      ],
+      "issues": []
+    },
+    "231": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        129,
+        206
+      ],
+      "incoming": [
+        61
+      ],
+      "issues": []
+    },
+    "232": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        175,
+        40
+      ],
+      "incoming": [
+        126
+      ],
+      "issues": []
+    },
+    "233": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67
+      ],
+      "incoming": [
+        4
+      ],
+      "issues": []
+    },
+    "234": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        264,
+        142,
+        30
+      ],
+      "incoming": [
+        161
+      ],
+      "issues": []
+    },
+    "235": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        291,
+        16
+      ],
+      "incoming": [
+        12
+      ],
+      "issues": []
+    },
+    "236": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        5,
+        154
+      ],
+      "issues": []
+    },
+    "237": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        151,
+        78
+      ],
+      "incoming": [
+        214,
+        223
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Griffon",
+          "hp": 27,
+          "damage": "3-8"
+        }
+      ]
+    },
+    "238": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67
+      ],
+      "incoming": [
+        42,
+        131,
+        146,
+        213,
+        216,
+        247,
+        284
+      ],
+      "issues": []
+    },
+    "239": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        23
+      ],
+      "issues": []
+    },
+    "240": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        10,
+        147
+      ],
+      "incoming": [
+        290
+      ],
+      "issues": []
+    },
+    "241": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        275
+      ],
+      "issues": []
+    },
+    "242": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        55,
+        298
+      ],
+      "incoming": [
+        60
+      ],
+      "issues": []
+    },
+    "243": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        166,
+        105
+      ],
+      "incoming": [
+        30
+      ],
+      "issues": []
+    },
+    "244": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        296,
+        174,
+        102
+      ],
+      "incoming": [
+        183
+      ],
+      "issues": []
+    },
+    "245": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        145
+      ],
+      "issues": []
+    },
+    "246": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        26,
+        33,
+        155
+      ],
+      "issues": [
+        "unexpected_dead_end"
+      ]
+    },
+    "247": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        127,
+        67,
+        238
+      ],
+      "incoming": [
+        39,
+        88
+      ],
+      "issues": []
+    },
+    "248": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        292
+      ],
+      "issues": []
+    },
+    "249": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        10,
+        147
+      ],
+      "incoming": [
+        49
+      ],
+      "issues": []
+    },
+    "250": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        99,
+        167
+      ],
+      "incoming": [
+        121
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Ork útosúthallo",
+          "hp": 17,
+          "damage": "1-6"
+        }
+      ]
+    },
+    "251": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        210,
+        19
+      ],
+      "incoming": [
+        196
+      ],
+      "issues": []
+    },
+    "252": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        112,
+        276
+      ],
+      "incoming": [
+        94,
+        184
+      ],
+      "issues": []
+    },
+    "253": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        118,
+        92,
+        174,
+        102
+      ],
+      "incoming": [
+        137
+      ],
+      "issues": []
+    },
+    "254": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        9,
+        65
+      ],
+      "incoming": [
+        136
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Szikláóriás",
+          "hp": 45,
+          "damage": null
+        }
+      ]
+    },
+    "255": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        173
+      ],
+      "issues": []
+    },
+    "256": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        77
+      ],
+      "incoming": [
+        50
+      ],
+      "issues": []
+    },
+    "257": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        94
+      ],
+      "incoming": [
+        211
+      ],
+      "issues": []
+    },
+    "258": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        15
+      ],
+      "incoming": [
+        166
+      ],
+      "issues": []
+    },
+    "259": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        164,
+        56
+      ],
+      "incoming": [
+        31
+      ],
+      "issues": []
+    },
+    "260": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        226,
+        286
+      ],
+      "incoming": [
+        44,
+        117
+      ],
+      "issues": []
+    },
+    "261": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        296,
+        174,
+        102
+      ],
+      "incoming": [
+        8,
+        186
+      ],
+      "issues": []
+    },
+    "262": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        173,
+        41
+      ],
+      "incoming": [
+        220
+      ],
+      "issues": []
+    },
+    "263": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        296,
+        92,
+        102,
+        90
+      ],
+      "incoming": [
+        174
+      ],
+      "issues": []
+    },
+    "264": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        109,
+        234
+      ],
+      "issues": []
+    },
+    "265": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        14,
+        120
+      ],
+      "incoming": [
+        55,
+        198,
+        298
+      ],
+      "issues": []
+    },
+    "266": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        84
+      ],
+      "incoming": [
+        115
+      ],
+      "issues": []
+    },
+    "267": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        108,
+        60
+      ],
+      "incoming": [
+        187
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "268": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        227,
+        3
+      ],
+      "incoming": [
+        37,
+        170
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Tarajos aggeron",
+          "hp": 21,
+          "damage": null
+        }
+      ]
+    },
+    "269": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        178,
+        31,
+        194
+      ],
+      "incoming": [
+        20,
+        118,
+        169,
+        192
+      ],
+      "issues": []
+    },
+    "270": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        207,
+        179
+      ],
+      "incoming": [
+        117,
+        156,
+        286
+      ],
+      "issues": []
+    },
+    "271": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        208,
+        177
+      ],
+      "incoming": [
+        36,
+        98
+      ],
+      "issues": []
+    },
+    "272": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        159
+      ],
+      "issues": []
+    },
+    "273": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        50,
+        144
+      ],
+      "incoming": [
+        53,
+        221
+      ],
+      "issues": [],
+      "enemies": [
+        {
+          "name": "Ork útonálló",
+          "hp": 17,
+          "damage": "1-6"
+        }
+      ]
+    },
+    "274": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        72,
+        163
+      ],
+      "incoming": [
+        7,
+        72,
+        200
+      ],
+      "issues": []
+    },
+    "275": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        110,
+        241
+      ],
+      "incoming": [
+        86
+      ],
+      "issues": []
+    },
+    "276": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        180,
+        52
+      ],
+      "incoming": [
+        252
+      ],
+      "issues": []
+    },
+    "277": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        10,
+        147
+      ],
+      "incoming": [
+        49
+      ],
+      "issues": []
+    },
+    "278": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        69,
+        148
+      ],
+      "incoming": [
+        45
+      ],
+      "issues": []
+    },
+    "279": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        156,
+        32
+      ],
+      "incoming": [
+        17
+      ],
+      "issues": []
+    },
+    "280": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        162
+      ],
+      "incoming": [
+        148
+      ],
+      "issues": []
+    },
+    "281": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [
+        22,
+        100
+      ],
+      "incoming": [
+        188
+      ],
+      "issues": [
+        "combat_missing_enemy_stats"
+      ]
+    },
+    "282": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        133,
+        189
+      ],
+      "incoming": [
+        51
+      ],
+      "issues": []
+    },
+    "283": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        129
+      ],
+      "issues": []
+    },
+    "284": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        67,
+        238
+      ],
+      "incoming": [
+        106
+      ],
+      "issues": []
+    },
+    "285": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        47,
+        126
+      ],
+      "incoming": [
+        76,
+        91
+      ],
+      "issues": []
+    },
+    "286": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        70,
+        270,
+        191
+      ],
+      "incoming": [
+        260
+      ],
+      "issues": []
+    },
+    "287": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        225,
+        186
+      ],
+      "incoming": [
+        107
+      ],
+      "issues": []
+    },
+    "288": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        90
+      ],
+      "incoming": [
+        56
+      ],
+      "issues": []
+    },
+    "289": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        204,
+        67
+      ],
+      "incoming": [
+        218
+      ],
+      "issues": []
+    },
+    "290": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        240,
+        168
+      ],
+      "incoming": [
+        182
+      ],
+      "issues": []
+    },
+    "291": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        296,
+        43
+      ],
+      "incoming": [
+        235
+      ],
+      "issues": []
+    },
+    "292": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        176,
+        248
+      ],
+      "incoming": [
+        165
+      ],
+      "issues": []
+    },
+    "293": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        9
+      ],
+      "issues": []
+    },
+    "294": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        125
+      ],
+      "incoming": [
+        16
+      ],
+      "issues": []
+    },
+    "295": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        25
+      ],
+      "incoming": [
+        205
+      ],
+      "issues": []
+    },
+    "296": {
+      "flags": [
+        "luck_test"
+      ],
+      "reachable": true,
+      "choices": [
+        192,
+        137
+      ],
+      "incoming": [
+        92,
+        110,
+        132,
+        141,
+        174,
+        219,
+        228,
+        244,
+        261,
+        263,
+        291,
+        299
+      ],
+      "issues": []
+    },
+    "297": {
+      "flags": [
+        "ending"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        75
+      ],
+      "issues": []
+    },
+    "298": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        158,
+        265,
+        220
+      ],
+      "incoming": [
+        113,
+        229,
+        242
+      ],
+      "issues": []
+    },
+    "299": {
+      "flags": [
+        "normal"
+      ],
+      "reachable": true,
+      "choices": [
+        92,
+        296
+      ],
+      "incoming": [
+        95
+      ],
+      "issues": []
+    },
+    "300": {
+      "flags": [
+        "combat"
+      ],
+      "reachable": true,
+      "choices": [],
+      "incoming": [
+        191
+      ],
+      "issues": [
+        "unexpected_dead_end",
+        "combat_missing_enemy_stats"
+      ]
+    }
+  }
+}

@@ -46,6 +46,8 @@ Designed for personal use and as a learning project. Built step by step — ask 
     06_recover_sections.py    ← two-column OCR gap recovery (a-demon-szeme specific)
     07_extract_events.py      ← structured events extraction (Claude Haiku)
     patch_missing_sections.py ← manual patch of 6 OCR-absent sections
+    diagnose_choices.py       ← read-only: diff in-text "lapozz a N" refs vs parsed choices; reachability
+    repair_choices.py         ← dry-run repair of dropped/mis-numbered links (NOT yet applied — see Session 12)
   /books
     index.json                ← multi-book manifest
     /magusok-tornya
@@ -336,6 +338,24 @@ Full schema per section:
 - `07_extract_events.py` not yet run on this book
 
 ### a-demon-szeme
+- **Two-column OCR merges (~29 unreachable sections) — awaiting clean source pages.** See Session 12.
+  - Run `python pipeline/diagnose_choices.py a-demon-szeme` to regenerate the report.
+  - 300/300 sections present, no dangling targets, but 29 unreachable from section 1.
+  - Root cause: ~140 sections were merged by two-column OCR — a section's choice list is
+    contaminated with links from a *different* section that bled into the same text blob.
+  - **Do NOT bulk-add the "missing" links** (`repair_choices.py` can, but won't be applied):
+    on merged sections the missing targets belong to a neighbouring section, so auto-wiring
+    them routes players to the wrong place — worse than a visible dead-end.
+  - Confirmed merge blobs needing manual/clean-OCR reconstruction: **122, 133, 175, 218, 239, 271**
+    (239's luck-failure target is truncated mid-number; 271 mixes a death ending + vampire mechanic + a combat).
+  - **Safe fixes (verified, not yet applied)**, can be done independently of re-OCR:
+    - Sec **197**: choice text is correct but targets are wrong OCR digits — retarget 144→74, 212→257
+      (prose clearly reads "Ha sikerült, lapozz a 74-re! / Ha nem sikerült, lapozz a 257-re!").
+    - Sec **9**: genuinely dropped link → add choice to 178 ("Ha alaposan körbenézel idebent").
+  - **Proper fix path (when clean pages are secured):** all 94 page images still on disk;
+    `parse_config.json` already sets `ocr_prompt: "two_column"` (left column fully, then right).
+    Re-run `02_ocr_pages.py a-demon-szeme --force` → `03_parse_sections.py` → `09_merge_sections.py`,
+    then re-run `diagnose_choices.py` to confirm reachability climbs back toward 300.
 - **Flee button not blocked** when `state.combat.noFlee = true` — flag is set but UI doesn't gate the button yet
 - Unknown event types to implement:
   - `enemy_first_always` / `initiative_always_loses` (sec 36/37) — cursed mask forces player to always lose initiative
@@ -432,3 +452,24 @@ Full schema per section:
   - Rejects new-parse data where >5 choices (two-column mixing artifact) — 13 sections reverted to backup
   - Preserves events from backup for sections overwritten by new parse
 - Final result: 300 sections, 147 with fully clean new OCR text, 82 with events, section 1→294 routing fixed
+
+### Session 12 — A Démon Szeme reachability audit (data quality)
+- Built `pipeline/diagnose_choices.py` (read-only): extracts every "lapozz a N" nav reference from each
+  section's prose and diffs it against parsed `choices[].target`; reports missing/extra links + reachability.
+- Findings: 300/300 sections present, 0 dangling targets, but **29 sections unreachable from section 1**.
+  - 28 sections reference a section in their text that has no matching choice (parser dropped it).
+  - Only 2 sections have *extra* choice targets (197, 271) — both genuine corruption, not regex noise.
+- Diagnosed two distinct causes:
+  - **Clean dropped links / wrong digits** (safely fixable): e.g. sec 197 targets 144/212 should be 74/257;
+    sec 9 lost its link to 178.
+  - **Two-column OCR merges** (NOT auto-fixable): sec 122/133/175/218/239/271 are several unrelated sections
+    mashed into one blob, so their "missing" links belong to neighbouring sections. Verified by reading the
+    raw text (multiple section headers + unrelated combats inside one section).
+- Engine routing confirmed in game.js: luck test is index-based (`choices[0]`=success/`choices[1]`=failure,
+  line 788) so order matters there; combat victory filters choices by text ("veszít" dropped, line 1416) so
+  appended order is harmless. Only luck-test sec 239 would be order-sensitive — and it's a merge blob anyway.
+- Wrote `pipeline/repair_choices.py` (dry-run; ADD missing links + RETARGET 197, SKIP 271/239) but **applied
+  nothing** — bulk-adding links on merged sections would wire players to wrong sections.
+- **Decision:** pause automated repair; user to secure clean (single-column or higher-quality) source pages,
+  then re-OCR via the already-configured `two_column` prompt and re-parse/merge. See Known Issues → a-demon-szeme.
+- No data files changed this session; only two diagnostic scripts added under `pipeline/`.
