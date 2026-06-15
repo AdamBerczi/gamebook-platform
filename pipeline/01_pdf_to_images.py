@@ -4,63 +4,87 @@
 Converts each page of a gamebook PDF into a PNG image.
 These images are what we'll feed to Claude Vision in the next step.
 
-Why pymupdf (fitz)?
-  - Self-contained: no external tools like poppler needed
-  - Fast and accurate rendering
-  - Handles older scanned PDFs well
+Supports two layouts (set in parse_config.json):
+  split_pages: false (default) — one PNG per PDF page (single-page scans)
+  split_pages: true            — two PNGs per PDF page (two-page book spreads)
+    Left half  → page-001.png, page-003.png, ...
+    Right half → page-002.png, page-004.png, ...
 
-Output: books/<book-id>/pages/page-001.png, page-002.png, ...
+Output: books/<book-id>/pages/page-NNN.png
 """
 
 import fitz  # pymupdf
+import json
 import sys
 from pathlib import Path
 
 
-def pdf_to_images(pdf_path: Path, output_dir: Path, dpi: int = 200):
-    """
-    Render each PDF page as a PNG at the given DPI.
-
-    DPI 200 is a sweet spot: high enough for Claude to read text clearly,
-    low enough that files stay small and API calls stay fast.
-    """
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    doc = fitz.open(pdf_path)
-    total = len(doc)
-    print(f"PDF has {total} pages. Rendering at {dpi} DPI...")
-
-    # fitz uses a matrix to scale the rendering.
-    # 72 DPI is PDF's native unit, so we scale by dpi/72.
-    scale = dpi / 72
-    matrix = fitz.Matrix(scale, scale)
-
-    for i, page in enumerate(doc):
-        # Zero-padded filename so files sort correctly (page-001, page-002, ...)
-        out_path = output_dir / f"page-{i+1:03d}.png"
-
-        if out_path.exists():
-            print(f"  [{i+1}/{total}] {out_path.name} already exists, skipping")
-            continue
-
-        pixmap = page.get_pixmap(matrix=matrix)
-        pixmap.save(str(out_path))
-        print(f"  [{i+1}/{total}] Saved {out_path.name}")
-
-    doc.close()
-    print(f"\nDone. {total} images saved to {output_dir}")
+def load_config(book_id: str, root: Path) -> dict:
+    config_path = root / "books" / book_id / "parse_config.json"
+    if config_path.exists():
+        return json.loads(config_path.read_text(encoding="utf-8"))
+    return {}
 
 
-if __name__ == "__main__":
-    # Default to Mágusok Tornya; pass a different book ID as argument to reuse
-    book_id = sys.argv[1] if len(sys.argv) > 1 else "magusok-tornya"
+def pdf_to_images(book_id: str, dpi: int = 200):
+    root = Path(__file__).parent.parent
+    config = load_config(book_id, root)
 
-    root = Path(__file__).parent.parent  # gamebook-platform/
-    pdf_path = root / "books" / book_id / f"{book_id}.pdf"
+    # PDF filename: default to <book-id>.pdf, override via parse_config
+    pdf_name = config.get("pdf_filename", f"{book_id}.pdf")
+    pdf_path = root / "books" / book_id / pdf_name
     output_dir = root / "books" / book_id / "pages"
 
     if not pdf_path.exists():
         print(f"ERROR: PDF not found at {pdf_path}")
         sys.exit(1)
 
-    pdf_to_images(pdf_path, output_dir)
+    split = config.get("split_pages", False)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    doc = fitz.open(pdf_path)
+    total_pdf = len(doc)
+    total_out = total_pdf * 2 if split else total_pdf
+    mode = "split (2 halves per PDF page)" if split else "single"
+    print(f"PDF: {pdf_name}  |  {total_pdf} pages  |  mode: {mode}  |  DPI: {dpi}")
+    print(f"Output: {total_out} images -> {output_dir}\n")
+
+    scale = dpi / 72
+    matrix = fitz.Matrix(scale, scale)
+    out_idx = 1  # running output page counter
+
+    for i, page in enumerate(doc):
+        if not split:
+            out_path = output_dir / f"page-{out_idx:03d}.png"
+            if not out_path.exists():
+                pix = page.get_pixmap(matrix=matrix)
+                pix.save(str(out_path))
+                print(f"  [{out_idx}/{total_out}] {out_path.name}")
+            else:
+                print(f"  [{out_idx}/{total_out}] {out_path.name} already exists, skipping")
+            out_idx += 1
+        else:
+            # Split at horizontal midpoint using PDF-coordinate clip rects.
+            # get_pixmap(clip=...) accepts a Rect in page units (points, 72dpi).
+            w = page.rect.width
+            mid = w / 2
+            h = page.rect.height
+
+            for side, x0, x1 in [("L", 0, mid), ("R", mid, w)]:
+                out_path = output_dir / f"page-{out_idx:03d}.png"
+                if not out_path.exists():
+                    clip = fitz.Rect(x0, 0, x1, h)
+                    pix = page.get_pixmap(matrix=matrix, clip=clip)
+                    pix.save(str(out_path))
+                    print(f"  [{out_idx}/{total_out}] {out_path.name}  (PDF page {i+1} {side})")
+                else:
+                    print(f"  [{out_idx}/{total_out}] {out_path.name} already exists, skipping")
+                out_idx += 1
+
+    doc.close()
+    print(f"\nDone. {out_idx - 1} images saved to {output_dir}")
+
+
+if __name__ == "__main__":
+    book_id = sys.argv[1] if len(sys.argv) > 1 else "magusok-tornya"
+    pdf_to_images(book_id)

@@ -1,0 +1,43 @@
+{
+  "book_id": "viharuzok",
+  "pdf_filename": "24 - Viharűzők.pdf",
+  "split_pages": true,
+  "ocr_prompt": "default",
+  "title": "Viharűzők",
+  "author": "David H. Levinhood",
+  "year": 1999,
+  "total_sections": 300,
+
+  "parsing": {
+    "first_content_page": 1,
+
+    "navigation_patterns": [
+      "lapozz a {n}-re",
+      "lapozz a {n}-ra",
+      "lapozz a {n}. fejezetre",
+      "lapozz a {n}. részre"
+    ],
+
+    "ending_phrases": [
+      "Kalandod véget ért",
+      "kalandod véget ért",
+      "Kalandod végét ért",
+      "kalandod végét ért",
+      "kalandod is véget ért",
+      "kalandod is végét ért"
+    ],
+
+    "combat_hint_phrases": [
+      "életerő",
+      "támadási képesség",
+      "védettségi szint"
+    ],
+
+    "luck_test_phrases": [
+      "Szerencsepróbát",
+      "Szerencse próbát"
+    ],
+
+    "section_header_regex": "^(\\d+)\\.$"
+  }
+}
