@@ -1066,14 +1066,6 @@
         {
           "text": "Ha csendben visszavonulsz,",
           "target": 216
-        },
-        {
-          "text": "Ha működésbe hozod a szerkezetet,",
-          "target": 217
-        },
-        {
-          "text": "Ha átkutatod a halottat,",
-          "target": 172
         }
       ],
       "enemies": [],
@@ -2683,7 +2675,13 @@
       "is_ending": false,
       "has_combat": false,
       "has_luck_test": false,
-      "events": []
+      "events": [],
+      "has_dice_check": true,
+      "dice_check": {
+        "formula": "1d6",
+        "threshold": 4,
+        "description": "Dobj egy hatoldalú kockával! Ha az eredmény 4, 5 vagy 6, sikeresen megkötözöd az idegent, mielőtt magához tér."
+      }
     },
     "138": {
       "id": 138,
@@ -5880,29 +5878,13 @@
         {
           "text": "Ha inkább elhagyod a szobát,",
           "target": 299
-        },
-        {
-          "text": "Ha balra indulsz,",
-          "target": 58
-        },
-        {
-          "text": "Ha jobbra,",
-          "target": 121
         }
       ],
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
       "has_luck_test": false,
-      "events": [
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "tamadasi_kepesseg",
-          "amount": -1,
-          "timing": "on_enter",
-          "reason": "disadvantage in darkness - enemy can see torch light while player struggles with darkness"
-        }
-      ]
+      "events": []
     },
     "293": {
       "id": 293,

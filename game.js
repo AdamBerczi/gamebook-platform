@@ -654,6 +654,7 @@ function renderSection(data) {
 
   if (data.is_ending) { renderEnding(choicesEl); wrap.classList.add('visible'); return; }
   if (data.enemies?.length > 0) { renderCombatBlock(choicesEl, data); wrap.classList.add('visible'); return; }
+  if (data.has_dice_check && data.choices.length >= 2) { renderDiceCheckBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_luck_test && data.choices.length >= 2) { renderLuckTestBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_puzzle) { renderPuzzleBlock(choicesEl, data); wrap.classList.add('visible'); return; }
   if (data.has_return) { renderReturnBlock(choicesEl); wrap.classList.add('visible'); return; }
@@ -884,6 +885,38 @@ function renderLuckTestBlock(container, data) {
       const target = passed ? data.choices[0] : data.choices[1];
       if (target) loadSection(target.target);
       else renderChoices(container, data.choices);
+    }, 1800);
+  });
+}
+
+// ── DICE CHECK MECHANIC ───────────────────────────────────────────────────────
+
+function renderDiceCheckBlock(container, data) {
+  const check = data.dice_check || {};
+  const block = document.createElement('div');
+  block.className = 'system-block luck-block';
+  block.innerHTML = `
+    <div class="system-block-title">Kockadobás</div>
+    ${check.description ? `<div class="system-block-desc">${check.description}</div>` : ''}
+    <button class="btn-roll" id="btn-dice-check">Dobás (${check.formula || '1d6'})</button>
+    <div class="roll-result hidden" id="dice-check-result"></div>
+  `;
+  container.appendChild(block);
+
+  block.querySelector('#btn-dice-check').addEventListener('click', () => {
+    const result  = rollDamage(check.formula || '1d6');
+    const passed  = result >= (check.threshold ?? 4);
+    const resultEl = block.querySelector('#dice-check-result');
+    resultEl.classList.remove('hidden');
+    resultEl.innerHTML = `
+      <span class="roll-dice">${result}</span>
+      <span class="roll-vs">≥ ${check.threshold ?? 4}</span>
+      <span class="roll-outcome ${passed ? 'success' : 'failure'}">${passed ? 'Sikeres!' : 'Sikertelen'}</span>
+    `;
+    block.querySelector('#btn-dice-check').disabled = true;
+    setTimeout(() => {
+      const target = passed ? data.choices[0] : data.choices[1];
+      if (target) loadSection(target.target);
     }, 1800);
   });
 }
