@@ -1747,7 +1747,7 @@
     },
     "59": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": true,
       "choices": [
@@ -2058,7 +2058,7 @@
     },
     "78": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": true,
       "choices": [
@@ -2325,7 +2325,7 @@
     },
     "94": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": false,
       "choices": [
@@ -2371,7 +2371,7 @@
     },
     "97": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": true,
       "choices": [
@@ -2771,7 +2771,7 @@
     },
     "122": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": false,
       "choices": [
@@ -2980,7 +2980,7 @@
     },
     "136": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": false,
       "choices": [
@@ -3493,7 +3493,7 @@
     },
     "169": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": false,
       "choices": [
@@ -3570,7 +3570,7 @@
     },
     "174": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": false,
       "choices": [
@@ -3881,7 +3881,7 @@
     },
     "194": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": false,
       "choices": [
@@ -3897,7 +3897,7 @@
     },
     "195": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": true,
       "choices": [
@@ -3910,7 +3910,8 @@
     },
     "196": {
       "flags": [
-        "combat"
+        "combat",
+        "puzzle"
       ],
       "reachable": false,
       "choices": [
@@ -4631,7 +4632,7 @@
     },
     "239": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": false,
       "choices": [
@@ -4756,7 +4757,7 @@
     },
     "246": {
       "flags": [
-        "normal"
+        "puzzle"
       ],
       "reachable": false,
       "choices": [

@@ -781,6 +781,7 @@ const HU_ALPHA_ORDER = ['A','Á','B','C','D','E','É','F','G','H','I','Í','J','
 function renderPuzzleBlock(container, data) {
   const key        = rules?.puzzle_key || {};
   const failTarget = data.puzzle_fail_target ?? null;
+  const multiplier = data.puzzle_multiplier ?? 1;
   const prevSection = state.history.length >= 2 ? state.history[state.history.length - 2] : null;
 
   const block = document.createElement('div');
@@ -814,22 +815,23 @@ function renderPuzzleBlock(container, data) {
   let entered = []; // [{letter, value}, ...]
 
   function refresh() {
-    const sum = entered.reduce((s, e) => s + e.value, 0);
+    const rawSum = entered.reduce((s, e) => s + e.value, 0);
+    const target = rawSum * multiplier;
 
     // Show entered letters with their values
     lettersEl.innerHTML = entered.map(e =>
       `<span class="puzzle-entered-chip">${e.letter}<sub>${e.value}</sub></span>`
     ).join('');
 
-    sumEl.textContent = sum;
+    sumEl.textContent = multiplier > 1 ? `${rawSum} × ${multiplier} = ${target}` : rawSum;
     navDiv.innerHTML  = '';
 
-    // Navigate button — only when sum is a valid in-book section
-    if (sum >= 1 && sum <= 300 && sections.sections[String(sum)]) {
+    // Navigate button — only when target is a valid in-book section
+    if (target >= 1 && target <= 300 && sections.sections[String(target)]) {
       const btn = document.createElement('button');
       btn.className = 'choice-btn';
-      btn.innerHTML = `<span>Lapozz a ${sum}. szakaszra!</span><span class="choice-arrow">→ ${sum}</span>`;
-      btn.addEventListener('click', () => loadSection(sum));
+      btn.innerHTML = `<span>Lapozz a ${target}. szakaszra!</span><span class="choice-arrow">→ ${target}</span>`;
+      btn.addEventListener('click', () => loadSection(target));
       navDiv.appendChild(btn);
     }
 
