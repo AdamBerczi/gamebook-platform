@@ -17,11 +17,14 @@ Usage:
 """
 
 import json
+import re
 import sys
 import time
 from pathlib import Path
 
 import anthropic
+
+sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 SYSTEM_PROMPT = """You extract structured game events from Hungarian gamebook section text.
 
@@ -126,6 +129,11 @@ def extract_events(client, section):
         raw = "\n".join(lines[1:])
     raw = raw.rstrip("`").strip()
 
+    # Extract first JSON array — handles trailing prose after the array
+    m = re.search(r'\[.*\]', raw, re.DOTALL)
+    if m:
+        raw = m.group(0)
+
     try:
         events = json.loads(raw)
         if not isinstance(events, list):
@@ -133,7 +141,7 @@ def extract_events(client, section):
             return []
         return events
     except json.JSONDecodeError as e:
-        print(f"    WARN: JSON parse error ({e}): {raw[:120]}")
+        print(f"    WARN: JSON parse error ({e}): {raw[:80]}")
         return []
 
 

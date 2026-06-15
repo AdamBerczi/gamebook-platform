@@ -21,7 +21,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "2": {
       "id": 2,
@@ -30,7 +31,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "3": {
       "id": 3,
@@ -44,7 +46,17 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_LOSE",
+          "items": [
+            "ló"
+          ],
+          "timing": "on_enter",
+          "reason": "el kell adni a Karvalynak"
+        }
+      ]
     },
     "4": {
       "id": 4,
@@ -62,7 +74,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "5": {
       "id": 5,
@@ -88,7 +101,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "6": {
       "id": 6,
@@ -110,7 +124,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "7": {
       "id": 7,
@@ -119,7 +134,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -999,
+          "timing": "on_enter",
+          "reason": "lightning strike from cursed magic"
+        }
+      ]
     },
     "8": {
       "id": 8,
@@ -137,7 +161,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "9": {
       "id": 9,
@@ -151,7 +176,18 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Vaskulcs"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "10": {
       "id": 10,
@@ -173,7 +209,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "11": {
       "id": 11,
@@ -191,7 +228,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -3,
+          "timing": "on_enter",
+          "reason": "fall into trap, leg pain"
+        }
+      ]
     },
     "12": {
       "id": 12,
@@ -217,7 +263,8 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "13": {
       "id": 13,
@@ -231,7 +278,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "14": {
       "id": 14,
@@ -253,7 +301,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Csontfurulya",
+              "note": "repedt"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "15": {
       "id": 15,
@@ -271,7 +331,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "16": {
       "id": 16,
@@ -289,7 +350,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "szerencse",
+          "amount": -1,
+          "timing": "on_enter",
+          "reason": "szerencsepróba"
+        }
+      ]
     },
     "17": {
       "id": 17,
@@ -303,7 +373,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Csontkulcs",
+              "note": "apró csontkulcs madzagra felkötve, a Csarnokba nyit"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "18": {
       "id": 18,
@@ -312,7 +394,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "19": {
       "id": 19,
@@ -330,7 +413,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "20": {
       "id": 20,
@@ -348,7 +432,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "21": {
       "id": 21,
@@ -366,7 +451,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "22": {
       "id": 22,
@@ -392,7 +478,8 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "23": {
       "id": 23,
@@ -410,7 +497,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "SHOP",
+          "items": [
+            {
+              "item": "Kulcs",
+              "price": 100,
+              "note": "arany kulcs"
+            }
+          ]
+        }
+      ]
     },
     "24": {
       "id": 24,
@@ -428,7 +527,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "25": {
       "id": 25,
@@ -446,7 +546,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "26": {
       "id": 26,
@@ -460,7 +561,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "27": {
       "id": 27,
@@ -478,7 +580,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "28": {
       "id": 28,
@@ -496,7 +599,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "29": {
       "id": 29,
@@ -514,7 +618,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "30": {
       "id": 30,
@@ -532,7 +637,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "31": {
       "id": 31,
@@ -550,7 +656,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "32": {
       "id": 32,
@@ -568,7 +675,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": []
     },
     "33": {
       "id": 33,
@@ -590,7 +698,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": 20,
+          "timing": "on_enter",
+          "reason": "gyógyfüves ital hatása"
+        }
+      ]
     },
     "34": {
       "id": 34,
@@ -599,7 +716,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "35": {
       "id": 35,
@@ -621,7 +739,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "36": {
       "id": 36,
@@ -639,7 +758,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "37": {
       "id": 37,
@@ -657,7 +777,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "38": {
       "id": 38,
@@ -666,7 +787,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "39": {
       "id": 39,
@@ -688,7 +810,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "40": {
       "id": 40,
@@ -710,7 +833,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "41": {
       "id": 41,
@@ -736,7 +860,19 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "enemy_regenerate",
+              "target": "Brúdah",
+              "amount": 2
+            }
+          ]
+        }
+      ]
     },
     "42": {
       "id": 42,
@@ -750,7 +886,24 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "kristály",
+              "note": "kincs"
+            }
+          ],
+          "timing": "on_enter"
+        },
+        {
+          "kind": "GOLD_CHANGE",
+          "amount": 50,
+          "timing": "on_enter"
+        }
+      ]
     },
     "43": {
       "id": 43,
@@ -768,7 +921,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "44": {
       "id": 44,
@@ -786,7 +940,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": []
     },
     "45": {
       "id": 45,
@@ -804,7 +959,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "46": {
       "id": 46,
@@ -813,7 +969,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "47": {
       "id": 47,
@@ -839,7 +996,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "48": {
       "id": 48,
@@ -857,7 +1015,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "szerencse",
+          "amount": 0,
+          "timing": "on_enter",
+          "reason": "szerencsepróba szükséges"
+        }
+      ]
     },
     "49": {
       "id": 49,
@@ -866,7 +1033,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": 0,
+          "timing": "on_enter",
+          "reason": "defeated by demon - knocked down and lost consciousness"
+        }
+      ]
     },
     "50": {
       "id": 50,
@@ -884,7 +1060,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -4,
+          "timing": "on_enter",
+          "reason": "attacked by unicorn"
+        }
+      ]
     },
     "51": {
       "id": 51,
@@ -902,7 +1087,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "52": {
       "id": 52,
@@ -920,7 +1106,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "53": {
       "id": 53,
@@ -929,7 +1116,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": 0,
+          "timing": "on_enter",
+          "reason": "drowned in water combat"
+        }
+      ]
     },
     "54": {
       "id": 54,
@@ -955,7 +1151,21 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "multi_attack",
+              "target": "Idegen harcos",
+              "count": 2,
+              "timing": "every_other_round",
+              "note": "Every second round uses varázserő instead of physical attack"
+            }
+          ]
+        }
+      ]
     },
     "55": {
       "id": 55,
@@ -973,7 +1183,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "56": {
       "id": 56,
@@ -999,7 +1210,17 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "no_flee"
+            }
+          ]
+        }
+      ]
     },
     "57": {
       "id": 57,
@@ -1025,7 +1246,21 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "enemy_pre_damaged",
+              "target": "Brúdah",
+              "current_hp": 27,
+              "max_hp": 50,
+              "note": "Already wounded before combat begins"
+            }
+          ]
+        }
+      ]
     },
     "58": {
       "id": 58,
@@ -1034,7 +1269,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "attacked by swarm of demons (claws and fangs)"
+        }
+      ]
     },
     "59": {
       "id": 59,
@@ -1048,7 +1292,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "60": {
       "id": 60,
@@ -1066,7 +1311,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "61": {
       "id": 61,
@@ -1088,7 +1334,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -12,
+          "timing": "on_enter",
+          "reason": "lightning from keyhole"
+        }
+      ]
     },
     "62": {
       "id": 62,
@@ -1110,7 +1365,15 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "REST",
+          "restores": [
+            "eletero"
+          ]
+        }
+      ]
     },
     "63": {
       "id": 63,
@@ -1124,7 +1387,22 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": 20,
+          "timing": "on_enter",
+          "reason": "healing potion with ginger flavor"
+        },
+        {
+          "kind": "REST",
+          "restores": [
+            "eletero"
+          ]
+        }
+      ]
     },
     "64": {
       "id": 64,
@@ -1142,7 +1420,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "65": {
       "id": 65,
@@ -1168,7 +1447,19 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "multi_attack",
+              "target": "Oroszlán",
+              "description": "The dragon attacks the lion every other round, dealing 4 damage to it"
+            }
+          ]
+        }
+      ]
     },
     "66": {
       "id": 66,
@@ -1186,7 +1477,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "67": {
       "id": 67,
@@ -1195,7 +1487,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "wyvern claw attack on horse and rider"
+        }
+      ]
     },
     "68": {
       "id": 68,
@@ -1213,7 +1514,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "69": {
       "id": 69,
@@ -1231,7 +1533,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "70": {
       "id": 70,
@@ -1257,7 +1560,20 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "instant_death",
+              "trigger": "on_enemy_hit",
+              "condition": "roll 2d6 for damage; if result is exactly 2 (two ones), player dies instantly",
+              "target": "Csuklyás kigyó"
+            }
+          ]
+        }
+      ]
     },
     "71": {
       "id": 71,
@@ -1266,7 +1582,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": 0,
+          "timing": "on_enter",
+          "reason": "impaled on spikes - death"
+        }
+      ]
     },
     "72": {
       "id": 72,
@@ -1284,7 +1609,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "73": {
       "id": 73,
@@ -1302,7 +1628,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "74": {
       "id": 74,
@@ -1320,7 +1647,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "75": {
       "id": 75,
@@ -1342,7 +1670,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "76": {
       "id": 76,
@@ -1360,7 +1689,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "77": {
       "id": 77,
@@ -1369,7 +1699,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "78": {
       "id": 78,
@@ -1383,7 +1714,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "79": {
       "id": 79,
@@ -1397,7 +1729,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "80": {
       "id": 80,
@@ -1415,7 +1748,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "81": {
       "id": 81,
@@ -1424,7 +1758,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "snake bite with venom"
+        }
+      ]
     },
     "82": {
       "id": 82,
@@ -1442,7 +1785,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "83": {
       "id": 83,
@@ -1464,7 +1808,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "84": {
       "id": 84,
@@ -1490,7 +1835,16 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-2d4",
+          "timing": "on_enter",
+          "reason": "csunya sérülés a lecsapó bárdtól"
+        }
+      ]
     },
     "85": {
       "id": 85,
@@ -1516,7 +1870,31 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -3,
+          "timing": "on_enter",
+          "reason": "searing pain in back"
+        },
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "stat_drain",
+              "target": "Lillieth",
+              "stat": "eletero",
+              "amount": 1,
+              "reason": "permanent unhealable damage from monster's attacks (1-3 HP loss is permanent)"
+            },
+            {
+              "type": "no_flee"
+            }
+          ]
+        }
+      ]
     },
     "86": {
       "id": 86,
@@ -1530,7 +1908,15 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "GOLD_CHANGE",
+          "amount": -1,
+          "timing": "on_enter",
+          "reason": "paid beggar for information"
+        }
+      ]
     },
     "87": {
       "id": 87,
@@ -1548,7 +1934,32 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Üvegcse",
+              "note": "stilizált szívvel, gyógyító ital"
+            }
+          ],
+          "timing": "on_enter"
+        },
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": 20,
+          "timing": "on_enter",
+          "reason": "gyógyító ital"
+        },
+        {
+          "kind": "REST",
+          "restores": [
+            "eletero"
+          ]
+        }
+      ]
     },
     "88": {
       "id": 88,
@@ -1562,7 +1973,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -6,
+          "timing": "on_enter",
+          "reason": "slipped on treacherous rock"
+        }
+      ]
     },
     "89": {
       "id": 89,
@@ -1580,7 +2000,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "90": {
       "id": 90,
@@ -1589,7 +2010,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "91": {
       "id": 91,
@@ -1607,7 +2029,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "92": {
       "id": 92,
@@ -1633,7 +2056,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "93": {
       "id": 93,
@@ -1659,7 +2083,33 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "stat_drain",
+              "target": "Óriáspók",
+              "stat": "tamadasi_kepesseg",
+              "amount": 1,
+              "condition": "when enemy rolls 6 for damage"
+            },
+            {
+              "type": "player_stat_penalty",
+              "stat": "vedettsegi_szint",
+              "amount": -3,
+              "reason": "stuck in spider web"
+            },
+            {
+              "type": "player_stat_penalty",
+              "stat": "tamadasi_kepesseg",
+              "amount": -5,
+              "reason": "stuck in spider web"
+            }
+          ]
+        }
+      ]
     },
     "94": {
       "id": 94,
@@ -1673,7 +2123,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "95": {
       "id": 95,
@@ -1691,7 +2142,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "96": {
       "id": 96,
@@ -1713,7 +2165,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "97": {
       "id": 97,
@@ -1727,7 +2180,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "98": {
       "id": 98,
@@ -1745,7 +2199,17 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "REST",
+          "restores": [
+            "eletero"
+          ],
+          "timing": "on_enter",
+          "note": "4 életerőpontot visszatért (ha volt sebed)"
+        }
+      ]
     },
     "99": {
       "id": 99,
@@ -1763,7 +2227,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "100": {
       "id": 100,
@@ -1781,7 +2246,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "REST",
+          "restores": [
+            "eletero"
+          ],
+          "reason": "resting and letting the horse eat oats"
+        }
+      ]
     },
     "101": {
       "id": 101,
@@ -1799,7 +2273,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "102": {
       "id": 102,
@@ -1821,7 +2296,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "exhaustion from combat and water"
+        }
+      ]
     },
     "103": {
       "id": 103,
@@ -1830,7 +2314,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "104": {
       "id": 104,
@@ -1852,7 +2337,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "varazserő",
+          "amount": 999,
+          "timing": "on_enter",
+          "reason": "magical potion restores varazserő to maximum"
+        }
+      ]
     },
     "105": {
       "id": 105,
@@ -1866,7 +2360,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "106": {
       "id": 106,
@@ -1884,7 +2379,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "107": {
       "id": 107,
@@ -1906,7 +2402,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -12,
+          "timing": "on_enter",
+          "reason": "frost beam from keyhole"
+        }
+      ]
     },
     "108": {
       "id": 108,
@@ -1920,7 +2425,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "arduous return journey through cave"
+        }
+      ]
     },
     "109": {
       "id": 109,
@@ -1938,7 +2452,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Vaskulcs",
+              "note": "iron key"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "110": {
       "id": 110,
@@ -1960,7 +2486,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "111": {
       "id": 111,
@@ -1978,7 +2505,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "112": {
       "id": 112,
@@ -1992,7 +2520,26 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Börszíj",
+              "note": "műves kidolgozott öv"
+            }
+          ],
+          "timing": "on_enter"
+        },
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "tamadasi_kepesseg",
+          "amount": 6,
+          "timing": "on_enter",
+          "reason": "ghost's gift"
+        }
+      ]
     },
     "113": {
       "id": 113,
@@ -2010,7 +2557,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -3,
+          "timing": "on_enter",
+          "reason": "descending into cold chamber"
+        }
+      ]
     },
     "114": {
       "id": 114,
@@ -2024,7 +2580,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "115": {
       "id": 115,
@@ -2042,7 +2599,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "116": {
       "id": 116,
@@ -2060,7 +2618,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "117": {
       "id": 117,
@@ -2078,7 +2637,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "118": {
       "id": 118,
@@ -2087,7 +2647,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "119": {
       "id": 119,
@@ -2105,7 +2666,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "szerencse",
+          "amount": -1,
+          "timing": "on_enter",
+          "reason": "luck test required to navigate broken staircase safely"
+        }
+      ]
     },
     "120": {
       "id": 120,
@@ -2131,7 +2701,31 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "player_stat_penalty",
+              "stat": "tamadasi_kepesseg",
+              "amount": -5,
+              "reason": "fighting in water"
+            },
+            {
+              "type": "player_stat_penalty",
+              "stat": "vedettsegi_szint",
+              "amount": -5,
+              "reason": "fighting in water"
+            },
+            {
+              "type": "player_damage_reduction",
+              "amount": 2,
+              "reason": "water reduces damage dealt"
+            }
+          ]
+        }
+      ]
     },
     "121": {
       "id": 121,
@@ -2145,7 +2739,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Csontkulcs",
+              "note": "apró csontkulcs, madzagra kötve"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "122": {
       "id": 122,
@@ -2159,7 +2765,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "123": {
       "id": 123,
@@ -2173,7 +2780,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "fall into chasm"
+        }
+      ]
     },
     "124": {
       "id": 124,
@@ -2191,7 +2807,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "125": {
       "id": 125,
@@ -2205,7 +2822,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_LOSE",
+          "items": [
+            "ló"
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "126": {
       "id": 126,
@@ -2223,7 +2849,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "127": {
       "id": 127,
@@ -2232,7 +2859,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "128": {
       "id": 128,
@@ -2250,7 +2878,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "szerencse",
+          "amount": -2,
+          "timing": "on_enter",
+          "reason": "luck test for climbing with horse"
+        }
+      ]
     },
     "129": {
       "id": 129,
@@ -2268,7 +2905,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "130": {
       "id": 130,
@@ -2286,7 +2924,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "131": {
       "id": 131,
@@ -2308,7 +2947,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "132": {
       "id": 132,
@@ -2322,7 +2962,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "133": {
       "id": 133,
@@ -2340,7 +2981,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "134": {
       "id": 134,
@@ -2358,7 +3000,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "135": {
       "id": 135,
@@ -2367,7 +3010,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "136": {
       "id": 136,
@@ -2381,7 +3025,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "137": {
       "id": 137,
@@ -2403,7 +3048,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "138": {
       "id": 138,
@@ -2412,7 +3058,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "molten metal flows through wall cracks and overwhelms the player"
+        }
+      ]
     },
     "139": {
       "id": 139,
@@ -2434,7 +3089,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "140": {
       "id": 140,
@@ -2456,7 +3112,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "141": {
       "id": 141,
@@ -2478,7 +3135,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "142": {
       "id": 142,
@@ -2496,7 +3154,15 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "REST",
+          "restores": [
+            "varazserő"
+          ]
+        }
+      ]
     },
     "143": {
       "id": 143,
@@ -2505,7 +3171,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "144": {
       "id": 144,
@@ -2523,7 +3190,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "145": {
       "id": 145,
@@ -2541,7 +3209,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "146": {
       "id": 146,
@@ -2559,7 +3228,26 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Lávaital",
+              "note": "varázsseród maximumra állítja"
+            }
+          ],
+          "timing": "on_enter"
+        },
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "varazserő",
+          "amount": 999,
+          "timing": "on_enter",
+          "reason": "varázsital hatása"
+        }
+      ]
     },
     "147": {
       "id": 147,
@@ -2585,7 +3273,8 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "148": {
       "id": 148,
@@ -2611,7 +3300,26 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "stat_drain",
+              "target": "Lillieth",
+              "stat": "eletero",
+              "amount": 1,
+              "note": "damage is permanent and cannot be healed"
+            },
+            {
+              "type": "enemy_defense_only",
+              "target": "Lillieth",
+              "note": "uses varázserő only for defense"
+            }
+          ]
+        }
+      ]
     },
     "149": {
       "id": 149,
@@ -2620,7 +3328,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -999,
+          "timing": "on_enter",
+          "reason": "suffocated under gold pile by dark tentacles"
+        }
+      ]
     },
     "150": {
       "id": 150,
@@ -2642,7 +3359,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "151": {
       "id": 151,
@@ -2660,7 +3378,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "152": {
       "id": 152,
@@ -2674,7 +3393,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "153": {
       "id": 153,
@@ -2683,7 +3403,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "154": {
       "id": 154,
@@ -2705,7 +3426,17 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_LOSE",
+          "items": [
+            "élelelem"
+          ],
+          "timing": "on_enter",
+          "note": "one portion consumed during midday rest"
+        }
+      ]
     },
     "155": {
       "id": 155,
@@ -2719,7 +3450,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "156": {
       "id": 156,
@@ -2737,7 +3469,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "157": {
       "id": 157,
@@ -2746,7 +3479,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "158": {
       "id": 158,
@@ -2764,7 +3498,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "159": {
       "id": 159,
@@ -2778,7 +3513,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "160": {
       "id": 160,
@@ -2804,7 +3540,19 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "multi_attack",
+              "target": "Békafejű rém",
+              "count": 2
+            }
+          ]
+        }
+      ]
     },
     "161": {
       "id": 161,
@@ -2818,7 +3566,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "162": {
       "id": 162,
@@ -2827,7 +3576,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "163": {
       "id": 163,
@@ -2841,7 +3591,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Csontkulcs",
+              "note": "apró csontkulcs madzagra kötve"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "164": {
       "id": 164,
@@ -2859,7 +3621,15 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "GOLD_CHANGE",
+          "amount": -3,
+          "timing": "on_enter",
+          "reason": "paid trader for information"
+        }
+      ]
     },
     "165": {
       "id": 165,
@@ -2868,7 +3638,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": 0,
+          "timing": "on_enter",
+          "reason": "troll's crushing embrace - instant death"
+        }
+      ]
     },
     "166": {
       "id": 166,
@@ -2886,7 +3665,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": []
     },
     "167": {
       "id": 167,
@@ -2904,7 +3684,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "168": {
       "id": 168,
@@ -2922,7 +3703,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "169": {
       "id": 169,
@@ -2936,7 +3718,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "170": {
       "id": 170,
@@ -2950,7 +3733,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "171": {
       "id": 171,
@@ -2976,7 +3760,26 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Csontkulcs",
+              "note": "a félszerzet által adott"
+            }
+          ],
+          "timing": "on_enter"
+        },
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": 0,
+          "timing": "on_enter",
+          "reason": "magical teleportation (no damage stated)"
+        }
+      ]
     },
     "172": {
       "id": 172,
@@ -2994,7 +3797,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "173": {
       "id": 173,
@@ -3003,7 +3807,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "174": {
       "id": 174,
@@ -3017,7 +3822,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "175": {
       "id": 175,
@@ -3035,7 +3841,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "176": {
       "id": 176,
@@ -3044,7 +3851,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "177": {
       "id": 177,
@@ -3062,7 +3870,31 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Sisak",
+              "note": "védettségi szint +3"
+            },
+            {
+              "name": "Pallos",
+              "note": "2-12 életerőpont veszteségét okoz az ellenfélnek"
+            },
+            {
+              "name": "Általmazó gyűrű",
+              "note": "+4 a védettsegi szinthéz"
+            },
+            {
+              "name": "Erönövelő csüklőpánt",
+              "note": "+5 a támadási képességhez"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "178": {
       "id": 178,
@@ -3080,7 +3912,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "179": {
       "id": 179,
@@ -3089,7 +3922,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "180": {
       "id": 180,
@@ -3111,7 +3945,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "181": {
       "id": 181,
@@ -3129,7 +3964,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "182": {
       "id": 182,
@@ -3143,7 +3979,17 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "varazserő",
+          "amount": null,
+          "formula": "max",
+          "timing": "on_enter",
+          "reason": "magical potion restores magical power to maximum"
+        }
+      ]
     },
     "183": {
       "id": 183,
@@ -3152,7 +3998,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "attacked by wounded dragon"
+        }
+      ]
     },
     "184": {
       "id": 184,
@@ -3166,7 +4021,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "185": {
       "id": 185,
@@ -3188,7 +4044,17 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_LOSE",
+          "items": [
+            "Vaskulcs"
+          ],
+          "timing": "on_enter",
+          "reason": "creature fled with the key"
+        }
+      ]
     },
     "186": {
       "id": 186,
@@ -3202,7 +4068,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Pajzs",
+              "note": "domborműves címerrel; 5 ponttal növeli a védeltsségi szintedet"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "187": {
       "id": 187,
@@ -3220,7 +4098,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "fall through floor and landing in spider web"
+        }
+      ]
     },
     "188": {
       "id": 188,
@@ -3238,7 +4125,23 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Üveg",
+              "note": "stilizált szívvel - gyógyital"
+            },
+            {
+              "name": "Üveg",
+              "note": "forró magmával"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "189": {
       "id": 189,
@@ -3256,7 +4159,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Kristály",
+              "note": "galambíójás nagyságú kristály"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "190": {
       "id": 190,
@@ -3278,7 +4193,15 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "GOLD_CHANGE",
+          "amount": -1,
+          "timing": "on_enter",
+          "reason": "horse stabling fee at the market"
+        }
+      ]
     },
     "191": {
       "id": 191,
@@ -3296,7 +4219,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "192": {
       "id": 192,
@@ -3305,7 +4229,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "193": {
       "id": 193,
@@ -3323,7 +4248,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "194": {
       "id": 194,
@@ -3337,7 +4263,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "195": {
       "id": 195,
@@ -3351,7 +4278,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": 0,
+          "timing": "on_enter",
+          "reason": "fatigue dispelled by the Raven's tattoo"
+        }
+      ]
     },
     "196": {
       "id": 196,
@@ -3365,7 +4301,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -8,
+          "timing": "on_enter",
+          "reason": "fall to ground"
+        }
+      ]
     },
     "197": {
       "id": 197,
@@ -3383,7 +4328,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -2,
+          "timing": "on_enter",
+          "reason": "poor sleep due to stench"
+        }
+      ]
     },
     "198": {
       "id": 198,
@@ -3397,7 +4351,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Kristály",
+              "note": "galambtojás nagyságú, értékes kincs"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "199": {
       "id": 199,
@@ -3415,7 +4381,25 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "Vaskucs",
+              "note": "félszerzet tulajdonosa"
+            }
+          ],
+          "timing": "on_enter"
+        },
+        {
+          "kind": "GOLD_CHANGE",
+          "amount": 0,
+          "timing": "on_enter",
+          "reason": "all gold given to halfbreed"
+        }
+      ]
     },
     "200": {
       "id": 200,
@@ -3429,7 +4413,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "201": {
       "id": 201,
@@ -3438,7 +4423,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "202": {
       "id": 202,
@@ -3456,7 +4442,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -10,
+          "timing": "on_enter",
+          "reason": "electrical shock from wrong key"
+        }
+      ]
     },
     "203": {
       "id": 203,
@@ -3474,7 +4469,29 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -14,
+          "timing": "on_enter",
+          "reason": "surprised attack by demons before combat"
+        },
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "multi_attack",
+              "target": "Kisebb Démonok",
+              "count": 4
+            },
+            {
+              "type": "no_flee"
+            }
+          ]
+        }
+      ]
     },
     "204": {
       "id": 204,
@@ -3492,7 +4509,25 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "száraz kenyér"
+            }
+          ],
+          "timing": "on_enter"
+        },
+        {
+          "kind": "ITEM_LOSE",
+          "items": [
+            "furulya"
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "205": {
       "id": 205,
@@ -3510,7 +4545,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "206": {
       "id": 206,
@@ -3519,7 +4555,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "huge explosion from the Gate's destruction"
+        }
+      ]
     },
     "207": {
       "id": 207,
@@ -3528,7 +4573,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "208": {
       "id": 208,
@@ -3554,7 +4600,20 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "multi_attack",
+              "target": "Maszkos férfi",
+              "count": 2,
+              "note": "uses magic first, then weapon attacks"
+            }
+          ]
+        }
+      ]
     },
     "209": {
       "id": 209,
@@ -3572,7 +4631,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "210": {
       "id": 210,
@@ -3590,7 +4650,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "211": {
       "id": 211,
@@ -3616,7 +4677,19 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "multi_attack",
+              "target": "Ördémon",
+              "count": 2
+            }
+          ]
+        }
+      ]
     },
     "212": {
       "id": 212,
@@ -3638,7 +4711,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "213": {
       "id": 213,
@@ -3656,7 +4730,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "214": {
       "id": 214,
@@ -3674,7 +4749,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "215": {
       "id": 215,
@@ -3692,7 +4768,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "216": {
       "id": 216,
@@ -3701,7 +4778,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "217": {
       "id": 217,
@@ -3727,7 +4805,12 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "type": "no_flee"
+        }
+      ]
     },
     "218": {
       "id": 218,
@@ -3753,7 +4836,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "219": {
       "id": 219,
@@ -3767,7 +4851,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -6,
+          "timing": "on_enter",
+          "reason": "fall on sharp rocks"
+        }
+      ]
     },
     "220": {
       "id": 220,
@@ -3793,7 +4886,8 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "221": {
       "id": 221,
@@ -3811,7 +4905,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "szerencse",
+          "amount": -1,
+          "timing": "on_enter",
+          "reason": "szerencseprób"
+        }
+      ]
     },
     "222": {
       "id": 222,
@@ -3829,7 +4932,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "223": {
       "id": 223,
@@ -3838,7 +4942,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-999",
+          "timing": "on_enter",
+          "reason": "molten metal flood - instant death"
+        }
+      ]
     },
     "224": {
       "id": 224,
@@ -3856,7 +4969,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "225": {
       "id": 225,
@@ -3874,7 +4988,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -1,
+          "timing": "on_enter",
+          "reason": "narrowly avoided spike trap from wall"
+        }
+      ]
     },
     "226": {
       "id": 226,
@@ -3892,7 +5015,15 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "GOLD_CHANGE",
+          "amount": 15,
+          "timing": "on_enter",
+          "reason": "sold horse to merchant"
+        }
+      ]
     },
     "227": {
       "id": 227,
@@ -3910,7 +5041,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "228": {
       "id": 228,
@@ -3928,7 +5060,22 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "stat_drain",
+              "target": "Oriáspók",
+              "stat": "tamadasi_kepesseg",
+              "amount": 1,
+              "trigger": "enemy_critical_hit",
+              "note": "whenever the enemy rolls a 6 for damage"
+            }
+          ]
+        }
+      ]
     },
     "229": {
       "id": 229,
@@ -3954,7 +5101,30 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -14,
+          "timing": "on_enter",
+          "reason": "surprised by demons, unable to defend"
+        },
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "multi_attack",
+              "target": "Kisebb Démonok",
+              "count": 4
+            },
+            {
+              "type": "player_limited_action",
+              "description": "player can only attack one demon per round while all four can attack"
+            }
+          ]
+        }
+      ]
     },
     "230": {
       "id": 230,
@@ -3972,7 +5142,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "231": {
       "id": 231,
@@ -3986,7 +5157,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "232": {
       "id": 232,
@@ -4008,7 +5180,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "233": {
       "id": 233,
@@ -4017,7 +5190,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "234": {
       "id": 234,
@@ -4043,7 +5217,27 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -7,
+          "timing": "on_enter",
+          "reason": "bárd által okozott seb"
+        },
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "player_pre_damage",
+              "stat": "eletero",
+              "amount": -7,
+              "reason": "bárd által okozott seb a valóság megváltozásakor"
+            }
+          ]
+        }
+      ]
     },
     "235": {
       "id": 235,
@@ -4061,7 +5255,15 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "GOLD_CHANGE",
+          "amount": -1,
+          "timing": "on_enter",
+          "reason": "food and drink at the inn"
+        }
+      ]
     },
     "236": {
       "id": 236,
@@ -4083,7 +5285,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "237": {
       "id": 237,
@@ -4101,7 +5304,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "238": {
       "id": 238,
@@ -4123,7 +5327,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "239": {
       "id": 239,
@@ -4137,7 +5342,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "240": {
       "id": 240,
@@ -4163,7 +5369,16 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-2d6",
+          "timing": "on_enter",
+          "reason": "Broydron deals initial damage"
+        }
+      ]
     },
     "241": {
       "id": 241,
@@ -4189,7 +5404,34 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "tamadasi_kepesseg",
+          "amount": -5,
+          "timing": "on_enter",
+          "reason": "cursed shackle reduces attack ability"
+        },
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "amount": -2,
+          "timing": "on_enter",
+          "reason": "cursed shackle reduces weapon damage effectiveness"
+        },
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "player_pre_damage",
+              "stat": "eletero",
+              "amount": 0,
+              "reason": "shackle curse already applied via stat changes"
+            }
+          ]
+        }
+      ]
     },
     "242": {
       "id": 242,
@@ -4215,7 +5457,27 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "multi_attack",
+              "target": "Idegen harcos",
+              "count": 1,
+              "note": "every second round uses varázserő instead of weapon attack"
+            },
+            {
+              "type": "enemy_spell_attack",
+              "target": "Idegen harcos",
+              "frequency": "every_second_round",
+              "stat": "varázserő",
+              "note": "uses magical power instead of lance attack on alternating rounds while magic points available"
+            }
+          ]
+        }
+      ]
     },
     "243": {
       "id": 243,
@@ -4224,7 +5486,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "244": {
       "id": 244,
@@ -4242,7 +5505,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "245": {
       "id": 245,
@@ -4260,7 +5524,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": []
     },
     "246": {
       "id": 246,
@@ -4274,7 +5539,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "247": {
       "id": 247,
@@ -4300,7 +5566,25 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "fall into water"
+        },
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "combat_environment",
+              "description": "While in water: player's tamadasi_kepesseg and vedettsegi_szint each reduced by 5, and damage dealt by player reduced by 2"
+            }
+          ]
+        }
+      ]
     },
     "248": {
       "id": 248,
@@ -4309,7 +5593,16 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "eletero",
+          "formula": "-1d6",
+          "timing": "on_enter",
+          "reason": "fall"
+        }
+      ]
     },
     "249": {
       "id": 249,
@@ -4331,7 +5624,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "250": {
       "id": 250,
@@ -4357,7 +5651,8 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "251": {
       "id": 251,
@@ -4383,7 +5678,20 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "instant_death",
+              "trigger": "enemy_attack",
+              "condition": "roll 2d6 and get two ones (snake bite)",
+              "description": "instant death on snake bite if 2d6 = 2"
+            }
+          ]
+        }
+      ]
     },
     "252": {
       "id": 252,
@@ -4405,7 +5713,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "253": {
       "id": 253,
@@ -4414,7 +5723,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "254": {
       "id": 254,
@@ -4432,7 +5742,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "255": {
       "id": 255,
@@ -4458,7 +5769,8 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "256": {
       "id": 256,
@@ -4484,7 +5796,8 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "257": {
       "id": 257,
@@ -4502,7 +5815,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "258": {
       "id": 258,
@@ -4511,7 +5825,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "259": {
       "id": 259,
@@ -4529,7 +5844,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "260": {
       "id": 260,
@@ -4551,7 +5867,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "261": {
       "id": 261,
@@ -4569,7 +5886,19 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_GAIN",
+          "items": [
+            {
+              "name": "aranykulcs",
+              "note": "arany kulcs"
+            }
+          ],
+          "timing": "on_enter"
+        }
+      ]
     },
     "262": {
       "id": 262,
@@ -4587,7 +5916,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "263": {
       "id": 263,
@@ -4605,7 +5935,20 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "enemy_damage_range",
+              "target": "Troll",
+              "damage_min": 4,
+              "damage_max": 9
+            }
+          ]
+        }
+      ]
     },
     "264": {
       "id": 264,
@@ -4614,7 +5957,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "265": {
       "id": 265,
@@ -4640,7 +5984,20 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "COMBAT",
+          "special_rules": [
+            {
+              "type": "enemy_multi_damage",
+              "target": "Wyvern",
+              "damage_range": "4-24",
+              "reason": "mancsai és harapása"
+            }
+          ]
+        }
+      ]
     },
     "266": {
       "id": 266,
@@ -4658,7 +6015,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "267": {
       "id": 267,
@@ -4667,7 +6025,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "268": {
       "id": 268,
@@ -4689,7 +6048,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "269": {
       "id": 269,
@@ -4707,7 +6067,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "szerencse",
+          "amount": -1,
+          "timing": "on_enter",
+          "reason": "szerencsepróba szükséges"
+        }
+      ]
     },
     "270": {
       "id": 270,
@@ -4725,7 +6094,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "271": {
       "id": 271,
@@ -4743,7 +6113,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "272": {
       "id": 272,
@@ -4761,7 +6132,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "273": {
       "id": 273,
@@ -4775,7 +6147,17 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "ITEM_LOSE",
+          "items": [
+            "csontfurulya"
+          ],
+          "timing": "on_enter",
+          "reason": "broken and unusable"
+        }
+      ]
     },
     "274": {
       "id": 274,
@@ -4793,7 +6175,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "275": {
       "id": 275,
@@ -4807,7 +6190,39 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "SHOP",
+          "items": [
+            {
+              "item": "Gyógyfű",
+              "price": 6,
+              "note": "4 életerőpontot gyógyít"
+            },
+            {
+              "item": "Fegyverkenőcs",
+              "price": 5,
+              "note": "+1 ÉP sebzés"
+            },
+            {
+              "item": "Hosszúkard",
+              "price": 15,
+              "note": "1-8 ÉP sebzés"
+            },
+            {
+              "item": "Csatabárd",
+              "price": 12,
+              "note": "2-7 ÉP sebzés"
+            },
+            {
+              "item": "Gyógyital",
+              "price": 15,
+              "note": "10 életerőpontot gyógyít"
+            }
+          ]
+        }
+      ]
     },
     "276": {
       "id": 276,
@@ -4825,7 +6240,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "277": {
       "id": 277,
@@ -4834,7 +6250,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "278": {
       "id": 278,
@@ -4860,7 +6277,8 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "279": {
       "id": 279,
@@ -4878,7 +6296,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "280": {
       "id": 280,
@@ -4896,7 +6315,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "281": {
       "id": 281,
@@ -4914,7 +6334,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "282": {
       "id": 282,
@@ -4932,7 +6353,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "szerencse",
+          "amount": -2,
+          "timing": "on_enter",
+          "reason": "szerencseprób (ereszkedés)"
+        }
+      ]
     },
     "283": {
       "id": 283,
@@ -4954,7 +6384,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "284": {
       "id": 284,
@@ -4972,7 +6403,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "285": {
       "id": 285,
@@ -4981,7 +6413,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "286": {
       "id": 286,
@@ -5003,7 +6436,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "287": {
       "id": 287,
@@ -5017,7 +6451,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "288": {
       "id": 288,
@@ -5031,7 +6466,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "289": {
       "id": 289,
@@ -5045,7 +6481,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "290": {
       "id": 290,
@@ -5054,7 +6491,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "291": {
       "id": 291,
@@ -5076,7 +6514,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "292": {
       "id": 292,
@@ -5094,7 +6533,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "293": {
       "id": 293,
@@ -5120,7 +6560,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "294": {
       "id": 294,
@@ -5138,7 +6579,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "295": {
       "id": 295,
@@ -5156,7 +6598,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "296": {
       "id": 296,
@@ -5165,7 +6608,8 @@
       "enemies": [],
       "is_ending": true,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "297": {
       "id": 297,
@@ -5183,7 +6627,15 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": true
+      "has_luck_test": true,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "szerencse",
+          "timing": "on_enter",
+          "reason": "szerencsepróba szükséges"
+        }
+      ]
     },
     "298": {
       "id": 298,
@@ -5201,7 +6653,8 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "299": {
       "id": 299,
@@ -5227,7 +6680,8 @@
       ],
       "is_ending": false,
       "has_combat": true,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": []
     },
     "300": {
       "id": 300,
@@ -5236,7 +6690,16 @@
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
-      "has_luck_test": false
+      "has_luck_test": false,
+      "events": [
+        {
+          "kind": "STAT_CHANGE",
+          "stat": "tamadasi_kepesseg",
+          "amount": 1,
+          "timing": "on_enter",
+          "reason": "joined the Storm Riders order"
+        }
+      ]
     }
   }
 }
