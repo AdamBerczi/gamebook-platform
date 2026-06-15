@@ -385,48 +385,14 @@
     "21": {
       "id": 21,
       "text": "Kíváncsian lapozol bele a könyvbe; a vastag,\nWyvernbőrből készült fedele felkelti az érdeklődése-\ndet. Az első oldalak üresek, ám hamarosan egy apró\nversikére bukkansz:\n\nHa rám nézel, visszanézek,\nha rám nevetsz, kinevetlek.\nTiszta, igaz és hű vagyok,\nkedvedért én nem hazudok.\n\nHa tudod a választ, lapozz előre a Rejtvények és rejt-\njelkulcsok című részhez, és add össze a válasz betűi-\nnek értékét. Ez a szám határozza meg, hova kell a\nfolytatáshoz lapoznod!\n\nHa nem tudod a választ, lapozz a 214-re!\nMi a neved? — kérdezed az öreget, miután bemutatkoztál.\nElgondolkozva néz rád.\nParázs — feleli nyugodtan.\nA szarkofág nem valami kényelmes fekhelyről jegyzed meg, miközben minden idegszáladdal figyelsz.\nBólint, majd elmosolyodik. A vonásai ijesztőek.\n— Nem hiszem, hogy emiatt jöttél ide. Mi a célod?\n\nHa beszélsz neki a Démon Szeméről, lapozz a 272-re!\nHa azt mondod, Yhrin xinafot akarod felkutatni, lapozz a 99-re!\nHa kincsvadásznak adod ki magad, lapozz a 163-ra!\n\nValamennyi kép finom, ínycsiklandozó ételeket ábrázol. Ismeretlen mester festette mindet, ám annyira élethűre sikerültek, hogy összefut a szádban a nyál a látványra. A középső kép kicsit ferdén függ a falon, amikor megfogod, hogy megigazítsd, egy papír hullik ki alóla, melyen csupán ennyi áll:\n\nAz a kezdete, ahogyan én álltam...\n\nKülönös, de megjegyzed, ki tudja, mikor lesz szükséged erre az információra.\n\nHa megvizsgálod az asztalt, lapozz a 218-ra!\nHa kimégy az előszobába, lapozz a 169-re!",
-      "choices": [
-        {
-          "text": "Ha nem tudod a választ,",
-          "target": 214
-        },
-        {
-          "text": "Ha beszélsz neki a Démon Szeméről,",
-          "target": 272
-        },
-        {
-          "text": "Ha azt mondod, Yhrin xinafot akarod felkutatni,",
-          "target": 99
-        },
-        {
-          "text": "Ha kincsvadásznak adod ki magad,",
-          "target": 163
-        },
-        {
-          "text": "Ha megvizsgálod az asztalt,",
-          "target": 218
-        },
-        {
-          "text": "Ha kimégy az előszobába,",
-          "target": 169
-        }
-      ],
+      "choices": [],
       "enemies": [],
       "is_ending": false,
       "has_combat": false,
       "has_luck_test": false,
-      "events": [
-        {
-          "kind": "ITEM_GAIN",
-          "items": [
-            {
-              "name": "Papír",
-              "note": "csupán ennyi áll: Az a kezdete, ahogyan én álltam..."
-            }
-          ],
-          "timing": "on_enter"
-        }
-      ]
+      "events": [],
+      "has_puzzle": true,
+      "puzzle_fail_target": 214
     },
     "24": {
       "id": 24,
@@ -1095,28 +1061,13 @@
         {
           "text": "Ha nem sikerült,",
           "target": 145
-        },
-        {
-          "text": null,
-          "target": 146
         }
       ],
       "enemies": [],
       "is_ending": false,
       "has_combat": true,
       "has_luck_test": true,
-      "events": [
-        {
-          "kind": "ITEM_GAIN",
-          "items": [
-            {
-              "name": "Homlokpánt",
-              "note": "ékkövekkel díszített, varázslatok elleni védelmet nyújt"
-            }
-          ],
-          "timing": "on_enter"
-        }
-      ]
+      "events": []
     },
     "63": {
       "id": 63,
@@ -4341,7 +4292,7 @@
         }
       ],
       "enemies": [],
-      "is_ending": true,
+      "is_ending": false,
       "has_combat": false,
       "has_luck_test": false
     },
@@ -5305,18 +5256,6 @@
         {
           "text": "Ha inkább keresel valaki mást,",
           "target": 153
-        },
-        {
-          "text": "Ha jobbra,",
-          "target": 121
-        },
-        {
-          "text": "utadat,",
-          "target": 146
-        },
-        {
-          "text": "Ha visszatérsz a napkörhöz,",
-          "target": 213
         }
       ],
       "enemies": [],
@@ -5697,54 +5636,13 @@
         {
           "text": "Ha elköszönsz az öregtől,",
           "target": 57
-        },
-        {
-          "text": "Ha sikerült végezned a szörnnyel,",
-          "target": 243
-        },
-        {
-          "text": "Ha veszítettél,",
-          "target": 201
         }
       ],
-      "enemies": [
-        {
-          "name": "egpók",
-          "eletero": 18,
-          "tamadasi_kepesseg": 18,
-          "vedettsegi_szint": 18,
-          "damage": "2-7"
-        }
-      ],
+      "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
-      "events": [
-        {
-          "kind": "STAT_CHANGE",
-          "stat": "eletero",
-          "amount": -4,
-          "timing": "on_enter",
-          "reason": "surprise attack by transparent tentacle"
-        },
-        {
-          "kind": "COMBAT",
-          "special_rules": [
-            {
-              "type": "player_pre_damage",
-              "stat": "tamadasi_kepesseg",
-              "amount": -5,
-              "reason": "vulnerable position during combat"
-            },
-            {
-              "type": "player_pre_damage",
-              "stat": "vedettsegi_szint",
-              "amount": -5,
-              "reason": "vulnerable position during combat"
-            }
-          ]
-        }
-      ]
+      "events": []
     },
     "285": {
       "id": 285,
