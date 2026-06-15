@@ -293,8 +293,16 @@ Full schema per section:
 - `events: []` on all sections (not yet extracted — run `07_extract_events.py magusok-tornya` when needed)
 
 ### a-demon-szeme sections.json
-- 300/300 sections (recovered via scripts + 6 manual patches from screenshots)
+- 300/300 sections
 - 82 of 300 sections have non-empty `events` arrays (extracted by `07_extract_events.py`)
+- **Session 11 OCR rebuild**: replaced all text with clean new OCR source (`D:\Code\OCR\23 - A démon szeme.txt`)
+  - 147 sections: fully clean new OCR text (correct text, choices, enemies from new parse)
+  - 13 sections: backup text kept (new parse had two-column mixing artifacts with >5 choices)
+  - 140 sections: backup text kept (new OCR two-column mixing prevented new parse from finding these)
+  - Section 1 choices now correctly route to [122, 207, **294**] (was wrongly 89 in old pipeline)
+  - Two-column pages are the remaining source of errors; ~140 sections may have wrong section numbers
+  - `pipeline/08_split_ocr_to_pages.py` — splits new OCR file into per-page raw-text files
+  - `pipeline/09_merge_sections.py` — merges new parse + backup, preserves events, rejects mixed sections
 - Key verified events:
   - Sec 5 & 195: Alakváltó `enemy_regenerate` +2 HP after each player hit
   - Sec 45 & 46: Sopa lovag `multi_attack` (2×/round) + `stat_drain` (TK)
@@ -415,5 +423,12 @@ Full schema per section:
 - Fixed mobile "Kaland kezdése" not reachable: character creation content (1203px) overflowed 812px viewport
   - `#screen-create` and `#screen-menu`: changed `min-height: 100dvh` → `height: 100dvh; overflow-y: auto`
   - `#btn-start` on mobile: `position: sticky; bottom: 1rem` so button is always visible
-- Fix confirmed in preview (button moved from viewport position 1092 → 684 at rest, sticky at bottom)
-- **NOT YET COMMITTED/PUSHED** — style.css change is local only
+- Fix confirmed in preview; committed and pushed
+
+### Session 11 — OCR text rebuild for A Démon Szeme
+- User provided better OCR file: `D:\Code\OCR\23 - A démon szeme.txt` (94 pages, sections start at page 13)
+- Split OCR into per-page files with `08_split_ocr_to_pages.py`; re-ran `03_parse_sections.py` → 160/300 sections (two-column pages cause missing headers)
+- Built `09_merge_sections.py`: merges new parse (160 clean) + old backup (300 sections from git)
+  - Rejects new-parse data where >5 choices (two-column mixing artifact) — 13 sections reverted to backup
+  - Preserves events from backup for sections overwritten by new parse
+- Final result: 300 sections, 147 with fully clean new OCR text, 82 with events, section 1→294 routing fixed
