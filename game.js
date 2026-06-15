@@ -14,6 +14,7 @@ let state = {
     base: {}, current: {}, max: {},
     race: null,
     inventory: [],
+    equipped: { weapon: null, shield: null, armor: null },
   },
   history: [],
   combat: null,
@@ -293,6 +294,7 @@ function startGame() {
   state.character.max     = { ...modified };
   state.character.race      = state.selectedRace;
   state.character.inventory = [];   // filled on first visit to section 1
+  state.character.equipped  = { weapon: null, shield: null, armor: null };
 
   state.currentSection = 1;
   state.history = [];
@@ -314,6 +316,8 @@ function buildStartingInventory() {
     unit:       item.unit      ?? null,
     note:       item.note      ?? item.effect ?? null,
     stat_bonus: item.stat_bonus ?? null,
+    slot:       item.slot      ?? null,
+    damage:     item.damage    ?? null,
   }));
 }
 
@@ -411,15 +415,23 @@ function renderInventory() {
   list.innerHTML = '';
 
   state.character.inventory.forEach((item, idx) => {
-    const action  = getItemAction(item);
-    const tooltip = getItemTooltip(item);
-    const qtyStr  = item.qty > 1
+    const action   = getItemAction(item);
+    const tooltip  = getItemTooltip(item);
+    const isEquipped = item.slot && state.character.equipped?.[item.slot] === item.name;
+    const qtyStr   = item.qty > 1
       ? `<span class="inventory-qty">×${item.qty}${item.unit ? ' ' + item.unit : ''}</span>`
       : '';
-    const hint = action ? `<span class="item-hint">${action.hint}</span>` : '';
+    let hint = '';
+    if (item.slot) {
+      hint = isEquipped
+        ? `<span class="item-hint item-equipped">✓</span>`
+        : `<span class="item-hint item-equip-available">⚔</span>`;
+    } else if (action?.hint) {
+      hint = `<span class="item-hint">${action.hint}</span>`;
+    }
 
     const li = document.createElement('li');
-    li.className = 'inventory-item' + (action ? ' has-action' : '');
+    li.className = 'inventory-item' + (action ? ' has-action' : '') + (isEquipped ? ' is-equipped' : '');
     if (tooltip) li.dataset.tooltip = tooltip;
     li.innerHTML = `
       <div class="inventory-item-row" data-idx="${idx}">
@@ -439,6 +451,7 @@ function renderInventory() {
 // ── INVENTORY ACTIONS ─────────────────────────────────────────────────────────
 
 function getItemAction(item) {
+  if (item.slot) return { type: 'equip', slot: item.slot };
   const note = item.note || '';
   const healMatch = note.match(/(\d+)\s*életerőpontot?\s*gyógyít/i);
   if (healMatch) return { type: 'potion', heal: parseInt(healMatch[1]), hint: 'iszik' };
@@ -460,6 +473,26 @@ function toggleItemPanel(idx, item, action) {
 }
 
 function renderItemPanel(panel, item, action, idx) {
+  if (action.type === 'equip') {
+    const isEquipped = state.character.equipped?.[action.slot] === item.name;
+    const slotLabel  = { weapon: 'Fegyver', shield: 'Pajzs', armor: 'Páncél' }[action.slot] ?? action.slot;
+    const dmgLine    = item.damage ? `<div class="item-panel-label">Sebzés: ${item.damage}</div>` : '';
+    const bonusLine  = item.stat_bonus
+      ? `<div class="item-panel-label">${Object.entries(item.stat_bonus).map(([k,v]) => `+${v} ${k}`).join(', ')}</div>`
+      : '';
+    panel.innerHTML = `
+      <div class="item-panel-label">${slotLabel}${item.damage ? ' · ' + item.damage : ''}</div>
+      ${bonusLine}
+      <button class="item-panel-btn ${isEquipped ? 'btn-unequip' : ''}" id="item-equip-${idx}">
+        ${isEquipped ? '✓ Felszerelve — Lerak' : 'Felszerel'}
+      </button>
+    `;
+    panel.querySelector(`#item-equip-${idx}`).addEventListener('click', () => {
+      if (isEquipped) unequipItem(action.slot);
+      else equipItem(item);
+    });
+    return;
+  }
   if (action.type === 'potion') {
     const cur  = state.character.current.eletero;
     const max  = state.character.max.eletero;
@@ -509,7 +542,12 @@ function consumeItem(idx) {
   const item = state.character.inventory[idx];
   item.qty--;
   if (item.qty <= 0) {
-    revertItemStatBonus(item);
+    if (item.slot && state.character.equipped[item.slot] === item.name) {
+      revertItemStatBonus(item);
+      state.character.equipped[item.slot] = null;
+    } else if (!item.slot) {
+      revertItemStatBonus(item);
+    }
     state.character.inventory.splice(idx, 1);
   }
   renderStats();
@@ -534,6 +572,39 @@ function revertItemStatBonus(item) {
   }
 }
 
+function getEquippedWeaponDamage() {
+  const name = state.character.equipped?.weapon;
+  if (!name) return '1-6';
+  const w = state.character.inventory.find(i => i.name === name);
+  return w?.damage ?? '1-6';
+}
+
+function equipItem(item) {
+  const slot = item.slot;
+  if (!slot || !state.character.equipped) return;
+  const currentName = state.character.equipped[slot];
+  if (currentName === item.name) return;
+  if (currentName) {
+    const old = state.character.inventory.find(i => i.name === currentName);
+    if (old) revertItemStatBonus(old);
+  }
+  state.character.equipped[slot] = item.name;
+  applyItemStatBonus(item);
+  renderInventory();
+  renderStats();
+}
+
+function unequipItem(slot) {
+  if (!state.character.equipped) return;
+  const currentName = state.character.equipped[slot];
+  if (!currentName) return;
+  const current = state.character.inventory.find(i => i.name === currentName);
+  if (current) revertItemStatBonus(current);
+  state.character.equipped[slot] = null;
+  renderInventory();
+  renderStats();
+}
+
 function addItemToInventory(itemDef) {
   const itemName = itemDef.item ?? itemDef.name; // ITEM_GAIN events use 'name', shop/gives_items use 'item'
   const existing = state.character.inventory.find(i => i.name === itemName);
@@ -546,9 +617,20 @@ function addItemToInventory(itemDef) {
       unit:       itemDef.unit      ?? null,
       note:       itemDef.note      ?? itemDef.effect ?? null,
       stat_bonus: itemDef.stat_bonus ?? null,
+      slot:       itemDef.slot      ?? null,
+      damage:     itemDef.damage    ?? null,
     };
     state.character.inventory.push(newItem);
-    if (newItem.stat_bonus) applyItemStatBonus(newItem);
+    if (newItem.slot) {
+      // Equippable items: auto-equip if slot is free, otherwise just add to inventory unequipped
+      if (!state.character.equipped[newItem.slot]) {
+        state.character.equipped[newItem.slot] = itemName;
+        applyItemStatBonus(newItem);
+      }
+    } else {
+      // Non-equippable items: apply stat_bonus immediately on pickup (Amulett etc.)
+      if (newItem.stat_bonus) applyItemStatBonus(newItem);
+    }
   }
   showItemToast(itemName, true);
   renderInventory();
@@ -558,7 +640,15 @@ function addItemToInventory(itemDef) {
 function removeItemByName(name) {
   const idx = state.character.inventory.findIndex(i => i.name === name);
   if (idx === -1) return;
-  revertItemStatBonus(state.character.inventory[idx]);
+  const item = state.character.inventory[idx];
+  if (item.slot && state.character.equipped[item.slot] === name) {
+    // Equipped item: revert its bonus and clear the slot
+    revertItemStatBonus(item);
+    state.character.equipped[item.slot] = null;
+  } else if (!item.slot) {
+    // Non-equippable: revert bonus applied on pickup
+    revertItemStatBonus(item);
+  }
   state.character.inventory.splice(idx, 1);
   showItemToast(name, false);
   renderInventory();
@@ -594,7 +684,7 @@ function loadSection(id) {
     // Section 1: hand out starting equipment from rules.json
     if (id === 1 && rules.starting_equipment?.length) {
       for (const eq of buildStartingInventory()) {
-        addItemToInventory({ item: eq.name, quantity: eq.qty, unit: eq.unit, note: eq.note, stat_bonus: eq.stat_bonus });
+        addItemToInventory({ item: eq.name, quantity: eq.qty, unit: eq.unit, note: eq.note, stat_bonus: eq.stat_bonus, slot: eq.slot, damage: eq.damage });
       }
     }
     if (data.takes_items?.length) {
@@ -1494,7 +1584,7 @@ function resolvePlayerAttackOn(targetIdx, secondAttack = false) {
   }
 
   if (power > enemy.vedettsegi_szint) {
-    let dmg = calcDamage(enemy.damage);
+    let dmg = calcDamage(getEquippedWeaponDamage());
     // Per-enemy Kettős Csapás: only sword damage is doubled (not spells)
     if ((enemy.doubleDamageRounds || 0) > 0) {
       dmg *= 2;
@@ -1809,6 +1899,7 @@ function loadSave(slot) {
     return;
   }
   state.character     = JSON.parse(JSON.stringify(slot.character));
+  if (!state.character.equipped) state.character.equipped = { weapon: null, shield: null, armor: null };
   state.history       = [...slot.history];
   state.currentSection = slot.section;
   state.combat        = null;

@@ -442,6 +442,24 @@ body {
 
 .item-panel-btn:hover  { border-color: var(--accent); background: var(--accent-light); }
 .item-panel-btn:disabled { opacity: 0.45; cursor: default; }
+.item-panel-btn.btn-unequip { border-color: var(--accent); color: var(--accent); }
+.item-panel-btn.btn-unequip:hover { background: var(--accent); color: #fff; }
+
+.item-equipped {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+.item-equip-available {
+  font-size: 10px;
+  color: var(--text-faint);
+  background: var(--bg);
+  border-radius: 99px;
+  padding: 1px 6px;
+}
+.inventory-item.is-equipped > .inventory-item-row > span {
+  color: var(--text);
+  font-weight: 500;
+}
 
 .item-panel-result {
   font-size: 13px;

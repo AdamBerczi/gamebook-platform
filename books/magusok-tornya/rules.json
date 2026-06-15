@@ -84,7 +84,9 @@
   "starting_equipment": [
     {
       "item": "Varázskard",
-      "note": "2-7 veszteséget okoz"
+      "note": "2-7 veszteséget okoz",
+      "slot": "weapon",
+      "damage": "2-7"
     },
     {
       "item": "Gyógyító ital",

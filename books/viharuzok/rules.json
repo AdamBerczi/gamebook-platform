@@ -84,13 +84,39 @@
     }
   },
   "starting_equipment": [
-    { "item": "Kard", "note": "1-6 veszteséget okoz" },
-    { "item": "Gyógyital", "note": "12 életerőpontot gyógyít", "quantity": 1 },
-    { "item": "Varázskőnyv", "note": "Nélküle nem tudsz varázsolni" },
-    { "item": "Étel és ital", "quantity": 7, "unit": "napi adag" },
-    { "item": "Fáklya", "quantity": 5 },
-    { "item": "Aranypénz", "quantity": 20 },
-    { "item": "Ezüstpénz", "quantity": 5, "note": "1 arany = 10 ezüst" }
+    {
+      "item": "Kard",
+      "note": "1-6 veszteséget okoz",
+      "slot": "weapon",
+      "damage": "1-6"
+    },
+    {
+      "item": "Gyógyital",
+      "note": "12 életerőpontot gyógyít",
+      "quantity": 1
+    },
+    {
+      "item": "Varázskőnyv",
+      "note": "Nélküle nem tudsz varázsolni"
+    },
+    {
+      "item": "Étel és ital",
+      "quantity": 7,
+      "unit": "napi adag"
+    },
+    {
+      "item": "Fáklya",
+      "quantity": 5
+    },
+    {
+      "item": "Aranypénz",
+      "quantity": 20
+    },
+    {
+      "item": "Ezüstpénz",
+      "quantity": 5,
+      "note": "1 arany = 10 ezüst"
+    }
   ],
   "combat": {
     "initiative": "Mindkét fél dob 1d6. Aki nagyobbat dobott, az támad először. Döntetlen esetén újra kell dobni.",
@@ -108,54 +134,253 @@
     "recovery": "A szerencse alváskor NEM áll vissza automatikusan."
   },
   "damage_table": [
-    { "range": "1-2",  "formula": "d6/3" },
-    { "range": "1-3",  "formula": "d6/2" },
-    { "range": "1-6",  "formula": "d6" },
-    { "range": "2-3",  "formula": "d6/3+1" },
-    { "range": "2-4",  "formula": "d6/2+1" },
-    { "range": "2-7",  "formula": "d6+1" },
-    { "range": "3-8",  "formula": "d6+2" },
-    { "range": "4-9",  "formula": "d6+3" },
-    { "range": "2-12", "formula": "d6*2" },
-    { "range": "3-18", "formula": "d6*3" },
-    { "range": "1-8",  "formula": "d6+d6-1" },
-    { "range": "2-9",  "formula": "d6+d6" },
-    { "range": "6-11", "formula": "d6+5" }
+    {
+      "range": "1-2",
+      "formula": "d6/3"
+    },
+    {
+      "range": "1-3",
+      "formula": "d6/2"
+    },
+    {
+      "range": "1-6",
+      "formula": "d6"
+    },
+    {
+      "range": "2-3",
+      "formula": "d6/3+1"
+    },
+    {
+      "range": "2-4",
+      "formula": "d6/2+1"
+    },
+    {
+      "range": "2-7",
+      "formula": "d6+1"
+    },
+    {
+      "range": "3-8",
+      "formula": "d6+2"
+    },
+    {
+      "range": "4-9",
+      "formula": "d6+3"
+    },
+    {
+      "range": "2-12",
+      "formula": "d6*2"
+    },
+    {
+      "range": "3-18",
+      "formula": "d6*3"
+    },
+    {
+      "range": "1-8",
+      "formula": "d6+d6-1"
+    },
+    {
+      "range": "2-9",
+      "formula": "d6+d6"
+    },
+    {
+      "range": "6-11",
+      "formula": "d6+5"
+    }
   ],
   "attack_spells": [
-    { "roll": 2,  "name": "Gyilkos Rém",       "cost": 8,     "damage": "12",        "description": "Egy hatalmas szörnyeteg jelenik meg és 12 ÉL veszteséget okoz, majd eltűnik." },
-    { "roll": 3,  "name": "Varázsnyíl",         "cost": 4,     "damage": "6",         "description": "Egy mágikus nyílvessző csapódik az ellenfélbe, 6 ÉL veszteséget okozva." },
-    { "roll": 4,  "name": "Savgömb",            "cost": 8,     "damage": "speciális", "description": "Savgömb robban az áldozat feje fölött. 1d6: páros → elveszti ÉL felét; páratlan → fegyvere csak fél sebzést okoz." },
-    { "roll": 5,  "name": "Láthatatlan Harcos", "cost": 12,    "damage": "speciális", "description": "Láthatatlan harcos jelenik meg, mindig elsőként támad, 5 ÉL/kör automatikusan. 5 kör után eltűnik." },
-    { "roll": 6,  "name": "Fagysugár",          "cost": 6,     "damage": "12",        "description": "Jégpáncél fedi az áldozat testét, 12 ÉL veszteséget okozva." },
-    { "roll": 7,  "name": "Halálvarázs",        "cost": "mind","damage": "30",        "description": "Az áldozat porrá esik ha ÉL-je mínuszba fordul. Minimum 30 VP kell. Az összes VP-t felhasználja." },
-    { "roll": 8,  "name": "Fullasztás",         "cost": 7,     "damage": "speciális", "description": "Az áldozat fuldokolni kezd, 2 körön át automatikusan elveszti a kezdeményezést." },
-    { "roll": 9,  "name": "Tűzlehelet",         "cost": 9,     "damage": "speciális", "description": "2 körön át tüzet lehel, körönként (saját ÉL/2) veszteséget okozva. Minden ellenfélre hat egyszerre." },
-    { "roll": 10, "name": "Villámcsapás",       "cost": 7,     "damage": "15",        "description": "Villám csapódik az ellenfélbe, 15 ÉL veszteséget okozva." },
-    { "roll": 11, "name": "Erősítés/Gyengítés", "cost": 5,     "damage": "speciális", "description": "Erősítés: saját TK +4 öt körre. Gyengítés: ellenfél TK −4 öt körre." },
-    { "roll": 12, "name": "Empátia Pajzs",      "cost": 6,     "damage": "speciális", "description": "3 körre az ellenfél viseli a kapott sebzés felét (a másik fele téged sebez)." }
+    {
+      "roll": 2,
+      "name": "Gyilkos Rém",
+      "cost": 8,
+      "damage": "12",
+      "description": "Egy hatalmas szörnyeteg jelenik meg és 12 ÉL veszteséget okoz, majd eltűnik."
+    },
+    {
+      "roll": 3,
+      "name": "Varázsnyíl",
+      "cost": 4,
+      "damage": "6",
+      "description": "Egy mágikus nyílvessző csapódik az ellenfélbe, 6 ÉL veszteséget okozva."
+    },
+    {
+      "roll": 4,
+      "name": "Savgömb",
+      "cost": 8,
+      "damage": "speciális",
+      "description": "Savgömb robban az áldozat feje fölött. 1d6: páros → elveszti ÉL felét; páratlan → fegyvere csak fél sebzést okoz."
+    },
+    {
+      "roll": 5,
+      "name": "Láthatatlan Harcos",
+      "cost": 12,
+      "damage": "speciális",
+      "description": "Láthatatlan harcos jelenik meg, mindig elsőként támad, 5 ÉL/kör automatikusan. 5 kör után eltűnik."
+    },
+    {
+      "roll": 6,
+      "name": "Fagysugár",
+      "cost": 6,
+      "damage": "12",
+      "description": "Jégpáncél fedi az áldozat testét, 12 ÉL veszteséget okozva."
+    },
+    {
+      "roll": 7,
+      "name": "Halálvarázs",
+      "cost": "mind",
+      "damage": "30",
+      "description": "Az áldozat porrá esik ha ÉL-je mínuszba fordul. Minimum 30 VP kell. Az összes VP-t felhasználja."
+    },
+    {
+      "roll": 8,
+      "name": "Fullasztás",
+      "cost": 7,
+      "damage": "speciális",
+      "description": "Az áldozat fuldokolni kezd, 2 körön át automatikusan elveszti a kezdeményezést."
+    },
+    {
+      "roll": 9,
+      "name": "Tűzlehelet",
+      "cost": 9,
+      "damage": "speciális",
+      "description": "2 körön át tüzet lehel, körönként (saját ÉL/2) veszteséget okozva. Minden ellenfélre hat egyszerre."
+    },
+    {
+      "roll": 10,
+      "name": "Villámcsapás",
+      "cost": 7,
+      "damage": "15",
+      "description": "Villám csapódik az ellenfélbe, 15 ÉL veszteséget okozva."
+    },
+    {
+      "roll": 11,
+      "name": "Erősítés/Gyengítés",
+      "cost": 5,
+      "damage": "speciális",
+      "description": "Erősítés: saját TK +4 öt körre. Gyengítés: ellenfél TK −4 öt körre."
+    },
+    {
+      "roll": 12,
+      "name": "Empátia Pajzs",
+      "cost": 6,
+      "damage": "speciális",
+      "description": "3 körre az ellenfél viseli a kapott sebzés felét (a másik fele téged sebez)."
+    }
   ],
   "defense_spells": [
-    { "roll": 2,  "name": "Elűzés",             "cost": 6,  "protects_against": "Gyilkos Rém",        "activation_roll": "1-4" },
-    { "roll": 3,  "name": "Krill Pajzsa",       "cost": 4,  "protects_against": "Varázsnyíl",         "activation_roll": "1-5" },
-    { "roll": 4,  "name": "Brun Hordója",       "cost": 7,  "protects_against": "Savgömb",            "activation_roll": "1-5" },
-    { "roll": 5,  "name": "Búbáj",              "cost": 1,  "protects_against": "Láthatatlan Harcos", "activation_roll": "1-5" },
-    { "roll": 6,  "name": "Jégfal",             "cost": 9,  "protects_against": "Tűzlehelet",         "activation_roll": "1-5" },
-    { "roll": 7,  "name": "Halálvarázs elleni", "cost": 18, "protects_against": "Halálvarázs",        "activation_roll": "1-3" },
-    { "roll": 8,  "name": "Nagy Tüdő",          "cost": 7,  "protects_against": "Fullasztás",         "activation_roll": "1-5" },
-    { "roll": 9,  "name": "Fagyvédelem",        "cost": 8,  "protects_against": "Fagysugár",          "activation_roll": "1-5" },
-    { "roll": 10, "name": "Tűztükör",           "cost": 7,  "protects_against": "Villámcsapás",       "activation_roll": "1-5" },
-    { "roll": 11, "name": "Sérthetetlenség",    "cost": 8,  "protects_against": "Erősítés/Gyengítés", "activation_roll": "1-5" },
-    { "roll": 12, "name": "Erősítés",           "cost": 5,  "protects_against": "Empátia Pajzs",      "activation_roll": "1-4" }
+    {
+      "roll": 2,
+      "name": "Elűzés",
+      "cost": 6,
+      "protects_against": "Gyilkos Rém",
+      "activation_roll": "1-4"
+    },
+    {
+      "roll": 3,
+      "name": "Krill Pajzsa",
+      "cost": 4,
+      "protects_against": "Varázsnyíl",
+      "activation_roll": "1-5"
+    },
+    {
+      "roll": 4,
+      "name": "Brun Hordója",
+      "cost": 7,
+      "protects_against": "Savgömb",
+      "activation_roll": "1-5"
+    },
+    {
+      "roll": 5,
+      "name": "Búbáj",
+      "cost": 1,
+      "protects_against": "Láthatatlan Harcos",
+      "activation_roll": "1-5"
+    },
+    {
+      "roll": 6,
+      "name": "Jégfal",
+      "cost": 9,
+      "protects_against": "Tűzlehelet",
+      "activation_roll": "1-5"
+    },
+    {
+      "roll": 7,
+      "name": "Halálvarázs elleni",
+      "cost": 18,
+      "protects_against": "Halálvarázs",
+      "activation_roll": "1-3"
+    },
+    {
+      "roll": 8,
+      "name": "Nagy Tüdő",
+      "cost": 7,
+      "protects_against": "Fullasztás",
+      "activation_roll": "1-5"
+    },
+    {
+      "roll": 9,
+      "name": "Fagyvédelem",
+      "cost": 8,
+      "protects_against": "Fagysugár",
+      "activation_roll": "1-5"
+    },
+    {
+      "roll": 10,
+      "name": "Tűztükör",
+      "cost": 7,
+      "protects_against": "Villámcsapás",
+      "activation_roll": "1-5"
+    },
+    {
+      "roll": 11,
+      "name": "Sérthetetlenség",
+      "cost": 8,
+      "protects_against": "Erősítés/Gyengítés",
+      "activation_roll": "1-5"
+    },
+    {
+      "roll": 12,
+      "name": "Erősítés",
+      "cost": 5,
+      "protects_against": "Empátia Pajzs",
+      "activation_roll": "1-4"
+    }
   ],
   "puzzle_key": {
-    "A": 10, "Á": 22, "B": 3,  "C": 18, "D": 6,
-    "E": 31, "É": 35, "F": 16, "G": 11, "H": 26,
-    "I": 30, "Í": 7,  "J": 5,  "K": 12, "L": 23,
-    "M": 2,  "N": 32, "O": 17, "Ó": 29, "Ö": 13,
-    "Ő": 19, "P": 33, "Q": 1,  "R": 25, "S": 8,
-    "T": 24, "U": 20, "Ú": 34, "Ü": 28, "Ű": 14,
-    "V": 9,  "W": 27, "X": 4,  "Y": 21, "Z": 15
+    "A": 10,
+    "Á": 22,
+    "B": 3,
+    "C": 18,
+    "D": 6,
+    "E": 31,
+    "É": 35,
+    "F": 16,
+    "G": 11,
+    "H": 26,
+    "I": 30,
+    "Í": 7,
+    "J": 5,
+    "K": 12,
+    "L": 23,
+    "M": 2,
+    "N": 32,
+    "O": 17,
+    "Ó": 29,
+    "Ö": 13,
+    "Ő": 19,
+    "P": 33,
+    "Q": 1,
+    "R": 25,
+    "S": 8,
+    "T": 24,
+    "U": 20,
+    "Ú": 34,
+    "Ü": 28,
+    "Ű": 14,
+    "V": 9,
+    "W": 27,
+    "X": 4,
+    "Y": 21,
+    "Z": 15
   },
   "prologue": "A legendás Délvidék ezernyi veszélyt rejt magában. Kalandok, kincsek, szörnyetegek és titkok várják a bátor kalandozókat. Ám a Délvidék nem csak erről hires. Létezik ott egy rejtélyes szervezet, melyet mindenki csak Viharűzők név alatt emleget. Harcosok, legendás erővel biró mágusok alkotják, s csak akkor fogadnak maguk közé új tagot, ha valamelyikük eltávozik az előlk sorából.\n\nMár a Kiválasztottak közé is dicséség betekutni, pedig ők még nem tartoznak a Viharűzők közé. Csupán megkapják a lehetőséget a bizonyitásra. A próbát kevesen élik túl, s mindössze egyetlen Kiválasztott került be a szervezetbe.\n\nA lehetőség ezúttal neked is megadatott. A kérdés csupán az: képes vagy élni vele, vagy elbuksz, mint oly sokan már az elmúlt évszázadok során. Tucatnyinál is több részből áll a próbatétel, melyek egyenként is halálossak. Minden egyes rossz döntés magában hordozza a bukás lehetőségét.\n\nNéhány bölcs azt is rebesgeti, hogy a próbatétel nem csupán halálos kihívásokat tartalmaz, hanem olyan részeket is, ahol az ész többet ér a legcsodálatosabb, mágiával felruházott kardpengénél is.\n\nÁm az információk mindig bizonytalanok.\n\nElső lépésként Agrannisba indulsz, a Délvidék egyik legnagyobb kereskedő városába, ahol meg kell találnod Karvalyt, a Viharűzők kapcsolattartóját. Nem tudod, férfit vagy nőt kell keresned, öreget vagy fiatalt, információd csupán arra szorítkezik, hogy a bal tenyerében egy tetováit Karvaly látható.\n\nAz idő szorít, ezért nem sajnálod a pénzt a legjobb lóra, hiszen Agrannisig hosszú az út. Tudod, életedben nem adatik még egyszer ilyen lehetőség a számódra."
 }

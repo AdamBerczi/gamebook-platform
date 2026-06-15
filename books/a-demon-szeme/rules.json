@@ -103,7 +103,9 @@
     },
     {
       "item": "Kard",
-      "note": "1-6 veszteséget okoz"
+      "note": "1-6 veszteséget okoz",
+      "slot": "weapon",
+      "damage": "1-6"
     },
     {
       "item": "Aranypénz",
