@@ -79,8 +79,8 @@ Designed for personal use and as a learning project. Built step by step — ask 
 
 ### Environment
 - Windows 11, PowerShell
-- `ANTHROPIC_API_KEY` set permanently in Windows User environment variables
-- Pipeline scripts must be run from a **fresh terminal** (not from Claude Code session)
+- `ANTHROPIC_API_KEY` set in both Windows User environment variables AND `C:\Users\adamb\.claude\settings.json`
+- The settings.json entry means Claude Code sessions can run API scripts directly (no fresh terminal needed)
 
 ---
 
