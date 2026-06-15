@@ -3,11 +3,11 @@
   "generated": "2026-06-15",
   "summary": {
     "total_sections": 300,
-    "reachable": 281,
-    "unreachable": 19,
-    "unexpected_dead_ends": 1,
+    "reachable": 279,
+    "unreachable": 21,
+    "unexpected_dead_ends": 0,
     "combat_missing_stats": 43,
-    "sections_with_issues": 68
+    "sections_with_issues": 69
   },
   "issue_index": {
     "unreachable": [
@@ -24,16 +24,16 @@
       147,
       155,
       176,
+      178,
       198,
+      225,
       228,
       234,
       236,
       252,
       300
     ],
-    "unexpected_dead_ends": [
-      300
-    ],
+    "unexpected_dead_ends": [],
     "combat_missing_enemy_stats": [
       3,
       10,
@@ -86,9 +86,6 @@
       "6": [
         "duplicate_choice_targets"
       ],
-      "9": [
-        "duplicate_choice_targets"
-      ],
       "10": [
         "combat_missing_enemy_stats"
       ],
@@ -104,8 +101,7 @@
         "combat_missing_enemy_stats"
       ],
       "33": [
-        "unreachable",
-        "no_incoming_edges"
+        "unreachable"
       ],
       "34": [
         "combat_missing_enemy_stats"
@@ -219,6 +215,9 @@
         "combat_missing_enemy_stats"
       ],
       "176": [
+        "unreachable"
+      ],
+      "178": [
         "unreachable",
         "no_incoming_edges"
       ],
@@ -257,9 +256,11 @@
       "224": [
         "combat_missing_enemy_stats"
       ],
+      "225": [
+        "unreachable"
+      ],
       "228": [
-        "unreachable",
-        "no_incoming_edges"
+        "unreachable"
       ],
       "234": [
         "unreachable"
@@ -302,8 +303,7 @@
         "combat_missing_enemy_stats"
       ],
       "300": [
-        "unreachable",
-        "unexpected_dead_end"
+        "unreachable"
       ]
     }
   },
@@ -456,18 +456,14 @@
       ],
       "reachable": true,
       "choices": [
-        225,
-        178,
-        178
+        146
       ],
       "incoming": [
         78,
         79,
         171
       ],
-      "issues": [
-        "duplicate_choice_targets"
-      ]
+      "issues": []
     },
     "10": {
       "flags": [
@@ -904,10 +900,11 @@
         83,
         168
       ],
-      "incoming": [],
+      "incoming": [
+        113
+      ],
       "issues": [
-        "unreachable",
-        "no_incoming_edges"
+        "unreachable"
       ]
     },
     "34": {
@@ -945,7 +942,6 @@
         215
       ],
       "incoming": [
-        113,
         140,
         142
       ],
@@ -1230,7 +1226,6 @@
         104
       ],
       "incoming": [
-        113,
         245,
         246
       ],
@@ -2287,8 +2282,9 @@
       ],
       "reachable": false,
       "choices": [
-        35,
-        51
+        33,
+        176,
+        228
       ],
       "incoming": [],
       "issues": [
@@ -2831,6 +2827,7 @@
         97
       ],
       "incoming": [
+        9,
         36,
         56,
         61,
@@ -3354,10 +3351,11 @@
         107,
         155
       ],
-      "incoming": [],
+      "incoming": [
+        113
+      ],
       "issues": [
-        "unreachable",
-        "no_incoming_edges"
+        "unreachable"
       ],
       "enemies": [
         {
@@ -3393,14 +3391,15 @@
       "flags": [
         "normal"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         225
       ],
-      "incoming": [
-        9
-      ],
-      "issues": []
+      "incoming": [],
+      "issues": [
+        "unreachable",
+        "no_incoming_edges"
+      ]
     },
     "179": {
       "flags": [
@@ -3477,7 +3476,6 @@
       "incoming": [
         34,
         35,
-        295,
         296
       ],
       "issues": [
@@ -4201,16 +4199,17 @@
       "flags": [
         "normal"
       ],
-      "reachable": true,
+      "reachable": false,
       "choices": [
         77,
         146
       ],
       "incoming": [
-        9,
         178
       ],
-      "issues": []
+      "issues": [
+        "unreachable"
+      ]
     },
     "226": {
       "flags": [
@@ -4258,10 +4257,11 @@
         104,
         202
       ],
-      "incoming": [],
+      "incoming": [
+        113
+      ],
       "issues": [
-        "unreachable",
-        "no_incoming_edges"
+        "unreachable"
       ]
     },
     "229": {
@@ -5385,13 +5385,12 @@
     },
     "295": {
       "flags": [
-        "combat"
+        "normal"
       ],
       "reachable": true,
       "choices": [
         154,
-        16,
-        183
+        16
       ],
       "incoming": [
         6,
@@ -5400,14 +5399,7 @@
         42,
         119
       ],
-      "issues": [],
-      "enemies": [
-        {
-          "name": "Csontvázharcos",
-          "hp": 28,
-          "damage": "3-8"
-        }
-      ]
+      "issues": []
     },
     "296": {
       "flags": [
@@ -5484,7 +5476,7 @@
     },
     "300": {
       "flags": [
-        "normal"
+        "ending"
       ],
       "reachable": false,
       "choices": [],
@@ -5492,8 +5484,7 @@
         234
       ],
       "issues": [
-        "unreachable",
-        "unexpected_dead_end"
+        "unreachable"
       ]
     }
   }

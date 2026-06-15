@@ -152,16 +152,7 @@
       "text": "A kunyhó biztonságosnak tűnik. Amennyire me\ntudod állapítani, amolyan erdei vándorok építette\nez, melyet bárki igénybe vehet. A sarokban a taj\ntott kemence mellett rőzsét találsz felhalmozva. A!\nis járt itt utoljára, betartotta a szabályokat.\n\nAz éjszal orsan közeledik.\n\nOdakintről farkasüvöltést hoz a szél. Megb.\nzongsz. Most nem lenne jó kint lenni, a vastag ajtó és\na falak megvédenek, amíg kipihened magad.\n\nHa máris álomra hajtod a fejed, lapozz a 225-r\nHa alaposan körbenézel idebent, lapozz a 178-ra!",
       "choices": [
         {
-          "text": "Ha máris álomra hajtod a fejed,",
-          "target": 225
-        },
-        {
-          "text": "Ha alaposan körbenézel idebent,",
-          "target": 178
-        },
-        {
-          "text": "Ha alaposan körbenézel idebent,",
-          "target": 178
+          "target": 146
         }
       ],
       "enemies": [],
@@ -172,9 +163,10 @@
         {
           "kind": "STAT_CHANGE",
           "stat": "eletero",
-          "formula": "1d6",
+          "formula": "max(1d6, 1d6)",
           "timing": "on_enter",
-          "reason": "magical healing from xinaf"
+          "reason": "magical healing from xinaf",
+          "permanent": true
         }
       ]
     },
@@ -2143,12 +2135,16 @@
       "text": "A kérdés helytelen:\nHát persze, milyen kézenfekvő! A szobor egy pillanatra szót fog, majd sötét ragyogásban kezd világítani, s egy pillanat múlva magad előtt találod szemben: egy furcsa, lidércfényes, sem perzselő tárnője, mivel száz piros lángok fonják testedt, s összezavarodva máshol találod magad.\n\nEgy félrehelyezkedő monolit bámul rád komoran. Amit szemügyre veszzel, már egészen hozzászokott szörnyek között kell majd mozogni. Még ennél is veszélyesebb külsejű alakok között: egy golyófejet fejvadászt és egy sólyomemberi kardjával.\n\nHa támadsz, lapozz a 35-re!\nHa nem mozdulsz, lapozz az 51-re!",
       "choices": [
         {
-          "text": "Ha támadsz,",
-          "target": 35
+          "text": "Ha megpróbálsz elmenekülni,",
+          "target": 33
+        },
+        {
+          "text": "Ha harcba szállsz velük,",
+          "target": 176
         },
         {
           "text": "Ha nem mozdulsz,",
-          "target": 51
+          "target": 228
         }
       ],
       "enemies": [],
@@ -5964,38 +5960,29 @@
         {
           "text": "Ha megpróbálsz feljutni,",
           "target": 16
-        },
-        {
-          "text": "Ha sikerült legyőznöd a harcost,",
-          "target": 183
         }
       ],
-      "enemies": [
-        {
-          "name": "Csontvázharcos",
-          "eletero": 28,
-          "tamadasi_kepesseg": 20,
-          "vedettsegi_szint": 22,
-          "damage": "3-8"
-        }
-      ],
+      "enemies": [],
       "is_ending": false,
-      "has_combat": true,
+      "has_combat": false,
       "has_luck_test": false,
       "events": [
         {
           "kind": "ITEM_GAIN",
+          "timing": "on_enter",
           "items": [
             {
               "name": "Gyűrű",
-              "note": "3 ponttal növeli a védettségedet"
+              "note": "+3 védettségi szint",
+              "stat_bonus": {
+                "vedettsegi_szint": 3
+              }
             },
             {
               "name": "Könyv",
               "note": "számodra érthetetlen jelekkel teleírva"
             }
-          ],
-          "timing": "on_combat_win"
+          ]
         }
       ]
     },
@@ -6044,7 +6031,7 @@
       "text": "Gratulálunk! Tettedről énekmondók és bárdok\nfognak regélni hosszú évszázadokon át. A Démon\nSzeme olyan hatalommal bír, mely lehetővé teszi\nneked, hogy felhagyj a kalandor életmóddal, s békében, gazdagságban élve letelepedj le végre\nCherubion egy békésebb szegletében.\nÉvek óta járod Cherubion Sötét Évszázadoktól\nsújtotta vidékeit kóbor lidércekkel va;\n\nnákkal harcolva. Néha sírokat fosztogatsz,\n\nleg ősi, elfeledett kincsek után kutatsz szörnyetegekkel teli katakombák mélyén.\n\nÉszakon hallottál elsőként arról az ereklyéri\namelynek nevét még a bölcsek is mély borzadállyal ejtették ki szájukon. A Démon Szeme.\nHatalmáról csak legendák beszélnek, ám tapa:\ntalatból tudod, hogy egy ilyen nagy erejű vará:\ntárgy olyan képességekkel ruházhatja fel a birtokosát, melyről nem is álmodnál.",
       "choices": [],
       "enemies": [],
-      "is_ending": false,
+      "is_ending": true,
       "has_combat": false,
       "has_luck_test": false
     },

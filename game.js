@@ -39,6 +39,9 @@ function rollFormula(formula) {
 
 function rollDamage(formula) {
   formula = formula.trim();
+  // max(Xd6, Yd6) — advantage roll: take the higher result
+  const maxMatch = formula.match(/^max\(([^,]+),\s*([^)]+)\)$/i);
+  if (maxMatch) return Math.max(rollDamage(maxMatch[1]), rollDamage(maxMatch[2]));
   if (formula.includes('*')) {
     const [f, mul] = formula.split('*');
     return rollDamage(f) * parseInt(mul);
