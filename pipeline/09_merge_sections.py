@@ -194,8 +194,12 @@ def main():
             new_sec = new_sections[sid]
             new_choices = len(new_sec.get("choices", []))
             backup_choices = len(sec_data.get("choices", []))
-            # Reject new parse if it has suspiciously many choices vs backup
-            if new_choices > 5 and new_choices > backup_choices + 1:
+            # Reject new parse if choices look wrong vs backup:
+            # 1. Too many (absorbed adjacent section content via two-column mixing)
+            # 2. Too few (fragmented OCR dropped choices that backup captured)
+            too_many = new_choices > 5 and new_choices > backup_choices + 1
+            too_few = backup_choices >= 2 and new_choices < backup_choices - 1
+            if too_many or too_few:
                 merged[sid] = sec_data
                 new_parse_rejected.append(int(sid))
             else:
