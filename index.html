@@ -114,6 +114,10 @@
           <span class="race-badge" id="race-badge">—</span>
         </div>
         <button class="btn-ghost sidebar-new-game" id="btn-new-game">Új kaland</button>
+        <div class="sidebar-divider" style="margin-top:0.5rem"></div>
+        <button class="sidebar-action-btn dev-mode-toggle-btn" id="btn-dev-mode-sidebar">
+          <span>🛠</span> Dev mód
+        </button>
       </div>
     </aside>
 
@@ -125,7 +129,10 @@
           </svg>
         </button>
         <span class="mobile-title" id="mobile-book-title">—</span>
-        <div class="mobile-hp" id="mobile-hp">— ÉL</div>
+        <div class="mobile-topbar-right">
+          <div class="mobile-hp" id="mobile-hp">— ÉL</div>
+          <button class="btn-icon dev-mode-toggle-btn" id="btn-dev-mode-mobile" title="Dev mód">🛠</button>
+        </div>
       </div>
 
       <div class="section-wrap" id="section-wrap">
@@ -172,6 +179,15 @@
       </div>
       <div class="modal-body" id="saveload-body"></div>
     </div>
+  </div>
+
+  <!-- ── DEV TOOLBAR ── -->
+  <div class="dev-toolbar hidden" id="dev-toolbar">
+    <span class="dev-toolbar-badge">DEV</span>
+    <button class="dev-back-btn" id="dev-back-btn">← Vissza</button>
+    <div class="dev-toolbar-spacer"></div>
+    <input type="number" id="dev-section-input" class="dev-section-input" min="1" placeholder="szakasz #">
+    <button class="dev-jump-btn" id="dev-jump-btn">Ugrás</button>
   </div>
 
   <script src="game.js"></script>

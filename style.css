@@ -1818,3 +1818,98 @@ body {
     box-shadow: 0 -4px 16px rgba(0,0,0,0.12);
   }
 }
+
+/* ══════════════════════════════════════
+   DEVELOPER MODE
+══════════════════════════════════════ */
+
+.mobile-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dev-mode-toggle-btn.dev-active {
+  background: #3d2200 !important;
+  color: #ffd166 !important;
+  border-color: #c8860a !important;
+}
+
+.dev-toolbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: #130e00;
+  border-top: 2px solid #c8860a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  z-index: 200;
+  font-family: var(--font-ui);
+  font-size: 13px;
+}
+
+.dev-toolbar.hidden { display: none; }
+
+.dev-toolbar-badge {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #c8860a;
+  background: #2d1a00;
+  border: 1px solid #5a3d00;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.dev-back-btn {
+  background: #1f1500;
+  color: #ffd166;
+  border: 1px solid #5a3d00;
+  border-radius: var(--radius-sm);
+  padding: 5px 12px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.12s;
+}
+
+.dev-back-btn:hover:not(:disabled) { background: #2d1e00; }
+.dev-back-btn:disabled { opacity: 0.35; cursor: default; }
+
+.dev-toolbar-spacer { flex: 1; }
+
+.dev-section-input {
+  width: 90px;
+  background: #1f1500;
+  color: #ffd166;
+  border: 1px solid #5a3d00;
+  border-radius: var(--radius-sm);
+  padding: 5px 8px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+}
+
+.dev-section-input::placeholder { color: #5a3d00; }
+.dev-section-input:focus { outline: none; border-color: #c8860a; }
+
+.dev-jump-btn {
+  background: #c8860a;
+  color: #130e00;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 5px 14px;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.dev-jump-btn:hover { background: #dfa30e; }

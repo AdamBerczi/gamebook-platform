@@ -66,6 +66,63 @@ function damageFormulaForRange(range) {
   return entry ? entry.formula : null;
 }
 
+// ── DEVELOPER MODE ────────────────────────────────────────────────────────────
+
+let devMode = localStorage.getItem('hk_devmode') === 'true';
+
+function toggleDevMode() {
+  devMode = !devMode;
+  localStorage.setItem('hk_devmode', devMode);
+  updateDevModeUI();
+}
+
+function updateDevModeUI() {
+  const toolbar = document.getElementById('dev-toolbar');
+  if (!toolbar) return;
+  toolbar.classList.toggle('hidden', !devMode);
+  document.querySelectorAll('.dev-mode-toggle-btn').forEach(b =>
+    b.classList.toggle('dev-active', devMode));
+  const main = document.getElementById('main');
+  if (main) main.style.paddingBottom = devMode ? '54px' : '';
+  updateDevBackBtn();
+}
+
+function updateDevBackBtn() {
+  const btn = document.getElementById('dev-back-btn');
+  if (btn) btn.disabled = state.history.length < 2;
+}
+
+function devGoBack() {
+  if (state.history.length < 2) return;
+  state.history.pop();
+  const prevId = state.history[state.history.length - 1];
+  state.combat = null;
+  state.currentSection = prevId;
+  const data = sections?.sections[String(prevId)];
+  if (data) { renderSection(data); renderStats(); }
+  document.getElementById('main')?.scrollTo({ top: 0, behavior: 'smooth' });
+  updateDevBackBtn();
+}
+
+function devJumpTo() {
+  const input = document.getElementById('dev-section-input');
+  const n = parseInt(input.value);
+  if (!sections || isNaN(n) || n < 1) return;
+  input.value = '';
+  loadSection(n);
+}
+
+function initDevMode() {
+  document.querySelectorAll('.dev-mode-toggle-btn').forEach(btn =>
+    btn.addEventListener('click', toggleDevMode));
+  document.getElementById('dev-jump-btn')?.addEventListener('click', devJumpTo);
+  document.getElementById('dev-section-input')?.addEventListener('keydown', e => {
+    if (e.key === 'Enter') devJumpTo();
+  });
+  document.getElementById('dev-back-btn')?.addEventListener('click', devGoBack);
+  updateDevModeUI();
+}
+
 // ── MAIN MENU ──────────────────────────────────────────────────────────────
 
 async function init() {
@@ -553,6 +610,7 @@ function loadSection(id) {
 
   renderSection(data);
   renderStats();
+  updateDevBackBtn();
   document.getElementById('main').scrollTo({ top: 0, behavior: 'smooth' });
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -1832,5 +1890,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-new-game')?.addEventListener('click', () => showScreen('menu'));
   initDrawer();
   initModals();
+  initDevMode();
   init();
 });
