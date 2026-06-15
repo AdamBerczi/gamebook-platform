@@ -478,12 +478,13 @@ function revertItemStatBonus(item) {
 }
 
 function addItemToInventory(itemDef) {
-  const existing = state.character.inventory.find(i => i.name === itemDef.item);
+  const itemName = itemDef.item ?? itemDef.name; // ITEM_GAIN events use 'name', shop/gives_items use 'item'
+  const existing = state.character.inventory.find(i => i.name === itemName);
   if (existing && !itemDef.unique) {
     existing.qty += itemDef.quantity ?? 1;
   } else if (!existing) {
     const newItem = {
-      name:       itemDef.item,
+      name:       itemName,
       qty:        itemDef.quantity  ?? 1,
       unit:       itemDef.unit      ?? null,
       note:       itemDef.note      ?? itemDef.effect ?? null,
@@ -492,7 +493,7 @@ function addItemToInventory(itemDef) {
     state.character.inventory.push(newItem);
     if (newItem.stat_bonus) applyItemStatBonus(newItem);
   }
-  showItemToast(itemDef.item, true);
+  showItemToast(itemName, true);
   renderInventory();
   renderStats();
 }

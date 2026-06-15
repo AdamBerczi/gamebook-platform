@@ -4885,7 +4885,7 @@
         }
       ],
       "enemies": [],
-      "is_ending": true,
+      "is_ending": false,
       "has_combat": false,
       "has_luck_test": false,
       "events": [
@@ -6133,19 +6133,28 @@
             "item": "Sisak",
             "price": 0,
             "unique": true,
-            "note": "Fémsisakot találtál a padlón."
+            "note": "+3 védettségi szint",
+            "stat_bonus": {
+              "vedettsegi_szint": 3
+            }
           },
           {
-            "item": "Kard",
+            "item": "Elátkozott kard",
             "price": 0,
             "unique": true,
-            "note": "Jobb karban van, mint a tiéd."
+            "note": "Átkozott — 4 ponttal csökkenti a támadási képességet!",
+            "stat_bonus": {
+              "tamadasi_kepesseg": -4
+            }
           },
           {
             "item": "Ébenfekete láncing",
             "price": 0,
             "unique": true,
-            "note": "Sötét fémből készített könnyű páncél."
+            "note": "+6 védettségi szint; varázsenerőjének köszönhetően maga méretét is változtatja",
+            "stat_bonus": {
+              "vedettsegi_szint": 6
+            }
           }
         ]
       }
