@@ -338,24 +338,14 @@ Full schema per section:
 - `07_extract_events.py` not yet run on this book
 
 ### a-demon-szeme
-- **Two-column OCR merges (~29 unreachable sections) — awaiting clean source pages.** See Session 12.
+- **19 sections still unreachable** (down from 29 after Session 13 screenshot repairs).
+  - Current unreachable: 26, 33, 47, 55, 64, 81, 96, 107, 113, 124, 147, 155, 176, 198, 228, 234, 236, 252, 300
   - Run `python pipeline/diagnose_choices.py a-demon-szeme` to regenerate the report.
-  - 300/300 sections present, no dangling targets, but 29 unreachable from section 1.
-  - Root cause: ~140 sections were merged by two-column OCR — a section's choice list is
-    contaminated with links from a *different* section that bled into the same text blob.
-  - **Do NOT bulk-add the "missing" links** (`repair_choices.py` can, but won't be applied):
-    on merged sections the missing targets belong to a neighbouring section, so auto-wiring
-    them routes players to the wrong place — worse than a visible dead-end.
-  - Confirmed merge blobs needing manual/clean-OCR reconstruction: **122, 133, 175, 218, 239, 271**
-    (239's luck-failure target is truncated mid-number; 271 mixes a death ending + vampire mechanic + a combat).
-  - **Safe fixes (verified, not yet applied)**, can be done independently of re-OCR:
-    - Sec **197**: choice text is correct but targets are wrong OCR digits — retarget 144→74, 212→257
-      (prose clearly reads "Ha sikerült, lapozz a 74-re! / Ha nem sikerült, lapozz a 257-re!").
-    - Sec **9**: genuinely dropped link → add choice to 178 ("Ha alaposan körbenézel idebent").
-  - **Proper fix path (when clean pages are secured):** all 94 page images still on disk;
-    `parse_config.json` already sets `ocr_prompt: "two_column"` (left column fully, then right).
-    Re-run `02_ocr_pages.py a-demon-szeme --force` → `03_parse_sections.py` → `09_merge_sections.py`,
-    then re-run `diagnose_choices.py` to confirm reachability climbs back toward 300.
+  - Run `python pipeline/generate_section_map.py a-demon-szeme` to regenerate `section_map.json`.
+  - Secs 107, 155, 176 are a linked cluster: 176 routes to 107 (win) / 155 (lose), but nothing routes to 176 yet.
+  - **Remaining merge blobs** (need clean source screenshots to reconstruct): 37, 38, 92, 108, 144, 159, 162, 175, 227, 239, and sec 136 (riddle mechanic — success target unknown, likely 195).
+  - **Unexpected dead ends** (no choices, not death endings): secs 8, 17, 151, 215, 217, 238, 288 — need screenshots to diagnose.
+  - Sec 151: "try the mask" cross-reference section (referenced from sec 101) — should route somewhere after trying the mask; currently has no choices.
 - **Flee button not blocked** when `state.combat.noFlee = true` — flag is set but UI doesn't gate the button yet
 - Unknown event types to implement:
   - `enemy_first_always` / `initiative_always_loses` (sec 36/37) — cursed mask forces player to always lose initiative
@@ -473,3 +463,21 @@ Full schema per section:
 - **Decision:** pause automated repair; user to secure clean (single-column or higher-quality) source pages,
   then re-OCR via the already-configured `two_column` prompt and re-parse/merge. See Known Issues → a-demon-szeme.
 - No data files changed this session; only two diagnostic scripts added under `pipeline/`.
+
+### Session 13 — A Démon Szeme screenshot-guided data repair
+- User provided PDF (PDF24 OCR) and screenshots of 22 problem sections.
+- PDF analysis: text layer usable but many section headers misread by PDF24; confirmed several
+  missing nav targets by cross-referencing the PDF's "lapozz" refs against diagnose output.
+- Applied 28 choice repairs across 20 sections in two batches:
+  - Batch 1 (PDF+diagnosis confirmed): secs 6, 9, 66, 120, 122, 133, 197, 209, 218, 239, 248, 271
+  - Batch 2 (screenshots): secs 37, 38, 43, 53, 92, 101, 108, 144, 150, 175, 227, 233
+- Key fixes: sec 197 OCR digit error (144→74, 212→257); sec 239 merge-blob stripped to
+  correct [290, 127] luck-test; secs 122/133/271 text replaced with clean versions from screenshots;
+  secs 108/227 got missing Pikkelyes rém enemy stat blocks (HP 30, TK 23, VS 26, dmg 2-12).
+- Screenshot verification confirmed several sections already had correct choices (sec 73, 159, 162
+  were merge-noise false alarms from diagnose); sec 175 confirmed death ending (removed fake choices).
+- Result: 271 → 281 reachable sections (29 → 19 unreachable). Side effect: sec 107 became
+  unreachable after removing sec 175's fake choice; real path is through sec 176 (also unreachable).
+- Added `pipeline/generate_section_map.py` — generates `section_map.json` for any book with
+  reachability, incoming/outgoing edges, flags, and issue index. Run after every data change.
+  Generated initial maps for both books and committed them.
