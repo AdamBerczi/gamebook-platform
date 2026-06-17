@@ -1,195 +1,162 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-  <title>Harcos Képzelet</title>
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Harcos Képzelet">
-  <link rel="manifest" href="manifest.json">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam's Games</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <link rel="stylesheet" href="style.css">
+    body {
+      min-height: 100dvh;
+      background: #0d0f18;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      color: #e8eaf6;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #e8eaf6;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #8892b0;
+    }
+
+    .card-grid {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 760px;
+      width: 100%;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      max-width: 340px;
+      background: #1a1d27;
+      border: 1px solid #2e3352;
+      border-radius: 16px;
+      padding: 2rem 1.75rem 1.75rem;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card-icon {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+
+    .card-title {
+      font-family: 'Lora', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #e8eaf6;
+    }
+
+    .card-sub {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8892b0;
+    }
+
+    .card-desc {
+      font-size: 0.9rem;
+      color: #8892b0;
+      line-height: 1.55;
+      flex: 1;
+    }
+
+    .card-arrow {
+      align-self: flex-end;
+      font-size: 1.1rem;
+      margin-top: 0.25rem;
+    }
+
+    .card--gamebook:hover {
+      border-color: #c9a84c;
+      box-shadow: 0 8px 32px rgba(201,168,76,0.15);
+    }
+    .card--gamebook .card-arrow { color: #c9a84c; }
+
+    .card--pokemon:hover {
+      border-color: #3dd68c;
+      box-shadow: 0 8px 32px rgba(61,214,140,0.15);
+    }
+    .card--pokemon .card-arrow { color: #3dd68c; }
+
+    footer {
+      margin-top: 3.5rem;
+      font-size: 0.8rem;
+      color: #3a3f5c;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ── MAIN MENU ── -->
-  <div id="screen-menu" class="screen active">
-    <div class="menu-wrapper">
-      <header class="menu-header">
-        <p class="menu-series">Harcos Képzelet</p>
-        <h1 class="menu-title">Válassz kalandot</h1>
-      </header>
-      <div class="book-grid" id="book-grid">
-        <!-- injected by game.js -->
+  <header>
+    <h1>Adam's Games</h1>
+    <p>Pick an app to open</p>
+  </header>
+
+  <div class="card-grid">
+
+    <a class="card card--gamebook" href="game.html">
+      <div class="card-icon">📖</div>
+      <div class="card-sub">Harcos Képzelet · vol. 22–24</div>
+      <div class="card-title">Gamebook Platform</div>
+      <div class="card-desc">
+        Play Hungarian "Fighting Fantasy" gamebooks in the browser.
+        Three books loaded: Mágusok Tornya, A Démon Szeme, Viharűzők.
       </div>
-    </div>
-  </div>
+      <div class="card-arrow">→</div>
+    </a>
 
-  <!-- ── CHARACTER CREATION ── -->
-  <div id="screen-create" class="screen">
-    <div class="create-wrapper">
-      <header class="create-header">
-        <button class="btn-back" id="btn-back-to-menu">← Vissza</button>
-        <p class="create-subtitle" id="create-subtitle">Harcos Képzelet</p>
-        <h1 class="create-title" id="create-title">—</h1>
-        <p class="create-author" id="create-author">—</p>
-      </header>
-
-      <section class="create-section">
-        <h2>Válassz fajt</h2>
-        <div class="race-grid" id="race-grid"></div>
-      </section>
-
-      <section class="create-section">
-        <h2>Tulajdonságaid</h2>
-        <div class="stats-roll-grid" id="stats-roll-grid"></div>
-        <button class="btn-secondary" id="btn-reroll">Újra dob</button>
-      </section>
-
-      <button class="btn-primary" id="btn-start">Kaland kezdése</button>
-    </div>
-  </div>
-
-  <!-- ── GAME SCREEN ── -->
-  <div id="screen-game" class="screen">
-
-    <aside id="sidebar" class="sidebar">
-      <div class="sidebar-inner">
-
-        <div class="sidebar-book">
-          <span class="sidebar-book-title" id="sidebar-book-title">—</span>
-        </div>
-
-        <div class="stat-block">
-          <div class="stat-row">
-            <span class="stat-label">Életerő</span>
-            <div class="stat-bar-wrap"><div class="stat-bar" id="bar-eletero"></div></div>
-            <span class="stat-value" id="val-eletero">—</span>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Varázserő</span>
-            <div class="stat-bar-wrap"><div class="stat-bar magic" id="bar-varazserő"></div></div>
-            <span class="stat-value" id="val-varazserő">—</span>
-          </div>
-          <div class="stat-row-simple">
-            <span class="stat-label">Támadás</span>
-            <span class="stat-value" id="val-tamadasi_kepesseg">—</span>
-          </div>
-          <div class="stat-row-simple">
-            <span class="stat-label">Védettség</span>
-            <span class="stat-value" id="val-vedettsegi_szint">—</span>
-          </div>
-          <div class="stat-row-simple">
-            <span class="stat-label">Szerencse</span>
-            <span class="stat-value" id="val-szerencse">—</span>
-          </div>
-        </div>
-
-        <div class="sidebar-divider"></div>
-
-        <div class="inventory-block">
-          <h3 class="sidebar-section-label">Felszerelés</h3>
-          <ul id="inventory-list" class="inventory-list"></ul>
-        </div>
-
-        <div class="sidebar-divider"></div>
-
-        <button class="sidebar-action-btn" id="btn-spellbook">
-          <span>✦</span> Varázskönyv
-        </button>
-        <button class="sidebar-action-btn" id="btn-save-load">
-          <span>◈</span> Mentés / Betöltés
-        </button>
-
-        <div class="sidebar-divider"></div>
-
-        <div class="race-badge-wrap">
-          <span class="race-badge" id="race-badge">—</span>
-        </div>
-        <button class="btn-ghost sidebar-new-game" id="btn-new-game">Új kaland</button>
-        <div class="sidebar-divider" style="margin-top:0.5rem"></div>
-        <button class="sidebar-action-btn dev-mode-toggle-btn" id="btn-dev-mode-sidebar">
-          <span>🛠</span> Dev mód
-        </button>
+    <!-- UPDATE href after deploying Pokemon Cloud to Cloudflare Pages -->
+    <a class="card card--pokemon" href="https://pokemon-cloud.pages.dev">
+      <div class="card-icon">🎮</div>
+      <div class="card-sub">Gen 3–4 · GBA / DS</div>
+      <div class="card-title">Pokémon Cloud</div>
+      <div class="card-desc">
+        Personal Pokémon HOME clone. Parse save files, manage your
+        cloud box, train, breed, and hatch eggs.
       </div>
-    </aside>
-
-    <main id="main" class="main">
-      <div class="mobile-topbar">
-        <button class="btn-icon" id="btn-stats-toggle">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-          </svg>
-        </button>
-        <span class="mobile-title" id="mobile-book-title">—</span>
-        <div class="mobile-topbar-right">
-          <div class="mobile-hp" id="mobile-hp">— ÉL</div>
-          <button class="btn-icon dev-mode-toggle-btn" id="btn-dev-mode-mobile" title="Dev mód">🛠</button>
-        </div>
-      </div>
-
-      <div class="section-wrap" id="section-wrap">
-        <div class="section-number" id="section-number"></div>
-        <div class="section-text" id="section-text"></div>
-        <div class="section-illustration hidden" id="section-illustration">
-          <img id="section-illustration-img" alt="">
-        </div>
-        <div class="choices" id="choices"></div>
-      </div>
-
-      <div class="loading" id="loading">Betöltés...</div>
-    </main>
-
-    <div class="mobile-drawer-overlay" id="drawer-overlay"></div>
-    <div class="mobile-drawer" id="mobile-drawer">
-      <div class="drawer-handle"></div>
-      <div class="drawer-stats" id="drawer-stats"></div>
-    </div>
+      <div class="card-arrow">→</div>
+    </a>
 
   </div>
 
-  <!-- ── SPELLBOOK MODAL ── -->
-  <div class="modal-overlay hidden" id="spellbook-modal">
-    <div class="modal-panel">
-      <div class="modal-header">
-        <h2 class="modal-title">Varázskönyv</h2>
-        <button class="modal-close" id="btn-close-spellbook">✕</button>
-      </div>
-      <div class="modal-tabs">
-        <button class="modal-tab active" data-tab="attack">Támadó</button>
-        <button class="modal-tab" data-tab="defense">Védő</button>
-      </div>
-      <div class="modal-body" id="spellbook-body"></div>
-    </div>
-  </div>
+  <footer>Personal projects · 2025</footer>
 
-  <!-- ── SAVE / LOAD MODAL ── -->
-  <div class="modal-overlay hidden" id="saveload-modal">
-    <div class="modal-panel">
-      <div class="modal-header">
-        <h2 class="modal-title">Mentés / Betöltés</h2>
-        <button class="modal-close" id="btn-close-saveload">✕</button>
-      </div>
-      <div class="modal-body" id="saveload-body"></div>
-    </div>
-  </div>
-
-  <!-- ── DEV TOOLBAR ── -->
-  <div class="dev-toolbar hidden" id="dev-toolbar">
-    <span class="dev-toolbar-badge">DEV</span>
-    <button class="dev-back-btn" id="dev-back-btn">← Vissza</button>
-    <div class="dev-toolbar-spacer"></div>
-    <input type="number" id="dev-section-input" class="dev-section-input" min="1" placeholder="szakasz #">
-    <button class="dev-jump-btn" id="dev-jump-btn">Ugrás</button>
-  </div>
-
-  <script src="game.js"></script>
 </body>
 </html>

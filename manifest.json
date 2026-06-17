@@ -1,7 +1,7 @@
 {
   "name": "Mágusok Tornya",
   "short_name": "Mágusok",
-  "start_url": "./index.html",
+  "start_url": "./game.html",
   "display": "standalone",
   "background_color": "#F7F4EF",
   "theme_color": "#F7F4EF",
